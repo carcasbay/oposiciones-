@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 9: El Desarrollo en la Niñez Intermedia: Lenguaje y Comunicación, Desarrollo Social, Motor, Afectivo y el Pensamiento Concreto. Educación para la Promoción del Desarrollo Personal y Social en esta Etapa. Problemas y Dificultades más Frecuentes y su Respuesta Socioeducativa. Acompañamiento Socioeducativo a las Familias y al Profesorado</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 9</h1>
+  <h2>El Desarrollo en la Niñez Intermedia: Lenguaje y Comunicación, Desarrollo Social, Motor, Afectivo y el Pensamiento Concreto. Educación para la Promoción del Desarrollo Personal y Social en esta Etapa. Problemas y Dificultades más Frecuentes y su Respuesta Socioeducativa. Acompañamiento Socioeducativo a las Familias y al Profesorado</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Bloque:</strong> Materias Específicas</p>
+<p><strong>Tema Oficial:</strong> 9</p>
+<p><strong>Normativa Clave:</strong> Ley Orgánica 2/2006 (LOE) modificada por Ley Orgánica 3/2020 (LOMLOE); Ley 17/2007 de Educación de Andalucía (LEA); Decreto 101/2023 de Educación Primaria en Andalucía; Decreto 328/2010 (ROC Colegios Infantil y Primaria); Ley 4/2021 de Infancia de Andalucía.</p>
+<p><strong>Autores y Referentes:</strong> Jean Piaget, Lev Vygotsky, Erik Erikson, Lawrence Kohlberg, Albert Bandura, Robert Selman, Daniel Goleman.</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 9</div>
+  <div class="toc-item level-1">1. <strong>Introducción y contextualización en la Educación Social</strong></div>
+  <div class="toc-item level-1">2. <strong>El desarrollo en la niñez intermedia (6 a 12 años): Dimensiones evolutivas</strong></div>
+  <div class="toc-item level-2">2.1. El pensamiento concreto: Del egocentrismo a las operaciones concretas (Piaget)</div>
+  <div class="toc-item level-2">2.2. Desarrollo del lenguaje y comunicación: Alfabetización, metalingüística y pragmática</div>
+  <div class="toc-item level-2">2.3. Desarrollo motor y actividad física: Consolidación psicomotriz, destreza y juego reglado</div>
+  <div class="toc-item level-2">2.4. Desarrollo afectivo y de la personalidad: Laboriosidad frente a inferioridad (Erikson) y autoestima</div>
+  <div class="toc-item level-2">2.5. Desarrollo moral y social: El juicio moral (Kohlberg) y las dinámicas del grupo de iguales</div>
+  <div class="toc-item level-1">3. <strong>Educación para la promoción del desarrollo personal y social en la etapa de Primaria</strong></div>
+  <div class="toc-item level-2">3.1. Fomento de la autoeficacia, la resiliencia y la inteligencia emocional</div>
+  <div class="toc-item level-2">3.2. Educación para la convivencia democrática y resolución no violenta de conflictos</div>
+  <div class="toc-item level-2">3.3. Coeducación, prevención de estereotipos de género e inclusión intercultural</div>
+  <div class="toc-item level-1">4. <strong>Problemas y dificultades más frecuentes en la niñez intermedia y respuesta socioeducativa</strong></div>
+  <div class="toc-item level-2">4.1. Dificultades Específicas de Aprendizaje (DEA: dislexia, discalculia, disgrafía)</div>
+  <div class="toc-item level-2">4.2. Trastorno por Déficit de Atención con o sin Hiperactividad (TDAH) y problemas de conducta</div>
+  <div class="toc-item level-2">4.3. El acoso escolar (bullying): Dinámicas de agresión, victimización y pasividad grupal</div>
+  <div class="toc-item level-2">4.4. Aislamiento social, rechazo entre iguales y desfase curricular</div>
+  <div class="toc-item level-2">4.5. Uso prematuro e inadecuado de las TIC y adicción a pantallas / videojuegos</div>
+  <div class="toc-item level-1">5. <strong>Acompañamiento socioeducativo a las familias y al profesorado</strong></div>
+  <div class="toc-item level-2">5.1. Orientación a las familias: Estilos parentales inductivos, autonomía y supervisión digital</div>
+  <div class="toc-item level-2">5.2. Asesoramiento al profesorado tutor de Primaria y colaboración con el EOE</div>
+  <div class="toc-item level-2">5.3. Intervención sociométrica, programas de alumnado ayudante y mediación escolar</div>
+  <div class="toc-item level-2">5.4. Coordinación con los Servicios Sociales Comunitarios y programas de compensación</div>
+  <div class="toc-item level-1">6. <strong>Conclusión y rol del educador/a social</strong></div>
+  <div class="toc-item level-1">7. <strong>Anexo: Mapa conceptual y tabla sinóptica del Tema 9</strong></div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y contextualización en la Educación Social</h2>
+
+<p>La <strong>niñez intermedia</strong>, comprendida aproximadamente entre los <strong>6 y los 12 años</strong>, coincide cronológicamente con la etapa de la <strong>Educación Primaria</strong>. Tradicionalmente descrita por Freud como el periodo de latencia pulsional, representa en realidad una etapa de extraordinaria efervescencia cognitiva, emocional y comunitaria.</p>
+
+<p>En estos años, el menor trasciende definitivamente el núcleo doméstico primario para integrarse en la <strong>institución escolar formal</strong> y en el <strong>universo social del grupo de iguales</strong>. El pensamiento se despoja del egocentrismo perceptivo para conquistar la lógica operatoria concreta (Piaget); el lenguaje se convierte en herramienta de reflexión metalingüística y lectoescritura; y la personalidad se forja en la dialéctica entre la laboriosidad y el temor a la inferioridad (Erikson).</p>
+
+<p>Para el <strong>Educador y la Educadora Social</strong>, la niñez intermedia constituye un escenario de intervención capital. Es en este tramo donde cristalizan las primeras etiquetas de fracaso escolar, los desfases curriculares acumulados, las dinámicas de rechazo grupal o acoso (bullying) y los primeros episodios de absentismo escolar. El educador social aporta en los centros de Primaria y en las redes comunitarias una <strong>intervención socioeducativa preventiva y mediadora</strong>, acompañando a familias y docentes para consolidar una base emocional sana y garantizar el éxito escolar de todo el alumnado.</p>
+
+<h2 class="section-title">2. El desarrollo en la niñez intermedia (6 a 12 años): Dimensiones evolutivas</h2>
+
+<div class="diagram-box">
+  <pre>                  DIMENSIONES EVOLUTIVAS EN LA NIÑEZ INTERMEDIA
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ PENSAMIENTO CONCRETO │ LENGUAJE Y COMUNIC.  │ AFECTIVO Y MORAL     │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Reversibilidad     │ • Lectoescritura     │ • Laboriosidad (Erik)│
+ │ • Conservación masa  │ • Conciencia metalin.│ • Autoestima global  │
+ │ • Seriación y clases │ • Ironía y metáforas │ • Moral convencional │
+ └──────────┬───────────┴──────────┬───────────┴──────────┬───────────┘
+            ▼                      ▼                      ▼
+  OPERACIONES CONCRETAS      COMPETENCIA PRAGMÁTICA  GRUPO DE IGUALES
+  (Pensamiento lógico        (Debate, argumentación  (Juegos de reglas y
+   anclado a la realidad)     y comprensión crítica)  amistad recíproca)</pre>
+</div>
+
+<h3 class="sub-title">2.1. El pensamiento concreto: De las intuiciones a las operaciones (Jean Piaget)</h3>
+
+<p>Hacia los 6-7 años se produce una reorganización cognitiva decisiva: el paso del estadio preoperacional al <strong>Estadio de las Operaciones Concretas (7 a 11-12 años)</strong>:</p>
+
+<ul>
+  <li><strong>Descentración:</strong> Capacidad de considerar múltiples dimensiones de un problema de forma simultánea, superando el egocentrismo perceptivo.</li>
+  <li><strong>Reversibilidad del pensamiento:</strong> Comprensión de que una acción física o mental puede ser deshecha, retornando al estado original (por inversión o por compensación).</li>
+  <li><strong>Noción de Conservación:</strong> Constatar que las propiedades fundamentales de un objeto (sustancia, peso, volumen) permanecen constantes pese a los cambios de forma aparente (conservación de la materia hacia los 7-8 años, del peso a los 9-10 años y del volumen hacia los 11-12 años).</li>
+  <li><strong>Operaciones lógicas elementales:</strong>
+    <ul>
+      <li><strong>Seriación:</strong> Capacidad de ordenar elementos siguiendo una dimensión cuantitativa (de menor a mayor longitud).</li>
+      <li><strong>Clasificación jerárquica:</strong> Comprensión de la inclusión de clases (los gatos son felinos y los felinos son mamíferos).</li>
+    </ul>
+  </li>
+  <li><strong>Limitación del estadio:</strong> La lógica infantil se aplica con éxito sobre realidades manipulables, concretas o experimentadas directamente; el niño aún encuentra severas dificultades para razonar sobre hipótesis puramente formales o abstractas.</li>
+</ul>
+
+<h3 class="sub-title">2.2. Desarrollo del lenguaje y la comunicación</h3>
+
+<ul>
+  <li><strong>Consolidación de la lectoescritura:</strong> Acceso a la cultura letrada formal, permitiendo el aprendizaje autónomo y el desarrollo del pensamiento abstracto.</li>
+  <li><strong>Conciencia metalingüística:</strong> Capacidad de reflexionar sobre el propio lenguaje como un objeto formal (comprender la estructura gramatical, dobles sentidos, metáforas, ironías y juegos de palabras).</li>
+  <li><strong>Pragmática avanzada:</strong> Adaptación del registro comunicativo al interlocutor (maestro, compañero, familia) y capacidad de defender puntos de vista mediante la argumentación lógica.</li>
+</ul>
+
+<h3 class="sub-title">2.3. Desarrollo motor y actividad física</h3>
+
+<ul>
+  <li><strong>Afianzamiento psicomotor:</strong> Maduración neuromuscular que perfecciona el equilibrio, la fuerza, la velocidad y la coordinación óculo-manual y óculo-pédica.</li>
+  <li><strong>Motricidad fina especializada:</strong> Precisión grafomotora en la escritura y habilidad en el manejo de instrumentos escolares, tecnológicos o artísticos.</li>
+  <li><strong>El juego reglado (Piaget):</strong> Los juegos de movimiento y simbólicos dejan paso a los <strong>juegos de reglas colectivas</strong> (deportes de equipo, juegos tradicionales), donde la norma ya no es sagrada e inmutable, sino el resultado del acuerdo mutuo entre iguales.</li>
+</ul>
+
+<h3 class="sub-title">2.4. Desarrollo afectivo y de la personalidad</h3>
+
+<ul>
+  <li><strong>Laboriosidad frente a Inferioridad (Erik Erikson):</strong> El reto psicosocial central consiste en sentirse competente en el dominio de las destrezas culturales y escolares valoradas por la sociedad. Si el menor percibe que su esfuerzo produce logros, consolida un sentimiento de <strong>autoeficacia (Bandura)</strong>; si experimenta fracaso recurrente o descalificación, interioriza un complejo de <strong>inferioridad y resignación aprendida</strong>.</li>
+  <li><strong>Evolución del autoconcepto y la autoestima:</strong> Pasa de descripciones físicas y optimistas ("tengo ojos negros y corro rápido") a definiciones psicológicas y comparativas ("soy bueno en mates pero tímido con los nuevos"). La <strong>comparación social</strong> en el grupo de iguales se convierte en el principal barómetro de la autoestima infantil.</li>
+</ul>
+
+<h3 class="sub-title">2.5. Desarrollo moral y dinámicas sociales (Kohlberg y Selman)</h3>
+
+<ul>
+  <li><strong>Juicio Moral de Lawrence Kohlberg:</strong> Transición de la <strong>Moral Preconvencional</strong> (obedecer para evitar el castigo físico o conseguir recompensas) hacia la <strong>Moral Convencional</strong> (Etapa de "buen chico/buena chica" y conformidad con el orden social establecido).</li>
+  <li><strong>Adopción de perspectivas sociales (Robert Selman):</strong> Entre los 6 y 10 años, el menor comprende que los demás pueden interpretar una misma situación de manera distinta a la suya, desarrollando la empatía recíproca.</li>
+  <li><strong>La cultura del grupo de iguales:</strong> La amistad se fundamenta en la confianza mutua, el apoyo afectivo y la lealtad. Emergen jerarquías grupales y estructuras sociométricas (populares, líderes positivos, ignorados, rechazados y controvertidos).</li>
+</ul>
+
+<h2 class="section-title">3. Educación para la promoción del desarrollo personal y social en Primaria</h2>
+
+<ol>
+  <li><strong>Educación Emocional e Inteligencia Afectiva (Daniel Goleman):</strong> Fomento de la identificación de emociones primarias y secundarias, tolerancia a la frustración y autocontrol.</li>
+  <li><strong>Promoción de la resiliencia y el autoconcepto positivo:</strong> Diseñar experiencias escolares donde cada alumno experimente el éxito en alguna dimensión (artística, deportiva, manual, relacional), evitando que el rendimiento estrictamente académico monopolice el valor de la persona.</li>
+  <li><strong>Cultura de paz y coeducación:</strong> Desactivación de roles y estereotipos machistas en el patio y en los juegos colectivos; programas de resolución dialogada de desacuerdos.</li>
+</ol>
+
+<h2 class="section-title">4. Problemas y dificultades más frecuentes en la niñez intermedia</h2>
+
+<div class="diagram-box">
+  <pre>                        DIFICULTADES COMUNES EN PRIMARIA
+           ┌──────────────────────┼──────────────────────┐
+       APRENDIZAJE Y ATENCIÓN         CONDUCTA Y AFECTIVIDAD     RELACIONAL Y DIGITAL
+    ├─ Dificultades DEA (dislexia) ├─ Oposicionismo desafiante ├─ Acoso escolar (bullying)
+    ├─ TDAH (inatento/hiperactivo) ├─ Ansiedad y baja autoest. ├─ Exclusión / rechazo grupo
+    └─ Desfase curricular inicial  └─ Baja tolerancia frustrac.└─ Adicción pantallas/videoj.</pre>
+</div>
+
+<h3 class="sub-title">4.1. Dificultades Específicas de Aprendizaje (DEA) y TDAH</h3>
+
+<ul>
+  <li><strong>Dislexia, disortografía y discalculia:</strong> Trastornos neurobiológicos que dificultan el procesamiento lector o del cálculo. Si no se detectan tempranamente, generan angustia escolar, rechazo a la tarea y baja autoestima.</li>
+  <li><strong>TDAH (Trastorno por Déficit de Atención con o sin Hiperactividad):</strong> Dificultad para mantener la atención sostenida, impulsividad conductual e hiperactividad motriz que interfiere gravemente en el rendimiento y en las relaciones con compañeros y profesorado.</li>
+</ul>
+
+<h3 class="sub-title">4.2. El Acoso Escolar (Bullying)</h3>
+
+<p>Dinámica de violencia mantenida en el tiempo, basada en el abuso de poder y la ley del silencio:</p>
+
+<ul>
+  <li><strong>Triángulo del acoso:</strong> Acosador/es, víctima y espectadores pasivos (que refuerzan la conducta con su silencio o mofa).</li>
+  <li><strong>Tipología:</strong> Físico, verbal, relacional (exclusión social activa) y la emergencia precoz del <strong>ciberacoso (cyberbullying)</strong> a través de grupos de mensajería instantánea y videojuegos online.</li>
+</ul>
+
+<h3 class="sub-title">4.3. Desmotivación, absentismo y vulnerabilidad social</h3>
+
+<p>En familias desestructuradas o en exclusión socioeconómica, la falta de apoyo en las tareas escolares genera un distanciamiento progresivo del ritmo del aula, dando lugar a los primeros episodios de <strong>absentismo escolar selectivo o intermitente</strong>.</p>
+
+<h2 class="section-title">5. Acompañamiento socioeducativo a las familias y al profesorado</h2>
+
+<h3 class="sub-title">5.1. Orientación a las familias</h3>
+
+<p>El Educador/a Social orienta hacia pautas educativas equilibradas:</p>
+
+<ul>
+  <li><strong>Fomento del estilo democrático / inductivo:</strong> Combinación de alto afecto, comunicación constante y normas claras y firmes, superando tanto el autoritarismo punitivo como el permisivismo negligente.</li>
+  <li><strong>Supervisión y mediación del uso digital:</strong> Establecimiento de acuerdos familiares para retrasar la entrega de smartphones individuales, limitar los tiempos de juego y erradicar pantallas de los dormitorios.</li>
+  <li><strong>Acompañamiento en la rutina de estudio:</strong> Promover la autonomía del menor en los deberes sin caer en la sobreprotección ni en la suplencia de responsabilidades.</li>
+</ul>
+
+<h3 class="sub-title">5.2. Asesoramiento al profesorado de Educación Primaria</h3>
+
+<ul>
+  <li><strong>Gestión positiva del aula:</strong> Estrategias de refuerzo social contingente, estructuración de tiempos y diseño de normas consensuadas con el alumnado.</li>
+  <li><strong>Diagnóstico del clima grupal:</strong> Aplicación de <strong>sociogramas escolares</strong> para detectar alumnado en situación de aislamiento o riesgo de acoso.</li>
+  <li><strong>Programas de Alumnado Ayudante:</strong> Formación de escolares como observadores activos y mediadores para la acogida de nuevos compañeros y la resolución pacífica de microconflictos cotidianos.</li>
+</ul>
+
+<h3 class="sub-title">5.3. Coordinación en red con el entorno</h3>
+
+<ul>
+  <li>Colaboración directa con los orientadores del <strong>Equipo de Orientación Educativa (EOE)</strong> de zona para canalizar adaptaciones curriculares y apoyos sociopedagógicos.</li>
+  <li>Enlace con los <strong>Servicios Sociales Comunitarios (SSCC)</strong> y las Comisiones Locales de Absentismo para intervenir de forma inmediata ante cualquier señal de desescolarización incipiente.</li>
+</ul>
+
+<h2 class="section-title">6. Conclusión y rol del educador/a social</h2>
+
+<p>La niñez intermedia es la etapa donde se consolidan las herramientas cognitivas, cívicas y afectivas que acompañarán al sujeto toda su vida. Un desarrollo exitoso en este periodo previene el desarraigo adolescente y sienta las bases de la ciudadanía democrática.</p>
+
+<p>El <strong>Educador y la Educadora Social</strong> ejerce una labor vertebradora en los colegios de Primaria: ayuda a desdramatizar los conflictos, combate el acoso escolar desde la pedagogía del cuidado y la convivencia, empodera a las familias en pautas educativas coherentes y asegura que la escuela sea un espacio acogedor donde ningún menor se sienta invisible o inferior.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">7. Anexo: Mapa conceptual y tabla sinóptica del Tema 9</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Dimensión Evolutiva</th>
+      <th>Teorías y Autores Clave</th>
+      <th>Manifestaciones y Dificultades</th>
+      <th>Intervención Socioeducativa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Cognitiva (Pensamiento)</strong></td>
+      <td>• Jean Piaget (Operaciones Concretas, 7-12 años).</td>
+      <td>• Reversibilidad, conservación, seriación y clasificación.<br>• Lógica anclada a lo real.</td>
+      <td>Metodologías manipulativas, situaciones de aprendizaje vivenciadas y trabajo en equipo.</td>
+    </tr>
+    <tr>
+      <td><strong>Lenguaje y Comunicación</strong></td>
+      <td>• Alfabetización formal y lectura crítica.<br>• Conciencia metalingüística y pragmática.</td>
+      <td>• Comprensión de dobles sentidos e ironías.<br>• Dificultades DEA (dislexia, disgrafía).</td>
+      <td>Fomento lector dialógico, tertulias literarias y adaptaciones metodológicas en el aula.</td>
+    </tr>
+    <tr>
+      <td><strong>Afectiva y Personalidad</strong></td>
+      <td>• Erikson (Laboriosidad vs. Inferioridad).<br>• Bandura (Autoeficacia).</td>
+      <td>• Comparación social y autoestima global.<br>• Sentimiento de inferioridad y frustración.</td>
+      <td>Refuerzo positivo de talentos no académicos, resiliencia y educación emocional.</td>
+    </tr>
+    <tr>
+      <td><strong>Desarrollo Moral</strong></td>
+      <td>• Kohlberg (Moral Convencional).<br>• Selman (Adopción de perspectivas).</td>
+      <td>• Conformidad con el orden social y rol de "buen chico".<br>• Capacidad empática hacia los demás.</td>
+      <td>Asambleas de clase, dilemas morales participativos y educación en valores democráticos.</td>
+    </tr>
+    <tr>
+      <td><strong>Grupo de Iguales</strong></td>
+      <td>• Juegos de reglas colectivas.<br>• Amistad recíproca y lealtad.</td>
+      <td>• Dinámicas de acoso escolar (bullying).<br>• Aislamiento, rechazo social y motes.</td>
+      <td>Sociogramas de aula, programas de Alumnado Ayudante y mediación escolar entre iguales.</td>
+    </tr>
+    <tr>
+      <td><strong>Atención y Conducta</strong></td>
+      <td>• TDAH • Trastornos de conducta disocial.</td>
+      <td>• Impulsividad, déficit atencional y rabia.</td>
+      <td>Estructuración de rutinas, refuerzo positivo contingente y acuerdos de convivencia.</td>
+    </tr>
+    <tr>
+      <td><strong>Acompañamiento Familiar</strong></td>
+      <td>• Estilo parental inductivo/democrático.</td>
+      <td>• Sobreprotección, autoritarismo o desatención digital.</td>
+      <td>Escuelas de familias, límites afectuosos y supervisión estricta de pantallas y videojuegos.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>• Instrucciones de 17 de septiembre de 2010.</td>
+      <td>• Absentismo precoz y desprotección (SIMIA).</td>
+      <td>Mediación escolar, enlace con EOE y Servicios Sociales y apoyo sociofamiliar directo.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

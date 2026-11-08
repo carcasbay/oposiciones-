@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 27: Métodos y Técnicas de Intervención Socioeducativa en el Ámbito Escolar. El Estudio de Necesidades. Diseño, Planificación y Metodología en la Intervención Socioeducativa. La Integralidad de las Acciones como Referente para la Intervención Socioeducativa. El Estudio de Casos</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 27</h1>
+  <h2>Métodos y Técnicas de Intervención Socioeducativa en el Ámbito Escolar. El Estudio de Necesidades. Diseño, Planificación y Metodología en la Intervención Socioeducativa. La Integralidad de las Acciones como Referente para la Intervención Socioeducativa. El Estudio de Casos</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Carácter:</strong> Materias Específicas del Programa Oficial</p>
+<p><strong>Marco Legal y Documental:</strong></p>
+<ul class="meta-sublist">
+<li>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA).</li>
+<li>Ley Orgánica 2/2006 (LOE), modificada por la LOMLOE 3/2020.</li>
+<li>Instrucciones de 17 de septiembre de 2010 de la Dirección General de Participación e Innovación Educativa.</li>
+<li>Decretos 327/2010 y 328/2010 (Reglamentos Orgánicos de Centros docentes en Andalucía).</li>
+<li>Orden de 20 de junio de 2011 (Medidas de convivencia escolar).</li>
+</ul>
+<p><strong>Autores y Doctrinas de Referencia:</strong> Jonathan Bradshaw (Taxonomía de las necesidades sociales: normativa, sentida, expresada, comparativa), Ezequiel Ander-Egg (Metodología y diseño de proyectos sociales), Robert K. Yin (Metodología del estudio de casos), Violeta Núñez (Técnicas y modelos de Educación Social), Jaume Trilla (Pedagogía Social y animación).</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 27</div>
+  <div class="toc-item level-1">1. Introducción y rigor metodológico en la intervención socioeducativa escolar.</div>
+  <div class="toc-item level-1">2. Métodos y técnicas socioeducativas aplicadas a la institución educativa:</div>
+  <div class="toc-item level-2">2.1. Diferenciación epistemológica: Método, técnica e instrumento.</div>
+  <div class="toc-item level-2">2.2. El ciclo metodológico de intervención: Diagnóstico, diseño, aplicación y evaluación.</div>
+  <div class="toc-item level-1">3. El estudio y diagnóstico de necesidades socioeducativas:</div>
+  <div class="toc-item level-2">3.1. La tipología de necesidades sociales de Jonathan Bradshaw.</div>
+  <div class="toc-item level-2">3.2. Técnicas de recogida de datos y diagnóstico comunitario (sociometría, DAFO, grupos de discusión).</div>
+  <div class="toc-item level-1">4. Diseño y planificación de proyectos socioeducativos:</div>
+  <div class="toc-item level-2">4.1. Estructura canónica de un proyecto socioeducativo.</div>
+  <div class="toc-item level-2">4.2. Formulación de objetivos operativos SMART y cronogramas (Gantt).</div>
+  <div class="toc-item level-1">5. La integralidad de las acciones como principio rector de la intervención:</div>
+  <div class="toc-item level-2">5.1. El menor como totalidad biopsicosocial indivisible.</div>
+  <div class="toc-item level-2">5.2. La intervención multinivel simultánea: Alumno, aula, familia y comunidad.</div>
+  <div class="toc-item level-1">6. El estudio de casos como metodología de intervención individualizada:</div>
+  <div class="toc-item level-2">6.1. Concepto y fundamentación del estudio de casos (Robert K. Yin).</div>
+  <div class="toc-item level-2">6.2. Fases operativas: De la demanda inicial al Plan Individualizado de Intervención Socioeducativa (PIIS).</div>
+  <div class="toc-item level-1">7. Conclusión.</div>
+  <div class="toc-item level-1">8. Anexo: Mapa conceptual y tabla sinóptica del Tema 27.</div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y rigor metodológico en la intervención socioeducativa escolar</h2>
+
+<p>La intervención socioeducativa en el ámbito escolar no puede fundamentarse en la improvisación, el voluntarismo intuitivo ni la simple buena voluntad; constituye una <strong>práctica científica y técnica fundamentada en la Pedagogía Social</strong>, que exige rigor metodológico, precisión en el diagnóstico de necesidades y una planificación sistemática evaluable (Ezequiel Ander-Egg).</p>
+
+<p>En los centros educativos andaluces, donde confluyen situaciones de alta complejidad relacional, vulnerabilidad sociofamiliar y diversidad cultural, el Educador y la Educadora Social despliega un repertorio estructurado de métodos y técnicas orientados a transformar la realidad escolar. Su labor no se limita a "apagar fuegos" disciplinarios puntuales, sino que diseña proyectos pedagógicos con visión de futuro, sustentados en el <strong>principio de integralidad</strong> y en el <strong>estudio riguroso de casos individuales</strong> (Instrucciones de 17 de septiembre de 2010).</p>
+
+<h2 class="section-title">2. Métodos y técnicas socioeducativas aplicadas al centro escolar</h2>
+
+<h3 class="sub-title">2.1. Diferenciación epistemológica</h3>
+
+<ul>
+  <li><strong>Método:</strong> Camino o estrategia global y sistemática que orienta la acción hacia fines educativos predeterminados (ejemplo: método dialógico de Paulo Freire, método de proyectos comunitarios).</li>
+  <li><strong>Técnica:</strong> Procedimiento específico y operativo estructurado para alcanzar metas concretas dentro del método (ejemplo: role-playing, técnica de mediación, sociograma).</li>
+  <li><strong>Instrumento:</strong> Herramienta material o soporte documental utilizado para aplicar la técnica (ejemplo: protocolo SIMIA, hoja de registro de Séneca, escala Likert).</li>
+</ul>
+
+<h3 class="sub-title">2.2. Las Fases del Ciclo Metodológico</h3>
+
+<div class="diagram-box">
+  <pre>                     CICLO METODOLÓGICO DE INTERVENCIÓN
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ FASE 1: DIAGNÓSTICO  │ FASE 2: PLANIFICACIÓN│ FASE 3: APLICACIÓN Y │
+ │ DE NECESIDADES       │ Y DISEÑO FORMAL      │ EVALUACIÓN INTEGRAL  │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Análisis del con-  │ • Justificación PEC  │ • Ejecución comparti-│
+ │   texto sociofamiliar│ • Objetivos SMART    │   da con el equipo   │
+ │ • Tipología Bradshaw │ • Metodología DUA    │ • Evaluación formativ│
+ │ • Matriz DAFO escolar│ • Recursos y Gantt   │ • Memoria final      │
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<h2 class="section-title">3. El estudio y diagnóstico de necesidades socioeducativas</h2>
+
+<p>El diagnóstico es el punto de partida indispensable: intervenir sin diagnóstico previo conduce a la ineficacia o al agravamiento del problema.</p>
+
+<h3 class="sub-title">3.1. Taxonomía de las Necesidades Sociales (Jonathan Bradshaw)</h3>
+
+<ol>
+  <li><strong>Necesidad Normativa:</strong> Fijada por los estándares legales o técnicos oficiales (ejemplo: absentismo que supera el 25% fijado por la Orden de 19 de septiembre de 2005).</li>
+  <li><strong>Necesidad Sentida / Percibida:</strong> La que experimentan subjetivamente las familias o estudiantes (ejemplo: angustia adolescente por acoso en redes o falta de espacio de estudio).</li>
+  <li><strong>Necesidad Expresada / Demandada:</strong> La necesidad sentida que se transforma en una petición formal ante el centro o servicios sociales.</li>
+  <li><strong>Necesidad Comparativa:</strong> Disparidad observada al contrastar un centro situado en una zona vulnerable con los recursos y logros de otros centros docentes del municipio.</li>
+</ol>
+
+<h3 class="sub-title">3.2. Técnicas Diagnósticas Aplicadas</h3>
+
+<ul>
+  <li><strong>Sociometría de Aula (Sociograma):</strong> Revela la estructura informal del grupo-clase, identificando líderes positivos, subgrupos cerrados y alumnos aislados o rechazados.</li>
+  <li><strong>Matriz DAFO:</strong> Análisis institucional de Debilidades, Amenazas, Fortalezas y Oportunidades del centro educativo y su entorno.</li>
+  <li><strong>Grupos de Discusión:</strong> Encuentros cualitativos con familias y profesorado para explorar demandas ocultas.</li>
+</ul>
+
+<h2 class="section-title">4. Diseño y planificación de proyectos socioeducativos</h2>
+
+<p>Todo proyecto socioeducativo diseñado por el Educador Social en el marco del POAT debe estructurarse conforme a un esquema técnico estandarizado:</p>
+
+<ol>
+  <li><strong>Denominación y Fundamentación:</strong> Título significativo y justificación pedagógica enraizada en el PEC y la normativa andaluza.</li>
+  <li><strong>Objetivos Operativos:</strong> Definidos bajo la regla <strong>SMART</strong> (Específicos, Medibles, Alcanzables, Relevantes y Temporalizados).</li>
+  <li><strong>Población Destinataria:</strong> Criterios claros de selección (universal, selectiva o indicada).</li>
+  <li><strong>Contenidos y Metodología:</strong> Dinámicas cooperativas basadas en la pedagogía activa y el Diseño Universal para el Aprendizaje (DUA).</li>
+  <li><strong>Cronograma y Temporalización:</strong> Organización temporal secuenciada mediante <strong>Diagrama de Gantt</strong>.</li>
+  <li><strong>Recursos y Presupuesto:</strong> Infraestructuras del centro, personal colaborador y recursos comunitarios sin coste.</li>
+  <li><strong>Diseño Evaluativo:</strong> Indicadores de proceso (asistencia, implicación) e indicadores de impacto (reducción de partes de disciplina, mejora de calificaciones).</li>
+</ol>
+
+<h2 class="section-title">5. La integralidad de las acciones como referente de la intervención</h2>
+
+<p>El <strong>principio de integralidad</strong> constituye el axioma fundamental de la Educación Social:</p>
+
+<ul>
+  <li><strong>El Sujeto como Totalidad Indivisible:</strong> Ningún menor puede ser fragmentado en un "cerebro que aprende" separado de sus emociones, su cuerpo, su historia familiar y su dolor social.</li>
+  <li><strong>Acción Ecológica Simultánea:</strong> Para resolver un problema de conducta escolar no basta con intervenir individualmente con el alumno; es imprescindible actuar a la vez:
+    <ul>
+      <li>En el <strong>aula</strong>, modificando metodologías y dinámicas de grupo.</li>
+      <li>En la <strong>familia</strong>, apoyando pautas de crianza y reduciendo el estrés doméstico.</li>
+      <li>En la <strong>comunidad</strong>, garantizando recursos de ocio y compensación material.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 class="section-title">6. El estudio de casos como metodología de intervención individualizada</h2>
+
+<p>El <strong>estudio de casos</strong> (Robert K. Yin) es la metodología idónea para abordar situaciones de alta complejidad sociofamiliar o riesgo grave de exclusión:</p>
+
+<div class="diagram-box">
+  <pre>                  FASES DEL ESTUDIO DE CASOS SOCIOEDUCATIVO
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ 1. DEMANDA Y EXPLOR. │ 2. DIAGNÓSTICO HIPOT.│ 3. EL PIIS Y SEGUIM. │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Detección en tutor │ • Contraste de datos │ • Diseño del Plan    │
+ │ • Entrevistas socio- │   de Séneca, SSCC,   │   Individualizado    │
+ │   familiares         │   salud y claustro   │ • Acuerdos con menor │
+ │ • Observación patio  │ • Formulación de la  │ • Evaluación mensual │
+ │   y aula             │   hipótesis soc-ed.  │   y reajuste         │
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<ol>
+  <li><strong>Detección y Exploración Inicial:</strong> Notificación del tutor o Jefatura de Estudios; recogida objetiva de antecedentes en <em>Séneca</em>.</li>
+  <li><strong>Recogida Cualitativa de Información:</strong> Entrevistas individualizadas con el alumno, la familia, el equipo docente y contacto con Servicios Sociales Comunitarios.</li>
+  <li><strong>Hipótesis Diagnóstica:</strong> Identificación de las causas profundas que sostienen el desajuste escolar.</li>
+  <li><strong>Elaboración del PIIS (Plan Individualizado de Intervención Socioeducativa):</strong> Documento técnico que fija objetivos personales, tareas concretas asumidas por cada parte y calendario de reuniones.</li>
+  <li><strong>Seguimiento y Cierre:</strong> Evaluación compartida de logros y retirada progresiva del acompañamiento hacia la autonomía plena.</li>
+</ol>
+
+<h2 class="section-title">7. Conclusión</h2>
+
+<p>La intervención socioeducativa rigurosa no promete soluciones mágicas inmediatas, pero ofrece un <strong>camino estructurado, científico y humano para transformar realidades escolares complejas</strong>.</p>
+
+<p>El <strong>Educador y la Educadora Social</strong> combina el dominio técnico de los métodos de planificación con la calidez del vínculo pedagógico: diagnostica con precisión, diseña proyectos de equidad comunitaria y acompaña caso a caso a cada estudiante para que su paso por la escuela pública andaluza sea una experiencia de éxito y libertad.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">8. Anexo: Mapa conceptual y tabla sinóptica del Tema 27</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Normativa / Doctrinas Clave</th>
+      <th>Conceptos e Implicación Práctica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Rigor Metodológico</strong></td>
+      <td>Ezequiel Ander-Egg • Jaume Trilla</td>
+      <td>Ciclo científico: diagnóstico inicial, diseño operativo, aplicación compartida y evaluación.</td>
+    </tr>
+    <tr>
+      <td><strong>Estudio de Necesidades</strong></td>
+      <td>Jonathan Bradshaw</td>
+      <td>Necesidades normativas, sentidas, expresadas y comparativas. Técnicas: sociograma y DAFO.</td>
+    </tr>
+    <tr>
+      <td><strong>Diseño de Proyectos</strong></td>
+      <td>Criterios SMART • Diagrama de Gantt</td>
+      <td>Objetivos operativos mensurables, metodología activa DUA, recursos y memoria evaluativa.</td>
+    </tr>
+    <tr>
+      <td><strong>Integralidad</strong></td>
+      <td>Modelo Ecológico • Violeta Núñez</td>
+      <td>Intervención simultánea e indivisible sobre el menor, el aula, la familia y el barrio.</td>
+    </tr>
+    <tr>
+      <td><strong>Estudio de Casos</strong></td>
+      <td>Robert K. Yin</td>
+      <td>Metodología de análisis en profundidad para situaciones complejas de riesgo o desamparo.</td>
+    </tr>
+    <tr>
+      <td><strong>El PIIS</strong></td>
+      <td>Plan Individualizado Socioeducativo</td>
+      <td>Herramienta técnica personalizada con compromisos evaluables suscritos con el menor y la familia.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>Instrucciones de 17 de septiembre de 2010</td>
+      <td>Diseñador de proyectos en el POAT, gestor de estudios de caso y dinamizador comunitario.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 8: El Desarrollo en la Primera Infancia: Lenguaje y Comunicación, Desarrollo Social, Motor, Afectivo, el Pensamiento Percepto-Motor. Implicaciones Socioeducativas. Educación para la Promoción del Desarrollo Personal y Social en esta Etapa. Problemas y Dificultades más Frecuentes y su Respuesta Socioeducativa. Acompañamiento Socioeducativo a las Familias y al Profesorado</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 8</h1>
+  <h2>El Desarrollo en la Primera Infancia: Lenguaje y Comunicación, Desarrollo Social, Motor, Afectivo, el Pensamiento Percepto-Motor. Implicaciones Socioeducativas. Educación para la Promoción del Desarrollo Personal y Social en esta Etapa. Problemas y Dificultades más Frecuentes y su Respuesta Socioeducativa. Acompañamiento Socioeducativo a las Familias y al Profesorado</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Bloque:</strong> Materias Específicas</p>
+<p><strong>Tema Oficial:</strong> 8</p>
+<p><strong>Normativa Clave:</strong> Ley Orgánica 2/2006 (LOE) modificada por Ley Orgánica 3/2020 (LOMLOE); Ley 17/2007 (LEA); Decreto 100/2023 de Educación Infantil en Andalucía; Ley 1/2023, de 16 de febrero, de Atención Temprana de Andalucía; Ley 4/2021 de Infancia de Andalucía.</p>
+<p><strong>Autores y Referentes:</strong> Jean Piaget, Lev Vygotsky, Jerome Bruner, John Bowlby, Mary Ainsworth, Henri Wallon, Noam Chomsky, Donald Winnicott, Urie Bronfenbrenner.</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 8</div>
+  <div class="toc-item level-1">1. <strong>Introducción y justificación en la Educación Social</strong></div>
+  <div class="toc-item level-1">2. <strong>El desarrollo en la primera infancia (0 a 6 años): Dimensiones evolutivas</strong></div>
+  <div class="toc-item level-2">2.1. Desarrollo del lenguaje y la comunicación: De la etapa prelingüística a la competencia comunicativa</div>
+  <div class="toc-item level-2">2.2. Desarrollo motor y percepto-motor: Leyes madurativas, esquema corporal y psicomotricidad</div>
+  <div class="toc-item level-2">2.3. Desarrollo afectivo y teoría del apego (Bowlby y Ainsworth)</div>
+  <div class="toc-item level-2">2.4. El pensamiento percepto-motor y cognitivo: Del estadio sensoriomotor al preoperacional (Piaget)</div>
+  <div class="toc-item level-2">2.5. Desarrollo social: Socialización primaria, del juego individual al juego simbólico y compartido</div>
+  <div class="toc-item level-1">3. <strong>Implicaciones socioeducativas y promoción del desarrollo personal y social</strong></div>
+  <div class="toc-item level-2">3.1. La educación infantil como entorno preventivo y compensador de desigualdades</div>
+  <div class="toc-item level-2">3.2. El juego como motor del desarrollo global y herramienta pedagógica</div>
+  <div class="toc-item level-2">3.3. Creación de entornos afectivos seguros, estimulantes e inclusivos</div>
+  <div class="toc-item level-1">4. <strong>Problemas y dificultades más frecuentes en la primera infancia y su respuesta socioeducativa</strong></div>
+  <div class="toc-item level-2">4.1. Trastornos y retrasos en la adquisición del lenguaje y la comunicación (TEL/TDL, dislalias, mutismo)</div>
+  <div class="toc-item level-2">4.2. Dificultades en la vinculación afectiva: Apego inseguro y desorganizado</div>
+  <div class="toc-item level-2">4.3. Desregulación emocional y conductual: Rabietas, agresividad y hábitos cotidianos (sueño, esfínteres)</div>
+  <div class="toc-item level-2">4.4. Señales de alarma temprana en el neurodesarrollo (TEA, retraso madurativo)</div>
+  <div class="toc-item level-2">4.5. Situaciones de riesgo, negligencia y maltrato infantil precoz</div>
+  <div class="toc-item level-1">5. <strong>Acompañamiento socioeducativo a las familias y al profesorado</strong></div>
+  <div class="toc-item level-2">5.1. El marco andaluz: Ley 1/2023 de Atención Temprana y coordinación con los CAIT</div>
+  <div class="toc-item level-2">5.2. Asesoramiento a las familias en parentalidad positiva y pautas de crianza respetuosa</div>
+  <div class="toc-item level-2">5.3. Acompañamiento técnico al profesorado de Educación Infantil y coordinación con el EOE</div>
+  <div class="toc-item level-2">5.4. Trabajo en red comunitario: Servicios Sociales, Pediatría y recursos del entorno</div>
+  <div class="toc-item level-1">6. <strong>Conclusión y rol del educador/a social</strong></div>
+  <div class="toc-item level-1">7. <strong>Anexo: Mapa conceptual y tabla sinóptica del Tema 8</strong></div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y justificación en la Educación Social</h2>
+
+<p>La <strong>primera infancia (de los 0 a los 6 años)</strong> constituye la etapa más crítica, plástica y determinante en la biografía del ser humano. En este periodo se asientan las bases de la arquitectura cerebral, la vinculación afectiva, la adquisición del lenguaje, la estructuración motriz y los patrones básicos de relación social.</p>
+
+<p>Las investigaciones en neurociencia y psicología del desarrollo (Piaget, Vygotsky, Bowlby, Bruner) evidencian que los primeros años de vida definen las trayectorias de aprendizaje y salud emocional futuras. Cuando un menor crece en un entorno de apego seguro y estimulación adecuada, desarrolla resiliencia y competencias adaptativas; por el contrario, la exposición a situaciones de vulnerabilidad, pobreza extrema, estrés tóxico o negligencia parental puede condicionar irreversiblemente su desarrollo neurobiológico y social.</p>
+
+<p>Para el <strong>Educador y la Educadora Social</strong>, esta etapa representa el <strong>espacio por excelencia de la prevención primaria y secundaria</strong>. En el marco de la <strong>Ley 1/2023 de Atención Temprana de Andalucía</strong> y de la <strong>Ley 4/2021 de Infancia</strong>, el educador social despliega una intervención multidimensional: detecta precozmente señales de alarma, acompaña a las familias vulnerables fomentando la parentalidad positiva, colabora con los equipos docentes de Educación Infantil y teje redes de coordinación con los servicios sanitarios y comunitarios para blindar el bienestar infantil desde el origen de la vida.</p>
+
+<h2 class="section-title">2. El desarrollo en la primera infancia (0 a 6 años): Dimensiones evolutivas</h2>
+
+<p>El desarrollo infantil es un proceso global, unitario y continuo, condicionado por la interacción bidireccional entre la maduración biológica y el entorno sociocultural (modelo bioecológico de Bronfenbrenner).</p>
+
+<div class="diagram-box">
+  <pre>                        DIMENSIONES DEL DESARROLLO (0-6 AÑOS)
+           ┌──────────────────────┼──────────────────────┐
+    LENGUAJE Y COMUNICACIÓN     MOTOR Y PSICOMOTRIZ       AFECTIVO Y APEGO
+ ├─ Prelingüística (0-12m)   ├─ Leyes céfalo/próximo  ├─ Apego seguro (Bowlby)
+ ├─ Lingüística (holofrase)  ├─ Esquema corporal      ├─ Autorregulación
+ └─ Pragmática y social      └─ Lateralidad / espacio └─ Autoconcepto inicial
+           │                                             │
+           └──────────────────────┬──────────────────────┘
+                                  ▼
+                   COGNITIVO Y SOCIAL (PIAGET / VYGOTSKY)
+                   ├─ Sensoriomotor (0-2 años: permanencia objeto)
+                   ├─ Preoperacional (2-6 años: función simbólica)
+                   └─ Socialización: Juego paralelo a socio-dramático</pre>
+</div>
+
+<h3 class="sub-title">2.1. Desarrollo del lenguaje y la comunicación</h3>
+
+<ul>
+  <li><strong>Etapa prelingüística (0 a 12 meses):</strong>
+    <ul>
+      <li>Comunicación a través del llanto, sonrisa social (2 meses), balbuceo y laleo (6 meses).</li>
+      <li>Aparición de <strong>gestos protodeclarativos y protoimperativos</strong> (9-10 meses) y protoconversaciones basadas en la sintonía afectiva (Bruner: Sistema de Apoyo a la Adquisición del Lenguaje - LASS).</li>
+    </ul>
+  </li>
+  <li><strong>Etapa lingüística (a partir de los 12 meses):</strong>
+    <ul>
+      <li><strong>Holofrase (12-18 meses):</strong> Una sola palabra condensa el significado de una oración completa (<em>"agua"</em> = <em>"dame agua"</em>).</li>
+      <li><strong>Habla telegráfica (18-24 meses):</strong> Combinación de dos palabras (<em>"nene coche"</em>). Explosión léxica (vocabulario de más de 50 palabras).</li>
+      <li><strong>Desarrollo morfosintáctico y pragmático (3 a 6 años):</strong> Construcción de oraciones complejas, superación de sobrerregulaciones gramaticales (<em>"hacido"</em> por <em>"hecho"</em>) y uso social del lenguaje para negociar, narrar y expresar emociones. Vygotsky destaca el <strong>lenguaje egocéntrico</strong> como herramienta de autorregulación del pensamiento que culminará en el lenguaje interiorizado.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 class="sub-title">2.2. Desarrollo motor y percepto-motor</h3>
+
+<p>Sigue dos leyes psicofisiológicas universales:</p>
+
+<ol>
+  <li><strong>Ley céfalo-caudal:</strong> El control madurativo desciende de la cabeza a los pies (control cefálico, sedestación, bipedestación y marcha).</li>
+  <li><strong>Ley próximo-distal:</strong> El control progresa desde el eje central del cuerpo hacia las extremidades (hombro, brazo, muñeca, pinza digital fina).</li>
+</ol>
+
+<p>Aportaciones de la psicomotricidad (Wallon, Le Boulch, Picq y Vayer):</p>
+
+<ul>
+  <li><strong>Esquema corporal:</strong> Representación mental que el niño construye de su propio cuerpo en reposo y movimiento a partir de sensaciones propioceptivas y visuales.</li>
+  <li><strong>Tono muscular y control postural:</strong> Base física de la atención y la emoción (el "diálogo tónico" de Wallon como primer canal de apego).</li>
+  <li><strong>Lateralidad:</strong> Definición funcional del predominio de un hemisferio cerebral (diestro o zurdo) consolidada hacia los 4-5 años.</li>
+  <li><strong>Estructuración espacio-temporal:</strong> Adquisición paulatina de nociones de orientación espacial (arriba/abajo, dentro/fuera) y temporal (antes/después, día/noche).</li>
+</ul>
+
+<h3 class="sub-title">2.3. Desarrollo afectivo y teoría del apego</h3>
+
+<p><strong>John Bowlby</strong> postuló que los seres humanos nacen con una necesidad biológica innata de establecer vínculos de apego con cuidadores principales para asegurar su supervivencia y protección:</p>
+
+<ul>
+  <li><strong>Fases del apego:</strong> Preatribución (0-2 meses), formación del apego (2-7 meses), apego bien definido con ansiedad por separación (7-24 meses) y relaciones de reciprocidad (a partir de los 2 años).</li>
+  <li><strong>Tipologías de apego de Mary Ainsworth (Situación del Extraño):</strong>
+    <ul>
+      <li><strong>Apego Seguro:</strong> El niño explora con confianza en presencia de la figura de apego, muestra malestar en su ausencia y se consuela rápidamente a su regreso. Asociado a cuidadores empáticos y sensibles.</li>
+      <li><strong>Apego Inseguro-Evitativo:</strong> Aparenta indiferencia ante la marcha o regreso de la madre; sufre estrés fisiológico encubierto ante cuidadores rechazantes o fríos.</li>
+      <li><strong>Apego Inseguro-Ambivalente/Resistente:</strong> Angustia extrema ante la separación y cólera o resistencia al consuelo en el reencuentro. Asociado a pautas parentales impredecibles e inconsistentes.</li>
+      <li><strong>Apego Desorganizado (Main y Solomon):</strong> Conductas contradictorias, paralización y miedo ante la figura de apego. Es el predictor más grave de trauma y psicopatología, característico de contextos de negligencia severa o maltrato.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 class="sub-title">2.4. El pensamiento percepto-motor y cognitivo (Jean Piaget)</h3>
+
+<ul>
+  <li><strong>Estadio Sensoriomotor (0 a 2 años):</strong> Inteligencia práctica basada en acciones motoras y percepciones sensoriales. Hito capital: la adquisición de la <strong>permanencia del objeto</strong> (comprender que las cosas existen aunque no se vean, hacia los 8-9 meses).</li>
+  <li><strong>Estadio Preoperacional (2 a 6 años):</strong> Nacimiento de la <strong>función simbólica</strong> (el lenguaje, la imitación diferida, el dibujo y el juego simbólico).
+    <ul>
+      <li><strong>Rasgos del pensamiento infantil:</strong> Egocentrismo cognitivo (dificultad para adoptar la perspectiva del otro), centración (fijarse en un solo rasgo perceptivo), irreversibilidad (incapacidad de deshacer mentalmente una secuencia), animismo (atribuir vida a objetos inertes) y sincretismo.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 class="sub-title">2.5. Desarrollo social y evolución del juego</h3>
+
+<p>El juego es la actividad rectora de la infancia:</p>
+
+<ul>
+  <li><strong>Juego sensoriomotor / funcional (0-2 años):</strong> Repetición de movimientos placenteros con el propio cuerpo o juguetes.</li>
+  <li><strong>Juego simbólico / ficción ("hacer como si", 2-6 años):</strong> Representación de roles adultos, canalización de miedos y recreación de vivencias cotidianas.</li>
+  <li><strong>Evolución relacional:</strong> Transición del juego en solitario al juego paralelo (jugar al lado sin interacción), asociativo y, finalmente, cooperativo estructurado con normas sencillas.</li>
+</ul>
+
+<h2 class="section-title">3. Implicaciones socioeducativas y promoción del desarrollo personal y social</h2>
+
+<ol>
+  <li><strong>La Escuela Infantil como espacio de compensación temprana:</strong> El primer y segundo ciclo de Educación Infantil (0-3 y 3-6 años) actúan como potentes igualadores de oportunidades sociales. Una escolarización de calidad neutraliza los déficits de estimulación de hogares desfavorecidos.</li>
+  <li><strong>Ambientes afectivos y seguros:</strong> El docente y el educador social deben constituir <strong>figuras de apego secundarias</strong>, ofreciendo contención emocional, límites claros y un clima de aceptación incondicional.</li>
+  <li><strong>El juego como metodología privilegiada:</strong> Rechazo a la academización precoz; el aprendizaje en la infancia se consolida a través de la exploración multisensorial, la experimentación libre y el juego dramático.</li>
+</ol>
+
+<h2 class="section-title">4. Problemas y dificultades más frecuentes en la primera infancia y su respuesta socioeducativa</h2>
+
+<div class="diagram-box">
+  <pre>                 PROBLEMAS FRECUENTES Y RESPUESTA SOCIOEDUCATIVA
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ COMUNICACIÓN Y LENG. │ VINCULACIÓN AFECTIVA │ REGULACIÓN Y CONDUCTA│
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Retraso simple     │ • Trastorno de apego │ • Rabietas severas   │
+ │ • TEL / TDL          │ • Desapego reactivo  │ • Oposicionismo      │
+ │ • Dislalias / Mutismo│ • Estrés tóxico      │ • Control esfínteres │
+ └──────────┬───────────┴──────────┬───────────┴──────────┬───────────┘
+            ▼                      ▼                      ▼
+  Estimulación y logopedia  Pautas familiares y   Acuerdos pedagógicos,
+  adaptada en el aula       contención afectiva   rutinas y límites claros</pre>
+</div>
+
+<h3 class="sub-title">4.1. Retrasos en la comunicación y el lenguaje</h3>
+
+<ul>
+  <li><strong>Retraso simple del lenguaje (RSL):</strong> Desfase cronológico global pero evolutivamente normalizado, reversible con estimulación sociofamiliar.</li>
+  <li><strong>Trastorno Específico del Lenguaje (TEL / Trastorno del Desarrollo del Lenguaje - TDL):</strong> Alteración persistente en la comprensión y/o expresión no explicable por déficit sensorial ni intelectual.</li>
+  <li><strong>Mutismo selectivo:</strong> Inhibición selectiva del habla en la escuela manteniendo comunicación en el hogar; de base ansiosa y relacional.</li>
+</ul>
+
+<h3 class="sub-title">4.2. Dificultades en la vinculación y autorregulación emocional</h3>
+
+<ul>
+  <li><strong>Trastornos del apego:</strong> Incapacidad para establecer vínculos significativos o vinculación indiscriminada con extraños ante historiales de abandono o negligencia.</li>
+  <li><strong>Conductas disruptivas y rabietas desreguladas:</strong> Manifestaciones de inmadurez frontal o de estilos parentales inconsistentes o sobreprotectores.</li>
+  <li><strong>Trastornos en las rutinas biológicas:</strong> Enuresis/encopresis secundaria, trastornos del sueño o rechazo alimentario, habitualmente reactivos a situaciones de estrés familiar (divorcios conflictivos, nacimiento de hermanos, violencia de género).</li>
+</ul>
+
+<h3 class="sub-title">4.3. Señales de alarma temprana en el neurodesarrollo</h3>
+
+<ul>
+  <li><strong>Trastorno del Espectro del Autismo (TEA):</strong> Ausencia de contacto ocular, falta de respuesta al nombre, retraso en gestos comunicativos, conductas estereotipadas o hipersensibilidad sensorial observable antes de los 3 años.</li>
+  <li><strong>Retraso madurativo global:</strong> Desfase significativo en dos o más áreas del desarrollo psicomotor y cognitivo.</li>
+</ul>
+
+<h3 class="sub-title">4.4. Situaciones de riesgo, desatención y maltrato infantil precoz</h3>
+
+<p>Indicadores físicos (lesiones no accidentales, desnutrición, falta de higiene) o conductuales (hipervigilancia, retraimiento extremo, terror al contacto físico) que obligan a activar de inmediato el <strong>protocolo SIMIA</strong> de la Junta de Andalucía.</p>
+
+<h2 class="section-title">5. Acompañamiento socioeducativo a las familias y al profesorado</h2>
+
+<h3 class="sub-title">5.1. Marco normativo andaluz: Ley 1/2023 de Atención Temprana</h3>
+
+<p>La <strong>Ley 1/2023, de 16 de febrero, de Atención Temprana de Andalucía</strong> garantiza un modelo público, universal, gratuito y de calidad para menores de 0 a 6 años con trastornos en su desarrollo o en riesgo de padecerlos:</p>
+
+<ul>
+  <li>Intervención interdisciplinar articulada a través de los <strong>Centros de Atención Infantil Temprana (CAIT)</strong>.</li>
+  <li>Coordinación obligatoria entre el sistema sanitario (Pediatría de Atención Primaria), los Servicios Sociales Comunitarios y el sistema educativo (Educación Infantil y Equipos EOE especializados).</li>
+</ul>
+
+<h3 class="sub-title">5.2. Asesoramiento a las familias en parentalidad positiva</h3>
+
+<p>El Educador Social interviene como guía y facilitador del entorno doméstico:</p>
+
+<ul>
+  <li><strong>Escuelas de Familias de 0 a 6 años:</strong> Talleres sobre rutinas del sueño, alimentación, límites sin gritos ni castigos físicos, y fomento del apego seguro.</li>
+  <li><strong>Intervención domiciliaria:</strong> Acompañamiento en el hogar para modelar pautas de estimulación lúdica, lectura compartida y organización del espacio doméstico en familias vulnerables.</li>
+  <li><strong>Prevención de la sobreexposición digital:</strong> Concienciación sobre los graves efectos de las pantallas en el desarrollo del lenguaje y la atención en menores de 3 años.</li>
+</ul>
+
+<h3 class="sub-title">5.3. Acompañamiento técnico al profesorado de Educación Infantil</h3>
+
+<ul>
+  <li>Coordinación de pautas de modificación conductual y refuerzo positivo en el aula.</li>
+  <li>Adaptación del periodo de acogida y adaptación escolar en septiembre para prevenir la angustia de separación.</li>
+  <li>Diseño de espacios de relajación y rincón de la calma en las aulas.</li>
+</ul>
+
+<h3 class="sub-title">5.4. Coordinación intersectorial en red</h3>
+
+<p>El Educador/a Social actúa como bisagra entre la escuela infantil, los servicios de Pediatría, los CAIT y los Servicios Sociales Comunitarios (PRISO), asegurando que ningún menor quede desatendido por falta de coordinación institucional.</p>
+
+<h2 class="section-title">6. Conclusión y rol del educador/a social</h2>
+
+<p>La primera infancia es la ventana de oportunidad biológica y social más fecunda de la existencia humana. Todo esfuerzo socioeducativo invertido en los primeros seis años de vida tiene un <strong>retorno social incalculable</strong>, previniendo el fracaso escolar, las conductas delictivas y la exclusión futura.</p>
+
+<p>El <strong>Educador y la Educadora Social</strong> ejerce una labor trascendental en esta etapa: despoja a la intervención temprana de sesgos puramente médicos o rehabilitadores para dotarla de una <strong>mirada comunitaria, relacional y familiar</strong>. Cuidar a la infancia en sus primeros años no es solo una responsabilidad de sus progenitores; es el compromiso ético y político de una sociedad democrática que garantiza a todos sus niños y niñas el derecho a un comienzo de vida digno, seguro y estimulante.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">7. Anexo: Mapa conceptual y tabla sinóptica del Tema 8</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Dimensión Evolutiva</th>
+      <th>Teorías y Autores Clave</th>
+      <th>Manifestaciones y Dificultades</th>
+      <th>Intervención Socioeducativa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Lenguaje y Comunicación</strong></td>
+      <td>• Bruner (LASS) • Vygotsky (lenguaje egocéntrico) • Chomsky</td>
+      <td>• Prelingüística a morfosintáctica.<br>• Retrasos del lenguaje, TEL/TDL, dislalias y mutismo.</td>
+      <td>Estimulación comunicativa en el aula, lectura dialógica y coordinación con logopedia.</td>
+    </tr>
+    <tr>
+      <td><strong>Desarrollo Motor y Perceptivo</strong></td>
+      <td>• Leyes céfalo-caudal y próximo-distal.<br>• Wallon • Le Boulch (psicomotricidad).</td>
+      <td>• Esquema corporal y lateralidad.<br>• Torpeza motriz, dispraxias e inhibición psicomotriz.</td>
+      <td>Circuitos psicomotrices vivenciados, juego libre y estructuración temporal.</td>
+    </tr>
+    <tr>
+      <td><strong>Desarrollo Afectivo y Apego</strong></td>
+      <td>• Bowlby (teoría del apego).<br>• Ainsworth (tipologías de apego: seguro, evitativo, ambivalente, desorganizado).</td>
+      <td>• Angustia de separación.<br>• Trastornos reactivos del apego por negligencia o desamparo.</td>
+      <td>Figura de apego secundaria en el centro; fomento de parentalidad positiva en familias.</td>
+    </tr>
+    <tr>
+      <td><strong>Desarrollo Cognitivo</strong></td>
+      <td>• Jean Piaget (sensoriomotor y preoperacional).</td>
+      <td>• Permanencia de objeto, egocentrismo, centración y función simbólica.</td>
+      <td>Provocaciones pedagógicas, rincones de juego simbólico y exploración sensorial.</td>
+    </tr>
+    <tr>
+      <td><strong>Socialización y Juego</strong></td>
+      <td>• De juego paralelo a juego cooperativo compartido.</td>
+      <td>• Dificultades de interacción, aislamiento social o agresividad.</td>
+      <td>Dinamización del juego compartido, modelado de turnos y mediación en conflictos.</td>
+    </tr>
+    <tr>
+      <td><strong>Marco Autonómico</strong></td>
+      <td>• Ley 1/2023 de Atención Temprana de Andalucía • CAIT.</td>
+      <td>• Retrasos madurativos y TEA.<br>• Factores de riesgo sociobiológico.</td>
+      <td>Detección precoz en escuela infantil y derivación a Pediatría y CAIT.</td>
+    </tr>
+    <tr>
+      <td><strong>Acompañamiento a Familias</strong></td>
+      <td>• Parentalidad positiva • Modelo bioecológico de Bronfenbrenner.</td>
+      <td>• Estrés parental, estilos educativos autoritarios o negligentes.</td>
+      <td>Escuelas de familias, visitas domiciliarias y prevención de la sobreexposición a pantallas.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>• Instrucciones 17 de septiembre de 2010.</td>
+      <td>• Vulnerabilidad, maltrato precoz y desprotección (SIMIA).</td>
+      <td>Agente de prevención primaria, nexo escuela-salud-servicios sociales y apoyo familiar.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

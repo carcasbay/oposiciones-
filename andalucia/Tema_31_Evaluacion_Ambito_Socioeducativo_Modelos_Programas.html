@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 31: El Proceso de Evaluación en el Ámbito Socioeducativo. Concepciones y Paradigmas de la Evaluación. Técnicas e Instrumentos de Evaluación en el Ámbito Socioeducativo. El Educador o Educadora Social como Evaluador de Programas</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 31</h1>
+  <h2>El Proceso de Evaluación en el Ámbito Socioeducativo. Concepciones y Paradigmas de la Evaluación. Técnicas e Instrumentos de Evaluación en el Ámbito Socioeducativo. El Educador o Educadora Social como Evaluador de Programas</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Carácter:</strong> Materias Específicas del Programa Oficial</p>
+<p><strong>Marco Legal y Documental:</strong></p>
+<ul class="meta-sublist">
+<li>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA), Título VI (La evaluación del sistema educativo).</li>
+<li>Ley Orgánica 2/2006 (LOE), modificada por la LOMLOE 3/2020.</li>
+<li>Decretos 327/2010 y 328/2010 (Evaluación institucional en los Reglamentos Orgánicos de IES y Colegios).</li>
+<li>Instrucciones de 17 de septiembre de 2010 de la Dirección General de Participación e Innovación Educativa.</li>
+</ul>
+<p><strong>Autores y Doctrinas de Referencia:</strong> Daniel L. Stufflebeam (Modelo CIPP: Contexto, Entrada, Proceso, Producto), Ernest House (Evaluación democrática y deliberativa), Miguel Ángel Santos Guerra (La evaluación como aprendizaje y diálogo), Malcolm Parlett y David Hamilton (Evaluación iluminativa), Michael Scriven (Evaluación formativa vs. sumativa).</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 31</div>
+  <div class="toc-item level-1">1. Introducción y estatuto epistemológico de la evaluación en la Educación Social.</div>
+  <div class="toc-item level-1">2. Concepciones y evolución de la evaluación: Del control fiscalizador al aprendizaje democrático.</div>
+  <div class="toc-item level-1">3. Paradigmas y modelos teóricos de evaluación socioeducativa:</div>
+  <div class="toc-item level-2">3.1. Paradigma positivista: Evaluación por objetivos (Ralph Tyler).</div>
+  <div class="toc-item level-2">3.2. El Modelo CIPP de Daniel Stufflebeam (Contexto, Input, Proceso y Producto).</div>
+  <div class="toc-item level-2">3.3. Paradigma interpretativo: Evaluación cualitativa e iluminativa (Parlett y Hamilton).</div>
+  <div class="toc-item level-2">3.4. Paradigma sociocrítico: La evaluación democrática y deliberativa (Ernest House).</div>
+  <div class="toc-item level-1">4. Tipología y temporalidad de la evaluación socioeducativa:</div>
+  <div class="toc-item level-2">4.1. Evaluación inicial o diagnóstica.</div>
+  <div class="toc-item level-2">4.2. Evaluación continua, procesual o formativa.</div>
+  <div class="toc-item level-2">4.3. Evaluación final o sumativa.</div>
+  <div class="toc-item level-2">4.4. Evaluación de impacto y sostenibilidad comunitaria.</div>
+  <div class="toc-item level-1">5. Técnicas e instrumentos de evaluación en el ámbito socioeducativo:</div>
+  <div class="toc-item level-2">5.1. Instrumentos cuantitativos (escalas Likert, cuestionarios, métricas de Séneca).</div>
+  <div class="toc-item level-2">5.2. Instrumentos cualitativos (rúbricas socioafectivas, diarios de campo, grupos focales).</div>
+  <div class="toc-item level-2">5.3. Procesos participativos: Autoevaluación, coevaluación y heteroevaluación.</div>
+  <div class="toc-item level-1">6. El educador o educadora social como evaluador/a de programas en la escuela andaluza:</div>
+  <div class="toc-item level-2">6.1. Evaluación del Plan de Convivencia y del POAT.</div>
+  <div class="toc-item level-2">6.2. Elaboración de la Memoria Anual del Educador/a Social.</div>
+  <div class="toc-item level-2">6.3. Dimensión ética y deontológica de la evaluación (no estigmatización y confidencialidad).</div>
+  <div class="toc-item level-1">7. Conclusión.</div>
+  <div class="toc-item level-1">8. Anexo: Mapa conceptual y tabla sinóptica del Tema 31.</div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y estatuto de la evaluación en la Educación Social</h2>
+
+<p>En la Educación Social, la evaluación no es un acto burocrático de calificación numérica, una auditoría fiscalizadora externa ni un tribunal punitivo; constituye un <strong>proceso científico, reflexivo, continuo y dialógico de valoración de la realidad para orientar la toma de decisiones pedagógicas y promover la justicia social</strong> (Santos Guerra).</p>
+
+<p>Evaluar en la escuela pública andaluza implica preguntarse con rigor técnico si los programas socioeducativos implementados responden a las necesidades reales del alumnado, si reducen las brechas de exclusión y si respetan la dignidad de las personas. La evaluación es la herramienta que rescata a la intervención de la rutina y la inercia, dotándola de sentido emancipador y eficacia contrastada (Stufflebeam).</p>
+
+<h2 class="section-title">2. Concepciones y evolución de la evaluación</h2>
+
+<p>A lo largo del siglo XX y XXI, la evaluación ha experimentado una profunda transformación epistemológica:</p>
+
+<ul>
+  <li><strong>De la Medición Cuantitativa al Aprendizaje Dialogado:</strong> Se ha superado la vieja obsesión psicométrica (reducir a la persona a un coeficiente intelectual o una nota de examen) para entender la evaluación como una <strong>oportunidad de diálogo, aprendizaje mutuo y transformación institucional</strong> (Santos Guerra).</li>
+  <li><strong>Evaluación Democrática (Ernest House):</strong> En una sociedad democrática, la evaluación de programas públicos debe estar al servicio de la transparencia, dar voz a los colectivos más desfavorecidos (alumnos en riesgo, familias vulnerables) y garantizar el derecho ciudadano a recibir servicios públicos de máxima calidad.</li>
+</ul>
+
+<h2 class="section-title">3. Paradigmas y modelos teóricos de evaluación socioeducativa</h2>
+
+<div class="diagram-box">
+  <pre>                 MODELOS TEÓRICOS DE EVALUACIÓN SOCIOEDUCATIVA
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ MODELO POR OBJETIVOS │ MODELO CIPP          │ EVALUACIÓN DEMOCRÁT. │
+ │ (RALPH TYLER)        │ (STUFFLEBEAM)        │ (ERNEST HOUSE)       │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Compara resultados │ • Contexto (diagnóst)│ • Justicia social    │
+ │   finales con metas  │ • Input (recursos)   │ • Voz a los sectores │
+ │   prefijadas         │ • Proceso (desarrollo│   vulnerables        │
+ │ • Enfoque cuantitat. │ • Producto (impacto) │ • Deliberación ética │
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<h3 class="sub-title">3.1. El Modelo CIPP de Daniel L. Stufflebeam</h3>
+
+<p>Es uno de los modelos más sólidos y utilizados en la planificación socioeducativa:</p>
+
+<ul>
+  <li><strong>Evaluación del Contexto:</strong> Identificación y valoración de las necesidades no cubiertas del centro y del barrio (estudio de necesidades).</li>
+  <li><strong>Evaluación de la Entrada (<em>Input</em>):</strong> Valoración de los recursos humanos, materiales, presupuestarios y metodológicos disponibles.</li>
+  <li><strong>Evaluación del Proceso:</strong> Seguimiento continuo de la ejecución del programa para detectar desajustes y aplicar correcciones en tiempo real.</li>
+  <li><strong>Evaluación del Producto:</strong> Medición de los logros alcanzados y su valor para satisfacer las necesidades diagnosticadas inicialmente.</li>
+</ul>
+
+<h3 class="sub-title">3.2. Evaluación Iluminativa (Parlett y Hamilton)</h3>
+
+<p>Enfoque cualitativo que busca "iluminar" la compleja trama de relaciones, valores y procesos implícitos que ocurren dentro del ambiente de aprendizaje del centro escolar.</p>
+
+<h2 class="section-title">4. Tipología y temporalidad de la evaluación</h2>
+
+<ol>
+  <li><strong>Evaluación Inicial o Diagnóstica:</strong> Realizada al inicio de curso; fija la línea base y determina las prioridades de intervención en el Plan Anual de Trabajo.</li>
+  <li><strong>Evaluación Procesual o Formativa (Michael Scriven):</strong> Se realiza durante todo el desarrollo de las actividades; permite reorientar dinámicas y flexibilizar los tiempos.</li>
+  <li><strong>Evaluación Final o Sumativa:</strong> Balance de cumplimiento de objetivos al finalizar el trimestre o curso escolar.</li>
+  <li><strong>Evaluación de Impacto:</strong> Evalúa las transformaciones profundas y sostenibles a medio y largo plazo en las trayectorias de vida del alumnado (ejemplo: continuidad en estudios postobligatorios tras participar en el PROA).</li>
+</ol>
+
+<h2 class="section-title">5. Técnicas e instrumentos de evaluación socioeducativa</h2>
+
+<p>La evaluación socioeducativa requiere el uso combinado de técnicas cuantitativas y cualitativas:</p>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Tipo de Instrumento</th>
+      <th>Ejemplos en el Centro Docente</th>
+      <th>Utilidad Socioeducativa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Cuantitativos</strong></td>
+      <td>Cuestionarios cerrados, escalas Likert, tasas de absentismo en <em>Séneca</em></td>
+      <td>Dimensionamiento estadístico de logros y tendencias objetivas.</td>
+    </tr>
+    <tr>
+      <td><strong>Cualitativos</strong></td>
+      <td>Rúbricas socioafectivas, diarios de campo, entrevistas de evaluación</td>
+      <td>Comprensión en profundidad de cambios actitudinales y madurez.</td>
+    </tr>
+    <tr>
+      <td><strong>Participativos</strong></td>
+      <td>Asambleas de aula, grupos focales con familias, sociogramas</td>
+      <td>Triangulación de percepciones y fomento de la corresponsabilidad.</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>Autoevaluación:</strong> El propio estudiante o familia reflexiona sobre sus progresos y dificultades.</li>
+  <li><strong>Coevaluación:</strong> Valoración compartida entre iguales en proyectos cooperativos.</li>
+  <li><strong>Heteroevaluación:</strong> Valoración técnica realizada por el equipo educativo interdisciplinar.</li>
+</ul>
+
+<h2 class="section-title">6. El educador o educadora social como evaluador/a de programas</h2>
+
+<p>Conforme a las <strong>Instrucciones de 17 de septiembre de 2010</strong>, el educador social despliega una responsabilidad evaluadora decisiva:</p>
+
+<ol>
+  <li><strong>Evaluación Continua del Plan de Convivencia y POAT:</strong> Monitorización periódica de la conflictividad, eficacia de las mediaciones escolares y clima relacional.</li>
+  <li><strong>Redacción de la Memoria Anual del Educador/a Social:</strong> Documento preceptivo al término del curso académico que recopila datos cuantitativos (casos atendidos, absentismo reducido) y valoraciones cualitativas, proponiendo propuestas de mejora para el curso siguiente.</li>
+  <li><strong>Ética y Deontología en la Evaluación:</strong>
+    <ul>
+      <li>Garantía de confidencialidad estricta y protección de datos íntimos.</li>
+      <li>Rechazo frontal al etiquetamiento patologizante o estigmatizador del alumnado evaluado.</li>
+      <li>Devolución constructiva de resultados al alumnado y sus familias como estímulo de superación.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 class="section-title">7. Conclusión</h2>
+
+<p>La evaluación en Educación Social no juzga para excluir ni sanciona para humillar; <strong>evalúa para comprender, cuidar y transformar</strong>.</p>
+
+<p>El <strong>Educador y la Educadora Social</strong> como evaluador democrático en la escuela pública andaluza dota a la intervención de rigor ético y científico: somete sus proyectos a la luz de las evidencias, escucha la voz de los estudiantes más vulnerables y convierte la evaluación en un acto de justicia y esperanza pedagógica.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">8. Anexo: Mapa conceptual y tabla sinóptica del Tema 31</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Normativa / Doctrinas Clave</th>
+      <th>Conceptos e Implicación Práctica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Concepto de Evaluación</strong></td>
+      <td>Miguel Ángel Santos Guerra</td>
+      <td>La evaluación como aprendizaje, diálogo ético y motor de mejora institucional compartida.</td>
+    </tr>
+    <tr>
+      <td><strong>Modelo CIPP</strong></td>
+      <td>Daniel L. Stufflebeam</td>
+      <td>Evaluación integral de Contexto (necesidades), Input (recursos), Proceso y Producto (logros).</td>
+    </tr>
+    <tr>
+      <td><strong>Evaluación Democrática</strong></td>
+      <td>Ernest House</td>
+      <td>Al servicio de la justicia social, transparencia pública y voz para los colectivos desfavorecidos.</td>
+    </tr>
+    <tr>
+      <td><strong>Temporalidad</strong></td>
+      <td>Michael Scriven</td>
+      <td>Inicial (diagnóstica), Formativa (continua/reajuste), Sumativa (final) y de Impacto social.</td>
+    </tr>
+    <tr>
+      <td><strong>Instrumentos</strong></td>
+      <td>Rúbricas • Likert • Séneca • Diarios</td>
+      <td>Complementariedad cuantitativa y cualitativa; triangulación de evidencias y percepciones.</td>
+    </tr>
+    <tr>
+      <td><strong>Procesos Participativos</strong></td>
+      <td>Auto, co y heteroevaluación</td>
+      <td>Protagonismo activo del estudiante y de la familia en la valoración de sus propios progresos.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>Instrucciones de 17 de septiembre de 2010</td>
+      <td>Evaluador del Plan de Convivencia, redactor de la Memoria Anual y garante de la ética evaluadora.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

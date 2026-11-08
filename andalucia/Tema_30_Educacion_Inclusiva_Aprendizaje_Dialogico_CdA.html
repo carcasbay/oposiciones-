@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 30: La Educación Inclusiva. Estrategias y Procesos que Favorecen la Inclusión Educativa y Social. El Aprendizaje Dialógico y las Comunidades de Aprendizaje. El Papel del Educador o Educadora Social en los Procesos de Inclusión</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 30</h1>
+  <h2>La Educación Inclusiva. Estrategias y Procesos que Favorecen la Inclusión Educativa y Social. El Aprendizaje Dialógico y las Comunidades de Aprendizaje. El Papel del Educador o Educadora Social en los Procesos de Inclusión</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Carácter:</strong> Materias Específicas del Programa Oficial</p>
+<p><strong>Marco Legal y Documental:</strong></p>
+<ul class="meta-sublist">
+<li>Declaración de Salamanca (UNESCO, 1994: Principios sobre Necesidades Educativas Especiales).</li>
+<li>Convención de la ONU sobre los Derechos de las Personas con Discapacidad (2006, art. 24: Educación inclusiva).</li>
+<li>Ley Orgánica 2/2006 (LOE), modificada por la LOMLOE 3/2020.</li>
+<li>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA), Título III.</li>
+<li>Orden de 8 de junio de 2012, por la que se regula el procedimiento de inscripción y reconocimiento de Comunidades de Aprendizaje en Andalucía.</li>
+<li>Proyecto INCLUD-ED de la Comisión Europea (FP6: Actuaciones Educativas de Éxito).</li>
+<li>Instrucciones de 17 de septiembre de 2010 de la Dirección General de Participación e Innovación Educativa.</li>
+</ul>
+<p><strong>Autores y Doctrinas de Referencia:</strong> Ramón Flecha (Teoría del Aprendizaje Dialógico y Comunidades de Aprendizaje), Paulo Freire (Pedagogía del oprimido y acción dialógica), Jürgen Habermas (Teoría de la acción comunicativa), Gerardo Echeita (Educación inclusiva y equidad), Tony Booth y Mel Ainscow (<em>Index for Inclusion</em>).</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 30</div>
+  <div class="toc-item level-1">1. Introducción y fundamentación ética y jurídica de la educación inclusiva como derecho humano.</div>
+  <div class="toc-item level-1">2. De la exclusión a la inclusión: Evolución de los paradigmas educativos.</div>
+  <div class="toc-item level-1">3. Estrategias y procesos escolares que favorecen la inclusión educativa y social:</div>
+  <div class="toc-item level-2">3.1. Docencia compartida y codocencia en el aula ordinaria.</div>
+  <div class="toc-item level-2">3.2. Aprendizaje cooperativo y tutoría entre iguales.</div>
+  <div class="toc-item level-2">3.3. Supresión de itinerarios segregadores y diversificación inclusiva.</div>
+  <div class="toc-item level-1">4. El Aprendizaje Dialógico (Ramón Flecha y CREA):</div>
+  <div class="toc-item level-2">4.1. Marco epistemológico: De Paulo Freire a Jürgen Habermas.</div>
+  <div class="toc-item level-2">4.2. Los 7 principios del aprendizaje dialógico (Diálogo igualitario, Inteligencia cultural, Transformación, Dimensión instrumental, Creación de sentido, Solidaridad e Igualdad de las diferencias).</div>
+  <div class="toc-item level-1">5. Las Comunidades de Aprendizaje (CdA):</div>
+  <div class="toc-item level-2">5.1. Concepto y fases del proceso de transformación (Sensibilización, El Sueño, Comisiones Mixtas).</div>
+  <div class="toc-item level-2">5.2. Las Actuaciones Educativas de Éxito (AEE) avaladas por INCLUD-ED:</div>
+  <div class="toc-item level-3">Grupos Interactivos en el aula ordinaria.</div>
+  <div class="toc-item level-3">Tertulias Dialógicas (Literarias, Artísticas y Científicas).</div>
+  <div class="toc-item level-3">Participación educativa de las familias y extensión del tiempo de aprendizaje.</div>
+  <div class="toc-item level-3">Modelo dialógico de prevención de conflictos.</div>
+  <div class="toc-item level-1">6. El marco andaluz de las Comunidades de Aprendizaje (Orden de 8 de junio de 2012).</div>
+  <div class="toc-item level-1">7. El papel del educador o educadora social en los procesos de inclusión y en las Comunidades de Aprendizaje.</div>
+  <div class="toc-item level-1">8. Conclusión.</div>
+  <div class="toc-item level-1">9. Anexo: Mapa conceptual y tabla sinóptica del Tema 30.</div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y fundamentación de la educación inclusiva</h2>
+
+<p>La educación inclusiva no constituye un método didáctico facultativo, un programa asistencial para minorías ni una etiqueta técnica dirigida a unos pocos estudiantes etiquetados con discapacidad; <strong>es un derecho humano fundamental, innegociable e irrenunciable de todas las personas</strong> (artículo 24 de la Convención de la ONU de 2006 y ODS 4 de la Agenda 2030).</p>
+
+<p>Durante décadas, los sistemas educativos operaron bajo una ideología meritocrática excluyente que justificaba el fracaso de los sectores sociales desfavorecidos bajo el mito del "déficit individual". La <strong>Educación Social</strong> aporta una ruptura ética y política radical: todo ser humano es educable y posee una inteligencia cultural singular que se enriquece en la interacción social. Una escuela democrática no es aquella que selecciona a los privilegiados, sino la que transforma sus estructuras para acoger la diversidad y garantizar el éxito académico de todo su alumnado (Gerardo Echeita).</p>
+
+<p>En Andalucía, las <strong>Comunidades de Aprendizaje</strong> y el <strong>Aprendizaje Dialógico</strong> representan el proyecto pedagógico de mayor evidencia científica para derribar las desigualdades socioeducativas en zonas desfavorecidas.</p>
+
+<h2 class="section-title">2. De la exclusión a la inclusión: Evolución de los paradigmas</h2>
+
+<div class="diagram-box">
+  <pre>                       EVOLUCIÓN DE LOS PARADIGMAS EDUCATIVOS
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ EXCLUSIÓN / SEGREG.  │ INTEGRACIÓN ESCOLAR  │ EDUCACIÓN INCLUSIVA  │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Negación de acceso │ • El alumno diverso  │ • La escuela se      │
+ │   a la escuela ord.  │   entra al aula pero │   transforma para    │
+ │ • Escuelas especiales│   debe adaptarse     │   acoger a todos     │
+ │   separadas en guetos│ • Foco en el déficit │ • Foco en las barrer.│
+ │ • Marginación social │ • Salidas al aula PT │ • Éxito universal    │
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<ul>
+  <li><strong>Inclusión frente a Integración:</strong> En el modelo integrador, el estudiante con dificultades debe "encajar" en una escuela rígida; si fracasa, se le aísla en el aula de apoyo. En la <strong>educación inclusiva</strong>, la escuela se transforma de raíz: no se segrega a nadie, se eliminan las barreras al aprendizaje y a la participación (Booth y Ainscow) y se moviliza a toda la comunidad.</li>
+</ul>
+
+<h2 class="section-title">3. Estrategias y procesos que favorecen la inclusión</h2>
+
+<ol>
+  <li><strong>Docencia Compartida (Co-teaching):</strong> Dos o más profesionales (docente, PT y Educador Social) imparten clase simultáneamente en el aula ordinaria, eliminando la necesidad de sacar a los alumnos fuera de su grupo de referencia.</li>
+  <li><strong>Aprendizaje Cooperativo:</strong> Equipos heterogéneos de trabajo donde el éxito individual está condicionado al éxito del grupo, fomentando la ayuda mutua.</li>
+  <li><strong>Tutoría entre Iguales:</strong> Alumnado con mayor dominio de una competencia apoya a un compañero, reforzando la autoestima de ambos.</li>
+  <li><strong>Supresión del <em>Streaming</em>:</strong> Erradicación de los agrupamientos homogéneos de nivel (las llamadas "aulas de lentos"), que solo consiguen multiplicar el fracaso y la guetización.</li>
+</ol>
+
+<h2 class="section-title">4. El Aprendizaje Dialógico (Ramón Flecha y CREA)</h2>
+
+<p>El Aprendizaje Dialógico, fundamentado en la sociología crítica de Ramón Flecha, la pedagogía liberadora de Paulo Freire y la teoría de la acción comunicativa de Jürgen Habermas, sostiene que <strong>las personas aprenden a través de las interacciones dialógicas igualitarias que establecen con su entorno</strong>.</p>
+
+<h3 class="sub-title">Los 7 Principios del Aprendizaje Dialógico:</h3>
+
+<ol>
+  <li><strong>Diálogo Igualitario:</strong> La validez de una aportación depende del valor intrínseco de sus argumentos, jamás de la jerarquía o poder de quien habla.</li>
+  <li><strong>Inteligencia Cultural:</strong> Toda persona posee saberes tácitos, prácticos y comunicativos adquiridos en su experiencia de vida, independientemente de sus títulos académicos.</li>
+  <li><strong>Transformación:</strong> La educación no debe adaptarse resignadamente al contexto de pobreza; debe transformar el entorno y las relaciones para superar la desigualdad.</li>
+  <li><strong>Dimensión Instrumental:</strong> El diálogo no sustituye a los contenidos académicos; al contrario, intensifica y acelera el aprendizaje de los saberes instrumentales clave (lengua, matemáticas, ciencia, TIC).</li>
+  <li><strong>Creación de Sentido:</strong> Superar la apatía conectando el aprendizaje con el proyecto de vida y los anhelos de la infancia y juventud.</li>
+  <li><strong>Solidaridad:</strong> Prácticas educativas cooperativas que no dejan a nadie rezagado; el éxito de uno es el éxito de todos.</li>
+  <li><strong>Igualdad de las Diferencias:</strong> Derecho universal a ser diferente, pero con idéntico derecho a la dignidad, al éxito escolar y a la participación social.</li>
+</ol>
+
+<h2 class="section-title">5. Las Comunidades de Aprendizaje (CdA)</h2>
+
+<p>Las <strong>Comunidades de Aprendizaje</strong> son proyectos de transformación socioeducativa integral de centros docentes basados en <strong>Actuaciones Educativas de Éxito (AEE)</strong> avaladas por la investigación científica internacional (Proyecto INCLUD-ED de la Unión Europea).</p>
+
+<div class="diagram-box">
+  <pre>                      FASES DE TRANSFORMACIÓN EN CdA
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ 1. SENSIBILIZACIÓN   │ 2. EL SUEÑO COLECTIVO│ 3. COMISIONES MIXTAS │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Presentación de    │ • Alumnado, familias │ • Comisiones de tra- │
+ │   evidencias de éxito│   y barrio sueñan la │   bajo paritarias:   │
+ │ • Votación formal:   │   escuela ideal que  │   infraestructura,   │
+ │   Claustro y Familias│   desean construir   │   aprendizaje, conv. │
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<h3 class="sub-title">Las Actuaciones Educativas de Éxito (AEE):</h3>
+
+<ol>
+  <li><strong>Grupos Interactivos:</strong> Forma de organización del aula que mejores resultados genera en convivencia y aprendizaje. El aula se divide en 4 o 5 grupos heterogéneos dinamizados por <strong>voluntariado adulto</strong> (madres, padres, educadores sociales, vecinos). Los alumnos rotan cada 20 minutos; el voluntario dinamiza el diálogo y la ayuda mutua sin sustituir al docente.</li>
+  <li><strong>Tertulias Dialógicas:</strong> Lectura y debate reflexivo de las grandes obras de la literatura clásica universal (<em>Tertulias Literarias Dialógicas</em>), de obras de arte (<em>Tertulias Artísticas</em>) o de ciencia, donde niños de cualquier origen social reflexionan sobre la libertad, el amor, la justicia y la dignidad.</li>
+  <li><strong>Participación Educativa de las Familias:</strong> Las familias no son invitadas pasivas a fiestas; participan directamente en la toma de decisiones del centro a través de las Comisiones Mixtas y en las aulas.</li>
+  <li><strong>Biblioteca Tutorizada y Extensión del Tiempo de Aprendizaje:</strong> Apertura de la biblioteca escolar fuera del horario lectivo con apoyo de voluntariado para tareas y lectura.</li>
+  <li><strong>Modelo Dialógico de Prevención y Resolución de Conflictos:</strong> Implicación de toda la comunidad en la creación consensuada de la norma escolar, desarticulando la violencia desde la base del diálogo.</li>
+</ol>
+
+<h2 class="section-title">6. El marco andaluz de las Comunidades de Aprendizaje</h2>
+
+<p>Andalucía es la comunidad autónoma con mayor implantación de CdA de Europa. La <strong>Orden de 8 de junio de 2012</strong> institucionalizó este modelo en los centros públicos andaluces, estableciendo los requisitos democráticos para su reconocimiento oficial:</p>
+
+<ul>
+  <li>Aprobación por mayoría cualificada del <strong>Claustro de Profesorado</strong> (mínimo 60-80% de votos favorables).</li>
+  <li>Aprobación por el <strong>Consejo Escolar</strong> y respaldo explícito de la asamblea de familias.</li>
+  <li>Compromiso expreso de aplicar las Actuaciones Educativas de Éxito (AEE).</li>
+</ul>
+
+<h2 class="section-title">7. El papel del educador o educadora social en la inclusión y en las CdA</h2>
+
+<p>De acuerdo con las <strong>Instrucciones de 17 de septiembre de 2010</strong>, el Educador Social ejerce un rol vertebrador en la inclusión:</p>
+
+<ul>
+  <li><strong>Dinamización del Voluntariado en Grupos Interactivos:</strong> Captación, formación y acogida de los voluntarios comunitarios que dinamizan los grupos en las aulas.</li>
+  <li><strong>Puente Emocional con Familias Vulnerables:</strong> Motivación y acompañamiento a familias gitanas, migrantes o con analfabetismo funcional para que asistan a las tertulias dialógicas y participen en las Comisiones Mixtas de la CdA sin sentirse juzgadas.</li>
+  <li><strong>Facilitador de Tertulias Pedagógicas y Dialógicas:</strong> Dinamización de espacios de debate sobre bienestar emocional y derechos humanos con el alumnado en el POAT.</li>
+  <li><strong>Liderazgo en el Modelo Dialógico de Convivencia:</strong> Prevención del acoso y resolución restaurativa comunitaria de tensiones.</li>
+</ul>
+
+<h2 class="section-title">8. Conclusión</h2>
+
+<p>La educación inclusiva y las Comunidades de Aprendizaje demuestran que el fracaso escolar no es una fatalidad genética ni social inevitable; es la consecuencia de prácticas educativas obsoletas e individualistas.</p>
+
+<p>El <strong>Educador y la Educadora Social</strong> encarna el alma comunitaria de la inclusión en Andalucía: abre las puertas de las aulas a las familias del barrio, sustituye el autoritarismo punitivo por el diálogo igualitario y convierte a la escuela pública en un faro de dignidad, ciencia y justicia social donde todos los sueños infantiles tienen cabida.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">9. Anexo: Mapa conceptual y tabla sinóptica del Tema 30</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Normativa / Doctrinas Clave</th>
+      <th>Conceptos e Implicación Práctica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Educación Inclusiva</strong></td>
+      <td>ONU 2006 (art. 24) • Gerardo Echeita</td>
+      <td>Derecho inalienable; transformación de la escuela frente a la asimilación o segregación.</td>
+    </tr>
+    <tr>
+      <td><strong>Aprendizaje Dialógico</strong></td>
+      <td>Ramón Flecha • Paulo Freire</td>
+      <td>Diálogo igualitario, inteligencia cultural, transformación, solidaridad e igualdad de diferencias.</td>
+    </tr>
+    <tr>
+      <td><strong>Proyecto INCLUD-ED</strong></td>
+      <td>Comisión Europea (6.º Programa Marco)</td>
+      <td>Evidencia científica internacional sobre Actuaciones Educativas de Éxito (AEE).</td>
+    </tr>
+    <tr>
+      <td><strong>Grupos Interactivos</strong></td>
+      <td>Organización inclusiva del aula</td>
+      <td>Grupos heterogéneos rotativos con voluntariado adulto dinamizador; aceleración del aprendizaje.</td>
+    </tr>
+    <tr>
+      <td><strong>Tertulias Dialógicas</strong></td>
+      <td>Clásicos universales de la humanidad</td>
+      <td>Diálogo reflexivo en literatura, arte y ciencia; democratización del capital cultural para todos.</td>
+    </tr>
+    <tr>
+      <td><strong>Marco Andaluz CdA</strong></td>
+      <td>Orden de 8 de junio de 2012</td>
+      <td>Procedimiento oficial andaluz de aprobación democrática y reconocimiento de CdA.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>Instrucciones de 17 de septiembre de 2010</td>
+      <td>Captación de voluntariado, dinamización comunitaria en Comisiones Mixtas y mediación dialógica.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

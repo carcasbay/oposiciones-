@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 14: Educación para la Igualdad y Educación en la Diversidad. Educación No Discriminatoria. Eliminación de Prejuicios Sexistas y Xenófobos en la Escuela. Actuación e Intervención del Educador o Educadora Social en el Desarrollo de la Educación para la Igualdad, la Coeducación, el Desarrollo de Valores Igualitarios y la Prevención de la Radicalización</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 14</h1>
+  <h2>Educación para la Igualdad y Educación en la Diversidad. Educación No Discriminatoria. Eliminación de Prejuicios Sexistas y Xenófobos en la Escuela. Actuación e Intervención del Educador o Educadora Social en el Desarrollo de la Educación para la Igualdad, la Coeducación, el Desarrollo de Valores Igualitarios y la Prevención de la Radicalización</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Bloque:</strong> Materias Específicas</p>
+<p><strong>Tema Oficial:</strong> 14</p>
+<p><strong>Normativa Clave:</strong> Ley Orgánica 3/2007 para la igualdad efectiva de mujeres y hombres; Ley 12/2007 de Igualdad de Género en Andalucía; Ley Orgánica 1/2004 (Violencia de Género); Ley 4/2023 (Derechos personas trans y LGTBI); Ley 8/2017 LGTBI de Andalucía; Ley 15/2022 de Igualdad de Trato y No Discriminación; III Plan de Igualdad de Género en Educación de Andalucía; Instrucciones de 17 de septiembre de 2010.</p>
+<p><strong>Autores y Referentes:</strong> Simone de Beauvoir, Judith Butler, Marina Subirats, Adela Cortina (Aporofobia), bell hooks, Chimamanda Ngozi Adichie.</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 14</div>
+  <div class="toc-item level-1">1. <strong>Introducción y justificación en la Educación Social</strong></div>
+  <div class="toc-item level-1">2. <strong>Educación para la igualdad y educación en la diversidad: Marco conceptual y legislativo</strong></div>
+  <div class="toc-item level-2">2.1. De la escuela mixta a la escuela coeducativa: Conceptos clave (sexo, género, roles, patriarcado)</div>
+  <div class="toc-item level-2">2.2. Marco normativo estatal y autonómico: Leyes de igualdad de género, legislación LGTBI y no discriminación</div>
+  <div class="toc-item level-2">2.3. El III Plan de Igualdad de Género en Educación de la Junta de Andalucía</div>
+  <div class="toc-item level-1">3. <strong>Educación no discriminatoria: Eliminación de prejuicios sexistas y xenófobos</strong></div>
+  <div class="toc-item level-2">3.1. Manifestaciones del sexismo en el entorno escolar: Lenguaje androcéntrico, uso del patio y sesgos STEM</div>
+  <div class="toc-item level-2">3.2. Deconstrucción de prejuicios racistas y xenófobos: Antigitanismo, islamofobia y aporofobia (Adela Cortina)</div>
+  <div class="toc-item level-2">3.3. Educación intercultural frente a modelos asimilacionistas</div>
+  <div class="toc-item level-1">4. <strong>La prevención de la radicalización violenta en el ámbito escolar</strong></div>
+  <div class="toc-item level-2">4.1. Concepto y dinámicas de radicalización: Polarización extrema, captación y discursos de odio</div>
+  <div class="toc-item level-2">4.2. Factores de riesgo en adolescentes: Aislamiento, búsqueda de pertenencia y redes sociales</div>
+  <div class="toc-item level-2">4.3. Estrategias de prevención socioeducativa y pedagogía del pensamiento crítico</div>
+  <div class="toc-item level-1">5. <strong>Actuación e intervención del educador o educadora social</strong></div>
+  <div class="toc-item level-2">5.1. Dinamización del Plan de Igualdad y participación en la Comisión de Igualdad del Consejo Escolar</div>
+  <div class="toc-item level-2">5.2. Talleres de nuevas masculinidades y desmontaje de los mitos del amor romántico</div>
+  <div class="toc-item level-2">5.3. Intervención con familias y mediación intercultural en el centro</div>
+  <div class="toc-item level-2">5.4. Detección precoz y aplicación de protocolos de violencia machista y lgtbifobia</div>
+  <div class="toc-item level-1">6. <strong>Conclusión</strong></div>
+  <div class="toc-item level-1">7. <strong>Anexo: Mapa conceptual y tabla sinóptica del Tema 14</strong></div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y justificación en la Educación Social</h2>
+
+<p>La <strong>educación para la igualdad y la diversidad</strong> constituye un mandato democrático inaplazable y uno de los principios vertebradores del sistema educativo andaluz. La escuela pública tiene el deber legal y ético de ser un espacio seguro, libre de prejuicios sexistas, xenófobos o lgtbifóbicos, donde todas las personas, independientemente de su sexo, origen étnico, orientación sexual o condición socioeconómica, disfruten de idénticas oportunidades de desarrollo vital.</p>
+
+<p>Históricamente, la simple agrupación física de niños y niñas en las mismas aulas (la "escuela mixta") demostró ser insuficiente para garantizar la igualdad: los sesgos de género, la invisibilidad de las mujeres y la segregación informal del espacio continuaron reproduciéndose de forma soterrada. Surge así la exigencia de la <strong>coeducación</strong>: una propuesta pedagógica activa, consciente e intencional orientada a deconstruir las jerarquías patriarcales y a erradicar cualquier manifestación de intolerancia o racismo.</p>
+
+<p>Para el <strong>Educador y la Educadora Social</strong>, este tema delimita un campo de intervención nuclear. Como profesional experto en dinámicas comunitarias y derechos humanos, el educador social actúa en los centros educativos y en los barrios para <strong>desactivar los discursos de odio, promover masculinidades cuidadoras, acompañar la diversidad afectivo-sexual y étnica, y prevenir los procesos de radicalización violenta</strong> en la adolescencia y primera juventud.</p>
+
+<h2 class="section-title">2. Educación para la igualdad y educación en la diversidad: Marco conceptual y legislativo</h2>
+
+<h3 class="sub-title">2.1. De la escuela mixta a la escuela coeducativa (Marina Subirats)</h3>
+
+<ul>
+  <li><strong>Escuela segregada:</strong> Separación física por sexos con currículos diferenciados y jerárquicos.</li>
+  <li><strong>Escuela mixta:</strong> Acceso conjunto de varones y mujeres a un mismo centro, pero asumiendo como modelo universal el patrón androcéntrico masculino, invisibilizando la experiencia de las mujeres.</li>
+  <li><strong>Escuela coeducativa:</strong> Intervención explícita y transformadora que valora equitativamente las aportaciones de hombres y mujeres, desmonta la división sexual del trabajo, educa en la corresponsabilidad del cuidado y erradica los estereotipos de dominación y sumisión.</li>
+</ul>
+
+<div class="diagram-box">
+  <pre>                         EVOLUCIÓN HACIA LA COEDUCACIÓN
+   ESCUELA SEGREGADA       ──►   ESCUELA MIXTA            ──►   ESCUELA COEDUCATIVA
+ (Aulas separadas,               (Mismas aulas, pero            (Deconstrucción activa
+  currículos diferenciados)       patrón androcéntrico)          de sesgos y corresponsabilidad)</pre>
+</div>
+
+<h3 class="sub-title">2.2. Marco normativo de referencia</h3>
+
+<ol>
+  <li><strong>Ámbito Estatal:</strong>
+    <ul>
+      <li><strong>Ley Orgánica 1/2004, de 28 de diciembre:</strong> Medidas de Protección Integral contra la Violencia de Género (arts. 4 a 9 sobre el ámbito educativo).</li>
+      <li><strong>Ley Orgánica 3/2007, de 22 de marzo:</strong> Para la igualdad efectiva de mujeres y hombres.</li>
+      <li><strong>Ley 15/2022, de 12 de julio:</strong> Integral para la igualdad de trato y la no discriminación.</li>
+      <li><strong>Ley 4/2023, de 28 de febrero:</strong> Para la igualdad real y efectiva de las personas trans y para la garantía de los derechos de las personas LGTBI.</li>
+    </ul>
+  </li>
+  <li><strong>Ámbito Autonómico Andaluz:</strong>
+    <ul>
+      <li><strong>Ley 12/2007, de 26 de noviembre:</strong> Para la promoción de la igualdad de género en Andalucía (reformada por Ley 9/2018).</li>
+      <li><strong>Ley 8/2017, de 28 de diciembre:</strong> Para garantizar los derechos, igualdad de trato y no discriminación de las personas LGTBI y sus familias en Andalucía.</li>
+      <li><strong>Ley 17/2007 (LEA, arts. 4 y 39):</strong> Coeducación obligatoria en todos los centros sostenidos con fondos públicos.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 class="sub-title">2.3. El III Plan de Igualdad de Género en Educación de Andalucía</h3>
+
+<p>Documento estratégico de la Consejería de Desarrollo Educativo que fija cuatro líneas de actuación:</p>
+
+<ul>
+  <li>Plan de Centro con enfoque de género (lenguaje no sexista, visibilidad de mujeres científicas y pensadoras).</li>
+  <li>Prevención de la violencia de género, el acoso callejero y el ciberacoso sexista.</li>
+  <li>Orientación vocacional libre de sesgos de género (fomento de vocaciones STEAM en niñas).</li>
+  <li>Formación del profesorado y corresponsabilidad de las familias.</li>
+</ul>
+
+<h2 class="section-title">3. Educación no discriminatoria: Eliminación de prejuicios sexistas y xenófobos</h2>
+
+<h3 class="sub-title">3.1. Desmontaje del sexismo escolar</h3>
+
+<ul>
+  <li><strong>Uso del espacio escolar:</strong> Deconstruir la hegemonía de las pistas deportivas centrales (habitualmente monopolizadas por varones jugando al fútbol), reordenando los patios con zonas de descanso, juegos cooperativos y espacios verdes.</li>
+  <li><strong>Lenguaje inclusivo y no androcéntrico:</strong> Superar el masculino genérico invisibilizador en los documentos oficiales, circulares y comunicaciones con familias.</li>
+  <li><strong>Mitos del amor romántico:</strong> Combatir en la adolescencia creencias tóxicas (<em>"quien bien te quiere te hará llorar"</em>, los celos como prueba de amor o el control del teléfono móvil) que constituyen el germen de la violencia de género en parejas jóvenes.</li>
+</ul>
+
+<h3 class="sub-title">3.2. Deconstrucción de prejuicios racistas y xenófobos</h3>
+
+<ul>
+  <li><strong>Aporofobia (Adela Cortina):</strong> Rechazo, miedo y desprecio hacia la persona pobre. Muchas conductas aparentemente racistas esconden en realidad aporofobia: no se rechaza al extranjero rico, sino al inmigrante o gitano en situación de precariedad.</li>
+  <li><strong>Antigitanismo:</strong> Forma específica de racismo estructural contra el pueblo gitano basada en estereotipos históricos de marginalidad o delincuencia. La escuela andaluza debe visibilizar la historia, cultura y lengua romaní (Decreto 101/2023 y 102/2023).</li>
+  <li><strong>Islamofobia:</strong> Prejuicios hacia el alumnado de origen magrebí o religión musulmana, asociando injustamente su fe con el integrismo violento.</li>
+</ul>
+
+<h2 class="section-title">4. La prevención de la radicalización violenta en el ámbito escolar</h2>
+
+<h3 class="sub-title">4.1. Concepto y proceso de radicalización</h3>
+
+<p>Proceso psicosocial mediante el cual un individuo adopta creencias y valores extremistas que justifican el uso de la violencia para imponer un ideario político, religioso o identitario.</p>
+
+<div class="diagram-box">
+  <pre>                      PROCESO DE VULNERABILIDAD Y RADICALIZACIÓN
+ ┌──────────────────────┐      ┌──────────────────────┐      ┌──────────────────────┐
+ │ CRISIS DE IDENTIDAD  │ ──►  │ AISLAMIENTO SOCIAL   │ ──►  │ NARRATIVA DE ODIO    │
+ ├──────────────────────┤      ├──────────────────────┤      ├──────────────────────┤
+ │ Desarraigo cultural, │      │ Exclusión del grupo, │      │ Captación en redes,  │
+ │ fracaso escolar      │      │ soledad y anomia     │      │ visión blanco/negro  │
+ └──────────────────────┘      └──────────────────────┘      └──────────────────────┘</pre>
+</div>
+
+<h3 class="sub-title">4.2. Factores de riesgo en la juventud</h3>
+
+<ul>
+  <li>Sentimiento de desarraigo o no pertenencia (menores de origen extranjero que no se sienten plenamente de su país de origen ni aceptados en el de acogida).</li>
+  <li>Exposición intensiva a propaganda extremista en foros cerrados de internet y redes sociales (TikTok, Telegram).</li>
+  <li>Fracaso académico y ausencia de expectativas laborales o de futuro.</li>
+</ul>
+
+<h3 class="sub-title">4.3. Respuesta socioeducativa y pedagógica</h3>
+
+<ul>
+  <li><strong>Plan Estratégico Nacional de Lucha Contra la Radicalización Violenta (PENC-LRV):</strong> Fomenta la detección precoz y la intervención socioeducativa no policial en las escuelas.</li>
+  <li><strong>Pedagogía de la pertenencia:</strong> Crear vínculos comunitarios protectores, clubes juveniles y espacios de escucha donde el joven se sienta valorado y parte activa de la sociedad.</li>
+  <li><strong>Entrenamiento en pensamiento complejo:</strong> Desmontar las visiones maniqueas del mundo ("nosotros los puros" contra "ellos los enemigos").</li>
+</ul>
+
+<h2 class="section-title">5. Actuación e intervención del educador o educadora social</h2>
+
+<p>En el marco de las <strong>Instrucciones de 17 de septiembre de 2010</strong>, el Educador Social despliega una intensa acción coeducativa e intercultural:</p>
+
+<div class="diagram-box">
+  <pre>                  ÁMBITOS DE INTERVENCIÓN DEL EDUCADOR/A SOCIAL
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ COEDUCACIÓN E IGUAL. │ DIVERSIDAD Y LGTBI+  │ INTERCULTURALIDAD    │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Nuevas masculinidad│ • Protocolo Trans    │ • Mediación familias │
+ │ • Prevención violenc.│ • Desmontar acoso    │ • Inclusión gitana   │
+ │ • Desmontar porno    │ • Espacios seguros   │ • Desactivar bulos   │
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<ol>
+  <li><strong>Dinamización de Nuevas Masculinidades:</strong> Talleres con adolescentes varones para cuestionar el mandato patriarcal tradicional (represión de emociones, agresividad, competitividad) y promover el autocuidado, la empatía y la resolución dialogada de tensiones.</li>
+  <li><strong>Aplicación del Protocolo de Violencia de Género y LGTBIfobia:</strong> Asistencia y acompañamiento a alumnas víctimas de relaciones tóxicas o maltrato psicológico y protección al alumnado trans conforme a la Ley 8/2017 de Andalucía.</li>
+  <li><strong>Mediación Intercultural con Familias:</strong> Derribar barreras culturales con familias gitanas e inmigrantes, facilitando su participación en el Consejo Escolar, las tutorías y las reuniones del AMPA.</li>
+  <li><strong>Talleres de Alfabetización Mediática frente al Ciberodio:</strong> Formación para identificar bulos racistas y mensajes de captación extremista en redes sociales.</li>
+</ol>
+
+<h2 class="section-title">6. Conclusión</h2>
+
+<p>La educación para la igualdad y la diversidad no es una opción pedagógica optativa; es el <strong>deber ético supremo de la escuela democrática</strong>. Ningún menor debe ser discriminado ni violentado por razón de su género, orientación sexual, etnia o condición social.</p>
+
+<p>El <strong>Educador y la Educadora Social</strong> ejerce una labor transformadora de primera línea: abre las aulas a la diversidad real de la sociedad, deconstruye prejuicios ancestrales, previene la violencia machista y la radicalización juvenil, y hace de la escuela pública andaluza un espacio de libertad, dignidad humana y justicia universal.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">7. Anexo: Mapa conceptual y tabla sinóptica del Tema 14</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Normativa / Autores Clave</th>
+      <th>Conceptos e Implicación Práctica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Coeducación</strong></td>
+      <td>Marina Subirats • Ley 12/2007 de Andalucía • III Plan de Igualdad</td>
+      <td>Superación de la escuela mixta; deconstrucción de estereotipos machistas y corresponsabilidad del cuidado.</td>
+    </tr>
+    <tr>
+      <td><strong>Violencia de Género</strong></td>
+      <td>Ley Orgánica 1/2004 • Ley Orgánica 3/2007</td>
+      <td>Prevención del control digital y desmitificación del amor romántico en parejas adolescentes.</td>
+    </tr>
+    <tr>
+      <td><strong>Diversidad LGTBI+</strong></td>
+      <td>Ley 4/2023 estatal • Ley 8/2017 de Andalucía</td>
+      <td>Protección contra la lgtbifobia, visibilidad de la diversidad familiar y aplicación del protocolo trans escolar.</td>
+    </tr>
+    <tr>
+      <td><strong>Aporofobia y Racismo</strong></td>
+      <td>Adela Cortina • Ley 15/2022 de Igualdad de Trato</td>
+      <td>Deconstrucción del rechazo al pobre; combate del antigitanismo y la islamofobia en las aulas.</td>
+    </tr>
+    <tr>
+      <td><strong>Patrimonio Gitano</strong></td>
+      <td>LEA 17/2007 • Decretos curriculares 2023</td>
+      <td>Inclusión obligatoria de la historia y cultura del pueblo gitano en el currículo andaluz.</td>
+    </tr>
+    <tr>
+      <td><strong>Radicalización Violenta</strong></td>
+      <td>Plan Estratégico PENC-LRV • Pensamiento crítico</td>
+      <td>Prevención del extremismo violento mediante la inclusión cívica, la pertenencia comunitaria y el diálogo.</td>
+    </tr>
+    <tr>
+      <td><strong>Nuevas Masculinidades</strong></td>
+      <td>Bell hooks • Pedagogía de los cuidados</td>
+      <td>Talleres socioeducativos para deconstruir la masculinidad hegemónica agresiva entre adolescentes.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>Instrucciones de 17 de septiembre de 2010</td>
+      <td>Asesor en la Comisión de Igualdad, dinamizador de patios inclusivos, mediador intercultural y apoyo a víctimas.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

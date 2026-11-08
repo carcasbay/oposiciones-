@@ -1,0 +1,658 @@
+import os
+from build_theme import compile_pdf
+
+theme_num = 40
+theme_title = "Tema 40: Las zonas en riesgo de exclusión social. Iniciativas institucionales para la intervención comunitaria integral. La intervención del educador o educadora social en zonas socioculturalmente desfavorecidas: análisis de necesidades. Modelos y estrategias. La Estrategia Regional Andaluza para la Cohesión e Inclusión Social (ERACIS)"
+filename_base = "Tema_40_Zonas_Exclusion_Social_Intervencion_Comunitaria_ERACIS"
+
+md_content = f"""# {theme_title}
+
+## FICHA TÉCNICA
+* **Cuerpo:** Cuerpo Técnico Facultativo, Opción Educación Social (A2.2018).
+* **Junta de Andalucía** - Consejería de Inclusión Social, Juventud, Familias e Igualdad / Consejería de Desarrollo Educativo y Formación Profesional.
+* **Materia:** Exclusión social, vulnerabilidad urbana, marginación avanzada (Wacquant), modelo comunitario de Marchioni, análisis de necesidades socioeducativas, Estrategia Regional Andaluza para la Cohesión e Inclusión Social (ERACIS / ERACIS+), FSE+, Planes Locales de Intervención en Zonas Desfavorecidas (PLIZD).
+
+---
+
+## ÍNDICE SISTEMÁTICO
+
+1. **INTRODUCCIÓN Y MARCO CONCEPTUAL: LA EXCLUSIÓN SOCIAL Y EL TERRITORIO**
+   * 1.1. De la pobreza unidimensional a la exclusión social multidimensional.
+   * 1.2. Modelos teóricos explicativos:
+     * 1.2.1. Las tres zonas de cohesión social de Robert Castel (Integración, Vulnerabilidad y Exclusión).
+     * 1.2.2. La marginalidad avanzada y la estigmatización territorial de Loïc Wacquant.
+     * 1.2.3. Las dimensiones de la exclusión social de Joan Subirats.
+   * 1.3. Segregación socioespacial, guetización y reproducción intergeneracional de la desigualdad.
+
+2. **INICIATIVAS INSTITUCIONALES PARA LA INTERVENCIÓN COMUNITARIA INTEGRAL**
+   * 2.1. Marco internacional y europeo: Fondo Social Europeo Plus (FSE+), Agenda 2030 (ODS) y Pilar Europeo de Derechos Sociales.
+   * 2.2. Marco estatal: Plan Nacional de Acción para la Inclusión Social e Ingreso Mínimo Vital (Ley 19/2021).
+   * 2.3. Marco autonómico andaluz:
+     * 2.3.1. Ley 9/2016 de Servicios Sociales de Andalucía.
+     * 2.3.2. De las Zonas con Necesidades de Transformación Social (ZNTS) a las Zonas Desfavorecidas.
+     * 2.3.3. Renta Mínima de Inserción Social en Andalucía (RMISA - Decreto-ley 3/2017).
+
+3. **LA ESTRATEGIA REGIONAL ANDALUZA PARA LA COHESIÓN E INCLUSIÓN SOCIAL (ERACIS / ERACIS+)**
+   * 3.1. Naturaleza jurídica, antecedentes y financiación estructural (FSE+).
+   * 3.2. Delimitación territorial y mapa de zonas desfavorecidas en Andalucía.
+   * 3.3. Los cuatro ejes estratégicos de actuación:
+     * 3.3.1. Eje 1: Desarrollo económico y comunitario sostenible.
+     * 3.3.2. Eje 2: Políticas públicas para el bienestar y la cohesión social (educación, salud, vivienda).
+     * 3.3.3. Eje 3: Mejora del hábitat, regeneración urbana y convivencia.
+     * 3.3.4. Eje 4: Trabajo en red e innovación social en la intervención comunitaria.
+   * 3.4. Instrumentos operativos: Planes Locales de Intervención en Zonas Desfavorecidas (PLIZD) y convenios con el Tercer Sector.
+   * 3.5. Los Itinerarios Integrados y Personalizados de Inserción Sociolaboral: fases y acompañamiento técnico.
+
+4. **ESTRATEGIAS Y TÉCNICAS PARA EL ANÁLISIS DE NECESIDADES SOCIALES Y EDUCATIVAS**
+   * 4.1. El diagnóstico social participativo: concepto y fases metodológicas.
+   * 4.2. Técnicas cuantitativas: indicadores demográficos, sociolaborales, absentismo escolar, abandono temprano e infravivienda.
+   * 4.3. Técnicas cualitativas y dialógicas:
+     * 4.3.1. Entrevistas en profundidad a informantes clave e historias de vida.
+     * 4.3.2. Grupos de discusión y técnica DAFO comunitaria.
+     * 4.3.3. Mapeo de Activos Comunitarios y derivas perceptivas urbanas.
+   * 4.4. Detección de barreras invisibles: el estigma territorial, la desconfianza institucional y la indefensión aprendida.
+
+5. **MODELOS Y ESTRATEGIAS DE INTERVENCIÓN DEL EDUCADOR O EDUCADORA SOCIAL EN ZONAS DESFAVORECIDAS**
+   * 5.1. Modelos teóricos de intervención comunitaria:
+     * 5.1.1. El Modelo de Intervención Comunitaria de Marco Marchioni (Administración, Técnicos y Ciudadanía).
+     * 5.1.2. El Enfoque de las Capacidades de Amartya Sen y Martha Nussbaum.
+     * 5.1.3. El Enfoque Ecológico-Sistémico de Urie Bronfenbrenner.
+   * 5.2. Estrategias socioeducativas operativas:
+     * 5.2.1. Prevención del absentismo, desescolarización y fracaso escolar en red con los centros docentes (CEIP/IES).
+     * 5.2.2. Acompañamiento sociofamiliar en entornos de alta vulnerabilidad: parentalidad positiva y educación domiciliaria.
+     * 5.2.3. Dinamización juvenil comunitaria y alternativas frente a la economía sumergida y las adicciones.
+     * 5.2.4. Mediación comunitaria e intercultural en conflictos vecinales y uso del espacio público.
+   * 5.3. Coordinación intersectorial: mesas técnicas de zona, comisiones de absentismo y trabajo conjunto con Servicios Sociales y Salud.
+
+6. **CONCLUSIONES Y HORIZONTE ÉTICO-PROFESIONAL DE LA EDUCACIÓN SOCIAL**
+7. **ANEXO: TABLA SINTÉTICA DE LA ESTRATEGIA ERACIS (EJES, DISPOSITIVOS Y ROL PROFESIONAL)**
+"""
+
+html_content = f"""<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>{theme_title}</title>
+<style>
+  @page {{
+    size: A4;
+    margin: 20mm 15mm 20mm 15mm;
+    @bottom-right {{
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }}
+    @bottom-left {{
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }}
+  }}
+  body {{
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.5;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }}
+  .cover {{
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }}
+  .cover h1 {{
+    font-size: 20pt;
+    color: #4c1d95;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }}
+  .cover .badge {{
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    margin-bottom: 25px;
+    display: inline-block;
+  }}
+  .cover .meta-box {{
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 18px;
+    margin-top: 30px;
+    text-align: left;
+    width: 85%;
+    font-size: 9pt;
+  }}
+  .toc-container {{
+    page-break-after: always;
+    padding: 20px 0;
+  }}
+  .toc-title {{
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }}
+  .toc-item {{
+    margin-bottom: 8px;
+    font-size: 9.5pt;
+  }}
+  .toc-item.level-1 {{ font-weight: bold; color: #1e1b4b; margin-top: 10px; }}
+  .toc-item.level-2 {{ margin-left: 15px; color: #374151; }}
+  .toc-item.level-3 {{ margin-left: 30px; color: #4b5563; font-style: italic; }}
+
+  h2.section-title {{
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 13pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }}
+  h3.sub-title {{
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }}
+  h4.sub-sub-title {{
+    color: #5b21b6;
+    font-size: 9.5pt;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }}
+  p {{
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }}
+  ul, ol {{
+    margin-top: 4px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+  }}
+  li {{
+    margin-bottom: 4px;
+    text-align: justify;
+  }}
+  .callout {{
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9pt;
+  }}
+  .callout-title {{
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }}
+  .norm-box {{
+    background-color: #f8fafc;
+    border-left: 4px solid #0284c7;
+    padding: 10px 14px;
+    margin: 12px 0;
+    font-size: 9pt;
+  }}
+  .norm-title {{
+    font-weight: bold;
+    color: #0369a1;
+    margin-bottom: 4px;
+  }}
+  .compare-container {{
+    display: flex;
+    gap: 12px;
+    margin: 12px 0;
+  }}
+  .compare-box {{
+    flex: 1;
+    background: #fdf4ff;
+    border: 1px solid #f0abfc;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 8.5pt;
+  }}
+  .compare-title {{
+    font-weight: bold;
+    color: #86198f;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #f0abfc;
+    padding-bottom: 3px;
+  }}
+  table.data-table {{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 8.5pt;
+  }}
+  table.data-table th, table.data-table td {{
+    border: 1px solid #e2e8f0;
+    padding: 6px 8px;
+    text-align: left;
+  }}
+  table.data-table th {{
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }}
+  table.data-table tr:nth-child(even) {{
+    background-color: #faf5ff;
+  }}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 40</h1>
+  <h2 style="font-size: 13.5pt; color: #5b21b6; font-weight: 600; max-width: 90%; margin-bottom: 25px;">
+    LAS ZONAS EN RIESGO DE EXCLUSIÓN SOCIAL. INICIATIVAS INSTITUCIONALES PARA LA INTERVENCIÓN COMUNITARIA INTEGRAL. LA INTERVENCIÓN DEL EDUCADOR O EDUCADORA SOCIAL EN UNA ZONA SOCIOCULTURALMENTE DESFAVORECIDA: ESTRATEGIAS Y TÉCNICAS PARA EL ANÁLISIS DE NECESIDADES SOCIALES Y EDUCATIVAS. MODELOS Y ESTRATEGIAS DE INTERVENCIÓN. ESTRATEGIA REGIONAL ANDALUZA PARA LA COHESIÓN E INCLUSIÓN SOCIAL. INTERVENCIÓN EN ZONAS DESFAVORECIDAS (ERACIS).
+  </h2>
+  
+  <div class="meta-box">
+    <strong>Marco Jurídico, Institucional y Teórico:</strong>
+    <ul style="margin: 6px 0 0 0; padding-left: 18px;">
+      <li><strong>Europeo y Estatal:</strong> Fondo Social Europeo Plus (FSE+), Ley 19/2021 (Ingreso Mínimo Vital), Plan Nacional de Inclusión Social.</li>
+      <li><strong>Andalucía:</strong> Ley 9/2016 de Servicios Sociales de Andalucía, Decreto-ley 3/2017 (RMISA), Estrategia Regional Andaluza para la Cohesión e Inclusión Social (ERACIS / ERACIS+), Planes Locales de Intervención en Zonas Desfavorecidas (PLIZD).</li>
+      <li><strong>Doctrina Científica:</strong> Robert Castel (Metamorfosis de la cuestión social), Loïc Wacquant (Marginalidad avanzada), Joan Subirats (Dimensiones de la exclusión), Marco Marchioni (Intervención comunitaria integral).</li>
+    </ul>
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 40</div>
+  <div class="toc-item level-1">1. INTRODUCCIÓN Y MARCO CONCEPTUAL: LA EXCLUSIÓN SOCIAL Y EL TERRITORIO</div>
+  <div class="toc-item level-2">1.1. De la pobreza económica unidimensional a la exclusión social multidimensional</div>
+  <div class="toc-item level-2">1.2. Modelos teóricos explicativos: Robert Castel, Loïc Wacquant y Joan Subirats</div>
+  <div class="toc-item level-2">1.3. Segregación socioespacial, guetización y reproducción intergeneracional de la desigualdad</div>
+  
+  <div class="toc-item level-1">2. INICIATIVAS INSTITUCIONALES PARA LA INTERVENCIÓN COMUNITARIA INTEGRAL</div>
+  <div class="toc-item level-2">2.1. Marco internacional y europeo: FSE+, Agenda 2030 y Pilar Europeo de Derechos Sociales</div>
+  <div class="toc-item level-2">2.2. Marco estatal: Plan Nacional de Acción para la Inclusión y Ley 19/2021 del IMV</div>
+  <div class="toc-item level-2">2.3. Marco autonómico andaluz: Ley 9/2016, evolución de las ZNTS y RMISA</div>
+
+  <div class="toc-item level-1">3. LA ESTRATEGIA REGIONAL ANDALUZA PARA LA COHESIÓN E INCLUSIÓN SOCIAL (ERACIS / ERACIS+)</div>
+  <div class="toc-item level-2">3.1. Naturaleza jurídica, antecedentes y cofinanciación por el Fondo Social Europeo Plus</div>
+  <div class="toc-item level-2">3.2. Delimitación territorial y mapa de zonas desfavorecidas en Andalucía</div>
+  <div class="toc-item level-2">3.3. Los cuatro ejes estratégicos de la Estrategia ERACIS</div>
+  <div class="toc-item level-3">3.3.1. Eje 1: Desarrollo económico y comunitario sostenible</div>
+  <div class="toc-item level-3">3.3.2. Eje 2: Políticas públicas para el bienestar y la cohesión social</div>
+  <div class="toc-item level-3">3.3.3. Eje 3: Mejora del hábitat, regeneración urbana y convivencia</div>
+  <div class="toc-item level-3">3.3.4. Eje 4: Trabajo en red e innovación social en la intervención comunitaria</div>
+  <div class="toc-item level-2">3.4. Dispositivos operativos: Planes Locales (PLIZD) y convenios con el Tercer Sector</div>
+  <div class="toc-item level-2">3.5. Los Itinerarios Integrados y Personalizados de Inserción Sociolaboral</div>
+
+  <div class="toc-item level-1">4. ESTRATEGIAS Y TÉCNICAS PARA EL ANÁLISIS DE NECESIDADES SOCIALES Y EDUCATIVAS</div>
+  <div class="toc-item level-2">4.1. El diagnóstico social comunitario participativo: fases metodológicas</div>
+  <div class="toc-item level-2">4.2. Técnicas cuantitativas: fuentes censales, absentismo escolar, desempleo e infravivienda</div>
+  <div class="toc-item level-2">4.3. Técnicas cualitativas: entrevistas, historias de vida, DAFO participativo y mapeo de activos</div>
+  <div class="toc-item level-2">4.4. Detección de barreras invisibles: estigma territorial, desconfianza e indefensión aprendida</div>
+
+  <div class="toc-item level-1">5. MODELOS Y ESTRATEGIAS DE INTERVENCIÓN DEL EDUCADOR O EDUCADORA SOCIAL</div>
+  <div class="toc-item level-2">5.1. Modelos teóricos: Intervención Comunitaria de Marchioni, Capacidades de Sen y Modelo Ecológico</div>
+  <div class="toc-item level-2">5.2. Estrategias socioeducativas operativas en barrios desfavorecidos</div>
+  <div class="toc-item level-3">5.2.1. Prevención del absentismo y desescolarización en articulación con centros educativos</div>
+  <div class="toc-item level-3">5.2.2. Acompañamiento sociofamiliar y parentalidad positiva en extrema vulnerabilidad</div>
+  <div class="toc-item level-3">5.2.3. Dinamización juvenil y alternativas sociocomunitarias</div>
+  <div class="toc-item level-3">5.2.4. Mediación intercultural y resolución no violenta de conflictos vecinales</div>
+  <div class="toc-item level-2">5.3. Coordinación intersectorial: mesas técnicas de barrio y trabajo con Servicios Sociales Comunitarios</div>
+
+  <div class="toc-item level-1">6. CONCLUSIONES Y HORIZONTE ÉTICO-PROFESIONAL DE LA EDUCACIÓN SOCIAL</div>
+  <div class="toc-item level-1">7. ANEXO: TABLA SINTÉTICA DE LA ESTRATEGIA ERACIS</div>
+</div>
+
+<!-- CONTENIDO DESARROLLADO -->
+<h2 class="section-title">1. INTRODUCCIÓN Y MARCO CONCEPTUAL: LA EXCLUSIÓN SOCIAL Y EL TERRITORIO</h2>
+<h3 class="sub-title">1.1. De la pobreza económica unidimensional a la exclusión social multidimensional</h3>
+<p>
+  En el debate sociológico y socioeducativo contemporáneo, el concepto de <strong>exclusión social</strong> ha superado definitivamente la noción tradicional de pobreza. Mientras que la pobreza se circunscribía primordialmente a un déficit cuantitativo de ingresos monetarios o de recursos materiales (perspectiva estática y distributiva), la exclusión social alude a un <strong>proceso dinámico, multidimensional y relacional</strong> de pérdida progresiva de vínculos sociales, quiebra de la ciudadanía y expulsión de los mecanismos formales e informales de integración comunitaria.
+</p>
+<p>
+  Estar excluido significa no solo carecer de ingresos suficientes, sino estar privado de acceso efectivo a la educación de calidad, al empleo digno, a la salud integral, a una vivienda adecuada, a las redes de protección relacional y al ejercicio de los derechos políticos y civiles fundamentales.
+</p>
+
+<h3 class="sub-title">1.2. Modelos teóricos explicativos</h3>
+<p>
+  Para comprender la génesis de las zonas vulnerables, la literatura sociológica aporta tres modelos de obligada referencia en la oposición:
+</p>
+
+<h4 class="sub-sub-title">1.2.1. Las tres zonas de cohesión social de Robert Castel</h4>
+<p>
+  En su obra cumbre <em>«Las metamorfosis de la cuestión social»</em>, Castel conceptualiza la estructura social no como una pirámide fija, sino como un continuum dinámico articulado en tres grandes zonas determinadas por dos ejes cardinales: <strong>el eje laboral</strong> (estabilidad frente a precariedad/desempleo) y <strong>el eje relacional</strong> (solidez frente a aislamiento vincular):
+</p>
+<div class="norm-box">
+  <div class="norm-title">Las Tres Zonas Sociales de Robert Castel</div>
+  <ul>
+    <li><strong>Zona de Integración:</strong> Empleo regular y estable + inscripción relacional sólida en familias y redes comunitarias de soporte.</li>
+    <li><strong>Zona de Vulnerabilidad:</strong> Trabajo precario, inestable y flexible + redes afectivas y familiares fragilizadas. Quienes se ubican en esta franja viven en constante zozobra de caer al abismo de la exclusión ante cualquier shock imprevisto (despido, enfermedad, desahucio).</li>
+    <li><strong>Zona de Exclusión (o Desafiliación):</strong> Desempleo estructural o expulsión permanente del mercado productivo + desconexión o aislamiento de todo soporte relacional. Castel prefiere el término <em>desafiliación</em> para subrayar que no es un estado inmóvil, sino el resultado de trayectorias de sucesivas rupturas vitales e institucionales.</li>
+  </ul>
+</div>
+
+<h4 class="sub-sub-title">1.2.2. La marginalidad avanzada y el estigma de Loïc Wacquant</h4>
+<p>
+  Loïc Wacquant (<em>«Parias urbanos»</em>) acuña el concepto de <strong>marginalidad avanzada</strong> para describir la nueva forma de exclusión espacial que emerge en las metrópolis postindustriales:
+</p>
+<ul>
+  <li>Se localiza en territorios urbanos claramente delimitados (periferias segregadas, barriadas degradadas), generando auténticos <em>guetos</em> o enclaves de relegación.</li>
+  <li>Se caracteriza por la <strong>estigmatización territorial</strong>: la dirección postal del barrio opera como una marca de deshonor que bloquea a sus vecinos el acceso a entrevistas de trabajo, créditos bancarios o transporte público digno.</li>
+  <li>Pérdida del "hinterland" comunitario: debilitamiento del tejido asociativo tradicional obrero y auge de economías informales o ilícitas como mecanismo extremo de supervivencia.</li>
+</ul>
+
+<h4 class="sub-sub-title">1.2.3. La multidimensionalidad de la exclusión de Joan Subirats</h4>
+<p>
+  Subirats y su equipo sistematizan la exclusión en una matriz de vectores interdependientes:
+</p>
+<ol>
+  <li><strong>Ámbito Económico:</strong> Carencia de ingresos, endeudamiento crónico, pobreza energética.</li>
+  <li><strong>Ámbito Laboral:</strong> Desempleo de muy larga duración, temporalidad precaria, economía sumergida.</li>
+  <li><strong>Ámbito Formativo-Educativo:</strong> Analfabetismo funcional, fracaso escolar, abandono escolar temprano, brecha digital.</li>
+  <li><strong>Ámbito Sociosanitario:</strong> Enfermedades crónicas no tratadas, adicciones, salud mental desatendida, discapacidad no reconocida.</li>
+  <li><strong>Ámbito Espacial y Residencial:</strong> Infravivienda, hacinamiento, infraviviendas o chabolas, degradación del entorno urbano.</li>
+  <li><strong>Ámbito Relacional y Ciudadano:</strong> Aislamiento, violencia intrafamiliar, desafección política, falta de participación vecinal.</li>
+</ol>
+
+<h3 class="sub-title">1.3. Segregación socioespacial y reproducción de la desigualdad</h3>
+<p>
+  Cuando las distintas dimensiones de la exclusión convergen y se concentran geográficamente en un barrio, se desencadena un fenómeno de <strong>segregación socioespacial severa</strong>. La barriada queda segregada de la dinámica general de la ciudad, los centros educativos se convierten en "centros gueto" con índices alarmantes de absentismo, y la pobreza se transmite mecánicamente de padres a hijos (reproducción intergeneracional de la exclusión social).
+</p>
+
+<h2 class="section-title">2. INICIATIVAS INSTITUCIONALES PARA LA INTERVENCIÓN COMUNITARIA INTEGRAL</h2>
+<h3 class="sub-title">2.1. Marco internacional y europeo</h3>
+<p>
+  La Unión Europea aborda la cohesión social como principio irrenunciable a través del <strong>Pilar Europeo de Derechos Sociales</strong> y los <em>Objetivos de Desarrollo Sostenible (Agenda 2030)</em>, con especial énfasis en el ODS 1 (Fin de la pobreza), ODS 10 (Reducción de las desigualdades) y ODS 11 (Ciudades y comunidades sostenibles).
+</p>
+<p>
+  El principal instrumento financiero europeo para la inclusión social es el <strong>Fondo Social Europeo Plus (FSE+)</strong>, que exige que un mínimo del 25% de sus fondos se destine de forma vinculante a la inclusión social activa y a la erradicación de la pobreza infantil en zonas especialmente deprimidas.
+</p>
+
+<h3 class="sub-title">2.2. Marco estatal</h3>
+<p>
+  A nivel de España, la <em>Estrategia Nacional de Prevención y Lucha contra la Pobreza y la Exclusión Social</em> vertebra las grandes directrices estatales, complementada de manera decisiva por la <strong>Ley 19/2021, de 20 de diciembre, por la que se establece el Ingreso Mínimo Vital (IMV)</strong>. El IMV opera como un suelo básico de garantía de ingresos, complementado obligatoriamente con sellos de inclusión social y convenios con Comunidades Autónomas para desplegar itinerarios socioeducativos activos de inserción.
+</p>
+
+<h3 class="sub-title">2.3. Marco autonómico andaluz</h3>
+<p>
+  Andalucía ha sido pionera en el abordaje integral de las barriadas marginadas:
+</p>
+<ul>
+  <li><strong>Ley 9/2016, de 27 de diciembre, de Servicios Sociales de Andalucía:</strong> Establece el derecho universal a la atención integral y reconoce la singularidad de la intervención comunitaria en áreas desfavorecidas como prestación garantizada del Catálogo.</li>
+  <li><strong>Decreto 202/2021 y antecedentes históricos:</strong> Andalucía definió históricamente las <em>Zonas con Necesidades de Transformación Social (ZNTS)</em> desde finales de los años 80 (Plan de Barriadas de Actuación Preferente), transitando hacia modelos de intervención comunitaria integral más avanzados.</li>
+  <li><strong>Decreto-ley 3/2017 (RMISA):</strong> Regula la Renta Mínima de Inserción Social en Andalucía, vinculando la prestación económica a un Plan de Inclusión Sociolaboral individual y familiar de obligada suscripción y seguimiento profesional.</li>
+</ul>
+
+<h2 class="section-title">3. LA ESTRATEGIA REGIONAL ANDALUZA PARA LA COHESIÓN E INCLUSIÓN SOCIAL (ERACIS / ERACIS+)</h2>
+<h3 class="sub-title">3.1. Naturaleza jurídica y marco institucional</h3>
+<p>
+  La <strong>Estrategia Regional Andaluza para la Cohesión e Inclusión Social. Intervención en Zonas Desfavorecidas (ERACIS)</strong>, aprobada inicialmente por acuerdo de Consejo de Gobierno y renovada bajo el marco <strong>ERACIS+ (periodo 2022-2027)</strong>, constituye el plan integral más ambicioso desarrollado por la Junta de Andalucía para transformar estructuralmente las barriadas en mayor riesgo de exclusión social.
+</p>
+<p>
+  Liderada por la <em>Consejería de Inclusión Social, Juventud, Familias e Igualdad</em> y cofinanciada por el <em>Fondo Social Europeo Plus (FSE+)</em>, moviliza más de 180 millones de euros mediante subvenciones directas a entidades locales (Ayuntamientos de más de 20.000 habitantes y Diputaciones Provinciales) y a organizaciones sin ánimo de lucro del Tercer Sector de Acción Social.
+</p>
+
+<h3 class="sub-title">3.2. Delimitación territorial: mapa de zonas desfavorecidas</h3>
+<p>
+  La ERACIS identifica y delimita formalmente casi <strong>un centenar de zonas desfavorecidas</strong> repartidas por las ocho provincias andaluzas, seleccionadas con arreglo a indicadores objetivos y contrastados:
+</p>
+<div class="callout">
+  <div class="callout-title">Ejemplos Emblemáticos de Zonas ERACIS en Andalucía</div>
+  <ul>
+    <li><strong>Sevilla:</strong> Polígono Sur (Tres Mil Viviendas, Las 3000), Tres Barrios - Amate (Los Pajaritos, La Candelaria, Madre de Dios), Torreblanca.</li>
+    <li><strong>Granada:</strong> Distrito Norte (Almanjáyar, Cartuja, La Paz, Rey Badis) y Santa Adela (Zaidín).</li>
+    <li><strong>Málaga:</strong> Distrito Palma-Palmilla, Campanillas, Los Asperones.</li>
+    <li><strong>Cádiz:</strong> Barriadas de la Paz y Guillén Moreno en Cádiz capital; Distrito Sur y Oeste en Jerez de la Frontera; San Roque y La Línea de la Concepción (Atunara, Junquillos).</li>
+    <li><strong>Córdoba:</strong> Distrito Sur (Guadalquivir, Sector Sur) y Las Palmeras.</li>
+    <li><strong>Huelva:</strong> Distrito V (El Torrejón, La Hispanidad, Marismas del Odiel).</li>
+    <li><strong>Jaén:</strong> Polígono del Valle, La Magdalena, Puerta de Madrid en Andújar, Linares (Arrayanes).</li>
+    <li><strong>Almería:</strong> El Puche, La Chanca - Pescadería, Los Almendros, y zonas hortofrutícolas de El Ejido, Roquetas de Mar y Níjar.</li>
+  </ul>
+</div>
+
+<h3 class="sub-title">3.3. Los cuatro ejes estratégicos de la Estrategia ERACIS</h3>
+<table class="data-table">
+  <thead>
+    <tr>
+      <th style="width: 15%;">Eje</th>
+      <th style="width: 30%;">Denominación</th>
+      <th style="width: 55%;">Objetivos Específicos y Acciones Clave</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>EJE 1</strong></td>
+      <td><strong>Desarrollo económico y comunitario sostenible</strong></td>
+      <td>Fomento del empleo local, apoyo al emprendimiento y cooperativismo de proximidad, erradicación de la economía sumergida y dignificación del comercio de barrio.</td>
+    </tr>
+    <tr>
+      <td><strong>EJE 2</strong></td>
+      <td><strong>Políticas públicas para el bienestar y la cohesión social</strong></td>
+      <td>Refuerzo de los Servicios Sociales Comunitarios; prevención del absentismo y abandono escolar prematuro; salud comunitaria y mediación sanitaria; prevención de la violencia de género y atención a la infancia vulnerable.</td>
+    </tr>
+    <tr>
+      <td><strong>EJE 3</strong></td>
+      <td><strong>Mejora del hábitat, regeneración urbana y convivencia</strong></td>
+      <td>Rehabilitación del parque de vivienda pública (AVRA); erradicación de chabolas y focos de infravivienda; adecuación de zonas verdes y pistas deportivas; dinamización comunitaria del espacio público.</td>
+    </tr>
+    <tr>
+      <td><strong>EJE 4</strong></td>
+      <td><strong>Trabajo en red e innovación social en la intervención</strong></td>
+      <td>Creación de Comisiones Locales y Mesas Comunitarias Intersectoriales; coordinación vinculante entre Servicios Sociales, Salud, Educación y Empleo; digitalización y evaluación rigurosa del impacto social.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="sub-title">3.4. Dispositivos operativos: PLIZD y convenios con el Tercer Sector</h3>
+<p>
+  La implantación práctica de la ERACIS se canaliza a través de los <strong>Planes Locales de Intervención en Zonas Desfavorecidas (PLIZD)</strong>, redactados y aprobados por los Ayuntamientos y Diputaciones con la participación obligatoria de los vecinos y entidades sociales.
+</p>
+<p>
+  Para ejecutar estos planes se contratan <em>Equipos Técnicos Interdisciplinares ERACIS</em> (compuestos fundamentalmente por Educadores/as Sociales, Trabajadores/as Sociales y Psicólogos/as) adscritos a los Centros de Servicios Sociales Comunitarios, complementados con la financiación de proyectos de intervención sociocomunitaria delegados en ONGs arraigadas en el territorio.
+</p>
+
+<h3 class="sub-title">3.5. Los Itinerarios Integrados y Personalizados de Inserción Sociolaboral</h3>
+<p>
+  Constituyen el corazón metodológico de la ERACIS para la intervención individual y familiar. Se estructuran en cinco fases continuas:
+</p>
+<ol>
+  <li><strong>Fase de Acogida y Diagnóstico Sociolaboral:</strong> Recepción empática, generación de alianza terapéutica/socioeducativa y evaluación de la empleabilidad y situación sociofamiliar.</li>
+  <li><strong>Fase de Diseño del Plan Individualizado:</strong> Pacto de objetivos compartidos y compromisos mutuos plasmados por escrito.</li>
+  <li><strong>Fase de Desarrollo y Acompañamiento Socioeducativo:</strong> Talleres de adquisición de competencias transversales (soft skills: puntualidad, trabajo en equipo, asertividad), alfabetización digital y trámites electrónicos, resolución de conflictos y salud laboral.</li>
+  <li><strong>Fase de Intermediación y Prácticas en Empresas:</strong> Contacto con el tejido empresarial local para favorecer la contratación sin discriminación territorial.</li>
+  <li><strong>Fase de Seguimiento y Consolidación:</strong> Evaluación periódica y soporte socioeducativo durante los primeros meses tras la inserción laboral efectiva.</li>
+</ol>
+
+<h2 class="section-title">4. ESTRATEGIAS Y TÉCNICAS PARA EL ANÁLISIS DE NECESIDADES SOCIALES Y EDUCATIVAS</h2>
+<h3 class="sub-title">4.1. El diagnóstico social comunitario participativo</h3>
+<p>
+  Un error clásico en la intervención social ha sido diseñar programas desde despachos burocráticos alejados de la realidad. El <strong>diagnóstico comunitario participativo</strong> rompe con esta inercia, asumiendo que los vecinos no son meros "objetos de estudio", sino <em>sujetos activos coinvestigadores</em> de sus propias necesidades y potencialidades.
+</p>
+
+<h3 class="sub-title">4.2. Técnicas cuantitativas de recogida de datos</h3>
+<p>
+  Permiten objetivar la magnitud de los problemas mediante datos estadísticos contrastables:
+</p>
+<ul>
+  <li>Padrón municipal y pirámides de población: tasa de envejecimiento, tasa de infancia y porcentaje de población extranjera.</li>
+  <li>Tasas de paro registrado y tipología contractual (datos SAE y SEPE).</li>
+  <li>Indicadores educativos facilitados por la Inspección y los centros escolares: tasas de absentismo crónico, desescolarización, repetición y abandono prematuro antes de los 16 años.</li>
+  <li>Estadísticas de vivienda (AVRA) y datos de precariedad de suministros (cortes reiterados de luz y agua).</li>
+</ul>
+
+<h3 class="sub-title">4.3. Técnicas cualitativas y dialógicas</h3>
+<p>
+  Capturan los significados, vivencias, miedos y aspiraciones de la comunidad:
+</p>
+<div class="compare-container">
+  <div class="compare-box">
+    <div class="compare-title">Técnicas de Escucha Profunda</div>
+    <ul>
+      <li><strong>Entrevistas en profundidad:</strong> A líderes vecinales, comerciantes, directoras de colegios, párrocos, presidentes de asociaciones gitanas.</li>
+      <li><strong>Historias de vida:</strong> Relatos biográficos de trayectorias vitales de vecinos que reflejan las barreras estructurales sufridas.</li>
+      <li><strong>Grupos de discusión:</strong> Encuentros deliberativos diferenciados por franjas de edad (jóvenes, mujeres, personas mayores).</li>
+    </ul>
+  </div>
+  <div class="compare-box">
+    <div class="compare-title">Técnicas Participativas sobre el Territorio</div>
+    <ul>
+      <li><strong>Mapeo de Activos de Salud y Comunidad:</strong> Señalización en un plano del barrio de los recursos protectores existentes (parques, farmacias amigables, huertos vecinales, biblioteca).</li>
+      <li><strong>Deriva Urbana / Paseo Perceptivo:</strong> Recorridos a pie por el barrio con vecinos para identificar puntos de inseguridad, barreras arquitectónicas y suciedad.</li>
+      <li><strong>Matriz DAFO Comunitaria:</strong> Análisis colectivo de Debilidades, Amenazas, Fortalezas y Oportunidades.</li>
+    </ul>
+  </div>
+</div>
+
+<h3 class="sub-title">4.4. Detección de barreras invisibles</h3>
+<p>
+  El Educador Social debe prestar especial atención a los obstáculos psicosociales que no figuran en las estadísticas:
+</p>
+<ul>
+  <li><strong>El estigma territorial interiorizado:</strong> La vergüenza que sienten los jóvenes de reconocer el barrio en el que habitan.</li>
+  <li><strong>La desconfianza institucional crónica:</strong> Sentimiento vecinal de abandono y de que los profesionales "vienen a hacer fotos y se marchan cuando acaba la subvención".</li>
+  <li><strong>La indefensión aprendida:</strong> Convicción arraigada de que "hagamos lo que hagamos, este barrio nunca va a cambiar".</li>
+</ul>
+
+<h2 class="section-title">5. MODELOS Y ESTRATEGIAS DE INTERVENCIÓN DEL EDUCADOR O EDUCADORA SOCIAL</h2>
+<h3 class="sub-title">5.1. Modelos teóricos de intervención comunitaria</h3>
+<p>
+  La práctica socioeducativa en barrios desfavorecidos se fundamenta en sólidos paradigmas teóricos:
+</p>
+
+<h4 class="sub-sub-title">5.1.1. El Modelo de Intervención Comunitaria Integral de Marco Marchioni</h4>
+<p>
+  El sociólogo italiano Marco Marchioni revolucionó el trabajo social comunitario en España postulando que no puede haber desarrollo real sin la interacción armónica de los <strong>tres protagonistas de la comunidad</strong>:
+</p>
+<ol>
+  <li><strong>La Administración Pública:</strong> Responsable política y proveedora de recursos y legalidad.</li>
+  <li><strong>Los Recursos Técnicos y Profesionales:</strong> Educadores sociales, trabajadores sociales, maestros, sanitarios, policías locales (aportan conocimiento técnico y rigor metodológico).</li>
+  <li><strong>La Ciudadanía y la Población:</strong> Ciudadanos individuales, colectivos informales y asociaciones (aportan el conocimiento vivencial y la soberanía popular).</li>
+</ol>
+<p>
+  Marchioni insiste en la necesidad de crear un <em>Equipo Comunitario</em> estable que dinamice encuentros periódicos y elabore una <strong>Programación Comunitaria Global</strong> consensuada por los tres vértices del triángulo.
+</p>
+
+<h4 class="sub-sub-title">5.1.2. El Enfoque de las Capacidades de Sen y Nussbaum</h4>
+<p>
+  Desarrollado por el Premio Nobel Amartya Sen y la filósofa Martha Nussbaum, postula que el bienestar no se mide por lo que una persona posee, sino por lo que la persona <em>es capaz de hacer y de ser</em> (sus funcionamientos y capacidades reales). La Educación Social en zonas desfavorecidas trabaja precisamente para eliminar los obstáculos sociales que impiden a las personas ejercer su libertad sustantiva.
+</p>
+
+<h4 class="sub-sub-title">5.1.3. El Enfoque Ecológico-Sistémico de Urie Bronfenbrenner</h4>
+<p>
+  Concibe a la persona inserta en una red de entornos concéntricos interconectados: Microsistema (familia, aula), Mesosistema (relación familia-escuela), Exosistema (servicios sociales, barrio) y Macrosistema (cultura, leyes, economía). La intervención del educador social opera simultáneamente en todos los niveles del ecosistema.
+</p>
+
+<h3 class="sub-title">5.2. Estrategias socioeducativas operativas en zonas desfavorecidas</h3>
+<p>
+  En el despliegue de los Planes Locales ERACIS y de los centros educativos de compensatoria, el Educador/a Social implementa las siguientes líneas maestras:
+</p>
+<div class="callout">
+  <div class="callout-title">Campos Operativos del Educador/a Social en Zonas ERACIS</div>
+  <ul>
+    <li><strong>Lucha contra el Absentismo y Abandono Escolar:</strong> Intervención directa e individualizada sobre los casos de absentismo crónico. Visitas a domicilios familiares, mediación escolar con los CEIP/IES del barrio, acompañamiento al aula y participación en la Comisión Municipal de Absentismo Escolar.</li>
+    <li><strong>Acompañamiento Sociofamiliar y Parentalidad Positiva:</strong> Talleres formativos grupales e individuales sobre límites afectivos, comunicación no violenta, estilos educativos parentales, higiene y organización del hogar para familias con expedientes abiertos en Servicios Sociales.</li>
+    <li><strong>Dinamización y Prevención Juvenil en Calle:</strong> Educación de calle (streetwork) y en plazas públicas para contactar con adolescentes desvinculados del sistema reglado, ofreciendo alternativas deportivas, lúdicas y artísticas que frenen el reclutamiento por redes delictivas o el juego patológico presencial y online.</li>
+    <li><strong>Mediación Comunitaria e Intercultural:</strong> Facilitación del diálogo pacífico ante controversias de convivencia en comunidades de vecinos (ruidos, ocupación de zonas comunes, impagos) y tender puentes de comprensión intercultural entre la población mayoritaria y las minorías étnicas (población gitana, colectivos migrantes).</li>
+  </ul>
+</div>
+
+<h3 class="sub-title">5.3. Coordinación intersectorial y trabajo en red</h3>
+<p>
+  La complejidad de las zonas desfavorecidas prohíbe el trabajo en solitario. El Educador Social ejerce de "nodo conector" convocando y participando activamente en:
+</p>
+<ul>
+  <li><strong>Mesas Técnicas de Zona ERACIS:</strong> Reuniones mensuales de coordinación operativa entre Servicios Sociales, centros de salud, Equipos de Orientación Educativa (EOE), Policía de Barrio y ONGs locales.</li>
+  <li><strong>Comisiones Mixtas de Convivencia Barrial:</strong> Foros estables donde vecinos, comerciantes y técnicos analizan el clima social del barrio y pactan normas cívicas compartidas.</li>
+  <li><strong>Sistemas informáticos integrados:</strong> Coordinación a través de las herramientas tecnológicas de la Junta de Andalucía (CoheSSión en Servicios Sociales y Séneca en Educación) garantizando el secreto profesional y el flujo ágil de la información.</li>
+</ul>
+
+<h2 class="section-title">6. CONCLUSIONES Y HORIZONTE ÉTICO-PROFESIONAL DE LA EDUCACIÓN SOCIAL</h2>
+<p>
+  La intervención socioeducativa en zonas socioculturalmente desfavorecidas encarna la máxima expresión del compromiso social de nuestra profesión. Trabajar en estos territorios exige superar cualquier tentación asistencialista o paternalista, que solo cronifica la dependencia de los usuarios respecto a los servicios públicos.
+</p>
+<p>
+  El modelo consagrado por la <strong>Estrategia ERACIS</strong> sitúa a las personas y a las comunidades como los verdaderos artífices de su propio destino. Frente a los discursos estigmatizadores y punitivos que criminalizan la pobreza, el Educador o Educadora Social reivindica la <strong>justicia distributiva, la dignidad humana y los derechos sociales</strong> como el único camino viable hacia una Andalucía cohesionada, solidaria e igualitaria.
+</p>
+
+<div style="page-break-before: always;"></div>
+<h2 class="section-title">7. ANEXO: TABLA SINTÉTICA DE LA ESTRATEGIA ERACIS</h2>
+<p>
+  Esquema operativo integral de la Estrategia Regional Andaluza para la Cohesión e Inclusión Social:
+</p>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th style="width: 20%;">Dimensión Operativa</th>
+      <th style="width: 35%;">Componentes e Instrumentos Institucionales</th>
+      <th style="width: 45%;">Rol y Tareas Específicas del Educador/a Social</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Marco Financiero y Temporal</strong></td>
+      <td>Cofinanciación por el Fondo Social Europeo Plus (FSE+) y Junta de Andalucía.<br>Periodos ERACIS (2018-2022) y ERACIS+ (2022-2027).</td>
+      <td>Gestión y justificación técnica de proyectos socioeducativos; registro de indicadores de resultado de participantes en CoheSSión.</td>
+    </tr>
+    <tr>
+      <td><strong>Planificación Territorial</strong></td>
+      <td>Planes Locales de Intervención en Zonas Desfavorecidas (PLIZD) en casi 100 barriadas andaluzas de municipios > 20.000 hab.</td>
+      <td>Elaboración del diagnóstico social comunitario participativo; mapeo de activos de salud y recursos vecinales del barrio.</td>
+    </tr>
+    <tr>
+      <td><strong>Atención Individual y Familiar</strong></td>
+      <td>Itinerarios Integrados y Personalizados de Inserción Sociolaboral.<br>Vinculación con RMISA y el Ingreso Mínimo Vital (IMV).</td>
+      <td>Diseño conjunto del itinerario; tutorización socioafectiva; entrenamiento en competencias personales y alfabetización digital.</td>
+    </tr>
+    <tr>
+      <td><strong>Articulación con Educación y Salud</strong></td>
+      <td>Centros educativos con compensatoria (CEIP/IES); Centros de Salud de Atención Primaria; Salud Mental.</td>
+      <td>Intervención en absentismo crónico grave; enlace con el profesorado de orientación; programas de educación para la salud familiar.</td>
+    </tr>
+    <tr>
+      <td><strong>Dinamización Comunitaria y Tercer Sector</strong></td>
+      <td>Mesas Comunitarias de Barrio; convenios con entidades sin ánimo de lucro; voluntariado social.</td>
+      <td>Mediación intercultural y vecinal; fomento del asociacionismo juvenil; actividades intergeneracionales en plazas y espacios públicos.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+"""
+
+# Write MD and HTML files
+md_path = os.path.join("andalucia", f"{filename_base}.md")
+html_path = os.path.join("andalucia", f"{filename_base}.html")
+pdf_path = os.path.join("andalucia", f"{filename_base}.pdf")
+
+with open(md_path, "w", encoding="utf-8") as f:
+    f.write(md_content)
+
+with open(html_path, "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print(f"Written: {md_path} and {html_path}")
+
+compile_pdf(html_path, pdf_path)

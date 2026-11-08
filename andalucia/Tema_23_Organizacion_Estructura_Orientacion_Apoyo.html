@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 23: Organización y Estructura del Sistema de Orientación y Apoyo en Andalucía. Los Equipos de Orientación Educativa. Los Departamentos de Orientación. Funciones Principales del Tutor y la Tutora en el Centro Educativo. El Rol del Educador o Educadora Social en la Acción Tutorial y Apoyo a las Familias. La Coordinación con los Equipos y Departamentos de Orientación Educativa y Otras Instituciones</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 23</h1>
+  <h2>Organización y Estructura del Sistema de Orientación y Apoyo en Andalucía. Los Equipos de Orientación Educativa. Los Departamentos de Orientación. Funciones Principales del Tutor y la Tutora en el Centro Educativo. El Rol del Educador o Educadora Social en la Acción Tutorial y Apoyo a las Familias. La Coordinación con los Equipos y Departamentos de Orientación Educativa y Otras Instituciones</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Carácter:</strong> Materias Específicas del Programa Oficial</p>
+<p><strong>Marco Legal y Documental:</strong></p>
+<ul class="meta-sublist">
+<li>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA), arts. 40 y 133.</li>
+<li>Decreto 213/1995, de 12 de septiembre, por el que se regulan los Equipos de Orientación Educativa (EOE) en Andalucía.</li>
+<li>Orden de 23 de julio de 2003 (Organización y funcionamiento de los Equipos de Orientación Educativa).</li>
+<li>Decreto 327/2010 y Decreto 328/2010 (Reglamentos Orgánicos de IES y Colegios de Infantil y Primaria en Andalucía).</li>
+<li>Orden de 20 de junio de 2011 (Convivencia y tutoría en Andalucía).</li>
+<li>Instrucciones de 17 de septiembre de 2010 de la Dirección General de Participación e Innovación Educativa.</li>
+</ul>
+<p><strong>Autores y Doctrinas de Referencia:</strong> Elena Martín y César Coll (Modelos de orientación psicopedagógica y asesoramiento colaborativo), Carles Monereo (Estrategias de aprendizaje y tutoría), Robert Rocafort (La acción tutorial inclusiva), Rafael Bisquerra (Modelos de orientación e intervención psicopedagógica).</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 23</div>
+  <div class="toc-item level-1">1. Introducción y principios rectores del sistema de orientación y apoyo en Andalucía.</div>
+  <div class="toc-item level-1">2. Estructura multinivel de la orientación educativa en Andalucía:</div>
+  <div class="toc-item level-2">2.1. Primer Nivel (Aula y Grupo): La tutoría y la acción tutorial docente.</div>
+  <div class="toc-item level-2">2.2. Segundo Nivel (Centro Educativo): Los Departamentos de Orientación (DO) en Educación Secundaria.</div>
+  <div class="toc-item level-2">2.3. Tercer Nivel (Zona y Sector): Los Equipos de Orientación Educativa (EOE) en Infantil y Primaria.</div>
+  <div class="toc-item level-2">2.4. Nivel Especializado Provincial: Los Equipos de Orientación Educativa Especializados (EOEE).</div>
+  <div class="toc-item level-1">3. Funciones principales del tutor y la tutora en el centro educativo:</div>
+  <div class="toc-item level-2">3.1. Funciones con el alumnado (seguimiento, motivación y convivencia).</div>
+  <div class="toc-item level-2">3.2. Funciones con el equipo docente (coordinación de la evaluación formativa).</div>
+  <div class="toc-item level-2">3.3. Funciones con las familias (comunicación, entrevistas y asesoramiento).</div>
+  <div class="toc-item level-1">4. El Plan de Orientación y Acción Tutorial (POAT) en el Proyecto Educativo.</div>
+  <div class="toc-item level-1">5. El rol del educador o educadora social en la acción tutorial y apoyo a las familias:</div>
+  <div class="toc-item level-2">5.1. Dinamización de programas socioafectivos en la hora de tutoría.</div>
+  <div class="toc-item level-2">5.2. Mediación y acompañamiento intensivo a familias en situación de vulnerabilidad.</div>
+  <div class="toc-item level-1">6. Procesos de coordinación interna y externa:</div>
+  <div class="toc-item level-2">6.1. Trabajo interdisciplinar con los EOE y Departamentos de Orientación.</div>
+  <div class="toc-item level-2">6.2. Coordinación interinstitucional (Servicios Sociales, Salud Mental - USMIJ, Entidades del Tercer Sector).</div>
+  <div class="toc-item level-1">7. Conclusión.</div>
+  <div class="toc-item level-1">8. Anexo: Mapa conceptual y tabla sinóptica del Tema 23.</div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y principios rectores del sistema de orientación y apoyo en Andalucía</h2>
+
+<p>La orientación educativa y el apoyo técnico al aprendizaje no constituyen un servicio auxiliar, externo o complementario a la docencia, sino un <strong>elemento nuclear, permanente y transversal de la calidad y equidad del sistema educativo andaluz</strong> (artículo 40 de la Ley de Educación de Andalucía - LEA). Orientar es educar para la vida: implica guiar, acompañar y capacitar a cada estudiante en su proceso de maduración personal, social y vocacional, garantizando que sus diferencias individuales sean atendidas desde un enfoque plenamente inclusivo.</p>
+
+<p>El modelo andaluz de orientación supera el viejo enfoque clínico-asistencial (centrado en el diagnóstico patologizante y la atención individualizada aislada) para consolidar un <strong>modelo psicopedagógico, socioeducativo, ecológico y comunitario</strong>:</p>
+
+<ul>
+  <li>Concibe la orientación como un derecho universal de todo el alumnado.</li>
+  <li>Promueve el <strong>asesoramiento colaborativo</strong> entre docentes, familias y profesionales especializados.</li>
+  <li>Se estructura de forma descentralizada y en red para dar cobertura coordinada desde la Educación Infantil hasta la Formación Profesional y la Educación Permanente.</li>
+</ul>
+
+<p>En este marco, el Educador y la Educadora Social se integra como una figura técnica indispensable que complementa la mirada psicopedagógica con la <strong>mirada sociofamiliar y comunitaria</strong>, tendiendo puentes entre el aula, los hogares desfavorecidos y el ecosistema barrial.</p>
+
+<h2 class="section-title">2. Estructura multinivel de la orientación educativa en Andalucía</h2>
+
+<p>El sistema público andaluz articula la orientación a través de tres niveles escalonados de intervención institucional, respaldados por equipos de apoyo especializado:</p>
+
+<div class="diagram-box">
+  <pre>                  ESTRUCTURA DE ORIENTACIÓN EN ANDALUCÍA
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ 1. AULA Y GRUPO      │ 2. CENTRO DOCENTE    │ 3. ZONA / SECTOR     │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Tutor/a docente    │ • Departamento de    │ • Equipos de         │
+ │ • Acción tutorial    │   Orientación (DO)   │   Orientación        │
+ │   directa y POAT     │   en IES             │   Educativa (EOE)    │
+ │ • Dinámicas grupales │ • Orientador/a, PT,  │ • Atención a Infantil│
+ │   y seguimiento      │   AL, PTIS y         │   y Primaria en una  │
+ │   individual         │   Educador/a Social  │   zona educativa     │
+ └──────────────────────┴──────────────────────┴──────────────────────┘
+        ▲                                                ▲
+        └────────────── EQUIPOS ESPECIALIZADOS (EOEE) ───┘
+                       (Nivel Provincial Interdisciplinar)</pre>
+</div>
+
+<h3 class="sub-title">2.1. Primer Nivel: Aula y Grupo-Clase (La Tutoría)</h3>
+
+<p>La base de la pirámide orientadora. Todo docente es tutor de su grupo; ejerce la orientación directa, continuada y preventiva con su alumnado y familias.</p>
+
+<h3 class="sub-title">2.2. Segundo Nivel: Centro Educativo de Secundaria (Departamento de Orientación)</h3>
+
+<p>Regulado por el <strong>Decreto 327/2010 (art. 85 y ss.)</strong>. Órgano colegiado de coordinación docente en los Institutos de Educación Secundaria (IES), compuesto por:</p>
+
+<ul>
+  <li>Profesorado de la especialidad de Orientación Educativa (Jefatura de Departamento).</li>
+  <li>Profesorado de apoyo a los ámbitos (Ámbito Sociolingüístico y Científico-Tecnológico en diversificación curricular).</li>
+  <li>Maestros/as especialistas en Pedagogía Terapéutica (PT) y Audición y Lenguaje (AL).</li>
+  <li>Personal de apoyo técnico: Profesional Técnico de Integración Social (PTIS) y <strong>Educador/a Social</strong> (en centros con este perfil adscrito).</li>
+</ul>
+
+<h3 class="sub-title">2.3. Tercer Nivel: Zona y Sector Educativo (Equipos de Orientación Educativa - EOE)</h3>
+
+<p>Regulados por el <strong>Decreto 213/1995</strong> y la Orden de 23 de julio de 2003. Son equipos multidisciplinares itinerantes que atienden a los Colegios de Educación Infantil y Primaria (CEIP) y Colegios Públicos Rurales (CPR) de una demarcación territorial. Están integrados por:</p>
+
+<ul>
+  <li>Orientadores/as Educativos (psicólogos y pedagogos).</li>
+  <li>Médicos/as escolares (área de salud).</li>
+  <li>Maestros/as de Audición y Lenguaje (AL).</li>
+  <li>Trabajadores/as Sociales o <strong>Educadores/as Sociales</strong> (coordinación sociofamiliar y absentismo).</li>
+</ul>
+
+<h3 class="sub-title">2.4. Nivel Especializado: Equipos de Orientación Educativa Especializados (EOEE)</h3>
+
+<p>Equipos de ámbito provincial que prestan asesoramiento técnico de alta especialización a los EOE y DO en áreas de complejidad singular:</p>
+
+<ul>
+  <li>Trastornos del Espectro Autista (TEA).</li>
+  <li>Dificultades graves de conducta y trastornos de salud mental.</li>
+  <li>Discapacidades sensoriales (visuales y auditivas) y motoras.</li>
+  <li>Altas Capacidades Intelectuales.</li>
+</ul>
+
+<h2 class="section-title">3. Funciones principales del tutor y la tutora en el centro educativo</h2>
+
+<p>De acuerdo con los <strong>Decretos 327/2010 y 328/2010</strong>, el tutor o tutora ejerce funciones vertebrales:</p>
+
+<h3 class="sub-title">3.1. Funciones con el Alumnado</h3>
+
+<ul>
+  <li>Conocer la situación global, capacidades, motivaciones e intereses de cada estudiante.</li>
+  <li>Facilitar la integración del alumnado en el grupo y fomentar dinámicas cooperativas.</li>
+  <li>Detectar tempranamente dificultades de aprendizaje o necesidades socioafectivas y canalizarlas al orientador/a o educador/a social.</li>
+  <li>Coordinar la hora lectiva semanal de tutoría grupal (en Secundaria).</li>
+</ul>
+
+<h3 class="sub-title">3.2. Funciones con el Equipo Docente</h3>
+
+<ul>
+  <li>Coordinar las sesiones de evaluación continua, formativa y final del grupo-clase.</li>
+  <li>Garantizar la coherencia pedagógica y la aplicación coordinada de las medidas ordinarias o extraordinarias de atención a la diversidad.</li>
+  <li>Informar al profesorado sobre las circunstancias familiares o de salud relevantes del alumnado (respetando la confidencialidad).</li>
+</ul>
+
+<h3 class="sub-title">3.3. Funciones con las Familias</h3>
+
+<ul>
+  <li>Mantener una comunicación fluida y periódica sobre la evolución académica y conductual.</li>
+  <li>Realizar al menos tres entrevistas individualizadas por curso con los progenitores.</li>
+  <li>Orientar a las familias en pautas educativas y fomentar su participación activa en el Consejo Escolar y las AMPAs.</li>
+</ul>
+
+<h2 class="section-title">4. El Plan de Orientación y Acción Tutorial (POAT)</h2>
+
+<p>El <strong>POAT</strong> es el documento programático e institucional que concreta la respuesta orientadora del centro docente, integrado de forma preceptiva en su <strong>Proyecto Educativo de Centro (PEC)</strong>. Sus tres grandes líneas de actuación son:</p>
+
+<ol>
+  <li><strong>Atención a la Diversidad:</strong> Detección de NEAE, programas de refuerzo, adaptaciones curriculares y DUA.</li>
+  <li><strong>Acción Tutorial:</strong> Educación emocional, habilidades sociales, prevención de adicciones, coeducación y convivencia pacífica.</li>
+  <li><strong>Orientación Vocacional y Profesional:</strong> Toma de decisiones académicas al finalizar la ESO y Bachillerato, superando estereotipos de género.</li>
+</ol>
+
+<h2 class="section-title">5. El rol del educador o educadora social en la acción tutorial y apoyo a las familias</h2>
+
+<p>Conforme a las <strong>Instrucciones de 17 de septiembre de 2010</strong>, el Educador Social aporta un valor diferencial a la orientación escolar:</p>
+
+<h3 class="sub-title">5.1. Dinamización Socioafectiva en la Acción Tutorial</h3>
+
+<ul>
+  <li>Codocencia y dinamización de talleres vivenciales en las horas de tutoría grupal: asertividad, gestión de la ansiedad, prevención del acoso escolar y uso seguro de redes sociales.</li>
+  <li>Intervención socioeducativa en grupos-clase con dinámicas de exclusión, rechazo o disrupción grave.</li>
+</ul>
+
+<h3 class="sub-title">5.2. Apoyo, Mediación y Acompañamiento a las Familias</h3>
+
+<ul>
+  <li><strong>Mediación con Familias Desvinculadas:</strong> Acercamiento empático a progenitores con desconfianza hacia la escuela, absentismo crónico o barreras idiomáticas.</li>
+  <li><strong>Escuelas de Familias:</strong> Coordinación de espacios formativos sobre límites afectivos, comunicación intrafamiliar y prevención de adicciones comportamentales.</li>
+  <li><strong>Asesoramiento en Prestaciones:</strong> Orientación a familias vulnerables para solicitar becas de estudio, comedor, ayudas sociales y servicios comunitarios.</li>
+</ul>
+
+<h2 class="section-title">6. Procesos de coordinación interna y externa</h2>
+
+<div class="diagram-box">
+  <pre>                    RED DE COORDINACIÓN DEL EDUCADOR SOCIAL
+ ┌────────────────────────────────────┬────────────────────────────────────┐
+ │ COORDINACIÓN INTERNA (CENTRO)      │ COORDINACIÓN EXTERNA (COMUNIDAD)   │
+ ├────────────────────────────────────┼────────────────────────────────────┤
+ │ • Departamento Orientación / EOE   │ • Servicios Sociales Comunitarios  │
+ │ • Jefatura de Estudios y Dirección │ • Equipos Tratamiento Familiar(ETF)│
+ │ • Tutores y Equipos Docentes       │ • Salud Mental Infanto-Juvenil     │
+ │ • Coordinador/a de Bienestar       │ • Policía Local (Agente Tutor)     │
+ │ • Comisión de Convivencia          │ • ONGs de Zona y Secretariado Gitan│
+ └────────────────────────────────────┴────────────────────────────────────┘</pre>
+</div>
+
+<ol>
+  <li><strong>Coordinación Interna:</strong> Reuniones semanales con el Departamento de Orientación o EOE para diseñar planes individualizados de apoyo socioeducativo a menores en riesgo social.</li>
+  <li><strong>Coordinación Externa:</strong> Liderazgo técnico en la conexión con los <strong>Servicios Sociales Comunitarios (SSCC)</strong>, la derivación a Salud Mental (USMIJ) y la coordinación con los Equipos de Tratamiento Familiar (ETF) y entidades gitanas del barrio.</li>
+</ol>
+
+<h2 class="section-title">7. Conclusión</h2>
+
+<p>La orientación educativa y la acción tutorial representan el corazón pedagógico de la escuela inclusiva: garantizan que cada alumno sea reconocido como persona singular, acogido en sus dificultades y proyectado hacia su mejor futuro posible.</p>
+
+<p>El <strong>Educador y la Educadora Social</strong> enriquece y humaniza el sistema de orientación andaluz: derriba los muros entre el gabinete psicopedagógico y la realidad social del barrio, fortalece la labor tutorial del docente y acompaña con calidez y rigor a las familias que más apoyos necesitan para salir adelante.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">8. Anexo: Mapa conceptual y tabla sinóptica del Tema 23</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Normativa / Modelos Clave</th>
+      <th>Conceptos e Implicación Práctica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Principios Orientación</strong></td>
+      <td>LEA (art. 40) • César Coll • Elena Martín</td>
+      <td>Enfoque psicopedagógico, socioeducativo, colaborativo y de inclusión universal frente al clínico.</td>
+    </tr>
+    <tr>
+      <td><strong>Estructura Multinivel</strong></td>
+      <td>Decretos 327/328 • D. 213/1995</td>
+      <td>Nivel 1 (Tutoría de aula), Nivel 2 (DO en IES), Nivel 3 (EOE en zona de Infantil/Primaria) y EOEE.</td>
+    </tr>
+    <tr>
+      <td><strong>Equipos Especializados</strong></td>
+      <td>EOEE Provinciales</td>
+      <td>Apoyo especializado en TEA, graves trastornos de conducta, discapacidades sensoriales y AACC.</td>
+    </tr>
+    <tr>
+      <td><strong>Funciones del Tutor</strong></td>
+      <td>Reglamentos Orgánicos (ROF)</td>
+      <td>Seguimiento integral del alumnado, coordinación del equipo docente y entrevistas con familias.</td>
+    </tr>
+    <tr>
+      <td><strong>El POAT</strong></td>
+      <td>Proyecto Educativo de Centro (PEC)</td>
+      <td>Planificación institucional de la tutoría, atención a la diversidad y orientación vocacional.</td>
+    </tr>
+    <tr>
+      <td><strong>Coordinación Externa</strong></td>
+      <td>SSCC • USMIJ • ETF • Policía Local</td>
+      <td>Red interinstitucional comunitaria para la atención integral del menor y su entorno sociofamiliar.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>Instrucciones de 17 de septiembre de 2010</td>
+      <td>Talleres socioafectivos en tutorías, mediación con familias vulnerables y enlace EOE/DO con el barrio.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 48 - Oposición Educación Social Utrera</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 18mm 18mm 18mm;
+    @top-center {
+      content: "OPOSICIÓN EDUCACIÓN SOCIAL (GRUPO A2) - AYUNTAMIENTO DE UTRERA | TEMA 48";
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 8pt;
+      color: #666;
+      border-bottom: 0.5pt solid #ccc;
+      padding-bottom: 4px;
+    }
+    @bottom-center {
+      content: "Página " counter(page) " de " counter(pages);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 8pt;
+      color: #666;
+      border-top: 0.5pt solid #ccc;
+      padding-top: 4px;
+    }
+  }
+
+  body {
+    font-family: 'Georgia', serif;
+    font-size: 10pt;
+    line-height: 1.45;
+    color: #1a1a1a;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-box {
+    border-bottom: 2pt solid #0d3b66;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+
+  .inst-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 8.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0d3b66;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  .badges-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+    margin-bottom: 4px;
+  }
+
+  .badge {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+
+  .badge-primary { background-color: #e3f2fd; color: #0d47a1; border: 1px solid #bbdefb; }
+  .badge-secondary { background-color: #f3e5f5; color: #4a148c; border: 1px solid #e1bee7; }
+  .badge-warning { background-color: #fff3e0; color: #e65100; border: 1px solid #ffe0b2; }
+
+  .main-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15pt;
+    font-weight: 800;
+    color: #0d3b66;
+    line-height: 1.25;
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+
+  .sec-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 11.5pt;
+    font-weight: 700;
+    color: #0d3b66;
+    border-bottom: 1pt solid #0d3b66;
+    padding-bottom: 3px;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+
+  .sub-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 10.2pt;
+    font-weight: 700;
+    color: #1d3557;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    page-break-after: avoid;
+  }
+
+  .subsub-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 9.8pt;
+    font-weight: 700;
+    color: #2b2d42;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+
+  .subsubsub-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 9.2pt;
+    font-weight: 600;
+    font-style: italic;
+    color: #333;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    page-break-after: avoid;
+  }
+
+  .body-text {
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .body-text strong {
+    color: #000;
+  }
+
+  .custom-list {
+    margin-top: 3px;
+    margin-bottom: 6px;
+    padding-left: 20px;
+    text-align: justify;
+  }
+
+  .custom-list li {
+    margin-bottom: 3px;
+  }
+
+  .ascii-box {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.2pt;
+    line-height: 1.2;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 6px 8px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    page-break-inside: avoid;
+  }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.5pt;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    page-break-inside: avoid;
+  }
+
+  .data-table td {
+    border: 1px solid #dee2e6;
+    padding: 5px 8px;
+    vertical-align: top;
+  }
+
+  .data-table tr:first-child td {
+    background-color: #e9ecef;
+    font-weight: 700;
+    color: #0d3b66;
+  }
+
+  .callout {
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 8.8pt;
+    page-break-inside: avoid;
+  }
+
+  .warning {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    color: #664d03;
+  }
+
+  .exam-item {
+    background-color: #e8f5e9;
+    border-left: 3px solid #2e7d32;
+    padding: 3px 6px;
+    margin-bottom: 3px;
+    font-size: 8.6pt;
+    font-family: 'Segoe UI', sans-serif;
+    page-break-inside: avoid;
+  }
+
+  .divider {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 12px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-box">
+  <div class="inst-title">Excmo. Ayuntamiento de Utrera | Subescala Técnica - Grupo A2</div>
+  <div class="badges-row">
+    <span class="badge badge-primary">Educador/a Social</span>
+    <span class="badge badge-secondary">BOP Sevilla nº 102 (29/05/2026)</span>
+    <span class="badge badge-warning">Tema 48 - Específico</span>
+  </div>
+</div>
+
+<h1 class="main-title">TEMA 48: EL/LA EDUCADOR/A SOCIAL EN LOS PROGRAMAS DE ATENCIÓN INDIVIDUAL Y/O FAMILIAR</h1>
+<p class="body-text"><strong>Referencia Convocatoria:</strong> Técnico/a Medio de Educación Social (Subescala Técnica, Grupo A2). Excmo. Ayuntamiento de Utrera (Sevilla). Oferta de Empleo Público consolidada (BOP de Sevilla nº 102, de 29/05/2026). Bloque de Materias Específicas.</p>
+<hr class="divider"/>
+<h2 class="sec-title">1. EL/LA EDUCADOR/A SOCIAL EN LOS SERVICIOS SOCIALES COMUNITARIOS: MARCO COMPETENCIAL Y DEONTOLÓGICO</h2>
+<h3 class="sub-title">1.1. Definición y Proceso de Profesionalización de la Educación Social</h3>
+<p class="body-text">La Educación Social se erige como una profesión pedagógica sustantiva e insustituible dentro del Sistema Público de Servicios Sociales. En el año <strong>2007</strong>, la <strong>Asociación Estatal de Educación Social (ASEDES)</strong> y el <strong>Consejo General de Colegios Oficiales de Educadoras y Educadores Sociales (CGCEES)</strong> culminaron un histórico proceso de consenso profesional mediante la promulgación de los denominados <em>Documentos Profesionalizadores</em> (<em>Definición de Educación Social</em>, <em>Código Deontológico</em> y <em>Catálogo de Funciones y Competencias</em>).</p>
+<p class="body-text">La definición canónica consensuada establece:</p>
+<p class="body-text">> <em>"La Educación Social es un derecho de la ciudadanía que se concreta en el reconocimiento de una profesión de carácter pedagógico, generadora de contextos educativos y acciones mediadoras y formativas, que posibilitan la incorporación del sujeto de la educación a las redes sociales y la promoción cultural y social, entendida como apertura a nuevas posibilidades que la educación le brinda, orientada a la mejora de la calidad de vida y al pleno desarrollo de la persona en sociedad"</em>.</p>
+<p class="body-text">Esta concepción sitúa al educador y a la educadora social no como meros aplicadores pasivos de recursos asistenciales, sino como auténticos <strong>agentes de cambio y dinamizadores de la relación educativa</strong>. Su especificidad técnica frente a otras disciplinas del equipo interdisciplinar (Trabajo Social y Psicología) radica en su intervención directa, vivencial y cotidiana en el <strong>medio natural</strong> del sujeto, utilizando lo cotidiano como escenario de aprendizaje y la relación pedagógica de ayuda como palanca de transformación y autonomía personal.</p>
+<hr class="divider"/>
+<h3 class="sub-title">1.2. Deontología Profesional y el Deber Cualificado de Sigilo</h3>
+<p class="body-text">El ejercicio técnico del Educador/a Social en la atención individual y familiar se halla regulado por el <strong>Código Deontológico del CGCEES (2007)</strong>, cuyos principios rectores articulan:</p>
+<ul class="custom-list">
+<li><strong>Principio de Respeto a los Derechos Humanos y a la Autodeterminación</strong>: Respeto escrupuloso a la dignidad inalienable de la persona, evitando cualquier imposición ideológica o moral y promoviendo que el usuario sea el verdadero protagonista de su proceso de emancipación.</li>
+<li><strong>Principio de Justicia Social y No Discriminación</strong>: Compromiso activo contra la exclusión y defensa de la equidad.</li>
+<li><strong>Principio de Confidencialidad y Secreto Profesional</strong>: Toda información recabada en el marco de las entrevistas, visitas domiciliarias y planes educativos tiene carácter reservado y protegido.</li>
+</ul>
+<p class="body-text">> [!IMPORTANT] > <strong>Límites Legales al Secreto Profesional en Infancia</strong>: El deber de sigilo deontológico cede de manera taxativa ante el <strong>artículo 16 de la Ley Orgánica 8/2021 (LOPIVI)</strong>. Toda persona y, con carácter cualificado, los profesionales de los servicios sociales y educativos, tienen la <strong>obligación legal de denunciar de forma inmediata</strong> ante la Fiscalía o la autoridad policial y notificar a los servicios de protección cualquier indicio fundado de violencia o maltrato contra menores, sin que quepa ampararse en el secreto profesional.</p>
+<hr class="divider"/>
+<ul class="custom-list">
+<li><strong>El Instrumento VALÓRAME (Orden de 30 de julio de 2019)</strong>: Herramienta técnica común de obligado uso en Andalucía para homogenizar el diagnóstico de desprotección infantil. Evalúa de forma exhaustiva tres dimensiones:</li>
+</ul>
+<div class="exam-item">1. <em>Factores de desprotección o maltrato</em>: Negligencia, maltrato físico, maltrato emocional, abuso sexual, instrumentalización en conflictos parentales y corrupción.</div>
+<div class="exam-item">2. <em>Características y vulnerabilidad del menor</em>: Edad evolutiva, estado de salud física y mental, discapacidad, problemas de conducta y ajuste escolar.</div>
+<div class="exam-item">3. <em>Capacidades parentales y factores familiares/sociales</em>: Conciencia del problema, motivación de cambio, colaboración con profesionales, adicciones, violencia machista, apoyo de familia extensa y condiciones socioeconómicas y residenciales.</div>
+<p class="body-text">A partir de estos indicadores baremados, la escala clasifica la situación en cuatro niveles operativos de gravedad: <strong>Leve</strong>, <strong>Moderada</strong>, <strong>Grave</strong> y <strong>Muy Grave</strong>. La gravedad leve y moderada orienta hacia la intervención de los Servicios Sociales Comunitarios (PIF); la gravedad grave hacia los Equipos de Tratamiento Familiar (ETF); y la gravedad muy grave o inminente hacia la propuesta urgente de declaración de desamparo y tutela cautelar.</p>
+<ul class="custom-list">
+<li><strong>Los Principios Deontológicos Fundamentales de la Educación Social (CGCEES)</strong>:</li>
+</ul>
+<div class="exam-item">1. <em>Principio de profesionalidad</em>: Rigor metodológico y actualización científica continua.</div>
+<div class="exam-item">2. <em>Principio de acción socioeducativa</em>: Primacía de la dimensión formativa y relacional sobre la asistencial.</div>
+<div class="exam-item">3. <em>Principio de justicia social</em>: Compromiso activo con la erradicación de desigualdades.</div>
+<div class="exam-item">4. <em>Principio de la información</em>: Deber de informar al usuario de forma comprensible sobre el sentido y alcance de la intervención.</div>
+<div class="exam-item">5. <em>Principio de confidencialidad y secreto profesional</em>: Custodia rigurosa de los datos y vivencias compartidas.</div>
+<div class="exam-item">6. <em>Principio de respeto a los sujetos</em>: No imposición de valores morales y aceptación incondicional.</div>
+<div class="exam-item">7. <em>Principio de coherencia institucional</em>: Lealtad crítica a la entidad empleadora compatible con la defensa de los derechos de los usuarios.</div>
+<div class="exam-item">8. <em>Principio de la autorreflexión y supervisión</em>: Revisión continua de la propia implicación emocional y contratransferencia en los casos.</div>
+<h3 class="sub-title">1.3. Marco Normativo de los Servicios Sociales y de Infancia en Andalucía</h3>
+<p class="body-text">La praxis del Educador/a Social en el ámbito local se fundamenta en un sólido bloque normativo autonómico y estatal:</p>
+<pre class="ascii-box">
+========================================================================================
+           MARCO NORMATIVO DE LA EDUCACIÓN SOCIAL EN SERVICIOS SOCIALES (ANDALUCÍA)
+========================================================================================
+ LEY 9/2016, DE 27 DE DICIEMBRE, DE SERVICIOS SOCIALES DE ANDALUCÍA
+   - Regula el Sistema Público de Servicios Sociales de Andalucía (SPSSA).
+   - Servicios Sociales Comunitarios como nivel primario de atención y puerta de entrada.
+   - Consagra la interdisciplinariedad del Equipo Básico: Trabajo Social, Educación Social y Psicología.
+ ---------------------------------------------------------------------------------------
+ LEY 4/2021, DE 27 DE JULIO, DE INFANCIA Y ADOLESCENCIA DE ANDALUCÍA
+   - Competencia municipal exclusiva en prevención, detección, valoración y declaración
+     de la Situación de Riesgo infantil a través del Proyecto de Intervención Familiar (PIF).
+   - Procedimiento de urgencia y medidas de apoyo socioeducativo a la familia (arts. 20-23).
+ ---------------------------------------------------------------------------------------
+ DECRETO 100/2022, DE 7 DE JUNIO (BOJA Nº 111, DE 13/06/2022)
+   - Regula el Programa de Tratamiento a Familias con Menores en situación de riesgo o
+     desprotección (ETF). Equipos especializados concertados entre Junta y Ayuntamientos >20.000 hab.
+ ---------------------------------------------------------------------------------------
+ ORDEN DE 30 DE JULIO DE 2019 (CONSEJERÍA DE IGUALDAD)
+   - Aprueba el instrumento técnico común unificado "VALÓRAME" para la valoración de la
+     gravedad de las situaciones de desprotección infantil en la Comunidad Autónoma de Andalucía.
+========================================================================================
+</pre>
+<hr class="divider"/>
+<h2 class="sec-title">2. LA INTERVENCIÓN SOCIOEDUCATIVA INDIVIDUALIZADA</h2>
+<h3 class="sub-title">2.1. Fundamentos de la Relación de Ayuda Socioeducativa</h3>
+<p class="body-text">La intervención individualizada se asienta sobre la construcción rigurosa del <strong>vínculo educativo</strong>. El educador social no interviene desde una posición de superioridad moral o asimetría punitiva, sino configurando una <strong>relación de ayuda pedagógica</strong> orientada a que la persona descubra y movilice sus propios recursos latentes.</p>
+<ul class="custom-list">
+<li><strong>Acompañamiento Socioeducativo (<em>Accompagnement</em>)</strong>: Metodología no directiva que consiste en "caminar al lado" de la persona en su medio natural, prestando apoyo técnico, andamiaje emocional y orientación reflexiva sin suplantar jamás su capacidad de decisión ni generar dependencia institucional.</li>
+<li><strong>Distancia Óptima Profesional</strong>: Equilibrio técnico entre la cercanía afectiva necesaria para generar confianza y la neutralidad objetiva requerida para evaluar y sostener los límites del encuadre.</li>
+<li><strong>Actitudes Básicas Facilitadoras de Carl Rogers (1951, 1961)</strong>: Autenticidad o congruencia del profesional, aceptación positiva incondicional (respeto a la persona separando su valor intrínseco de sus conductas erróneas) y comprensión empática profunda.</li>
+</ul>
+<hr class="divider"/>
+<h3 class="sub-title">2.2. Fases Metodológicas de la Intervención Individualizada</h3>
+<p class="body-text">El proceso socioeducativo individualizado se articula a través de <strong>cinco fases concatenadas e interdependientes</strong>:</p>
+<pre class="ascii-box">
+========================================================================================
+      FASES METODOLÓGICAS DE LA ATENCIÓN INDIVIDUALIZADA (PROCESO SOCIOEDUCATIVO)
+========================================================================================
+ FASE 1: ACOGIDA, RECEPCIÓN Y TRIAJE SOCIOEDUCATIVO
+   - Recepción de la demanda (derivación interna desde Trabajo Social o externa: centros escolares, salud).
+   - Primera entrevista de acogida: clarificación de expectativas, contención emocional y encuadre.
+ ---------------------------------------------------------------------------------------
+ FASE 2: DIAGNÓSTICO Y VALORACIÓN SOCIOEDUCATIVA
+   - Estudio integral de la historia de vida, áreas de desarrollo, fortalezas y factores de riesgo.
+   - Aplicación de instrumentos técnicos baremados: Escala VALÓRAME (Orden 30 de julio de 2019).
+ ---------------------------------------------------------------------------------------
+ FASE 3: DISEÑO DEL PROYECTO EDUCATIVO INDIVIDUALIZADO (PEI)
+   - Formulación de objetivos operativos pactados; definición de indicadores evaluables.
+   - Establecimiento del Contrato Socioeducativo de compromiso mutuo.
+ ---------------------------------------------------------------------------------------
+ FASE 4: EJECUCIÓN Y ENTRENAMIENTO EN HABILIDADES
+   - Sesiones individuales, acompañamiento en medio natural y modelado conductual.
+   - Entrenamiento en Habilidades para la Vida de la OMS (Life Skills).
+ ---------------------------------------------------------------------------------------
+ FASE 5: SEGUIMIENTO, EVALUACIÓN CONTINUA Y CIERRE
+   - Revisión periódica del PEI; evaluación procesual y final; desvinculación pedagógica programada.
+========================================================================================
+</pre>
+<h4 class="subsub-title">2.2.1. El Proyecto Educativo Individualizado (PEI)</h4>
+<p class="body-text">El <strong>PEI</strong> es el instrumento técnico y documental de planificación que ordena, temporiza y sistematiza la acción socioeducativa con un usuario individual. Su estructura formal comprende:</p>
+<div class="exam-item">1. <strong>Datos de Filiación y Contextuales</strong>: Identificación y procedencia de la demanda.</div>
+<div class="exam-item">2. <strong>Diagnóstico Socioeducativo Operativo</strong>: Síntesis de necesidades cognitivas, relacionales, formativo-laborales y emocionales.</div>
+<div class="exam-item">3. <strong>Objetivos Operativos</strong>: Jerarquizados en tres niveles:</div>
+<ul class="custom-list">
+<li><em>Objetivos Conceptuales</em>: Adquisición de conocimientos básicos sobre salud, recursos y normativas.</li>
+<li><em>Objetivos Procedimentales</em>: Entrenamiento en conductas operativas observables (organización del tiempo, búsqueda activa de empleo, higiene, resolución de problemas).</li>
+<li><em>Objetivos Actitudinales</em>: Autoestima, asertividad, motivación hacia el cambio y autorregulación emocional.</li>
+</ul>
+<div class="exam-item">4. <strong>Actividades y Metodología</strong>: Sesiones individualizadas, acompañamientos externos y talleres grupales.</div>
+<div class="exam-item">5. <strong>El Contrato Socioeducativo</strong>: Documento ético y formal firmado por el educador/a y el usuario donde se plasman los compromisos recíprocos, las metas a corto plazo y las consecuencias pactadas.</div>
+<div class="exam-item">6. <strong>Temporalización y Cronograma</strong>: Duración estimada (generalmente periodos de 3 a 6 meses renovables).</div>
+<div class="exam-item">7. <strong>Sistema de Evaluación</strong>: Indicadores cuantitativos y cualitativos de logro.</div>
+<h4 class="subsub-title">2.2.2. Entrenamiento en Habilidades para la Vida (*Life Skills* de la OMS, 1993)</h4>
+<p class="body-text">La intervención individual del Educador/a Social se focaliza en el desarrollo de las diez competencias psicosociales básicas categorizadas por la Organización Mundial de la Salud:</p>
+<ul class="custom-list">
+<li><em>Habilidades Cognitivas</em>: Autoconocimiento, toma de decisiones y resolución de problemas, pensamiento creativo y pensamiento crítico.</li>
+<li><em>Habilidades Emocionales</em>: Manejo de emociones y sentimientos, y manejo de tensiones y del estrés.</li>
+<li><em>Habilidades Sociales</em>: Empatía, comunicación asertiva y relaciones interpersonales sanas.</li>
+</ul>
+<hr class="divider"/>
+<h3 class="sub-title">2.3. Instrumentos Técnicos Específicos del Educador/a Social</h3>
+<ul class="custom-list">
+<li><strong>La Entrevista Socioeducativa</strong>: Herramienta de comunicación interpersonal orientada a metas pedagógicas. Destaca el empleo de la <strong>Entrevista Motivacional de William R. Miller y Stephen Rollnick (1991, 2002)</strong>, estructurada en torno a cuatro procesos fundamentales: <em>Vincular</em> (establecer relación colaborativa), <em>Enfocar</em> (acordar la dirección del cambio), <em>Evocar</em> (hacer surgir los propios argumentos y motivaciones del usuario para cambiar) y <em>Planificar</em> (formular un plan de acción concreto).</li>
+<li><em>Las microhabilidades OARS en la Entrevista Motivacional</em>:</li>
+</ul>
+<div class="exam-item">1. <strong>O (Open questions / Preguntas abiertas)</strong>: Fomentan la exploración libre de vivencias y ambivalencias.</div>
+<div class="exam-item">2. <strong>A (Affirmations / Afirmaciones de reconocimiento)</strong>: Validación sincera de esfuerzos, fortalezas y recursos del usuario.</div>
+<div class="exam-item">3. <strong>R (Reflective listening / Escucha reflexiva)</strong>: Devolución de significados y emociones (reflejo simple, complejo o de doble cara) para que la persona se escuche a sí misma.</div>
+<div class="exam-item">4. <strong>S (Summarizing / Resúmenes estructurados)</strong>: Síntesis periódicas que ordenan el discurso y clarifican compromisos.</div>
+<ul class="custom-list">
+<li><strong>La Observación Participante en Medio Natural</strong>: Técnica etnográfica adaptada a la educación social; permite evaluar pautas relacionales, hábitos domésticos y dinámicas espontáneas en el domicilio o en la calle sin el artificio de un despacho institucional.</li>
+<li><strong>El Diario de Campo y las Hojas de Registro Conductual</strong>: Cuaderno técnico donde el profesional consigna observaciones fácticas, hipótesis pedagógicas y reflexiones contratransferenciales inmediatamente posteriores a cada sesión.</li>
+<li><strong>El Informe Socioeducativo</strong>: Documento técnico oficial emitido por el Educador/a Social que sintetiza el diagnóstico de la situación personal, los objetivos trabajados, los logros alcanzados, las dificultades persistentes y la propuesta fundada de derivación, cierre o adopción de medidas de protección.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="sec-title">3. LA INTERVENCIÓN SOCIOEDUCATIVA CON FAMILIAS: MODELOS TEÓRICOS Y EL PROYECTO DE INTERVENCIÓN FAMILIAR (PIF)</h2>
+<h3 class="sub-title">3.1. Modelos Teóricos Aplicados a la Intervención Familiar</h3>
+<p class="body-text">La intervención socioeducativa con familias en situación de vulnerabilidad o conflicto exige superar visiones individualistas reduccionistas, adoptando paradigmas teóricos sistémicos y ecológicos:</p>
+<h4 class="subsub-title">3.1.1. El Modelo Sistémico y la Terapia Familiar Estructural (Salvador Minuchin)</h4>
+<p class="body-text">La familia es conceptualizada como un <strong>sistema abierto y vivo</strong> en continuo intercambio con el entorno, estructurado a través de reglas, jerarquías y subsistemas interdependientes:</p>
+<ul class="custom-list">
+<li><strong>Subsistemas Familiares Canónicos</strong>:</li>
+<li><em>Subsistema Conyugal o de Pareja</em>: Espacio de intimidad, afecto y apoyo mutuo entre adultos.</li>
+<li><em>Subsistema Parental</em>: Formado por las figuras parentales para el cuidado, socialización y protección de la prole.</li>
+<li><em>Subsistema Fraternal o Filial</em>: Espacio entre hermanos donde se experimenta por primera vez la socialización horizontal, la negociación y la solidaridad.</li>
+<li><strong>Tipología de Límites Interaccionales (Minuchin, 1974)</strong>:</li>
+<li><em>Límites Claros</em>: Reglas bien definidas que permiten la comunicación fluida y protegen la autonomía funcional de cada subsistema (familias funcionales).</li>
+<li><em>Límites Difusos o Permeables</em>: Fronteras débiles que conducen a <strong>familias aglutinadas o enredadas</strong> (<em>enmeshed</em>), donde no existe privacidad, la individualidad se ahoga y las emociones de un miembro desbordan de inmediato a todos los demás.</li>
+<li><em>Límites Rígidos e Infranqueables</em>: Fronteras infranqueables que generan <strong>familias desligadas o desvinculadas</strong> (<em>disengaged</em>), caracterizadas por el aislamiento afectivo, la falta de apoyo mutuo y la negligencia pasiva en el cuidado de los menores.</li>
+<li><strong>Disfunciones Estructurales Frecuentes</strong>:</li>
+<li><em>Parentificación</em>: Inversión patológica de roles donde un menor asume las funciones de cuidado material y emocional de sus progenitores o hermanos pequeños.</li>
+<li><em>Triangulación</em>: Desviación del conflicto no resuelto entre los cónyuges hacia un hijo, quien queda atrapado en un conflicto de lealtades destructivo.</li>
+<li><em>Coalición Transgeneracional</em>: Alianza encubierta entre un progenitor y un hijo contra el otro progenitor.</li>
+</ul>
+<h4 class="subsub-title">3.1.2. El Modelo Ecológico del Desarrollo Humano (Urie Bronfenbrenner, 1979)</h4>
+<p class="body-text">Bronfenbrenner concibe el ambiente ecológico como una disposición concéntrica de estructuras seriadas e interconectadas que influyen decisivamente en la crianza infantil:</p>
+<div class="exam-item">1. <strong>Microsistema</strong>: Complejo de relaciones e interacciones directas cara a cara que la persona experimenta en un entorno inmediato determinado (el hogar familiar, el aula escolar, el grupo de iguales).</div>
+<div class="exam-item">2. <strong>Mesosistema</strong>: Entramado de interrelaciones activas entre dos o más microsistemas en los que el sujeto participa activamente (la coordinación entre la familia y la escuela o el centro de salud).</div>
+<div class="exam-item">3. <strong>Exosistema</strong>: Uno o más entornos que no incluyen directamente al menor como participante activo, pero en los cuales se producen hechos que afectan a lo que ocurre en su entorno inmediato (el entorno laboral de los padres, la red de Servicios Sociales Comunitarios de Utrera, el desempleo o las prestaciones económicas).</div>
+<div class="exam-item">4. <strong>Macrosistema</strong>: Marco cultural, ideológico, axiológico, legislativo y de políticas públicas que impregna a todos los sistemas precedentes.</div>
+<h4 class="subsub-title">3.1.3. El Paradigma de la Parentalidad Positiva y los Buenos Tratos a la Infancia</h4>
+<p class="body-text">Formulado de manera paradigmática por <strong>Jorge Barudy y Maryorie Dantagnan (2005, 2010)</strong>, este enfoque distingue entre:</p>
+<ul class="custom-list">
+<li><strong>Parentalidad Biológica</strong>: La capacidad reproductiva natural de concebir un hijo.</li>
+<li><strong>Parentalidad Social</strong>: La capacidad psicosocial y afectiva de responder de forma sensible, incondicional y continuada a las necesidades fundamentales de desarrollo de los menores (necesidades afectivas, nutricionales, educativas, de protección y de socialización).</li>
+<li><strong>Competencias Parentales Básicas</strong>:</li>
+<li><em>Capacidades de apego</em>: Habilidad para vincularse afectivamente y sintonizar con el estado emocional del niño.</li>
+<li><em>Empatía parental</em>: Capacidad de ponerse en el lugar del menor e interpretar sus conductas desde su marco evolutivo.</li>
+<li><em>Modelos de crianza democráticos</em>: Capacidad de combinar alta exigencia y firmeza en los límites con alto afecto, comunicación y respeto a la integridad física y psicológica (disciplina no violenta).</li>
+<li><em>Redes de apoyo social y familiar</em>: Integración en la comunidad para amortiguar el estrés parental.</li>
+</ul>
+<hr class="divider"/>
+<h4 class="subsub-title">3.1.4. Instrumentos Técnicos de Diagnóstico Familiar: El Genograma y el Ecomapa</h4>
+<p class="body-text">Para descodificar la complejidad de la estructura y dinámica familiar, el Educador/a Social utiliza dos herramientas gráficas indispensables:</p>
+<ul class="custom-list">
+<li><strong>El Genograma Familiar (McGoldrick y Gerson, 1985)</strong>: Representación gráfica trigeneracional de la constelación familiar que registra información demográfica, médica y relacional. Permite cartografiar visualmente:</li>
+<li><em>Líneas estructurales</em>: Matrimonios, separaciones, divorcios, uniones de hecho, filiaciones biológicas o adoptivas.</li>
+<li><em>Líneas de relación afectiva</em>: Vínculos estrechos, conflictivos, fusionados, distantes o rotos.</li>
+<li><em>Pautas transgeneracionales</em>: Transmisión intergeneracional de patrones de apego inseguro, adicciones, violencia de género o negligencia parental.</li>
+<li><strong>El Ecomapa (Ann Hartman, 1978)</strong>: Representación ecológica que sitúa a la familia en su entorno sociocultural, trazando las conexiones entre el núcleo familiar y los sistemas externos (escuela, centro de salud, servicios sociales, empleo, familia extensa, red vecinal y de ocio). Identifica si las relaciones con el entorno son nutritivas, estresantes o inexistentes, guiando la movilización de redes de apoyo formal e informal.</li>
+</ul>
+<h3 class="sub-title">3.2. El Proyecto de Intervención Familiar (PIF)</h3>
+<p class="body-text">El <strong>Proyecto de Intervención Familiar (PIF)</strong> constituye el instrumento técnico formal, multidisciplinar y preceptivo a través del cual los Servicios Sociales Comunitarios articulan la preservación familiar ante la <strong>declaración de una Situación de Riesgo Social (art. 17 LOPJM 1/1996 y arts. 20-22 Ley 4/2021 de Infancia de Andalucía)</strong>.</p>
+<pre class="ascii-box">
+========================================================================================
+             ESTRUCTURA TÉCNICA DEL PROYECTO DE INTERVENCIÓN FAMILIAR (PIF)
+========================================================================================
+ 1. DATOS IDENTIFICATIVOS Y HISTORIA FAMILIAR
+    - Composición de la unidad de convivencia, genograma trigeneracional y expediente Net-GSS.
+ ---------------------------------------------------------------------------------------
+ 2. DIAGNÓSTICO BIOPSICOSOCIAL Y FAMILIAR
+    - Valoración unificada con la escala VALÓRAME (Orden 30 de julio de 2019).
+    - Identificación precisa de indicadores de riesgo leve, moderado o grave.
+ ---------------------------------------------------------------------------------------
+ 3. OBJETIVOS DE LA INTERVENCIÓN FAMILIAR
+    - Objetivos específicos para las figuras parentales (pautas de crianza, higiene, rutinas).
+    - Objetivos específicos para los menores (asistencia escolar, salud, competencias sociales).
+    - Objetivos de ajuste relacional y dinámicas de comunicación intrafamiliar.
+ ---------------------------------------------------------------------------------------
+ 4. PLAN DE ACTUACIONES Y COMPROMISOS (CONTRATO FAMILIAR)
+    - Tareas asignadas a cada miembro; compromisos de los Servicios Sociales Comunitarios.
+ ---------------------------------------------------------------------------------------
+ 5. RECURSOS MOVILIZADOS Y AGENTES IMPLICADOS
+    - Apoyo económico (IMV, RMISA, PEF), talleres socioeducativos, coordinación escolar (EMAE).
+ ---------------------------------------------------------------------------------------
+ 6. TEMPORALIZACIÓN Y EVALUACIÓN PROCESUAL
+    - Periodo de vigencia habitual: 6 a 12 meses; revisiones trimestrales formalizadas.
+    - Consecuencias explícitas del incumplimiento grave: propuesta de declaración de desamparo.
+========================================================================================
+</pre>
+<hr class="divider"/>
+<h2 class="sec-title">4. PROGRAMAS ESPECÍFICOS DE ATENCIÓN FAMILIAR: LOS EQUIPOS DE TRATAMIENTO FAMILIAR (ETF)</h2>
+<h3 class="sub-title">4.1. Marco Jurídico, Naturaleza y Objetivos del Programa de Tratamiento Familiar</h3>
+<p class="body-text">El marco jurídico de referencia de los Equipos de Tratamiento Familiar en la Comunidad Autónoma de Andalucía se halla regulado de forma exhaustiva por el <strong>Decreto 100/2022, de 7 de junio</strong> (BOJA nº 111, de 13 de junio de 2022), el cual derogó y actualizó el marco precedente del Decreto 494/2015.</p>
+<p class="body-text">Los <strong>Equipos de Tratamiento Familiar (ETF)</strong> son dispositivos técnicos interdisciplinares y especializados que se constituyen mediante convenios de colaboración y cooperación económica entre la <strong>Consejería competente en materia de infancia de la Junta de Andalucía y las Entidades Locales</strong> (municipios de más de 20.000 habitantes como el Excmo. Ayuntamiento de Utrera y las ocho Diputaciones Provinciales).</p>
+<h4 class="subsub-title">Objetivos Fundamentales del Programa (art. 4 Decreto 100/2022)</h4>
+<div class="exam-item">1. Proporcionar a las familias con menores en situación de riesgo o desprotección un <strong>tratamiento psicoterapéutico, socioeducativo y de trabajo social específico e integrador</strong>, que permita la superación de las disfunciones relacionales y parentales.</div>
+<div class="exam-item">2. <strong>Preservación Familiar</strong>: Evitar la adopción de medidas protectoras de separación del menor de su núcleo familiar de origen mediante la erradicación de los factores de riesgo.</div>
+<div class="exam-item">3. <strong>Reunificación Familiar</strong>: Capacitar a las familias cuyos hijos se encuentran bajo medidas de protección en acogimiento residencial o familiar para posibilitar el retorno seguro y definitivo de los menores al hogar de origen.</div>
+<p class="body-text">4. Mejorar la calidad de vida y el bienestar físico, psicológico y social de los niños, niñas y adolescentes.</p>
+<h4 class="subsub-title">Población Objeto de Atención (art. 5 Decreto 100/2022)</h4>
+<p class="body-text">El programa atiende a dos tipologías exclusivas de familias derivadas formalmente por los Servicios Sociales Comunitarios o por el Servicio de Protección de Menores:</p>
+<ul class="custom-list">
+<li><strong>Subprograma de Preservación Familiar</strong>: Familias con menores a su cargo en situación de <strong>riesgo social grave</strong> derivado de negligencia, maltrato físico o emocional, pautas disciplinarias violentas o adicciones de los progenitores, en las que se valora la existencia de pronóstico favorable de recuperabilidad parental sin necesidad de separar a los niños.</li>
+<li><strong>Subprograma de Reunificación Familiar</strong>: Familias con menores a los que se ha declarado en <strong>situación de desamparo con asunción de tutela legal autonómica</strong>, que se encuentran acogidos en familia extensa, ajena o centros residenciales, siempre que exista un plan de trabajo activo y viable para restablecer la convivencia familiar.</li>
+</ul>
+<hr class="divider"/>
+<h4 class="subsub-title">4.1.1. Fases del Proceso de Intervención en el ETF (Decreto 100/2022)</h4>
+<p class="body-text">La intervención del ETF se desarrolla a lo largo de <strong>cuatro fases secuenciales y reglamentadas</strong>:</p>
+<div class="exam-item">1. <strong>Fase de Recepción, Acogida y Valoración Preliminar</strong>: Derivación formal desde Servicios Sociales Comunitarios o Protección de Menores; estudio del expediente; primera toma de contacto interdisciplinar con la familia; y firma del documento de compromiso familiar.</div>
+<div class="exam-item">2. <strong>Fase de Diseño del Proyecto de Tratamiento Familiar (PTF)</strong>: Elaboración colegiada por el psicólogo, trabajador social y educador social de los objetivos operativos específicos y el cronograma de actuaciones en el plazo máximo reglamentario.</div>
+<div class="exam-item">3. <strong>Fase de Ejecución y Tratamiento Intensivo</strong>: Intervención combinada mediante sesiones psicoterapéuticas, gestiones de trabajo social y <strong>visitas domiciliarias semanales y acompañamientos socioeducativos intensivos</strong> por parte del Educador/a Social en el medio natural.</div>
+<div class="exam-item">4. <strong>Fase de Evaluación, Consolidación y Cierre</strong>: Evaluaciones semestrales de seguimiento y elaboración del Informe Final de Evaluación proponiendo: a) Cierre por consecución de objetivos; b) Prórroga motivada; o c) Derivación a los Servicios de Protección de Menores por fracaso terapéutico y agravamiento de la desprotección.</div>
+<h3 class="sub-title">4.2. Composición Interdisciplinar y el Rol Diferencial del Educador/a Social en el ETF</h3>
+<p class="body-text">Conforme al artículo 7 del Decreto 100/2022, los Equipos de Tratamiento Familiar están integrados por profesionales titulados en <strong>Psicología, Trabajo Social y Educación Social</strong>, operando bajo el principio de interdisciplinariedad y corresponsabilidad técnica:</p>
+<pre class="ascii-box">
++------------------------+------------------------------------------------------------------------------+
+| DISCIPLINA PROFESIONAL | MISIÓN Y ROL TÉCNICO ESPECÍFICO EN EL ETF                                    |
++------------------------+------------------------------------------------------------------------------+
+| PSICÓLOGO/A            | Evaluación de la personalidad, apego y trauma; psicoterapia familiar y      |
+|                        | tratamiento de sintomatología clínica individual y relacional.               |
++------------------------+------------------------------------------------------------------------------+
+| TRABAJADOR/A SOCIAL    | Estudio sociofamiliar, diagnóstico de recursos socioeconómicos, gestión de  |
+|                        | prestaciones y coordinación institucional y pericial.                        |
++------------------------+------------------------------------------------------------------------------+
+| EDUCADOR/A SOCIAL      | Intervención pedagógica directa, intensiva y cotidiana en el MEDIO NATURAL  |
+|                        | (domicilio, escuela, barrio); modelado y entrenamiento práctico de pautas de |
+|                        | crianza, rutinas de vida diaria, habilidades parentales y mediación.         |
++------------------------+------------------------------------------------------------------------------+
+</pre>
+<h4 class="subsub-title">Funciones y Actuaciones Específicas del Educador/a Social en el ETF</h4>
+<p class="body-text">A diferencia del psicólogo (que atiende habitualmente en el despacho técnico de consulta clínica) y del trabajador social (que coordina la gestión de recursos y el expediente administrativo), el Educador/a Social es el <strong>profesional de la presencia directa en la cotidianidad familiar</strong>:</p>
+<div class="exam-item">1. <strong>Intervención Domiciliaria Intensiva</strong>: Accede al hogar familiar en momentos clave del día (despertares, comidas, momentos de hacer deberes escolares, horas de acostarse), observando y guiando en tiempo real las pautas de interacción.</div>
+<div class="exam-item">2. <strong>Modelado Pedagógico de Cuidados Básicos</strong>: Enseña y modela de forma práctica competencias domésticas elementales (elaboración de menús saludables, higiene corporal infantil, limpieza y orden del hogar, administración económica básica y pautas de sueño regulares).</div>
+<div class="exam-item">3. <strong>Entrenamiento en Parentalidad Positiva y Pautas Educativas</strong>: Acompaña a las figuras parentales para erradicar el castigo físico o la violencia verbal, enseñando técnicas de refuerzo positivo, establecimiento de límites claros, tiempo fuera reflexivo y consecuencias lógicas.</div>
+<div class="exam-item">4. <strong>Combate Activo contra la Negligencia Pasiva mediante Acompañamiento Físico</strong>: Acompaña físicamente a los progenitores a consultas de pediatría, revisiones médicas de vacunación, tutorías escolares y trámites administrativos hasta lograr su autonomía no negligente.</div>
+<div class="exam-item">5. <strong>Prevención del Absentismo Escolar</strong>: Trabaja en coordinación directa con los centros escolares para asegurar la asistencia regular y puntual de los menores.</div>
+<div class="exam-item">6. <strong>Inserción Comunitaria y de Ocio Saludable</strong>: Vincula a los menores con talleres deportivos, culturales y de tiempo libre en su barrio, rompiendo el aislamiento social familiar.</div>
+<hr class="divider"/>
+<h2 class="sec-title">5. SECCIONES PEDAGÓGICAS DE CIERRE</h2>
+<h3 class="sub-title">A. DATOS DE EXAMEN (25 ÍTEMS DIRECTOS)</h3>
+<div class="exam-item">1. <strong>Año y autores de los Documentos Profesionalizadores de la Educación Social</strong>: Promulgados en <strong>2007</strong> por el <strong>CGCEES / ASEDES</strong> (<em>Definición, Código Deontológico y Catálogo</em>).</div>
+<div class="exam-item">2. <strong>Definición de Educación Social según el CGCEES (2007)</strong>: <strong>Derecho de la ciudadanía</strong> que se concreta en una profesión de <strong>carácter pedagógico</strong> generadora de contextos educativos y acciones mediadoras y formativas.</div>
+<div class="exam-item">3. <strong>Equipo Interdisciplinar Básico de Servicios Sociales en Andalucía (Ley 9/2016)</strong>: Compuesto preceptivamente por <strong>Trabajo Social, Educación Social y Psicología</strong>.</div>
+<div class="exam-item">4. <strong>Ley que regula las competencias municipales en Situación de Riesgo infantil en Andalucía</strong>: <strong>Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía</strong> (arts. 20 a 23).</div>
+<div class="exam-item">5. <strong>Decreto vigente regulador de los Equipos de Tratamiento Familiar (ETF) en Andalucía</strong>: <strong>Decreto 100/2022, de 7 de junio</strong> (BOJA nº 111, de 13 de junio de 2022; deroga al Decreto 494/2015).</div>
+<div class="exam-item">6. <strong>Orden autonómica que aprueba el instrumento técnico unificado VALÓRAME</strong>: <strong>Orden de 30 de julio de 2019</strong> (Consejería de Igualdad de la Junta de Andalucía).</div>
+<div class="exam-item">7. <strong>Población diana exclusiva de los ETF según Decreto 100/2022</strong>: Familias en <strong>situación de riesgo social grave</strong> (preservación) y familias con <strong>menores tutelados con pronóstico de reunificación</strong>.</div>
+<div class="exam-item">8. <strong>Diferencia legal entre Situación de Riesgo y Situación de Desamparo (LOPJM 1/1996)</strong>: Riesgo (<strong>art. 17</strong>, competencia <strong>municipal</strong>, menor permanece en familia bajo PIF); Desamparo (<strong>art. 18</strong>, competencia <strong>autonómica</strong>, asunción de <strong>tutela ex lege</strong> y separación familiar).</div>
+<div class="exam-item">9. <strong>Instrumento técnico preceptivo en la declaración de riesgo</strong>: El <strong>Proyecto de Intervención Familiar (PIF)</strong>.</div>
+<div class="exam-item">10. <strong>Instrumento técnico de planificación en la atención individual</strong>: El <strong>Proyecto Educativo Individualizado (PEI)</strong>.</div>
+<div class="exam-item">11. <strong>Autores y cuatro procesos de la Entrevista Motivacional</strong>: <strong>William R. Miller y Stephen Rollnick (1991, 2002)</strong>: <strong>Vincular</strong>, <strong>Enfocar</strong>, <strong>Evocar</strong> y <strong>Planificar</strong>.</div>
+<div class="exam-item">12. <strong>Tres actitudes facilitadoras de Carl Rogers (1951, 1961)</strong>: <strong>Congruencia/autenticidad</strong>, <strong>aceptación positiva incondicional</strong> y <strong>comprensión empática</strong>.</div>
+<div class="exam-item">13. <strong>Diez Habilidades para la Vida (<em>Life Skills</em>)</strong>: Categorizadas por la <strong>Organización Mundial de la Salud (OMS) en 1993</strong>.</div>
+<div class="exam-item">14. <strong>Autor del Modelo de Terapia Familiar Estructural</strong>: <strong>Salvador Minuchin (1974)</strong> (<em>Familias y terapia familiar</em>).</div>
+<div class="exam-item">15. <strong>Tres tipos de límites interaccionales según Minuchin</strong>: <strong>Límites claros</strong> (funcionales), <strong>límites difusos</strong> (familias aglutinadas) y <strong>límites rígidos</strong> (familias desligadas/desvinculadas).</div>
+<div class="exam-item">16. <strong>Fenómeno de inversión patológica de roles en la familia</strong>: <strong>Parentificación</strong> (un menor asume roles de cuidado adulto).</div>
+<div class="exam-item">17. <strong>Autor y cuatro niveles del Modelo Ecológico (1979)</strong>: <strong>Urie Bronfenbrenner</strong>: <strong>Microsistema</strong>, <strong>Mesosistema</strong>, <strong>Exosistema</strong> y <strong>Macrosistema</strong>.</div>
+<div class="exam-item">18. <strong>Autores del modelo de Parentalidad Positiva y Buenos Tratos</strong>: <strong>Jorge Barudy y Maryorie Dantagnan (2005, 2010)</strong>.</div>
+<div class="exam-item">19. <strong>Recomendación europea de referencia sobre Parentalidad Positiva</strong>: <strong>Recomendación Rec(2006)19 del Comité de Ministros del Consejo de Europa</strong>.</div>
+<div class="exam-item">20. <strong>Límite legal del secreto profesional en violencia infantil</strong>: <strong>Artículo 16 de la Ley Orgánica 8/2021 (LOPIVI)</strong> (deber cualificado de denuncia sin secreto profesional).</div>
+<div class="exam-item">21. <strong>Escenario diferencial de intervención del Educador/a Social en el ETF</strong>: El <strong>medio natural y cotidiano</strong> (domicilio familiar, centros educativos y entorno comunitario).</div>
+<div class="exam-item">22. <strong>Duración habitual de los compromisos del PIF</strong>: Periodos de <strong>6 a 12 meses</strong>, prorrogables tras evaluación.</div>
+<div class="exam-item">23. <strong>Tipos de acogimiento protegidos por la Ley 26/2015</strong>: Primacía absoluta del <strong>acogimiento familiar</strong> sobre el residencial; prohibición del residencial para menores de <strong>tres años</strong>.</div>
+<div class="exam-item">24. <strong>Sistema de información de servicios sociales en Andalucía</strong>: Software corporativo <strong>Net-GSS</strong> (Gestión de Servicios Sociales).</div>
+<div class="exam-item">25. <strong>Sede central de los Servicios Sociales Comunitarios del Ayuntamiento de Utrera</strong>: <strong>Calle Catalina de Perea, 32</strong>.</div>
+<hr class="divider"/>
+<h3 class="sub-title">B. ESQUEMA DE REPASO RÁPIDO</h3>
+<pre class="ascii-box">
+========================================================================================
+                          ESQUEMA SINÓPTICO: TEMA 48
+========================================================================================
+
+ 1. MARCO PROFESIONAL Y NORMATIVO DEL EDUCADOR/A SOCIAL
+    ├── Definición CGCEES (2007): Derecho de la ciudadanía, profesión pedagógica, contextos formativos.
+    ├── Deontología: Autodeterminación, no discriminación, secreto profesional limitado por Art. 16 LOPIVI.
+    └── Marco Legal: Ley 9/2016 SS Andalucía (Equipo básico TS+ES+PSI); Ley 4/2021 Infancia Andalucía
+        (Competencia municipal en riesgo); Decreto 100/2022 (ETF); Orden 30 julio 2019 (VALÓRAME).
+
+ 2. ATENCIÓN INDIVIDUALIZADA (PEI)
+    ├── Vínculo Pedagógico y Acompañamiento socioeducativo (caminar al lado, distancia óptima, Rogers).
+    ├── Fases: Acogida/Triaje -> Diagnóstico (VALÓRAME) -> Diseño PEI (Contrato) -> Ejecución -> Evaluación/Cierre.
+    ├── Habilidades para la Vida de la OMS (1993): Cognitivas, emocionales y sociales.
+    └── Instrumentos: Entrevista motivacional (Miller y Rollnick), observación participante, diario de campo, informe.
+
+ 3. ATENCIÓN FAMILIAR (PIF)
+    ├── Modelos Teóricos:
+    │   ├── Sistémico (Minuchin): Subsistemas (conyugal/parental/fraternal); Límites (claros/difusos/rígidos);
+    │   │   Disfunciones (parentificación, triangulación, coalición transgeneracional).
+    │   ├── Ecológico (Bronfenbrenner, 1979): Micro, Meso, Exo y Macrosistema.
+    │   └── Parentalidad Positiva (Barudy y Dantagnan): Parentalidad social, apego seguro, resiliencia.
+    └── Proyecto de Intervención Familiar (PIF): Preceptivo en riesgo (art. 17 LOPJM), objetivos, contrato, 6-12 meses.
+
+ 4. EQUIPOS DE TRATAMIENTO FAMILIAR (ETF - DECRETO 100/2022)
+    ├── Dispositivo interdisciplinar concertado (Junta - Ayuntamientos >20.000 hab. / Diputaciones).
+    ├── Población diana: Preservación familiar (riesgo grave) y Reunificación familiar (menores tutelados).
+    └── Rol específico del Educador/a Social: Trabajo intensivo en MEDIO NATURAL (domicilio, calle, escuela);
+        modelado de rutinas domésticas; habilidades parentales prácticas; acompañamiento presencial a citas.
+========================================================================================
+</pre>
+<hr class="divider"/>
+<h3 class="sub-title">C. TRAMPAS DEL TEST (7 CONFUSIONES FRECUENTES DESARTICULADAS)</h3>
+<pre class="ascii-box">
+========================================================================================
+                      TRAMPAS FRECUENTES EN EXÁMENES TIPO TEST
+========================================================================================
+
+ [TRAMPA 1]: "El Proyecto Educativo Individualizado (PEI) y el PIF son documentos sinónimos e intercambiables".
+ -> FALSO. El PEI (Proyecto Educativo Individualizado) se diseña para la intervención pedagógica
+    singular con un individuo concreto (menor o adulto). El PIF (Proyecto de Intervención Familiar)
+    es el instrumento marco preceptivo en la declaración de SITUACIÓN DE RIESGO que engloba
+    a toda la unidad de convivencia familiar y a sus distintos subsistemas.
+
+ [TRAMPA 2]: "Los Equipos de Tratamiento Familiar (ETF) atienden a cualquier familia con problemas de convivencia".
+ -> FALSO. Conforme al Decreto 100/2022, los ETF atienden EXCLUSIVAMENTE a dos poblaciones
+    tasadas: familias con menores en RIESGO SOCIAL GRAVE (subprograma de preservación) y familias
+    con menores tutelados bajo medida protectora con pronóstico de REUNIFICACIÓN FAMILIAR.
+
+ [TRAMPA 3]: "El Educador/a Social del ETF realiza psicoterapia clínica individual en el despacho".
+ -> FALSO. La psicoterapia clínica y el tratamiento de patologías psicológicas corresponde
+    al/a la PSICÓLOGO/A del equipo. La misión específica e insustituible del EDUCADOR/A SOCIAL
+    es la intervención pedagógica cotidiana en el MEDIO NATURAL (domicilio, barrio, escuela),
+    modelando pautas de crianza, rutinas de vida y acompañamiento socioeducativo.
+
+ [TRAMPA 4]: "Las familias desligadas son aquellas donde los miembros no tienen ninguna privacidad".
+ -> FALSO. En la tipología de Salvador Minuchin, las familias donde no existe privacidad y los
+    límites son difusos son las FAMILIAS AGLUTINADAS (enredadas). Las FAMILIAS DESLIGADAS
+    poseen límites excesivamente rígidos, caracterizándose por el aislamiento, frialdad y desatención.
+
+ [TRAMPA 5]: "El secreto profesional del educador social impide notificar malos tratos si la familia se opone".
+ -> FALSO. El artículo 16 de la LOPIVI (Ley Orgánica 8/2021) impone el deber inexcusable de
+    denuncia y notificación inmediata ante indicios de violencia sobre menores a los profesionales
+    sociales y educativos, EXIMIÉNDOLOS TAXATIVAMENTE del secreto profesional.
+
+ [TRAMPA 6]: "La declaración de Situación de Desamparo es una competencia de los Servicios Sociales Municipales".
+ -> FALSO. La declaración de DESAMPARO y la asunción de la tutela por ministerio de la ley es
+    competencia EXCLUSIVA de la Entidad Pública AUTONÓMICA (Junta de Andalucía). La competencia
+    de las Entidades Locales (Ayuntamientos) se circunscribe a la SITUACIÓN DE RIESGO (art. 17 LOPJM).
+
+ [TRAMPA 7]: "El modelo de Minuchin establece que la parentificación es una pauta familiar funcional y adaptativa".
+ -> FALSO. La parentificación es una DISFUNCIÓN ESTRUCTURAL patológica donde un hijo menor
+    asume responsabilidades parentales de cuidado hacia sus padres o hermanos, alterando su
+    desarrollo evolutivo normal y generando sobrecargas traumáticas.
+========================================================================================
+</pre>
+<hr class="divider"/>
+<h3 class="sub-title">D. ENFOQUE PRÁCTICO EN EL AYUNTAMIENTO DE UTRERA</h3>
+<p class="body-text">La materialización operativa de la atención individual y familiar por parte del Técnico/a Medio de Educación Social se incardina de forma estructural en los programas del <strong>Excmo. Ayuntamiento de Utrera</strong>:</p>
+<div class="exam-item">1. <strong>Centro de Servicios Sociales Comunitarios (calle Catalina de Perea, 32)</strong>:</div>
+<ul class="custom-list">
+<li><em>Equipo Básico de Servicios Sociales</em>: El Educador/a Social diseña y ejecuta los Proyectos Educativos Individualizados (PEI) para menores y jóvenes en riesgo social o fracaso formativo derivados por las Unidades de Trabajo Social (UTS). Coordina los Proyectos de Intervención Familiar (PIF) en expedientes tramitados a través de <strong>Net-GSS</strong>, aplicando la escala unificada <strong>VALÓRAME</strong> (Orden de 30 de julio de 2019) para graduar la desprotección y articular prestaciones de apoyo a la unidad familiar (apoyo a la alimentación, becas de comedor, PEF).</li>
+</ul>
+<div class="exam-item">2. <strong>Equipo de Tratamiento Familiar (ETF) del Ayuntamiento de Utrera</strong>:</div>
+<ul class="custom-list">
+<li>En el marco del <strong>Decreto 100/2022, de 7 de junio</strong>, el Educador/a Social del ETF desarrolla intervenciones intensivas domiciliarias en familias utreranas con expedientes de riesgo grave o en vías de reunificación tras acogimientos temporales. Realiza modelado presencial de pautas de cuidado infantil, administración doméstica, gestión de rutinas y contención de conductas desafiantes en el propio entorno de convivencia.</li>
+</ul>
+<div class="exam-item">3. <strong>Equipo Municipal de Absentismo Escolar (EMAE) y Coordinación Educativa</strong>:</div>
+<ul class="custom-list">
+<li>Coordinación técnica permanente con los centros de primaria y secundaria de la localidad (<strong>CEIP Rodrigo Caro, CEIP Álvarez Quintero, CEIP Alfonso de Orleans, IES Ruiz Gijón, IES Ponce de León, IES José María Infantes e IES Virgen de Consolación</strong>). El Educador/a Social realiza visitas a domicilio a familias absentistas, combinando el acompañamiento individual al menor con el compromiso formativo parental.</li>
+</ul>
+<div class="exam-item">4. <strong>Plan Local de Intervención en Zonas Desfavorecidas: Barriada El Tinte (ERACIS+)</strong>:</div>
+<ul class="custom-list">
+<li>Financiado a través del Fondo Social Europeo Plus (FSE+), el Educador/a Social desarrolla itinerarios integrados de inserción sociolaboral y proyectos de acompañamiento individual y familiar con población vulnerable de la Barriada El Tinte, trabajando de forma intensiva la adquisición de habilidades para la vida (<em>Life Skills</em>) y la desarticulación de dinámicas de exclusión cronificada.</li>
+</ul>
+<div class="exam-item">5. <strong>Atención Descentralizada en las Pedanías Rurales de Utrera</strong>:</div>
+<ul class="custom-list">
+<li>Desplazamiento itinerante periódico a <strong>Guadalema de los Quintero, Trajano y Pinzón</strong>, garantizando que los menores y familias que residen en estos núcleos rurales dispersos reciban seguimiento socioeducativo individual y familiar con los mismos estándares de calidad que en el casco urbano.</li>
+</ul>
+<hr class="divider"/>
+<h3 class="sub-title">E. FUENTES OFICIALES Y BIBLIOGRAFÍA CONSOLIDADA</h3>
+<ul class="custom-list">
+<li><strong>Barudy, J., & Dantagnan, M. (2005)</strong>. <em>Los buenos tratos a la infancia: Parentalidad, apego y resiliencia</em>. Gedisa.</li>
+<li><strong>Barudy, J., & Dantagnan, M. (2010)</strong>. <em>Los desafíos invisibles de ser padre o madre: Fichas de trabajo para la evaluación y promoción de la parentalidad positiva</em>. Gedisa.</li>
+<li><strong>Bronfenbrenner, U. (1979)</strong>. <em>The Ecology of Human Development: Experiments by Nature and Design</em>. Harvard University Press.</li>
+<li><strong>Consejo de Europa (2006)</strong>. <em>Recomendación Rec(2006)19 del Comité de Ministros a los Estados Miembros sobre políticas de apoyo a la parentalidad positiva</em>.</li>
+<li><strong>Consejo General de Colegios Oficiales de Educadoras y Educadores Sociales (CGCEES / ASEDES) (2007)</strong>. <em>Documentos Profesionalizadores: Definición de Educación Social, Código Deontológico y Catálogo de Funciones y Competencias</em>. CGCEES.</li>
+<li><strong>España (1996)</strong>. <em>Ley Orgánica 1/1996, de 15 de enero, de Protección Jurídica del Menor</em>. BOE nº 15, de 17 de enero de 1996.</li>
+<li><strong>España (2015)</strong>. <em>Ley 26/2015, de 28 de julio, de modificación del sistema de protección a la infancia y a la adolescencia</em>. BOE nº 180, de 29 de julio de 2015.</li>
+<li><strong>España (2021)</strong>. <em>Ley Orgánica 8/2021, de 4 de junio, de protección integral a la infancia y la adolescencia frente a la violencia</em>. BOE nº 134, de 5 de junio de 2021.</li>
+<li><strong>Junta de Andalucía (2016)</strong>. <em>Ley 9/2016, de 27 de diciembre, de Servicios Sociales de Andalucía</em>. BOJA nº 249, de 29 de diciembre de 2016.</li>
+<li><strong>Junta de Andalucía (2019)</strong>. <em>Orden de 30 de julio de 2019, por la que se aprueba el instrumento técnico común para la valoración de la gravedad de las situaciones de desprotección infantil en Andalucía (VALÓRAME)</em>. BOJA nº 151, de 7 de agosto de 2019.</li>
+<li><strong>Junta de Andalucía (2021)</strong>. <em>Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía</em>. BOJA nº 149, de 4 de agosto de 2021.</li>
+<li><strong>Junta de Andalucía (2022)</strong>. <em>Decreto 100/2022, de 7 de junio, por el que se regula el Programa de Tratamiento a Familias con Menores en situación de riesgo o desprotección</em>. BOJA nº 111, de 13 de junio de 2022.</li>
+<li><strong>Miller, W. R., & Rollnick, S. (2002)</strong>. <em>Motivational Interviewing: Preparing People for Change</em> (2ª ed.). Guilford Press.</li>
+<li><strong>Minuchin, S. (1974)</strong>. <em>Families and Family Therapy</em>. Harvard University Press.</li>
+<li><strong>Organización Mundial de la Salud (OMS) (1993)</strong>. <em>Life Skills Education in Schools</em>. WHO.</li>
+<li><strong>Rogers, C. R. (1961)</strong>. <em>On Becoming a Person: A Therapist's View of Psychotherapy</em>. Houghton Mifflin.</li>
+</ul>
+
+
+</body>
+</html>

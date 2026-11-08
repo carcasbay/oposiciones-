@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 35: Pedagogía de Grupos. Tipología, Estructura y Evolución de los Grupos. Los Procesos de Comunicación en los Grupos. Factores de Cohesión Grupal. Principales Técnicas de Dinamización Grupal. Implicaciones de la Dinámica de Grupos en Relación con la Intervención Socioeducativa. El Educador o Educadora Social como Dinamizador/a Social en el Ámbito Escolar</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 35</h1>
+  <h2>Pedagogía de Grupos. Tipología, Estructura y Evolución de los Grupos. Los Procesos de Comunicación en los Grupos. Factores de Cohesión Grupal. Principales Técnicas de Dinamización Grupal. Implicaciones de la Dinámica de Grupos en Relación con la Intervención Socioeducativa. El Educador o Educadora Social como Dinamizador/a Social en el Ámbito Escolar</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Carácter:</strong> Materias Específicas del Programa Oficial</p>
+<p><strong>Marco Legal y Documental:</strong></p>
+<ul class="meta-sublist">
+<li>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA).</li>
+<li>Ley Orgánica 2/2006 (LOE), modificada por la LOMLOE 3/2020.</li>
+<li>Decretos 327/2010 y 328/2010 (Reglamentos Orgánicos de Centros Docentes en Andalucía).</li>
+<li>Orden de 20 de junio de 2011 (Convivencia y dinámicas grupales escolares).</li>
+<li>Instrucciones de 17 de septiembre de 2010 de la Dirección General de Participación e Innovación Educativa.</li>
+</ul>
+<p><strong>Autores y Doctrinas de Referencia:</strong> Kurt Lewin (Fundador de la Dinámica de Grupos y teoría de campo), Bruce Tuckman (Fases de desarrollo grupal: Forming, Storming, Norming, Performing), Jacob Levy Moreno (Sociometría y psicodrama), Edward de Bono (Seis sombreros para pensar), Donald Anzieu y Jacques-Yves Martin (La dinámica de los pequeños grupos).</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 35</div>
+  <div class="toc-item level-1">1. Introducción y relevancia de la Pedagogía de Grupos en la Educación Social.</div>
+  <div class="toc-item level-1">2. Concepto y tipología de los grupos humanos:</div>
+  <div class="toc-item level-2">2.1. Grupos primarios vs. grupos secundarios.</div>
+  <div class="toc-item level-2">2.2. Grupos formales e informales en el ecosistema escolar.</div>
+  <div class="toc-item level-2">2.3. Grupos de pertenencia y de referencia en la infancia y juventud.</div>
+  <div class="toc-item level-1">3. Estructura y roles grupales en el aula:</div>
+  <div class="toc-item level-2">3.1. Roles de tarea, de cohesión y roles disruptivos o disfuncionales.</div>
+  <div class="toc-item level-2">3.2. El liderazgo grupal (autoritario, democrático, laissez-faire).</div>
+  <div class="toc-item level-1">4. El proceso evolutivo de los grupos: Las etapas de Bruce Tuckman.</div>
+  <div class="toc-item level-1">5. Procesos de comunicación y factores de cohesión grupal:</div>
+  <div class="toc-item level-2">5.1. Redes de comunicación (centralizadas vs. descentralizadas).</div>
+  <div class="toc-item level-2">5.2. Factores facilitadores y obstaculizadores de la cohesión grupal.</div>
+  <div class="toc-item level-2">5.3. La sociometría como técnica diagnóstica (J.L. Moreno).</div>
+  <div class="toc-item level-1">6. Principales técnicas de dinamización grupal aplicadas a la escuela:</div>
+  <div class="toc-item level-2">6.1. Técnicas de presentación, desinhibición y conocimiento mutuo.</div>
+  <div class="toc-item level-2">6.2. Técnicas de debate y consenso (Phillips 6/6, Brainstorming, Seis Sombreros).</div>
+  <div class="toc-item level-2">6.3. Técnicas dramáticas y vivenciales (Role-Playing).</div>
+  <div class="toc-item level-1">7. Implicaciones de la dinámica grupal en la intervención socioeducativa escolar.</div>
+  <div class="toc-item level-1">8. El educador o educadora social como dinamizador/a social en el centro educativo.</div>
+  <div class="toc-item level-1">9. Conclusión.</div>
+  <div class="toc-item level-1">10. Anexo: Mapa conceptual y tabla sinóptica del Tema 35.</div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y relevancia de la Pedagogía de Grupos</h2>
+
+<p>El ser humano no se educa de forma solipsista ni aislada; <strong>se educa y humaniza en el seno del grupo</strong>. En el entorno escolar, el grupo-clase, el grupo de iguales en el patio y las agrupaciones informales configuran el escenario primordial donde se ensayan identidades, se interiorizan normas, se experimenta la pertenencia afectiva y se dirimen los conflictos de poder y estatus (Donald Anzieu).</p>
+
+<p>Para la <strong>Educación Social</strong>, el grupo no es un simple agregado cuantitativo de individuos reunidos en una misma sala, sino un <strong>sistema vivo, dinámico y complejo de relaciones e interdependencias</strong> que posee una fuerza educativa o destructiva de primer orden (Kurt Lewin). La Pedagogía de Grupos proporciona el marco conceptual y metodológico indispensable para transformar una masa caótica o un aula fracturada en una <strong>comunidad cooperativa, cohesionada y protectora</strong>, donde cada estudiante encuentra un lugar seguro para crecer.</p>
+
+<h2 class="section-title">2. Concepto y tipología de los grupos humanos</h2>
+
+<p>Un grupo es una colectividad identificable de dos o más personas que interactúan de forma continuada, comparten objetivos y normas, y desarrollan un sentido compartido de pertenencia mutua ("conciencia del nosotros").</p>
+
+<div class="diagram-box">
+  <pre>                        TIPOLOGÍA DE GRUPOS EN LA ESCUELA
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ PRIMARIOS / AFECTIV. │ SECUNDARIOS / FORMAL │ INFORMALES / PATIO   │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Vínculo afectivo   │ • Organización formal│ • Nacen espontáneam. │
+ │   directo e íntimo   │ • Grupo-clase, claus-│   por afinidad       │
+ │ • Familia y pandilla │   tro, Consejo Escol.│ • Pandillas del recre│
+ │ • Socialización pura │ • Orientados a metas │ • Líderes invisibles │
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<ol>
+  <li><strong>Grupos Primarios vs. Secundarios:</strong>
+    <ul>
+      <li><em>Primarios:</em> Relaciones cara a cara, afectividad profunda, espontaneidad (familia, amigos íntimos).</li>
+      <li><em>Secundarios:</em> Relaciones instrumentales, contractuales y jerárquicas (instituciones, comisiones).</li>
+    </ul>
+  </li>
+  <li><strong>Grupos Formales e Informales:</strong>
+    <ul>
+      <li><em>Formales:</em> Creados por la administración escolar con una estructura prefijada (el grupo de 2.º ESO B).</li>
+      <li><em>Informales:</em> Surgen espontáneamente por atracción afectiva o intereses compartidos en recreos y pasillos; modulan de forma decisiva el clima de aula.</li>
+    </ul>
+  </li>
+  <li><strong>Grupos de Pertenencia y de Referencia:</strong>
+    <ul>
+      <li><em>Pertenencia:</em> Grupo al que el alumno pertenece objetivamente.</li>
+      <li><em>Referencia:</em> Colectivo cuyos valores, modas o conductas el menor admira e imita como modelo identitario.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 class="section-title">3. Estructura y roles grupales en el aula</h2>
+
+<p>La estructura grupal se consolida a través de la asignación y asunción de <strong>roles</strong>:</p>
+
+<ul>
+  <li><strong>Roles Orientados a la Tarea:</strong> Facilitan el logro de objetivos comunes (el iniciador de ideas, el coordinador de tareas, el sintetizador, el evaluador crítico).</li>
+  <li><strong>Roles Orientados a la Cohesión y Mantenimiento:</strong> Cuidan el clima emocional del grupo (el animador empático, el conciliador que frena disputas, el facilitador del diálogo).</li>
+  <li><strong>Roles Disfuncionales o Individualistas:</strong> Sabotean la dinámica grupal al priorizar necesidades narcisistas (el agresor verbal, el bloqueador sistemático, el payaso disruptivo, el ausente/marginado).</li>
+</ul>
+
+<h3 class="sub-title">Estilos de Liderazgo Grupal (Kurt Lewin)</h3>
+
+<ul>
+  <li><strong>Liderazgo Autoritario:</strong> Impone decisiones sin debate; genera sumisión externa, baja creatividad y alta hostilidad encubierta.</li>
+  <li><strong>Liderazgo Democrático:</strong> Fomenta la participación, el debate y el consenso; maximiza la cohesión, la responsabilidad compartida y el rendimiento autónomo.</li>
+  <li><strong>Liderazgo Laissez-Faire (Dejar hacer):</strong> Ausencia de guía; genera desorientación, anomia y dominación del más fuerte.</li>
+</ul>
+
+<h2 class="section-title">4. El proceso evolutivo de los grupos: Fases de Bruce Tuckman</h2>
+
+<p>Todo grupo escolar transita por cinco estadios secuenciales de maduración:</p>
+
+<div class="diagram-box">
+  <pre>                  FASES DEL DESARROLLO GRUPAL (TUCKMAN)
+ ┌──────────────────────────────────────────────────────────────────┐
+ │ 1. FORMING (Formación / Orientación inicial y cautela)           │
+ │ 2. STORMING (Conflicto / Pugna por el liderazgo y estatus)       │
+ │ 3. NORMING (Normación / Establecimiento de acuerdos y cohesión) │
+ │ 4. PERFORMING (Rendimiento / Trabajo cooperativo eficaz)         │
+ │ 5. ADJOURNING (Disolución / Cierre de ciclo y balance)          │
+ └──────────────────────────────────────────────────────────────────┘</pre>
+</div>
+
+<p>El Educador Social debe comprender que la fase de <strong>Storming (Conflicto)</strong> no es un fracaso del grupo, sino un paso evolutivo normal que debe ser mediado constructivamente para alcanzar la cohesión madura.</p>
+
+<h2 class="section-title">5. Procesos de comunicación y cohesión grupal</h2>
+
+<h3 class="sub-title">5.1. Redes de Comunicación</h3>
+
+<ul>
+  <li><strong>Redes Centralizadas (en rueda o en estrella):</strong> La información pasa por una sola persona (el líder o el docente). Eficaces para tareas simples, pero generan desmotivación en la periferia.</li>
+  <li><strong>Redes Descentralizadas (todos con todos / circular):</strong> Comunicación fluida y multilateral. Fomentan la creatividad, el sentido de pertenencia y la satisfacción de todos los miembros.</li>
+</ul>
+
+<h3 class="sub-title">5.2. Factores de Cohesión Grupal</h3>
+
+<p>Atracción mutua, existencia de metas compartidas motivadoras, claridad de normas consensuadas, ambiente físico acogedor y vivencia de éxitos comunes.</p>
+
+<h3 class="sub-title">5.3. La Sociometría como Técnica Diagnóstica (Jacob Levy Moreno)</h3>
+
+<p>Aplicación de tests sociométricos en el aula para obtener el <strong>sociograma</strong>: mapa gráfico que visibiliza las elecciones y rechazos interpersonales, detectando a tiempo alumnos estrella (líderes positivos), alumnos olvidados o aislados y víctimas potenciales de acoso escolar.</p>
+
+<h2 class="section-title">6. Principales técnicas de dinamización grupal en la escuela</h2>
+
+<ol>
+  <li><strong>Técnicas de Presentación y Desinhibición:</strong> Dinámicas iniciales al arrancar el curso para reducir la ansiedad y aprender los nombres (la telaraña de lana, el bingo humano de aficiones).</li>
+  <li><strong>Técnicas de Debate y Consenso:</strong>
+    <ul>
+      <li><em>Phillips 6/6:</em> División del grupo en subgrupos de 6 personas para debatir durante 6 minutos, nombrando un portavoz; democratiza la participación en aulas numerosas.</li>
+      <li><em>Brainstorming (Tormenta de ideas):</em> Producción libre y desinhibida de propuestas sin censura previa.</li>
+      <li><em>Seis Sombreros para Pensar (Edward de Bono):</em> Entrenamiento del pensamiento lateral adoptando distintas perspectivas (sombrero blanco = hechos, rojo = emociones, negro = riesgos, amarillo = optimismo, verde = creatividad, azul = control).</li>
+    </ul>
+  </li>
+  <li><strong>Técnicas Dramáticas (Role-Playing):</strong> Representación de situaciones conflictivas reales para ponerse en el lugar del otro y ensayar respuestas asertivas.</li>
+</ol>
+
+<h2 class="section-title">7. Implicaciones de la dinámica de grupos en la intervención socioeducativa</h2>
+
+<p>La intervención socioeducativa utiliza el grupo como <strong>agente y contexto de cambio</strong>:</p>
+
+<ul>
+  <li>La presión de grupo positiva es infinitamente más eficaz para modificar conductas de riesgo en la adolescencia que los sermones moralistas de los adultos.</li>
+  <li>La pertenencia a un grupo escolar saludable inmuniza al menor frente a la captación por bandas juveniles violentas o conductas adictivas.</li>
+</ul>
+
+<h2 class="section-title">8. El educador/a social como dinamizador/a social en el centro docente</h2>
+
+<p>Conforme a las <strong>Instrucciones de 17 de septiembre de 2010</strong>, el Educador Social despliega funciones clave:</p>
+
+<ul>
+  <li><strong>Dinamización de Grupos-Clase en Horas de Tutoría:</strong> Aplicación sistemática de técnicas grupales para prevenir el acoso escolar y entrenar en asertividad.</li>
+  <li><strong>Intervención en Recreos Inclusivos:</strong> Creación de ligas deportivas mixtas, talleres lúdicos y espacios de conversación que rompen el aislamiento de los alumnos solos.</li>
+  <li><strong>Gestión de Grupos de Alumnado Ayudante y Mediador:</strong> Formación continua y cohesión del equipo de mediadores del centro.</li>
+  <li><strong>Acompañamiento a Grupos Disruptivos:</strong> Intervención en el Aula de Convivencia reconvirtiendo el conflicto en cohesión cívica.</li>
+</ul>
+
+<h2 class="section-title">9. Conclusión</h2>
+
+<p>Aprender a cooperar, a respetar las opiniones diversas y a construir proyectos comunes en el seno del grupo son las destrezas fundacionales de una sociedad verdaderamente democrática.</p>
+
+<p>El <strong>Educador y la Educadora Social</strong> como dinamizador de grupos transforma el espacio escolar: convierte el aula atomizada en una comunidad viva de afecto y apoyo mutuo, rescata a los invisibles del aislamiento y enseña a la juventud andaluza la lección más hermosa: que juntos somos más fuertes, más sabios y más libres.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">10. Anexo: Mapa conceptual y tabla sinóptica del Tema 35</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Normativa / Doctrinas Clave</th>
+      <th>Conceptos e Implicación Práctica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Dinámica de Grupos</strong></td>
+      <td>Kurt Lewin (Teoría de Campo)</td>
+      <td>El grupo como totalidad dinámica interdependiente, no mera suma de individuos.</td>
+    </tr>
+    <tr>
+      <td><strong>Fases de Tuckman</strong></td>
+      <td>Forming, Storming, Norming, Performing</td>
+      <td>Evolución secuencial: orientación, conflicto necesario, normación, rendimiento y disolución.</td>
+    </tr>
+    <tr>
+      <td><strong>Estructura y Roles</strong></td>
+      <td>Donald Anzieu • J.L. Moreno</td>
+      <td>Roles de tarea, de mantenimiento y disfuncionales; sociometría para detectar aislamiento.</td>
+    </tr>
+    <tr>
+      <td><strong>Estilos de Liderazgo</strong></td>
+      <td>Autoritario, Democrático, Laissez-faire</td>
+      <td>Superioridad del liderazgo democrático para la cohesión y la responsabilidad compartida.</td>
+    </tr>
+    <tr>
+      <td><strong>Técnicas Grupales</strong></td>
+      <td>Phillips 6/6 • Role-playing • De Bono</td>
+      <td>Dispositivos metodológicos para democratizar la palabra, debatir y ensayar empatía.</td>
+    </tr>
+    <tr>
+      <td><strong>El Grupo en la Escuela</strong></td>
+      <td>Orden 20 de junio de 2011</td>
+      <td>El grupo como agente de socialización protector frente al acoso y el desamparo.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>Instrucciones de 17 de septiembre de 2010</td>
+      <td>Dinamizador del grupo-clase, facilitador de recreos inclusivos y formador de mediadores.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

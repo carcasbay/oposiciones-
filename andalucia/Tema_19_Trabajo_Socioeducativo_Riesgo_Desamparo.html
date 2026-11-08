@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tema 19 - El Trabajo Socioeducativo con Alumnado en Situación de Riesgo y/o Desamparo Social</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm 18mm 20mm 18mm;
+      @bottom-right {
+        content: counter(page);
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #1f2937;
+      line-height: 1.6;
+      font-size: 11pt;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Portada */
+    .cover {
+      page-break-after: always;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 85vh;
+      border-left: 6px solid #2563eb;
+      padding-left: 30px;
+      margin-top: 40px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 10pt;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      width: fit-content;
+      border: 1px solid #bfdbfe;
+    }
+
+    .cover h1 {
+      font-size: 28pt;
+      line-height: 1.25;
+      color: #0f172a;
+      margin: 0 0 16px 0;
+      font-weight: 800;
+    }
+
+    .cover h2 {
+      font-size: 14pt;
+      font-weight: 400;
+      color: #4b5563;
+      margin: 0 0 35px 0;
+      line-height: 1.5;
+    }
+
+    .meta-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 18px 22px;
+      font-size: 10pt;
+      color: #334155;
+      max-width: 450px;
+    }
+
+    .meta-box p {
+      margin: 4px 0;
+    }
+
+    /* Estructura general */
+    h2.section-title {
+      color: #1e3a8a;
+      font-size: 15pt;
+      font-weight: 700;
+      border-bottom: 2px solid #93c5fd;
+      padding-bottom: 6px;
+      margin-top: 32px;
+      margin-bottom: 14px;
+      page-break-after: avoid;
+    }
+
+    h3.sub-title {
+      color: #1e40af;
+      font-size: 12pt;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      page-break-after: avoid;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 12px;
+      text-align: justify;
+    }
+
+    ul, ol {
+      margin-top: 0;
+      margin-bottom: 14px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    strong {
+      color: #0f172a;
+      font-weight: 600;
+    }
+
+    /* Cajas destacadas (Leyes, Definiciones, Comparativas) */
+    .callout {
+      background: #f0fdf4;
+      border-left: 4px solid #16a34a;
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+      font-size: 10.5pt;
+      page-break-inside: avoid;
+    }
+
+    .callout-title {
+      font-weight: 700;
+      color: #15803d;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .callout-law {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+    }
+
+    .callout-law .callout-title {
+      color: #1d4ed8;
+    }
+
+    .callout-warn {
+      background: #fefce8;
+      border-left: 4px solid #ca8a04;
+    }
+
+    .callout-warn .callout-title {
+      color: #a16207;
+    }
+
+    /* Comparativa Riesgo vs Desamparo */
+    .compare-container {
+      display: flex;
+      gap: 16px;
+      margin: 16px 0;
+      page-break-inside: avoid;
+    }
+
+    .compare-box {
+      flex: 1;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 10pt;
+    }
+
+    .compare-riesgo {
+      background-color: #fefce8;
+      border: 1px solid #fef08a;
+      border-top: 4px solid #eab308;
+    }
+
+    .compare-desamparo {
+      background-color: #fef2f2;
+      border: 1px solid #fecaca;
+      border-top: 4px solid #ef4444;
+    }
+
+    .compare-box h4 {
+      margin: 0 0 8px 0;
+      font-size: 11pt;
+      font-weight: 700;
+    }
+
+    /* Tabla Síntesis */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 9.5pt;
+      page-break-inside: auto;
+    }
+
+    tr {
+      page-break-inside: avoid;
+      page-break-after: auto;
+    }
+
+    th {
+      background: #1e3a8a;
+      color: #ffffff;
+      font-weight: 600;
+      text-align: left;
+      padding: 10px 12px;
+      border: 1px solid #1e3a8a;
+    }
+
+    td {
+      padding: 9px 12px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #f8fafc;
+    }
+
+    /* Índice con estilo de tarjetas */
+    .toc-container {
+      page-break-after: always;
+      margin-top: 20px;
+    }
+
+    .toc-title {
+      font-size: 18pt;
+      color: #1e3a8a;
+      font-weight: 700;
+      border-bottom: 2px solid #2563eb;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+
+    .toc-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .toc-item {
+      display: flex;
+      align-items: baseline;
+      padding: 8px 12px;
+      margin-bottom: 6px;
+      border-radius: 6px;
+      background: #f8fafc;
+      border: 1px solid #f1f5f9;
+    }
+
+    .toc-num {
+      font-weight: 800;
+      color: #2563eb;
+      width: 32px;
+      flex-shrink: 0;
+    }
+
+    .toc-text {
+      color: #1e293b;
+      font-weight: 500;
+    }
+
+    .page-break {
+      page-break-before: always;
+    }
+
+    .badge-chip {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 8.5pt;
+      font-weight: 600;
+      margin: 2px 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PORTADA -->
+  <div class="cover">
+    <div class="badge">Material de Oposiciones</div>
+    <h1>TEMA 19</h1>
+    <h2>El trabajo socioeducativo con alumnado en situación de riesgo y/o desamparo social</h2>
+    
+    <div class="meta-box">
+      <p><strong>Documento:</strong> Transcripción y Digitalización de Apuntes Manuscritos</p>
+      <p><strong>Ámbito:</strong> Servicios a la Comunidad / Educación Social / Orientación</p>
+      <p><strong>Comunidad Autónoma:</strong> Andalucía (Marco Autonómico y Estatal)</p>
+      <p><strong>Estado:</strong> Texto íntegro revisado y estructurado</p>
+    </div>
+  </div>
+
+  <!-- ÍNDICE DE CONTENIDOS -->
+  <div class="toc-container">
+    <div class="toc-title">Índice del Tema 19</div>
+    <ul class="toc-list">
+      <li class="toc-item"><span class="toc-num">01</span><span class="toc-text">El trabajo socioeducativo con alumnado en situación de riesgo y/o desamparo</span></li>
+      <li class="toc-item"><span class="toc-num">02</span><span class="toc-text">Concepto de riesgo social</span></li>
+      <li class="toc-item"><span class="toc-num">03</span><span class="toc-text">Evaluación del riesgo social</span></li>
+      <li class="toc-item"><span class="toc-num">04</span><span class="toc-text">Procesos de acompañamiento, mentoría y tutorización</span></li>
+      <li class="toc-item"><span class="toc-num">05</span><span class="toc-text">Acción con colectivos especialmente vulnerables</span></li>
+      <li class="toc-item"><span class="toc-num">06</span><span class="toc-text">Los menores y jóvenes en conflicto social</span></li>
+      <li class="toc-item"><span class="toc-num">07</span><span class="toc-text">Intervención con el menor y la comunidad</span></li>
+      <li class="toc-item"><span class="toc-num">08</span><span class="toc-text">Coordinación institucional y programas integrales</span></li>
+      <li class="toc-item"><span class="toc-num">09</span><span class="toc-text">Planes y programas socioeducativos para la mejora de la inserción social y escolar</span></li>
+      <li class="toc-item"><span class="toc-num">10</span><span class="toc-text">Implicación de los educadores sociales con los menores en conflicto escolar</span></li>
+      <li class="toc-item"><span class="toc-num">★</span><span class="toc-text">Anexo: Mapa Conceptual y Tabla Síntesis del Tema</span></li>
+    </ul>
+  </div>
+
+  <!-- SECCIÓN 1 -->
+  <h2 class="section-title">1. El trabajo socioeducativo con alumnado en situación de riesgo y/o desamparo</h2>
+  <p>
+    El trabajo con el alumnado en situación de <strong>riesgo y/o desamparo social</strong> representa un <strong>desafío crucial en el ámbito educativo contemporáneo</strong>. Esta labor implica un <strong>abordaje integral</strong> que va más allá de la mera transmisión de conocimientos académicos, centrándose en atender las <strong>complejas necesidades sociales, emocionales y educativas</strong> de estudiantes que enfrentan circunstancias adversas.
+  </p>
+  <p>
+    Mediante la <strong>colaboración estrecha</strong> entre instituciones educativas, servicios sociales, familias y la comunidad en general, se busca identificar tempranamente los factores de riesgo, implementar intervenciones personalizadas y <strong>crear un entorno de apoyo que fomente la resiliencia y el desarrollo positivo del alumno</strong>.
+  </p>
+  <p>
+    Este <strong>enfoque multidimensional</strong> no solo aspira a prevenir el fracaso escolar, sino también a promover la inclusión social, fortalecer las habilidades de vida y construir un futuro más prometedor para aquellos jóvenes que se encuentran en situaciones de vulnerabilidad.
+  </p>
+
+  <h3 class="sub-title">Marco normativo de protección a la infancia</h3>
+  <ul>
+    <li>
+      <strong>Convención sobre los Derechos del Niño (CDN) de las Naciones Unidas:</strong> Ratificada por España el <strong>30 de noviembre de 1990</strong>, constituye la norma fundamental en los planos sociales y jurídicos en lo referente a la infancia y adolescencia. Significó la adecuación de las legislaciones internas de los Estados parte a la misma, incorporando sus principios y garantizando su pleno desarrollo y seguimiento.
+    </li>
+    <li>
+      <strong>Constitución Española (CE):</strong> En su <strong>artículo 39</strong>, mandata que los poderes públicos aseguran la protección social, económica y jurídica de la familia, remarcando en su apartado 4 que los niños gozarán de la protección prevista en los acuerdos internacionales que velan por sus derechos.
+    </li>
+    <li>
+      <strong>Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía:</strong> Reconoce el valor social de los niños, niñas y adolescentes como personas que realizan un aporte afectivo, cultural y ético al caudal social y cuyo protagonismo, creatividad y posicionamiento activo enriquece la vida colectiva. Su presencia en los espacios públicos y en las organizaciones representa un indicador de calidad del entorno social. El valor social de la infancia no solo radica en su consideración futura como personas adultas, sino en la <strong>vivencia presente de ser niños, niñas y adolescentes y disfrutar cabalmente de su condición</strong>.
+    </li>
+  </ul>
+
+  <h3 class="sub-title">Distinción técnica: Riesgo Social frente a Desamparo Social</h3>
+  <div class="compare-container">
+    <div class="compare-box compare-riesgo">
+      <h4 style="color: #854d0e;">⚠️ RIESGO SOCIAL</h4>
+      <p>
+        Situación en la que el menor, <strong>aunque no está privado de la necesaria asistencia moral o material</strong>, se ve perjudicado en su desarrollo personal, familiar o educativo debido a carencias o conflictos en su entorno.
+      </p>
+      <p>
+        <strong>Intervención:</strong> Es una situación problemática pero <strong>manejable dentro del entorno familiar</strong>. Se mantiene la convivencia familiar y los servicios públicos intervienen orientados a disminuir los factores de vulnerabilidad y potenciar la protección.
+      </p>
+    </div>
+    <div class="compare-box compare-desamparo">
+      <h4 style="color: #991b1b;">🚨 DESAMPARO SOCIAL</h4>
+      <p>
+        Situación de hecho producida a causa del <strong>incumplimiento, o del imposible o inadecuado ejercicio de los deberes de protección</strong> legalmente establecidos, cuando los menores quedan efectivamente <strong>privados de la necesaria asistencia moral o material</strong>.
+      </p>
+      <p>
+        <strong>Intervención:</strong> Situación de máxima gravedad que <strong>puede requerir la separación del menor de su núcleo familiar</strong>, asumiendo por ministerio de la ley la tutela la entidad pública competente (Art. 172 CC).
+      </p>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 2 -->
+  <h2 class="section-title">2. Concepto de riesgo social</h2>
+  <p>
+    Organismos internacionales como <strong>UNICEF</strong> definen las situaciones de infancia en riesgo social como aquellas en las que los niños y niñas se encuentran en condiciones que pueden afectar negativamente a su desarrollo y bienestar. Entre estas condiciones destacan la pobreza, la exclusión social, la falta de acceso a servicios básicos esenciales (educación y salud) y la exposición directa a la violencia.
+  </p>
+
+  <div class="callout callout-law">
+    <div class="callout-title">Ley Orgánica 1/1996, de 15 de enero, de Protección Jurídica del Menor</div>
+    <p>
+      Establece el marco general para la protección de menores en situación de riesgo o desamparo, obligando a las autoridades a intervenir con prontitud. Define la <strong>situación de riesgo</strong> como aquella en la que, a causa de circunstancias, carencias o conflictos familiares, sociales o educativos, la persona menor de edad se vea perjudicada en su desarrollo personal, familiar, social o educativo, o en su bienestar o derechos.
+    </p>
+  </div>
+
+  <div class="callout callout-warn">
+    <div class="callout-title">Código Civil (Artículo 172 y siguientes)</div>
+    <p>
+      Tipifica legalmente la situación de <strong>desamparo</strong>: <em>"Se considera situación de desamparo la que se produce de hecho a causa del incumplimiento, o del imposible o inadecuado ejercicio de los deberes de protección establecidos por las leyes para la guarda de los menores, cuando estos queden privados de la necesaria asistencia moral o material."</em>
+    </p>
+  </div>
+
+  <p>
+    Complementariamente, la <strong>Ley Orgánica 8/2021, de 4 de junio, de protección integral a la infancia y la adolescencia frente a la violencia (LOPIVI)</strong>, aborda la protección desde un enfoque holístico (prevención, socialización y educación), priorizando la <strong>detección precoz, la asistencia especializada y la recuperación de derechos vulnerados</strong>.
+  </p>
+  <p>
+    En el ámbito escolar andaluz, estas directrices se materializan en las <strong>Instrucciones de 1 de julio de 2022</strong>, de la Dirección General de Atención a la Diversidad, Participación y Convivencia Escolar, sobre la figura del coordinador/a de bienestar y protección de la infancia y adolescencia en los centros educativos públicos.
+  </p>
+
+  <!-- SECCIÓN 3 -->
+  <h2 class="section-title">3. Evaluación del riesgo social</h2>
+  <p>
+    En la Comunidad Autónoma de Andalucía, el instrumento técnico homologado para evaluar el riesgo en la infancia es el <strong>VALORAME</strong> (<em>Instrumento para la valoración de la gravedad de las situaciones de riesgo, desprotección y desamparo de la infancia y la adolescencia en Andalucía</em>).
+  </p>
+  <p>
+    Este instrumento estandarizado es empleado de forma coordinada por los equipos profesionales de los <strong>Servicios Sociales de las entidades locales</strong> y los <strong>Servicios de Protección de Menores</strong> de la Junta de Andalucía. Su objetivo es aportar criterios técnicos fiables para estimar la gravedad del caso, agilizar la toma de decisiones y canalizar la respuesta asistencial adecuada.
+  </p>
+
+  <h3 class="sub-title">Marco reglamentario: Procedimiento SIMIA y Decreto 210/2018</h3>
+  <ul>
+    <li>
+      <strong>Decreto 210/2018, de 20 de noviembre:</strong> Regula el procedimiento de actuación ante situaciones de riesgo y desamparo de la infancia y adolescencia en Andalucía, complementado por la <strong>Orden de 30 de julio de 2019</strong>.
+    </li>
+    <li>
+      <strong>Procedimiento SIMIA (Sistema de Información sobre Maltrato Infantil de Andalucía):</strong> Protocolo unificado para la detección, notificación, valoración y registro oficial de casos donde conste o se sospeche negligencia o desprotección en los deberes de guarda y cuidado.
+    </li>
+  </ul>
+
+  <h3 class="sub-title">Niveles de actuación según la Ley Orgánica 1/1996</h3>
+  <ul>
+    <li>
+      <strong>Artículo 17 (Actuaciones en situaciones de riesgo):</strong> Los poderes públicos garantizan los derechos del menor orientando las actuaciones a reducir los factores de vulnerabilidad social y potenciar los factores de protección de la familia sin separar al menor del núcleo doméstico.
+    </li>
+    <li>
+      <strong>Artículo 18 (Actuaciones en situación de desamparo):</strong> La entidad pública competente asume ministerio legis la tutela del menor desamparado, aplicando las medidas de acogimiento familiar o residencial más oportunas.
+    </li>
+  </ul>
+
+  <!-- SECCIÓN 4 -->
+  <div class="page-break"></div>
+  <h2 class="section-title">4. Procesos de acompañamiento, mentoría y tutorización</h2>
+  <p>
+    Conforme a las <strong>Instrucciones de 17 de septiembre de 2010</strong> de la Dirección General de Participación e Innovación Educativa (reguladoras de la intervención del educador/a social en el sistema educativo andaluz), los procesos de <strong>acompañamiento, tutorización y mentoría</strong> constituyen tres herramientas estratégicas clave para guiar, sostener y potenciar el crecimiento personal y educativo del alumnado vulnerable:
+  </p>
+
+  <div style="margin-top: 15px;">
+    <h3 class="sub-title" style="color: #0369a1;">A) El Acompañamiento Socioeducativo</h3>
+    <p>
+      Es el proceso más general, flexible y duradero. Implica la actitud profesional de <strong>"estar con"</strong> la persona de forma empática y no invasiva, brindando soporte emocional y práctico según sus necesidades cambiantes. Fomenta un vínculo de confianza continuo entre el profesional y el estudiante, ayudándole a sortear obstáculos sociales, afectivos y económicos en su vida cotidiana.
+    </p>
+
+    <h3 class="sub-title" style="color: #0369a1;">B) La Mentoría</h3>
+    <p>
+      Constituye una relación más formal y estructurada entre una persona con mayor bagaje o madurez (mentor) y otra que precisa guía (mentorizado). 
+    </p>
+    <ul>
+      <li><strong>Rol educativo:</strong> El mentor (docente, profesional educativo o adulto comunitario significativo) actúa como <strong>modelo positivo de referencia</strong>, facilitando orientación, escucha y motivación vital a medio y largo plazo.</li>
+      <li><strong>Líneas operativas:</strong> Desempeñar tareas de mentor individual con alumnado en riesgo y coordinar programas de actividades extraescolares adaptadas.</li>
+    </ul>
+
+    <h3 class="sub-title" style="color: #0369a1;">C) La Tutorización</h3>
+    <p>
+      Focalizada con mayor énfasis en el plano formativo y académico. El tutor orienta en habilidades concretas de estudio, rutinas de trabajo y rendimiento escolar a corto y medio plazo. Requiere destrezas de comunicación asertiva y escucha activa. En contextos de riesgo y desamparo, <strong>la tutorización trasciende lo estrictamente curricular</strong> para abarcar un seguimiento social y emocional indispensable para la retención escolar.
+    </p>
+  </div>
+
+  <!-- SECCIÓN 5 -->
+  <h2 class="section-title">5. Acción con colectivos especialmente vulnerables</h2>
+  <p>
+    La <strong>intervención social con grupos</strong> persigue transformar positivamente la realidad social mediante la dinámica relacional del propio colectivo. En este modelo metodológico, la persona se sitúa en el centro de las interrelaciones grupales, convirtiéndose el grupo en un espacio de referencia vital, formativa y afectiva.
+  </p>
+  <p>
+    A diferencia de la intervención comunitaria macro, el trabajo con grupos toma al <strong>individuo y su biografía como destinatario de la mejora</strong>, empleando al grupo como palanca estratégica para modular sus respuestas frente al entorno. El grupo es un <em>medio</em> para el empoderamiento personal de sus integrantes, nunca un fin en sí mismo.
+  </p>
+
+  <h3 class="sub-title">Aportaciones de José Quintanal y Miguel Melendro</h3>
+  <p>
+    En su obra de referencia <em>"Acción socioeducativa con colectivos vulnerables"</em>, los autores destacan tres vertientes de actuación:
+  </p>
+  <ol>
+    <li>
+      <strong>Parentalidad positiva y atención de necesidades:</strong> Como pilares nucleares en familias en situación de riesgo, articulando medidas preventivas para neutralizar factores de desamparo y fortalecer la resiliencia familiar.
+    </li>
+    <li>
+      <strong>Modelo de competencia familiar:</strong> Dirigido a capacitar y restablecer las funciones educadoras y socializadoras básicas de las figuras parentales mediante entrenamiento y fortalecimiento de sus redes naturales de apoyo.
+    </li>
+    <li>
+      <strong>Acogimiento residencial y sistema de protección:</strong> Coordinación sistemática y bidireccional entre los equipos educativos de los centros de protección y el profesorado / educadores del sistema escolar ordinario.
+    </li>
+  </ol>
+
+  <h3 class="sub-title">Normativa andaluza y colectivos prioritarios</h3>
+  <ul>
+    <li><strong>Decreto 167/2003, de 17 de junio:</strong> Ordenación educativa para alumnado con necesidades asociadas a condiciones sociales desfavorecidas.</li>
+    <li><strong>Orden de 20 de junio de 2011:</strong> Medidas para la convivencia en los centros educativos andaluces.</li>
+    <li>
+      <strong>Principio de igualdad de oportunidades (LOE 2/2006 y LEA 17/2007):</strong> Garantía de inclusión sin exclusión de origen social ni económico, atendiendo a colectivos como minorías étnicas (comunidad gitana), familias temporeras o itinerantes, alumnado inmigrante y jóvenes bajo medidas judiciales o de hospitalización.
+    </li>
+  </ul>
+
+  <!-- SECCIÓN 6 -->
+  <div class="page-break"></div>
+  <h2 class="section-title">6. Los menores y jóvenes en conflicto social</h2>
+  <p>
+    Se define a los menores en conflicto social como aquellos que, a consecuencia de factores de exclusión, discriminación o precariedad extrema, presentan patrones de comportamiento disfuncionales o conductas antisociales y delictivas, manifestando serias dificultades de inserción familiar y comunitaria.
+  </p>
+
+  <h3 class="sub-title">Factores desencadenantes principales:</h3>
+  <ol>
+    <li><strong>Dinámicas familiares desestructuradas:</strong> Violencia de género o doméstica, consumo de tóxicos, negligencia grave o privación extrema de recursos que privan al menor de un apego seguro.</li>
+    <li><strong>Marginación social y económica:</strong> Desempleo estructural de los progenitores, absentismo residencial y falta de expectativas formativas de calidad.</li>
+    <li><strong>Crisis en la socialización e identidad adolescente:</strong> Búsqueda de aceptación en grupos de iguales desviados ante la falta de reconocimiento en el entorno escolar o familiar positivo.</li>
+    <li><strong>Deserción escolar y absentismo crónico:</strong> Pérdida de vinculación formativa que precede y acelera los itinerarios delictivos.</li>
+  </ol>
+
+  <h3 class="sub-title">Áreas monográficas de especial atención (Quintanal y Melendro):</h3>
+  <ul>
+    <li>
+      <strong>Trastornos de la conducta y salud mental:</strong> Coordinación preferente con los Equipos Técnicos Provinciales Especializados para atender desajustes conductuales graves, TDAH, trastornos de la conducta alimentaria (TCA) y patologías duales.
+    </li>
+    <li>
+      <strong>Las TIC como nuevo vector de riesgo:</strong> Exposición a la brecha digital, tecnoadicciones, conductas de ciberacoso escolar, grooming y retraimiento social severo.
+    </li>
+    <li>
+      <strong>Acogimiento familiar y adopción:</strong> Consideración dentro del alumnado NEAE (Necesidades Específicas de Apoyo Educativo) y comprensión de las modalidades de acogimiento: <em>urgencia, temporal, permanente y profesionalizado</em>.
+    </li>
+    <li>
+      <strong>Reinserción de menores infractores:</strong> Oferta de itinerarios formativos adaptados y medidas en medio abierto para mayores de 14 años sujetos a la <strong>Ley Orgánica 5/2000</strong>.
+    </li>
+    <li>
+      <strong>Transición a la vida adulta:</strong> Programas de emancipación y capacitación laboral para jóvenes extutelados en dificultad social.
+    </li>
+  </ul>
+
+  <!-- SECCIÓN 7 -->
+  <h2 class="section-title">7. Intervención con el menor y la comunidad</h2>
+  <p>
+    La intervención socioeducativa persigue salvaguardar el bienestar del menor, restaurar el ejercicio efectivo de sus derechos y ofrecerle oportunidades para su pleno desarrollo integral, previniendo itinerarios delictivos y cronificación de la marginación social.
+  </p>
+
+  <h3 class="sub-title">Estrategias operativas clave:</h3>
+  <ul>
+    <li>
+      <strong>Prevención e intervención temprana:</strong> Actuar en las fases iniciales del riesgo (reforzado por la <strong>Ley 1/2023, de 16 de febrero</strong>, de atención temprana de Andalucía).
+    </li>
+    <li>
+      <strong>Evaluación multidimensional:</strong> Análisis holístico que integra variables escolares, familiares, psicológicas y del entorno comunitario.
+    </li>
+    <li>
+      <strong>Intervención educativa y escolar:</strong> Refuerzo pedagógico adaptado, planes anti-absentismo y tutorías individualizadas.
+    </li>
+    <li>
+      <strong>Contención psicológica y emocional:</strong> Atención interdisciplinar a secuelas de maltrato o desatención grave.
+    </li>
+    <li>
+      <strong>Fortalecimiento parental:</strong> Mediación familiar, programas de parentalidad positiva y escuelas de madres y padres.
+    </li>
+    <li>
+      <strong>Inserción comunitaria:</strong> Participación juvenil en asociaciones barriales, actividades de voluntariado y ocio constructivo.
+    </li>
+    <li>
+      <strong>Justicia juvenil y medidas socioeducativas:</strong> Aplicación pedagógica de la <strong>Ley Orgánica 5/2000, de 12 de enero, de responsabilidad penal del menor</strong>, primando la reeducación mediante trabajos en beneficio de la comunidad, tareas socioeducativas y libertad vigilada.
+    </li>
+  </ul>
+
+  <!-- SECCIÓN 8 -->
+  <div class="page-break"></div>
+  <h2 class="section-title">8. Coordinación institucional y programas integrales</h2>
+  <p>
+    La coordinación multinivel e interinstitucional es la condición indispensable para vertebrar una respuesta coherente, eficiente y libre de duplicidades entre servicios educativos, sanitarios, sociales, policiales y judiciales.
+  </p>
+
+  <div class="callout callout-law">
+    <div class="callout-title">Ley 4/2021 de Infancia y Adolescencia de Andalucía</div>
+    <p>
+      <strong>Capítulo III:</strong> Impone a la Administración autonómica y a las entidades locales la articulación obligatoria de mecanismos formales de colaboración en la promoción, prevención y protección de menores, compartiendo protocolos, bases de datos y recursos residenciales.
+    </p>
+    <p>
+      <strong>Artículo 29:</strong> Mandata la constitución de <strong>Comisiones de Infancia y Adolescencia</strong> en los ámbitos provincial y local, integradas por agentes multisectoriales para planificar y ejecutar programas integrales de buen trato y prevención precoz.
+    </p>
+  </div>
+
+  <!-- SECCIÓN 9 -->
+  <h2 class="section-title">9. Planes y programas socioeducativos para la mejora de la inserción social y escolar</h2>
+
+  <h3 class="sub-title">Medidas del Decreto 167/2003 (Compensación Educativa en Andalucía)</h3>
+  <ul>
+    <li><strong>Planes de Compensación Educativa:</strong> Centros en zonas desfavorecidas, entornos rurales aislados, colectivos de etnia gitana, temporeros y menores hospitalizados.</li>
+    <li>
+      <strong>Atención a la población inmigrante:</strong>
+      <ul>
+        <li><span class="badge-chip">ATAL</span> Aulas Temporales de Adaptación Lingüística.</li>
+        <li><span class="badge-chip">PALI</span> Programa de Acompañamiento Lingüístico para Inmigrantes.</li>
+        <li>Programas de lengua y cultura de origen (árabe y rumano).</li>
+      </ul>
+    </li>
+    <li><strong>Aulas Hospitalarias y Atención Domiciliaria:</strong> Continuidad curricular para alumnado enfermo o convaleciente.</li>
+  </ul>
+
+  <h3 class="sub-title">Programas y actuaciones de la Junta de Andalucía</h3>
+  <div style="display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 16px 0;">
+    <span class="badge-chip">Investiga y Descubre</span>
+    <span class="badge-chip">Programa de Educación Inclusiva</span>
+    <span class="badge-chip">Más Deporte</span>
+    <span class="badge-chip">Más Equidad</span>
+    <span class="badge-chip">ConRed (Ciberconvivencia)</span>
+    <span class="badge-chip">ADA (Ayuda Entre Iguales)</span>
+    <span class="badge-chip">Bienestar Emocional</span>
+    <span class="badge-chip">PROA+ / Transfórmate</span>
+    <span class="badge-chip">Apoyo Educativo Estival</span>
+    <span class="badge-chip">Fénix Andalucía (Mentoría)</span>
+  </div>
+
+  <h3 class="sub-title">Planificación Estratégica 2024</h3>
+  <p>
+    Aprobación del <strong>III Plan de Infancia y Adolescencia de Andalucía (2024)</strong>, centrado en erradicar la pobreza infantil, elevar el éxito escolar y cuidar la salud mental, alineado con el <strong>Plan de Acción Estatal de la Garantía Infantil Europea (2022-2030)</strong>.
+  </p>
+
+  <!-- SECCIÓN 10 -->
+  <h2 class="section-title">10. Implicación de los educadores sociales con los menores en conflicto escolar</h2>
+  <p>
+    En virtud de las <strong>Instrucciones de 17 de septiembre de 2010</strong> de la Dirección General de Participación e Innovación Educativa, el Educador/a Social se erige como profesional nuclear y nexo dinámico entre el alumnado, la institución escolar, las familias y el entorno social circundante.
+  </p>
+
+  <h3 class="sub-title">Ámbitos y funciones esenciales:</h3>
+  <ul>
+    <li><strong>Control e intervención en absentismo:</strong> Diagnóstico de causas, visitas domiciliarias y coordinación con las Comisiones Municipales de Absentismo.</li>
+    <li><strong>Mediación y resolución pacífica de conflictos:</strong> Gestión de discrepancias entre iguales, profesorado y familias.</li>
+    <li><strong>Acompañamiento y mentoría:</strong> Soporte directo a estudiantes con trayectorias de riesgo o desapego formativo.</li>
+    <li><strong>Escuelas de Familias:</strong> Espacios formativos sobre competencias parentales y pautas educativas cotidianas.</li>
+    <li><strong>Ocio y tiempo libre saludable:</strong> Programas extraescolares socioeducativos.</li>
+    <li><strong>Entrenamiento en habilidades para la vida:</strong> Talleres de asertividad, regulación emocional y convivencia democrática.</li>
+    <li><strong>Articulación comunitaria:</strong> Optimización de recursos barriales en beneficio del menor.</li>
+  </ul>
+
+  <!-- ANEXO TABLA -->
+  <div class="page-break"></div>
+  <h2 class="section-title">Anexo: Mapa Conceptual y Tabla Síntesis del Tema 19</h2>
+  <p>Resumen estructurado de los 10 epígrafes, conceptos rectores y referencias normativas para estudio y repaso:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 28%;">Epígrafe</th>
+        <th style="width: 38%;">Conceptos Clave</th>
+        <th style="width: 34%;">Legislación / Programas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1. Trabajo socioeducativo</strong></td>
+        <td>Abordaje integral • Enfoque multidimensional • Resiliencia • Inclusión social</td>
+        <td>CDN 1990 • Art. 39 CE • Ley 4/2021 de Andalucía</td>
+      </tr>
+      <tr>
+        <td><strong>2. Concepto de riesgo</strong></td>
+        <td>Riesgo (entorno familiar mantenido) vs. Desamparo (pérdida de guarda/asistencia)</td>
+        <td>L.O. 1/1996 • Art. 172 Código Civil • L.O. 8/2021 (LOPIVI) • Instrucciones 1-jul-2022</td>
+      </tr>
+      <tr>
+        <td><strong>3. Evaluación del riesgo</strong></td>
+        <td>Valoración técnica objetiva de la gravedad • Notificación unificada</td>
+        <td>Instrumento VALORAME • Decreto 210/2018 • Orden 30-jul-2019 • SIMIA • L.O. 1/1996 arts. 17 y 18</td>
+      </tr>
+      <tr>
+        <td><strong>4. Acompañamiento, mentoría y tutorización</strong></td>
+        <td>Acompañamiento ("estar con") • Mentoría (modelo a largo plazo) • Tutorización (ámbito académico)</td>
+        <td>Instrucciones de 17 de septiembre de 2010</td>
+      </tr>
+      <tr>
+        <td><strong>5. Colectivos vulnerables</strong></td>
+        <td>El grupo como medio de empoderamiento • Parentalidad positiva • Competencia familiar</td>
+        <td>Quintanal y Melendro • Decreto 167/2003 • Orden 20-jun-2011 • LOE 2/2006 • LEA 17/2007</td>
+      </tr>
+      <tr>
+        <td><strong>6. Menores en conflicto social</strong></td>
+        <td>Factores familiares, marginalidad, identidad, absentismo • Brecha digital • Conducta y salud mental</td>
+        <td>L.O. 5/2000 de Responsabilidad Penal • Modalidades de acogimiento familiar</td>
+      </tr>
+      <tr>
+        <td><strong>7. Intervención y comunidad</strong></td>
+        <td>Prevención temprana • Trabajo en red comunitaria • Evaluación integral • Mediación familiar</td>
+        <td>Ley 1/2023 de Atención Temprana • L.O. 5/2000 • Servicios Sociales Comunitarios</td>
+      </tr>
+      <tr>
+        <td><strong>8. Coordinación institucional</strong></td>
+        <td>Trabajo sin duplicidades • Colaboración intersectorial • Recursos residenciales compartidos</td>
+        <td>Ley 4/2021 (Cap. III y Art. 29: Comisiones Provinciales y Locales de Infancia)</td>
+      </tr>
+      <tr>
+        <td><strong>9. Planes y programas socioeducativos</strong></td>
+        <td>Compensación educativa • Inmigración (ATAL/PALI) • Aulas hospitalarias • Proyectos de innovación</td>
+        <td>D. 167/2003 • PROA+ • Fénix Andalucía • ConRed • III Plan de Infancia (2024) • Garantía Infantil Europea</td>
+      </tr>
+      <tr>
+        <td><strong>10. Implicación educadores sociales</strong></td>
+        <td>Eje vertebrador entre escuela, familia y comunidad • Absentismo • Mediación • Habilidades de vida</td>
+        <td>Instrucciones de 17 de septiembre de 2010 • Redes comunitarias locales</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 28: La Investigación en Educación Social. El Rol de Investigador/a del Educador/a Social. Paradigmas y Métodos. Estrategias y Técnicas de Recogida de Datos. Análisis de Datos. La Investigación-Acción Participativa. El Informe de Investigación. Investigación sobre Problemas y Cuestiones Fundamentales Relacionadas con el Sistema Educativo</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 28</h1>
+  <h2>La Investigación en Educación Social. El Rol de Investigador/a del Educador/a Social. Paradigmas y Métodos. Estrategias y Técnicas de Recogida de Datos. Análisis de Datos. La Investigación-Acción Participativa. El Informe de Investigación. Investigación sobre Problemas y Cuestiones Fundamentales Relacionadas con el Sistema Educativo</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Carácter:</strong> Materias Específicas del Programa Oficial</p>
+<p><strong>Marco Legal y Documental:</strong></p>
+<ul class="meta-sublist">
+<li>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA), arts. 4, 131 y 133 (Evaluación, innovación e investigación educativa).</li>
+<li>Ley Orgánica 2/2006 (LOE), modificada por la LOMLOE 3/2020.</li>
+<li>Instrucciones de 17 de septiembre de 2010 de la Dirección General de Participación e Innovación Educativa.</li>
+</ul>
+<p><strong>Autores y Doctrinas de Referencia:</strong> Donald Schön (El profesional reflexivo), Kurt Lewin (Investigación-Acción y ciclos de cambio), Orlando Fals Borda (Investigación-Acción Participativa - IAP comunitaria), Barney Glaser y Anselm Strauss (Grounded Theory / Teoría Fundamentada), Thomas Kuhn (Estructura de las revoluciones científicas y paradigmas).</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 28</div>
+  <div class="toc-item level-1">1. Introducción y estatuto de la investigación en la práctica de la Educación Social.</div>
+  <div class="toc-item level-1">2. El rol de investigador/a del educador o educadora social: El práctico reflexivo (Donald Schön).</div>
+  <div class="toc-item level-1">3. Paradigmas de investigación en las Ciencias Sociales y de la Educación:</div>
+  <div class="toc-item level-2">3.1. Paradigma positivista o empírico-analítico (cuantitativo).</div>
+  <div class="toc-item level-2">3.2. Paradigma interpretativo o hermenéutico (cualitativo).</div>
+  <div class="toc-item level-2">3.3. Paradigma sociocrítico o emancipador (participativo).</div>
+  <div class="toc-item level-1">4. Estrategias y técnicas de recogida de datos en el ámbito escolar:</div>
+  <div class="toc-item level-2">4.1. Técnicas cuantitativas: Cuestionarios, escalas Likert e indicadores estadísticos de Séneca.</div>
+  <div class="toc-item level-2">4.2. Técnicas cualitativas: Observación participante, entrevistas en profundidad, grupos de discusión e historias de vida.</div>
+  <div class="toc-item level-2">4.3. El principio de triangulación como criterio de validez y rigor científico.</div>
+  <div class="toc-item level-1">5. Análisis de datos en la investigación socioeducativa:</div>
+  <div class="toc-item level-2">5.1. Análisis cuantitativo descriptivo e inferencial.</div>
+  <div class="toc-item level-2">5.2. Análisis cualitativo de contenido: Categorización y codificación.</div>
+  <div class="toc-item level-1">6. La Investigación-Acción Participativa (IAP) como metodología nuclear:</div>
+  <div class="toc-item level-2">6.1. Orígenes y fundamentos (Kurt Lewin y Orlando Fals Borda).</div>
+  <div class="toc-item level-2">6.2. La espiral dialéctica: Planificar, actuar, observar y reflexionar.</div>
+  <div class="toc-item level-2">6.3. Aplicación de la IAP en la comunidad escolar andaluza.</div>
+  <div class="toc-item level-1">7. El informe de investigación socioeducativa y la devolución social de resultados.</div>
+  <div class="toc-item level-1">8. Líneas prioritarias de investigación sobre el sistema educativo andaluz (convivencia, absentismo, brecha digital, inclusión).</div>
+  <div class="toc-item level-1">9. Conclusión.</div>
+  <div class="toc-item level-1">10. Anexo: Mapa conceptual y tabla sinóptica del Tema 28.</div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y estatuto de la investigación en la Educación Social</h2>
+
+<p>La investigación en Educación Social no es una actividad puramente teórica reservada a los laboratorios universitarios o a la academia distante; constituye una <strong>dimensión inherente e irrenunciable de la práctica profesional cotidiana</strong>. No es posible transformar una realidad socioeducativa que no se comprende en profundidad, ni es éticamente aceptable intervenir en la vida de menores y familias sin evaluar con rigor empírico el impacto real de las acciones desplegadas.</p>
+
+<p>Para la <strong>Educación Social</strong>, investigar es un <strong>acto pedagógico y político de concienciación y cambio social</strong>. La investigación socioeducativa se caracteriza por su carácter contextualizado, aplicado y transformador: busca generar conocimiento útil para desvelar las causas estructurales del fracaso escolar, desmontar prejuicios clasistas y capacitar a la comunidad educativa para que asuma el protagonismo en la resolución de sus propios desafíos (Orlando Fals Borda).</p>
+
+<p>En Andalucía, la LEA (arts. 131 a 133) consagra la investigación y la innovación educativa como motores de la calidad de la enseñanza pública, encomendando al personal técnico del centro el análisis reflexivo de sus prácticas.</p>
+
+<h2 class="section-title">2. El rol de investigador/a del educador/a social: El práctico reflexivo</h2>
+
+<p>Frente a la concepción tradicional del educador como mero ejecutor mecánico de instrucciones dictadas por otros, Donald Schön formuló el concepto del <strong>profesional reflexivo</strong>:</p>
+
+<ul>
+  <li><strong>Reflexión EN la acción:</strong> Capacidad de reajustar la intervención en tiempo real mientras se interactúa con el alumno, el grupo o la familia, interpretando imprevistos y resistencias.</li>
+  <li><strong>Reflexión SOBRE la acción:</strong> Análisis crítico posterior, sistemático y distanciado sobre lo acontecido, contrastando los resultados observados con las hipótesis iniciales.</li>
+  <li>El Educador Social actúa como un <strong>investigador en el aula y en la comunidad</strong>: diagnostica problemáticas complejas, prueba estrategias pedagógicas innovadoras y documenta rigurosamente sus hallazgos.</li>
+</ul>
+
+<h2 class="section-title">3. Paradigmas de investigación en las Ciencias Sociales</h2>
+
+<p>Siguiendo la epistemología científica contemporánea (Thomas Kuhn, Habermas), se diferencian tres grandes paradigmas:</p>
+
+<div class="diagram-box">
+  <pre>                  PARADIGMAS DE INVESTIGACIÓN SOCIOEDUCATIVA
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ PARADIGMA POSITIVISTA│ PARADIGMA INTERPRET. │ PARADIGMA SOCIOCRÍT. │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Finalidad: Explicar│ • Finalidad: Compren-│ • Finalidad: Trans-  │
+ │   y predecir causas  │   der significados   │   formar y emancipar │
+ │ • Enfoque cuantitat. │ • Enfoque cualitat.  │ • Enfoque dialógico  │
+ │ • Neutralidad / test │ • Empatía hermenéut. │ • IAP / Coinvestigac.│
+ │ • Datos numéricos    │ • Discurso y vivencia│ • Unión teoría-praxis│
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<ol>
+  <li><strong>Paradigma Positivista / Cuantitativo:</strong> Busca leyes generales y relaciones de causa-efecto. Emplea la estadística, el control de variables y el cuestionario estandarizado. Valioso para conocer tasas macro de absentismo o repetición en Andalucía.</li>
+  <li><strong>Paradigma Interpretativo / Cualitativo:</strong> Centrado en comprender los significados subjetivos que los actores otorgan a sus vivencias (¿qué siente un menor al sufrir acoso escolar?). Emplea la entrevista abierta y la observación etnográfica.</li>
+  <li><strong>Paradigma Sociocrítico / Emancipador:</strong> Paradigma de referencia para la Educación Social. Rechaza la pretendida neutralidad valorativa: la ciencia debe servir para denunciar injusticias y liberar a los colectivos oprimidos mediante la unión indisociable de teoría y práctica (praxis).</li>
+</ol>
+
+<h2 class="section-title">4. Estrategias y técnicas de recogida de datos en la escuela</h2>
+
+<h3 class="sub-title">4.1. Técnicas Cuantitativas</h3>
+
+<ul>
+  <li><strong>Cuestionarios e Inventarios Cerrados:</strong> Recogida masiva de datos con preguntas estructuradas (escalas Likert de 1 a 5).</li>
+  <li><strong>Indicadores Estadísticos de Gestión Escolar:</strong> Explotación sistemática de series temporales de la plataforma <em>Séneca</em> (tasas de absentismo mensual, partes de incidencias, notas por materias y género).</li>
+</ul>
+
+<h3 class="sub-title">4.2. Técnicas Cualitativas</h3>
+
+<ul>
+  <li><strong>Observación Participante:</strong> Inmersión del educador social en los escenarios naturales (el patio, el comedor, los pasillos) registrando conductas espontáneas en su diario de campo.</li>
+  <li><strong>Entrevistas en Profundidad y Semiestructuradas:</strong> Diálogo guiado para rescatar relatos biográficos y dinámicas sociofamiliares.</li>
+  <li><strong>Grupos de Discusión (Focus Groups):</strong> Reuniones colectivas de debate entre estudiantes o familias para hacer emerger discursos compartidos.</li>
+  <li><strong>Historias de Vida:</strong> Reconstrucción longitudinal de la trayectoria escolar y vital de jóvenes en riesgo.</li>
+</ul>
+
+<h3 class="sub-title">4.3. La Triangulación como Criterio de Rigor Metodológico</h3>
+
+<p>Para evitar sesgos subjetivos, la Educación Social exige la <strong>triangulación metodológica</strong>: contrastar datos cuantitativos (estadísticas de faltas) con datos cualitativos (entrevistas al alumno y familia) y con la observación directa del equipo docente.</p>
+
+<h2 class="section-title">5. Análisis de datos en la investigación socioeducativa</h2>
+
+<ol>
+  <li><strong>Análisis Cuantitativo:</strong> Tratamiento estadístico descriptivo (medias, porcentajes, desviaciones típicas) e inferencial (pruebas chi-cuadrado, correlaciones de Pearson) mediante software como SPSS o herramientas abiertas.</li>
+  <li><strong>Análisis Cualitativo de Contenido:</strong> Procedimiento riguroso de categorización y codificación textual (Glaser y Strauss):
+    <ul>
+      <li><em>Codificación abierta:</em> Identificación de unidades de significado en las transcripciones.</li>
+      <li><em>Codificación axial:</em> Agrupación de códigos en categorías temáticas emergentes.</li>
+      <li><em>Codificación selectiva:</em> Construcción de un modelo explicativo teórico fundamentado en los datos.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 class="section-title">6. La Investigación-Acción Participativa (IAP)</h2>
+
+<p>La <strong>Investigación-Acción Participativa (IAP)</strong>, concebida por Kurt Lewin y refundada en América Latina por Orlando Fals Borda, es la metodología insignia de la Educación Social comunitaria:</p>
+
+<ul>
+  <li><strong>Ruptura de la Relación Sujeto-Objeto:</strong> La comunidad educativa (alumnado, familias, docentes y vecinos) no es "objeto pasivo de estudio", sino <strong>sujeto coinvestigador activo</strong>.</li>
+  <li><strong>La Espiral Dialéctica de Lewin:</strong> Proceso cíclico continuo estructurado en cuatro fases recurrentes:</li>
+</ul>
+
+<div class="diagram-box">
+  <pre>                    ESPIRAL DIALÉCTICA DE LA IAP (LEWIN)
+                ┌─────────────────────────────────┐
+                │ 1. PLANIFICAR (Plan de acción)  │
+                └───────────────┬─────────────────┘
+                                ▼
+                ┌─────────────────────────────────┐
+                │ 2. ACTUAR (Ejecución comunitar.)│
+                └───────────────┬─────────────────┘
+                                ▼
+                ┌─────────────────────────────────┐
+                │ 3. OBSERVAR (Recogida de datos) │
+                └───────────────┬─────────────────┘
+                                ▼
+                ┌─────────────────────────────────┐
+                │ 4. REFLEXIONAR (Reajuste crítico│
+                └───────────────┬─────────────────┘
+                                │
+                    (Vuelve al ciclo siguiente)</pre>
+</div>
+
+<h3 class="sub-title">Aplicación Práctica en la Escuela Andaluza</h3>
+
+<p>Creación de una <strong>Comisión Mixta de Investigación</strong> (alumnado de ESO, docentes, AMPA y educador social) para investigar participativamente los conflictos del patio escolar, diseñando los propios alumnos las zonas de juego y las normas de convivencia compartidas.</p>
+
+<h2 class="section-title">7. El informe de investigación y la devolución social</h2>
+
+<p>El proceso científico culmina con la redacción del <strong>informe técnico de investigación</strong>:</p>
+
+<ul>
+  <li><strong>Estructura Académica Canónica:</strong> Título, introducción y justificación, marco teórico conceptual, diseño metodológico (muestra, técnicas y análisis), exposición de resultados, discusión crítica y propuestas operativas de mejora para el centro docente.</li>
+  <li><strong>Principio de Devolución Social (Fals Borda):</strong> El conocimiento generado no puede quedar archivado en una estantería burocrática; debe ser "devuelto" a la comunidad escolar en asambleas participativas, talleres de barrio y reuniones de claustro en un lenguaje accesible y motivador para la acción.</li>
+</ul>
+
+<h2 class="section-title">8. Cuestiones e investigaciones prioritarias en el sistema educativo andaluz</h2>
+
+<p>La Educación Social investiga sobre problemáticas vivas de alto impacto en Andalucía:</p>
+
+<ol>
+  <li><strong>Convivencia y Ciberodio:</strong> Prevalencia de dinámicas de acoso escolar en redes sociales y discursos de odio xenófobos o lgtbifóbicos en la adolescencia.</li>
+  <li><strong>Factores Críticos del Absentismo Escolar:</strong> Análisis cualitativo de las causas que sostienen la desvinculación escolar en barrios de transformación social (Estrategia ERACIS).</li>
+  <li><strong>Brecha Digital y Equidad Familiar:</strong> Estudio del impacto de la falta de competencias y dispositivos digitales en hogares vulnerables.</li>
+  <li><strong>Coeducación y Masculinidades Juveniles:</strong> Efectos del consumo precoz de pornografía online en las relaciones afectivas adolescentes.</li>
+</ol>
+
+<h2 class="section-title">9. Conclusión</h2>
+
+<p>La investigación en Educación Social no es un adorno académico ni un ejercicio estéril de erudición; es la <strong>fuerza intelectual que permite fundamentar la justicia social con datos irrefutables y transformar la realidad con rigor ético</strong>.</p>
+
+<p>El <strong>Educador y la Educadora Social</strong> como práctico reflexivo investiga con el corazón en la comunidad y la mente en la ciencia: escucha la voz de los silenciados, somete su práctica a examen continuo y convierte la investigación-acción en un instrumento insuperable de libertad, equidad y dignidad educativa.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">10. Anexo: Mapa conceptual y tabla sinóptica del Tema 28</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Normativa / Doctrinas Clave</th>
+      <th>Conceptos e Implicación Práctica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Práctico Reflexivo</strong></td>
+      <td>Donald Schön</td>
+      <td>Reflexión en la acción y sobre la acción; el profesional como investigador permanente.</td>
+    </tr>
+    <tr>
+      <td><strong>Paradigmas Científicos</strong></td>
+      <td>Thomas Kuhn • Jürgen Habermas</td>
+      <td>Positivista (cuantitativo/leyes), Interpretativo (cualitativo/comprensión) y Sociocrítico (emancipación).</td>
+    </tr>
+    <tr>
+      <td><strong>Técnicas Cuantitativas</strong></td>
+      <td>Cuestionarios • Séneca</td>
+      <td>Indicadores macro, estadísticas de absentismo y escalas de actitudes estandarizadas.</td>
+    </tr>
+    <tr>
+      <td><strong>Técnicas Cualitativas</strong></td>
+      <td>Observación • Entrevista • Grupos</td>
+      <td>Diario de campo etnográfico, entrevistas en profundidad y análisis de contenido temático.</td>
+    </tr>
+    <tr>
+      <td><strong>Triangulación Metodológica</strong></td>
+      <td>Criterio de validez empírica</td>
+      <td>Contraste cruzado de datos cuantitativos, testimonios cualitativos y observación de campo.</td>
+    </tr>
+    <tr>
+      <td><strong>La IAP</strong></td>
+      <td>Kurt Lewin • Orlando Fals Borda</td>
+      <td>Ciclos dialécticos de planificar-actuar-observar-reflexionar. El sujeto como coinvestigador.</td>
+    </tr>
+    <tr>
+      <td><strong>Devolución Social</strong></td>
+      <td>Fals Borda • LEA (arts. 131-133)</td>
+      <td>Retorno pedagógico del conocimiento a la comunidad escolar para activar la acción transformadora.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>Instrucciones de 17 de septiembre de 2010</td>
+      <td>Investigador de aula y comunidad, dinamizador de la IAP y redactor de propuestas de mejora.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

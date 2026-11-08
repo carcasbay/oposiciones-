@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 15: Educación para la Salud. La Escuela como Promotora de la Salud y el Bienestar Emocional. Las Conductas y los Hábitos Saludables. Educación Afectivo Sexual. Prevención de las Adicciones. Actuación e Intervención del Educador o Educadora Social en el Desarrollo de la Educación para la Salud y Educación de los Sentimientos</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 15</h1>
+  <h2>Educación para la Salud. La Escuela como Promotora de la Salud y el Bienestar Emocional. Las Conductas y los Hábitos Saludables. Educación Afectivo Sexual. Prevención de las Adicciones. Actuación e Intervención del Educador o Educadora Social en el Desarrollo de la Educación para la Salud y Educación de los Sentimientos</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Bloque:</strong> Materias Específicas</p>
+<p><strong>Tema Oficial:</strong> 15</p>
+<p><strong>Normativa y Planes Clave:</strong> Carta de Ottawa de Promoción de la Salud (OMS, 1986); LOMLOE 3/2020; Ley 17/2007 (LEA); Ley 16/2011 de Salud Pública de Andalucía; III Plan Andaluz sobre Drogas y Adicciones (PADA); Programa "Hábitos de Vida Saludable" de Andalucía (<em>Creciendo en Salud</em> y <em>Forma Joven</em>); Estrategia de Salud Mental de Andalucía; Instrucciones de 17 de septiembre de 2010.</p>
+<p><strong>Autores y Referentes:</strong> Michael Marmot (Determinantes sociales), Daniel Goleman (Inteligencia emocional), Rafael Bisquerra, Howard Gardner.</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 15</div>
+  <div class="toc-item level-1">1. <strong>Introducción y contextualización en la Educación Social</strong></div>
+  <div class="toc-item level-1">2. <strong>Educación para la salud: Concepto, modelos y marco normativo</strong></div>
+  <div class="toc-item level-2">2.1. El concepto holístico de salud de la OMS y la Carta de Ottawa (1986)</div>
+  <div class="toc-item level-2">2.2. La Red Europea de Escuelas Promotoras de Salud (SHE) y la Red Andaluza</div>
+  <div class="toc-item level-2">2.3. Los determinantes sociales de la salud (Marmot): Equidad y salud comunitaria</div>
+  <div class="toc-item level-1">3. <strong>La escuela como promotora de la salud y el bienestar emocional</strong></div>
+  <div class="toc-item level-2">3.1. La salud mental infantojuvenil en el sistema educativo: Ansiedad, depresión y autolesiones</div>
+  <div class="toc-item level-2">3.2. Estrategia de Salud Mental de Andalucía y coordinación con las USMIJ</div>
+  <div class="toc-item level-2">3.3. Educación de los sentimientos e inteligencia emocional (Goleman, Bisquerra)</div>
+  <div class="toc-item level-1">4. <strong>Conductas y hábitos de vida saludables en el ámbito escolar</strong></div>
+  <div class="toc-item level-2">4.1. Alimentación equilibrada (dieta mediterránea) y prevención de la obesidad infantil</div>
+  <div class="toc-item level-2">4.2. Actividad física, reducción del sedentarismo y descansos activos</div>
+  <div class="toc-item level-2">4.3. Higiene del sueño y ritmos circadianos en la infancia y adolescencia</div>
+  <div class="toc-item level-2">4.4. El Programa <em>"Hábitos de Vida Saludable"</em> en Andalucía (<em>Creciendo en Salud</em> y <em>Forma Joven</em>)</div>
+  <div class="toc-item level-1">5. <strong>Educación afectivo-sexual integral</strong></div>
+  <div class="toc-item level-2">5.1. Superación del modelo biologicista hacia el enfoque bio-psico-social y afectivo</div>
+  <div class="toc-item level-2">5.2. Autoconocimiento, consentimiento informado y prevención de ITS y embarazos no planificados</div>
+  <div class="toc-item level-2">5.3. El impacto del acceso precoz a la pornografía en internet y deconstrucción de mitos</div>
+  <div class="toc-item level-1">6. <strong>Prevención de las adicciones químicas y comportamentales</strong></div>
+  <div class="toc-item level-2">6.1. Adicciones con sustancia: Alcohol (<em>binge drinking</em>), tabaco/vapeadores, cannabis y fármacos</div>
+  <div class="toc-item level-2">6.2. Adicciones comportamentales (sin sustancia): Apuestas online, videojuegos compulsivos y redes sociales</div>
+  <div class="toc-item level-2">6.3. Niveles de prevención: Universal, selectiva e indicada (III Plan Andaluz sobre Drogas - PADA)</div>
+  <div class="toc-item level-1">7. <strong>Actuación e intervención del educador o educadora social</strong></div>
+  <div class="toc-item level-2">7.1. Coordinación de las Asesorías <em>Forma Joven</em> en los IES</div>
+  <div class="toc-item level-2">7.2. Dinamización de talleres de educación emocional y afectivo-sexual en el POAT</div>
+  <div class="toc-item level-2">7.3. Intervención socioeducativa en adicciones y detección de malestar psíquico</div>
+  <div class="toc-item level-2">7.4. Escuelas de Familias y trabajo en red comunitaria (SAS, USMIJ, CTA)</div>
+  <div class="toc-item level-1">8. <strong>Conclusión</strong></div>
+  <div class="toc-item level-1">9. <strong>Anexo: Mapa conceptual y tabla sinóptica del Tema 15</strong></div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y contextualización en la Educación Social</h2>
+
+<p>La <strong>Educación para la Salud</strong> ha experimentado una profunda transformación epistemológica en las últimas décadas. Ha superado la vieja concepción biomédica, restrictiva y biologicista —centrada exclusivamente en la prevención de enfermedades y el miedo punitivo— para consolidarse como un <strong>proceso pedagógico integral, emancipador y comunitario orientado a la promoción del bienestar físico, mental y social</strong>.</p>
+
+<p>La escuela es el entorno privilegiado para consolidar estilos de vida saludables: es la única institución por la que transita el 100% de la población durante su periodo evolutivo más plástico. No obstante, la salud no depende únicamente de decisiones biológicas individuales; está profundamente condicionada por los <strong>determinantes sociales de la salud (Michael Marmot)</strong>: la pobreza, la precariedad habitacional, el nivel educativo de las familias y el entorno barrial inciden directamente en las tasas de obesidad infantil, salud mental precaria o adicciones juveniles.</p>
+
+<p>Para el <strong>Educador y la Educadora Social</strong>, este ámbito es de una vigencia incuestionable. En un momento de alarma social por el incremento de autolesiones, depresión adolescente, ludopatía online y consumo precoz de pornografía, el educador social despliega una intervención integral: dinamiza la salud emocional en las aulas, lidera la asesoría confidencial para jóvenes (<em>Forma Joven</em>), previene adicciones y teje alianzas operativas entre la escuela, las familias y el sistema sanitario público andaluz.</p>
+
+<h2 class="section-title">2. Educación para la salud: Concepto, modelos y marco normativo</h2>
+
+<h3 class="sub-title">2.1. El concepto holístico de salud y la Carta de Ottawa</h3>
+
+<p>La Organización Mundial de la Salud (OMS, 1948) definió la salud como:</p>
+
+<div class="callout">
+  <p><em>"Un estado de completo bienestar físico, mental y social, y no solamente la ausencia de afecciones o enfermedades."</em></p>
+</div>
+
+<p>En 1986, la <strong>Carta de Ottawa para la Promoción de la Salud</strong> fijó las cinco áreas de acción indispensables:</p>
+
+<ol>
+  <li>Construcción de políticas públicas saludables.</li>
+  <li>Creación de entornos que apoyen la salud (escuelas saludables).</li>
+  <li>Fortalecimiento de la acción comunitaria.</li>
+  <li>Desarrollo de habilidades personales a través de la educación.</li>
+  <li>Reorientación de los servicios sanitarios hacia la prevención.</li>
+</ol>
+
+<h3 class="sub-title">2.2. La Red de Escuelas Promotoras de Salud (SHE)</h3>
+
+<p>Impulsada por la OMS, la Comisión Europea y el Consejo de Europa, promueve que los centros educativos no se limiten a "impartir charlas aisladas de salud", sino que configuren un <strong>entorno físico y relacional protector</strong>: comedores escolares sostenibles, patios dinámicos, clima de convivencia positivo y alianza estrecha con las familias.</p>
+
+<h3 class="sub-title">2.3. Determinantes sociales de la salud (Michael Marmot)</h3>
+
+<p>Existe un estricto <strong>gradiente social de la salud</strong>: a menor nivel socioeconómico de la familia, mayor es la prevalencia de obesidad infantil, caries, sedentarismo, tabaquismo y patologías de salud mental. La Educación para la Salud en Andalucía debe ser, por tanto, una herramienta de <strong>equidad social y compensación de desigualdades</strong>.</p>
+
+<h2 class="section-title">3. La escuela como promotora de la salud y el bienestar emocional</h2>
+
+<h3 class="sub-title">3.1. Crisis de salud mental infantojuvenil</h3>
+
+<p>La Organización Mundial de la Salud alerta de que el 50% de los trastornos mentales del adulto debutan antes de los 14 años. En el ámbito educativo andaluz se constata un aumento de:</p>
+
+<ul>
+  <li>Trastornos de ansiedad generalizada y ataques de pánico escolares.</li>
+  <li>Episodios depresivos, apatía y anhedonia.</li>
+  <li><strong>Autolesiones no suicidas (cortes, quemaduras)</strong> como mecanismo disfuncional de alivio del dolor emocional.</li>
+  <li>Conducta suicida e ideación autolítica (obligación de activar el Protocolo de prevención del suicidio de la Consejería de Desarrollo Educativo).</li>
+</ul>
+
+<h3 class="sub-title">3.2. Estrategia de Salud Mental de Andalucía y coordinación con USMIJ</h3>
+
+<p>Articula la atención integral interdisciplinar entre los centros educativos y las <strong>Unidades de Salud Mental Infanto-Juvenil (USMIJ)</strong> del Servicio Andaluz de Salud (SAS), garantizando la continuidad pedagógica durante los tratamientos ambulatorios u hospitalarios.</p>
+
+<h3 class="sub-title">3.3. Educación de los sentimientos e inteligencia emocional</h3>
+
+<p>Siguiendo las aportaciones de <strong>Daniel Goleman y Rafael Bisquerra</strong>, la educación emocional entrena competencias básicas para la vida:</p>
+
+<ul>
+  <li><strong>Conciencia emocional:</strong> Identificar y poner palabras al mundo afectivo propio.</li>
+  <li><strong>Regulación emocional:</strong> Tolerar la frustración, modular la ira y gestionar el estrés.</li>
+  <li><strong>Autonomía emocional:</strong> Construir un autoconcepto positivo no dependiente del juicio ajeno.</li>
+  <li><strong>Habilidades socioemocionales:</strong> Empatía activa y resolución dialogada de desacuerdos.</li>
+</ul>
+
+<h2 class="section-title">4. Conductas y hábitos de vida saludables en el ámbito escolar</h2>
+
+<div class="diagram-box">
+  <pre>                     HÁBITOS SALUDABLES EN LA ESCUELA ANDALUZA
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ NUTRICIÓN EQUILIBRADA│ ACTIVIDAD Y DESCANSO │ BIENESTAR EMOCIONAL  │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Dieta mediterránea │ • 60 min diarios AF  │ • Rincón de la calma │
+ │ • Menús escolares km0│ • Desplazamiento act.│ • Autoestima y afecto│
+ │ • Fruta en recreos   │ • Higiene del sueño  │ • Prevención estrés  │
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<h3 class="sub-title">4.1. Nutrición y prevención de la obesidad infantil</h3>
+
+<p>Andalucía presenta una de las tasas de sobrepeso y obesidad infantil más elevadas de Europa. Se promueve el consumo diario de frutas y verduras frescas, el agua como única bebida en el centro y la eliminación de máquinas de venta de bollería industrial y bebidas azucaradas.</p>
+
+<h3 class="sub-title">4.2. Actividad física y descansos activos</h3>
+
+<p>Fomento de al menos 60 minutos diarios de actividad física moderada o vigorosa, pausas activas durante las clases lectivas y fomento de los caminos escolares seguros a pie o en bicicleta.</p>
+
+<h3 class="sub-title">4.3. Higiene del sueño</h3>
+
+<p>El uso nocturno de pantallas (luz azul) retrasa la secreción de melatonina, provocando déficit crónico de sueño en escolares, somnolencia diurna y fracaso escolar. Se orienta a las familias para apagar dispositivos dos horas antes de dormir.</p>
+
+<h3 class="sub-title">4.4. El Programa <em>"Hábitos de Vida Saludable"</em> de la Junta de Andalucía</h3>
+
+<ul>
+  <li><strong>Creciendo en Salud (0-12 años):</strong> Centrado en alimentación sana, educación emocional y autocuidado.</li>
+  <li><strong>Forma Joven en el Ámbito Educativo (Secundaria):</strong> Asesorías de salud integral en los institutos sobre sexualidad, adicciones y salud mental.</li>
+</ul>
+
+<h2 class="section-title">5. Educación afectivo-sexual integral</h2>
+
+<h3 class="sub-title">5.1. Superación del modelo biologicista</h3>
+
+<p>La sexualidad no se reduce a la reproducción biológica ni al peligro del contagio: es una <strong>dimensión humana central de placer, comunicación, afecto, identidad y ternura</strong>.</p>
+
+<h3 class="sub-title">5.2. Componentes de la educación afectivo-sexual</h3>
+
+<ul>
+  <li><strong>Consentimiento expreso y libre:</strong> <em>"Solo sí es sí"</em>. El respeto incondicional a los límites corporales del otro.</li>
+  <li><strong>Prevención de ITS y embarazos no planificados:</strong> Información rigurosa sobre métodos anticonceptivos y de barrera (preservativo).</li>
+  <li><strong>Diversidad afectivo-sexual:</strong> Aceptación de las orientaciones del deseo y de las identidades de género (Ley 4/2023 y Ley 8/2017 de Andalucía).</li>
+  <li><strong>Deconstrucción del porno violento online:</strong> El consumo prematuro de pornografía en internet distorsiona la sexualidad juvenil, normaliza la violencia contra las mujeres y fomenta expectativas sexuales irreales.</li>
+</ul>
+
+<h2 class="section-title">6. Prevención de las adicciones químicas y comportamentales</h2>
+
+<div class="diagram-box">
+  <pre>                        TIPOLOGÍA DE ADICCIONES JUVENILES
+ ┌────────────────────────────────────┬────────────────────────────────────┐
+ │ ADICCIONES CON SUSTANCIA           │ ADICCIONES COMPORTAMENTALES        │
+ ├────────────────────────────────────┼────────────────────────────────────┤
+ │ • Alcohol (binge drinking)         │ • Juegos de azar y apuestas online │
+ │ • Cannabis (falsas creencias inoc.)│ • Videojuegos compulsivos (gaming) │
+ │ • Vapeadores y tabaco              │ • Redes sociales y tiranía del like│
+ │ • Psicofármacos sin prescripción   │ • Pornografía en internet          │
+ └────────────────────────────────────┴────────────────────────────────────┘</pre>
+</div>
+
+<h3 class="sub-title">6.1. Niveles de prevención (III Plan Andaluz sobre Drogas - PADA)</h3>
+
+<ol>
+  <li><strong>Prevención Universal:</strong> Dirigida a todo el alumnado para retrasar la edad de inicio y fomentar habilidades de resistencia a la presión de grupo.</li>
+  <li><strong>Prevención Selectiva:</strong> Dirigida a subgrupos en riesgo (fracaso escolar, familias con adicciones).</li>
+  <li><strong>Prevención Indicada:</strong> Intervención intensiva con jóvenes que ya presentan consumos problemáticos o ludopatía incipiente.</li>
+</ol>
+
+<h2 class="section-title">7. Actuación e intervención del educador o educadora social</h2>
+
+<p>En el marco de las <strong>Instrucciones de 17 de septiembre de 2010</strong>, el Educador Social despliega un rol asistencial y preventivo clave:</p>
+
+<div class="diagram-box">
+  <pre>                  INTERVENCIÓN SOCIOEDUCATIVA EN SALUD
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ ASESORÍA FORMA JOVEN │ ACCIÓN TUTORIAL POAT │ RED COMUNITARIA      │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Escucha confidenc. │ • Talleres educación │ • Enlace con USMIJ   │
+ │ • Dudas sexualidad   │   afectivo-sexual    │ • Centros CTA drogas │
+ │ • Detección consumos │ • Salud emocional    │ • Pediatría y SSCC   │
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<ol>
+  <li><strong>Gestión de la Asesoría <em>Forma Joven</em>:</strong> Punto de encuentro confidencial en el recreo donde los adolescentes consultan dudas íntimas sobre sexualidad, relaciones tóxicas, anticoncepción o consumos sin miedo a ser castigados.</li>
+  <li><strong>Talleres de Educación Emocional en el POAT:</strong> Dinámicas de aula sobre gestión de la ansiedad, autocontrol de la ira y prevención de autolesiones.</li>
+  <li><strong>Intervención y acompañamiento en adicciones:</strong> Detección de menores atrapados en las apuestas online o el cannabis, facilitando la derivación a los <strong>Centros de Tratamiento Ambulatorio (CTA)</strong> de adicciones de Andalucía.</li>
+  <li><strong>Escuelas de Familias sobre Salud y Pantallas:</strong> Asesoramiento a progenitores para establecer límites en el uso del móvil y reconocer señales de alarma en el estado de ánimo de sus hijos.</li>
+</ol>
+
+<h2 class="section-title">8. Conclusión</h2>
+
+<p>La salud y el bienestar emocional no se logran prohibiendo o culpabilizando; se conquistan <strong>capacitando a las personas para cuidar de sí mismas y de su entorno</strong>.</p>
+
+<p>El <strong>Educador y la Educadora Social</strong> humaniza la promoción de la salud en la escuela andaluza: no actúa como un médico distante, sino como un pedagogo de proximidad que enseña a nombrar las emociones, educa en la afectividad respetuosa, previene las adicciones y construye entornos comunitarios donde crecer con salud, dignidad y alegría de vivir.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">9. Anexo: Mapa conceptual y tabla sinóptica del Tema 15</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Normativa / Planes Clave</th>
+      <th>Conceptos e Implicación Práctica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Concepto de Salud</strong></td>
+      <td>Carta de Ottawa (1986) • OMS (1948)</td>
+      <td>Estado holístico físico, psíquico y social; la escuela como entorno promotor de salud (SHE).</td>
+    </tr>
+    <tr>
+      <td><strong>Determinantes Sociales</strong></td>
+      <td>Michael Marmot</td>
+      <td>Gradiente social: el origen socioeconómico condiciona la salud; necesidad de equidad sanitaria.</td>
+    </tr>
+    <tr>
+      <td><strong>Salud Mental Escolar</strong></td>
+      <td>Estrategia de Salud Mental • SAS</td>
+      <td>Protocolo de prevención del suicidio, atención a autolesiones y derivación coordinada a USMIJ.</td>
+    </tr>
+    <tr>
+      <td><strong>Inteligencia Emocional</strong></td>
+      <td>Daniel Goleman • Rafael Bisquerra</td>
+      <td>Conciencia emocional, regulación, tolerancia a la frustración y habilidades prosociales.</td>
+    </tr>
+    <tr>
+      <td><strong>Hábitos Saludables</strong></td>
+      <td>Programa "Hábitos de Vida Saludable"</td>
+      <td>Modalidad <em>Creciendo en Salud</em> (Infantil/Primaria) y <em>Forma Joven</em> (Secundaria).</td>
+    </tr>
+    <tr>
+      <td><strong>Afectivo-Sexual</strong></td>
+      <td>Enfoque integral bio-psico-social</td>
+      <td>Consentimiento informado (<em>solo sí es sí</em>), anticoncepción, respeto LGTBI+ y desmontaje del porno.</td>
+    </tr>
+    <tr>
+      <td><strong>Adicciones Químicas</strong></td>
+      <td>III Plan Andaluz (PADA) • Centros CTA</td>
+      <td>Prevención del <em>binge drinking</em>, vapeadores y cannabis; superación de mitos de inocuidad.</td>
+    </tr>
+    <tr>
+      <td><strong>Adicciones Comportamentales</strong></td>
+      <td>Ludopatía online • Apuestas • Pantallas</td>
+      <td>Detección precoz de adicción a videojuegos y redes sociales; higiene digital doméstica.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>Instrucciones de 17 de septiembre de 2010</td>
+      <td>Dinamizador de la asesoría <em>Forma Joven</em>, talleres en el POAT, escuelas de familias y red comunitaria.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

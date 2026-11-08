@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 2: El Estatuto de Autonomía. La Ley de Educación de Andalucía. Derechos y Deberes del Menor en el Marco Autonómico</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 2</h1>
+  <h2>El Estatuto de Autonomía. La Ley de Educación de Andalucía. Derechos y Deberes del Menor en el Marco Autonómico</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Bloque:</strong> Materias Específicas</p>
+<p><strong>Tema Oficial:</strong> 2</p>
+<p><strong>Normativa Clave:</strong> Ley Orgánica 2/2007 (Estatuto de Autonomía para Andalucía - arts. 10, 16, 18, 21, 52 y 61); Ley 17/2007 de Educación de Andalucía (LEA); Ley 4/2021 de Infancia y Adolescencia de Andalucía; Decretos 327/2010 y 328/2010 (Reglamentos Orgánicos de Centros docentes en Andalucía).</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 2</div>
+  <div class="toc-item level-1">1. <strong>Introducción y contextualización autonómica</strong></div>
+  <div class="toc-item level-1">2. <strong>El Estatuto de Autonomía para Andalucía (Ley Orgánica 2/2007)</strong></div>
+  <div class="toc-item level-2">2.1. El Título Preliminar y los objetivos básicos de la Comunidad Autónoma (art. 10)</div>
+  <div class="toc-item level-2">2.2. Derechos sociales en el Título I: Menores (art. 18) y Educación (art. 21)</div>
+  <div class="toc-item level-2">2.3. Competencias autonómicas: Educación (art. 52) y Servicios Sociales/Protección de Menores (art. 61)</div>
+  <div class="toc-item level-1">3. <strong>La Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA)</strong></div>
+  <div class="toc-item level-2">3.1. Principios rectores y fines del sistema educativo andaluz</div>
+  <div class="toc-item level-2">3.2. La comunidad educativa andaluza y la participación democrática</div>
+  <div class="toc-item level-2">3.3. Equidad, compensación educativa y atención a la diversidad en la LEA</div>
+  <div class="toc-item level-2">3.4. Convivencia escolar, cultura de paz y resolución pacífica de conflictos</div>
+  <div class="toc-item level-1">4. <strong>Derechos y deberes del menor en el marco autonómico andaluz</strong></div>
+  <div class="toc-item level-2">4.1. La Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía: Nuevo paradigma de derechos</div>
+  <div class="toc-item level-2">4.2. Catálogo de derechos de los menores en Andalucía</div>
+  <div class="toc-item level-2">4.3. Deberes y corresponsabilidad del menor en el ámbito familiar, educativo y social</div>
+  <div class="toc-item level-2">4.4. Derechos y deberes del alumnado en los Reglamentos Orgánicos de Centros (Decretos 327/2010 y 328/2010)</div>
+  <div class="toc-item level-1">5. <strong>El papel del educador/a social en la garantía de los derechos autonómicos del menor</strong></div>
+  <div class="toc-item level-1">6. <strong>Conclusión</strong></div>
+  <div class="toc-item level-1">7. <strong>Anexo: Mapa conceptual y tabla sinóptica del Tema 2</strong></div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y contextualización autonómica</h2>
+
+<p>El marco institucional y legislativo de la <strong>Comunidad Autónoma de Andalucía</strong> ha desarrollado una arquitectura propia y avanzada en materia de derechos sociales, educación y protección de la infancia. Desde la aprobación del <strong>Estatuto de Autonomía de 2007 (Ley Orgánica 2/2007, de 19 de marzo)</strong>, Andalucía sitúa a la persona, a la cohesión social y a la garantía de los servicios públicos en el núcleo vertebrador de su acción de gobierno.</p>
+
+<p>En este ecosistema normativo, la <strong>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA)</strong>, junto con la vanguardista <strong>Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía</strong>, delinean un modelo socioeducativo que persigue el éxito escolar de todo el alumnado, la compensación de las desigualdades de origen y la consideración del menor no como receptor tutelar pasivo, sino como <strong>sujeto activo y protagonista de la vida social andaluza</strong>.</p>
+
+<p>Para el <strong>Educador y la Educadora Social</strong>, este entramado autonómico define su espacio natural de desempeño profesional: intervenir en las fronteras entre el sistema educativo reglado, los servicios sociales comunitarios y el entorno sociofamiliar para garantizar que los derechos proclamados en el Estatuto sean vivencias reales para la infancia más desfavorecida.</p>
+
+<h2 class="section-title">2. El Estatuto de Autonomía para Andalucía (Ley Orgánica 2/2007)</h2>
+
+<p>El Estatuto de Autonomía para Andalucía, aprobado mediante la Ley Orgánica 2/2007, de 19 de marzo, tras el referéndum del 18 de febrero de 2007, supuso una profunda modernización institucional que amplió de manera pionera el catálogo de derechos sociales exigibles ante los poderes públicos.</p>
+
+<h3 class="sub-title">2.1. El Título Preliminar y los objetivos básicos (artículo 10)</h3>
+
+<p>El <strong>artículo 10 del Estatuto</strong> fija los objetivos básicos de la Comunidad Autónoma, entre los que destacan de manera directa para la intervención socioeducativa:</p>
+
+<ul>
+  <li>El acceso de todos los andaluces a una <strong>educación permanente y de calidad</strong>.</li>
+  <li>La consecución del <strong>pleno empleo estable y de calidad</strong>, y la erradicación de la marginación y la <strong>exclusión social</strong>.</li>
+  <li>La <strong>cohesión social</strong>, mediante un sistema eficaz de bienestar público y servicios sociales.</li>
+  <li>La <strong>igualdad efectiva entre hombres y mujeres</strong> en todos los ámbitos.</li>
+  <li>La incorporación del pueblo gitano y de los colectivos de inmigrantes en condiciones de igualdad y respeto cultural.</li>
+</ul>
+
+<h3 class="sub-title">2.2. Derechos sociales en el Título I: Menores (artículo 18) y Educación (artículo 21)</h3>
+
+<h4 class="sub-sub-title">A) El Artículo 18: Menores</h4>
+
+<p>El Estatuto andaluz dedica un precepto monográfico a la infancia y la adolescencia:</p>
+
+<div class="callout">
+  <p><em>"1. Las personas menores de edad tienen derecho a recibir de los poderes públicos de Andalucía la protección y la atención integral necesarias para el desarrollo de su personalidad y de su bienestar en el marco de la familia de origen o, en su caso, de acogida.</em></p>
+  <p><em>2. Los poderes públicos de Andalucía velarán para que los menores no sufran discriminación por cualquier circunstancia o condición personal o social.</em></p>
+  <p><em>3. Los menores tienen derecho a ser escuchados, en todo caso, en los procedimientos que les afecten según su edad y madurez.</em></p>
+  <p><em>4. Las políticas públicas de la Junta de Andalucía priorizarán el interés superior del menor y la prevención y protección contra cualquier forma de maltrato, abuso, violencia o explotación."</em></p>
+</div>
+
+<h4 class="sub-sub-title">B) El Artículo 21: Educación</h4>
+
+<p>Consagra el derecho a una <strong>educación pública, gratuita y de calidad</strong>, fijando mandatos imperativos para la Junta de Andalucía:</p>
+
+<ul>
+  <li>Gratuidad de la enseñanza en los niveles obligatorios y, progresivamente, en las etapas previas (Educación Infantil).</li>
+  <li><strong>Gratuidad de los libros de texto</strong> y material curricular en la enseñanza obligatoria en centros sostenidos con fondos públicos.</li>
+  <li>Garantía de la <strong>equidad y compensación educativa</strong> para corregir desequilibrios territoriales y socioeconómicos.</li>
+  <li>Participación democrática de la comunidad educativa.</li>
+</ul>
+
+<h3 class="sub-title">2.3. Competencias autonómicas: Educación (art. 52) y Servicios Sociales / Menores (art. 61)</h3>
+
+<ul>
+  <li><strong>Artículo 52 (Educación):</strong> Corresponde a la Comunidad Autónoma la competencia compartida sobre la ordenación del sector educativo y la competencia exclusiva sobre la organización y gestión de los centros docentes, el personal docente y de apoyo, la orientación educativa, los servicios complementarios (comedor, transporte, actividades extraescolares) y los planes de compensación e inclusión.</li>
+  <li><strong>Artículo 61 (Servicios sociales, voluntariado, menores y familias):</strong> Corresponde a la Junta de Andalucía la <strong>competencia exclusiva</strong> en materia de protección de menores, lo que incluye la prevención, desamparo, tutela, acogimiento familiar y residencial, y adopción, así como la ejecución de las medidas derivadas de la responsabilidad penal de menores.</li>
+</ul>
+
+<h2 class="section-title">3. La Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA)</h2>
+
+<p>La <strong>LEA</strong> constituye el desarrollo legislativo propio de Andalucía en el marco de la legislación básica estatal (LOE-LOMLOE).</p>
+
+<div class="diagram-box">
+  <pre>                            LEY 17/2007 (LEA)
+             ┌──────────────────────┴──────────────────────┐
+    PRINCIPIOS Y FINES (Arts. 3-5)                ATENCIÓN A LA EQUIDAD (Arts. 113+)
+    ├─ Éxito escolar de todo el alumnado          ├─ Medidas de compensación educativa
+    ├─ Coeducación e igualdad efectiva            ├─ Zonas con necesidades de transformación
+    ├─ Cultura de paz y convivencia pacífica      ├─ Planes de apoyo a las familias
+    └─ Escuela inclusiva y sin segregación        └─ Detección precoz del absentismo</pre>
+</div>
+
+<h3 class="sub-title">3.1. Principios y fines del sistema educativo andaluz (artículos 3 y 4)</h3>
+
+<ul>
+  <li><strong>Éxito escolar para todos:</strong> Superar el mero acceso físico al centro para garantizar que todo el alumnado alcance las competencias clave y la titulación básica, independientemente de su origen social.</li>
+  <li><strong>Inclusión educativa y equidad:</strong> Atención personalizada a la diversidad mediante adaptaciones curriculares y apoyos sociopedagógicos.</li>
+  <li><strong>Cultura de paz y no violencia:</strong> Promoción del diálogo, la mediación y el rechazo frontal a conductas machistas, racistas o lgtbifóbicas.</li>
+  <li><strong>Coeducación:</strong> Integración transversal del principio de igualdad de género en todas las etapas educativas.</li>
+  <li><strong>Reconocimiento del patrimonio y la cultura andaluza:</strong> Fomento de la identidad andaluza desde un prisma solidario y cosmopolita.</li>
+</ul>
+
+<h3 class="sub-title">3.2. La comunidad educativa andaluza</h3>
+
+<p>La LEA concibe la escuela como un espacio comunitario abierto. Junto al profesorado, alumnado y familias, la ley reconoce formalmente al <strong>personal de apoyo socioeducativo</strong> y favorece la participación de agentes del entorno barrial y municipal para la consecución de los objetivos educativos.</p>
+
+<h3 class="sub-title">3.3. Equidad y compensación educativa en la LEA (Título II)</h3>
+
+<p>La ley dedica un articulado exhaustivo a compensar las desigualdades:</p>
+
+<ul>
+  <li><strong>Zonas con necesidades de transformación social:</strong> Dotación prioritaria de recursos humanos y económicos suplementarios a centros situados en áreas de vulnerabilidad extrema.</li>
+  <li><strong>Servicios complementarios:</strong> Comedores escolares bonificados, aulas matinales y actividades extraescolares como herramientas de conciliación y protección social.</li>
+  <li><strong>Alumnado con NEAE en Andalucía:</strong> Identificación temprana e intervención inmediata mediante adaptaciones curriculares individualizadas y apoyo educativo.</li>
+</ul>
+
+<h3 class="sub-title">3.4. Convivencia escolar y cultura de paz (Título I, Capítulo III)</h3>
+
+<p>La LEA sitúa la convivencia como un contenido formativo de primer orden:</p>
+
+<ul>
+  <li><strong>Plan de Convivencia:</strong> Documento preceptivo integrado en el Proyecto Educativo de cada centro.</li>
+  <li><strong>Comisión de Convivencia:</strong> Órgano emanado del Consejo Escolar encargado del seguimiento del clima del centro.</li>
+  <li><strong>Aulas de Convivencia:</strong> Espacios educativos orientados a la reflexión y recuperación pedagógica del alumnado que comete conductas gravemente perjudiciales para la convivencia, evitando las expulsiones pasivas del centro.</li>
+</ul>
+
+<h2 class="section-title">4. Derechos y deberes del menor en el marco autonómico andaluz</h2>
+
+<h3 class="sub-title">4.1. La Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía</h3>
+
+<p>La Ley 4/2021 sustituyó a la antigua Ley 1/1998, situando a Andalucía a la vanguardia europea en legislación de protección de la infancia.</p>
+
+<div class="callout">
+  <div class="callout-title">Principios rectores de la Ley 4/2021:</div>
+  <p>1. <strong>El valor social de la infancia:</strong> Las niñas, niños y adolescentes no son solo "el futuro", sino sujetos con valor presente intrínseco.</p>
+  <p>2. <strong>Primacía del Interés Superior del Menor.</strong></p>
+  <p>3. <strong>Parentalidad positiva:</strong> Promoción de estilos educativos no violentos basados en el afecto, la comunicación y el apoyo mutuo.</p>
+  <p>4. <strong>Enfoque preventivo y de buen trato:</strong> Erradicación de cualquier forma de violencia, castigo corporal o menoscabo moral.</p>
+</div>
+
+<h3 class="sub-title">4.2. Catálogo de derechos específicos en la Ley 4/2021</h3>
+
+<ul>
+  <li><strong>Derecho a la identidad personal y al libre desarrollo:</strong> Inclusión de la diversidad familiar y de la identidad de género sin discriminación.</li>
+  <li><strong>Derecho a la educación integral e inclusiva:</strong> Con especial atención a la prevención del absentismo y a la permanencia en el sistema escolar.</li>
+  <li><strong>Derecho a la salud y al bienestar emocional:</strong> Atención temprana universal y salud mental infanto-juvenil.</li>
+  <li><strong>Derecho a la información adaptada y al acceso seguro a las TIC:</strong> Protección activa frente a ciberriesgos, porno online y adicciones a pantallas.</li>
+  <li><strong>Derecho a la participación infantil:</strong> Creación de los <strong>Consejos Locales de Infancia y Adolescencia (CLIA)</strong> en los municipios andaluces.</li>
+  <li><strong>Derecho a la protección frente al maltrato y a la violencia:</strong> Obligación de toda la ciudadanía y profesionales escolares de notificar situaciones de sospecha a través de la hoja SIMIA.</li>
+</ul>
+
+<h3 class="sub-title">4.3. Deberes y corresponsabilidad del menor en la Ley 4/2021</h3>
+
+<p>La norma articula los deberes de la infancia como un aprendizaje formativo para la ciudadanía democrática:</p>
+
+<ul>
+  <li><strong>En el ámbito familiar:</strong> Deber de corresponsabilidad en las tareas domésticas según edad y capacidad, y respeto a progenitores o tutores.</li>
+  <li><strong>En el ámbito educativo:</strong> Respeto al profesorado, a compañeros, a las instalaciones y cumplimiento del deber de estudio.</li>
+  <li><strong>En el ámbito comunitario:</strong> Respeto cívico al medio ambiente, a las normas de convivencia ciudadana y al patrimonio colectivo.</li>
+</ul>
+
+<h3 class="sub-title">4.4. Derechos y deberes del alumnado en los ROC (Decretos 327/2010 y 328/2010)</h3>
+
+<p>Los Reglamentos Orgánicos de los Institutos de Educación Secundaria (Decreto 327/2010) y de los Colegios de Infantil y Primaria (Decreto 328/2010) concretan los derechos y deberes escolares en Andalucía:</p>
+
+<ul>
+  <li><strong>Derechos reforzados:</strong>
+    <ul>
+      <li>Derecho a un clima escolar pacífico y a la protección ante el acoso físico o digital.</li>
+      <li>Derecho a la confidencialidad de su expediente e historia social.</li>
+      <li>Derecho a la igualdad de trato, garantizando la no discriminación por orientación sexual o etnia.</li>
+    </ul>
+  </li>
+  <li><strong>Régimen disciplinario restaurativo:</strong>
+    <ul>
+      <li>Las medidas correctoras deben tener <strong>carácter estrictamente educativo y recuperador</strong>.</li>
+      <li>Fomento de la <strong>mediación escolar</strong> y de los acuerdos de convivencia antes de imponer sanciones expulsivas.</li>
+      <li>Prohibición absoluta de medidas que impliquen la privación del derecho a la educación o que atenten contra la integridad física o moral del escolar.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 class="section-title">5. El papel del educador/a social en la garantía de los derechos autonómicos del menor</h2>
+
+<p>El marco autonómico andaluz otorga al <strong>Educador y Educadora Social</strong> un papel estratégico respaldado por las <strong>Instrucciones de 17 de septiembre de 2010</strong> de la Dirección General de Participación e Innovación Educativa:</p>
+
+<div class="diagram-box">
+  <pre>                            EDUCADOR/A SOCIAL
+             ┌──────────────────────┼──────────────────────┐
+       ÁMBITO ESCOLAR        ÁMBITO FAMILIAR       ÁMBITO COMUNITARIO
+    ├─ Mediación escolar    ├─ Escuelas de Familias ├─ Servicios Sociales (SSCC)
+    ├─ Control absentismo   ├─ Visitas domiciliarias├─ Comisiones Municipales
+    └─ Acompañamiento ACNEAE└─ Parentalidad positiva└─ Entorno barrial y asociativo</pre>
+</div>
+
+<ol>
+  <li><strong>Garantía del derecho a la educación:</strong> Actuando como pieza clave en las Comisiones Locales de Absentismo para erradicar la desescolarización.</li>
+  <li><strong>Promoción de la cultura de paz:</strong> Dinamizando los Planes de Convivencia y gestionando procesos de mediación entre iguales o con docentes.</li>
+  <li><strong>Atención a colectivos vulnerables:</strong> Acompañando al alumnado procedente de zonas de transformación social o minorías étnicas para garantizar la equidad que proclama el artículo 10 del Estatuto.</li>
+  <li><strong>Articulación de redes:</strong> Conectando el centro educativo con los Servicios Sociales Comunitarios (PRISO, SIMIA) y los recursos comunitarios del municipio.</li>
+</ol>
+
+<h2 class="section-title">6. Conclusión</h2>
+
+<p>El Estatuto de Autonomía de Andalucía y la Ley de Educación de Andalucía (LEA), complementados por la moderna Ley 4/2021 de Infancia y Adolescencia, conforman uno de los ordenamientos más garantistas y avanzados de Europa en defensa del menor.</p>
+
+<p>No obstante, la vigencia real de estos derechos no se logra únicamente en los textos legales: precisa de <strong>profesionales de proximidad</strong> como los Educadores y Educadoras Sociales, capaces de mediar en los conflictos, escuchar activamente a la infancia vulnerable y asegurar que cada niño y niña en Andalucía disfrute de una educación digna, inclusiva y libre de violencia.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">7. Anexo: Mapa conceptual y tabla sinóptica del Tema 2</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Bloque Temático</th>
+      <th>Preceptos y Normas Clave</th>
+      <th>Implicaciones para la Educación Social</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Estatuto de Autonomía (L.O. 2/2007)</strong></td>
+      <td>• Art. 10: Objetivos (educación de calidad, cohesión social, erradicación exclusión).<br>• Art. 18: Derechos específicos del menor (protección, no discriminación, ser escuchado).<br>• Art. 21: Educación pública, gratuita, laica y equitativa.</td>
+      <td>Mandato directo para combatir la exclusión social infantil y dotar de servicios de apoyo especializados a la comunidad escolar.</td>
+    </tr>
+    <tr>
+      <td><strong>Competencias de la Junta</strong></td>
+      <td>• Art. 52: Competencia en centros, personal y ordenación educativa.<br>• Art. 61: Competencia exclusiva en protección de menores y servicios sociales.</td>
+      <td>Permite articular figuras mixtas de intervención socioeducativa en los colegios e institutos andaluces.</td>
+    </tr>
+    <tr>
+      <td><strong>Ley 17/2007 (LEA)</strong></td>
+      <td>• Éxito escolar para todo el alumnado.<br>• Cultura de paz, coeducación y no violencia.<br>• Planes de Compensación Educativa.<br>• Aulas de Convivencia.</td>
+      <td>Sustenta la intervención del educador social en absentismo, mediación de conflictos y apoyo a alumnado vulnerable.</td>
+    </tr>
+    <tr>
+      <td><strong>Ley 4/2021 de Infancia de Andalucía</strong></td>
+      <td>• Reconocimiento del valor social de la infancia.<br>• Interés superior del menor y buen trato.<br>• Enfoque de parentalidad positiva.<br>• Prevención de ciberriesgos y salud mental.</td>
+      <td>Transforma los protocolos de actuación en centros escolares, priorizando la detección temprana (SIMIA) y la escucha activa.</td>
+    </tr>
+    <tr>
+      <td><strong>Decretos 327/2010 y 328/2010 (ROC)</strong></td>
+      <td>• Derechos y deberes del alumnado en IES y Primaria.<br>• Carácter educativo y recuperador de las sanciones.<br>• Preeminencia de la mediación escolar.</td>
+      <td>Marco operativo disciplinario: los conflictos escolares se resuelven pedagógica y restaurativamente, evitando exclusiones.</td>
+    </tr>
+    <tr>
+      <td><strong>Deberes del Menor en Andalucía</strong></td>
+      <td>• Corresponsabilidad familiar y comunitaria.<br>• Deber de estudio, respeto mutuo y cuidado de bienes públicos.</td>
+      <td>Los deberes se abordan como herramientas de educación cívica y socialización democrática.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>• Instrucciones 17 de septiembre de 2010.<br>• Puente escuela-familia-comunidad.<br>• Coordinador de inclusión y convivencia.</td>
+      <td>Intervención multiprofesional para hacer efectiva la igualdad de oportunidades en centros públicos andaluces.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

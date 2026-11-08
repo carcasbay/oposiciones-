@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 34: El Educador/a Social en Contextos Multiculturales. Los Procesos de Mediación Intercultural. La Educación Intercultural en el Ámbito Educativo. Estrategias, Metodología y Técnicas de Intervención para la Convivencia en Contextos Multiculturales. La Población Gitana: Necesidades y Procesos de Inclusión Escolar o Social. El Educador o Educadora Social como Animador Sociocultural</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 34</h1>
+  <h2>El Educador/a Social en Contextos Multiculturales. Los Procesos de Mediación Intercultural. La Educación Intercultural en el Ámbito Educativo. Estrategias, Metodología y Técnicas de Intervención para la Convivencia en Contextos Multiculturales. La Población Gitana: Necesidades y Procesos de Inclusión Escolar o Social. El Educador o Educadora Social como Animador Sociocultural</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Carácter:</strong> Materias Específicas del Programa Oficial</p>
+<p><strong>Marco Legal y Documental:</strong></p>
+<ul class="meta-sublist">
+<li>Estatuto de Autonomía para Andalucía (art. 10.3.21: fomento de la convivencia e integración de la comunidad gitana y personas migrantes).</li>
+<li>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA), arts. 39 y 114 (Historia y cultura del pueblo gitano y compensación educativa).</li>
+<li>Decretos 100/2023, 101/2023 y 102/2023 (Inclusión preceptiva de la historia y cultura del pueblo gitano en el currículo andaluz).</li>
+<li>Plan Integral para la Inclusión de la Comunidad Gitana de Andalucía (PICGA).</li>
+<li>II Plan Integral para la Inmigración en Andalucía.</li>
+<li>Instrucciones de 17 de septiembre de 2010 de la Dirección General de Participación e Innovación Educativa.</li>
+</ul>
+<p><strong>Autores y Doctrinas de Referencia:</strong> Carlos Giménez Romero (Modelo de la Interculturalidad frente a la Multiculturalidad), Xavier Besalú (Pedagogía de la diversidad cultural), José Manuel Fresno (Inclusión social del pueblo gitano), José María Quintana Cabanas (Animación sociocultural comunitaria), Adela Cortina (Aporofobia).</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 34</div>
+  <div class="toc-item level-1">1. Introducción y la riqueza de la diversidad cultural en Andalucía.</div>
+  <div class="toc-item level-1">2. Clarificación conceptual y modelos teóricos:</div>
+  <div class="toc-item level-2">2.1. Asimilacionismo, segregación y multiculturalismo.</div>
+  <div class="toc-item level-2">2.2. La Interculturalidad como paradigma relacional simétrico (Carlos Giménez Romero).</div>
+  <div class="toc-item level-1">3. La Educación Intercultural en el ámbito educativo:</div>
+  <div class="toc-item level-2">3.1. Principios de la educación intercultural: Un enfoque transversal para todo el centro.</div>
+  <div class="toc-item level-2">3.2. Deconstrucción de prejuicios, xenofobia, islamofobia y aporofobia.</div>
+  <div class="toc-item level-1">4. Los procesos de mediación intercultural:</div>
+  <div class="toc-item level-2">4.1. Concepto, principios y ámbitos de aplicación.</div>
+  <div class="toc-item level-2">4.2. El perfil del mediador/a intercultural: Facilitador de la comunicación y puente cultural.</div>
+  <div class="toc-item level-1">5. Estrategias y metodología de intervención socioeducativa para la convivencia intercultural.</div>
+  <div class="toc-item level-1">6. La población gitana en Andalucía:</div>
+  <div class="toc-item level-2">6.1. Marco histórico, identidad cultural y arraigo en Andalucía.</div>
+  <div class="toc-item level-2">6.2. Diagnóstico de necesidades: El reto de la escolarización y titulación en Secundaria.</div>
+  <div class="toc-item level-2">6.3. Procesos y programas de éxito: PICGA y Programas Promociona y Kumpania (FSG).</div>
+  <div class="toc-item level-2">6.4. La incorporación curricular de la historia y cultura gitana (Decretos 2023).</div>
+  <div class="toc-item level-1">7. El educador o educadora social como animador/a sociocultural en el centro y el barrio.</div>
+  <div class="toc-item level-1">8. Conclusión.</div>
+  <div class="toc-item level-1">9. Anexo: Mapa conceptual y tabla sinóptica del Tema 34.</div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y la riqueza de la diversidad cultural en Andalucía</h2>
+
+<p>Andalucía es, por su posición geopolítica y su trayectoria histórica milenaria, una tierra de <strong>encuentro, mestizaje y diálogo entre pueblos y civilizaciones</strong>. La presencia secular del pueblo gitano —parte indivisible y definitoria del patrimonio, el arte y el alma andaluza— unida a los intensos flujos migratorios de las últimas décadas, configura una sociedad plural y diversa.</p>
+
+<p>Esta realidad multicultural se refleja con especial intensidad en las aulas de los centros docentes sostenidos con fondos públicos. La convivencia entre personas de diversas tradiciones no está exenta de tensiones, prejuicios inconscientes y situaciones de vulnerabilidad socioeconómica. La <strong>Educación Social</strong> aporta una mirada pedagógica emancipadora: la diversidad cultural no es una amenaza a la cohesión ni un problema que deba ser asimilado u homogeneizado, sino una <strong>extraordinaria oportunidad de enriquecimiento humano, justicia social y aprendizaje mutuo</strong> (Xavier Besalú).</p>
+
+<h2 class="section-title">2. Clarificación conceptual y modelos teóricos</h2>
+
+<p>Siguiendo las aportaciones de Carlos Giménez Romero, es imprescindible distinguir los modelos de gestión de la diversidad:</p>
+
+<div class="diagram-box">
+  <pre>                  MODELOS DE GESTIÓN DE LA DIVERSIDAD CULTURAL
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ MODELO ASIMILACION.  │ MODELO MULTICULTURAL │ MODELO INTERCULTURAL │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • La minoría debe    │ • Coexistencia de    │ • Interacción dialó- │
+ │   abandonar su cult. │   culturas en guetos │   gica y mestizaje   │
+ │ • Homogeneización    │ • Tolerancia pasiva  │ • Reconocimiento     │
+ │ • Lengua y normas    │ • Falta de intercam- │   mutuo simétrico    │
+ │   de la mayoría      │   bio real e íntimo  │ • Igualdad de dchos. │
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<ul>
+  <li><strong>Asimilacionismo:</strong> Exige al migrante o a la minoría renunciar a su identidad y adoptar los patrones culturales hegemónicos.</li>
+  <li><strong>Multiculturalismo:</strong> Reconoce la coexistencia de culturas pero de forma estática y yuxtapuesta, lo que puede consolidar la segregación barrial y la guetización.</li>
+  <li><strong>Interculturalismo (Carlos Giménez):</strong> Modelo defendido por la Educación Social. Promueve la <strong>interacción positiva, el diálogo igualitario, la cooperación activa y la construcción de un espacio cívico compartido</strong>, basado en dos pilares indisociables: el principio de igualdad de derechos y el principio del reconocimiento mutuo de las diferencias.</li>
+</ul>
+
+<h2 class="section-title">3. La Educación Intercultural en el ámbito escolar</h2>
+
+<p>La Educación Intercultural no es un programa marginal o compensatorio diseñado exclusivamente para alumnado inmigrante o gitano; es un <strong>enfoque pedagógico global y transversal dirigido a toda la comunidad escolar</strong>:</p>
+
+<ul>
+  <li><strong>Desmontaje del Etnocentrismo:</strong> Cuestionar la creencia eurocéntrica de que la cultura occidental es el único estándar válido de conocimiento y progreso.</li>
+  <li><strong>Combate a la Aporofobia (Adela Cortina):</strong> Evidenciar que el rechazo al migrante a menudo no es un rechazo a su cultura, sino a su condición de pobreza y vulnerabilidad material.</li>
+  <li><strong>Prevención de la Islamofobia y el Antigitanismo:</strong> Desarticular bulos y estereotipos estigmatizantes en las aulas y redes sociales.</li>
+</ul>
+
+<h2 class="section-title">4. Los procesos de mediación intercultural</h2>
+
+<p>La <strong>mediación intercultural</strong> es una modalidad de intervención socioeducativa orientada a crear puentes comunicativos, prevenir malentendidos y facilitar la resolución pacífica de discrepancias nacidas de códigos culturales o lingüísticos diferentes:</p>
+
+<ul>
+  <li><strong>Principios Rectores:</strong> Neutralidad, imparcialidad, confidencialidad y respeto a la legalidad y a los derechos humanos universales.</li>
+  <li><strong>Funciones del Mediador/a Intercultural:</strong>
+    <ul>
+      <li><em>Traductor cultural:</em> Descifra el sentido profundo de normas o pautas familiares que el centro docente desconoce (pautas de crianza, ritos, tabúes).</li>
+      <li><em>Facilitador de la acogida escolar:</em> Acompaña a la familia en su primera matriculación, derribando el miedo a la institución.</li>
+      <li><em>Constructor de acuerdos:</em> Facilita el consenso entre el profesorado y la familia ante situaciones de absentismo, vestimenta o alimentación escolar.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 class="section-title">5. Estrategias y metodología de intervención socioeducativa</h2>
+
+<ol>
+  <li><strong>Planes de Acogida Intercultural del Centro:</strong> Protocolos amables de bienvenida con documentos del centro traducidos a los idiomas mayoritarios y acompañamiento por "alumnado tutor".</li>
+  <li><strong>Aulas Temporales de Adaptación Lingüística (ATAL):</strong> Inmersión lingüística acelerada en español que no aísla al alumnado de su grupo de referencia.</li>
+  <li><strong>Aprendizaje Cooperativo y Grupos Interactivos:</strong> Metodologías donde la diversidad lingüística y cultural se convierte en un recurso didáctico para resolver tareas comunes.</li>
+</ol>
+
+<h2 class="section-title">6. La población gitana en Andalucía</h2>
+
+<h3 class="sub-title">6.1. Marco Histórico e Identidad Andaluza</h3>
+
+<p>El pueblo gitano lleva más de seis siglos en Andalucía. El artículo 10.3.21 del Estatuto de Autonomía mandata a los poderes públicos la promoción y protección de la cultura gitana. La cultura gitana ha impregnado profundamente la lengua andaluza, la música, la gastronomía y las costumbres populares.</p>
+
+<h3 class="sub-title">6.2. Diagnóstico de Necesidades Educativas</h3>
+
+<p>A pesar de los enormes avances en Educación Primaria (prácticamente el 100% de escolarización), persisten brechas críticas en Secundaria:</p>
+
+<ul>
+  <li>Aumento del absentismo y abandono temprano a partir de los 12-14 años.</li>
+  <li>Reticencias en algunas familias tradicionales a la continuidad escolar de las niñas gitanas tras la pubertad o en los varones para la inserción precoz en la venta ambulante.</li>
+  <li>Necesidad de visibilizar referentes gitanos universitarios y profesionales.</li>
+</ul>
+
+<h3 class="sub-title">6.3. Programas Institucionales y de Éxito</h3>
+
+<ul>
+  <li><strong>PICGA (Plan Integral para la Inclusión de la Comunidad Gitana de Andalucía):</strong> Estrategia marco de la Junta de Andalucía para la erradicación del chabolismo, la inserción laboral y el éxito escolar.</li>
+  <li><strong>Programas de la Fundación Secretariado Gitano:</strong>
+    <ul>
+      <li><em>Programa Promociona:</em> Orientación individualizada intensiva para que los jóvenes gitanos titulen en ESO y continúen estudios postobligatorios.</li>
+      <li><em>Programa Kumpania:</em> Acompañamiento socioeducativo integral para la infancia y juventud gitana.</li>
+    </ul>
+  </li>
+  <li><strong>Inclusión Curricular Oficial (Decretos 100/101/102 de 2023):</strong> Obligación de impartir contenidos específicos sobre la historia, el holocausto (<em>Samudaripen</em>) y la cultura del pueblo gitano en las áreas de Geografía e Historia y Valores Cívicos.</li>
+</ul>
+
+<h2 class="section-title">7. El educador/a social como animador/a sociocultural en el centro y el barrio</h2>
+
+<p>De conformidad con las <strong>Instrucciones de 17 de septiembre de 2010</strong>, el Educador Social despliega la metodología de la <strong>Animación Sociocultural (ASC)</strong> (José María Quintana Cabanas, Toni Puig):</p>
+
+<ul>
+  <li><strong>Celebración del 22 de Noviembre (Día del Pueblo Gitano Andaluz):</strong> Organización de semanas culturales, exposiciones artísticas y talleres de flamenco donde el alumnado gitano enseña con orgullo su patrimonio a sus compañeros.</li>
+  <li><strong>Dinamización de Encuentros Gastronómicos y Comunitarios:</strong> Fiestas escolares que reúnen a familias marroquíes, senegalesas, rumanas, gitanas y payas en torno a la cultura compartida.</li>
+  <li><strong>Creación de Redes Territoriales:</strong> Vinculación del centro con las asociaciones gitanas y de migrantes del barrio para coordinar actividades extraescolares y de ocio saludable.</li>
+</ul>
+
+<h2 class="section-title">8. Conclusión</h2>
+
+<p>La escuela pública andaluza no puede ser un espacio de monoculturalismo estéril ni de asimilación forzada; debe ser el <strong>hogar de la hospitalidad, el mestizaje fecundo y la justicia distributiva</strong>.</p>
+
+<p>El <strong>Educador y la Educadora Social</strong> encarna la voz de la interculturalidad viva: media entre culturas con respeto y empatía, combate el estigma y la aporofobia, y construye una escuela donde la identidad gitana y la pluralidad migrante brillan como el patrimonio más valioso de la Andalucía contemporánea.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">9. Anexo: Mapa conceptual y tabla sinóptica del Tema 34</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Normativa / Doctrinas Clave</th>
+      <th>Conceptos e Implicación Práctica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Modelos de Diversidad</strong></td>
+      <td>Carlos Giménez Romero</td>
+      <td>Interculturalidad (diálogo simétrico e interacción) frente a asimilación y multiculturalidad estática.</td>
+    </tr>
+    <tr>
+      <td><strong>Educación Intercultural</strong></td>
+      <td>Xavier Besalú • Adela Cortina</td>
+      <td>Enfoque transversal para todo el centro; combate a la aporofobia, xenofobia e islamofobia.</td>
+    </tr>
+    <tr>
+      <td><strong>Mediación Intercultural</strong></td>
+      <td>Principios y competencias</td>
+      <td>Neutralidad, confidencialidad, traducción cultural y facilitación de la comunicación escuela-hogar.</td>
+    </tr>
+    <tr>
+      <td><strong>Comunidad Gitana</strong></td>
+      <td>Estatuto de Autonomía • LEA (art. 39)</td>
+      <td>Arraigo histórico andaluz; superación de la brecha en Secundaria y erradicación del absentismo.</td>
+    </tr>
+    <tr>
+      <td><strong>Programas de Éxito</strong></td>
+      <td>PICGA • Programas FSG (Promociona)</td>
+      <td>Tutorización intensiva individualizada para la titulación en ESO y acceso a estudios superiores.</td>
+    </tr>
+    <tr>
+      <td><strong>Currículo Oficial</strong></td>
+      <td>Decretos 100/101/102 de 2023</td>
+      <td>Inclusión preceptiva de la historia, el holocausto (<em>Samudaripen</em>) y cultura gitana en el currículo.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>Instrucciones de 17 de septiembre de 2010</td>
+      <td>Animador sociocultural, mediador intercultural, dinamizador del 22 de noviembre y puente con el barrio.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

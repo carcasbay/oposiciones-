@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 3: Ley Orgánica Reguladora de la Responsabilidad Penal de los Menores. Ámbito de Aplicación. Repercusiones e Implicaciones Socioeducativas que tiene para el/la Menor</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 3</h1>
+  <h2>Ley Orgánica Reguladora de la Responsabilidad Penal de los Menores. Ámbito de Aplicación. Repercusiones e Implicaciones Socioeducativas que tiene para el/la Menor</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Bloque:</strong> Materias Específicas</p>
+<p><strong>Tema Oficial:</strong> 3</p>
+<p><strong>Normativa Clave:</strong> Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores (LORPM); Real Decreto 1774/2004, de 30 de julio (Reglamento de la LORPM); Ley Orgánica 8/2006 (reforma de la LORPM); Ley Orgánica 1/1996 de Protección Jurídica del Menor.</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 3</div>
+  <div class="toc-item level-1">1. <strong>Introducción y contextualización en la Educación Social</strong></div>
+  <div class="toc-item level-1">2. <strong>Fundamentos y principios rectores de la Ley Orgánica 5/2000 (LORPM)</strong></div>
+  <div class="toc-item level-2">2.1. Naturaleza jurídica: El modelo de responsabilidad sancionador-educativo</div>
+  <div class="toc-item level-2">2.2. Principio del Interés Superior del Menor y de flexibilidad sancionadora</div>
+  <div class="toc-item level-2">2.3. El principio de oportunidad y la desjudicialización: Conciliación y reparación (art. 19)</div>
+  <div class="toc-item level-2">2.4. Los órganos intervinientes: El Juez de Menores, el Ministerio Fiscal y el Equipo Técnico</div>
+  <div class="toc-item level-1">3. <strong>Ámbito de aplicación de la LORPM</strong></div>
+  <div class="toc-item level-2">3.1. Ámbito temporal y personal: Tramo de 14 a 18 años</div>
+  <div class="toc-item level-2">3.2. Diferenciación por tramos etarios: 14-15 años frente a 16-17 años</div>
+  <div class="toc-item level-2">3.3. El tratamiento de los menores de 14 años: Inimputabilidad penal y derivación a protección civil (art. 3)</div>
+  <div class="toc-item level-2">3.4. Supresión del régimen especial de 18 a 21 años</div>
+  <div class="toc-item level-1">4. <strong>Catálogo de medidas judiciales y tipología de sanciones</strong></div>
+  <div class="toc-item level-2">4.1. Medidas privativas de libertad: Régimen cerrado, semiabierto, abierto e internamiento terapéutico</div>
+  <div class="toc-item level-2">4.2. Medidas no privativas de libertad (Medio Abierto): Libertad vigilada, prestaciones comunitarias y tareas socioeducativas</div>
+  <div class="toc-item level-2">4.3. Criterios legales para la elección y graduación de las medidas</div>
+  <div class="toc-item level-1">5. <strong>Repercusiones e implicaciones socioeducativas para el/la menor</strong></div>
+  <div class="toc-item level-2">5.1. El Programa Individualizado de Ejecución de Medida (PIEM)</div>
+  <div class="toc-item level-2">5.2. Los Centros de Internamiento de Menores Infractores (CIMI) y los Servicios de Medio Abierto en Andalucía</div>
+  <div class="toc-item level-2">5.3. Coordinación obligatoria entre el sistema de justicia juvenil y el sistema educativo ordinario</div>
+  <div class="toc-item level-2">5.4. El impacto psicosocial de la medida: Prevención de la estigmatización y reinserción sociolaboral</div>
+  <div class="toc-item level-1">6. <strong>El papel del educador y educadora social en el sistema de justicia juvenil</strong></div>
+  <div class="toc-item level-1">7. <strong>Conclusión</strong></div>
+  <div class="toc-item level-1">8. <strong>Anexo: Mapa conceptual y tabla sinóptica del Tema 3</strong></div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y contextualización en la Educación Social</h2>
+
+<p>La <strong>Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores (LORPM)</strong>, desarrollada por el <strong>Real Decreto 1774/2004, de 30 de julio</strong>, supuso un hito legislativo en el Estado español al configurar una jurisdicción penal especializada regida por una premisa indiscutible: <strong>la primacía del interés educativo y resocializador del menor sobre la retribución punitiva</strong>.</p>
+
+<p>A diferencia del Código Penal de adultos, donde prevalece la proporcionalidad retributiva en función de la gravedad objetiva del hecho típico, el Derecho penal de menores orienta su intervención hacia el <strong>sujeto infractor y sus circunstancias biopsicosociales</strong>. La conducta tipificada como delito no se concibe como el final de una trayectoria punible, sino como un síntoma de conflicto en el proceso de maduración y socialización del adolescente.</p>
+
+<p>Para el <strong>Educador y la Educadora Social</strong>, la LORPM constituye uno de los marcos normativos más relevantes de su ejercicio profesional. Los educadores sociales intervienen como agentes nucleares en todas las fases del proceso penal de menores: en los Equipos Técnicos adscritos a los Juzgados, en la ejecución de programas en Medio Abierto, en los Centros de Internamiento de Menores Infractores (CIMI) y en los centros escolares ordinarios, facilitando la continuidad formativa y la reintegración comunitaria.</p>
+
+<h2 class="section-title">2. Fundamentos y principios rectores de la Ley Orgánica 5/2000 (LORPM)</h2>
+
+<h3 class="sub-title">2.1. Naturaleza jurídica: Modelo sancionador-educativo</h3>
+
+<p>La Exposición de Motivos de la LORPM define su arquitectura bajo un binomio indisociable:</p>
+
+<ol>
+  <li><strong>Naturaleza penal y formalmente sancionadora:</strong> Se aplican todas las garantías constitucionales del Derecho penal (principio de legalidad, presunción de inocencia, derecho a la defensa y contradicción). Nadie puede ser sancionado si el hecho no está tipificado como delito en el Código Penal.</li>
+  <li><strong>Naturaleza sustancialmente educativa y desformalizada:</strong> La respuesta jurídica se personaliza en función de las necesidades educativas y del entorno familiar del menor, primando su evolución positiva frente al castigo formal.</li>
+</ol>
+
+<h3 class="sub-title">2.2. Principio del Interés Superior del Menor y de flexibilidad</h3>
+
+<p>El <strong>artículo 7.3 de la LORPM</strong> consagra que el Juez de Menores aplicará las medidas atendiendo no solo a la prueba de los hechos, sino de modo prioritario a la <strong>edad, circunstancias familiares y sociales, personalidad e interés superior del menor</strong>. Asimismo, la ley autoriza expresamente la <strong>modificación, suspensión o reducción de la medida impuesta</strong> en cualquier momento de su ejecución en función de la evolución educativa del menor (artículo 13 y 51 LORPM).</p>
+
+<h3 class="sub-title">2.3. Principio de oportunidad y desjudicialización: Conciliación y reparación (art. 19)</h3>
+
+<p>La LORPM introduce mecanismos de justicia restaurativa mediante el <strong>artículo 19</strong>, permitiendo el sobreseimiento del expediente por desistimiento de la acusación cuando concurran dos vías:</p>
+
+<ul>
+  <li><strong>Conciliación:</strong> El menor reconoce el daño causado y se disculpa formalmente ante la víctima, siendo esta aceptada.</li>
+  <li><strong>Reparación:</strong> El menor asume voluntariamente el compromiso de cumplir tareas socioeducativas o prestaciones en beneficio de la víctima o de la comunidad.</li>
+</ul>
+
+<h3 class="sub-title">2.4. Los órganos intervinientes en el procedimiento</h3>
+
+<div class="diagram-box">
+  <pre>                    PROCEDIMIENTO PENAL DE MENORES
+           ┌──────────────────────┼──────────────────────┐
+    MINISTERIO FISCAL       JUEZ DE MENORES         EQUIPO TÉCNICO
+ ├─ Dirección instrucción ├─ Adopción de medidas ├─ Informe psicosocial
+ ├─ Principio oportunidad ├─ Control ejecución   ├─ Propuesta educativa
+ └─ Defensa legal menor   └─ Sentencias          └─ Mediación (art. 19)</pre>
+</div>
+
+<ul>
+  <li><strong>Ministerio Fiscal:</strong> Ostenta la exclusividad en la dirección de la investigación preparatoria, actuando como garante de los derechos del menor y valorando la oportunidad del archivo o mediación.</li>
+  <li><strong>Juez de Menores:</strong> Órgano judicial unipersonal que garantiza las libertades públicas, dicta sentencia y supervisa la ejecución.</li>
+  <li><strong>Equipo Técnico:</strong> Cuerpo multidisciplinar adscrito al Juzgado integrado por <strong>psicólogos, trabajadores sociales y educadores sociales</strong>. Emite un <strong>informe técnico preceptivo</strong> sobre la situación familiar, escolar y psicológica del menor, proponiendo la medida socioeducativa más adecuada.</li>
+</ul>
+
+<h2 class="section-title">3. Ámbito de aplicación de la LORPM</h2>
+
+<h3 class="sub-title">3.1. Ámbito personal y temporal (Artículo 1)</h3>
+
+<p>La ley se aplica para exigir la responsabilidad penal de las personas con edades comprendidas entre los <strong>14 y los 18 años</strong> al cometer un hecho delictivo.</p>
+
+<h3 class="sub-title">3.2. Diferenciación por tramos de edad</h3>
+
+<p>La LORPM modula la exigencia y las medidas según dos tramos de maduración:</p>
+
+<ul>
+  <li><strong>Tramo de 14 a 15 años:</strong> Intervención atenuada; el internamiento en régimen cerrado solo se contempla de manera muy excepcional y tasada.</li>
+  <li><strong>Tramo de 16 a 17 años:</strong> Mayor capacidad volitiva y de imputabilidad; permite mayor duración de las medidas privativas de libertad ante delitos de especial gravedad o violencia física extrema.</li>
+</ul>
+
+<h3 class="sub-title">3.3. Inimputabilidad de los menores de 14 años (Artículo 3)</h3>
+
+<p>Los menores de 14 años son penalmente <strong>inimputables</strong>. Cuando un menor comete una infracción penal antes de cumplir los 14 años:</p>
+
+<div class="callout">
+  <p><em>"No se le exigirá responsabilidad penal, sino que se aplicará lo dispuesto en las normas sobre protección de menores contenidas en el Código Civil y demás disposiciones vigentes. El Ministerio Fiscal dará traslado de lo actuado a la entidad pública de protección de menores para que promueva las medidas de protección adecuadas a sus circunstancias."</em> (Art. 3 LORPM).</p>
+</div>
+
+<p>Se pasa de la esfera punitivo-judicial a la <strong>esfera socioeducativa y protectora civil</strong> (Servicios Sociales Comunitarios y Servicios de Protección de Menores).</p>
+
+<h3 class="sub-title">3.4. Supresión del tramo de 18 a 21 años</h3>
+
+<p>Aunque inicialmente el artículo 4 de la LORPM contemplaba aplicar la ley a jóvenes de 18 a 21 años, esta previsión fue suspendida sucesivamente y definitivamente derogada por la <strong>Ley Orgánica 8/2006</strong>, consolidando el límite tajante de los 18 años para la jurisdicción de menores.</p>
+
+<h2 class="section-title">4. Catálogo de medidas judiciales y tipología de sanciones</h2>
+
+<p>El <strong>artículo 7.1 de la LORPM</strong> establece un catálogo tasado y flexible de medidas clasificadas en dos grandes bloques:</p>
+
+<h3 class="sub-title">A) Medidas privativas de libertad</h3>
+
+<ol>
+  <li><strong>Internamiento en régimen cerrado:</strong> Para delitos graves con violencia o intimidación. El menor reside en el centro y realiza en su interior todas las actividades formativas, escolares y laborales.</li>
+  <li><strong>Internamiento en régimen semiabierto:</strong> El menor reside en el centro, pero realiza fuera del mismo las actividades formativas, laborales o de ocio que determine su programa individual.</li>
+  <li><strong>Internamiento en régimen abierto:</strong> El menor lleva a cabo todas las actividades de su proyecto formativo en los servicios normalizados del entorno comunitario, pernoctando en el centro.</li>
+  <li><strong>Internamiento terapéutico:</strong> (En régimen cerrado, semiabierto o abierto) Para menores que presenten anomalías o alteraciones psíquicas, consumo de drogas o dependencia al alcohol.</li>
+  <li><strong>Permanencia de fin de semana:</strong> En su domicilio o en un centro especializado (hasta 36 horas entre el viernes por la tarde y el domingo).</li>
+</ol>
+
+<h3 class="sub-title">B) Medidas no privativas de libertad (Medio Abierto)</h3>
+
+<ol>
+  <li><strong>Libertad vigilada:</strong> Medida estrella del medio abierto. Implica el seguimiento continuado de un educador/a social que apoya y supervisa al menor en sus rutinas escolares, laborales y familiares.</li>
+  <li><strong>Prestaciones en beneficio de la comunidad (PBC):</strong> Requiere el consentimiento expreso del menor. Realización de actividades no retribuidas de interés social (ayuda a mayores, mejora de parques, etc.).</li>
+  <li><strong>Realización de tareas socioeducativas:</strong> Participación en talleres formativos o actividades estructuradas orientadas a adquirir destrezas sociales, empatía o competencias laborales.</li>
+  <li><strong>Tratamiento ambulatorio:</strong> Asistencia periódica a centros de salud mental o deshabituación.</li>
+  <li><strong>Asistencia a centros de día:</strong> Actividades formativas y ocupacionales durante el día, pernoctando en su domicilio.</li>
+  <li><strong>Convivencia con otra persona, familia o grupo educativo:</strong> Para alejar temporalmente al menor de un entorno familiar desestructurado o perjudicial.</li>
+  <li><strong>Amonestación:</strong> Reprensión formal realizada por el Juez de Menores en sala para concienciar de la gravedad de los hechos.</li>
+</ol>
+
+<h2 class="section-title">5. Repercusiones e implicaciones socioeducativas para el/la menor</h2>
+
+<h3 class="sub-title">5.1. El Programa Individualizado de Ejecución de Medida (PIEM)</h3>
+
+<p>El <strong>PIEM</strong> es el documento técnico preceptivo que concreta la ejecución de cualquier medida judicial impuesta al menor. Elaborado por el equipo socioeducativo del centro o de medio abierto, contempla:</p>
+
+<ul>
+  <li>Objetivos socioeducativos personalizados.</li>
+  <li>Cronograma y fases de intervención.</li>
+  <li>Compromisos asumidos por el menor y su familia.</li>
+  <li>Pautas de evaluación y coordinación con recursos formativos externos.</li>
+</ul>
+
+<h3 class="sub-title">5.2. Centros de Menores Infractores (CIMI) y Medio Abierto en Andalucía</h3>
+
+<p>En la Junta de Andalucía, la ejecución de las medidas judiciales es competencia de la <strong>Consejería de Justicia, Administración Local y Función Pública</strong>:</p>
+
+<ul>
+  <li><strong>CIMI (Centros de Internamiento de Menores Infractores):</strong> Cuentan con un proyecto educativo integral que incluye escolarización reglada, talleres prelaborales y programas de deshabituación y habilidades sociales.</li>
+  <li><strong>Servicios de Medio Abierto:</strong> Gestionados de forma directa o concertada con entidades del tercer sector, acompañan al menor en su medio natural para evitar el desarraigo social.</li>
+</ul>
+
+<h3 class="sub-title">5.3. Coordinación obligatoria con el sistema educativo reglado</h3>
+
+<p>La LORPM salvaguarda el derecho constitucional a la educación del menor infractor:</p>
+
+<ul>
+  <li>El internamiento o la libertad vigilada <strong>no suspenden la escolaridad obligatoria</strong> (artículo 54 LORPM).</li>
+  <li>Los centros educativos públicos andaluces deben coordinarse con los educadores de justicia juvenil para adaptar los currículos, certificar asistencias y facilitar el retorno ordinario al aula una vez extinguida la medida, evitando la discriminación o marginación del menor.</li>
+</ul>
+
+<h3 class="sub-title">5.4. Impacto psicosocial y prevención de la estigmatización</h3>
+
+<p>La intervención socioeducativa evita la adopción del rol de "delincuente juvenil":</p>
+
+<ul>
+  <li>Fomenta la asunción de la <strong>responsabilidad activa</strong> frente a la culpabilidad pasiva.</li>
+  <li>Reconstruye los lazos afectivos con la familia de origen.</li>
+  <li>Proporciona itinerarios formativos hacia la inserción sociolaboral como factor protector ante la reincidencia.</li>
+</ul>
+
+<h2 class="section-title">6. El papel del educador y educadora social en la justicia juvenil</h2>
+
+<p>El Educador/a Social es un profesional vertebrador en la aplicación de la LORPM:</p>
+
+<div class="diagram-box">
+  <pre>                            EDUCADOR/A SOCIAL
+             ┌──────────────────────┼──────────────────────┐
+       EQUIPO TÉCNICO         CENTROS CIMI             MEDIO ABIERTO
+    ├─ Evaluación diagnóstica├─ Tutoría en internamiento├─ Libertad vigilada
+    ├─ Informe al Fiscal     ├─ Talleres socioeducativos├─ Tareas comunitarias
+    └─ Mediación y reparación├─ Vinculación familiar    └─ Coordinación escolar</pre>
+</div>
+
+<ol>
+  <li><strong>En la fase de instrucción:</strong> En el Equipo Técnico, elabora la propuesta educativa y conduce los procesos de conciliación y mediación con la víctima (justicia restaurativa).</li>
+  <li><strong>En la fase de ejecución de medidas:</strong> Diseña y monitoriza el PIEM, tutoriza al adolescente en el centro CIMI o lo acompaña en la comunidad bajo libertad vigilada.</li>
+  <li><strong>En el centro escolar ordinario:</strong> Actúa como puente con los Servicios de Menores, mediando para evitar el absentismo y desarmando prejuicios hacia el menor sujeto a medidas judiciales.</li>
+</ol>
+
+<h2 class="section-title">7. Conclusión</h2>
+
+<p>La Ley Orgánica 5/2000 consolidó un modelo penal pionero donde el Derecho no busca la venganza retributiva, sino la <strong>reparación del daño y la rescisión de trayectorias de exclusión</strong>.</p>
+
+<p>Las repercusiones de la ley son eminentemente <strong>socioeducativas</strong>: la medida judicial no es un fin sancionador, sino una oportunidad pedagógica intensiva para que el menor desarrolle competencias cívicas, asuma responsabilidades y construya un proyecto de vida constructivo en el seno de la sociedad.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">8. Anexo: Mapa conceptual y tabla sinóptica del Tema 3</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Normativa / Articulado</th>
+      <th>Implicaciones Socioeducativas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Naturaleza del Sistema</strong></td>
+      <td>• LORPM 5/2000 y RD 1774/2004.<br>• Modelo de responsabilidad sancionador-educativo.<br>• Flexibilidad en la ejecución (Art. 7.3 y 13).</td>
+      <td>La respuesta penal se adapta a las necesidades individuales del menor; la medida puede modificarse según su progreso educativo.</td>
+    </tr>
+    <tr>
+      <td><strong>Justicia Restaurativa</strong></td>
+      <td>• Art. 19 LORPM: Desistimiento por conciliación con la víctima o reparación del daño.</td>
+      <td>Prioridad a la mediación extrajudicial conducida por educadores y psicólogos; aprendizaje de la empatía hacia la víctima.</td>
+    </tr>
+    <tr>
+      <td><strong>Ámbito Subjetivo</strong></td>
+      <td>• Art. 1: Mayores de 14 y menores de 18 años.<br>• Subtramos: 14-15 años y 16-17 años.<br>• Menores de 14 años: Inimputables (Art. 3).</td>
+      <td>Los menores de 14 no entran al juzgado penal; son atendidos por los Servicios de Protección y Servicios Sociales Comunitarios.</td>
+    </tr>
+    <tr>
+      <td><strong>Medidas Privativas</strong></td>
+      <td>• Internamiento en régimen cerrado, semiabierto, abierto y terapéutico.<br>• Permanencia de fin de semana.</td>
+      <td>Centros CIMI en Andalucía: la privación de libertad se compensa con educación reglada, talleres laborales y salud mental.</td>
+    </tr>
+    <tr>
+      <td><strong>Medidas en Medio Abierto</strong></td>
+      <td>• Libertad vigilada, prestaciones comunitarias (PBC), tareas socioeducativas, centro de día.</td>
+      <td>Permite intervenir en el entorno natural del menor sin desarraigo escolar ni familiar; rol intensivo del educador de seguimiento.</td>
+    </tr>
+    <tr>
+      <td><strong>El PIEM</strong></td>
+      <td>• Programa Individualizado de Ejecución de Medida.</td>
+      <td>Documento eje con objetivos, fases, cronograma y evaluación periódica del proceso socioeducativo del menor.</td>
+    </tr>
+    <tr>
+      <td><strong>Coordinación Escolar</strong></td>
+      <td>• Art. 54 LORPM: Garantía inalienable de escolarización obligatoria.</td>
+      <td>Obligación de coordinar centros docentes con justicia juvenil para asegurar la continuidad curricular y evitar la estigmatización.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>• Evaluación pericial en el Equipo Técnico.<br>• Ejecutor de medidas de medio abierto.<br>• Intervención en centros de internamiento.</td>
+      <td>Agente transformador que dota de contenido pedagógico y humano a la respuesta sancionadora del Estado.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

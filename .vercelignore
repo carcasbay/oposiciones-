@@ -1,0 +1,6 @@
+temario/*.pdf
+temario/pdf/
+temario/html/
+scratch/
+docs/
+*.txt

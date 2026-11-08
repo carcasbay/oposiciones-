@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "numero": 1,
+    "titulo": "La Constitución Española de 1978: Características generales y estructura. Principios que la inspiran. Valor normativo. La reforma constitucional",
+    "totalPreguntas": 127,
+    "bloque": "comun",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 2,
+    "numero": 2,
+    "titulo": "Título I de la Constitución Española de 1978: De los derechos y deberes fundamentales",
+    "totalPreguntas": 247,
+    "bloque": "comun",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 3,
+    "numero": 3,
+    "titulo": "El Gobierno: Composición y atribuciones. Designación, remoción y responsabilidad del Gobierno y de su Presidencia. El control parlamentario del Gobierno",
+    "totalPreguntas": 43,
+    "bloque": "comun",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 4,
+    "numero": 4,
+    "titulo": "La Administración Pública en la Constitución Española: Concepto, caracteres y clases. Principios constitucionales. Las relaciones interadministrativas. Relaciones entre el Gobierno y la Administración Pública",
+    "totalPreguntas": 32,
+    "bloque": "comun",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 5,
+    "numero": 5,
+    "titulo": "La organización territorial del Estado. Naturaleza jurídica y principios. Los Estatutos de Autonomía. La organización política y administrativa de las Comunidades Autónomas. La reforma de los Estatutos de Autonomía",
+    "totalPreguntas": 46,
+    "bloque": "comun",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 6,
+    "numero": 6,
+    "titulo": "El sistema de distribución de competencias entre el Estado y las Comunidades Autónomas. Las relaciones entre el Estado y las Comunidades Autónomas. El marco competencial de las Entidades Locales",
+    "totalPreguntas": 21,
+    "bloque": "comun",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 7,
+    "numero": 7,
+    "titulo": "El Estatuto de Autonomía de Andalucía: El ámbito competencial de la Junta de Andalucía. Especial referencia a las competencias en materia de Régimen Local",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 8,
+    "numero": 8,
+    "titulo": "Organización institucional de la Comunidad Autónoma Andaluza. El Parlamento: Composición, atribuciones y funcionamiento. La Presidencia de la Junta de Andalucía. El Consejo de Gobierno: Composición y funciones",
+    "totalPreguntas": 18,
+    "bloque": "comun",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 9,
+    "numero": 9,
+    "titulo": "El Municipio: concepto y elementos. El término municipal: el problema de la planta municipal. Alteraciones de términos municipales",
+    "totalPreguntas": 47,
+    "bloque": "comun",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 10,
+    "numero": 10,
+    "titulo": "El acto administrativo: concepto, elementos y clases. La forma y la motivación. La eficacia de los actos administrativos: el principio de autotutela declarativa. Condiciones. La aprobación por otra Administración. La demora y retroactividad de la eficacia",
+    "totalPreguntas": 24,
+    "bloque": "comun",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 11,
+    "numero": 11,
+    "titulo": "La Administración Electrónica. El derecho y el deber de relacionarse con las Administraciones Públicas por medios electrónicos. Identificación y firma electrónica. La Sede electrónica. Registros y notificaciones electrónicas. Publicaciones electrónicas. El archivo electrónico",
+    "totalPreguntas": 25,
+    "bloque": "comun",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 12,
+    "numero": 12,
+    "titulo": "La invalidez del acto administrativo: supuestos de nulidad de pleno derecho y anulabilidad. El principio de conservación del acto administrativo. La revisión de actos y disposiciones por la propia Administración: la acción de nulidad, la declaración de lesividad, la revocación de actos y la rectificación de errores materiales o de hecho",
+    "totalPreguntas": 16,
+    "bloque": "comun",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 13,
+    "numero": 13,
+    "titulo": "Los Servicios Sociales en España: noción constitucional de la asistencia social y de servicios sociales. Competencias institucionales de las Comunidades Autónomas y del Estado en materia de servicios sociales. Régimen de derechos y deberes de los usuarios de los servicios sociales",
+    "totalPreguntas": 20,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 14,
+    "numero": 14,
+    "titulo": "Conceptos generales sobre Política Social y Servicios Sociales. Principios básicos y objetivos de los Servicios Sociales según el modelo de Bienestar Social",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 15,
+    "numero": 15,
+    "titulo": "El Plan Concertado para el desarrollo de prestaciones básicas de servicios sociales en las Corporaciones Locales",
+    "totalPreguntas": 16,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 16,
+    "numero": 16,
+    "titulo": "Ley 9/2016, de 27 de diciembre, de Servicios Sociales de Andalucía. Motivos. Novedades y estructura",
+    "totalPreguntas": 28,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 17,
+    "numero": 17,
+    "titulo": "Los Servicios Sociales en la Comunidad Autónoma Andaluza. Marco jurídico y planificación regional. Consejería de Inclusión Social, Juventud, Familias e Igualdad. Competencias y funciones",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 18,
+    "numero": 18,
+    "titulo": "Decreto 48/2025, de 24 de febrero, por el que se aprueba el Catálogo de Prestaciones del Sistema Público de Servicios Sociales de Andalucía",
+    "totalPreguntas": 18,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 19,
+    "numero": 19,
+    "titulo": "Los Servicios Sociales Comunitarios. Funciones. Equipos Profesionales. Profesional de Referencia. Los Servicios Sociales Especializados. Funciones. Equipos Profesionales. Prestaciones del Sistema Público de Servicios Sociales en Andalucía",
+    "totalPreguntas": 126,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 20,
+    "numero": 20,
+    "titulo": "Los Equipos de Servicios Sociales Comunitarios: Composición, Perfiles Profesionales y Funciones de Cada Profesional. Organización de los Servicios Sociales Comunitarios en el Ayuntamiento",
+    "totalPreguntas": 37,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 21,
+    "numero": 21,
+    "titulo": "Trabajo en equipo e interdisciplinariedad en los Servicios Sociales. Estructura de los equipos de trabajo",
+    "totalPreguntas": 18,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 22,
+    "numero": 22,
+    "titulo": "Los Equipos de Tratamiento Familiar. El educador o educadora social en los Equipos de Tratamiento Familiar. Integración y coordinación de los Equipos de Tratamiento Familiar en el Sistema Público de Servicios Sociales. Coordinación con otros servicios públicos",
+    "totalPreguntas": 19,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 23,
+    "numero": 23,
+    "titulo": "El VALÓRAME como instrumento para la valoración de la gravedad de las situaciones de riesgo, desprotección y desamparo de la infancia y adolescencia en Andalucía",
+    "totalPreguntas": 16,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 24,
+    "numero": 24,
+    "titulo": "La intervención social en la lucha contra la exclusión social en España. Líneas de actuación sectoriales. Líneas de actuación dirigidas a grupos de personas especialmente vulnerables y líneas de actuación orientadas a personas de zonas socialmente excluidas",
+    "totalPreguntas": 19,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 25,
+    "numero": 25,
+    "titulo": "Conceptos generales: género, discriminación, desigualdad, acción positiva, roles y estereotipos. Discriminación por razón de sexo: discriminación directa e indirecta, discriminación salarial. Acoso por razón de sexo. Discriminación en la publicidad y lenguaje sexista. Igualdad entre mujeres y hombres: igualdad de derechos, de trato y de oportunidades. Transversalidad de género. Concepto de mainstreaming",
+    "totalPreguntas": 20,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 26,
+    "numero": 26,
+    "titulo": "Normativa sobre igualdad. La igualdad de género en la Constitución y en el Estatuto de Autonomía para Andalucía. Normativa para la promoción de la igualdad de género y para la prevención y protección integral contra la violencia de género en Andalucía. La unidad de igualdad y género: funciones. Violencia de género. Concepto y tipos. Prevención y protección integral",
+    "totalPreguntas": 28,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 27,
+    "numero": 27,
+    "titulo": "Medidas en el Ámbito Administrativo y Laboral para Promover la Igualdad Real y Efectiva de las Personas Trans y LGTBI Establecidas en la Ley 4/2023, de 28 de febrero",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 28,
+    "numero": 28,
+    "titulo": "Catálogo de funciones y competencias generales del Educador/a Social/Familiar. Código deontológico del Educador/a Social/Familiar",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 29,
+    "numero": 29,
+    "titulo": "El educador o educadora social en los Servicios Sociales Municipales. Funciones y tareas",
+    "totalPreguntas": 27,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 30,
+    "numero": 30,
+    "titulo": "Desarrollo cognoscitivo y lingüístico desde la edad infantil hasta las etapas de escolarización obligatoria. Principales teorías del desarrollo cognoscitivo. Etapas del desarrollo cognoscitivo",
+    "totalPreguntas": 43,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 31,
+    "numero": 31,
+    "titulo": "Desarrollo emocional. Concepto de emoción. La expresión emocional en bebés. El desarrollo de la comprensión emocional en la educación infantil y en las fases educativas obligatorias. Emociones y adolescencia",
+    "totalPreguntas": 38,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 32,
+    "numero": 32,
+    "titulo": "Desarrollo del apego. La formación del vínculo afectivo. Problemas específicos de una inadecuada configuración del apego. Modelos educativos parentales y consecuencias en los menores. La parentalidad positiva",
+    "totalPreguntas": 29,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 33,
+    "numero": 33,
+    "titulo": "El juego como medio de aprendizaje. Teorías del juego. Tipos de juegos: conceptos generales. La intervención del educador en el juego",
+    "totalPreguntas": 16,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 34,
+    "numero": 34,
+    "titulo": "Las drogas. Legislación básica. Plan Andaluz sobre Drogas y Adicciones. La prevención de la drogodependencia. Los centros provinciales de drogodependencias",
+    "totalPreguntas": 18,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 35,
+    "numero": 35,
+    "titulo": "Menores infractores. Legislación básica. Características específicas de la población objeto de atención. El programa de intervención educativa en el centro. Medidas alternativas al internamiento",
+    "totalPreguntas": 27,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 36,
+    "numero": 36,
+    "titulo": "Conflicto y agresión. Teorías explicativas de la agresión. Socialización y conductas agresivas.",
+    "totalPreguntas": 32,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 37,
+    "numero": 37,
+    "titulo": "Habilidades sociales: concepto y evolución. Evaluación de las habilidades sociales. El entrenamiento en habilidades sociales.",
+    "totalPreguntas": 24,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 38,
+    "numero": 38,
+    "titulo": "Protección de menores. Legislación estatal y autonómica. Maltrato infantil y abuso sexual infantil: detección, notificación y prevención.",
+    "totalPreguntas": 49,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 39,
+    "numero": 39,
+    "titulo": "La comunicación con el menor y otras técnicas educativas. Los elementos de la comunicación verbal. La crítica y la alabanza: su uso educativo.",
+    "totalPreguntas": 23,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 40,
+    "numero": 40,
+    "titulo": "El duelo. Concepto del duelo. Descripción de cada una de las fases del proceso de duelo. Metodología y plan de trabajo ante el duelo. Resolución del duelo y procesos de cierre.",
+    "totalPreguntas": 18,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 41,
+    "numero": 41,
+    "titulo": "La dinámica de grupo. Concepto, características y clases de grupos. La comunicación y la participación en el grupo. El papel del animador y sus características. Las técnicas grupales.",
+    "totalPreguntas": 24,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 42,
+    "numero": 42,
+    "titulo": "Educación en valores. Pedagogía del valor. Igualdad y tolerancia. Educación para la paz. Educación ambiental.",
+    "totalPreguntas": 19,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 43,
+    "numero": 43,
+    "titulo": "Educación afectiva y sexual. La psicoafectividad y la autoestima. Definición de educación sexual. Proyectos de educación sexual y afectiva.",
+    "totalPreguntas": 16,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 44,
+    "numero": 44,
+    "titulo": "Plan Integral para la Prevención, Seguimiento y Control del Absentismo Escolar. Intervención desde los Servicios Sociales Municipales.",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 45,
+    "numero": 45,
+    "titulo": "La evaluación sistemática de programas. Objetivos y fundamentación. Aspectos metodológicos de la evaluación.",
+    "totalPreguntas": 24,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 46,
+    "numero": 46,
+    "titulo": "Proceso de evaluación de programas en servicios sociales.",
+    "totalPreguntas": 19,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 47,
+    "numero": 47,
+    "titulo": "La investigación social en los Servicios Sociales Comunitarios. Métodos. Técnicas cualitativas y Técnicas cuantitativas.",
+    "totalPreguntas": 19,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 48,
+    "numero": 48,
+    "titulo": "El/la Educador/a Social en los programas de atención individual y/o familiar.",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 49,
+    "numero": 49,
+    "titulo": "Dinámica de los grupos. Clases de grupos. Estructura de grupo. Fenómenos grupales. El grupo como instrumento de formación. Grupos de Ayuda Mutua. El grupo como instrumento de cambio.",
+    "totalPreguntas": 18,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 50,
+    "numero": 50,
+    "titulo": "Estilos afectivos, de apoyo y educativos en la familia.",
+    "totalPreguntas": 18,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 51,
+    "numero": 51,
+    "titulo": "La familia y la escuela como agentes de socialización. El papel de la familia en la educación y desarrollo de los hijos.",
+    "totalPreguntas": 16,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 52,
+    "numero": 52,
+    "titulo": "La entrevista familiar. Niveles de intervención familiar. Técnicas y programas de intervención familiar. Acción tutorial. Concepto de tutoría y plan de acción tutorial. Las personas tutoras.",
+    "totalPreguntas": 20,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 53,
+    "numero": 53,
+    "titulo": "Técnicas de modificación de conducta. Programas de modificación de conducta.",
+    "totalPreguntas": 28,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 54,
+    "numero": 54,
+    "titulo": "La observación como técnica de evaluación educativa. El informe educativo: estructura y contenido.",
+    "totalPreguntas": 18,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 55,
+    "numero": 55,
+    "titulo": "Estimulación temprana: concepto, funciones y áreas. Programas de estimulación temprana.",
+    "totalPreguntas": 23,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 56,
+    "numero": 56,
+    "titulo": "Programación y planificación en el acogimiento residencial. Programación de la vida cotidiana. Concepto de calidad en el ámbito educativo. Instrumentos generales para la acción educativa. La evaluación del menor. Evaluación del programa de acogimiento residencial.",
+    "totalPreguntas": 22,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 57,
+    "numero": 57,
+    "titulo": "La comunicación con el menor y otras técnicas educativas. Los elementos de la comunicación verbal. La crítica y la alabanza: su uso educativo.",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 58,
+    "numero": 58,
+    "titulo": "Diversidad cultural: La población inmigrante no acompañada. Legislación sobre derechos y libertades de los extranjeros en España y su integración social.",
+    "totalPreguntas": 16,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 59,
+    "numero": 59,
+    "titulo": "Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno y Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía. Especial referencia al ámbito local.",
+    "totalPreguntas": 20,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  },
+  {
+    "id": 60,
+    "numero": 60,
+    "titulo": "La Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales: Objeto y ámbito de aplicación (artículos 1 a 3). Derechos y obligaciones de los trabajadores (artículos 14 a 29).",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "utrera"
+  }
+]

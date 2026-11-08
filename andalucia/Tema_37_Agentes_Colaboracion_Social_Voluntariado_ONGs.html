@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 37: Los Agentes de Colaboración Social. El Voluntariado y las Organizaciones No Gubernamentales. Coordinación y Seguimiento de los Programas Institucionales: Absentismo y Abandono Prematuro del Sistema Escolar, Alumnado en Situación de Riesgo, Participación y Colaboración Familiar</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 37</h1>
+  <h2>Los Agentes de Colaboración Social. El Voluntariado y las Organizaciones No Gubernamentales. Coordinación y Seguimiento de los Programas Institucionales: Absentismo y Abandono Prematuro del Sistema Escolar, Alumnado en Situación de Riesgo, Participación y Colaboración Familiar</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Carácter:</strong> Materias Específicas del Programa Oficial</p>
+<p><strong>Marco Legal y Documental:</strong></p>
+<ul class="meta-sublist">
+<li>Ley 45/2015, de 14 de octubre, de Voluntariado (estatal).</li>
+<li>Ley 4/2018, de 8 de mayo, Andaluza del Voluntariado.</li>
+<li>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA), arts. 19 y 114.</li>
+<li>Ley Orgánica 8/2021 (LOPIVI, art. 57: certificación negativa de delitos sexuales obligatoria).</li>
+<li>Orden de 19 de septiembre de 2005 (Plan Integral de Absentismo de Andalucía).</li>
+<li>Programa SYGA (Solidaridad y Garantía Alimentaria en centros docentes andaluces).</li>
+<li>Instrucciones de 17 de septiembre de 2010 de la Dirección General de Participación e Innovación Educativa.</li>
+</ul>
+<p><strong>Autores y Doctrinas de Referencia:</strong> Víctor Renes (Tercer Sector y exclusión social), Joan Subirats (Gobernanza participativa y políticas públicas), Gregorio Rodríguez Cabrero (El voluntariado en el Estado del Bienestar), Ramón Flecha (Voluntariado en Comunidades de Aprendizaje).</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 37</div>
+  <div class="toc-item level-1">1. Introducción y relevancia de los agentes de colaboración social en la escuela pública andaluza.</div>
+  <div class="toc-item level-1">2. El Tercer Sector de Acción Social y las Organizaciones No Gubernamentales (ONGs):</div>
+  <div class="toc-item level-2">2.1. Definición, tipología y papel vertebrador en la sociedad civil.</div>
+  <div class="toc-item level-2">2.2. Principales entidades colaboradoras en Andalucía (Cruz Roja, Cáritas, Secretariado Gitano, Save the Children).</div>
+  <div class="toc-item level-1">3. Marco normativo del voluntariado social y educativo:</div>
+  <div class="toc-item level-2">3.1. La Ley 4/2018 Andaluza del Voluntariado: Principios, derechos y deberes.</div>
+  <div class="toc-item level-2">3.2. Salvaguarda legal obligatoria: El Certificado Negativo de Delitos Sexuales (art. 57 LOPIVI).</div>
+  <div class="toc-item level-1">4. Coordinación y seguimiento de los grandes programas institucionales:</div>
+  <div class="toc-item level-2">4.1. Programas contra el absentismo y el abandono educativo temprano (AET).</div>
+  <div class="toc-item level-2">4.2. Programas de apoyo al alumnado en situación de riesgo y vulnerabilidad socioeconómica (Plan SYGA, PROA).</div>
+  <div class="toc-item level-2">4.3. Programas de dinamización y participación familiar comunitaria.</div>
+  <div class="toc-item level-1">5. Procesos de articulación técnica y convenios de colaboración:</div>
+  <div class="toc-item level-2">5.1. Protocolos de derivación, confidencialidad y seguimiento compartido.</div>
+  <div class="toc-item level-2">5.2. Evitar la precarización: La no sustitución de puestos de trabajo profesionales remunerados.</div>
+  <div class="toc-item level-1">6. El papel del educador o educadora social en la articulación de la colaboración social:</div>
+  <div class="toc-item level-2">6.1. Acogida, formación y acompañamiento del voluntariado en el centro.</div>
+  <div class="toc-item level-2">6.2. Enlace técnico con las ONGs y mesas territoriales de infancia y juventud.</div>
+  <div class="toc-item level-1">7. Conclusión.</div>
+  <div class="toc-item level-1">8. Anexo: Mapa conceptual y tabla sinóptica del Tema 37.</div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y relevancia de los agentes de colaboración social</h2>
+
+<p>La complejidad de las problemáticas socioeducativas contemporáneas —como la pobreza infantil severa, el absentismo crónico, la brecha digital y la soledad de las familias monoparentales— desborda con frecuencia los recursos estrictamente escolares de la administración educativa. Ninguna institución pública puede alcanzar por sí sola la máxima eficacia si no se articula en una <strong>alianza estratégica y sinérgica con la sociedad civil organizada y las redes ciudadanas de solidaridad</strong> (Joan Subirats).</p>
+
+<p>El Tercer Sector de Acción Social y el voluntariado representan una fuerza democrática indispensable: aportan cercanía a pie de calle, flexibilidad metodológica, recursos complementarios y una genuina vocación comunitaria que enriquece la acción educativa pública.</p>
+
+<p>Para la <strong>Educación Social</strong>, los agentes de colaboración social no son meros "proveedores externos" ni figuras para abaratar costes salariales, sino <strong>aliados pedagógicos fundamentales en la construcción de una comunidad protectora</strong>. El Educador y la Educadora Social actúa como el director de orquesta que coordina, supervisa y dota de sentido técnico y rigor legal a la intervención de las ONGs y el voluntariado dentro del centro escolar andaluz.</p>
+
+<h2 class="section-title">2. El Tercer Sector de Acción Social y las ONGs en Andalucía</h2>
+
+<p>El Tercer Sector agrupa a entidades privadas sin ánimo de lucro regidas por principios de solidaridad, participación democrática y justicia distributiva:</p>
+
+<ul>
+  <li><strong>Cruz Roja Española (Cruz Roja Juventud):</strong> Programa de Promoción del Éxito Escolar (merienda saludable, refuerzo escolar de tarde, entrega de kits de material y acompañamiento afectivo).</li>
+  <li><strong>Fundación Secretariado Gitano (FSG):</strong> Programas <em>Promociona</em> y <em>Kumpania</em>, mediación intercultural escolar con familias gitanas y acompañamiento para la titulación en Secundaria.</li>
+  <li><strong>Cáritas Diocesana:</strong> Acompañamiento a familias en exclusión severa, proyectos de apoyo educativo y cobertura de necesidades de urgencia social (ropa, gafas, calzado).</li>
+  <li><strong>Save the Children y Aldeas Infantiles SOS:</strong> Espacios seguros para la infancia vulnerable, prevención del maltrato y lucha contra la pobreza infantil hereditaria.</li>
+</ul>
+
+<h2 class="section-title">3. Marco normativo del voluntariado social y educativo</h2>
+
+<div class="diagram-box">
+  <pre>                 PRINCIPIOS DEL VOLUNTARIADO (LEY 4/2018 DE ANDALUCÍA)
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ ALTRUISMO Y GRATUIDAD│ NO SUSTITUCIÓN       │ SALVAGUARDA LEGAL    │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Acción voluntaria  │ • Prohibición legal  │ • Certificado Negat. │
+ │   sin remuneración   │   de suplir puestos  │   de Delitos Sexuales│
+ │   ni ánimo de lucro  │   técnicos o docentes│   obligatorio para   │
+ │ • Solidaridad cívica │   remunerados        │   trato con menores  │
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<h3 class="sub-title">3.1. La Ley 4/2018, de 8 de mayo, Andaluza del Voluntariado</h3>
+
+<ul>
+  <li>Define el voluntariado como la participación ciudadana organizada, altruista y solidaria que se desarrolla a través de entidades sin ánimo de lucro y programas concretos.</li>
+  <li><strong>Derechos del Voluntario:</strong> Recibir formación inicial y continua, contar con seguro de responsabilidad civil y accidentes, y obtener acreditación de sus competencias.</li>
+  <li><strong>Deberes del Voluntario:</strong> Respetar la confidencialidad, cumplir los compromisos adquiridos y respetar las directrices técnicas del centro escolar.</li>
+</ul>
+
+<h3 class="sub-title">3.2. Salvaguarda Legal Obligatoria: Artículo 57 de la LOPIVI 8/2021</h3>
+
+<p>Es un requisito legal inexcusable de orden público: <strong>toda persona voluntaria o contratada que realice actividades que impliquen contacto habitual con menores de edad debe presentar preceptivamente el Certificado Negativo del Registro Central de Delincuentes Sexuales y de Trata</strong>. La dirección del centro y el educador social deben custodiar este control sin excepciones.</p>
+
+<h2 class="section-title">4. Coordinación y seguimiento de programas institucionales</h2>
+
+<p>La alianza con el Tercer Sector se concreta en programas oficiales de la Junta de Andalucía:</p>
+
+<h3 class="sub-title">4.1. Programas contra el Absentismo y Abandono Educativo Temprano (AET)</h3>
+
+<ul>
+  <li>Coordinación con educadores de calle de ONGs locales para localizar a menores en horario escolar.</li>
+  <li>Planes de mentoría socioeducativa y refuerzo vespertino en colaboración con el programa PROA Andalucía.</li>
+</ul>
+
+<h3 class="sub-title">4.2. Alumnado en Situación de Riesgo y Vulnerabilidad Socioeconómica</h3>
+
+<ul>
+  <li><strong>Plan SYGA (Solidaridad y Garantía Alimentaria en Andalucía):</strong> Garantiza tres comidas diarias (desayuno, almuerzo en comedor escolar y merienda/cena para llevar) al alumnado en situación de exclusión o pobreza severa.</li>
+  <li>Reparto coordinado de material escolar y ayudas tecnológicas (tablets y tarjetas de conectividad) con Cruz Roja y fundaciones sociales.</li>
+</ul>
+
+<h3 class="sub-title">4.3. Participación y Dinamización Familiar</h3>
+
+<ul>
+  <li>Talleres de alfabetización para familias migrantes impartidos por voluntariado de ONGs en el centro escolar.</li>
+  <li>Acompañamiento a madres solas en trámites administrativos para la Renta Mínima de Inserción Social (RMISA).</li>
+</ul>
+
+<h2 class="section-title">5. Procesos de articulación técnica y convenios de colaboración</h2>
+
+<ul>
+  <li><strong>Convenios Marco y Protocolos de Coordinación:</strong> Toda colaboración formal entre una ONG y un centro educativo debe estar amparada por un convenio oficial o autorización de la Delegación Territorial, con delimitación de objetivos y temporalización.</li>
+  <li><strong>Principio de No Precarización Laboral:</strong> La Ley 4/2018 prohíbe tajantemente que el voluntariado sustituya puestos de trabajo remunerados docentes o técnicos (educadores sociales, PTIS). El voluntariado apoya y enriquece; jamás reemplaza.</li>
+  <li><strong>Confidencialidad Estricta:</strong> Compromiso expreso de secreto profesional sobre los datos de los menores.</li>
+</ul>
+
+<h2 class="section-title">6. El papel del educador o educadora social con la colaboración social</h2>
+
+<p>Conforme a las <strong>Instrucciones de 17 de septiembre de 2010</strong>, el Educador Social despliega competencias directivas:</p>
+
+<ol>
+  <li><strong>Acogida, Formación y Dinamización del Voluntariado:</strong> Coordinar la acogida de los voluntarios que participan en los <strong>Grupos Interactivos</strong> y bibliotecas tutorizadas de las Comunidades de Aprendizaje.</li>
+  <li><strong>Triaje y Derivación Técnica:</strong> Evaluar qué menores y familias necesitan ser derivados a los programas vespertinos de las ONGs del barrio, evitando la sobreintervención o la duplicidad de ayudas.</li>
+  <li><strong>Seguimiento Compartido de Casos:</strong> Reuniones mensuales de coordinación técnica con los responsables de infancia de Cruz Roja, Cáritas y Secretariado Gitano para evaluar la evolución escolar y conductual.</li>
+  <li><strong>Voz Técnica en las Mesas Locales:</strong> Representación del centro docente en las redes comunitarias del municipio y planes locales de infancia.</li>
+</ol>
+
+<h2 class="section-title">7. Conclusión</h2>
+
+<p>La escuela pública andaluza no camina sola; se apoya en el corazón solidario y la fuerza cívica de su tejido social.</p>
+
+<p>El <strong>Educador y la Educadora Social</strong> actúa como el puente indispensable entre la institución y la solidaridad ciudadana: organiza el voluntariado con rigor y amparo legal, canaliza los recursos comunitarios hacia quienes más los necesitan y demuestra que la alianza entre la escuela pública y el Tercer Sector es la mejor garantía para que ninguna infancia quede excluida del porvenir.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">8. Anexo: Mapa conceptual y tabla sinóptica del Tema 37</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Normativa / Doctrinas Clave</th>
+      <th>Conceptos e Implicación Práctica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Tercer Sector</strong></td>
+      <td>Joan Subirats • Víctor Renes</td>
+      <td>Alianza estratégica de la sociedad civil con la escuela para combatir la exclusión infantil.</td>
+    </tr>
+    <tr>
+      <td><strong>Marco del Voluntariado</strong></td>
+      <td>Ley 4/2018 de Andalucía • Ley 45/2015</td>
+      <td>Altruismo, solidaridad, formación obligatoria y prohibición legal de suplir empleo remunerado.</td>
+    </tr>
+    <tr>
+      <td><strong>Salvaguarda LOPIVI</strong></td>
+      <td>Art. 57 LOPIVI (Ley Orgánica 8/2021)</td>
+      <td>Certificado Negativo del Registro Central de Delincuentes Sexuales obligatorio para voluntarios.</td>
+    </tr>
+    <tr>
+      <td><strong>Grandes ONGs</strong></td>
+      <td>Cruz Roja • FSG • Cáritas • Save the Ch.</td>
+      <td>Promoción del Éxito Escolar, Programa Promociona, ayudas de emergencia y refuerzo vespertino.</td>
+    </tr>
+    <tr>
+      <td><strong>Programas Junta</strong></td>
+      <td>Plan SYGA • PROA Andalucía • Absentismo</td>
+      <td>Garantía alimentaria escolar (3 comidas), refuerzo pedagógico y localización de menores absentistas.</td>
+    </tr>
+    <tr>
+      <td><strong>Coordinación Técnica</strong></td>
+      <td>Protocolos y convenios formales</td>
+      <td>Derivaciones protocolizadas, confidencialidad de datos y reuniones mensuales de seguimiento.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>Instrucciones de 17 de septiembre de 2010</td>
+      <td>Gestor de voluntariado en el centro (CdA), triaje de derivaciones y enlace con las mesas de barrio.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

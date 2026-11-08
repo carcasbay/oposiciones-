@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 43 - Oposición Educación Social Utrera</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 18mm 18mm 18mm;
+    @top-center {
+      content: "OPOSICIÓN EDUCACIÓN SOCIAL (GRUPO A2) - AYUNTAMIENTO DE UTRERA | TEMA 43";
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 8pt;
+      color: #666;
+      border-bottom: 0.5pt solid #ccc;
+      padding-bottom: 4px;
+    }
+    @bottom-center {
+      content: "Página " counter(page) " de " counter(pages);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 8pt;
+      color: #666;
+      border-top: 0.5pt solid #ccc;
+      padding-top: 4px;
+    }
+  }
+
+  body {
+    font-family: 'Georgia', serif;
+    font-size: 10pt;
+    line-height: 1.46;
+    color: #1a1a1a;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-box {
+    border-bottom: 2pt solid #0d3b66;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+
+  .inst-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 8.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0d3b66;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  .badges-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+    margin-bottom: 4px;
+  }
+
+  .badge {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+
+  .badge-primary { background-color: #e3f2fd; color: #0d47a1; border: 1px solid #bbdefb; }
+  .badge-secondary { background-color: #f3e5f5; color: #4a148c; border: 1px solid #e1bee7; }
+  .badge-warning { background-color: #fff3e0; color: #e65100; border: 1px solid #ffe0b2; }
+
+  .main-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15pt;
+    font-weight: 800;
+    color: #0d3b66;
+    line-height: 1.25;
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+
+  .sec-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 11.5pt;
+    font-weight: 700;
+    color: #0d3b66;
+    border-bottom: 1pt solid #0d3b66;
+    padding-bottom: 3px;
+    margin-top: 14px;
+    margin-bottom: 8px;
+    page-break-after: avoid;
+  }
+
+  .sub-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 10.2pt;
+    font-weight: 700;
+    color: #1d3557;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    page-break-after: avoid;
+  }
+
+  .subsub-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 10pt;
+    font-weight: 700;
+    color: #2b2d42;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+
+  .subsubsub-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 9.2pt;
+    font-weight: 600;
+    font-style: italic;
+    color: #333;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    page-break-after: avoid;
+  }
+
+  .body-text {
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .body-text strong {
+    color: #000;
+  }
+
+  .custom-list {
+    margin-top: 3px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    text-align: justify;
+  }
+
+  .custom-list li {
+    margin-bottom: 3px;
+  }
+
+  .ascii-box {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7pt;
+    line-height: 1.18;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 6px 8px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    page-break-inside: avoid;
+  }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.2pt;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    page-break-inside: avoid;
+  }
+
+  .data-table td {
+    border: 1px solid #dee2e6;
+    padding: 4px 7px;
+    vertical-align: top;
+  }
+
+  .data-table tr:first-child td {
+    background-color: #e9ecef;
+    font-weight: 700;
+    color: #0d3b66;
+  }
+
+  .callout {
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    font-size: 8.8pt;
+    page-break-inside: avoid;
+  }
+
+  .warning {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    color: #664d03;
+  }
+
+  .exam-item {
+    background-color: #e8f5e9;
+    border-left: 3px solid #2e7d32;
+    padding: 3px 6px;
+    margin-bottom: 3px;
+    font-size: 8.5pt;
+    font-family: 'Segoe UI', sans-serif;
+    page-break-inside: avoid;
+  }
+
+  .divider {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 12px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-box">
+  <div class="inst-title">Excmo. Ayuntamiento de Utrera | Subescala Técnica - Grupo A2</div>
+  <div class="badges-row">
+    <span class="badge badge-primary">Educador/a Social</span>
+    <span class="badge badge-secondary">BOP Sevilla nº 102 (29/05/2026)</span>
+    <span class="badge badge-warning">Tema 43 - Específico</span>
+  </div>
+</div>
+
+<h1 class="main-title">TEMA 43: EDUCACIÓN AFECTIVA Y SEXUAL. LA PSICOAFECTIVIDAD Y LA AUTOESTIMA. DEFINICIÓN DE EDUCACIÓN SEXUAL. PROYECTOS DE EDUCACIÓN SEXUAL Y AFECTIVA</h1>
+<p class="body-text"><strong>Referencia Convocatoria:</strong> Técnico/a Medio de Educación Social (Subescala Técnica, Grupo A2). Excmo. Ayuntamiento de Utrera (Sevilla). Oferta de Empleo Público consolidada (BOP de Sevilla nº 102, de 29/05/2026). Bloque de Materias Específicas.</p>
+<hr class="divider"/>
+<h2 class="sec-title">1. EDUCACIÓN AFECTIVA Y SEXUAL: MARCO CONCEPTUAL Y MODELOS TEÓRICOS</h2>
+<h3 class="sub-title">1.1. Evolución Histórica y Epistemológica de la Sexología</h3>
+<p class="body-text">La comprensión de la sexualidad humana ha transitado a lo largo del último siglo desde concepciones reduccionistas, biologicistas y culpabilizadoras hacia un modelo holístico, biográfico e integrador de los derechos humanos. Históricamente, la sexualidad fue tutelada por discursos teológico-morales que la constreñían de forma exclusiva a la reproducción conyugal, condenando cualquier manifestación erótica no coital como pecado o extravío. Con el advenimiento de la medicina moderna a finales del siglo XIX y principios del XX (Krafft-Ebing, Havelock Ellis, Sigmund Freud), la sexualidad ingresó en el ámbito clínico, sustituyendo la categoría moral de "pecado" por la médica de "patología" o "desviación", configurando un modelo higienista centrado en la profilaxis y el control social.</p>
+<p class="body-text">La auténtica revolución epistemológica de la sexología contemporánea se gestó a mediados del siglo XX a través de las investigaciones empíricas de <strong>Alfred Kinsey (1948, 1953)</strong> sobre la diversidad conductual de la población, de <strong>William Masters y Virginia Johnson (1966, 1970)</strong> sobre la fisiología de la respuesta sexual humana y el tratamiento de las disfunciones eróticas, y de <strong>Helen Singer Kaplan (1974, 1979)</strong> con la incorporación del componente del deseo erótico.</p>
+<p class="body-text">En el contexto español, la sexología sustantiva y la pedagogía sexual contemporánea encuentran sus máximos exponentes en autores canónicos como <strong>Efigenio Amezúa (1979, 1999)</strong> —fundador del Instituto de Sexología de Madrid y pionero del concepto de <em>hecho sexual humano</em> como proceso de sexuación, sexualidad y erótica— y <strong>Félix López Sánchez (1995, 2005, 2018)</strong>. López Sánchez consolida el <strong>modelo biográfico e integrador</strong>, demostrando que la sexualidad no es un mero impulso genital instintivo ni una amenaza sanitaria, sino una <strong>dimensión constitutiva y estructural de la personalidad presente a lo largo de todo el ciclo vital</strong>, indisolublemente imbricada con la afectividad, la vinculación, el autoconcepto, el placer compartido y la comunicación interpersonal.</p>
+<hr class="divider"/>
+<h3 class="sub-title">1.2. El Concepto de Salud Sexual según la Organización Mundial de la Salud (OMS)</h3>
+<p class="body-text">La superación definitiva del modelo biologicista fue sancionada internacionalmente por la <strong>Organización Mundial de la Salud (OMS)</strong> en su consulta técnica formalizada en <strong>2006</strong>, estableciendo una definición canónica de obligada cita en el ámbito socioeducativo:</p>
+<p class="body-text">> <em>"La salud sexual es un estado de bienestar físico, emocional, mental y social en relación con la sexualidad; no es meramente la ausencia de enfermedad, disfunción o incapacidad. La salud sexual requiere un enfoque positivo y respetuoso de la sexualidad y de las relaciones sexuales, así como la posibilidad de tener experiencias sexuales placenteras y seguras, libres de toda coacción, discriminación y violencia. Para que todas las personas alcancen y mantengan la salud sexual, sus derechos sexuales deben ser reconocidos, protegidos y ejercidos a plenitud"</em>.</p>
+<p class="body-text">Esta formulación sitúa el bienestar subjetivo, el placer consentido y la equidad relacional como componentes positivos indisociables de la salud integral. Paralelamente, los <strong>Derechos Sexuales y Reproductivos</strong> han sido consagrados como derechos humanos fundamentales por las Naciones Unidas y formalizados por la <strong>Asociación Mundial para la Salud Sexual (WAS - <em>World Association for Sexual Health</em>)</strong> en su histórica <em>Declaración de los Derechos Sexuales</em> (adoptada inicialmente en el Congreso Mundial de Valencia en 1997, revisada en Hong Kong en 1999 y actualizada en Gotemburgo en 2014). Dicha declaración proclama 16 derechos universales, destacando el derecho a la igualdad y no discriminación, a la autonomía e integridad corporal, a la privacidad, al placer sexual, a la información basada en el conocimiento científico y a una <strong>educación sexual integral</strong>.</p>
+<hr class="divider"/>
+<h3 class="sub-title">1.3. Modelos Teóricos de Intervención en Educación Sexual</h3>
+<p class="body-text">En el análisis de las políticas y prácticas socioeducativas con menores y jóvenes se identifican <strong>cuatro modelos pedagógicos arquetípicos</strong>:</p>
+<pre class="ascii-box">
+========================================================================================
+             MODELOS TEÓRICOS DE EDUCACIÓN SEXUAL (LÓPEZ SÁNCHEZ; UNESCO)
+========================================================================================
+ 1. MODELO MORAL / TRADICIONAL
+    - Foco: Abstinencia prematrimonial, culpa, tabú y condena de la diversidad erótica.
+    - Efecto: Desinformación grave, angustia, homofobia y desprotección real.
+ ---------------------------------------------------------------------------------------
+ 2. MODELO MÉDICO-HIGIENISTA / DE RIESGOS ("PREVENTIVO")
+    - Foco: Peligros, patología, infecciones (ITS/VIH) y embarazos no planificados.
+    - Efecto: Visión fóbica de la sexualidad; ineficaz porque ignora la afectividad y el placer.
+ ---------------------------------------------------------------------------------------
+ 3. MODELO TÉCNICO / INFORMATIVO
+    - Foco: Anatomía, fisiología y mecánica reproductiva neutra y aséptica.
+    - Efecto: Conocimiento intelectual frío desvinculado de las emociones y las relaciones.
+ ---------------------------------------------------------------------------------------
+ 4. MODELO BIOGRÁFICO-PROFESIONAL / EDUCACIÓN SEXUAL INTEGRAL (ESI)
+    - Foco: La sexualidad como dimensión positiva del desarrollo humano, placer, afecto,
+            ética del consentimiento, igualdad de género y derechos humanos.
+    - Efecto: Retraso en el inicio del coito, fomento del uso de preservativo, prevención
+            de abusos y vivencia afectiva saludable (UNESCO 2018; OMS/BZgA 2010).
+========================================================================================
+</pre>
+<div class="exam-item">1. <strong>Modelo Moral o Tradicional</strong>: Concibe la sexualidad como una fuerza peligrosa que debe ser reprimida y canalizada exclusivamente hacia la reproducción dentro del matrimonio heterosexual. Su metodología se basa en la prédica de la abstinencia, el silencio, el miedo y la culpabilización. La evidencia científica internacional ha demostrado de manera contundente que los programas basados exclusivamente en la abstinencia fracasan radicalmente: no retrasan la edad de inicio de las relaciones coitales y elevan drásticamente las tasas de embarazos imprevistos e ITS al despojar a los jóvenes de información sobre métodos anticonceptivos.</div>
+<div class="exam-item">2. <strong>Modelo Médico-Higienista o de Prevención de Riesgos</strong>: Nace desde la salud pública con una orientación patologizante y fóbica. Toda la intervención gira en torno a los "peligros" del sexo: el contagio de infecciones de transmisión sexual (con especial énfasis histórico en el VIH/sida) y los embarazos no deseados en la adolescencia. Aunque incorpora contenidos científicos sobre métodos barrera, resulta profundamente insuficiente e ineficaz porque presenta el sexo como una fuente de amenaza y desatiende las motivaciones reales de los adolescentes: la curiosidad, el deseo, la afectividad, la búsqueda de placer, el juego relacional y la presión social.</div>
+<div class="exam-item">3. <strong>Modelo Técnico o Informativo</strong>: Proporciona información descriptiva y aséptica sobre la anatomía de los aparatos reproductores masculino y femenino, la fecundación y los ciclos hormonales. Se limita a una transmisión enciclopédica de datos biológicos neutros, eludiendo deliberadamente el debate sobre los valores, los sentimientos, los roles de género, la orientación sexual o la gestión de conflictos interpersonales.</div>
+<div class="exam-item">4. <strong>Modelo Biográfico-Profesional o de Educación Sexual Integral (ESI)</strong>: Es el paradigma técnico avalado por la comunidad científica, la <strong>UNESCO (2018 - <em>Orientaciones técnicas internacionales sobre educación en sexualidad</em>)</strong> y la <strong>Oficina Regional para Europa de la OMS junto al Centro Federal de Educación para la Salud de Alemania (BZgA, 2010 - <em>Estándares de Educación Sexual para Europa</em>)</strong>. Este modelo entiende la sexualidad como un potencial humano enriquecedor que debe desarrollarse de manera positiva a lo largo de toda la vida. Articula de forma armónica los conocimientos biológicos rigurosos con el desarrollo de competencias psicoafectivas, el pensamiento crítico, la deconstrucción de estereotipos de género, la diversidad sexual y la ética del consentimiento, promoviendo la toma de decisiones autónoma y responsable.</div>
+<hr class="divider"/>
+<h2 class="sec-title">2. LA PSICOAFECTIVIDAD Y LA AUTOESTIMA</h2>
+<h3 class="sub-title">2.1. La Psicoafectividad en el Desarrollo Humano</h3>
+<p class="body-text">La <strong>psicoafectividad</strong> designa el entramado dinámico y complejo resultante de la interacción recíproca entre los procesos cognitivos, las estructuras emocionales y los sistemas vinculares de apego que configuran la vida psicológica del sujeto. En el ámbito de la sexualidad, la psicoafectividad determina el modo en que el ser humano experimenta el deseo, interpreta las sensaciones corporales de atracción, gestiona la vulnerabilidad que exige la intimidad compartida y reacciona ante la aceptación o el rechazo interpersonal.</p>
+<h4 class="subsub-title">La Teoría del Apego (John Bowlby, Mary Ainsworth) como Cimiento Afectivo-Sexual</h4>
+<p class="body-text">La vivencia de la sexualidad en la adolescencia y en la adultez se asienta directamente sobre los patrones de vinculación afectiva forjados durante la primera infancia con las figuras primarias de apego:</p>
+<ul class="custom-list">
+<li><strong>Modelos Operantes Internos (MOI - <em>Internal Working Models</em>)</strong>: Formulados por <strong>John Bowlby (1969, 1980)</strong>, constituyen esquemas cognitivo-afectivos inconscientes sobre uno mismo (grado de merecimiento de amor y protección) y sobre los demás (disponibilidad y confiabilidad del otro).</li>
+<li><strong>Estilos de Apego y su Manifestación en la Sexualidad</strong>:</li>
+<li><em>Apego Seguro</em>: Autoimagen positiva y confianza básica en los demás. Favorece una sexualidad integrada con el afecto, capacidad para disfrutar del placer sin ansiedad, comunicación abierta de preferencias eróticas, asertividad para establecer límites claros y tolerancia madura a la frustración ante el rechazo.</li>
+<li><em>Apego Inseguro Ansioso-Ambivalente</em>: Autoimagen desvalorizada y desconfianza en la permanencia del amor ajeno. Tiende a utilizar la sexualidad de forma instrumental para obtener afecto, aprobación o evitar el abandono. Los menores y jóvenes con este apego presentan un alto riesgo de tolerar prácticas eróticas indeseadas o agresiones machistas por temor a la ruptura de la relación.</li>
+<li><em>Apego Inseguro Evitativo</em>: Autosuficiencia defensiva y miedo a la intimidad emocional. Tiende a disociar completamente el sexo del afecto, buscando encuentros puramente genitales o transaccionales desprovistos de compromiso o recurriendo a la masturbación compulsiva con pornografía para eludir la exposición emocional.</li>
+<li><em>Apego Inseguro Desorganizado</em>: Consecuencia de vivencias de trauma, maltrato o desamparo temprano. Oscila entre la búsqueda desesperada de cercanía y el pánico fóbico al contacto, asociándose a conductas sexuales autodestructivas, hipersexualización precoz o somatizaciones graves.</li>
+</ul>
+<hr class="divider"/>
+<h3 class="sub-title">2.2. La Autoestima y su Articulación con la Salud Sexual</h3>
+<p class="body-text">La <strong>autoestima</strong> es la evaluación afectiva y valorativa global que la persona realiza sobre su propio autoconcepto; representa el grado de respeto, aprecio y aceptación incondicional que un individuo experimenta hacia sí mismo. Se estructura a partir de cuatro dimensiones nucleares:</p>
+<div class="exam-item">1. <strong>Autoimagen</strong>: Representación mental y percepción subjetiva del propio esquema corporal.</div>
+<div class="exam-item">2. <strong>Autoconcepto</strong>: Conjunto de creencias cognitivas organizadas sobre los rasgos, capacidades y roles que caracterizan a la persona.</div>
+<div class="exam-item">3. <strong>Autoeficacia (Albert Bandura, 1977)</strong>: Convicción íntima en la propia capacidad para organizar y ejecutar con éxito las acciones necesarias para alcanzar metas y resolver problemas.</div>
+<div class="exam-item">4. <strong>Autoaceptación incondicional (Carl Rogers, Albert Ellis)</strong>: Aceptación serena de la propia dignidad humana con independencia de los éxitos, fracasos o juicios externos.</div>
+<pre class="ascii-box">
+========================================================================================
+         IMPACTO RECÍPROCO ENTRE AUTOESTIMA Y SALUD AFECTIVO-SEXUAL
+========================================================================================
+     [ AUTOESTIMA SALUDABLE / SÓLIDA ]              [ AUTOESTIMA VULNERABLE / BAJA ]
+ -----------------------------------------      -----------------------------------------
+ - Asertividad erótica (saber decir "NO").      - Dificultad para fijar límites claros.
+ - Negociación activa de métodos barrera.       - Sumisión a prácticas no deseadas.
+ - Disfrute libre de culpa y prejuicios.        - Uso del sexo para buscar validación.
+ - Autonomía emocional frente a la pareja.      - Dependencia emocional y celos tóxicos.
+ - Respeto al consentimiento recíproco.         - Alta vulnerabilidad a la ciberviolencia.
+========================================================================================
+</pre>
+<h4 class="subsub-title">2.2.1. Autoestima Corporal y Presión Estética en la Adolescencia</h4>
+<p class="body-text">Durante la pubertad y la adolescencia, el cuerpo experimenta una eclosión de transformaciones biológicas aceleradas (caracteres sexuales secundarios, menarquia, espermarquia, variaciones de peso y talla). En esta etapa crítica de vulnerabilidad madurativa, la construcción de la autoestima corporal se halla fuertemente condicionada por:</p>
+<ul class="custom-list">
+<li><strong>Los cánones estéticos hegemónicos y la hipersexualización mediática</strong>: Difusión a través de redes sociales (Instagram, TikTok) de modelos corporales irreales, hiperdelgados, hipermusculados y filtrados digitalmente, generando una aguda insatisfacción corporal (<em>dismorfofobia</em>), anorexia, vigorexia y fobia al propio cuerpo.</li>
+<li><strong>El consumo masivo y precoz de pornografía comercial violenta en Internet</strong>: Investigaciones rigurosas (Save the Children, 2020; Fundación FAD Juventud, 2022) sitúan la <strong>edad media del primer acceso a la pornografía en la red entre los 8 y los 11 años</strong>, mayoritariamente a través del teléfono móvil sin mediación parental. La pornografía <em>mainstream</em> transmite un modelo de sexualidad falocéntrico, androcéntrico, desprovisto de afecto y sistemáticamente misógino, donde se normaliza la sumisión y la violencia hacia las mujeres (asfixia erótica o <em>choking</em>, bofetadas, dolor infligido) y se imponen estándares anatómicos desmedidos. En los menores, esto engendra graves distorsiones cognitivas:</li>
+<li>En los varones: ansiedad de rendimiento, disfunción eréctil psicógena precoz, cosificación de la mujer y adquisición de conductas de dominación sexual violenta.</li>
+<li>En las mujeres: inseguridad corporal profunda, inhibición del deseo, disociación entre dolor y placer, y normalización de la agresión sexual como supuesta exigencia para ser "deseables".</li>
+</ul>
+<h4 class="subsub-title">2.2.2. Baja Autoestima y Vulnerabilidad a la Violencia Sexual</h4>
+<p class="body-text">Existe una correlación directa y empíricamente verificada entre una baja autoestima y el incremento del riesgo de victimización en menores y jóvenes:</p>
+<ul class="custom-list">
+<li><strong>Déficit de Asertividad Sexual</strong>: Incapacidad para manifestar la disconformidad o negarse a una demanda sexual (<em>"si digo que no, se enfadará y me dejará"</em>).</li>
+<li><strong>Ciberviolencias Machistas</strong>: Prácticas de riesgo inducidas por la búsqueda desesperada de aceptación externa, tales como el envío presionado de imágenes de desnudez (<em>sexting</em> forzado), que posteriormente deriva en chantaje erótico (<em>sextorsión</em>), difusión no consentida de material íntimo (<em>slut-shaming</em>) o captación por adultos mediante perfiles falsos (<em>grooming</em>, tipificado en el <strong>art. 183 ter del Código Penal</strong>).</li>
+</ul>
+<hr class="divider"/>
+<h3 class="sub-title">2.3. Educación Emocional y Competencias Afectivas</h3>
+<p class="body-text">Frente a este escenario, la educación socioeducativa debe capacitar al menor en competencias de <strong>inteligencia emocional (Daniel Goleman, 1995; Rafael Bisquerra, 2000)</strong> aplicadas al ámbito vincular:</p>
+<div class="exam-item">1. <strong>Conciencia emocional corporal</strong>: Aprender a identificar y nombrar sensaciones físicas y afectivas (distinguir entre deseo, curiosidad, presión social, asco o miedo).</div>
+<div class="exam-item">2. <strong>Regulación emocional</strong>: Tolerancia al desamor y al rechazo, desterrando conductas agresivas de posesión o acoso tras una ruptura sentimental.</div>
+<div class="exam-item">3. <strong>Empatía erótica</strong>: Capacidad de descodificar el lenguaje analógico de la otra persona, comprendiendo que el silencio, la rigidez o la duda constituyen una ausencia de consentimiento.</div>
+<div class="exam-item">4. <strong>Asertividad sexual</strong>: Capacidad de expresar deseos propios, negociar el uso inflexible de métodos anticonceptivos de barrera y formular un "NO" rotundo, libre de culpas o justificaciones innecesarias.</div>
+<hr class="divider"/>
+<h2 class="sec-title">3. DEFINICIÓN DE EDUCACIÓN SEXUAL: DIMENSIONES, PRINCIPIOS Y MARCO NORMATIVO</h2>
+<h3 class="sub-title">3.1. Definición Canónica y Principios Rectores</h3>
+<p class="body-text">La <strong>Educación Afectiva y Sexual</strong> se define técnicamente como:</p>
+<p class="body-text">> <em>"Un proceso pedagógico, sistemático, continuado, interdisciplinar y adaptado a cada etapa del ciclo vital, orientado a proporcionar a las personas conocimientos científicos veraces, actitudes de respeto y competencias psicoemocionales que les permitan comprender su sexuación, asumir positivamente su cuerpo, vivenciar su erótica y sus vínculos afectivos de forma saludable, placentera, autónoma, libre de culpas y de toda manifestación de violencia machista o coacción"</em> (López Sánchez, 2018; OMS/BZgA, 2010).</p>
+<h4 class="subsub-title">Principios Metodológicos Inexcusables</h4>
+<ul class="custom-list">
+<li><strong>Carácter Positivo y Promotor</strong>: El eje central no es el miedo a las infecciones o al embarazo, sino la capacitación para el bienestar, el placer ético y el desarrollo personal.</li>
+<li><strong>Perspectiva de Género y Derechos Humanos</strong>: Crítica sistemática a los mandatos patriarcales, visibilización de las desigualdades estructurales y empoderamiento de las niñas y adolescentes.</li>
+<li><strong>Inclusión y Despatologización de la Diversidad</strong>: Reconocimiento activo y respetuoso de todas las orientaciones del deseo, identidades de género y expresiones no normativas.</li>
+<li><strong>Rigor Científico y Laicismo</strong>: Contenidos fundados en la evidencia de las ciencias biomédicas, psicológicas y sociales, blindados frente a dogmas morales o confesionales.</li>
+<li><strong>Adecuación al Desarrollo Evolutivo</strong>: Ajuste estricto de conceptos y metodologías a las capacidades cognitivas y necesidades emocionales de cada franja de edad.</li>
+</ul>
+<hr class="divider"/>
+<h3 class="sub-title">3.2. Las Cuatro Dimensiones Básicas de la Sexualidad Humana</h3>
+<p class="body-text">Para garantizar un abordaje integral, la intervención socioeducativa debe estructurarse en torno a <strong>cuatro dimensiones operativas interrelacionadas</strong>:</p>
+<pre class="ascii-box">
+========================================================================================
+            LAS CUATRO DIMENSIONES ESTRUCTURALES DE LA SEXUALIDAD HUMANA
+========================================================================================
+ 1. DIMENSIÓN BIOLÓGICA Y REPRODUCTIVA
+    - Anatomía genital y corporal, fisiología de la respuesta sexual humana.
+    - Salud reproductiva, fecundidad, métodos anticonceptivos y profilácticos (ITS).
+ ---------------------------------------------------------------------------------------
+ 2. DIMENSIÓN PSICOEMOCIONAL Y AFECTIVA
+    - Identidad sexual, autoimagen corporal, autoestima y autoconcepto erótico.
+    - Vivencia del placer, deseo, enamoramiento, ternura y vínculos de apego seguro.
+ ---------------------------------------------------------------------------------------
+ 3. DIMENSIÓN SOCIOCULTURAL Y RELACIONAL
+    - Roles de género, socialización diferencial y deconstrucción de mandatos patriarcales.
+    - Diversidad sexual y de género (LGBTIQA+); comunicación asertiva en la pareja.
+ ---------------------------------------------------------------------------------------
+ 4. DIMENSIÓN ÉTICA Y LEGAL
+    - Consentimiento afirmativo, libre y revocable ("Solo sí es sí").
+    - Derechos sexuales universales, erradicación de abusos y violencias machistas.
+========================================================================================
+</pre>
+<hr class="divider"/>
+<h3 class="sub-title">3.3. Marco Normativo Vigente en España y Andalucía</h3>
+<p class="body-text">La educación afectivo-sexual no es una actividad accesoria ni opcional, sino una <strong>obligación legal de los poderes públicos y un derecho fundamental de la infancia y la juventud</strong>:</p>
+<h4 class="subsub-title">3.3.1. Marco Normativo Estatal</h4>
+<ul class="custom-list">
+<li><strong>Ley Orgánica 2/2010, de 3 de marzo, de salud sexual y reproductiva y de la interrupción voluntaria del embarazo (reformada sustancialmente por Ley Orgánica 1/2023, de 28 de febrero)</strong>:</li>
+<li>Mandata la impartición de educación afectivo-sexual integral en todas las etapas del sistema educativo obligatorio (art. 5).</li>
+<li>Reconoce la <strong>salud menstrual</strong> como parte del derecho a la salud (bajas laborales por menstruación incapacitante, dispensación gratuita de productos menstruales en centros educativos y sociales).</li>
+<li>Garantiza la dispensación gratuita de la <strong>anticoncepción de urgencia</strong> (píldora del día después) en centros de salud y servicios de asistencia sanitaria.</li>
+<li>Elimina el requisito de consentimiento paterno para la interrupción voluntaria del embarazo a las jóvenes de <strong>16 y 17 años</strong>.</li>
+<li><strong>Ley Orgánica 8/2021, de 4 de junio, de protección integral a la infancia y la adolescencia frente a la violencia (LOPIVI)</strong>:</li>
+<li>Establece en sus arts. 5 y 33 que las administraciones públicas deben asegurar que los menores reciban formación sobre prevención del abuso sexual y violencia de género, adaptada a su madurez.</li>
+<li><strong>Ley Orgánica 10/2022, de 6 de septiembre, de garantía integral de la libertad sexual ("Ley solo sí es sí")</strong>:</li>
+<li>Sitúa el <strong>consentimiento afirmativo y libre</strong> como el núcleo definidor de los delitos contra la libertad sexual en el <strong>artículo 178 del Código Penal</strong> (<em>"solo se entenderá que hay consentimiento cuando se haya manifestado libremente mediante actos que, en atención a las circunstancias del caso, expresen de manera clara la voluntad de la persona"</em>).</li>
+<li>Impone la alfabetización sexual digital y la sensibilización obligatoria frente a las ciberviolencias sexuales.</li>
+<li><strong>Ley 4/2023, de 28 de febrero, para la igualdad real y efectiva de las personas trans y para la garantía de los derechos de las personas LGTBI</strong>:</li>
+<li>Consagra el principio de autodeterminación de la identidad de género, prohíbe taxativamente las terapias de conversión y exige la inclusión de la diversidad sexo-genérica en los programas educativos.</li>
+</ul>
+<h4 class="subsub-title">3.3.2. Marco Normativo de la Comunidad Autónoma de Andalucía</h4>
+<ul class="custom-list">
+<li><strong>Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía</strong>: Establece el deber de los servicios sociales y sanitarios de promover la educación afectivo-sexual para la prevención de abusos, violencia de género y embarazos no planificados.</li>
+<li><strong>Ley 8/2017, de 28 de diciembre, para garantizar los derechos, la igualdad de trato y no discriminación de las personas LGTBI y sus familiares en Andalucía</strong>: Blinda los contenidos contra la lgtbifobia en todos los ámbitos socioeducativos.</li>
+<li><strong>Programa Forma Joven en el Ámbito Educativo y Comunitario</strong>: Estrategia interdepartamental consolidada de la Junta de Andalucía (Consejerías de Salud y Consumo, y de Desarrollo Educativo) que articula asesorías de salud y talleres socioeducativos en institutos de secundaria, con líneas específicas sobre <em>Sexualidad y Relaciones Igualitarias</em>.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="sec-title">4. PROYECTOS DE EDUCACIÓN SEXUAL Y AFECTIVA: DISEÑO, FASES Y METODOLOGÍAS</h2>
+<p class="body-text">El diseño e implementación de proyectos de educación afectivo-sexual por parte del Educador/a Social exige una rigurosa planificación técnica que trascienda la charla puntual o el taller inconexo:</p>
+<pre class="ascii-box">
+========================================================================================
+          FASES METODOLÓGICAS DE UN PROYECTO SOCIOEDUCATIVO DE EDUCACIÓN SEXUAL
+========================================================================================
+ 1. DIAGNÓSTICO Y DETECCIÓN DE NECESIDADES
+    - Cuestionarios anónimos, grupos focales; detectar mitos, consumos digitales y riesgos.
+ ---------------------------------------------------------------------------------------
+ 2. PLANIFICACIÓN Y FORMULACIÓN DE OBJETIVOS
+    - Objetivos conceptuales (saber), procedimentales (saber hacer) y actitudinales (saber ser).
+ ---------------------------------------------------------------------------------------
+ 3. SELECCIÓN Y SECUENCIACIÓN DE CONTENIDOS TEMÁTICOS
+    - Cuerpo/anatomía; afectos/apego; mitos amor romántico; métodos barrera; consentimiento.
+ ---------------------------------------------------------------------------------------
+ 4. APLICACIÓN DE METODOLOGÍAS ACTIVAS Y PARTICIPATIVAS
+    - Role-playing, dilemas morales, dinámicas vivenciales, análisis crítico de medios.
+ ---------------------------------------------------------------------------------------
+ 5. EVALUACIÓN Y RETROALIMENTACIÓN INTEGRAL
+    - Evaluación inicial (diagnóstica), procesual (formativa) y final (sumativa y de impacto).
+========================================================================================
+</pre>
+<hr class="divider"/>
+<h3 class="sub-title">4.1. Fases del Proyecto Socioeducativo</h3>
+<h4 class="subsub-title">1. Diagnóstico y Análisis de la Realidad</h4>
+<ul class="custom-list">
+<li>Recogida de datos cuantitativos y cualitativos mediante cuestionarios anónimos, buzones de dudas y entrevistas grupales con jóvenes, familias y profesorado.</li>
+<li>Identificación de los mitos prevalentes, conductas de riesgo locales, edad de inicio en la pornografía, incidencia de ciberacoso y barreras de acceso a métodos de barrera en el municipio.</li>
+</ul>
+<h4 class="subsub-title">2. Planificación y Formulación de Objetivos</h4>
+<ul class="custom-list">
+<li><strong>Objetivos Conceptuales (<em>Saber</em>)</strong>: Conocer la anatomía y fisiología genital; diferenciar conceptos clave (sexo biológico, identidad de género, expresión de género, orientación sexual); conocer las vías de transmisión y prevención de las ITS.</li>
+<li><strong>Objetivos Procedimentales (<em>Saber hacer</em>)</strong>: Aprender el uso correcto del preservativo masculino y femenino; entrenar la colocación técnica; ejercitar la comunicación asertiva y la negociación erótica; identificar señales de abuso y activar recursos de protección.</li>
+<li><strong>Objetivos Actitudinales (<em>Saber ser / convivir</em>)</strong>: Desarrollar una autoimagen corporal positiva; desterrar la culpa y la vergüenza ligadas al placer; erradicar actitudes machistas y lgtbifóbicas; asumir la corresponsabilidad en el cuidado y respetar el consentimiento explícito.</li>
+</ul>
+<hr class="divider"/>
+<h3 class="sub-title">4.2. Bloques de Contenidos Temáticos Esenciales</h3>
+<h4 class="subsub-title">Bloque I: Conciencia Corporal, Placer y Diversidad</h4>
+<ul class="custom-list">
+<li>El cuerpo como territorio propio e inviolable. Identificación de la anatomía erógena global (desmontando el reduccionismo genital/falocéntrico).</li>
+<li>El <strong>clítoris</strong> como único órgano del cuerpo humano cuya función exclusiva es el placer; fisiología de la erección y de la lubricación.</li>
+<li>La masturbación o autoerotismo como práctica saludable, natural y libre de culpa para el autoconocimiento corporal a lo largo de la vida.</li>
+</ul>
+<h4 class="subsub-title">Bloque II: Identidad, Género y Diversidad LGBTIQA+</h4>
+<ul class="custom-list">
+<li>Deslinde conceptual riguroso:</li>
+<li><em>Sexo Biológico</em>: Características genéticas, hormonales y anatómicas (cromosomas, gónadas, genitales).</li>
+<li><em>Identidad de Género</em>: Vivencia interna e individual del propio género (cisgénero, transgénero, no binario).</li>
+<li><em>Expresión de Género</em>: Manifestación externa del género a través de la vestimenta, lenguaje o conducta (masculina, femenina, andrógina).</li>
+<li><em>Orientación del Deseo / Sexual</em>: Atracción física, erótica y afectiva hacia otras personas (heterosexual, homosexual, bisexual, asexual, pansexual).</li>
+<li>Deconstrucción de la heteronormatividad y combate activo contra el acoso escolar lgtbifóbico.</li>
+</ul>
+<h4 class="subsub-title">Bloque III: Relaciones Afectivas y Deconstrucción del Mito del Amor Romántico</h4>
+<p class="body-text">La educación afectiva debe desmontar los <strong>mitos del amor romántico patriarcal</strong> que legitiman el control y la violencia de género en parejas jóvenes:</p>
+<pre class="ascii-box">
++---------------------------------------------------+---------------------------------------------------+
+| MITO DEL AMOR ROMÁNTICO PATRIARCAL                | DECONSTRUCCIÓN SOCIOEDUCATIVA EMANCIPADORA        |
++---------------------------------------------------+---------------------------------------------------+
+| Mito de la media naranja (incompletitud personal) | Somos personas completas; el amor enriquece,     |
+|                                                   | no complementa una carencia identitaria.          |
++---------------------------------------------------+---------------------------------------------------+
+| Mito de los celos como prueba de amor verdadero   | Los celos son síntoma de inseguridad, posesión    |
+| ("quien te quiere te cela")                       | y control patológico, jamás de amor sano.         |
++---------------------------------------------------+---------------------------------------------------+
+| Mito de la omnipotencia ("el amor todo lo puede") | El amor no justifica la renuncia a los propios    |
+|                                                   | proyectos, la sumisión ni la agresión continua.   |
++---------------------------------------------------+---------------------------------------------------+
+| Mito de la exclusividad y dependencia eterna      | Los vínculos son dinámicos y exigen libertad      |
+| ("no puedo vivir sin ti")                         | personal, redes de amistad y autonomía.           |
++---------------------------------------------------+---------------------------------------------------+
+</pre>
+<h4 class="subsub-title">Bloque IV: Salud Sexual, Anticoncepción y Prevención de ITS</h4>
+<ul class="custom-list">
+<li><strong>Estrategia del Doble Método Barrera</strong>: Uso simultáneo del preservativo masculino o femenino (que protege de forma exclusiva frente al VIH y otras Infecciones de Transmisión Sexual como VPH, clamidia, gonorrea o sífilis) junto con un método anticonceptivo de alta eficacia hormonal (píldora, implante subdérmico, DIU) para evitar embarazos no planificados.</li>
+<li><strong>Taller Práctico de Colocación del Preservativo</strong>: Desmitificación de errores comunes (comprobar fecha de caducidad y sello CE; abrir con las yemas de los dedos, nunca con dientes ni tijeras; presionar el depósito de la punta para expulsar el aire; desenrollar hasta la base con el pene erecto; retirar inmediatamente tras la eyaculación sujetando la base).</li>
+<li><strong>Anticoncepción de Urgencia y Salud Menstrual</strong>: Uso excepcional de la píldora postcoital (levonorgestrel / acetato de ulipristal) y acceso a recursos sanitarios.</li>
+</ul>
+<h4 class="subsub-title">Bloque V: La Sexualidad en el Entorno Digital y Prevención de Violencias</h4>
+<ul class="custom-list">
+<li>Análisis crítico de la pornografía <em>mainstream</em>: Alfabetización mediática para distinguir la ficción industrial comercial de la intimidad sexual real basada en el afecto, la reciprocidad y el cuidado.</li>
+<li>Protocolo de seguridad en redes: Prevención del <em>grooming</em> y gestión de la privacidad corporal. Pautas de <em>sexting</em> seguro (siempre bajo consentimiento libre, con mayores de edad, sin mostrar rostros ni rasgos distintivos) y sensibilización sobre el delito penal de difusión no consentida de imágenes íntimas (<strong>art. 197.7 CP</strong>).</li>
+</ul>
+<hr class="divider"/>
+<h3 class="sub-title">4.3. Metodología y Técnicas de Intervención Socioeducativa</h3>
+<ul class="custom-list">
+<li><strong>Metodología Activa, Participativa y Vivencial</strong>: Prohibición de charlas magistrales unidireccionales. Empleo de dinámicas grupales que sitúan a los jóvenes como protagonistas de su propio aprendizaje.</li>
+<li><strong>Técnicas Específicas</strong>:</li>
+<li><em>Buzón de Dudas Anónimo</em>: Garantiza la formulación libre de preguntas vergonzantes sin exposición pública.</li>
+<li><em>Dilemas Morales y Casos Prácticos</em>: Análisis en pequeños grupos de situaciones conflictivas reales (presión grupal, celos en WhatsApp, negociación del condón).</li>
+<li><em>Role-Playing y Ensayo Conductual</em>: Entrenamiento en asertividad erótica para resistir la insistencia de la pareja.</li>
+<li><em>Deconstrucción de Productos Culturales</em>: Análisis de letras de canciones populares (reggaetón, trap, pop), series televisivas y vídeos de redes sociales identificando pautas machistas o tóxicas.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="sec-title">5. SECCIONES PEDAGÓGICAS DE CIERRE</h2>
+<h3 class="sub-title">A. DATOS DE EXAMEN (25 ÍTEMS DIRECTOS)</h3>
+<div class="exam-item">1. <strong>Definición de Salud Sexual de la OMS (2006)</strong>: Estado de <strong>bienestar físico, mental, emocional y social</strong>, no meramente ausencia de enfermedad o disfunción; requiere un enfoque positivo y respetuoso.</div>
+<div class="exam-item">2. <strong>Autor del modelo biográfico e integrador en España</strong>: <strong>Félix López Sánchez</strong>.</div>
+<div class="exam-item">3. <strong>Autor del concepto de sexuación y hecho sexual humano</strong>: <strong>Efigenio Amezúa (1979)</strong>.</div>
+<div class="exam-item">4. <strong>Hito de la Declaración de los Derechos Sexuales de la WAS</strong>: Aprobada inicialmente en <strong>Valencia (1997)</strong>, revisada en Hong Kong (1999) y actualizada en <strong>Gotemburgo (2014)</strong>.</div>
+<div class="exam-item">5. <strong>Cuatro modelos de educación sexual</strong>: <strong>Moral/Tradicional</strong>, <strong>Médico-Higienista/Preventivo</strong>, <strong>Técnico/Informativo</strong> y <strong>Biográfico-Profesional/Holístico (ESI)</strong>.</div>
+<div class="exam-item">6. <strong>Organismos internacionales que avalan la ESI</strong>: <strong>UNESCO (2018)</strong> y <strong>OMS/BZgA (Estándares para Europa, 2010)</strong>.</div>
+<div class="exam-item">7. <strong>Efecto demostrado de la Educación Sexual Integral en adolescentes</strong>: <strong>Retrasa la edad de inicio de relaciones coitales</strong> e <strong>incrementa el uso de preservativos</strong>.</div>
+<div class="exam-item">8. <strong>Teoría del Apego y sus autores</strong>: <strong>John Bowlby y Mary Ainsworth</strong>; los Modelos Operantes Internos (MOI) condicionan la intimidad y la elección de pareja.</div>
+<div class="exam-item">9. <strong>Cuatro estilos de apego</strong>: <strong>Seguro</strong>, <strong>Inseguro Ansioso-Ambivalente</strong>, <strong>Inseguro Evitativo</strong> e <strong>Inseguro Desorganizado</strong>.</div>
+<div class="exam-item">10. <strong>Edad media de acceso precoz a la pornografía en internet</strong>: Situada entre los <strong>8 y 11 años de edad</strong> (Save the Children, FAD).</div>
+<div class="exam-item">11. <strong>Cuatro dimensiones de la sexualidad humana</strong>: <strong>Biológica/Reproductiva</strong>, <strong>Psicoafectiva</strong>, <strong>Sociocultural/Relacional</strong> y <strong>Ética/Legal</strong>.</div>
+<div class="exam-item">12. <strong>Ley que regula la salud sexual y el aborto</strong>: <strong>Ley Orgánica 2/2010</strong>, reformada por la <strong>Ley Orgánica 1/2023, de 28 de febrero</strong>.</div>
+<div class="exam-item">13. <strong>Edad para abortar sin permiso paterno tras LO 1/2023</strong>: A partir de los <strong>16 y 17 años</strong>.</div>
+<div class="exam-item">14. <strong>Salud menstrual en la LO 1/2023</strong>: Reconocida como parte del derecho a la salud; dispensación gratuita de productos menstruales en centros educativos y sociales.</div>
+<div class="exam-item">15. <strong>Concepto de consentimiento sexual en la LO 10/2022</strong>: <strong>Acción afirmativa clara</strong> que exprese la voluntad de la persona (<strong>art. 178 Código Penal</strong>).</div>
+<div class="exam-item">16. <strong>Tipificación del ciberacoso sexual a menores (<em>grooming</em>)</strong>: <strong>Artículo 183 ter del Código Penal</strong>.</div>
+<div class="exam-item">17. <strong>Delito de difusión no consentida de imágenes íntimas recibidas con anuencia</strong>: <strong>Artículo 197.7 del Código Penal</strong>.</div>
+<div class="exam-item">18. <strong>Ley estatal Trans y de derechos LGTBI</strong>: <strong>Ley 4/2023, de 28 de febrero</strong>.</div>
+<div class="exam-item">19. <strong>Ley de no discriminación y derechos LGTBI en Andalucía</strong>: <strong>Ley 8/2017, de 28 de diciembre</strong>.</div>
+<div class="exam-item">20. <strong>Programa marco de salud y educación sexual en centros educativos andaluces</strong>: <strong>Programa Forma Joven</strong> (línea de Sexualidad y Relaciones Igualitarias).</div>
+<div class="exam-item">21. <strong>Concepto de Doble Método Barrera</strong>: Uso simultáneo de <strong>preservativo</strong> (previene ITS) y un <strong>anticonceptivo eficaz</strong> (evita embarazo).</div>
+<div class="exam-item">22. <strong>Único órgano del cuerpo humano con función exclusiva de placer</strong>: El <strong>clítoris</strong>.</div>
+<div class="exam-item">23. <strong>Cuatro mitos del amor romántico patriarcal</strong>: Mito de la <strong>media naranja</strong>, mito de los <strong>celos como prueba de amor</strong>, mito de la <strong>omnipotencia</strong> y mito de la <strong>exclusividad/dependencia</strong>.</div>
+<div class="exam-item">24. <strong>Autor de la teoría de la autoeficacia</strong>: <strong>Albert Bandura (1977)</strong>.</div>
+<div class="exam-item">25. <strong>Ubicación del Centro de Servicios Sociales Comunitarios de Utrera</strong>: <strong>Calle Catalina de Perea, 32</strong>.</div>
+<hr class="divider"/>
+<h3 class="sub-title">B. ESQUEMA DE REPASO RÁPIDO</h3>
+<pre class="ascii-box">
+========================================================================================
+                          ESQUEMA SINÓPTICO: TEMA 43
+========================================================================================
+
+ 1. MARCO CONCEPTUAL DE LA EDUCACIÓN AFECTIVA Y SEXUAL
+    ├── Evolución: Moral teológica -> Higienismo médico -> Kinsey/Masters & Johnson -> Modelo Biográfico (López Sánchez, Amezúa).
+    ├── Salud Sexual (OMS 2006): Bienestar físico, mental, emocional y social. Placer ético y libre de violencia.
+    ├── Derechos Sexuales (WAS 1997/2014): Derechos humanos fundamentales e inalienables.
+    └── 4 Modelos: Moral (abstinencia), Higienista (fobia al riesgo), Técnico (biologicista), ESI/Biográfico (integral, UNESCO/OMS).
+
+ 2. PSICOAFECTIVIDAD Y AUTOESTIMA
+    ├── Psicoafectividad y Apego (Bowlby, Ainsworth): Modelos Operantes Internos (MOI) -> Seguro, Ansioso, Evitativo, Desorganizado.
+    ├── Autoestima: Autoimagen, Autoconcepto, Autoeficacia (Bandura), Autoaceptación (Rogers).
+    ├── Autoestima corporal y Redes: Presión estética, hipersexualización, acceso prematuro a porno comercial violento (8-11 años).
+    └── Vulnerabilidad: Baja autoestima = déficit de asertividad erótica, sumisión sexual, sexting forzado y violencia machista.
+
+ 3. DEFINICIÓN, DIMENSIONES Y LEGISLACIÓN
+    ├── 4 Dimensiones: Biológica/Reproductiva, Psicoafectiva, Sociocultural/Relacional, Ética/Legal.
+    ├── Marco Estatal: LO 2/2010 reformada por LO 1/2023 (aborto 16-17 años, salud menstrual, anticoncepción urgente gratuita).
+    │   LOPIVI 8/2021 (prevención abusos); LO 10/2022 (consentimiento art. 178 CP); Ley 4/2023 (Trans y LGTBI).
+    └── Marco Andaluz: Ley 4/2021 Infancia; Ley 8/2017 LGTBI; Programa Forma Joven (Salud/Educación).
+
+ 4. PROYECTOS DE EDUCACIÓN SEXUAL
+    ├── Fases: Diagnóstico -> Objetivos (conceptuales, procedimentales, actitudinales) -> Contenidos -> Metodología -> Evaluación.
+    ├── Contenidos clave: Anatomía/placer (clítoris), diversidad LGBTIQA+, deconstrucción amor romántico, doble método barrera, entorno digital.
+    └── Metodología activa: Buzón anónimo, dilemas éticos, role-playing de asertividad, deconstrucción cultural (música/redes).
+========================================================================================
+</pre>
+<hr class="divider"/>
+<h3 class="sub-title">C. TRAMPAS DEL TEST (7 CONFUSIONES FRECUENTES DESARTICULADAS)</h3>
+<pre class="ascii-box">
+========================================================================================
+                      TRAMPAS FRECUENTES EN EXÁMENES TIPO TEST
+========================================================================================
+
+ [TRAMPA 1]: "La educación afectivo-sexual integral incita al inicio precoz de las relaciones coitales".
+ -> FALSO. La evidencia empírica internacional de la UNESCO y la OMS demuestra de forma
+    unánime que la Educación Sexual Integral RETRASA la edad de inicio del coito y eleva
+    sustancialmente el uso correcto y consistente del preservativo.
+
+ [TRAMPA 2]: "Para la OMS, la salud sexual consiste en no tener enfermedades ni disfunciones".
+ -> FALSO. La definición canónica de la OMS (2006) establece que es un "estado de bienestar
+    físico, emocional, mental y social; NO es meramente la ausencia de enfermedad o disfunción",
+    exigiendo una vivencia placentera y libre de toda discriminación o violencia.
+
+ [TRAMPA 3]: "Tras la reforma de la Ley Orgánica 1/2023, las menores de 16 años pueden abortar solas".
+ -> FALSO. La LO 1/2023 permite abortar sin consentimiento paterno a las jóvenes de 16 Y 17 AÑOS.
+    Las menores de 16 años (14 y 15 años) continúan requiriendo el consentimiento de sus tutores legales.
+
+ [TRAMPA 4]: "El modelo preventivo o médico-higienista es el modelo pedagógico recomendado por la UNESCO".
+ -> FALSO. El modelo médico-higienista es criticado por su visión patologizante, fóbica y
+    negativa del sexo. El modelo promovido por UNESCO y OMS es el MODELO BIOGRÁFICO O DE
+    EDUCACIÓN SEXUAL INTEGRAL (ESI), de carácter positivo, afectivo y multidimensional.
+
+ [TRAMPA 5]: "El consentimiento sexual puede deducirse válidamente del silencio o de la no resistencia".
+ -> FALSO. El Código Penal (art. 178 reformado por LO 10/2022) consagra que solo existe
+    consentimiento cuando se manifiesta expresamente mediante actos libres que revelen de
+    forma inequívoca y afirmativa la voluntad de la persona.
+
+ [TRAMPA 6]: "La píldora anticonceptiva oral protege frente a los embarazos y frente a las ITS".
+ -> FALSO. Los anticonceptivos orales solo evitan el embarazo. El ÚNICO método que protege
+    eficazmente frente a las Infecciones de Transmisión Sexual (ITS) es el PRESERVATIVO (masculino/femenino).
+
+ [TRAMPA 7]: "El mito de la media naranja fomenta la autoestima y la estabilidad emocional juvenil".
+ -> FALSO. Es un mito del amor romántico patriarcal que transmite la idea de incompletitud y
+    dependencia patológica ("sin ti no soy nada"), favoreciendo la sumisión y relaciones tóxicas.
+========================================================================================
+</pre>
+<hr class="divider"/>
+<h3 class="sub-title">D. ENFOQUE PRÁCTICO EN EL AYUNTAMIENTO DE UTRERA</h3>
+<p class="body-text">La puesta en práctica de la educación afectivo-sexual y la psicoafectividad por el Técnico/a Medio de Educación Social se incardina de forma transversal en la estructura sociocomunitaria del <strong>Excmo. Ayuntamiento de Utrera</strong>:</p>
+<div class="exam-item">1. <strong>Centro de Servicios Sociales Comunitarios (calle Catalina de Perea, 32)</strong>:</div>
+<ul class="custom-list">
+<li><em>Escuelas de Familias y Programa de Tratamiento a Familias con Menores (ETF, Decreto 100/2022)</em>: Asesoramiento socioeducativo a familias sobre la gestión de la sexualidad adolescente, dotando a los progenitores de pautas comunicativas para superar tabúes, abordar el consumo de pantallas y supervisar de forma preventiva el acceso digital.</li>
+</ul>
+<div class="exam-item">2. <strong>Implementación Local del Programa Forma Joven en Utrera</strong>:</div>
+<ul class="custom-list">
+<li>Coordinación intersectorial del Educador/a Social municipal con los equipos de Atención Primaria del Servicio Andaluz de Salud (Centros de Salud <strong>Utrera Norte y Utrera Sur</strong>) y los departamentos de orientación de los institutos de secundaria del municipio: <strong>IES Ruiz Gijón, IES Ponce de León, IES José María Infantes e IES Virgen de Consolación</strong>.</li>
+<li>Dinamización de talleres socioeducativos en aulas y en las Asesorías de Forma Joven sobre asertividad sexual, colocación práctica del preservativo, deconstrucción del porno violento y desarticulación de los mitos del amor romántico.</li>
+</ul>
+<div class="exam-item">3. <strong>Centro de Información a la Mujer (CIM) de Utrera y Área de Igualdad</strong>:</div>
+<ul class="custom-list">
+<li>Talleres para la prevención de la violencia machista entre adolescentes y sensibilización sobre ciberviolencias sexuales (<em>sexting</em> no consentido, cibercirrosis relacional, control en redes sociales).</li>
+</ul>
+<div class="exam-item">4. <strong>Intervención Comunitaria en la Barriada El Tinte (Estrategia ERACIS+)</strong>:</div>
+<ul class="custom-list">
+<li>Talleres de educación afectivo-sexual orientados a jóvenes y mujeres en situación de vulnerabilidad social, rompiendo barreras de acceso a métodos de doble barrera y reforzando la autoestima corporal frente a los mandatos patriarcales.</li>
+</ul>
+<div class="exam-item">5. <strong>Cobertura Itinerante en las Pedanías Rurales de Utrera</strong>:</div>
+<ul class="custom-list">
+<li>Garantizar el acceso a talleres de salud afectivo-sexual para la juventud residente en <strong>Guadalema de los Quintero, Trajano y Pinzón</strong>, evitando el aislamiento territorial en el acceso a recursos preventivos y asesoramiento confidencial.</li>
+</ul>
+<hr class="divider"/>
+<h3 class="sub-title">E. FUENTES OFICIALES Y BIBLIOGRAFÍA CONSOLIDADA</h3>
+<ul class="custom-list">
+<li><strong>Amezúa, E. (1979)</strong>. <em>La erótica española: Teoría y práctica de la sexología</em>. Sedmay.</li>
+<li><strong>Bandura, A. (1977)</strong>. <em>Self-efficacy: Toward a unifying theory of behavioral change</em>. Psychological Review, 84(2), 191-215.</li>
+<li><strong>Bisquerra, R. (2000)</strong>. <em>Educación emocional y bienestar</em>. Praxis.</li>
+<li><strong>Bowlby, J. (1980)</strong>. <em>Attachment and Loss: Vol. 3. Loss: Sadness and Depression</em>. Basic Books.</li>
+<li><strong>España (2010)</strong>. <em>Ley Orgánica 2/2010, de 3 de marzo, de salud sexual y reproductiva y de la interrupción voluntaria del embarazo</em>. BOE nº 55, de 4 de marzo de 2010.</li>
+<li><strong>España (2021)</strong>. <em>Ley Orgánica 8/2021, de 4 de junio, de protección integral a la infancia y la adolescencia frente a la violencia</em>. BOE nº 134, de 5 de junio de 2021.</li>
+<li><strong>España (2022)</strong>. <em>Ley Orgánica 10/2022, de 6 de septiembre, de garantía integral de la libertad sexual</em>. BOE nº 216, de 7 de septiembre de 2022.</li>
+<li><strong>España (2023)</strong>. <em>Ley Orgánica 1/2023, de 28 de febrero, por la que se modifica la Ley Orgánica 2/2010</em>. BOE nº 51, de 1 de marzo de 2023.</li>
+<li><strong>España (2023)</strong>. <em>Ley 4/2023, de 28 de febrero, para la igualdad real y efectiva de las personas trans y para la garantía de los derechos de las personas LGTBI</em>. BOE nº 51, de 1 de marzo de 2023.</li>
+<li><strong>Fundación FAD Juventud (2022)</strong>. <em>Jóvenes y pornografía: Consumo, percepciones y efectos</em>. FAD.</li>
+<li><strong>Goleman, D. (1995)</strong>. <em>Emotional Intelligence</em>. Bantam Books.</li>
+<li><strong>Junta de Andalucía (2017)</strong>. <em>Ley 8/2017, de 28 de diciembre, para garantizar los derechos, la igualdad de trato y no discriminación de las personas LGTBI y sus familiares en Andalucía</em>. BOJA nº 4, de 5 de enero de 2018.</li>
+<li><strong>Junta de Andalucía (2021)</strong>. <em>Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía</em>. BOJA nº 149, de 4 de agosto de 2021.</li>
+<li><strong>Junta de Andalucía (2022)</strong>. <em>Decreto 100/2022, de 7 de junio, por el que se regula el Programa de Tratamiento a Familias con Menores</em>. BOJA nº 111, de 13 de junio de 2022.</li>
+<li><strong>Kinsey, A. C., Pomeroy, W. B., & Martin, C. E. (1948)</strong>. <em>Sexual Behavior in the Human Male</em>. W. B. Saunders.</li>
+<li><strong>López Sánchez, F. (2005)</strong>. <em>La educación sexual de los hijos</em>. Pirámide.</li>
+<li><strong>López Sánchez, F. (2018)</strong>. <em>Educación sexual y afectiva en la infancia y adolescencia</em>. Pirámide.</li>
+<li><strong>Masters, W. H., & Johnson, V. E. (1966)</strong>. <em>Human Sexual Response</em>. Little, Brown and Company.</li>
+<li><strong>OMS / BZgA (2010)</strong>. <em>Estándares de Educación Sexual para Europa: Marco para diseñadores de políticas, autoridades educativas y sanitarias y especialistas</em>. Oficina Regional de la OMS para Europa y BZgA.</li>
+<li><strong>Organización Mundial de la Salud (OMS) (2006)</strong>. <em>Defining sexual health: Report of a technical consultation on sexual health</em>. OMS.</li>
+<li><strong>Rogers, C. R. (1961)</strong>. <em>On Becoming a Person</em>. Houghton Mifflin.</li>
+<li><strong>Save the Children (2020)</strong>. <em>(Des)información sexual: Pornografía y adolescencia</em>. Save the Children España.</li>
+<li><strong>UNESCO (2018)</strong>. <em>Orientaciones técnicas internacionales sobre educación en sexualidad: Un enfoque basado en la evidencia</em>. UNESCO, ONUSIDA, UNFPA, UNICEF, ONU Mujeres y OMS.</li>
+<li><strong>World Association for Sexual Health (WAS) (2014)</strong>. <em>Declaration of Sexual Rights</em>. WAS.</li>
+</ul>
+
+
+</body>
+</html>

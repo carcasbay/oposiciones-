@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "numero": 1,
+    "titulo": "La Constitución Española y la legislación educativa. Derechos y deberes del menor en el ámbito estatal",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 2,
+    "numero": 2,
+    "titulo": "El Estatuto de Autonomía para Andalucía y la legislación educativa andaluza. Derechos y deberes del menor en el ámbito autonómico",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 3,
+    "numero": 3,
+    "titulo": "La responsabilidad penal de los menores. Marco normativo y medidas judiciales",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 4,
+    "numero": 4,
+    "titulo": "Evolución de la educación. Espacios educativos fuera de la escuela. La ciudad educadora y la compensación educativa",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 5,
+    "numero": 5,
+    "titulo": "La Pedagogía Social y la Educación Social. Paradigmas teóricos y modelos de intervención",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 6,
+    "numero": 6,
+    "titulo": "La planificación y el desarrollo curricular. Los niveles de concreción curricular. El Proyecto Educativo de Centro",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 7,
+    "numero": 7,
+    "titulo": "La organización y funcionamiento de los centros educativos. Órganos de gobierno y coordinación docente. El educador/a social en el centro",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 8,
+    "numero": 8,
+    "titulo": "El desarrollo en la primera infancia (0 a 6 años). Acompañamiento socioeducativo y detección temprana",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 9,
+    "numero": 9,
+    "titulo": "El desarrollo en la niñez intermedia (6 a 12 años). Lenguaje, desarrollo social, motor, afectivo y pensamiento concreto",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 10,
+    "numero": 10,
+    "titulo": "El desarrollo en la adolescencia y primera juventud. Desarrollo cognitivo, afectivo, sexual, moral y social. Acompañamiento socioeducativo",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 11,
+    "numero": 11,
+    "titulo": "Socialización y aprendizaje. La escuela como institución socializadora. Movimientos de renovación pedagógica y enfoque sistémico",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 12,
+    "numero": 12,
+    "titulo": "La dimensión moral de la educación. El desarrollo del juicio moral. Educación en valores, ciudadanía y pensamiento crítico",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 13,
+    "numero": 13,
+    "titulo": "Educación para la convivencia y para la paz. El Proyecto Educativo y el ROF. Planes y programas para la mejora de la convivencia",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 14,
+    "numero": 14,
+    "titulo": "Educación para la igualdad y en la diversidad. Eliminación de prejuicios sexistas y xenófobos. Coeducación y prevención de la radicalización",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 15,
+    "numero": 15,
+    "titulo": "Educación para la salud. La escuela promotora de salud y bienestar emocional. Educación afectivo-sexual y prevención de adicciones",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 16,
+    "numero": 16,
+    "titulo": "Educación para el ocio y el tiempo libre. Modelos, recursos y agentes de intervención socioeducativa",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 17,
+    "numero": 17,
+    "titulo": "Las habilidades y competencias sociales. Asertividad y estilos de comunicación. Técnicas asertivas, regulación de conflictos y mediación",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 18,
+    "numero": 18,
+    "titulo": "Aspectos e implicaciones socioeducativas de la diversidad. La escuela inclusiva y programas de atención a contextos desfavorecidos",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 19,
+    "numero": 19,
+    "titulo": "El trabajo socioeducativo con alumnado en situación de riesgo y/o desamparo social. Concepto y evaluación del riesgo social. Acompañamiento, mentoría y conflicto social",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 20,
+    "numero": 20,
+    "titulo": "Absentismo escolar y su incidencia en el ámbito educativo, social y personal. Normativa, instituciones y colaboración social",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 21,
+    "numero": 21,
+    "titulo": "Causas del absentismo escolar. Estructura, agentes y modelos de coordinación socioeducativa en Andalucía",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 22,
+    "numero": 22,
+    "titulo": "El maltrato infantil y juvenil. Tipologías de desprotección. El Sistema SIMIA en Andalucía y el protocolo en el ámbito educativo",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 23,
+    "numero": 23,
+    "titulo": "Organización y estructura de los servicios de orientación y apoyo técnico en el sistema educativo andaluz",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 24,
+    "numero": 24,
+    "titulo": "El educador o educadora social como apoyo técnico. El modelo de asesoramiento colaborativo y el trabajo multidisciplinar",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 25,
+    "numero": 25,
+    "titulo": "Competencias profesionales, modelos y principios éticos y deontológicos de la Educación Social",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 26,
+    "numero": 26,
+    "titulo": "El educador o educadora social en el ámbito educativo formal. Funciones, modelos de inserción y buenas prácticas en Andalucía",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 27,
+    "numero": 27,
+    "titulo": "Métodos y técnicas de intervención socioeducativa. El Estudio de Casos y el Proyecto Educativo Individualizado (PEI)",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 28,
+    "numero": 28,
+    "titulo": "La investigación en Educación Social. Métodos y técnicas. La Investigación-Acción Participativa (IAP)",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 29,
+    "numero": 29,
+    "titulo": "El Sistema Público de Servicios Sociales de Andalucía. Estructura, prestaciones, el PRISO y la Historia Social Única Electrónica (CoheSSión)",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 30,
+    "numero": 30,
+    "titulo": "La educación inclusiva y las Comunidades de Aprendizaje. Aprendizaje dialógico y Actuaciones Educativas de Éxito",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 31,
+    "numero": 31,
+    "titulo": "La evaluación en el ámbito socioeducativo. Modelos, técnicas e indicadores de evaluación de programas y proyectos",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 32,
+    "numero": 32,
+    "titulo": "La intervención socioeducativa con familias. Modelos, parentalidad positiva y compromisos educativos en Andalucía",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 33,
+    "numero": 33,
+    "titulo": "La dinamización sociofamiliar en los centros educativos. AMPAS, escuelas de familias y participación comunitaria",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 34,
+    "numero": 34,
+    "titulo": "El educador o educadora social en contextos multiculturales. Diversidad cultural e intervención con la comunidad gitana en Andalucía",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 35,
+    "numero": 35,
+    "titulo": "La pedagogía de grupos. Estructura, dinámicas y técnicas de intervención grupal. Modelos de Tuckman y Moreno",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 36,
+    "numero": 36,
+    "titulo": "Las redes sociales y la intervención comunitaria en contextos urbanos y rurales en Andalucía",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 37,
+    "numero": 37,
+    "titulo": "Agentes de colaboración social, voluntariado y organizaciones no gubernamentales (ONGs). Marco normativo andaluz",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 38,
+    "numero": 38,
+    "titulo": "El papel del educador o educadora social en la participación del alumnado. Asociacionismo escolar y modelos de participación infantil y juvenil",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 39,
+    "numero": 39,
+    "titulo": "Educación de personas adultas y educación permanente. Marco normativo andaluz, modelos de intervención y desarrollo comunitario",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 40,
+    "numero": 40,
+    "titulo": "Las zonas en riesgo de exclusión social. Iniciativas institucionales y la Estrategia Regional Andaluza para la Cohesión e Inclusión Social (ERACIS)",
+    "totalPreguntas": 15,
+    "bloque": "especifico",
+    "oposicionId": "andalucia"
+  }
+]

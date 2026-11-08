@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 51: La familia y la escuela como agentes de socialización - Oposición Educación Social Utrera</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 18mm 18mm 18mm;
+    @top-left {
+      content: "OPOSICIÓN EDUCACIÓN SOCIAL (GRUPO A2) - AYUNTAMIENTO DE UTRERA | TEMA 51";
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 7.8pt;
+      color: #666;
+      border-bottom: 0.5pt solid #bbb;
+      padding-bottom: 2mm;
+    }
+    @top-right {
+      content: "TEMA 51: FAMILIA Y ESCUELA AGENTES SOCIALIZACIÓN";
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 7.8pt;
+      color: #666;
+      border-bottom: 0.5pt solid #bbb;
+      padding-bottom: 2mm;
+    }
+    @bottom-center {
+      content: "Página " counter(page) " de " counter(pages);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 8pt;
+      color: #666;
+    }
+  }
+
+  body {
+    font-family: 'Georgia', serif;
+    font-size: 10pt;
+    line-height: 1.45;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+  }
+
+  .header-box {
+    background: linear-gradient(135deg, #1b365d 0%, #2b547e 100%);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    page-break-inside: avoid;
+  }
+
+  .inst-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10.5pt;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    color: #f0f4f8;
+  }
+
+  .badges-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+  }
+
+  .badge {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 7.8pt;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 3px;
+    display: inline-block;
+  }
+
+  .badge-primary { background-color: #dbeafe; color: #1e40af; }
+  .badge-secondary { background-color: #f1f5f9; color: #334155; }
+  .badge-warning { background-color: #fef3c7; color: #92400e; }
+
+  h1.doc-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #1b365d;
+    margin: 10px 0 6px 0;
+    line-height: 1.25;
+    text-align: left;
+    page-break-after: avoid;
+  }
+
+  h2.section-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 11.2pt;
+    font-weight: bold;
+    color: #1b365d;
+    border-bottom: 1.5px solid #1b365d;
+    padding-bottom: 3px;
+    margin: 14px 0 7px 0;
+    text-align: left;
+    page-break-after: avoid;
+  }
+
+  h2.header-exam { color: #1e3a8a; border-color: #1e3a8a; }
+  h2.header-scheme { color: #047857; border-color: #047857; }
+  h2.header-traps { color: #b91c1c; border-color: #b91c1c; }
+  h2.header-practical { color: #4338ca; border-color: #4338ca; }
+  h2.header-sources { color: #374151; border-color: #374151; }
+
+  h3.subsection-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10.2pt;
+    font-weight: 600;
+    color: #2b547e;
+    margin: 10px 0 4px 0;
+    text-align: left;
+    page-break-after: avoid;
+  }
+
+  h4.subsubsection-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 9.5pt;
+    font-weight: 600;
+    color: #334155;
+    margin: 7px 0 3px 0;
+    text-align: left;
+    page-break-after: avoid;
+  }
+
+  p {
+    margin: 0 0 6px 0;
+  }
+
+  ul {
+    margin: 3px 0 7px 18px;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 3px;
+  }
+
+  strong {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    color: #0f172a;
+  }
+
+  .ascii-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 3.5px solid #1b365d;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.2pt;
+    line-height: 1.25;
+    padding: 6px 8px;
+    margin: 7px 0;
+    white-space: pre;
+    overflow-x: hidden;
+    page-break-inside: avoid;
+    border-radius: 3px;
+  }
+
+  .table-container {
+    margin: 7px 0;
+    page-break-inside: avoid;
+  }
+
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.5pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  table.data-table th {
+    background-color: #1b365d;
+    color: white;
+    font-weight: 600;
+    padding: 5px 6px;
+    text-align: left;
+    border: 1px solid #1b365d;
+  }
+
+  table.data-table td {
+    padding: 4px 6px;
+    border: 1px solid #cbd5e1;
+    vertical-align: top;
+  }
+
+  table.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+  }
+
+  .trap-q {
+    background-color: #fff1f2;
+    border-left: 3px solid #e11d48;
+    padding: 3px 7px;
+    margin: 3px 0;
+    list-style: none;
+    font-size: 8.8pt;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .trap-a {
+    background-color: #f0fdf4;
+    border-left: 3px solid #16a34a;
+    padding: 3px 7px;
+    margin: 2px 0 6px 0;
+    list-style: none;
+    font-size: 8.8pt;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .exam-item {
+    background-color: #f0fdf4;
+    border-left: 3px solid #15803d;
+    padding: 3.5px 7px;
+    margin-bottom: 3.5px;
+    font-size: 8.6pt;
+    font-family: 'Segoe UI', sans-serif;
+    page-break-inside: avoid;
+    border-radius: 2px;
+  }
+
+  .num-item {
+    margin-bottom: 4px;
+  }
+
+  .divider {
+    border: 0;
+    border-top: 1px solid #cbd5e1;
+    margin: 10px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-box">
+  <div class="inst-title">Excmo. Ayuntamiento de Utrera | Subescala Técnica - Grupo A2</div>
+  <div class="badges-row">
+    <span class="badge badge-primary">Educador/a Social</span>
+    <span class="badge badge-secondary">BOP Sevilla nº 102 (29/05/2026)</span>
+    <span class="badge badge-warning">Tema 51 - Específico</span>
+  </div>
+</div>
+
+<h1 class="doc-title">Tema 51: La familia y la escuela como agentes de socialización. El papel de la familia en la educación y desarrollo de los hijos</h1>
+<p><strong>Convocatoria:</strong> Técnico/a Medio de Educación Social (Subescala Técnica, Grupo A2) — Excmo. Ayuntamiento de Utrera (Sevilla) <strong>Oferta de Empleo Público:</strong> Consolidada (BOP de Sevilla nº 102, de 29/05/2026) <strong>Bloque:</strong> Materias Específicas (Tema 51)</p>
+<hr class="divider"/>
+<h2 class="section-title">1. Introducción y Justificación Epistemológica y Legal</h2>
+<p>La configuración del ser humano como sujeto social constituye uno de los fenómenos más complejos y determinantes de la existencia comunitaria. Lejos de ser un proceso meramente biológico o madurativo, la humanización del individuo exige su incorporación progresiva a una constelación de significados, símbolos, normas, expectativas y valores compartidos. En este proceso, denominado genéricamente <strong>socialización</strong>, convergen dos instituciones matrices que ostentan la primacía histórica, antropológica y funcional en el desarrollo de la infancia y la adolescencia: <strong>la familia y la escuela</strong>.</p>
+<p>Desde la perspectiva de la <strong>Pedagogía Social</strong> y de la intervención profesional de la <strong>Educación Social</strong> en la Administración Local, el análisis de la familia y de la escuela no puede reducirse a una mera contemplación teórica de dos instituciones aisladas. Ambas constituyen los dos entornos ecológicos nucleares —los dos microsistemas primordiales en el paradigma de <strong>Urie Bronfenbrenner</strong>— cuya articulación funcional, o cuya fractura y discontinuidad, condicionan radicalmente las trayectorias de inclusión o de vulnerabilidad social de la infancia.</p>
+<p>El presente tema se incardina de forma directa en el marco competencial de la plaza de <strong>Técnico/a Medio de Educación Social (Grupo A2)</strong> del <strong>Excmo. Ayuntamiento de Utrera</strong>, cuyas funciones en el <strong>Centro de Servicios Sociales Comunitarios (sito en calle Catalina de Perea, 32)</strong> exigen una capacitación técnica de excelencia para mediar en los conflictos de la interfaz familia-escuela, erradicar el <strong>absentismo escolar</strong>, promover la <strong>parentalidad positiva</strong> y dinamizar programas socioeducativos en entornos de especial vulnerabilidad, tales como la <strong>Barriada El Tinte</strong> a través de la estrategia <strong>ERACIS+</strong>, así como en las pedanías rurales del municipio (<strong>Guadalema de los Quintero, Trajano y Pinzón</strong>).</p>
+<p>El fundamento normativo superior de esta materia se halla arraigado en la <strong>Constitución Española de 1978</strong>:</p>
+<ul>
+<li>El <strong>artículo 27 de la CE</strong> consagra el derecho fundamental a la educación, reconociendo la libertad de enseñanza (art. 27.1), el derecho que asiste a los padres para que sus hijos reciban la formación moral y religiosa acorde con sus convicciones (art. 27.3), la obligatoriedad y gratuidad de la enseñanza básica (art. 27.4), y la participación efectiva de profesores, familias y alumnado en la gestión y control de los centros sostenidos con fondos públicos (art. 27.7).</li>
+<li>El <strong>artículo 39 de la CE</strong> establece el mandato directo a los poderes públicos de asegurar la protección social, económica y jurídica de la familia, así como la protección integral de los menores.</li>
+</ul>
+<p>Este mandato constitucional se proyecta legislativamente en la <strong>Ley Orgánica 8/1985, de 3 de julio, Reguladora del Derecho a la Educación (LODE)</strong>, en la <strong>Ley Orgánica 2/2006, de 3 de mayo, de Educación (LOE)</strong>, profundamente reformada por la <strong>Ley Orgánica 3/2020, de 29 de diciembre (LOMLOE)</strong>, en la <strong>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA)</strong>, en los <strong>Decretos 327/2010 y 328/2010</strong> (Reglamentos Orgánicos de IES y CEIP en Andalucía), y en la <strong>Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía</strong>.</p>
+<hr class="divider"/>
+<h2 class="section-title">2. La Socialización como Proceso Psicosocial, Cultural y Educativo</h2>
+<h3 class="subsection-title">2.1. Concepto Sociológico y Naturaleza de la Socialización</h3>
+<p>La socialización se define científicamente como el proceso interactivo y continuo a lo largo del ciclo vital mediante el cual el individuo interioriza los elementos socioculturales de su ambiente, los integra en la estructura de su personalidad bajo la influencia de experiencias y de agentes sociales significativos, y se adapta al entorno social en cuyo seno debe vivir (<strong>Guy Rocher, 1990</strong>).</p>
+<p>Desde los orígenes de la sociología científica, <strong>Émile Durkheim (1911)</strong> en <em>Educación y sociología</em> conceptualizó la educación como la socialización metódica de la joven generación ejercida por las generaciones adultas, cuyo fin es suscitar en el niño un cierto número de estados físicos, intelectuales y morales que le exige la sociedad política en su conjunto y el medio especial al que está particularmente destinado. Por su parte, el interaccionismo simbólico de <strong>George Herbert Mead (1934)</strong> en <em>Espíritu, persona y sociedad</em> demostró que el autoconcepto y la identidad social (<em>el self</em>) se constituyen mediante la interacción lingüística, en un proceso donde el sujeto internaliza sucesivamente las actitudes de los <em>"otros significativos"</em> hasta conformar la estructura del <em>"otro generalizado"</em>.</p>
+<h3 class="subsection-title">2.2. La Distinción Canónica: Socialización Primaria y Socialización Secundaria</h3>
+<p>La formulación teórica más consolidada, rigurosa y universalmente admitida en la sociología contemporánea se debe a <strong>Peter Berger y Thomas Luckmann (1966)</strong> en su obra cumbre <em>La construcción social de la realidad. Tratado de sociología del conocimiento</em>. Berger y Luckmann estructuran el proceso de socialización en dos fases cualitativamente diferenciadas:</p>
+<pre class="ascii-box">                            PROCESO DE SOCIALIZACIÓN HUMANA
+                         (Peter Berger y Thomas Luckmann, 1966)
+                                          │
+              ┌───────────────────────────┴───────────────────────────┐
+              ▼                                                       ▼
+    SOCIALIZACIÓN PRIMARIA                                  SOCIALIZACIÓN SECUNDARIA
+ ────────────────────────────────                       ────────────────────────────────
+ · Agente nuclear: LA FAMILIA.                          · Agentes: LA ESCUELA, pares, trabajo.
+ · Carga afectiva: Intensa, primordial,                 · Carga afectiva: Baja, formalizada,
+   adhesión emocional incondicional.                      relaciones neutrales e instrumentales.
+ · Elección de agentes: Impuesta al niño                · Elección de agentes: Regulada por roles
+   (no elige a sus progenitores).                         institucionales intercambiables.
+ · Percepción ontológica: El mundo familiar             · Percepción ontológica: Aprehensión de
+   se internaliza como "el único posible".                "submundos institucionales" específicos.
+ · Contenido: Lenguaje primario, esquemas               · Contenido: Conocimiento técnico, roles
+   cognitivos básicos, identidad elemental.               ocupacionales, normas abstractas.
+ · Finalización: Con la internalización del             · Finalización: Proceso continuo que
+   concepto del "otro generalizado".                      se prolonga durante todo el ciclo vital.
+</pre>
+<p class="num-item"><strong>1.</strong> <strong>La Socialización Primaria</strong>:</p>
+<ul>
+<li>Es la primera por la que el individuo atraviesa en la niñez, convirtiéndose en miembro de la sociedad. Se efectúa primordialmente en el seno de la <strong>familia</strong>.</li>
+<li>Posee una <strong>carga afectiva primordial y arrolladora</strong>. La adhesión emocional a los "otros significativos" (padres, cuidadores) es condición indispensable para que el aprendizaje y la interiorización tengan éxito. El niño no elige a sus figuras parentales; las acepta como dadas junto con el mundo que ellas le presentan.</li>
+<li>La socialización primaria no es una mera adquisición cognoscitiva: es una <strong>aprehensión ontológica</strong>. El mundo mediatizado por los progenitores no se percibe como uno de los mundos posibles, sino como el <strong>único mundo existente y concebible</strong>.</li>
+<li>Concluye formalmente cuando en la conciencia del individuo se ha instaurado el concepto del <strong>"otro generalizado"</strong>: la abstracción progresiva de las normas y roles, pasando de la regla concreta ("mamá se enfada si tiro la sopa") a la norma social abstracta e internalizada ("la sopa no se derrama").</li>
+</ul>
+<p class="num-item"><strong>2.</strong> <strong>La Socialización Secundaria</strong>:</p>
+<ul>
+<li>Es cualquier proceso posterior que induce al individuo ya socializado a nuevos sectores del mundo objetivo de su sociedad. Su agente prototípico en la infancia y juventud es <strong>la escuela</strong>, a la que siguen el grupo de pares, la universidad, el centro de trabajo y los medios de comunicación.</li>
+<li>Supone la interiorización de <strong>submundos institucionales</strong> específicos basados en la división social del trabajo y la formalización de roles.</li>
+<li>La carga emocional es <strong>secundaria, atenuada o prescindible</strong>. Las relaciones son formalizadas, universalistas y despersonalizadas. El profesor no es una figura de apego irremplazable, sino un funcionario o profesional que desempeña un rol institucionalmente regulado e intercambiable.</li>
+<li>Conlleva la posibilidad del <strong>distanciamiento crítico</strong>: el individuo comprende que el orden escolar o laboral es una construcción social contingente, reconociendo la relatividad de los saberes frente al absolutismo de la socialización primaria.</li>
+</ul>
+<h3 class="subsection-title">2.3. Teorías Sociológicas sobre la Socialización Escolar</h3>
+<p>La institución escolar ha sido analizada desde diversas corrientes sociológicas que deben dominarse con precisión técnica para un ejercicio de oposición:</p>
+<div class="exam-item"><strong>1.</strong> <strong>El Enfoque Funcionalista (Talcott Parsons, 1959)</strong>:</div>
+<ul>
+<li>En su ensayo canónico <em>El aula como sistema social: algunas de sus funciones en la sociedad americana</em>, Parsons analiza la transición que la escuela opera entre la familia y la sociedad adulta.</li>
+<li>La familia opera bajo patrones <strong>particularistas</strong> y de estatus <strong>adscrito</strong>: valora al niño por quién es (hijo), con independencia de su rendimiento.</li>
+<li>La escuela entrena al menor en patrones <strong>universalistas</strong> y de estatus <strong>adquirido</strong>: evalúa a todos los alumnos con idénticos criterios impersonales de rendimiento meritocrático, preparando la asignación diferencial de roles ocupacionales.</li>
+</ul>
+<div class="exam-item"><strong>2.</strong> <strong>La Teoría de la Reproducción Social y Cultural (Pierre Bourdieu y Jean-Claude Passeron, 1970)</strong>:</div>
+<ul>
+<li>En <em>La reproducción. Elementos para una teoría del sistema de enseñanza</em>, demuestran que la escuela no es neutra ni puramente meritocrática.</li>
+<li>La escuela exige y premia un determinado <strong>capital cultural</strong> (competencias lingüísticas, disposiciones estéticas, hábitos de lectura y <em>habitus</em>) que solo las familias de clases medias y altas transmiten de manera espontánea en la socialización primaria.</li>
+<li>Al tratar a todos los alumnos como iguales en el punto de partida formal, la escuela ejerce una <strong>violencia simbólica</strong>, legitimando como "éxito o talento natural" lo que en realidad es una herencia de privilegios sociales acumulados.</li>
+</ul>
+<div class="exam-item"><strong>3.</strong> <strong>La Teoría de los Códigos Sociolingüísticos (Basil Bernstein, 1971)</strong>:</div>
+<ul>
+<li>En <em>Clases, códigos y control</em>, Bernstein establece la distinción entre dos tipos de códigos de comunicación estructurados según la posición social de la familia:</li>
+<li><strong>Código Restringido</strong>: Propio de familias de clases trabajadoras; fuertemente dependiente del contexto inmediato; sintaxis simple, significados implícitos y roles comunales o posicionales.</li>
+<li><strong>Código Elaborado</strong>: Propio de familias de clases medias; descontextualizado, abstracto, con sintaxis compleja y léxico diferenciado; centrado en roles personales e individualizados.</li>
+<li>La escuela utiliza y exige de manera exclusiva el <strong>código elaborado</strong>. El desencuentro entre el código restringido primario de menores vulnerables y el código elaborado escolar provoca una ruptura que la intervención socioeducativa debe reparar mediante la mediación.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="section-title">3. La Familia y la Escuela como Agentes Socializadores: Convergencias, Divergencias y Modelos de Relación</h2>
+<h3 class="subsection-title">3.1. Análisis Comparativo Estructural y Funcional</h3>
+<p>La interacción entre la familia y la escuela no está exenta de tensiones dialécticas inherentes a sus lógicas institucionales divergentes:</p>
+<div class="table-container"><table class="data-table"><thead><tr><th>Dimensión Analítica</th><th>Institución Familiar (Socialización Primaria)</th><th>Institución Escolar (Socialización Secundaria)</th></tr></thead><tbody>
+<tr><td><strong>Criterio de Vinculación</strong></td><td>Afectivo, incondicional y consanguíneo/adoptivo.</td><td>Profesional, formal, contractual y universal.</td></tr>
+<tr><td><strong>Tratamiento del Menor</strong></td><td>Particularista: individualidad biográfica única.</td><td>Universalista: miembro del grupo-clase, reglas iguales.</td></tr>
+<tr><td><strong>Criterio de Evaluación</strong></td><td>Amor y aceptación incondicional (estatus adscrito).</td><td>Competencia, rendimiento y conducta (estatus adquirido).</td></tr>
+<tr><td><strong>Estructura Relacional</strong></td><td>Reducida, intergeneracional, jerarquía parental.</td><td>Amplia, grupo de coetáneos (<em>peer group</em>), docencia formal.</td></tr>
+<tr><td><strong>Finalidad Central</strong></td><td>Cuidado biológico, protección y seguridad ontológica.</td><td>Instrucción curricular, cualificación y socialización cívica.</td></tr>
+</tbody></table></div>
+<h3 class="subsection-title">3.2. El Enfoque Ecológico de Urie Bronfenbrenner (1979)</h3>
+<p>En su obra <em>La ecología del desarrollo humano</em>, <strong>Urie Bronfenbrenner</strong> propuso concebir el ambiente ecológico como una disposición concéntrica de estructuras seriadas, cada una contenida en la siguiente:</p>
+<pre class="ascii-box">                            EL AMBIENTE ECOLÓGICO DEL MENOR
+                              (Urie Bronfenbrenner, 1979)
+  ┌─────────────────────────────────────────────────────────────────────────────┐
+  │ MACROSISTEMA: Valores culturales, ideologías, legislación (LOMLOE, LEA).   │
+  │  ┌───────────────────────────────────────────────────────────────────────┐  │
+  │  │ EXOSISTEMA: Entorno laboral parental, Servicios Sociales, red salud.  │  │
+  │  │  ┌─────────────────────────────────────────────────────────────────┐  │  │
+  │  │  │ MESOSISTEMA: Interconexión directa FAMILIA ◄──► ESCUELA.        │  │  │
+  │  │  │  ┌───────────────────────────┐   ┌───────────────────────────┐  │  │  │
+  │  │  │  │       MICROSISTEMA        │   │       MICROSISTEMA        │  │  │  │
+  │  │  │  │         FAMILIAR          │◄─►│          ESCOLAR          │  │  │  │
+  │  │  │  │ (Relaciones cara a cara,  │   │ (Aula, compañeros, tutor, │  │  │  │
+  │  │  │  │  apego, hábitos de vida)  │   │  clima de aprendizaje)    │  │  │  │
+  │  │  │  └───────────────────────────┘   └───────────────────────────┘  │  │  │
+  │  │  └─────────────────────────────────────────────────────────────────┘  │  │
+  │  └───────────────────────────────────────────────────────────────────────┘  │
+  └─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+<p>El <strong>Mesosistema</strong> se define específicamente como el conjunto de interrelaciones que tienen lugar entre dos o más entornos en los que la persona en desarrollo participa activamente. Para el menor, el mesosistema nuclear está configurado por los vínculos entre la <strong>familia y la escuela</strong>.</p>
+<p>Bronfenbrenner postuló principios ecológicos decisivos:</p>
+<ul>
+<li>El potencial de desarrollo de un menor en un microsistema (la escuela) se incrementa cuando las demandas, expectativas y valores entre los entornos vinculados son <strong>congruentes y compatibles</strong>.</li>
+<li>El desarrollo se ve fuertemente favorecido cuando existen <strong>canales bidireccionales de comunicación abierta</strong>, confianza mutua y participación compartida en ambos escenarios.</li>
+<li>Por el contrario, la discordancia radical, el mutuo aislamiento o el conflicto abierto entre el hogar y la escuela deterioran el mesosistema y precipitan el desajuste socioescolar del menor.</li>
+</ul>
+<h3 class="subsection-title">3.3. El Modelo de Esferas de Influencia Superpuestas de Joyce Epstein</h3>
+<p>La socióloga y pedagoga estadounidense <strong>Joyce Epstein (1987, 1995, 2001)</strong>, investigadora de la Universidad Johns Hopkins, formuló el modelo más operativo y citado en la literatura pedagógica contemporánea sobre la relación familia-escuela: el <strong>Modelo de Esferas de Influencia Superpuestas</strong> (<em>Overlapping Spheres of Influence</em>).</p>
+<p>Epstein rechaza la concepción tradicional de esferas separadas e independientes (donde la escuela instruye y la familia alimenta). Por el contrario, postula que las esferas de la <strong>Familia</strong>, la <strong>Escuela</strong> y la <strong>Comunidad</strong> comparten un espacio común de intersección que puede expandirse o contraerse en función de tres fuerzas motrices: el tiempo evolutivo del alumno, las actitudes y filosofías docentes, y las prácticas familiares. En el centro exacto de la superposición se encuentra el <strong>estudiante</strong>, quien es el destinatario y agente activo del proceso.</p>
+<p>Epstein categorizó operativamente las <strong>Seis Tipologías de Implicación Familiar</strong> (<em>Epstein's Six Types of Parent Involvement</em>):</p>
+<p class="num-item"><strong>1.</strong> <strong>Tipo 1: Parenting (Crianza y Cuidados Básicos)</strong>:</p>
+<ul>
+<li>Ayudar a las familias a crear condiciones de vida y entornos en el hogar que apoyen el aprendizaje y la conducta de los menores en cada edad evolutiva.</li>
+<li>La escuela y los Servicios Sociales asisten a las familias mediante <strong>Escuelas de Familias</strong>, formación en nutrición, sueño, apego y pautas de crianza positiva.</li>
+</ul>
+<p class="num-item"><strong>2.</strong> <strong>Tipo 2: Communicating (Comunicación Bidireccional)</strong>:</p>
+<ul>
+<li>Diseñar y mantener canales de comunicación regulares, comprensibles, fluidos y en ambas direcciones (de la escuela al hogar y del hogar a la escuela) sobre programas curriculares, progreso académico y adaptaciones.</li>
+<li>Uso de tutorías, plataformas digitales oficiales (como <strong>iPasen</strong> en Andalucía) y atención a la diversidad idiomática o cultural de las familias.</li>
+</ul>
+<p class="num-item"><strong>3.</strong> <strong>Tipo 3: Volunteering (Voluntariado y Apoyo al Centro)</strong>:</p>
+<ul>
+<li>Reclutar y organizar la ayuda y el apoyo de las familias para los programas escolares, festividades, bibliotecas escolares y actividades complementarias o extraescolares.</li>
+<li>Fomentar la presencia física y activa de madres y padres en los centros docentes.</li>
+</ul>
+<p class="num-item"><strong>4.</strong> <strong>Tipo 4: Learning at Home (Aprendizaje en el Hogar)</strong>:</p>
+<ul>
+<li>Proporcionar información e ideas prácticas a las familias sobre cómo apoyar y supervisar las tareas escolares, los hábitos de lectura y las actividades educativas extracurriculares en la vivienda.</li>
+<li>Orientar sobre cómo estructurar el tiempo de estudio y supervisar el uso de pantallas y redes sociales.</li>
+</ul>
+<p class="num-item"><strong>5.</strong> <strong>Tipo 5: Decision Making (Toma de Decisiones y Gobierno Escolar)</strong>:</p>
+<ul>
+<li>Incluir a las familias como líderes y miembros con voz y voto en las decisiones del centro, consejos escolares, comisiones de trabajo y asociaciones representativas (<strong>AMPA</strong>).</li>
+<li>Fomentar la participación democrática en el gobierno escolar y el diseño del Proyecto Educativo de Centro (PEC).</li>
+</ul>
+<p class="num-item"><strong>6.</strong> <strong>Tipo 6: Collaborating with Community (Colaboración con la Comunidad)</strong>:</p>
+<ul>
+<li>Identificar, coordinar e integrar los recursos, equipamientos y servicios comunitarios (Servicios Sociales, centros de salud, bibliotecas públicas, entidades deportivas, ONGs) para enriquecer el aprendizaje y fortalecer a las familias y al propio centro.</li>
+<li>Es el ámbito predilecto de actuación del <strong>Educador/a Social municipal</strong>.</li>
+</ul>
+<h3 class="subsection-title">3.4. Tipologías Relacionales entre Familia y Escuela</h3>
+<p>En la práctica socioeducativa se identifican tres modelos relacionales prototípicos:</p>
+<p class="num-item"><strong>1.</strong> <strong>Modelo de Escuelas Paralelas o Inhibición Mutua</strong>: División rígida del trabajo ("la escuela enseña asignaturas y los padres educan modales"). Comunicación formal mínima limitada al boletín de calificaciones o a quejas disciplinarias.</p>
+<p class="num-item"><strong>2.</strong> <strong>Modelo de Conflicto y Deslegitimación Cruzada</strong>: Relación marcada por el reproche mutuo y la desconfianza corporativa. El profesorado atribuye el bajo rendimiento a la "desestructuración y falta de interés de la familia"; la familia percibe a la escuela como una institución hostil, clasista o autoritaria que etiqueta negativamente a sus hijos.</p>
+<p class="num-item"><strong>3.</strong> <strong>Modelo de Corresponsabilidad y Partenariado (Partnership)</strong>: Alianza estratégica basada en la igualdad de estatus de los agentes educativos, la transparencia comunicativa, el reconocimiento recíproco de saberes y la corresponsabilidad en el éxito escolar del menor.</p>
+<hr class="divider"/>
+<h2 class="section-title">4. Marco Normativo de la Participación de la Familia en el Sistema Educativo</h2>
+<p>La participación de la familia en la educación no es una concesión voluntarista de los centros docentes, sino un <strong>mandato legal imperativo</strong> regulado de forma exhaustiva en el ordenamiento jurídico español y andaluz.</p>
+<pre class="ascii-box">                           PIRÁMIDE NORMATIVA DE PARTICIPACIÓN FAMILIAR
+  ┌─────────────────────────────────────────────────────────────────────────────┐
+  │ CONSTITUCIÓN ESPAÑOLA DE 1978: Art. 27.5 y 27.7 (Participación democrática) │
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │ LEGISLACIÓN BÁSICA ESTATAL: LODE 8/1985 (arts. 4 y 5) y LOMLOE 3/2020      │
+  │ (Modificación LOE 2/2006: arts. 118, 126 y 127 - Consejo Escolar)           │
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │ LEGISLACIÓN AUTONÓMICA ANDALUZA: Ley 17/2007 (LEA, arts. 7, 8 y 18);        │
+  │ Decretos 327/2010 (ROC IES) y 328/2010 (ROC CEIP); Orden 20 de junio de 2011│
+  │ (Compromisos Educativos y de Convivencia)                                  │
+  └─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+<h3 class="subsection-title">4.1. Marco Estatal: LODE y LOE-LOMLOE</h3>
+<div class="exam-item"><strong>1.</strong> <strong>Ley Orgánica 8/1985, de 3 de julio, Reguladora del Derecho a la Educación (LODE)</strong>:</div>
+<ul>
+<li>El <strong>artículo 4</strong> consagra los derechos de los padres o tutores: que sus hijos reciban educación conforme a los fines constitucionales, ser informados del progreso escolar, participar en el control y gestión del centro y asociarse libremente.</li>
+<li>El <strong>artículo 5</strong> ampara formalmente la creación y funciones de las <strong>Asociaciones de Madres y Padres de Alumnos (AMPA)</strong>, reconociendo su derecho a elevar propuestas al Consejo Escolar, recibir información y utilizar las instalaciones escolares.</li>
+</ul>
+<div class="exam-item"><strong>2.</strong> <strong>Ley Orgánica 2/2006 (LOE), modificada por la Ley Orgánica 3/2020 (LOMLOE)</strong>:</div>
+<ul>
+<li><strong>Artículo 118</strong>: Obliga a las Administraciones educativas a fomentar la participación efectiva de la comunidad educativa, reconociendo a las familias como agentes esenciales del proceso formativo.</li>
+<li><strong>Artículo 126 (Composición del Consejo Escolar)</strong>: Establece con rango preceptivo que el Consejo Escolar contará con una representación de padres y madres no inferior a un tercio del total de los componentes del órgano colegiado. Asimismo, <strong>un puesto de representación de las familias se atribuye directamente al representante designado por la AMPA más representativa del centro</strong>.</li>
+<li><strong>Artículo 127 (Atribuciones del Consejo Escolar)</strong>: Evaluar el Proyecto Educativo, aprobar la Programación General Anual (PGA), participar en la selección y evaluación de la dirección, y conocer la resolución de conflictos disciplinarios garantizando el respeto a los derechos del alumnado.</li>
+<li><strong>Artículo 121</strong>: Regula la formalización de compromisos entre las familias y los centros para estimular el progreso del alumnado.</li>
+</ul>
+<h3 class="subsection-title">4.2. Marco Autonómico Andaluz: LEA, Reglamentos Orgánicos y Orden de 2011</h3>
+<p>La Comunidad Autónoma de Andalucía ha desarrollado uno de los marcos normativos más avanzados de España para canalizar la colaboración familia-escuela:</p>
+<div class="exam-item"><strong>1.</strong> <strong>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA)</strong>:</div>
+<ul>
+<li>Los <strong>artículos 7 y 8</strong> detallan con minuciosidad el catálogo de derechos y deberes de las familias, destacando el deber de asegurar la asistencia regular a clase de sus hijos y de colaborar activamente con el profesorado.</li>
+<li>El <strong>artículo 18</strong> promueve el fortalecimiento asociativo de las familias y la suscripción de convenios de colaboración con las corporaciones locales.</li>
+</ul>
+<div class="exam-item"><strong>2.</strong> <strong>Decretos 327/2010 y 328/2010, de 13 de julio (ROC de IES y CEIP en Andalucía)</strong>:</div>
+<ul>
+<li>Aprueban los respectivos <strong>Reglamentos Orgánicos de Centro (ROC)</strong>, regulando con precisión la estructura de gobierno, el régimen de tutorías y los mecanismos de comunicación institucional con las familias.</li>
+<li>Regulan la figura del <strong>Delegado/a de Padres y Madres del Alumnado</strong> en cada grupo-clase, como órgano de mediación e interlocución directa entre el conjunto de familias de la clase y el tutor/a.</li>
+</ul>
+<div class="exam-item"><strong>3.</strong> <strong>Orden de 20 de junio de 2011 de la Consejería de Educación de la Junta de Andalucía</strong>:</div>
+<p>Esta norma es de capital importancia para los tribunales de oposición, al tipificar dos instrumentos contractuales socioeducativos formalizados por escrito:</p>
+<pre class="ascii-box">                  INSTRUMENTOS CONTRACTUALES SOCIOEDUCATIVOS EN ANDALUCÍA
+                               (Orden de 20 de junio de 2011)
+  ┌─────────────────────────────────────────┬─────────────────────────────────────────┐
+  │         COMPROMISO EDUCATIVO            │        COMPROMISO DE CONVIVENCIA        │
+  ├─────────────────────────────────────────┼─────────────────────────────────────────┤
+  │ · Objeto: Mejorar el rendimiento        │ · Objeto: Resolver problemas graves o   │
+  │   académico y la adaptación escolar.    │   reiterados de conducta y convivencia. │
+  │ · Destinatarios: Alumnado con dificultades│ · Destinatarios: Menores con conductas │
+  │   de aprendizaje, desmotivación o       │   gravemente perjudiciales para la      │
+  │   falta de hábitos de trabajo.          │   convivencia o absentismo asociado.    │
+  │ · Contenido: Medidas de apoyo al        │ · Contenido: Pautas de conducta, cese   │
+  │   estudio, control de tareas, lectura   │   de agresiones, reparación de daños,   │
+  │   diaria y asistencia continuada.       │   compromiso familiar de supervisión.   │
+  │ · Iniciativa: A propuesta del tutor/a   │ · Iniciativa: A propuesta del tutor/a o │
+  │   o a instancia de la propia familia.   │   del Equipo Directivo con la familia.  │
+  │ · Carácter: Pedagógico, formativo,      │ · Carácter: Restaurativo, preventivo,   │
+  │   preventivo y voluntario.              │   orientado a evitar la expulsión.      │
+  └─────────────────────────────────────────┴─────────────────────────────────────────┘
+</pre>
+<hr class="divider"/>
+<h2 class="section-title">5. El Papel de la Familia en la Educación y Desarrollo Integral de los Hijos</h2>
+<h3 class="subsection-title">5.1. Dimensiones del Desarrollo Infantil y Juvenil Mediadas por la Familia</h3>
+<p>La familia no es solo un ámbito de sustento biológico; es el laboratorio afectivo y moral donde se construyen los cimientos de la arquitectura psíquica del ser humano:</p>
+<p class="num-item"><strong>1.</strong> <strong>Desarrollo Afectivo, Autoconcepto y Seguridad Ontológica</strong>:</p>
+<ul>
+<li>Como se analizó en el Tema 50, la constitución de un <strong>apego seguro (Bowlby, Ainsworth)</strong> dota al niño de una base segura desde la que explorar el mundo físico y relacional.</li>
+<li>El sentimiento de autoeficacia y la autoestima básica se construyen mediante el reflejo en la mirada y el reconocimiento incondicional de los progenitores. Un niño querido y validado desarrolla resiliencia frente a las frustraciones escolares.</li>
+</ul>
+<p class="num-item"><strong>2.</strong> <strong>Desarrollo Cognitivo y Andamiaje Lingüístico</strong>:</p>
+<ul>
+<li>Siguiendo la teoría sociocultural de <strong>Lev Vygotsky (1934)</strong> y el concepto de <strong>andamiaje (<em>scaffolding</em>)</strong> de <strong>Jerome Bruner (1976)</strong>, el aprendizaje se produce en la <strong>Zona de Desarrollo Próximo (ZDP)</strong> mediante la mediación de un adulto más competente.</li>
+<li>Las familias estimuladoras dialogan, formulan preguntas abiertas, leen cuentos compartidos y enriquecen el vocabulario, dotando al menor de las herramientas cognitivas necesarias para el razonamiento abstracto formal (<strong>Piaget</strong>).</li>
+</ul>
+<p class="num-item"><strong>3.</strong> <strong>Desarrollo Moral, Social y Normativo</strong>:</p>
+<ul>
+<li>La adquisición de la empatía y de la conducta prosocial (<strong>Martin Hoffman, 2000</strong>) se modela en el clima familiar.</li>
+<li>La internalización de límites razonados permite el tránsito de la moral heterónoma a la <strong>moral autónoma (Piaget, Kohlberg)</strong>, dotando al menor de autocontrol y capacidad de convivir pacíficamente en la diversidad del aula.</li>
+</ul>
+<h3 class="subsection-title">5.2. Factores Familiares Determinantes del Rendimiento Escolar</h3>
+<p>La investigación empírica en sociología de la educación ha demostrado que el factor individual que más correlaciona con el éxito educativo no es el nivel de renta por sí solo, sino la naturaleza del <strong>capital educativo y relacional</strong> del hogar:</p>
+<p class="num-item"><strong>1.</strong> <strong>Las Expectativas Parentales y el Efecto Pigmalión</strong>:</p>
+<ul>
+<li>En su celebérrimo estudio empírico, <strong>Robert Rosenthal y Lenore Jacobson (1968)</strong> demostraron el impacto de la <strong>profecía autocumplida (<em>Pygmalion in the classroom</em>)</strong>.</li>
+<li>Cuando las familias sostienen altas expectativas académicas y transmiten una fe inquebrantable en las capacidades de sus hijos, los menores interiorizan un autoconcepto de éxito y rinden a niveles significativamente superiores. Por el contrario, las bajas expectativas familiares generan una desmovilización cognitiva destructiva.</li>
+</ul>
+<div class="exam-item"><strong>2.</strong> <strong>El Capital Social en el Hogar (James Coleman, 1988)</strong>:</div>
+<ul>
+<li>En su influyente obra <em>Social Capital in the Creation of Human Capital</em>, Coleman distinguió entre capital financiero (ingresos), capital humano (estudios de los padres) y <strong>capital social</strong>.</li>
+<li>El capital social familiar alude a la densidad y calidad de las relaciones intergeneracionales en el hogar: tiempo real que los progenitores dedican a conversar con sus hijos, supervisar sus tareas, orientar sus dudas y conectarse con otros agentes de la comunidad. Es el capital social el que activa y hace rendir al capital humano.</li>
+</ul>
+<p class="num-item"><strong>3.</strong> <strong>La Estructura y Rutinas de la Vida Cotidiana</strong>:</p>
+<ul>
+<li>La existencia en el hogar de horarios predecibles para el descanso nocturno (8-10 horas según la edad), pautas nutricionales saludables, un espacio físico iluminado y silencioso para el estudio personal, y la <strong>supervisión crítica del uso de pantallas, videojuegos y redes sociales</strong>.</li>
+</ul>
+<h3 class="subsection-title">5.3. Discontinuidades Socioculturales, Desigualdad y Fracaso Escolar</h3>
+<p>Cuando las condiciones descritas fallan, se desencadenan procesos de desajuste que desembocan en el <strong>fracaso escolar</strong> y en el <strong>Abandono Educativo Temprano (AET)</strong>:</p>
+<ul>
+<li>El <strong>Abandono Educativo Temprano</strong> se define formalmente en la Unión Europea como el porcentaje de personas de 18 a 24 años que no han completado la Educación Secundaria Postobligatoria (Bachillerato o Formación Profesional de Grado Medio) y no siguen ningún tipo de educación o formación. Aunque España y Andalucía han reducido históricamente estas cifras, Andalucía continúa situándose en torno al 14-15%, exigiendo una respuesta decidida de la Educación Social.</li>
+<li>En sectores vulnerables, como la <strong>minoría étnica gitana</strong> o familias en extrema pobreza, opera con frecuencia una <strong>discontinuidad cultural</strong> severa:</li>
+<li>Choque entre la cultura oral, comunitaria e inmediata familiar y la cultura letrada, burocrática y diferida de la escuela.</li>
+<li>Experiencias históricas de rechazo o discriminación que suscitan en los progenitores actitudes de desconfianza defensiva frente a la institución escolar.</li>
+<li>La intervención socioeducativa debe eludir el sesgo etnocéntrico y la culpabilización de la víctima, construyendo puentes de mediación intercultural que demuestren que el éxito escolar no implica la renuncia a la propia identidad cultural.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="section-title">6. La Prevención e Intervención ante el Absentismo Escolar: Enlace Familia-Escuela</h2>
+<h3 class="subsection-title">6.1. Concepto y Tipologías de Absentismo Escolar</h3>
+<p>El absentismo escolar constituye la quiebra más grave y visible de la articulación entre familia y escuela. En España, la escolarización es un derecho-deber legalmente preceptivo entre los <strong>6 y los 16 años de edad</strong> (art. 4 de la LOMLOE; art. 154 del Código Civil; art. 9 de la Ley 4/2021 de Andalucía).</p>
+<p>Se define técnicamente como la falta de asistencia regular y continuada del alumnado en edad de escolaridad obligatoria a las clases lectivas del centro docente sin causa justificada.</p>
+<pre class="ascii-box">                            TIPOLOGÍAS DE ABSENTISMO ESCOLAR
+  ┌─────────────────────────────────────────────────────────────────────────────┐
+  │ SEGÚN LA INTENSIDAD (Criterio cuantitativo mensual):                        │
+  │ · De Baja Intensidad: Faltas injustificadas &lt; 20% del horario mensual.      │
+  │ · Moderado: Faltas injustificadas entre el 20% y el 50% del horario mensual.│
+  │ · Severo: Faltas injustificadas &gt; 50% del horario mensual.                  │
+  │ · Crónico / Desescolarización Total: Falta absoluta de asistencia continuada│
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │ SEGÚN SU MANIFESTACIÓN CUALITATIVA:                                         │
+  │ · Absentismo Pasivo ("presencial"): El menor acude físicamente al aula pero │
+  │   se desconecta de la dinámica pedagógica (apatía, rechazo o disrupción).   │
+  │ · Absentismo Selectivo: Faltas a primeras/últimas horas o a asignaturas fijas│
+  │ · Absentismo Encubierto / Autorizado: Las faltas son toleradas o justificadas│
+  │   falsamente por la familia para cuidar hermanos, compras o labores domésticas│
+  └─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+<h3 class="subsection-title">6.2. El Protocolo de Actuación en Tres Fases de la Junta de Andalucía</h3>
+<p>El marco normativo rector en Andalucía está establecido por la <strong>Orden de 19 de septiembre de 2005</strong>, por la que se desarrolla el <strong>Plan Integral para la Prevención, Control y Seguimiento del Absentismo Escolar</strong>. Esta orden diseña un circuito de intervención escalonado e interinstitucional en <strong>tres fases obligatorias</strong>:</p>
+<pre class="ascii-box">                 CIRCUITO ESCALONADO DE INTERVENCIÓN ANTE EL ABSENTISMO
+                                (Orden de 19/09/2005)
+  ┌─────────────────────────────────────────────────────────────────────────────┐
+  │ FASE 1: ÁMBITO DEL CENTRO EDUCATIVO                                         │
+  │ · Registro diario de faltas en sistema SÉNECA.                              │
+  │ · Tutor/a contacta con la familia; reunión y firma de Compromiso Educativo. │
+  │ · Intervención de Jefatura de Estudios y Departamento de Orientación / EOE. │
+  │ · Umbral de activación: Si supera el 20% de faltas injustificadas en un mes │
+  │   y fracasa la mediación interna, el centro emite informe y deriva al EMAE. │
+  └──────────────────────────────────────┬──────────────────────────────────────┘
+                                         ▼
+  ┌─────────────────────────────────────────────────────────────────────────────┐
+  │ FASE 2: ÁMBITO MUNICIPAL / SERVICIOS SOCIALES (EMAE)                        │
+  │ · Recepción por el Equipo Municipal de Atención al Absentismo (EMAE).       │
+  │ · Intervención directa del EDUCADOR/A SOCIAL: visita a domicilio, entrevista │
+  │   sociofamiliar, diagnóstico social y Plan de Intervención Socioeducativa.  │
+  │ · Mediación familia-escuela, apoyo escolar, suscripción de acuerdos firmes. │
+  │ · Elevación periódica de casos a la Comisión Municipal de Absentismo Escolar│
+  └──────────────────────────────────────┬──────────────────────────────────────┘
+                                         ▼
+  ┌─────────────────────────────────────────────────────────────────────────────┐
+  │ FASE 3: ÁMBITO PROVINCIAL Y JUDICIAL (FISCALÍA DE MENORES)                  │
+  │ · Casos recalcitrantes con rechazo absoluto o desidia parental grave.       │
+  │ · La Comisión Municipal eleva el expediente a la Comisión Provincial.       │
+  │ · Remisión formal a la FISCALÍA DE MENORES: incoación de diligencias por    │
+  │   posible delito de abandono de familia (art. 226 Código Penal).             │
+  │ · Notificación al Servicio de Protección de Menores por posible desamparo.  │
+  └─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+<hr class="divider"/>
+<h2 class="section-title">7. El/La Educador/a Social como Mediador/a y Agente de Articulación Familia-Escuela-Comunidad</h2>
+<h3 class="subsection-title">7.1. Identidad Profesional y Funciones Socioeducativas</h3>
+<p>El profesional de la Educación Social desempeña una función bisagra irreemplazable entre los microsistemas escolar y familiar. A diferencia de las figuras docentes (cuyo espacio de intervención está confinado al aula y al recinto escolar) y de los trabajadores sociales (cuyo foco primordial reside en el diagnóstico de recursos, prestaciones y valoraciones administrativas), el <strong>Educador/a Social interviene en el medio abierto y natural</strong>:</p>
+<ul>
+<li><strong>Función de Mediación Socioeducativa e Intercultural</strong>: Traduce y desactiva las incomprensiones mutuas. Ayuda a los docentes a comprender los condicionantes socioculturales de las familias vulnerables y ayuda a las familias a decodificar las demandas institucionales de la escuela.</li>
+<li><strong>Función de Acompañamiento Sociofamiliar en Domicilio</strong>: Accede a la vivienda de la familia. Observa de forma directa las condiciones materiales, rutinas, pautas de apego y distribución de espacios de estudio, asesorando in situ sobre organización del tiempo.</li>
+<li><strong>Función Pedagógica y Formativa</strong>: Diseña, coordina y dinamiza <strong>Escuelas de Familias</strong> en los barrios y centros educativos, capacitando a los progenitores en competencias parentales positivas, disciplina inductiva no violenta y gestión del estrés familiar.</li>
+<li><strong>Función de Dinamización Comunitaria</strong>: Conecta a los menores en riesgo con la red de recursos deportivos, culturales, de ocio saludable y de refuerzo socioeducativo del municipio, evitando la exclusión en el tiempo libre.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="section-title">8. Enfoque Práctico en los Servicios Sociales del Excmo. Ayuntamiento de Utrera</h2>
+<h3 class="subsection-title">8.1. Estructura Organizativa y Recursos del Municipio</h3>
+<p>El <strong>Excmo. Ayuntamiento de Utrera</strong> articula su red de atención a la infancia, adolescencia y familia a través del <strong>Centro de Servicios Sociales Comunitarios (CSSC)</strong>, centralizado en sus dependencias de la <strong>calle Catalina de Perea, nº 32</strong>.</p>
+<p>El mapa educativo de Utrera cuenta con una red densa de centros donde el Educador/a Social despliega su labor:</p>
+<ul>
+<li><strong>Colegios de Educación Infantil y Primaria (CEIP)</strong>: CEIP Rodrigo Caro, CEIP Álvarez Quintero, CEIP Coca de la Piñera, CEIP Juan Antonio Velasco, CEIP Alfonso de Orleans, CEIP Al-Ándalus y CEIP María Montessori.</li>
+<li><strong>Institutos de Educación Secundaria (IES)</strong>: IES Ruiz Gijón, IES Ponce de León, IES Virgen de Consolación e IES José María Infantes.</li>
+<li><strong>Centros en Pedanías Rurales</strong>: Colegios Públicos Rurales y centros de primaria en <strong>Guadalema de los Quintero, Trajano y Pinzón</strong>.</li>
+</ul>
+<h3 class="subsection-title">8.2. El Equipo Municipal de Atención al Absentismo (EMAE) de Utrera</h3>
+<p>En cumplimiento de la Orden de 19 de septiembre de 2005, el Ayuntamiento de Utrera tiene constituido formalmente su <strong>Equipo Municipal de Atención al Absentismo (EMAE)</strong>, adscrito al CSSC de Catalina de Perea, 32.</p>
+<p class="num-item"><strong>1.</strong> <strong>Composición Técnica</strong>:</p>
+<ul>
+<li>Técnico/a Medio de Educación Social (A2), quien ostenta el rol operativo nuclear de la intervención en calle y visitas a domicilio.</li>
+<li>Trabajador/a Social (A2), responsable de la valoración de prestaciones y recursos socioeconómicos.</li>
+<li>Colaboración con los <strong>Agentes Tutores</strong> de la <strong>Policía Local de Utrera</strong>, especializados en mediación y localización de menores en la vía pública durante el horario escolar.</li>
+</ul>
+<div class="exam-item"><strong>2.</strong> <strong>La Comisión Municipal de Absentismo Escolar de Utrera</strong>:</div>
+<ul>
+<li><strong>Presidencia</strong>: El/La Alcalde/sa de Utrera o el/la Concejal/a Delegado/a de Servicios Sociales y Educación.</li>
+<li><strong>Secretaría Técnica</strong>: Desempeñada por la Jefatura de los Servicios Sociales Comunitarios.</li>
+<li><strong>Vocales</strong>:</li>
+<li>El/La Educador/a Social del EMAE.</li>
+<li>Representante de la Inspección Educativa de la Delegación Territorial de la Junta de Andalucía.</li>
+<li>Directores/as en representación de los CEIP y de los IES del municipio.</li>
+<li>Representante del <strong>Equipo de Orientación Educativa (EOE) de Utrera</strong>.</li>
+<li>Representante de la Jefatura de la Policía Local de Utrera.</li>
+<li>Representante de la Federación Local de Asociaciones de Madres y Padres del Alumnado (FLAMPA).</li>
+<li>Representante técnico de las entidades del tercer sector vinculadas al programa ERACIS+.</li>
+<li><strong>Periodicidad</strong>: Sesiones ordinarias trimestrales y extraordinarias a demanda de casos de urgencia.</li>
+</ul>
+<h3 class="subsection-title">8.3. Intervención en Zonas Desfavorecidas: Estrategia ERACIS+ en la Barriada El Tinte</h3>
+<p>La <strong>Barriada El Tinte</strong> de Utrera constituye la zona prioritaria de intervención comunitaria en el marco de la <strong>Estrategia Regional Andaluza para la Cohesión e Inclusión Social (ERACIS+)</strong>, cofinanciada por el Fondo Social Europeo Plus (FSE+) y la Consejería de Inclusión Social, Juventud, Familias e Igualdad:</p>
+<ul>
+<li>En esta zona se concentra un importante colectivo de población de <strong>minoría étnica gitana</strong> y familias en riesgo severo de exclusión.</li>
+<li><strong>Acciones Socioeducativas Específicas</strong>:</li>
+<li>Puesta en marcha de programas de <strong>Acompañamiento al Éxito Escolar</strong>: aulas de refuerzo socioeducativo vespertino en locales comunitarios del barrio, dirigidas por el Educador/a Social y dinamizadores sociales.</li>
+<li>Programa intensivo de <strong>Mediación Intercultural contra el Absentismo Femenino en Secundaria</strong>: intervención directa con familias para asegurar la transición de las niñas gitanas del CEIP (como Coca de la Piñera o Álvarez Quintero) a los IES de la localidad (Ponce de León, Ruiz Gijón), evitando el abandono prematuro al llegar a la pubertad.</li>
+<li>Talleres de <strong>Alfabetización Digital Parental</strong>: formación comunitaria para que madres y padres aprendan a manejar la aplicación <strong>iPasen</strong> de la Junta de Andalucía en sus teléfonos móviles, permitiéndoles monitorizar faltas de asistencia y calificaciones en tiempo real.</li>
+</ul>
+<h3 class="subsection-title">8.4. Descentralización y Arraigo Educativo en las Pedanías: Guadalema, Trajano y Pinzón</h3>
+<p>La singularidad geográfica del término municipal de Utrera exige una atención prioritaria a sus pedanías agrícolas:</p>
+<ul>
+<li><strong>Factores de Riesgo</strong>: Aislamiento geográfico, necesidad de transporte escolar diario para cursar la ESO en Utrera, desvinculación temprana para incorporarse a faenas agrícolas temporales.</li>
+<li><strong>Actuaciones del Educador/a Social</strong>:</li>
+<li>Atención itinerante semanal en los centros cívicos de las tres pedanías.</li>
+<li>Seguimiento riguroso de las rutas del transporte escolar en coordinación con los equipos directivos de los IES receptores.</li>
+<li>Escuelas de familias descentralizadas para prevenir el abandono educativo y fomentar la continuidad en Ciclos Formativos de Formación Profesional.</li>
+</ul>
+<h3 class="subsection-title">8.5. Coordinación con el Equipo de Tratamiento Familiar (ETF)</h3>
+<p>Cuando el absentismo escolar no es una manifestación aislada sino el síntoma de una disfunción familiar grave (negligencia en la alimentación e higiene, violencia vicaria o adicciones graves de los progenitores), el Educador/a Social aplica el instrumento <strong>VALÓRAME</strong> (<strong>Decreto 100/2022 de Tratamiento Familiar de la Junta de Andalucía</strong>):</p>
+<ul>
+<li>Si se constata una situación de <strong>desprotección infantil moderada</strong>, se deriva el caso al <strong>Equipo de Tratamiento Familiar (ETF)</strong> de Utrera.</li>
+<li>El Educador Social del CSSC y el Educador del ETF articulan un <strong>Proyecto de Tratamiento Familiar (PTF)</strong> en domicilio, supeditando el mantenimiento de la guarda del menor a la restitución inmediata de su derecho a la escolarización continuada.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="section-title">9. Secciones Pedagógicas de Cierre</h2>
+<h3 class="subsection-title">A. 25 Datos de Examen (Memorización Directa para Tribunal)</h3>
+<div class="exam-item"><strong>1.</strong> <strong>Émile Durkheim (1911)</strong>: Define la educación en <em>Educación y sociología</em> como la socialización metódica de la joven generación por las generaciones adultas.</div>
+<div class="exam-item"><strong>2.</strong> <strong>Peter Berger y Thomas Luckmann (1966)</strong>: Obra canónica <em>La construcción social de la realidad</em>; distinción entre Socialización Primaria (afectiva/familiar) y Secundaria (institucional/escolar).</div>
+<p class="num-item"><strong>3.</strong> <strong>Criterio de finalización de la Socialización Primaria</strong>: Se produce con la internalización en la conciencia del menor del concepto del <strong>"otro generalizado"</strong>.</p>
+<div class="exam-item"><strong>4.</strong> <strong>Talcott Parsons (1959)</strong>: Ensayo <em>El aula como sistema social</em>; la escuela opera el tránsito del particularismo familiar adscrito al universalismo meritocrático adquirido.</div>
+<div class="exam-item"><strong>5.</strong> <strong>Pierre Bourdieu y Jean-Claude Passeron (1970)</strong>: Obra <em>La reproducción</em>; conceptos de capital cultural, <em>habitus</em> y violencia simbólica escolar.</div>
+<div class="exam-item"><strong>6.</strong> <strong>Basil Bernstein (1971)</strong>: Obra <em>Clases, códigos y control</em>; teoría sociolingüística del <strong>código restringido</strong> (clases trabajadoras) frente al <strong>código elaborado</strong> (escuela y clases medias).</div>
+<div class="exam-item"><strong>7.</strong> <strong>Urie Bronfenbrenner (1979)</strong>: Obra <em>La ecología del desarrollo humano</em>; definición del <strong>Mesosistema</strong> como conjunto de interrelaciones entre microsistemas (familia-escuela).</div>
+<div class="exam-item"><strong>8.</strong> <strong>Joyce Epstein (1987, 1995, 2001)</strong>: Modelo de <strong>Esferas de Influencia Superpuestas</strong> y las <strong>Seis Tipologías de Implicación Familiar</strong>: 1) Parenting, 2) Communicating, 3) Volunteering, 4) Learning at Home, 5) Decision Making, 6) Collaborating with Community.</div>
+<div class="exam-item"><strong>9.</strong> <strong>Robert Rosenthal y Lenore Jacobson (1968)</strong>: Demostración empírica del <strong>Efecto Pigmalión / Profecía Autocumplida</strong> en el rendimiento escolar.</div>
+<div class="exam-item"><strong>10.</strong> <strong>James Coleman (1988)</strong>: Concepto de <strong>capital social familiar</strong> como factor dinamizador del capital humano e intelectual de los menores.</div>
+<div class="exam-item"><strong>11.</strong> <strong>Artículo 27 de la Constitución Española de 1978</strong>: Consagra el derecho fundamental a la educación; art. 27.4 obligatoriedad y gratuidad básica; art. 27.7 participación democrática de profesores, familias y alumnos.</div>
+<div class="exam-item"><strong>12.</strong> <strong>Artículo 39 de la Constitución Española de 1978</strong>: Mandato a los poderes públicos de protección social, económica y jurídica de la familia e infancia.</div>
+<div class="exam-item"><strong>13.</strong> <strong>LODE (Ley Orgánica 8/1985)</strong>: Artículos 4 (derechos de los padres) y 5 (regulación y derechos de las Asociaciones de Madres y Padres de Alumnos - AMPA).</div>
+<div class="exam-item"><strong>14.</strong> <strong>LOMLOE (Ley Orgánica 3/2020)</strong>: Modifica la LOE 2/2006; art. 118 (fomento de la participación); arts. 126 y 127 (composición y atribuciones del Consejo Escolar, garantizando 1/3 de representación familiar y reserva directa a la AMPA más representativa).</div>
+<div class="exam-item"><strong>15.</strong> <strong>LEA (Ley 17/2007 de Educación de Andalucía)</strong>: Artículos 7 y 8 (catálogo autonómico de derechos y deberes de las familias); art. 18 (convenios con corporaciones locales).</div>
+<div class="exam-item"><strong>16.</strong> <strong>Decretos 327/2010 y 328/2010 de la Junta de Andalucía</strong>: Reglamentos Orgánicos de IES y CEIP en Andalucía; crean la figura del Delegado/a de Padres y Madres del Alumnado por aula.</div>
+<div class="exam-item"><strong>17.</strong> <strong>Orden de 20 de junio de 2011 de Andalucía</strong>: Regula la tutoría y la formalización escrita de dos figuras contractuales: <strong>Compromisos Educativos</strong> (rendimiento/estudio) y <strong>Compromisos de Convivencia</strong> (conducta/resolución pacífica).</div>
+<div class="exam-item"><strong>18.</strong> <strong>Orden de 19 de septiembre de 2005 de Andalucía</strong>: Aprueba el Plan Integral para la Prevención, Control y Seguimiento del Absentismo Escolar en Andalucía.</div>
+<div class="exam-item"><strong>19.</strong> <strong>Umbral oficial de absentismo en Andalucía (Orden 19/09/2005)</strong>: Falta injustificada a clase de más de 5 días o 25 horas lectivas al mes (superación del <strong>20% del horario mensual</strong>).</div>
+<div class="exam-item"><strong>20.</strong> <strong>Circuito de tres fases del absentismo escolar en Andalucía</strong>: Fase 1 (Centro Educativo) $ightarrow$ Fase 2 (Ámbito Municipal / Servicios Sociales - EMAE) $ightarrow$ Fase 3 (Ámbito Provincial / Fiscalía de Menores).</div>
+<div class="exam-item"><strong>21.</strong> <strong>Artículo 226 del Código Penal</strong>: Tipifica el delito de abandono de familia por incumplimiento de los deberes legales de asistencia y custodia (escolarización obligatoria).</div>
+<div class="exam-item"><strong>22.</strong> <strong>Artículo 154 del Código Civil</strong>: Obligación de los progenitores de velar por los hijos, tenerlos en su compañía, alimentarlos, educarlos y procurarles una formación integral.</div>
+<div class="exam-item"><strong>23.</strong> <strong>Presidencia de la Comisión Municipal de Absentismo</strong>: Ostentada por la <strong>Alcaldía de Utrera</strong> o concejal/a delegado/a en quien delegue (nunca por el inspector escolar ni el director del centro).</div>
+<div class="exam-item"><strong>24.</strong> <strong>Sede del CSSC de Utrera</strong>: <strong>Calle Catalina de Perea, nº 32</strong>, sede operativa del Equipo Municipal de Atención al Absentismo (EMAE).</div>
+<div class="exam-item"><strong>25.</strong> <strong>Zonas de Intervención Prioritaria en Utrera</strong>: Barriada <strong>El Tinte</strong> (Estrategia ERACIS+) y pedanías agrícolas (<strong>Guadalema de los Quintero, Trajano y Pinzón</strong>).</div>
+<hr class="divider"/>
+<h3 class="subsection-title">B. Esquema Sinóptico de Repaso Rápido</h3>
+<pre class="ascii-box">                               ESQUEMA SINÓPTICO: TEMA 51
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ 1. TEORÍA DE LA SOCIALIZACIÓN                                               │
+ │    · Primaria: Familia, afecto incondicional, mundo único, otro generalizado│
+ │      (Berger y Luckmann, 1966).                                             │
+ │    · Secundaria: Escuela, universalismo, roles formales, crítica reflexiva. │
+ │    · Sociología crítica: Funcionalismo (Parsons), Reproducción cultural     │
+ │      (Bourdieu), Códigos sociolingüísticos (Bernstein).                     │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 2. MODELOS DE RELACIÓN FAMILIA-ESCUELA                                      │
+ │    · Paradigma ecológico: El Mesosistema interconectado (Bronfenbrenner).   │
+ │    · Esferas superpuestas: Las 6 tipologías de Joyce Epstein: Crianza,      │
+ │      Comunicación, Voluntariado, Aprendizaje hogar, Toma decisiones, Comunidad│
+ │    · Tipos: Escuelas paralelas (inhibición) vs. Conflicto vs. Corresponsabilidad│
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 3. MARCO NORMATIVO DE PARTICIPACIÓN                                         │
+ │    · CE 1978: Art. 27 (derecho y participación) y Art. 39 (familia/infancia).│
+ │    · Estatal: LODE (arts. 4 y 5 - AMPA) y LOMLOE (arts. 118, 126 y 127).   │
+ │    · Andalucía: LEA 17/2007; ROC IES (D. 327/2010) y ROC CEIP (D. 328/2010).│
+ │    · Orden 20/06/2011: Compromisos Educativos vs. Compromisos Convivencia.   │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 4. PAPEL FAMILIAR Y FACTORES EVOLUTIVOS                                     │
+ │    · Desarrollo integral: Afectivo (apego), cognitivo (ZDP), moral (normas). │
+ │    · Éxito escolar: Efecto Pigmalión (Rosenthal/Jacobson) y Capital Social   │
+ │      (Coleman). Rutinas y control de pantallas.                             │
+ │    · Riesgos: Discontinuidad cultural, fracaso escolar y AET (14-15% And.). │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 5. ABSENTISMO Y ENFOQUE UTRERA (ORDEN 19/09/2005)                           │
+ │    · Intensidad: Baja (&lt;20%), Moderado (20-50%), Severo (&gt;50%), Crónico.   │
+ │    · Tres fases: Centro educativo -&gt; EMAE Municipal -&gt; Fiscalía de Menores. │
+ │    · Utrera: CSSC Catalina de Perea 32; EMAE y Comisión Municipal de        │
+ │      Absentismo; Barriada El Tinte (ERACIS+) y pedanías (Guadalema, Trajano,│
+ │      Pinzón); coordinación con ETF (Decreto 100/2022 y VALÓRAME).           │
+ └─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+<hr class="divider"/>
+<h3 class="subsection-title">C. 7 Trampas Clásicas del Test Desarticuladas</h3>
+<p class="num-item"><strong>1.</strong> <strong>Trampa sobre el agente de la Socialización Primaria y Secundaria</strong>:</p>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿En qué etapa de socialización se sitúa la educación infantil y primaria desarrollada en la escuela?"</li>
+<li class="trap-a"><em>Desarticulación:</em> La escuela es <strong>siempre</strong> un agente de <strong>socialización secundaria</strong>. Aunque la etapa de Educación Infantil escolarice a niños de 0 a 6 años, el proceso de socialización primaria corresponde con exclusividad ontológica y afectiva a la <strong>familia</strong> (o cuidadores sustitutos). La escuela introduce al menor en un submundo institucional formalizado.</li>
+</ul>
+<p class="num-item"><strong>2.</strong> <strong>Trampa sobre la autoría de las 6 Tipologías de Implicación Familiar</strong>:</p>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿Quién formuló el modelo de las 6 tipologías de implicación familiar: Urie Bronfenbrenner o Joyce Epstein?"</li>
+<li class="trap-a"><em>Desarticulación:</em> <strong>Joyce Epstein (1987, 1995)</strong>. Bronfenbrenner formuló el modelo ecológico (micro, meso, exo, macro y cronosistema). El error clásico de test consiste en atribuir a Bronfenbrenner la clasificación operativa de <em>Parenting, Communicating, Volunteering, Learning at Home, Decision Making, Collaborating</em>.</li>
+</ul>
+<div class="exam-item"><strong>3.</strong> <strong>Trampa sobre Compromisos Educativos vs. Compromisos de Convivencia (Orden 20/06/2011)</strong>:</div>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿Qué instrumento suscribe la familia de un alumno que presenta conductas de acoso escolar o indisciplina grave: el Compromiso Educativo o el de Convivencia?"</li>
+<li class="trap-a"><em>Desarticulación:</em> El <strong>Compromiso de Convivencia</strong>. El Compromiso Educativo se reserva exclusivamente para dificultades de rendimiento, hábitos de estudio, desmotivación o tareas escolares. El Compromiso de Convivencia se formaliza ante conductas gravemente perjudiciales para la convivencia pacífica del centro.</li>
+</ul>
+<div class="exam-item"><strong>4.</strong> <strong>Trampa sobre el orden de fases del Protocolo de Absentismo en Andalucía</strong>:</div>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿Puede el centro educativo remitir directamente un caso de absentismo del 25% mensual a la Fiscalía de Menores?"</li>
+<li class="trap-a"><em>Desarticulación:</em> <strong>No, bajo ninguna circunstancia procesal ordinaria</strong>. La Orden de 19 de septiembre de 2005 establece una secuencia preceptiva de 3 fases que no puede saltarse: primero agotar las medidas en el <strong>Centro (Fase 1)</strong>; si fracasa, derivar a los <strong>Servicios Sociales Municipales / EMAE (Fase 2)</strong>; únicamente si fracasa la intervención municipal, la Comisión Municipal eleva el caso a la <strong>Comisión Provincial y Fiscalía (Fase 3)</strong>. El salto directo a Fiscalía vulnera el principio de subsidiariedad y los derechos de la familia.</li>
+</ul>
+<div class="exam-item"><strong>5.</strong> <strong>Trampa sobre quién preside la Comisión Municipal de Absentismo Escolar</strong>:</div>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿Quién ostenta la Presidencia de la Comisión Municipal de Absentismo: el Inspector de Educación, el Director del IES más antiguo o el/la Alcalde/sa?"</li>
+<li class="trap-a"><em>Desarticulación:</em> La <strong>Alcaldía</strong> (o el/la Concejal/a delegado/a en materia de Servicios Sociales o Educación). La Comisión es un órgano municipal colegiado; los directores escolares y el inspector educativo son vocales técnicos, no la presidencia institucional.</li>
+</ul>
+<div class="exam-item"><strong>6.</strong> <strong>Trampa entre "Capital Cultural" de Bourdieu y "Códigos Sociolingüísticos" de Bernstein</strong>:</div>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿Qué autor formuló que las clases populares utilizan un código restringido dependiente del contexto que la escuela sanciona negativamente?"</li>
+<li class="trap-a"><em>Desarticulación:</em> <strong>Basil Bernstein</strong>. Pierre Bourdieu acuñó los conceptos de <em>capital cultural</em>, <em>habitus</em> y <em>violencia simbólica</em>. Atribuir los códigos lingüísticos (restringido y elaborado) a Bourdieu es un error muy penalizado en exámenes tipo test.</li>
+</ul>
+<div class="exam-item"><strong>7.</strong> <strong>Trampa sobre el papel y rol profesional del Educador/a Social ante el Absentismo</strong>:</div>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿Tiene el Educador/a Social competencias sancionadoras o inspectoras para multar a los padres absentistas?"</li>
+<li class="trap-a"><em>Desarticulación:</em> <strong>Falso</strong>. El Educador/a Social no ostenta autoridad inspectora ni sancionadora. Su intervención es estrictamente <strong>socioeducativa, pedagógica y de mediación comunitaria</strong>. Las competencias coercitivas corresponden a la Policía Local (actas de localización en vía pública), las sancionadoras a la Administración competente y las penales a los Juzgados de Instrucción tras denuncia de la Fiscalía de Menores.</li>
+</ul>
+<hr class="divider"/>
+<h3 class="subsection-title">D. Enfoque Práctico en el Ayuntamiento de Utrera</h3>
+<h4 class="subsubsection-title">Supuesto Práctico Modal: Intervención Socioeducativa ante Absentismo Moderado en Transición a Secundaria en la Barriada El Tinte</h4>
+<p><strong>Identificación de la Demanda y Recepción del Caso:</strong> En el mes de noviembre del curso escolar, la Jefatura de Estudios del <strong>IES Ponce de León</strong> de Utrera remite al <strong>Centro de Servicios Sociales Comunitarios (calle Catalina de Perea, 32)</strong> una ficha de derivación por absentismo escolar correspondiente a la alumna <em>M.V.H.</em>, de 12 años de edad, matriculada en 1º de ESO y residente con su familia extensa en la <strong>Barriada El Tinte</strong>.</p>
+<ul>
+<li>La menor presenta un total de 32 horas de faltas injustificadas en el último mes natural (lo que representa un <strong>26,6% del horario lectivo</strong>, rebasando el umbral del 20% fijado en la Orden de 19/09/2005).</li>
+<li>El IES constata que la alumna finalizó 6º de Primaria en el <strong>CEIP Álvarez Quintero</strong> con asistencia aceptable, pero tras el paso al instituto ha comenzado a ausentarse sistemáticamente los lunes y viernes.</li>
+<li>El centro educativo agotó la Fase 1: el tutor convocó dos reuniones a las que los progenitores no acudieron por motivos laborales/desidia, fracasando el intento de firmar un Compromiso Educativo.</li>
+</ul>
+<p><strong>Fase 2: Intervención Municipal desde el EMAE y Servicios Sociales de Utrera:</strong></p>
+<p class="num-item"><strong>1.</strong> <strong>Apertura de Expediente y Diagnóstico Socioeducativo por el Educador/a Social</strong>:</p>
+<ul>
+<li>El/La Educador/a Social del <strong>EMAE</strong> de Utrera procede a la apertura formal del expediente socioeducativo y coordina con la Trabajadora Social de la zona ERACIS+ el análisis de antecedentes convivenciales y prestaciones en el sistema CoheSSión.</li>
+</ul>
+<p class="num-item"><strong>2.</strong> <strong>Visita a Domicilio en la Barriada El Tinte</strong>:</p>
+<ul>
+<li>El Educador/a Social realiza una visita presencial al domicilio familiar en medio abierto, eludiendo la citación burocrática intimidatoria.</li>
+<li>Entrevista cualitativa con la madre y el padre: se constata que la menor pertenece a la minoría étnica gitana. Los progenitores manifiestan temores infundados hacia el ambiente del instituto ("el instituto es muy grande, hay chicos mayores y malas compañías"). La menor se queda en casa realizando labores de apoyo y cuidado de hermanos pequeños.</li>
+</ul>
+<p class="num-item"><strong>3.</strong> <strong>Plan de Intervención Socioeducativa Familiar (PIF)</strong>:</p>
+<ul>
+<li><strong>Mediación Intercultural</strong>: El Educador Social explica la obligatoriedad legal de la escolarización hasta los 16 años y los beneficios directos del graduado escolar para el futuro de la menor, desarticulando los prejuicios sobre la falta de seguridad en el IES Ponce de León.</li>
+<li><strong>Reunión Conjunta en el IES</strong>: Se programa un encuentro de acompañamiento mediador entre la familia, el tutor y el Departamento de Orientación del IES Ponce de León, donde se formaliza por escrito un <strong>Compromiso Educativo</strong> (Orden de 20 de junio de 2011), pactando un seguimiento semanal de asistencia a través de la aplicación <strong>iPasen</strong>.</li>
+<li><strong>Inclusión en Recursos Comunitarios de ERACIS+</strong>: Se inscribe a la menor en el <strong>Aula Socioeducativa de Apoyo Escolar</strong> vespertina de la Barriada El Tinte, ofreciéndole un espacio seguro de socialización entre iguales y refuerzo pedagógico para evitar el desfase curricular.</li>
+<li><strong>Capacitación Parental</strong>: Los progenitores se incorporan a los talleres de crianza positiva y alfabetización digital impartidos por el CSSC en el Centro Cívico del barrio.</li>
+</ul>
+<p class="num-item"><strong>4.</strong> <strong>Seguimiento y Resultados</strong>:</p>
+<ul>
+<li>Durante las cuatro semanas siguientes, la asistencia de <em>M.V.H.</em> se normaliza en un 96%. El Educador Social emite informe de evolución favorable a la <strong>Comisión Municipal de Absentismo Escolar de Utrera</strong>, archivándose el expediente en Fase 2 sin necesidad de derivación a Fiscalía de Menores.</li>
+</ul>
+<hr class="divider"/>
+<h3 class="subsection-title">E. Fuentes Oficiales y Bibliografía Consolidada</h3>
+<h4 class="subsubsection-title">Normativa Internacional, Estatal y Autonómica</h4>
+<ul>
+<li><strong>Constitución Española de 1978</strong> (<em>BOE nº 311, de 29 de diciembre de 1978</em>): Artículos 27 y 39.</li>
+<li><strong>Ley Orgánica 8/1985, de 3 de julio, Reguladora del Derecho a la Educación (LODE)</strong> (<em>BOE nº 159, de 4 de julio de 1985</em>).</li>
+<li><strong>Ley Orgánica 2/2006, de 3 de mayo, de Educación (LOE)</strong> (<em>BOE nº 106, de 4 de mayo de 2006</em>), modificada por la <strong>Ley Orgánica 3/2020, de 29 de diciembre (LOMLOE)</strong> (<em>BOE nº 340, de 30 de diciembre de 2020</em>).</li>
+<li><strong>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA)</strong> (<em>BOJA nº 252, de 26 de diciembre de 2007</em>).</li>
+<li><strong>Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía</strong> (<em>BOJA nº 149, de 4 de agosto de 2021</em>).</li>
+<li><strong>Decreto 327/2010, de 13 de julio</strong>, por el que se aprueba el Reglamento Orgánico de los Institutos de Educación Secundaria (<em>BOJA nº 139, de 16 de julio de 2010</em>).</li>
+<li><strong>Decreto 328/2010, de 13 de julio</strong>, por el que se aprueba el Reglamento Orgánico de las Escuelas Infantiles de segundo ciclo y de los Colegios de Educación Primaria (<em>BOJA nº 139, de 16 de julio de 2010</em>).</li>
+<li><strong>Decreto 100/2022, de 7 de junio</strong>, por el que se regula el papel de los Equipos de Tratamiento Familiar en Andalucía (<em>BOJA nº 111, de 13 de junio de 2022</em>).</li>
+<li><strong>Orden de 19 de septiembre de 2005</strong>, de la Consejería de Educación, por la que se desarrolla el Plan Integral para la Prevención, Control y Seguimiento del Absentismo Escolar (<em>BOJA nº 202, de 17 de octubre de 2005</em>).</li>
+<li><strong>Orden de 20 de junio de 2011</strong>, por la que se adoptan medidas para la promoción de la convivencia en los centros docentes sostenidos con fondos públicos y se regula el derecho a las familias a participar en el proceso educativo (<em>BOJA nº 132, de 7 de julio de 2011</em>).</li>
+<li><strong>Código Civil de España</strong> (Real Decreto de 24 de julio de 1889): Artículo 154.</li>
+<li><strong>Código Penal de España</strong> (Ley Orgánica 10/1995, de 23 de noviembre): Artículo 226.</li>
+</ul>
+<h4 class="subsubsection-title">Bibliografía Doctrinal y Científica de Referencia</h4>
+<ul>
+<li><strong>Berger, P. L., & Luckmann, T. (1966).</strong> <em>The Social Construction of Reality: A Treatise in the Sociology of Knowledge</em>. Doubleday & Company. (Trad. esp.: <em>La construcción social de la realidad</em>. Amorrortu, 1968).</li>
+<li><strong>Bernstein, B. (1971).</strong> <em>Class, Codes and Control: Theoretical Studies towards a Sociology of Language</em>. Routledge & Kegan Paul.</li>
+<li><strong>Bourdieu, P., & Passeron, J.-C. (1970).</strong> <em>La reproduction. Éléments pour une théorie du système d'enseignement</em>. Éditions de Minuit. (Trad. esp.: <em>La reproducción</em>. Editorial Laia, 1977).</li>
+<li><strong>Bronfenbrenner, U. (1979).</strong> <em>The Ecology of Human Development: Experiments by Nature and Design</em>. Harvard University Press. (Trad. esp.: <em>La ecología del desarrollo humano</em>. Paidós, 1987).</li>
+<li><strong>Bruner, J. S. (1976).</strong> <em>The Role of Tutoring in Problem Solving</em>. Journal of Child Psychology and Psychiatry, 17(2), 89-100.</li>
+<li><strong>Coleman, J. S. (1988).</strong> <em>Social Capital in the Creation of Human Capital</em>. American Journal of Sociology, 94, S95-S120.</li>
+<li><strong>Durkheim, É. (1911).</strong> <em>Éducation et sociologie</em>. Félix Alcan. (Trad. esp.: <em>Educación y sociología</em>. Península, 1975).</li>
+<li><strong>Epstein, J. L. (1987).</strong> <em>Toward a Theory of Family-School Connections: Teacher Practices and Parent Involvement</em>. En K. Hurrelmann et al. (Eds.), <em>Social Intervention: Potential and Constraints</em>. De Gruyter.</li>
+<li><strong>Epstein, J. L. (1995).</strong> <em>School/Family/Community Partnerships: Caring for the Children We Share</em>. Phi Delta Kappan, 76(9), 701-712.</li>
+<li><strong>Epstein, J. L. (2001).</strong> <em>School, Family, and Community Partnerships: Preparing Educators and Improving Schools</em>. Westview Press.</li>
+<li><strong>Hoffman, M. L. (2000).</strong> <em>Empathy and Moral Development: Implications for Caring and Justice</em>. Cambridge University Press.</li>
+<li><strong>Mead, G. H. (1934).</strong> <em>Mind, Self, and Society: From the Standpoint of a Social Behaviorist</em>. University of Chicago Press.</li>
+<li><strong>Parsons, T. (1959).</strong> <em>The School Class as a Social System: Some of Its Functions in American Society</em>. Harvard Educational Review, 29(4), 297-318.</li>
+<li><strong>Piaget, J. (1932).</strong> <em>Le jugement moral chez l'enfant</em>. Félix Alcan.</li>
+<li><strong>Rocher, G. (1990).</strong> <em>Introducción a la sociología general</em>. Herder.</li>
+<li><strong>Rosenthal, R., & Jacobson, L. (1968).</strong> <em>Pygmalion in the Classroom: Teacher Expectation and Pupils' Intellectual Development</em>. Holt, Rinehart and Winston.</li>
+<li><strong>Vygotsky, L. S. (1934).</strong> <em>Pensamiento y lenguaje</em>. Obras escogidas, Tomo II. Visor.</li>
+</ul>
+
+
+</body>
+</html>

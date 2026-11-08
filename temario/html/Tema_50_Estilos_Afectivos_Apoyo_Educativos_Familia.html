@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 50 - Oposición Educación Social Utrera</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 18mm 18mm 18mm;
+    @top-center {
+      content: "OPOSICIÓN EDUCACIÓN SOCIAL (GRUPO A2) - AYUNTAMIENTO DE UTRERA | TEMA 50";
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 8pt;
+      color: #666;
+      border-bottom: 0.5pt solid #ccc;
+      padding-bottom: 4px;
+    }
+    @bottom-center {
+      content: "Página " counter(page) " de " counter(pages);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 8pt;
+      color: #666;
+      border-top: 0.5pt solid #ccc;
+      padding-top: 4px;
+    }
+  }
+
+  body {
+    font-family: 'Georgia', serif;
+    font-size: 10pt;
+    line-height: 1.45;
+    color: #1a1a1a;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-box {
+    border-bottom: 2pt solid #0d3b66;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+
+  .inst-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 8.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0d3b66;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  .badges-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+    margin-bottom: 4px;
+  }
+
+  .badge {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+
+  .badge-primary { background-color: #e3f2fd; color: #0d47a1; border: 1px solid #bbdefb; }
+  .badge-secondary { background-color: #f3e5f5; color: #4a148c; border: 1px solid #e1bee7; }
+  .badge-warning { background-color: #fff3e0; color: #e65100; border: 1px solid #ffe0b2; }
+
+  .main-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15pt;
+    font-weight: 800;
+    color: #0d3b66;
+    line-height: 1.25;
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+
+  .sec-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 11.5pt;
+    font-weight: 700;
+    color: #0d3b66;
+    border-bottom: 1pt solid #0d3b66;
+    padding-bottom: 3px;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+
+  .sub-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 10.2pt;
+    font-weight: 700;
+    color: #1d3557;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    page-break-after: avoid;
+  }
+
+  .subsub-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 9.8pt;
+    font-weight: 700;
+    color: #2b2d42;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+
+  .subsubsub-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 9.2pt;
+    font-weight: 600;
+    font-style: italic;
+    color: #333;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    page-break-after: avoid;
+  }
+
+  .body-text {
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .body-text strong {
+    color: #000;
+  }
+
+  .custom-list {
+    margin-top: 3px;
+    margin-bottom: 6px;
+    padding-left: 20px;
+    text-align: justify;
+  }
+
+  .custom-list li {
+    margin-bottom: 3px;
+  }
+
+  .ascii-box {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.2pt;
+    line-height: 1.2;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 6px 8px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    page-break-inside: avoid;
+  }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.2pt;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    page-break-inside: avoid;
+  }
+
+  .data-table td {
+    border: 1px solid #dee2e6;
+    padding: 4px 6px;
+    vertical-align: top;
+  }
+
+  .data-table tr:first-child td {
+    background-color: #e9ecef;
+    font-weight: 700;
+    color: #0d3b66;
+  }
+
+  .callout {
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 8.8pt;
+    page-break-inside: avoid;
+  }
+
+  .warning {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    color: #664d03;
+  }
+
+  .exam-item {
+    background-color: #e8f5e9;
+    border-left: 3px solid #2e7d32;
+    padding: 3px 6px;
+    margin-bottom: 3px;
+    font-size: 8.6pt;
+    font-family: 'Segoe UI', sans-serif;
+    page-break-inside: avoid;
+  }
+
+  .divider {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 12px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-box">
+  <div class="inst-title">Excmo. Ayuntamiento de Utrera | Subescala Técnica - Grupo A2</div>
+  <div class="badges-row">
+    <span class="badge badge-primary">Educador/a Social</span>
+    <span class="badge badge-secondary">BOP Sevilla nº 102 (29/05/2026)</span>
+    <span class="badge badge-warning">Tema 50 - Específico</span>
+  </div>
+</div>
+
+<h1 class="main-title">TEMA 50: ESTILOS AFECTIVOS, DE APOYO Y EDUCATIVOS EN LA FAMILIA</h1>
+<p class="body-text"><strong>Referencia Convocatoria:</strong> Técnico/a Medio de Educación Social (Subescala Técnica, Grupo A2). Excmo. Ayuntamiento de Utrera (Sevilla). Oferta de Empleo Público consolidada (BOP de Sevilla nº 102, de 29/05/2026). Bloque de Materias Específicas.</p>
+<hr class="divider"/>
+<h2 class="sec-title">1. LA FAMILIA COMO CONTEXTO PRIMARIO DE SOCIALIZACIÓN Y DESARROLLO HUMANO</h2>
+<h3 class="sub-title">1.1. Concepto y Funciones Básicas de la Institución Familiar</h3>
+<p class="body-text">La familia constituye la institución social básica, el entorno primario de socialización y el espacio ecológico fundamental donde se configuran las dimensiones biopsicosociales, emocionales, morales y afectivas del ser humano. En el marco de la Educación Social y de la psicología del desarrollo, la familia no se define por un determinado patrón biológico o legal, sino por el entramado de <strong>relaciones de cuidado, apego, interdependencia y corresponsabilidad mutua</strong> orientadas a garantizar la supervivencia física, la seguridad afectiva y la inserción cultural y social de sus miembros más jóvenes.</p>
+<p class="body-text">Desde una perspectiva socioeducativa integral, la familia despliega <strong>cinco funciones esenciales e insustituibles</strong>:</p>
+<div class="exam-item">1. <strong>Función Nutricia y de Cuidado Físico</strong>: Garantizar la satisfacción de las necesidades fisiológicas y biológicas básicas (alimentación adecuada, higiene, abrigo, pautas de sueño, salud y vivienda digna).</div>
+<div class="exam-item">2. <strong>Función Afectiva y de Vinculación</strong>: Proporcionar un clima de calidez, aceptación incondicional y seguridad emocional que permita la génesis de un apego seguro, constituyendo el cimiento de la autoestima y de la salud mental.</div>
+<div class="exam-item">3. <strong>Función Socializadora y Cultural</strong>: Transmitir el lenguaje, los valores cívicos, las normas de convivencia, las tradiciones y los esquemas culturales que posibilitan la progresiva autonomía e integración en la comunidad.</div>
+<div class="exam-item">4. <strong>Función Protectora y de Andamiaje</strong>: Amortiguar el impacto del estrés ambiental y los riesgos externos, proporcionando una estructura predecible que proteja la indemnidad del menor.</div>
+<div class="exam-item">5. <strong>Función Normativa y de Control Conductual</strong>: Establecer límites claros, jerarquías funcionales y pautas disciplinarias no violentas que capaciten al menor para la autorregulación emocional y el respeto a los derechos ajenos.</div>
+<hr class="divider"/>
+<h3 class="sub-title">1.2. Paradigmas Teóricos: El Enfoque Sistémico y el Modelo Ecológico</h3>
+<p class="body-text">La comprensión técnica de la familia exige superar visiones lineales reduccionistas, integrando dos marcos teóricos paradigmáticos:</p>
+<ul class="custom-list">
+<li><strong>La Teoría General de Sistemas y la Terapia Familiar Estructural (Salvador Minuchin, 1974)</strong>: La familia es un <strong>sistema abierto autopoiético</strong> en constante transformación, regulado por pautas interaccionales repetitivas y organizado en torno a:</li>
+<li><em>Subsistemas</em>: Conyugal (intimidad adulta), Parental (cuidado y socialización) y Fraternal (ensayo de relaciones horizontales).</li>
+<li><em>Límites</em>: Fronteras invisibles que regulan el contacto entre subsistemas, clasificándose en <strong>límites claros</strong> (funcionales), <strong>límites difusos</strong> (familias aglutinadas o enredadas donde se ahoga la individualidad) y <strong>límites rígidos</strong> (familias desligadas o desvinculadas donde predomina el aislamiento y la negligencia).</li>
+<li><strong>El Modelo Bioecológico del Desarrollo Humano (Urie Bronfenbrenner, 1979)</strong>: Sitúa a la familia como el <strong>microsistema primordial</strong> en el que el menor experimenta relaciones cara a cara. Este microsistema se articula dinámicamente con el <strong>mesosistema</strong> (interacción familia-escuela y familia-salud), el <strong>exosistema</strong> (entornos que influyen indirectamente, como el empleo parental o la red de Servicios Sociales Comunitarios de Utrera) y el <strong>macrosistema</strong> (cultura, leyes y políticas públicas de infancia).</li>
+</ul>
+<hr class="divider"/>
+<h3 class="sub-title">1.3. Diversidad y Nuevas Tipologías Familiares</h3>
+<p class="body-text">En las últimas décadas, la sociedad contemporánea ha experimentado profundas transformaciones demográficas, legislativas y axiológicas que han dado lugar a una rica <strong>pluralidad de configuraciones familiares</strong>:</p>
+<ul class="custom-list">
+<li><strong>Familia Nuclear Biparental</strong>: Pareja heterosexual u homosexual que convive con sus hijos biológicos o adoptivos.</li>
+<li><strong>Familia Monoparental</strong>: Un único progenitor (mayoritariamente mujeres, familias monomarentales) que asume en solitario la crianza, requiriendo un especial soporte de las redes de apoyo social formal e informal frente al riesgo de sobrecarga y pobreza.</li>
+<li><strong>Familia Reconstituida, Ensamblada o Compuesta</strong>: Formada por una pareja donde al menos uno de los miembros aporta hijos procedentes de relaciones sentimentales anteriores, exigiendo una renegociación compleja de límites y roles parentales.</li>
+<li><strong>Familia Homoparental</strong>: Parejas del mismo sexo con descendencia (plenamente reconocida por la <strong>Ley 13/2005</strong>).</li>
+<li><strong>Familia Adoptiva o Acogedora</strong>: Vinculación jurídica y socioeducativa sustentada en la filiación civil o la medida de acogimiento familiar (prioritaria según la <strong>Ley 26/2015</strong>).</li>
+<li><strong>Familia Extensa</strong>: Coexistencia de varias generaciones (abuelos, tíos) bajo el mismo techo o en estrecha proximidad física y funcional.</li>
+</ul>
+<p class="body-text">> <strong>Principio socioeducativo fundamental</strong>: La investigación científica internacional ha demostrado de manera inequívoca que el ajuste psicológico, el éxito escolar y la felicidad de los menores <strong>no dependen de la estructura o morfología familiar</strong>, sino de la <strong>calidad de las dinámicas relacionales</strong>, el clima afectivo, la estabilidad de los vínculos y la coherencia en las pautas educativas.</p>
+<hr class="divider"/>
+<h2 class="sec-title">2. ESTILOS AFECTIVOS Y VINCULACIÓN EN LA FAMILIA: LA TEORÍA DEL APEGO</h2>
+<h3 class="sub-title">2.1. Fundamentos de la Teoría del Apego (John Bowlby)</h3>
+<p class="body-text">La comprensión de los estilos afectivos intrafamiliares tiene su fundamento científico en la <strong>Teoría del Apego</strong>, formulada de forma paradigmática por el psiquiatra y psicoanalista británico <strong>John Bowlby (1907-1990)</strong> en su trilogía monumental <em>Attachment and Loss</em> (1969, 1973, 1980).</p>
+<p class="body-text">Bowlby postuló que el apego es un <strong>sistema motivacional biológico primario e innato</strong>, seleccionado evolutivamente para garantizar la supervivencia de la especie humana. El recién nacido humano nace biológicamente predispuesto a buscar la proximidad de una figura protectora preferente (la figura de apego) ante situaciones de dolor, fatiga, miedo o separación.</p>
+<h4 class="subsub-title">Conceptos Nucleares de la Teoría del Apego</h4>
+<ul class="custom-list">
+<li><strong>Base Segura (<em>Secure Base</em>)</strong>: La figura de apego proporciona una plataforma de seguridad desde la cual el niño puede aventurarse a explorar el entorno físico y social, sabiendo con certeza que puede retornar a ella cuando se sienta amenazado.</li>
+<li><strong>Refugio Seguro (<em>Safe Haven</em>)</strong>: La figura de apego actúa como un remanso de contención, consuelo y regulación psicofisiológica cuando el menor experimenta aflicción o angustia.</li>
+<li><strong>Modelos Operantes Internos (MOI - <em>Internal Working Models</em>)</strong>: Esquemas cognitivo-emocionales inconscientes sobre uno mismo y sobre los demás, forjados a partir de la regularidad de las respuestas tempranas de los progenitores. Los MOI actúan como filtros interpretativos que guían las expectativas relacionales, la intimidad, la autorregulación emocional y la elección de pareja en la vida adulta, tendiendo a perpetuarse de forma <strong>intergeneracional</strong>.</li>
+</ul>
+<hr class="divider"/>
+<h3 class="sub-title">2.2. La Evaluación del Apego y los Cuatro Estilos Vinculares</h3>
+<p class="body-text">El trabajo experimental de <strong>Mary D. Salter Ainsworth (1913-1999)</strong> permitió operacionalizar la teoría de Bowlby mediante el diseño del procedimiento estandarizado de la <strong>Situación del Extraño (<em>Strange Situation</em>, 1978)</strong>, consistente en ocho episodios breves de separación y reunión con la madre en un entorno no familiar con presencia de un adulto extraño, para niños de 12 a 18 meses. Ainsworth clasificó inicialmente tres patrones de apego (A, B y C), completados posteriormente por <strong>Mary Main y Judith Solomon (1986, 1990)</strong> con el patrón desorganizado (D):</p>
+<pre class="ascii-box">
+========================================================================================
+            LOS CUATRO ESTILOS DE APEGO INFANTIL (AINSWORTH, 1978; MAIN Y SOLOMON, 1986)
+========================================================================================
+ ESTILO DE APEGO        RESPUESTA PARENTAL TÍPICA        CONDUCTA DEL MENOR EN LA SITUACIÓN
+ ---------------------------------------------------------------------------------------
+ TIPO B: APEGO SEGURO   Sensibilidad, sintonía afectiva  Explora con confianza; se angustia
+ (60-65% población)     y disponibilidad consistente.    en la separación; busca consuelo
+                                                         en el reencuentro y se calma rápido.
+ ---------------------------------------------------------------------------------------
+ TIPO A: INSEGURO       Rechazo, frialdad afectiva,      Apatía aparente; no muestra angustia
+ EVITATIVO (20%)        incomodidad ante el llanto y     abierta; evita activamente a la madre
+                                                         en el reencuentro; autosuficiencia.
+ ---------------------------------------------------------------------------------------
+ TIPO C: INSEGURO       Inconsistencia, impredecibilidad Hiperactivación del apego; angustia
+ ANSIOSO-AMBIVALENTE    (unas veces cálidos y otras      masiva en separación; en el reencuentro
+ O RESISTENTE (10-15%)  hostiles o invasivos).           busca contacto pero lo rechaza furioso.
+ ---------------------------------------------------------------------------------------
+ TIPO D: INSEGURO       Maltrato físico o emocional,     Conductas paradójicas y desorientadas
+ DESORGANIZADO          negligencia grave, terror; el    (congelamiento motor, acercamiento con
+ (Main y Solomon, 1986) cuidador asusta al niño.         cabeza girada; miedo sin solución).
+========================================================================================
+</pre>
+<div class="exam-item">1. <strong>Apego Seguro (Tipo B)</strong>: Resultado de una crianza basada en la <strong>sensibilidad parental</strong> (capacidad de percibir las señales del menor, interpretarlas con precisión y responder con prontitud y ternura adecuada). El niño experimenta que el mundo es un lugar confiable y que él es digno de amor. En el futuro exhibirá una alta autoestima, competencia social, empatía y resiliencia.</div>
+<div class="exam-item">2. <strong>Apego Inseguro Evitativo (Tipo A)</strong>: Surge ante figuras de apego que rechazan sistemáticamente las demandas de consuelo, penalizan la expresión de tristeza o promueven una autonomía precoz y forzada. El menor aprende a reprimir la manifestación externa de su angustia para evitar el rechazo parental, aunque fisiológicamente registra elevados niveles de estrés (taquicardia, cortisol elevado). Tiende a la desconexión afectiva y a la autosuficiencia defensiva.</div>
+<div class="exam-item">3. <strong>Apego Inseguro Ansioso-Ambivalente o Resistente (Tipo C)</strong>: Dimana de pautas de crianza incoherentes y erráticas, donde las figuras de apego responden en función de sus propios estados de ánimo internos y no de las necesidades reales del menor. El niño interioriza que el acceso al cuidado es incierto, recurriendo a una hiperactivación crónica de las señales de alarma (llanto desbordado, aferramiento) para mantener la atención del adulto. En la adultez exhibirá dependencia emocional, celos patológicos y pánico al abandono.</div>
+<div class="exam-item">4. <strong>Apego Inseguro Desorganizado / Desorientado (Tipo D)</strong>: Identificado por <strong>Mary Main y Judith Solomon (1986)</strong>, constituye el estilo de máximo riesgo psicopatológico. Se origina cuando la figura primaria de apego es simultáneamente la fuente biológica de supervivencia y la fuente directa de terror, amenaza o agresión. El menor se enfrenta a una paradoja irresoluble: su instinto biológico le empuja a huir de la amenaza y, al mismo tiempo, a refugiarse en la figura que le aterroriza (<strong>"miedo sin solución" / <em>fright without solution</strong></em>). En la Situación del Extraño exhibe respuestas colapsadas, desorientación espacial, estereotipias y congelamiento (<em>freezing</em>). Este estilo está masivamente presente en expedientes de maltrato infantil grave, negligencia y adicciones parentales atendidos por los Servicios Sociales Comunitarios.</div>
+<hr class="divider"/>
+<h3 class="sub-title">2.3. Clima Socioemocional Familiar: Calidez vs. Hostilidad</h3>
+<p class="body-text">El estilo afectivo de la familia no se reduce a las respuestas ante la aflicción, sino que impregna el tono emocional cotidiano del hogar:</p>
+<ul class="custom-list">
+<li><strong>Clima de Calidez y Expresividad Afectiva Positiva</strong>: Caracterizado por manifestaciones explícitas de cariño físico y verbal, escucha activa, reconocimiento de logros y validación emocional sincera. Favorece la seguridad interior y amortigua los factores de estrés escolar o comunitario.</li>
+<li><strong>Clima de Hostilidad, Frialdad y Conflicto Crónico</strong>: Caracterizado por el desprecio, la crítica destructiva constante, el sarcasmo, el silencio punitivo y los gritos reiterados. Activa de manera permanente el eje neuroendocrino del estrés en los menores, lesionando el desarrollo de la corteza prefrontal y asociándose a trastornos del apego, depresión infantil, conductas autolesivas o agresividad reactiva.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="sec-title">3. REDES Y ESTILOS DE APOYO FAMILIAR</h2>
+<h3 class="sub-title">3.1. Concepto y Tipologías Funcionales del Apoyo Social</h3>
+<p class="body-text">El bienestar y la competencia de una familia no dependen exclusivamente de sus recursos psicológicos internos, sino de su inserción en una sólida <strong>red de apoyo social</strong>. El apoyo social se define técnicamente como el conjunto de transacciones interpersonales reales o percibidas que implican ayuda emocional, instrumental, informativa o evaluativa, proporcionadas tanto por la comunidad natural como por las instituciones públicas (<strong>Sidney Cobb, 1976; James House, 1981</strong>).</p>
+<pre class="ascii-box">
+========================================================================================
+         TIPOLOGÍAS FUNCIONALES DEL APOYO SOCIAL FAMILIAR (HOUSE, 1981; COBB, 1976)
+========================================================================================
+ 1. APOYO EMOCIONAL
+    - Expresión de amor, empatía, escucha activa, calidez, respeto y preocupación sincera.
+    - Impacto: Refuerza la autoestima parental, reduce la angustia y aporta seguridad psicológica.
+ ---------------------------------------------------------------------------------------
+ 2. APOYO INSTRUMENTAL O MATERIAL
+    - Prestación directa y tangible de bienes, dinero, servicios prácticos o ayuda física.
+    - Impacto: Cuidado de menores en emergencias, préstamo económico, intendencia doméstica.
+ ---------------------------------------------------------------------------------------
+ 3. APOYO INFORMATIVO O COGNITIVO
+    - Aporte de consejos, orientación técnica, datos prácticos y alternativas de solución.
+    - Impacto: Guía para pautas educativas, acceso a prestaciones sociales, asesoramiento médico.
+ ---------------------------------------------------------------------------------------
+ 4. APOYO EVALUATIVO O DE VALORACIÓN
+    - Información relevante para la autoevaluación; retroalimentación y afirmación de competencias.
+    - Impacto: Validación de la labor parental, confirmación de que "se está haciendo bien".
+========================================================================================
+</pre>
+<hr class="divider"/>
+<h3 class="sub-title">3.2. Fuentes del Apoyo Social: Redes Informales vs. Redes Formales</h3>
+<p class="body-text">Para el Educador/a Social resulta imprescindible mapear con precisión las dos grandes vías nutricias de apoyo con las que cuenta la unidad de convivencia:</p>
+<ul class="custom-list">
+<li><strong>Redes de Apoyo Informal</strong>: Integradas por la familia extensa (con especial protagonismo de los <strong>abuelos y abuelas</strong>, quienes en la sociedad española actúan como un pilar insustituible de conciliación y amortiguador del estrés parental), las redes de amistad, vecinos de confianza y grupos comunitarios de pertenencia. Se caracterizan por la espontaneidad, la reciprocidad afectiva y la ausencia de burocracia.</li>
+<li><strong>Redes de Apoyo Formal</strong>: Constituidas por los servicios profesionales públicos y privados reglados: los <strong>Servicios Sociales Comunitarios</strong>, el sistema educativo (centros escolares, AMPAS), el sistema sanitario (Atención Primaria y Salud Mental) y las entidades del tercer sector. Se caracterizan por su carácter estructurado, técnico, planificado y regido por el ordenamiento jurídico.</li>
+</ul>
+<h4 class="subsub-title">La Hipótesis del Amortiguador del Estrés (*Buffering Hypothesis*)</h4>
+<p class="body-text">Formulada por <strong>Sheldon Cohen y Thomas Wills (1985)</strong>, esta teoría demuestra que el apoyo social ejerce un doble efecto sobre la salud familiar:</p>
+<ul class="custom-list">
+<li><em>Efecto Directo o Principal</em>: Disponer de una red de apoyo sólida incrementa de manera continuada el bienestar y la sensación de seguridad de los progenitores, con independencia de si atraviesan o no periodos de crisis.</li>
+<li><em>Efecto Amortiguador (</em>Buffering<em>)</em>: En periodos de estrés agudo o sobrecarga psicosocial extrema (desempleo, duelo, enfermedad crónica, problemas graves de conducta del menor), el apoyo social actúa como un <strong>escudo protector</strong> que amortigua la vivencia subjetiva de amenaza, evitando que el estrés derive en crisis familiares graves, negligencia pasiva o violencia intrafamiliar. Las familias aisladas socialmente multiplican de forma exponencial su vulnerabilidad a las situaciones de desamparo infantil.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="sec-title">4. ESTILOS EDUCATIVOS PARENTALES Y REPERCUSIONES EVOLUTIVAS</h2>
+<h3 class="sub-title">4.1. El Modelo Fundacional de Diana Baumrind</h3>
+<p class="body-text">La investigación científica sobre las pautas educativas familiares fue inaugurada a mediados de la década de 1960 por la psicóloga del desarrollo <strong>Diana Baumrind (1966, 1971, 1991)</strong> en la Universidad de California en Berkeley. A través de estudios longitudinales que combinaban la observación directa en el hogar con entrevistas clínicas, Baumrind identificó inicialmente tres estilos parentales arquetípicos: <strong>Autoritativo (<em>Authoritative</em>)</strong>, <strong>Autoritario (<em>Authoritarian</em>)</strong> y <strong>Permisivo (<em>Permissive</em>)</strong>.</p>
+<hr class="divider"/>
+<h3 class="sub-title">4.2. La Matriz Bidimensional Canónica de Eleanor Maccoby y John Martin (1983)</h3>
+<p class="body-text">En una revisión teórica que constituye el marco conceptual de referencia universal en la psicología contemporánea, <strong>Eleanor Maccoby y John Martin (1983)</strong> formalizaron y enriquecieron el modelo de Baumrind cruzando ortogonalmente <strong>dos dimensiones independientes y continuas de la conducta parental</strong>:</p>
+<div class="exam-item">1. <strong>Control / Exigencia (<em>Demandingness</em>)</strong>: Grado en que las figuras parentales establecen normas claras, ejercen supervisión de la conducta del menor, exigen madurez y demandan el cumplimiento de responsabilidades mediante una disciplina coherente.</div>
+<div class="exam-item">2. <strong>Afecto / Receptividad (<em>Responsiveness</em>)</strong>: Grado en que los progenitores muestran calidez, sensibilidad, sintonía emocional, apoyo incondicional, comunicación bidireccional y respeto a la individualidad del menor.</div>
+<p class="body-text">El cruce de estas dos dimensiones produce una <strong>matriz de cuatro estilos educativos parentales</strong>:</p>
+<pre class="ascii-box">
+========================================================================================
+     MATRIZ BIDIMENSIONAL DE ESTILOS EDUCATIVOS PARENTALES (MACCOBY Y MARTIN, 1983)
+========================================================================================
+                                     CONTROL / EXIGENCIA
+                                   ALTO                      BAJO
+                       +-------------------------+-------------------------+
+                  ALTO | ESTILO DEMOCRÁTICO      | ESTILO PERMISIVO        |
+                       | (AUTORITATIVO)          | (INDULGENTE)            |
+                       | - Alto afecto.          | - Alto afecto.          |
+  AFECTO /             | - Alto control.         | - Bajo control.         |
+  RECEPTIVIDAD         | - Normas razonadas.     | - Ausencia de límites.  |
+                       +-------------------------+-------------------------+
+                  BAJO | ESTILO AUTORITARIO      | ESTILO NEGLIGENTE       |
+                       | - Bajo afecto.          | (INDIFERENTE)           |
+                       | - Alto control.         | - Bajo afecto.          |
+                       | - Coerción y castigo.   | - Bajo control.         |
+                       +-------------------------+-------------------------+
+========================================================================================
+</pre>
+<hr class="divider"/>
+<h3 class="sub-title">4.3. Análisis Pormenorizado de los Cuatro Estilos Educativos</h3>
+<pre class="ascii-box">
++------------------+------------------------------+------------------------------------+------------------------------------+
+| ESTILO PARENTAL  | PAUTAS Y CONDUCTAS DE LOS    | CARACTERÍSTICAS COMUNICATIVAS     | REPERCUSIONES EVOLUTIVAS EN EL     |
+|                  | PROGENITORES                 | Y DISCIPLINARIAS                   | DESARROLLO DEL MENOR               |
++------------------+------------------------------+------------------------------------+------------------------------------+
+| DEMOCRÁTICO      | Alto afecto, alta calidez;   | Comunicación abierta bidireccional;| Alta autoestima, autorregulación,  |
+| (AUTORITATIVO)   | límites claros, coherentes y | explican el "por qué" de la norma; | empatía, éxito académico, madurez  |
+|                  | adaptados a la edad madurativa.refuerzo positivo y consecuencias.  | moral, autonomía e integración pro-social. |
++------------------+------------------------------+------------------------------------+------------------------------------+
+| AUTORITARIO      | Bajo afecto, frialdad;       | Comunicación unidireccional vertical;| Baja autoestima, timidez o agresividad |
+|                  | control estricto, exigencia  | obediencia ciega ("porque lo digo yo");| reactiva, locus de control externo, |
+|                  | ciega de sumisión sin razonar.castigo físico, gritos y descalificación.| miedo al castigo y desmotivación íntima. |
++------------------+------------------------------+------------------------------------+------------------------------------+
+| PERMISIVO        | Alto afecto, calidez elevada;| Comunicación sin estructura;       | Baja tolerancia a la frustración,  |
+| (INDULGENTE)     | escasa o nula supervisión;   | claudican ante rabietas; evitan    | impulsividad, egocentrismo, escasa |
+|                  | ausencia de límites claros.  | la confrontación por miedo al enfado.| perseverancia en metas y desajuste escolar. |
++------------------+------------------------------+------------------------------------+------------------------------------+
+| NEGLIGENTE       | Bajo afecto, frialdad total; | Inexistencia de diálogo;           | Máximo riesgo psicosocial: apego   |
+| (INDIFERENTE)    | desatención de necesidades;  | indiferencia afectiva absoluta;    | desorganizado, fracaso escolar,    |
+|                  | ausencia total de normas.    | no saben ni dónde están los hijos. | delincuencia y adicciones precoces.|
++------------------+------------------------------+------------------------------------+------------------------------------+
+</pre>
+<h4 class="subsub-title">4.3.1. Estilo Democrático o Autoritativo</h4>
+<p class="body-text">Constituye el modelo óptimo de socialización promovido por la comunidad científica y los organismos internacionales. Combina una elevada calidez emocional con el establecimiento firme de normas estructurantes. Los progenitores reconocen los derechos del menor sin claudicar en su responsabilidad rectora; razonan las reglas, escuchan las objeciones de los hijos y aplican consecuencias lógicas de forma serena. Los menores criados bajo este estilo desarrollan una sólida autoestima, elevada autoeficacia, autonomía moral interiorizada y excelentes habilidades de afrontamiento social.</p>
+<h4 class="subsub-title">4.3.2. Estilo Autoritario</h4>
+<p class="body-text">Se caracteriza por una disciplina coercitiva sustentada en la imposición del poder del adulto, la descalificación verbal y, con frecuencia, el castigo físico. Se prioriza el orden y la sumisión por encima de la comprensión. Los menores crecen en un estado de alerta y miedo crónico al error. A corto plazo exhiben conductas de acatamiento aparente, pero a medio y largo plazo desarrollan una profunda inseguridad, baja autoestima, sentimientos de culpa, dificultades para la toma de decisiones autónoma y una marcada propensión a manifestar agresividad reactiva fuera del hogar (acoso escolar) o sumisión sumisa ante figuras autoritarias externas.</p>
+<h4 class="subsub-title">4.3.3. Estilo Permisivo o Indulgente</h4>
+<p class="body-text">Progenitores enormemente afectuosos, cariñosos y receptivos, pero incapaces de sostener un límite o frustrar los deseos inmediatos del menor. Confunden el afecto con la ausencia de exigencia, tratando al niño como a un igual adulto. Los menores criados en este estilo carecen de la experiencia estructurante de la frustración tolerable, desarrollando personalidades tiránicas o egocéntricas (<em>"síndrome del emperador"</em>), caracterizadas por una bajísima tolerancia a la demora del refuerzo, impulsividad y graves conflictos de adaptación en el ámbito escolar y comunitario al enfrentarse a normas impersonales.</p>
+<h4 class="subsub-title">4.3.4. Estilo Negligente o Indiferente</h4>
+<p class="body-text">Es la modalidad más dañina y destructiva de la parentalidad, vinculada directamente a situaciones de desprotección y desamparo infantil. Los progenitores delegan por completo sus responsabilidades de supervisión y desatienden las necesidades emocionales de los menores, habitualmente desbordados por sus propios problemas personales (adicciones, trastornos psiquiátricos no tratados, exclusión severa). Los niños experimentan una vivencia desoladora de invisibilidad y abandono, manifestando graves retrasos en el desarrollo del lenguaje y cognición, apego inseguro desorganizado, déficits de autorregulación conductual y elevadísima vulnerabilidad al consumo precoz de sustancias y a conductas delictivas.</p>
+<hr class="divider"/>
+<h3 class="sub-title">4.4. Aportaciones de la Investigación en el Ámbito Español y Mediterráneo</h3>
+<p class="body-text">Investigadores españoles de reconocido prestigio internacional como <strong>Gonzalo Musitu, Enrique Gracia, María Jesús Cava y Sofía Lila (2000, 2008, 2014)</strong> han contrastado empíricamente el modelo de Maccoby y Martin en la cultura mediterránea. Sus hallazgos han aportado matices de enorme calado socioeducativo:</p>
+<ul class="custom-list">
+<li>En las culturas colectivistas y mediterráneas (donde los vínculos familiares son estrechos y comunitariamente compartidos), el <strong>estilo indulgente/permisivo</strong> —cuando va acompañado de una calidez y afecto sumamente elevados— produce niveles de autoestima y ajuste social en los menores tan altos o incluso superiores a los del estilo democrático tradicional anglosajón, debido al poder protector del afecto incondicional.</li>
+<li>No obstante, la investigación unánime confirma que el <strong>estilo autoritario</strong> resulta especialmente lesivo en la cultura española contemporánea, provocando niveles de resentimiento y desajuste significativamente más graves que en sociedades de tradición jerárquica anglosajona o asiática.</li>
+<li>Se confirma de forma categórica que el <strong>estilo negligente</strong> es universalmente devastador para el desarrollo infanto-juvenil en todas las culturas del planeta.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="sec-title">5. LA PARENTALIDAD POSITIVA COMO MARCO DE REFERENCIA SOCIOEDUCATIVO</h2>
+<h3 class="sub-title">5.1. Marco Institucional Europeo: La Recomendación Rec(2006)19</h3>
+<p class="body-text">El cambio de paradigma desde modelos patriarcales y coercitivos hacia un modelo de derechos de la infancia fue formalizado solemnemente por el Consejo de Europa en su histórica <strong>Recomendación Rec(2006)19 del Comité de Ministros a los Estados Miembros sobre políticas de apoyo a la parentalidad positiva</strong>:</p>
+<pre class="ascii-box">
+========================================================================================
+     DEFINICIÓN Y PRINCIPIOS DE PARENTALIDAD POSITIVA (CONSEJO DE EUROPA, 2006)
+========================================================================================
+ DEFINICIÓN CANÓNICA
+   "La conducta de los padres fundamentada en el interés superior del niño, que cuida,
+    desarrolla sus capacidades, no es violenta y ofrece reconocimiento y orientación,
+    incluyendo el establecimiento de límites que permitan el pleno desarrollo del niño".
+ ---------------------------------------------------------------------------------------
+ PRINCIPIOS BÁSICOS
+ 1. VÍNCULOS AFECTIVOS CÁLIDOS: Expresión de afecto, sintonía, apego seguro y aceptación.
+ 2. ENTORNO ESTRUCTURADO Y PREDECIBLE: Normas razonadas, rutinas claras y límites firmes.
+ 3. ESTIMULACIÓN Y APOYO: Fomento del aprendizaje, curiosidad y desarrollo de competencias.
+ 4. RECONOCIMIENTO Y ESCUCHA ACTIVA: Tomar en serio la opinión del menor (art. 12 CDN).
+ 5. CAPACITACIÓN NO VIOLENTA: Erradicación absoluta del castigo físico o trato humillante.
+========================================================================================
+</pre>
+<h4 class="subsub-title">Erradicación Legal del Castigo Físico</h4>
+<p class="body-text">En consonancia con los tratados internacionales, el ordenamiento jurídico español suprimió en <strong>2007 (Ley 54/2007)</strong> la histórica coletilla del <strong>artículo 154 del Código Civil</strong> que facultaba a los padres a <em>"corregir moderada y razonablemente a los hijos"</em>, consagrando taxativamente que la patria potestad debe ejercerse siempre en beneficio de los menores y <strong>con pleno respeto a su integridad física y psicológica</strong>. Este principio ha sido reforzado y blindado de manera integral por la <strong>Ley Orgánica 8/2021, de 4 de junio (LOPIVI)</strong>.</p>
+<hr class="divider"/>
+<h3 class="sub-title">5.2. Las Competencias Parentales según Jorge Barudy y Maryorie Dantagnan</h3>
+<p class="body-text">En sus obras de referencia <em>Los buenos tratos a la infancia</em> (2005) y <em>Los desafíos invisibles de ser padre o madre</em> (2010), <strong>Jorge Barudy y Maryorie Dantagnan</strong> articulan el modelo de evaluación e intervención en <strong>competencias parentales</strong>:</p>
+<ul class="custom-list">
+<li><strong>Parentalidad Biológica vs. Parentalidad Social</strong>: La procreación biológica no garantiza la capacidad psicosocial para la crianza. La parentalidad social es la capacidad adquirida de responder a las complejas necesidades evolutivas de los hijos a través de los <strong>buenos tratos</strong>.</li>
+<li><strong>Las Cuatro Áreas de Competencias Parentales</strong>:</li>
+</ul>
+<div class="exam-item">1. <em>Capacidades de Apego</em>: Habilidad para sintonizar con los estados emocionales del bebé y proporcionarle una base y refugio seguro.</div>
+<div class="exam-item">2. <em>Capacidades de Empatía Parental</em>: Habilidad para descentrarse de los propios deseos de adulto y descodificar las conductas del niño desde sus necesidades madurativas.</div>
+<div class="exam-item">3. <em>Modelos de Crianza y Socialización</em>: Conocimiento y aplicación de pautas disciplinarias coherentes, formativas y no violentas.</div>
+<div class="exam-item">4. <em>Capacidad de Utilización de Redes de Apoyo</em>: Habilidad de las figuras parentales para pedir y recibir ayuda familiar o institucional, evitando el aislamiento patológico.</div>
+<hr class="divider"/>
+<h3 class="sub-title">5.3. El Papel del Educador/a Social en la Promoción de la Parentalidad Positiva</h3>
+<p class="body-text">El Técnico/a Medio de Educación Social es el profesional de referencia técnica para el acompañamiento y capacitación de las familias en el ámbito comunitario:</p>
+<ul class="custom-list">
+<li><strong>Intervención Pedagógica en el Medio Natural</strong>: Modelado presencial de rutinas y límites en el propio domicilio familiar a través de los Equipos de Tratamiento Familiar (<strong>Decreto 100/2022</strong>).</li>
+<li><strong>Escuelas de Familias y Espacios de Formación Grupal</strong>: Diseño y dinamización de talleres socioeducativos para progenitores donde se entrena la sustitución del grito y el castigo punitivo por técnicas de refuerzo positivo, consecuencias lógicas y gestión asertiva de la frustración.</li>
+<li><strong>Fortalecimiento del Tejido Comunitario</strong>: Promoción de redes de ayuda mutua vecinal para amortiguar el aislamiento social de las familias monomarentales y en situación de vulnerabilidad.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="sec-title">6. SECCIONES PEDAGÓGICAS DE CIERRE</h2>
+<h3 class="sub-title">A. DATOS DE EXAMEN (25 ÍTEMS DIRECTOS)</h3>
+<div class="exam-item">1. <strong>Autora y año del modelo tipológico fundacional de estilos parentales</strong>: <strong>Diana Baumrind (1966, 1971)</strong> (Autoritativo, Autoritario y Permisivo).</div>
+<div class="exam-item">2. <strong>Autores y año de la matriz bidimensional canónica</strong>: <strong>Eleanor Maccoby y John Martin (1983)</strong>.</div>
+<div class="exam-item">3. <strong>Dos dimensiones continuas de Maccoby y Martin</strong>: <strong>Control/Exigencia (<em>Demandingness</em>)</strong> y <strong>Afecto/Receptividad (<em>Responsiveness</em>)</strong>.</div>
+<div class="exam-item">4. <strong>Cuatro estilos educativos de la matriz</strong>: <strong>Democrático/Autoritativo</strong>, <strong>Autoritario</strong>, <strong>Permisivo/Indulgente</strong> y <strong>Negligente/Indiferente</strong>.</div>
+<div class="exam-item">5. <strong>Estilo parental óptimo según la comunidad científica</strong>: El <strong>Estilo Democrático o Autoritativo</strong> (alto control y alto afecto).</div>
+<div class="exam-item">6. <strong>Padre fundador de la Teoría del Apego</strong>: <strong>John Bowlby</strong> (obra trilogía <em>Attachment and Loss</em>, 1969, 1973, 1980).</div>
+<div class="exam-item">7. <strong>Autora y año de la Situación del Extraño</strong>: <strong>Mary D. Salter Ainsworth (1978)</strong> (clasificó los estilos Seguro B, Evitativo A y Ambivalente C).</div>
+<div class="exam-item">8. <strong>Autores y año del Apego Inseguro Desorganizado (Tipo D)</strong>: <strong>Mary Main y Judith Solomon (1986, 1990)</strong>.</div>
+<div class="exam-item">9. <strong>Definición de apego desorganizado</strong>: <em>"Miedo sin solución"</em> (<em>fright without solution</em>); la figura de apego es la fuente de terror y de protección a la vez.</div>
+<div class="exam-item">10. <strong>Concepto de base segura (<em>secure base</em>)</strong>: Figura que permite al menor aventurarse a explorar sabiendo que puede retornar a un refugio seguro (Bowlby).</div>
+<div class="exam-item">11. <strong>Modelos Operantes Internos (MOI)</strong>: Esquemas cognitivo-emocionales inconscientes que guían las expectativas relacionales de por vida.</div>
+<div class="exam-item">12. <strong>Cuatro tipologías de apoyo social de House (1981) y Cobb (1976)</strong>: <strong>Emocional</strong>, <strong>Instrumental/Material</strong>, <strong>Informativo</strong> y <strong>Evaluativo/Valoración</strong>.</div>
+<div class="exam-item">13. <strong>Autores y año de la hipótesis del amortiguador del estrés (<em>buffering hypothesis</em>)</strong>: <strong>Sheldon Cohen y Thomas Wills (1985)</strong>.</div>
+<div class="exam-item">14. <strong>Recomendación europea marco sobre Parentalidad Positiva</strong>: <strong>Recomendación Rec(2006)19 del Comité de Ministros del Consejo de Europa</strong>.</div>
+<div class="exam-item">15. <strong>Reforma legal que erradicó la facultad de corrección física en España</strong>: <strong>Ley 54/2007</strong>, que modificó el <strong>artículo 154 del Código Civil</strong>.</div>
+<div class="exam-item">16. <strong>Ley integral frente a la violencia hacia los menores</strong>: <strong>Ley Orgánica 8/2021, de 4 de junio (LOPIVI)</strong>.</div>
+<div class="exam-item">17. <strong>Autores del modelo de competencias parentales y buenos tratos</strong>: <strong>Jorge Barudy y Maryorie Dantagnan (2005, 2010)</strong>.</div>
+<div class="exam-item">18. <strong>Autor de la Terapia Familiar Estructural y límites familiares</strong>: <strong>Salvador Minuchin (1974)</strong> (límites claros, difusos y rígidos).</div>
+<div class="exam-item">19. <strong>Autor y cuatro sistemas del Modelo Bioecológico</strong>: <strong>Urie Bronfenbrenner (1979)</strong> (Micro, Meso, Exo y Macrosistema).</div>
+<div class="exam-item">20. <strong>Investigadores españoles sobre estilos parentales en la cultura mediterránea</strong>: <strong>Gonzalo Musitu y Enrique Gracia</strong>.</div>
+<div class="exam-item">21. <strong>Decreto vigente regulador de los Equipos de Tratamiento Familiar en Andalucía</strong>: <strong>Decreto 100/2022, de 7 de junio</strong> (BOJA nº 111, de 13 de junio de 2022).</div>
+<div class="exam-item">22. <strong>Orden que aprueba la escala unificada de desprotección en Andalucía</strong>: <strong>Orden de 30 de julio de 2019 (VALÓRAME)</strong>.</div>
+<div class="exam-item">23. <strong>Familia reconstituida o ensamblada</strong>: Familia formada por una pareja donde al menos uno de los miembros aporta hijos de uniones anteriores.</div>
+<div class="exam-item">24. <strong>Consecuencia madurativa del estilo autoritario</strong>: Baja autoestima, sumisión pasiva o rebelión violenta, y locus de control externo.</div>
+<div class="exam-item">25. <strong>Ubicación del Centro de Servicios Sociales Comunitarios de Utrera</strong>: <strong>Calle Catalina de Perea, 32</strong>.</div>
+<hr class="divider"/>
+<h3 class="sub-title">B. ESQUEMA DE REPASO RÁPIDO</h3>
+<pre class="ascii-box">
+========================================================================================
+                          ESQUEMA SINÓPTICO: TEMA 50
+========================================================================================
+
+ 1. LA FAMILIA COMO CONTEXTO PRIMARIO
+    ├── Funciones Básicas: Nutricia, Afectiva, Socializadora, Protectora y Normativa.
+    ├── Paradigmas: Sistémico (Minuchin: límites claros, difusos y rígidos) | Ecológico (Bronfenbrenner).
+    └── Pluralidad Estructural: Nuclear, Monoparental, Reconstituida, Homoparental, Adoptiva/Acogedora, Extensa.
+
+ 2. ESTILOS AFECTIVOS Y TEORÍA DEL APEGO
+    ├── John Bowlby: Sistema motivacional innato, base segura, refugio seguro, Modelos Operantes Internos (MOI).
+    ├── Situación del Extraño (Ainsworth, 1978):
+    │   ├── Tipo B: Seguro (sensibilidad parental, exploración libre, consuelo eficaz).
+    │   ├── Tipo A: Inseguro Evitativo (rechazo/frialdad, autosuficiencia defensiva, supresión del afecto).
+    │   └── Tipo C: Inseguro Ansioso-Ambivalente (inconsistencia, hiperactivación, angustia y cólera).
+    └── Tipo D: Inseguro Desorganizado (Main y Solomon, 1986: maltrato, miedo sin solución, colapso de estrategias).
+
+ 3. REDES Y ESTILOS DE APOYO SOCIAL
+    ├── 4 Tipologías Funcionales (House, Cobb): Emocional, Instrumental/Material, Informativo, Evaluativo.
+    ├── Fuentes: Red Informal (familia extensa, abuelos amortiguadores) vs. Red Formal (Servicios Sociales, salud, escuela).
+    └── Hipótesis del Amortiguador del Estrés (Cohen y Wills, 1985): Efecto directo + escudo protector en crisis.
+
+ 4. ESTILOS EDUCATIVOS PARENTALES
+    ├── Matriz Bidimensional de Maccoby y Martin (1983 - Baumrind): Control/Exigencia x Afecto/Receptividad.
+    │   ├── Democrático / Autoritativo: Alto control + Alto afecto (modelo de excelencia socioeducativa).
+    │   ├── Autoritario: Alto control + Bajo afecto (disciplina punitiva, obediencia ciega, baja autoestima).
+    │   ├── Permisivo / Indulgente: Bajo control + Alto afecto (afecto sin límites, baja tolerancia a frustración).
+    │   └── Negligente / Indiferente: Bajo control + Bajo afecto (desatención, máximo riesgo de desamparo).
+    └── Investigación Mediterránea (Musitu, Gracia): Poder protector del afecto en el estilo indulgente.
+
+ 5. PARENTALIDAD POSITIVA
+    ├── Recomendación Rec(2006)19 del Consejo de Europa: Interés superior, afecto, límites no violentos.
+    ├── Erradicación legal del castigo físico: Art. 154 Código Civil (Ley 54/2007) y LOPIVI 8/2021.
+    ├── Competencias Parentales (Barudy y Dantagnan): Parentalidad social, apego, empatía, buenos tratos.
+    └── Rol del Educador/a Social: Escuelas de Familias, intervención en medio natural (ETF, Decreto 100/2022).
+========================================================================================
+</pre>
+<hr class="divider"/>
+<h3 class="sub-title">C. TRAMPAS DEL TEST (7 CONFUSIONES FRECUENTES DESARTICULADAS)</h3>
+<pre class="ascii-box">
+========================================================================================
+                      TRAMPAS FRECUENTES EN EXÁMENES TIPO TEST
+========================================================================================
+
+ [TRAMPA 1]: "El estilo permisivo o indulgente se caracteriza por la frialdad y el bajo afecto".
+ -> FALSO. El estilo que combina bajo control con BAJO AFECTO es el ESTILO NEGLIGENTE o
+    indiferente. El Estilo PERMISIVO O INDULGENTE se caracteriza por un ALTO AFECTO y calidez,
+    pero combinado con una ausencia de límites y bajo control.
+
+ [TRAMPA 2]: "El apego desorganizado fue formulado originalmente por Mary Ainsworth en 1978".
+ -> FALSO. Mary Ainsworth describió en 1978 únicamente tres estilos: Seguro (B), Evitativo (A)
+    y Ansioso-Ambivalente (C). El APEGO DESORGANIZADO (Tipo D) fue identificado y formalizado
+    posteriormente por MARY MAIN Y JUDITH SOLOMON en 1986 y 1990.
+
+ [TRAMPA 3]: "La parentalidad positiva promueve una crianza permisiva donde no se imponen límites".
+ -> FALSO. La Recomendación Rec(2006)19 del Consejo de Europa establece expresamente que la
+    parentalidad positiva incluye el "ESTABLECIMIENTO DE LÍMITES FIRMES, claros y estructurantes",
+    rechazando tanto el autoritarismo violento como la permisividad negligente.
+
+ [TRAMPA 4]: "El Código Civil español aún permite el castigo físico moderado como derecho de corrección".
+ -> FALSO. La Ley 54/2007 SUPRIMIÓ TAXATIVAMENTE del artículo 154 del Código Civil la facultad
+    de "corregir moderadamente a los hijos". Hoy el castigo físico está plenamente tipificado
+    como ilícito civil y penal, blindado por la LOPIVI 8/2021.
+
+ [TRAMPA 5]: "La hipótesis del amortiguador de Cohen y Wills afirma que el apoyo formal sustituye al informal".
+ -> FALSO. La "Buffering Hypothesis" (1985) demuestra que el apoyo social actúa como un ESCUDO
+    PROTECTOR que amortigua el impacto del estrés psicosocial agudo, evitando que degenere
+    en crisis o desprotección, operando de forma complementaria ambas redes.
+
+ [TRAMPA 6]: "El estilo autoritativo es sinónimo de estilo autoritario".
+ -> FALSO. En la terminología anglosajona fundacional de Baumrind, AUTHORITATIVE designa al
+    ESTILO DEMOCRÁTICO (óptimo: alto afecto y alto control razonado). El estilo punitivo y
+    coercitivo es el AUTHORITARIAN (Autoritario: bajo afecto y alto control ciego).
+
+ [TRAMPA 7]: "El ajuste psicosocial del menor depende fundamentalmente de la estructura biparental de la familia".
+ -> FALSO. La evidencia empírica internacional demuestra de forma unánime que el bienestar
+    infantil depende de la CALIDAD DE LOS VÍNCULOS Y DINÁMICAS AFECTIVAS, no de la morfología
+    o tipología familiar (monoparental, homoparental, nuclear, etc.).
+========================================================================================
+</pre>
+<hr class="divider"/>
+<h3 class="sub-title">D. ENFOQUE PRÁCTICO EN EL AYUNTAMIENTO DE UTRERA</h3>
+<p class="body-text">La aplicación práctica de los estilos afectivos, de apoyo y educativos por el Técnico/a Medio de Educación Social se materializa directamente en la estructura de los Servicios Sociales y educativos del <strong>Excmo. Ayuntamiento de Utrera</strong>:</p>
+<div class="exam-item">1. <strong>Centro de Servicios Sociales Comunitarios (calle Catalina de Perea, 32)</strong>:</div>
+<ul class="custom-list">
+<li><em>Escuelas de Familias y Parentalidad Positiva</em>: El Educador/a Social diseña y dinamiza talleres socioeducativos grupales dirigidos a familias perceptoras del IMV o RMISA, entrenando vivencialmente a los progenitores en la transición desde estilos autoritarios o negligentes hacia el <strong>Estilo Democrático</strong>, dotándolos de pautas de comunicación asertiva, empatía parental y disciplina no violenta.</li>
+<li><em>Equipo de Tratamiento Familiar (ETF)</em>: En el marco del <strong>Decreto 100/2022, de 7 de junio</strong>, el Educador/a Social realiza intervención directa intensiva en el domicilio de familias en situación de riesgo grave con presencia de <strong>apego desorganizado o negligencia severa</strong>, evaluadas mediante la escala unificada <strong>VALÓRAME</strong> (Orden de 30 de julio de 2019). Modela pautas prácticas de apego seguro, rutinas estructuradas y supervisión en el medio cotidiano.</li>
+</ul>
+<div class="exam-item">2. <strong>Equipo Municipal de Absentismo Escolar (EMAE) y Coordinación Educativa</strong>:</div>
+<ul class="custom-list">
+<li>Coordinación técnica con los centros de primaria y secundaria de Utrera (<strong>CEIP Rodrigo Caro, CEIP Álvarez Quintero, CEIP Al-Ándalus, IES Ruiz Gijón, IES Ponce de León, IES José María Infantes e IES Virgen de Consolación</strong>). El Educador/a Social detecta dinámicas de desatención o permisividad desestructurante en menores con absentismo crónico, interviniendo con los progenitores para restablecer normas educativas firmes de asistencia y estudio.</li>
+</ul>
+<div class="exam-item">3. <strong>Plan Local de Intervención en Zonas Desfavorecidas: Barriada El Tinte (ERACIS+)</strong>:</div>
+<ul class="custom-list">
+<li>Financiado a través del Fondo Social Europeo Plus (FSE+), el Educador/a Social promueve <strong>redes de apoyo social informal y ayuda mutua</strong> entre familias vulnerables de la Barriada El Tinte (grupos de crianza compartida, bancos de tiempo vecinales), activando el efecto amortiguador del estrés (<em>buffering</em>) frente al riesgo de exclusión social.</li>
+</ul>
+<div class="exam-item">4. <strong>Descentralización y Cobertura en las Pedanías Rurales de Utrera</strong>:</div>
+<ul class="custom-list">
+<li>Atención socioeducativa itinerante en <strong>Guadalema de los Quintero, Trajano y Pinzón</strong>, garantizando que las familias de los poblados rurales tengan acceso directo a asesoramiento sobre pautas de crianza positiva, evitando el aislamiento territorial y fortaleciendo la cohesión comunitaria rural.</li>
+</ul>
+<hr class="divider"/>
+<h3 class="sub-title">E. FUENTES OFICIALES Y BIBLIOGRAFÍA CONSOLIDADA</h3>
+<ul class="custom-list">
+<li><strong>Ainsworth, M. D. S., Blehar, M. C., Waters, E., & Wall, S. (1978)</strong>. <em>Patterns of Attachment: A Psychological Study of the Strange Situation</em>. Lawrence Erlbaum Associates.</li>
+<li><strong>Barudy, J., & Dantagnan, M. (2005)</strong>. <em>Los buenos tratos a la infancia: Parentalidad, apego y resiliencia</em>. Gedisa.</li>
+<li><strong>Barudy, J., & Dantagnan, M. (2010)</strong>. <em>Los desafíos invisibles de ser padre o madre: Fichas de trabajo para la evaluación y promoción de la parentalidad positiva</em>. Gedisa.</li>
+<li><strong>Baumrind, D. (1966)</strong>. <em>Effects of authoritative parental control on child behavior</em>. Child Development, 37(4), 887-907.</li>
+<li><strong>Baumrind, D. (1971)</strong>. <em>Current patterns of parental authority</em>. Developmental Psychology, 4(1), 1-103.</li>
+<li><strong>Baumrind, D. (1991)</strong>. <em>The influence of parenting style on adolescent competence and substance use</em>. The Journal of Early Adolescence, 11(1), 56-95.</li>
+<li><strong>Bowlby, J. (1969)</strong>. <em>Attachment and Loss: Vol. 1. Attachment</em>. Basic Books.</li>
+<li><strong>Bowlby, J. (1973)</strong>. <em>Attachment and Loss: Vol. 2. Separation: Anxiety and Anger</em>. Basic Books.</li>
+<li><strong>Bowlby, J. (1980)</strong>. <em>Attachment and Loss: Vol. 3. Loss: Sadness and Depression</em>. Basic Books.</li>
+<li><strong>Bronfenbrenner, U. (1979)</strong>. <em>The Ecology of Human Development: Experiments by Nature and Design</em>. Harvard University Press.</li>
+<li><strong>Cobb, S. (1976)</strong>. <em>Social support as a moderator of life stress</em>. Psychosomatic Medicine, 38(5), 300-314.</li>
+<li><strong>Cohen, S., & Wills, T. A. (1985)</strong>. <em>Stress, social support, and the buffering hypothesis</em>. Psychological Bulletin, 98(2), 310-357.</li>
+<li><strong>Consejo de Europa (2006)</strong>. <em>Recomendación Rec(2006)19 del Comité de Ministros a los Estados Miembros sobre políticas de apoyo a la parentalidad positiva</em>.</li>
+<li><strong>España (2007)</strong>. <em>Ley 54/2007, de 28 de diciembre, de Adopción internacional (modificó el art. 154 del Código Civil)</em>. BOE nº 312, de 29 de diciembre de 2007.</li>
+<li><strong>España (2015)</strong>. <em>Ley 26/2015, de 28 de julio, de modificación del sistema de protección a la infancia y a la adolescencia</em>. BOE nº 180, de 29 de julio de 2015.</li>
+<li><strong>España (2021)</strong>. <em>Ley Orgánica 8/2021, de 4 de junio, de protección integral a la infancia y la adolescencia frente a la violencia</em>. BOE nº 134, de 5 de junio de 2021.</li>
+<li><strong>House, J. S. (1981)</strong>. <em>Work Stress and Social Support</em>. Addison-Wesley.</li>
+<li><strong>Junta de Andalucía (2019)</strong>. <em>Orden de 30 de julio de 2019, por la que se aprueba el instrumento técnico común para la valoración de la gravedad de las situaciones de desprotección infantil en Andalucía (VALÓRAME)</em>. BOJA nº 151, de 7 de agosto de 2019.</li>
+<li><strong>Junta de Andalucía (2021)</strong>. <em>Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía</em>. BOJA nº 149, de 4 de agosto de 2021.</li>
+<li><strong>Junta de Andalucía (2022)</strong>. <em>Decreto 100/2022, de 7 de junio, por el que se regula el Programa de Tratamiento a Familias con Menores en situación de riesgo o desprotección</em>. BOJA nº 111, de 13 de junio de 2022.</li>
+<li><strong>Maccoby, E. E., & Martin, J. A. (1983)</strong>. <em>Socialization in the context of the family: Parent-child interaction</em>. En P. H. Mussen (Ed.), <em>Handbook of Child Psychology</em> (Vol. 4, pp. 1-101). John Wiley & Sons.</li>
+<li><strong>Main, M., & Solomon, J. (1986)</strong>. <em>Discovery of an insecure-disorganized/disoriented attachment pattern</em>. En T. B. Brazelton & M. W. Yogman (Eds.), <em>Affective Development in Infancy</em> (pp. 95-124). Ablex.</li>
+<li><strong>Minuchin, S. (1974)</strong>. <em>Families and Family Therapy</em>. Harvard University Press.</li>
+<li><strong>Musitu, G., & García, F. (2004)</strong>. <em>Consecuencias de la socialización familiar en la cultura española</em>. Psicothema, 16(2), 288-293.</li>
+</ul>
+
+
+</body>
+</html>

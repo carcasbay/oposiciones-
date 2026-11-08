@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 6: La Planificación y el Desarrollo Curricular. Los Niveles de Concreción Curricular. El Proyecto Educativo de Centro. El Papel del Educador o Educadora Social en los Procesos de Planificación y Desarrollo Curricular</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 6</h1>
+  <h2>La Planificación y el Desarrollo Curricular. Los Niveles de Concreción Curricular. El Proyecto Educativo de Centro. El Papel del Educador o Educadora Social en los Procesos de Planificación y Desarrollo Curricular</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Bloque:</strong> Materias Específicas</p>
+<p><strong>Tema Oficial:</strong> 6</p>
+<p><strong>Normativa Clave:</strong> Ley Orgánica 2/2006 (LOE) modificada por Ley Orgánica 3/2020 (LOMLOE); Ley 17/2007 de Educación de Andalucía (LEA - arts. 120-129); Decretos 327/2010 y 328/2010 (Reglamentos Orgánicos de Centros en Andalucía); Decretos de ordenación curricular de Andalucía (Decretos 100/2023, 101/2023 y 102/2023 de Infantil, Primaria y ESO); Instrucciones de 17 de septiembre de 2010 de la Dirección General de Participación e Innovación Educativa.</p>
+<p><strong>Autores y Referentes:</strong> Stenhouse, Tyler, Schwab, Gimeno Sacristán, César Coll, Jurjo Torres, Michael Apple.</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 6</div>
+  <div class="toc-item level-1">1. <strong>Introducción y contextualización en la Educación Social</strong></div>
+  <div class="toc-item level-1">2. <strong>Concepto de currículo y teorías del desarrollo curricular</strong></div>
+  <div class="toc-item level-2">2.1. Definición y naturaleza del currículo en el marco de la LOMLOE</div>
+  <div class="toc-item level-2">2.2. Elementos del currículo competencial: Objetivos, competencias clave, competencias específicas, saberes básicos, criterios de evaluación y situaciones de aprendizaje</div>
+  <div class="toc-item level-2">2.3. Corrientes curriculares: Del modelo técnico al currículo práctico y sociocrítico (Stenhouse, Gimeno Sacristán, Apple)</div>
+  <div class="toc-item level-2">2.4. El Diseño Universal para el Aprendizaje (DUA) como paradigma de accesibilidad</div>
+  <div class="toc-item level-1">3. <strong>Los niveles de concreción curricular: Del marco estatal al aula inclusiva</strong></div>
+  <div class="toc-item level-2">3.1. Primer nivel: Diseño Curricular Prescriptivo (Estado y Comunidad Autónoma de Andalucía)</div>
+  <div class="toc-item level-2">3.2. Segundo nivel: El Proyecto Educativo de Centro (PEC) y las Concreciones Curriculares</div>
+  <div class="toc-item level-2">3.3. Tercer nivel: Programaciones de Aula y diseño de Situaciones de Aprendizaje</div>
+  <div class="toc-item level-2">3.4. Cuarto nivel: Medidas individualizadas de atención a la diversidad (Adaptaciones Curriculares - ACI)</div>
+  <div class="toc-item level-1">4. <strong>El Proyecto Educativo de Centro (PEC) en Andalucía</strong></div>
+  <div class="toc-item level-2">4.1. Naturaleza jurídica y autonomía pedagógica de los centros (art. 120-121 LOMLOE y arts. 125-127 LEA)</div>
+  <div class="toc-item level-2">4.2. Estructura y documentos nucleares del PEC según los Decretos 327/2010 y 328/2010:</div>
+  <div class="toc-item level-3">A) Líneas generales y concreción curricular</div>
+  <div class="toc-item level-3">B) Plan de Convivencia y mediación escolar</div>
+  <div class="toc-item level-3">C) Plan de Orientación y Acción Tutorial (POAT)</div>
+  <div class="toc-item level-3">D) Plan de Atención a la Diversidad (PAD)</div>
+  <div class="toc-item level-3">E) Plan de Formación del Profesorado y Actividades Complementarias</div>
+  <div class="toc-item level-1">5. <strong>El papel del educador o educadora social en la planificación y desarrollo curricular</strong></div>
+  <div class="toc-item level-2">5.1. La mirada socioeducativa en el diagnóstico de contexto del centro escolar</div>
+  <div class="toc-item level-2">5.2. Aportaciones directas al Plan de Convivencia y al POAT</div>
+  <div class="toc-item level-2">5.3. El Aprendizaje-Servicio (ApS) y la apertura del currículo formal hacia la comunidad</div>
+  <div class="toc-item level-2">5.4. Coordinación multidisciplinar y ajuste curricular para alumnado en riesgo de exclusión</div>
+  <div class="toc-item level-1">6. <strong>Conclusión</strong></div>
+  <div class="toc-item level-1">7. <strong>Anexo: Mapa conceptual y tabla sinóptica del Tema 6</strong></div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y contextualización en la Educación Social</h2>
+
+<p>La planificación y el desarrollo curricular no son operaciones meramente burocráticas o técnico-didácticas reservadas en exclusiva al profesorado de aula; constituyen el <strong>instrumento político, social y pedagógico mediante el cual una sociedad decide qué saberes, valores, competencias y actitudes transmite a las nuevas generaciones</strong>.</p>
+
+<p>En el modelo educativo inclusivo consagrado por la <strong>LOMLOE (Ley Orgánica 3/2020)</strong> y la <strong>Ley 17/2007 de Educación de Andalucía (LEA)</strong>, el currículo deja de concebirse como un programa rígido y cerrado para transformarse en un <strong>marco abierto, contextualizado y flexible</strong>. Este enfoque sitúa al <strong>Proyecto Educativo de Centro (PEC)</strong> como el epicentro de la autonomía pedagógica, donde la comunidad escolar adapta las prescripciones oficiales a las características socioculturales de su entorno.</p>
+
+<p>En este proceso, el <strong>Educador y la Educadora Social</strong> desempeña un rol insustituible: introduce en la planificación escolar la <strong>mirada socioeducativa y comunitaria</strong>. Su función consiste en visibilizar las barreras invisibles al aprendizaje, enriquecer el currículo con valores de convivencia democrática, vincular las situaciones de aprendizaje con la realidad del barrio y asegurar que los planes institucionales (Convivencia, Tutorial, Diversidad) no sean declaraciones retóricas, sino herramientas operativas de equidad y justicia social.</p>
+
+<h2 class="section-title">2. Concepto de currículo y teorías del desarrollo curricular</h2>
+
+<h3 class="sub-title">2.1. Definición legal y naturaleza del currículo en la LOE-LOMLOE</h3>
+
+<p>El <strong>artículo 6.1 de la LOE-LOMLOE</strong> define el currículo como:</p>
+
+<div class="callout">
+  <p><em>"El conjunto de objetivos, competencias, contenidos (saberes básicos), métodos pedagógicos y criterios de evaluación de cada una de las enseñanzas reguladas en la presente Ley."</em></p>
+</div>
+
+<p>La reforma de la LOMLOE supuso un giro copernicano: el currículo ya no se vertebra en torno a la memorización enciclopédica de materias fragmentadas, sino en el <strong>enfoque competencial</strong>: capacitar al alumnado para movilizar conocimientos integrados, habilidades y actitudes en la resolución de problemas complejos de la vida cotidiana.</p>
+
+<h3 class="sub-title">2.2. Elementos del currículo competencial</h3>
+
+<ol>
+  <li><strong>Objetivos de etapa:</strong> Logros que el alumnado debe alcanzar al finalizar cada una de las etapas educativas (Infantil, Primaria, ESO, Bachillerato).</li>
+  <li><strong>Perfil competencial de salida:</strong> La piedra angular del sistema. Define las <strong>ocho competencias clave</strong> (comunicación lingüística, plurilingüe, matemática y STEM, digital, personal y social de aprender a aprender, ciudadana, emprendedora y conciencia cultural) que todo estudiante debe haber desarrollado al término de la enseñanza obligatoria básica.</li>
+  <li><strong>Competencias específicas:</strong> Desempeños que el alumnado debe poder desplegar en actividades o situaciones cuyo abordaje requiere los saberes básicos de cada materia o ámbito.</li>
+  <li><strong>Criterios de evaluación:</strong> Referentes que indican el nivel de desempeño esperado en las competencias específicas.</li>
+  <li><strong>Saberes básicos:</strong> Conocimientos, destrezas y actitudes que constituyen los contenidos propios de cada disciplina.</li>
+  <li><strong>Situaciones de aprendizaje:</strong> Escenarios contextualizados, significativos y complejos que los docentes diseñan para que el alumnado resuelva retos reales conectando la escuela con su entorno social.</li>
+</ol>
+
+<h3 class="sub-title">2.3. Corrientes y modelos teóricos del currículo</h3>
+
+<ul>
+  <li><strong>Modelo Técnico / Racional (Ralph Tyler, Hilda Taba):</strong> Concibe el currículo como un plan cerrado y lineal orientado a objetivos prefijados y medibles. Reduce la labor docente a la ejecución técnica de instrucciones externas.</li>
+  <li><strong>Modelo Práctico / Deliberativo (Lawrence Stenhouse, Joseph Schwab):</strong> Stenhouse define el currículo como <em>"una tentativa para comunicar los principios y rasgos esenciales de un propósito educativo, de forma tal que permanezca abierto a la discusión crítica y pueda ser trasladado efectivamente a la práctica"</em>. El currículo es una hipótesis de trabajo y el profesorado actúa como investigador en el aula.</li>
+  <li><strong>Modelo Sociocrítico (Michael Apple, Henry Giroux, Jurjo Torres, Gimeno Sacristán):</strong> Cuestiona el <strong>currículo explícito</strong> y desvela el <strong>currículo oculto</strong> (valores, normas tácitas y sesgos ideológicos que reproducen la desigualdad social). Defiende un currículo democrático, emancipador, coeducativo y decolonial que incorpore la voz de los colectivos subalternos.</li>
+</ul>
+
+<div class="diagram-box">
+  <pre>                           MODELOS DE CURRÍCULO
+   MODELO TÉCNICO (Tyler)      ──►  Lineal, cerrado, centrado en objetivos medibles.
+   MODELO PRÁCTICO (Stenhouse) ──►  Abierto, flexible, profesor investigador.
+   MODELO SOCIOCRÍTICO (Apple) ──►  Currículo oculto, justicia curricular, emancipación.</pre>
+</div>
+
+<h3 class="sub-title">2.4. El Diseño Universal para el Aprendizaje (DUA)</h3>
+
+<p>La LOMLOE consagra el <strong>DUA</strong> como principio rector: el diseño curricular debe planificarse desde el inicio pensando en la diversidad de todo el alumnado, proporcionando <strong>múltiples formas de implicación (el porqué del aprendizaje), múltiples formas de representación (el qué) y múltiples formas de acción y expresión (el cómo)</strong>, evitando adaptaciones segregadoras a posteriori.</p>
+
+<h2 class="section-title">3. Los niveles de concreción curricular</h2>
+
+<p>El ordenamiento educativo español articula el desarrollo curricular en cuatro niveles descendentes de autonomía y contextualización:</p>
+
+<div class="diagram-box">
+  <pre>                     NIVELES DE CONCRECIÓN CURRICULAR
+ ┌─────────────────────────────────────────────────────────────────┐
+ │ 1º NIVEL: PRESCRIPTIVO (Estado y CCAA - Decretos curriculares)   │
+ └────────────────────────────────┬────────────────────────────────┘
+                                  ▼
+ ┌─────────────────────────────────────────────────────────────────┐
+ │ 2º NIVEL: CENTRO ESCOLAR (Proyecto Educativo de Centro - PEC)   │
+ └────────────────────────────────┬────────────────────────────────┘
+                                  ▼
+ ┌─────────────────────────────────────────────────────────────────┐
+ │ 3º NIVEL: AULA (Programación Docente / Situaciones de Aprendizaje)│
+ └────────────────────────────────┬────────────────────────────────┘
+                                  ▼
+ ┌─────────────────────────────────────────────────────────────────┐
+ │ 4º NIVEL: INDIVIDUALIZADO (Adaptaciones Curriculares - ACI / DUA)│
+ └─────────────────────────────────────────────────────────────────┘</pre>
+</div>
+
+<h3 class="sub-title">3.1. Primer Nivel de Concreción: Marco prescriptivo oficial</h3>
+
+<ul>
+  <li><strong>Nivel estatal (Ministerio):</strong> Fija las enseñanzas mínimas (Reales Decretos 95/2022, 157/2022 y 217/2022 para Infantil, Primaria y ESO) que suponen el 50% de los horarios escolares en CCAA con lengua cooficial y el 60% en el resto.</li>
+  <li><strong>Nivel autonómico (Junta de Andalucía):</strong> Establece el currículo propio de Andalucía (Decretos 100/2023, 101/2023 y 102/2023 y sus respectivas Órdenes de desarrollo de 30 de mayo de 2023), incorporando la cultura andaluza, la coeducación y la perspectiva sociocomunitaria.</li>
+</ul>
+
+<h3 class="sub-title">3.2. Segundo Nivel de Concreción: El Proyecto Educativo de Centro (PEC)</h3>
+
+<p>Los equipos docentes de cada centro adaptan y concretan el currículo oficial a su realidad sociodemográfica particular, definiendo la <strong>Propuesta Pedagógica</strong> (en Infantil) o la <strong>Concreción Curricular</strong> de etapa (en Primaria y Secundaria).</p>
+
+<h3 class="sub-title">3.3. Tercer Nivel de Concreción: La Programación de Aula</h3>
+
+<p>Elaborada por los departamentos didácticos y los maestros o profesores de área. Concreta los saberes básicos, criterios de evaluación y diseña las <strong>Situaciones de Aprendizaje</strong> adaptadas al grupo-clase específico.</p>
+
+<h3 class="sub-title">3.4. Cuarto Nivel de Concreción: Medidas de Adaptación Individualizada</h3>
+
+<p>Medidas de atención a la diversidad para el alumnado ACNEAE:</p>
+
+<ul>
+  <li><strong>Adaptaciones de acceso:</strong> Modificaciones de materiales, espacios o sistemas de comunicación.</li>
+  <li><strong>Adaptaciones curriculares no significativas:</strong> Modificaciones metodológicas y de tiempos sin afectar a las competencias específicas básicas.</li>
+  <li><strong>Adaptaciones curriculares significativas (ACS):</strong> Modificación sustancial de criterios y competencias esenciales para alumnado con Necesidades Educativas Especiales (NEE).</li>
+</ul>
+
+<h2 class="section-title">4. El Proyecto Educativo de Centro (PEC) en Andalucía</h2>
+
+<p>El Proyecto Educativo es el documento institucional de mayor rango de los centros docentes. Otorga identidad pedagógica a la institución, canaliza la autonomía organizativa (art. 120-129 LEA) y es aprobado por el <strong>Consejo Escolar</strong> a propuesta del Claustro de Profesorado.</p>
+
+<h3 class="sub-title">4.1. Componentes esenciales del PEC en Andalucía (Decretos 327/2010 y 328/2010)</h3>
+
+<p>En los colegios de Infantil y Primaria y en los Institutos de Secundaria de Andalucía, el PEC integra preceptivamente los siguientes planes y directrices:</p>
+
+<ol>
+  <li><strong>Objetivos propios para la mejora del rendimiento escolar:</strong> Líneas prioritarias fijadas en base a las evaluaciones internas y externas.</li>
+  <li><strong>Líneas generales de actuación pedagógica:</strong> Metodologías activas, fomento de la lectura, competencia digital y enfoque competencial.</li>
+  <li><strong>Concreción de los contenidos curriculares y criterios de evaluación:</strong> Distribución temporal de saberes y pautas comunes de calificación.</li>
+  <li><strong>Plan de Atención a la Diversidad (PAD):</strong> Medidas organizativas y curriculares generales y específicas para responder a todo el alumnado.</li>
+  <li><strong>Plan de Orientación y Acción Tutorial (POAT):</strong> Guía de la función tutorial, seguimiento del desarrollo personal, vocacional y coordinación familiar.</li>
+  <li><strong>Plan de Convivencia:</strong> Diagnóstico del clima escolar, normas del centro, funcionamiento del Aula de Convivencia, protocolos de acoso y mediación escolar.</li>
+  <li><strong>Plan de Formación del Profesorado en Centro.</strong></li>
+  <li><strong>Criterios organizativos de espacios, tiempos y actividades extraescolares y complementarias.</strong></li>
+</ol>
+
+<h2 class="section-title">5. El papel del educador o educadora social en la planificación y desarrollo curricular</h2>
+
+<p>La presencia del Educador/a Social en el sistema educativo andaluz (respaldada por las <strong>Instrucciones de 17 de septiembre de 2010</strong>) enriquece transversalmente los cuatro niveles de concreción curricular:</p>
+
+<div class="diagram-box">
+  <pre>                     APORTACIONES DEL EDUCADOR/A SOCIAL
+           ┌──────────────────────┼──────────────────────┐
+    DIAGNÓSTICO DEL CONTEXTO    PLAN DE CONVIVENCIA        POAT Y DIVERSIDAD
+ ├─ Detección barreras barrio ├─ Mediación y cultura paz├─ Escuelas de Familias
+ ├─ Mapeo de recursos locales ├─ Dinamización Aula Conv.├─ Acompañamiento ACNEAE
+ └─ Enfoque socioeducativo    └─ Protocolos de acoso    └─ Control de absentismo</pre>
+</div>
+
+<h3 class="sub-title">5.1. En el diagnóstico del contexto sociocultural del centro</h3>
+
+<p>El Educador Social aporta datos sociodemográficos y comunitarios que el claustro suele desconocer: bolsas de marginación urbana, problemáticas de vivienda, situaciones de desestructuración familiar, dinámicas de las bandas juveniles o recursos culturales y deportivos del barrio. Este análisis permite que el PEC sea un documento realista y no una copia teórica.</p>
+
+<h3 class="sub-title">5.2. En el Plan de Convivencia y el Aula de Convivencia</h3>
+
+<ul>
+  <li>Participa en la redacción de las normas y medidas restaurativas del Plan de Convivencia.</li>
+  <li>Dinamiza el <strong>Aula de Convivencia</strong>: convierte las sanciones en espacios de reflexión socioeducativa, tutoría individualizada y reeducación conductual.</li>
+  <li>Impulsa programas de <strong>alumnado ayudante y equipos de mediación escolar</strong>.</li>
+</ul>
+
+<h3 class="sub-title">5.3. En el Plan de Orientación y Acción Tutorial (POAT)</h3>
+
+<ul>
+  <li>Apoya al profesorado tutor en el abordaje de dinámicas grupales complejas y problemas de rechazo social o acoso en el aula.</li>
+  <li>Lidera las relaciones con las familias vulnerables mediante visitas a domicilio y la coordinación de las <strong>Escuelas de Familias</strong>.</li>
+  <li>Diseña talleres de competencias sociales, educación afectivo-sexual y prevención de adicciones con y sin sustancia.</li>
+</ul>
+
+<h3 class="sub-title">5.4. El Aprendizaje-Servicio (ApS) y la apertura al entorno</h3>
+
+<p>El Educador Social es el puente perfecto para desarrollar <strong>proyectos de Aprendizaje-Servicio (ApS)</strong> dentro de las Situaciones de Aprendizaje: iniciativas donde el alumnado aprende contenidos curriculares poniéndolos al servicio de la comunidad (por ejemplo, campañas de apoyo a residencias de ancianos, mejora ambiental del barrio o bancos de alimentos locales).</p>
+
+<h2 class="section-title">6. Conclusión</h2>
+
+<p>La planificación y el desarrollo curricular son el corazón pedagógico de la institución escolar. Un currículo encerrado en sí mismo produce fracaso escolar y reproduce las desigualdades de origen.</p>
+
+<p>A través del <strong>Proyecto Educativo de Centro (PEC)</strong> y de la articulación flexible de los distintos niveles de concreción, la escuela andaluza tiene la oportunidad histórica de responder a la diversidad real de sus aulas. La figura del <strong>Educador y la Educadora Social</strong> humaniza, contextualiza y abre el currículo hacia el territorio, asegurando que la equidad, la convivencia pacífica y el derecho universal a la educación sean los verdaderos ejes rectores de la escuela pública andaluza.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">7. Anexo: Mapa conceptual y tabla sinóptica del Tema 6</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Conceptos y Modelos Clave</th>
+      <th>Normativa y Documentos Institucionales</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Concepto de Currículo</strong></td>
+      <td>• Enfoque competencial: saberes, destrezas y actitudes.<br>• Perfil competencial de salida y situaciones de aprendizaje.<br>• Paradigma DUA (Diseño Universal para el Aprendizaje).</td>
+      <td>Art. 6 LOE-LOMLOE • Reales Decretos de ordenación estatal • Decretos 100, 101 y 102/2023 de Andalucía</td>
+    </tr>
+    <tr>
+      <td><strong>Teorías Curriculares</strong></td>
+      <td>• Modelo Técnico (Tyler, Taba): conductual y cerrado.<br>• Modelo Práctico (Stenhouse): profesor investigador.<br>• Modelo Sociocrítico (Apple, Giroux): justicia curricular.</td>
+      <td>Aportación de la sociología de la educación y pedagogía crítica contemporánea.</td>
+    </tr>
+    <tr>
+      <td><strong>Niveles de Concreción</strong></td>
+      <td>• 1º Nivel: Prescriptivo (Estado y CCAA).<br>• 2º Nivel: Centro escolar (PEC y concreciones).<br>• 3º Nivel: Aula (Programaciones y Situaciones de Aprendizaje).<br>• 4º Nivel: Individualizado (Adaptaciones curriculares ACI).</td>
+      <td>Articulación descendente de la autonomía pedagógica de los centros sostenidos con fondos públicos.</td>
+    </tr>
+    <tr>
+      <td><strong>Proyecto Educativo (PEC)</strong></td>
+      <td>• Ideario pedagógico y organizativo del centro.<br>• Aprobado por el Consejo Escolar.<br>• Documento rector de la autonomía del centro.</td>
+      <td>Arts. 120-129 LEA 17/2007 • Decretos 327/2010 (IES) y 328/2010 (Colegios Infantil y Primaria)</td>
+    </tr>
+    <tr>
+      <td><strong>Documentos del PEC</strong></td>
+      <td>• Concreción curricular y criterios de evaluación.<br>• Plan de Atención a la Diversidad (PAD).<br>• Plan de Orientación y Acción Tutorial (POAT).<br>• Plan de Convivencia y Aula de Convivencia.</td>
+      <td>Estructura organizativa preceptiva de los centros docentes públicos de Andalucía.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>• Diagnóstico contextual del barrio y ZNTS.<br>• Coordinación y mediación en el Plan de Convivencia.<br>• Enlace en el POAT con familias y absentismo.<br>• Impulsor de proyectos de Aprendizaje-Servicio (ApS).</td>
+      <td>Instrucciones de 17 de septiembre de 2010 de la Dirección General de Participación Educativa</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

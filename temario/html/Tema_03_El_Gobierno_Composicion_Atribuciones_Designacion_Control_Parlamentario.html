@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tema 03: El Gobierno: Composición, Atribuciones y Control</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 18mm 16mm 18mm 16mm;
+            @bottom-right {
+                content: counter(page);
+                font-family: 'Segoe UI', Arial, sans-serif;
+                font-size: 9pt;
+                color: #555;
+            }
+            @bottom-left {
+                content: "Oposiciones Utrera - Técnico/a Medio Educación Social (A2)";
+                font-family: 'Segoe UI', Arial, sans-serif;
+                font-size: 9pt;
+                color: #777;
+            }
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #222;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-card {
+            border-bottom: 2px solid #004d80;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        .badge-bar {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .badge {
+            background: #e1f5fe;
+            color: #01579b;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 7.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px solid #b3e5fc;
+        }
+
+        .badge-secondary {
+            background: #e8f5e9;
+            color: #1b5e20;
+            border-color: #c8e6c9;
+        }
+
+        .doc-title {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 17pt;
+            font-weight: 800;
+            color: #003366;
+            line-height: 1.25;
+            margin: 0 0 10px 0;
+            text-align: left;
+        }
+
+        .section-title {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 12.5pt;
+            font-weight: 700;
+            color: #004d80;
+            border-left: 4px solid #004d80;
+            padding-left: 8px;
+            margin-top: 22px;
+            margin-bottom: 10px;
+            page-break-after: avoid;
+        }
+
+        .subsection-title {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 11pt;
+            font-weight: 700;
+            color: #01579b;
+            margin-top: 16px;
+            margin-bottom: 6px;
+            page-break-after: avoid;
+        }
+
+        .subsubsection-title {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 10pt;
+            font-weight: 700;
+            color: #333;
+            margin-top: 12px;
+            margin-bottom: 4px;
+            page-break-after: avoid;
+        }
+
+        p {
+            margin: 0 0 8px 0;
+            text-align: justify;
+        }
+
+        strong {
+            color: #002244;
+            font-weight: 700;
+        }
+
+        ul, ol {
+            margin: 4px 0 10px 20px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 4px;
+            text-align: justify;
+        }
+
+        .divider {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 18px 0;
+        }
+
+        .table-container {
+            margin: 12px 0;
+            page-break-inside: avoid;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 8.5pt;
+        }
+
+        th {
+            background-color: #004d80;
+            color: #fff;
+            font-weight: 700;
+            padding: 7px 9px;
+            border: 1px solid #003366;
+            text-align: left;
+        }
+
+        td {
+            padding: 6px 9px;
+            border: 1px solid #dcdcdc;
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7faff;
+        }
+
+        .code-card {
+            background: #f0f7fc;
+            border: 1px solid #cce4f7;
+            border-left: 3.5px solid #004d80;
+            border-radius: 4px;
+            padding: 10px 14px;
+            margin: 12px 0;
+            page-break-inside: avoid;
+        }
+
+        .quote-card {
+            background: #fff8e1;
+            border-left: 4px solid #ff8f00;
+            border-radius: 4px;
+            padding: 8px 12px;
+            margin: 10px 0;
+            font-style: italic;
+            font-size: 9.5pt;
+            color: #4e342e;
+            page-break-inside: avoid;
+        }
+
+        pre {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 8pt;
+            line-height: 1.35;
+            margin: 0;
+            color: #002244;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-card">
+        <div class="badge-bar">
+            <span class="badge">Tema 03 - Parte General</span>
+            <span class="badge badge-secondary">Educación Social (A2)</span>
+            <span class="badge">Ayto. de Utrera</span>
+        </div>
+    </div>
+    <h1 class='doc-title'>TEMA 3: EL GOBIERNO: COMPOSICIÓN Y ATRIBUCIONES. DESIGNACIÓN, REMOCIÓN Y RESPONSABILIDAD DEL GOBIERNO Y DE SU PRESIDENCIA. EL CONTROL PARLAMENTARIO DEL GOBIERNO</h1>
+<p><strong>Programa Oficial</strong>: Oposiciones al Cuerpo de Técnico/a Medio de Educación Social (Subescala Técnica, Grupo A2).  </p>
+<p><strong>Convocatoria</strong>: Excmo. Ayuntamiento de Utrera (Sevilla).  </p>
+<p><strong>Bases</strong>: Boletín Oficial de la Provincia de Sevilla nº 102 (29/05/2026).  </p>
+<p><strong>Normativa Principal</strong>: Constitución Española de 1978 (Título IV, arts. 97 a 107 y Título V, arts. 108 a 116); Ley 50/1997, de 27 de noviembre, del Gobierno; Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público; Reglamento del Congreso de los Diputados; Reglamento del Senado.</p>
+<hr class='divider'/>
+<h2 class='section-title'>1. EL GOBIERNO: COMPOSICIÓN Y ATRIBUCIONES</h2>
+<h3 class='subsection-title'>1.1. Naturaleza Constitucional del Gobierno y del Poder Ejecutivo</h3>
+<p>En el marco de la <strong>Monarquía parlamentaria</strong> consagrada en el artículo 1.3 de la Constitución Española de 1978 (en adelante, <strong>CE</strong>), el Gobierno es el órgano constitucional colegiado en el que reside la titularidad del <strong>Poder Ejecutivo</strong>. El texto constitucional supera la tradicional concepción decimonónica que reducía al Gobierno a un mero ejecutor pasivo de las leyes aprobadas por el Parlamento, configurándolo formalmente como un órgano de dirección política autónomo dotado de potestades originarias.</p>
+<p>El <strong>artículo 97 de la CE</strong> define dogmáticamente el estatuto funcional del Gobierno: <em>"El Gobierno dirige la política interior y exterior, la Administración civil y militar y la defensa del Estado. Ejerce la función ejecutiva y la potestad reglamentaria de acuerdo con la Constitución y las leyes"</em>.</p>
+<p>De este precepto emanan las cinco grandes funciones que delimitan la actividad del ejecutivo:</p>
+<ul>
+<li><strong>Dirección de la política interior y exterior</strong>: Impulso del programa político, fijación de prioridades legislativas, relaciones diplomáticas internacionales y celebración de tratados (artículos 93 y 94 CE).</li>
+<li><strong>Dirección de la Administración civil y militar</strong>: Cúspide jerárquica de la Administración General del Estado y de las Fuerzas Armadas (subordinadas al poder civil conforme a los artículos 8 y 97 CE).</li>
+<li><strong>Dirección de la defensa del Estado</strong>: Mantenimiento de la integridad territorial y de la seguridad de la Nación.</li>
+<li><strong>Función ejecutiva</strong>: Aplicación del ordenamiento jurídico positivo, ejecución de mandatos legales y adopción de actos administrativos singulares.</li>
+<li><strong>Potestad reglamentaria originaria</strong>: Dictado de disposiciones normativas de carácter general subordinadas a la ley (los Reales Decretos del Consejo de Ministros y del Presidente, y las Órdenes Ministeriales).</li>
+</ul>
+<h3 class='subsection-title'>1.2. Composición Constitucional y Legal del Gobierno</h3>
+<p>La composición del Gobierno se regula en el <strong>artículo 98.1 de la CE</strong> y en el <strong>artículo 1 de la Ley 50/1997, de 27 de noviembre, del Gobierno (LGob)</strong>:</p>
+<ul>
+<li><strong>Miembros necesarios y obligatorios</strong>:</li>
+<li>El <strong>Presidente del Gobierno</strong>: Vértice indiscutible del órgano, dotado de preeminencia jerárquica y política sobre los demás miembros.</li>
+<li>Los <strong>Ministros</strong>: Titulares de los departamentos ministeriales en que se divide la Administración General del Estado.</li>
+<li><strong>Miembros potestativos</strong>:</li>
+<li>El <strong>Vicepresidente o Vicepresidentes</strong>: Su creación no es imperativa, sino que depende de la decisión discrecional del Presidente del Gobierno mediante Real Decreto. Pueden asumir la titularidad de un Ministerio o configurarse como Vicepresidentes sin cartera encargados de tareas transversales de coordinación política.</li>
+<li><strong>La cláusula abierta del artículo 98.1 CE (<em>"y los demás miembros que establezca la ley"</em>)</strong>:</li>
+<li>El legislador estatal, al aprobar la <strong>Ley 50/1997</strong>, optó por un modelo restrictivo. Conforme a su artículo 1.2, el Gobierno se compone exclusivamente del <strong>Presidente, del Vicepresidente o Vicepresidentes, cuando existan, y de los Ministros</strong>.</li>
+<li><strong>Diferenciación crucial de examen</strong>: Los <strong>Secretarios de Estado</strong> son órganos superiores de la Administración General del Estado (según el artículo 55 de la Ley 40/2015), pero <strong>no forman parte del Gobierno</strong>. Participan en reuniones gubernamentales solo cuando son expresamente convocados, careciendo de la condición formal de miembros del ejecutivo.</li>
+</ul>
+<div class='code-card'><pre>
++-------------------------------------------------------------------------+
+|                  COMPOSICIÓN DEL GOBIERNO DE LA NACIÓN                  |
++-------------------------------------------------------------------------+
+|  MIEMBROS PRECEPTIVOS (Art. 98.1 CE y Art. 1.2 Ley 50/1997):            |
+|  • Presidente del Gobierno                                              |
+|  • Ministros                                                            |
++-------------------------------------------------------------------------+
+|  MIEMBROS POTESTATIVOS:                                                 |
+|  • Vicepresidente / Vicepresidentes (cuando existan)                    |
++-------------------------------------------------------------------------+
+|  NO FORMAN PARTE DEL GOBIERNO (Órganos de la Administración):           |
+|  • Secretarios de Estado | Subsecretarios | Directores Generales        |
++-------------------------------------------------------------------------+
+</pre></div>
+<h3 class='subsection-title'>1.3. Estructura Orgánica y Órganos Colegiados del Gobierno</h3>
+<p>La Ley 50/1997 distingue con precisión entre órganos individuales (Presidente, Vicepresidentes, Ministros) y órganos colegiados:</p>
+<h4 class='subsubsection-title'>1.3.1. El Consejo de Ministros (Artículo 5 LGob)</h4>
+<ul>
+<li>Es la reunión formal de todos los miembros del Gobierno.</li>
+<li><strong>Atribuciones esenciales</strong>:</li>
+<li>Aprobar los <strong>Proyectos de Ley</strong> y acordar su remisión al Congreso de los Diputados.</li>
+<li>Aprobar el <strong>Proyecto de Ley de Presupuestos Generales del Estado</strong>.</li>
+<li>Aprobar los <strong>Reales Decretos-leyes</strong> (artículo 86 CE) y los <strong>Reales Decretos Legislativos</strong> (artículo 82 CE).</li>
+<li>Acordar la emisión de Deuda Pública y autorizar operaciones de crédito del Estado.</li>
+<li>Aprobar los reglamentos generales de ejecución de las leyes (Reales Decretos).</li>
+<li>Declarar los <strong>estados de alarma y de excepción</strong> y proponer al Congreso la declaración del <strong>estado de sitio</strong> (artículo 116 CE).</li>
+<li>Disponer la emisión de la deuda del Estado y la autorización de tratados internacionales.</li>
+<li>Acordar la interposición del recurso de inconstitucionalidad y el planteamiento de conflictos de competencia ante el Tribunal Constitucional.</li>
+<li><strong>Régimen de funcionamiento y secreto (artículo 5.3 LGob)</strong>:</li>
+<li>Las deliberaciones del Consejo de Ministros son <strong>estrictamente secretas</strong>, quedando obligados todos los asistentes a guardar reserva sobre las opiniones manifestadas y los documentos aportados.</li>
+<li>Las actas reflejan únicamente los acuerdos adoptados, el lugar y la fecha de la sesión, los asistentes y los puntos tratados, sin dejar constancia de los votos discrepantes.</li>
+</ul>
+<h4 class='subsubsection-title'>1.3.2. Las Comisiones Delegadas del Gobierno (Artículo 6 LGob)</h4>
+<ul>
+<li>Órganos colegiados de composición reducida creados por Real Decreto del Consejo de Ministros a propuesta del Presidente.</li>
+<li>Agrupan a Ministros de áreas afines (ej. Comisión Delegada para Asuntos Económicos) para coordinar la acción política transversal, preparar propuestas previas al Consejo de Ministros o resolver asuntos que afecten conjuntamente a varios departamentos ministeriales.</li>
+</ul>
+<h4 class='subsubsection-title'>1.3.3. Órganos de Colaboración y Apoyo Técnico</h4>
+<ul>
+<li><strong>La Comisión General de Secretarios de Estado y Subsecretarios (artículo 8 LGob)</strong>:</li>
+<li>Integrada por los Secretarios de Estado y Subsecretarios de todos los Ministerios, bajo la presidencia del titular del Ministerio de la Presidencia.</li>
+<li>Es el órgano preparatorio indispensable del Consejo de Ministros. <strong>Ningún asunto puede ser sometido a la deliberación del Consejo de Ministros sin haber sido previamente examinado e informado por esta Comisión</strong> (salvo supuestos de extrema urgencia calificados por el Presidente).</li>
+<li><strong>El Secretariado del Gobierno (artículo 9 LGob)</strong>:</li>
+<li>Órgano técnico adscrito al Ministerio de la Presidencia, responsable de la preparación material de las convocatorias, distribución de expedientes, archivo de actas y remisión de los acuerdos al BOE.</li>
+<li><strong>Los Gabinetes (artículo 10 LGob)</strong>:</li>
+<li>Órganos de apoyo político y técnico al Presidente, Vicepresidentes y Ministros. Su personal es de confianza o asesoramiento especial (personal eventual), cesando automáticamente cuando cesa la autoridad que los nombró.</li>
+</ul>
+<h3 class='subsection-title'>1.4. Jerarquía y Forma de las Disposiciones y Resoluciones del Gobierno</h3>
+<p>El <strong>artículo 24 de la Ley 50/1997</strong> consagra la prelación jerárquica de las decisiones gubernamentales:</p>
+<ul>
+<li><strong>Reales Decretos Legislativos y Reales Decretos-leyes</strong>: Disposiciones con rango y fuerza de ley aprobadas por el Consejo de Ministros y sancionadas por el Rey.</li>
+<li><strong>Reales Decretos del Presidente del Gobierno</strong>: Disposiciones normativas singulares que dictan normas de estructura orgánica de la Presidencia y creación de Ministerios.</li>
+<li><strong>Reales Decretos acordados en Consejo de Ministros</strong>: Reglamentos ejecutivos generales y disposiciones de desarrollo legal.</li>
+<li><strong>Acuerdos del Consejo de Ministros</strong>: Decisiones de trámite, aprobaciones de planes o autorizaciones que no revisten forma de disposición general.</li>
+<li><strong>Acuerdos de las Comisiones Delegadas del Gobierno</strong>.</li>
+<li><strong>Órdenes Ministeriales</strong>: Disposiciones reglamentarias emanadas de los Ministros para la regulación organizativa interna de sus departamentos o materias delegadas por la ley.</li>
+</ul>
+<hr class='divider'/>
+<h2 class='section-title'>2. DESIGNACIÓN, REMOCIÓN Y RESPONSABILIDAD DEL GOBIERNO Y DE SU PRESIDENCIA</h2>
+<h3 class='subsection-title'>2.1. Designación de la Presidencia del Gobierno: Procedimiento Ordinario de Investidura (Artículo 99 CE)</h3>
+<p>El modelo español es un parlamentarismo racionalizado donde la confianza de la Cámara no se otorga al Gobierno en su conjunto, sino de modo <strong>personal e intransferible a su Presidente</strong>:</p>
+<div class='code-card'><pre>
++-------------------------------------------------------------------------+
+|                  PROCEDIMIENTO DE INVESTIDURA (ART. 99 CE)              |
++-------------------------------------------------------------------------+
+|  1. Consultas del Rey con representantes de los Grupos Parlamentarios   |
+|  2. Propuesta formal de candidato por el Rey, con REFRENDO del          |
+|     PRESIDENTE DEL CONGRESO DE LOS DIPUTADOS (Art. 64.2 CE)             |
+|  3. Sesión Plenaria en el Congreso: Exposición del Programa Político    |
+|  4. PRIMERA VOTACIÓN: Requiere MAYORÍA ABSOLUTA (mínimo 176 votos)      |
++-------------------------------------------------------------------------+
+       |
+       +---&gt; Si SÍ obtiene Mayoría Absoluta ---&gt; INVESTIDO
+       |
+       +---&gt; Si NO obtiene Mayoría Absoluta:
+             |
+             v
++-------------------------------------------------------------------------+
+|  5. SEGUNDA VOTACIÓN: Convocada 48 HORAS después                         |
+|     Requiere únicamente MAYORÍA SIMPLE (más votos a favor que en contra)|
++-------------------------------------------------------------------------+
+       |
+       +---&gt; Si SÍ obtiene Mayoría Simple ---&gt; INVESTIDO
+       |
+       +---&gt; Si NO obtiene Mayoría Simple:
+             |
+             v
++-------------------------------------------------------------------------+
+|  6. PROPUESTAS SUCESIVAS por el mismo procedimiento                     |
+|  7. PLAZO LÍMITE: DOS MESES a contar desde la primera votación           |
+|     Si transcurren 2 meses sin investidura:                             |
+|     DISOLUCIÓN DE AMBAS CÁMARAS POR EL REY Y ELECCIONES GENERALES       |
+|     (Refrendado obligatoriamente por el Presidente del Congreso)        |
++-------------------------------------------------------------------------+
+</pre></div>
+<ul>
+<li><strong>Ronda de Consultas</strong>: Tras cada renovación del Congreso de los Diputados o los demás supuestos constitucionales de cese, el Rey realiza una ronda de consultas con los representantes designados por los grupos políticos con representación parlamentaria.</li>
+<li><strong>Propuesta Real y Refrendo</strong>: A través del Presidente del Congreso, el Rey propone un candidato/a. Nótese que el candidato <strong>no tiene que ser necesariamente Diputado</strong> (la CE no exige la condición parlamentaria, a diferencia del Estatuto andaluz). El acto regio de propuesta va refrendado preceptivamente por el <strong>Presidente del Congreso de los Diputados</strong> (artículo 64.2 CE).</li>
+<li><strong>Debate de Investidura</strong>: El candidato expone ante el Pleno del Congreso el programa político del Gobierno que pretende formar y solicita la confianza de la Cámara.</li>
+<li><strong>Primera Votación</strong>: Si el Congreso de los Diputados, por el voto de la <strong>mayoría absoluta</strong> de sus miembros (al menos <strong>176 votos</strong> de los 350 escaños), otorga su confianza al candidato, el Rey le nombrará Presidente.</li>
+<li><strong>Segunda Votación</strong>: De no alcanzarse la mayoría absoluta, se somete la misma propuesta a nueva votación <strong>cuarenta y ocho horas después</strong> de la primera. La confianza se entiende otorgada si obtuviere la <strong>mayoría simple</strong> (mayor número de votos a favor que en contra).</li>
+<li><strong>Propuestas Sucesivas y Disolución Automática por Bloqueo (artículo 99.5 CE)</strong>:</li>
+<li>Si efectuadas las votaciones anteriores no se otorgase la confianza, se tramitarán sucesivas propuestas de candidatos por el mismo procedimiento.</li>
+<li><strong>Plazo de caducidad automática de dos meses</strong>: <em>"Si transcurrido el plazo de dos meses, a partir de la primera votación de investidura, ningún candidato hubiere obtenido la confianza del Congreso, el Rey disolverá ambas Cámaras y convocará nuevas elecciones con el refrendo del Presidente del Congreso"</em>.</li>
+<li><strong>Nombramiento</strong>: Otorgada la investidura, el Rey nombra al candidato mediante <strong>Real Decreto</strong>, con el refrendo del Presidente del Congreso de los Diputados.</li>
+</ul>
+<h3 class='subsection-title'>2.2. Designación y Nombramiento de los Demás Miembros del Gobierno (Artículo 100 CE)</h3>
+<ul>
+<li>Los demás miembros del Gobierno (Vicepresidentes y Ministros) son <strong>nombrados y separados por el Rey, a propuesta exclusiva de su Presidente</strong>.</li>
+<li>El Congreso de los Diputados no interviene en la designación de los Ministros; rige el principio de confianza presidencial absoluta.</li>
+</ul>
+<h3 class='subsection-title'>2.3. Estatuto Personal, Incompatibilidades y Responsabilidad Criminal</h3>
+<h4 class='subsubsection-title'>2.3.1. Régimen de Incompatibilidades (Artículo 98.3 y 98.4 CE y Art. 14 LGob)</h4>
+<ul>
+<li>Los miembros del Gobierno no podrán ejercer otras funciones representativas que las propias del <strong>mandato parlamentario</strong> (pueden ser Diputados o Senadores), ni cualquier otra función pública que no derive de su cargo, ni actividad profesional o mercantil alguna.</li>
+<li>Su régimen retributivo e indemnizatorio se fija exclusivamente en los Presupuestos Generales del Estado.</li>
+</ul>
+<h4 class='subsubsection-title'>2.3.2. Fuero Procesal y Responsabilidad Penal (Artículo 102 CE)</h4>
+<ul>
+<li><strong>Aforamiento especial (102.1)</strong>: La responsabilidad criminal del Presidente y de los demás miembros del Gobierno será exigible, en todo caso, ante la <strong>Sala de lo Penal del Tribunal Supremo</strong>.</li>
+<li><strong>Acusación por traición o delitos contra la seguridad del Estado (102.2)</strong>: Si la acusación fuere por traición o por cualquier delito contra la seguridad del Estado en el ejercicio de sus funciones:</li>
+<li>Solo podrá ser planteada por iniciativa de la <strong>cuarta parte (1/4)</strong> de los miembros del Congreso de los Diputados (al menos 88 diputados).</li>
+<li>Requiere para prosperar la aprobación por la <strong>mayoría absoluta</strong> del Congreso (al menos 176 votos).</li>
+<li><strong>Prohibición absoluta del indulto (102.3)</strong>: <em>"La prerrogativa real de gracia no será aplicable a ninguno de los supuestos del presente artículo"</em>. La Constitución prohíbe de forma terminante conceder el indulto al Presidente o Ministros condenados por delitos cometidos en el ejercicio de sus funciones gubernamentales.</li>
+</ul>
+<h3 class='subsection-title'>2.4. Cese del Gobierno y el Régimen del Gobierno en Funciones</h3>
+<p>El cese del Gobierno se encuentra tasado rigurosamente en el <strong>artículo 101 de la CE</strong> y en el <strong>Título IV de la Ley 50/1997</strong>:</p>
+<h4 class='subsubsection-title'>2.4.1. Causas Constitucionales de Cese (Artículo 101.1 CE)</h4>
+<p>El Gobierno cesa en cuatro supuestos taxativos:</p>
+<ul>
+<li>Tras la celebración de <strong>elecciones generales</strong>.</li>
+<li>En los casos de <strong>pérdida de la confianza parlamentaria</strong> previstos en la Constitución (rechazo de una cuestión de confianza o aprobación de una moción de censura).</li>
+<li>Por <strong>dimisión</strong> del Presidente del Gobierno.</li>
+<li>Por <strong>fallecimiento</strong> del Presidente del Gobierno.</li>
+</ul>
+<div class='quote-card'><strong>Principio de solidaridad en el cese</strong>: El cese del Presidente del Gobierno arrastra inexorablemente el <strong>cese simultáneo de todo el Gobierno</strong>. La separación individual de Ministros por decisión presidencial (art. 100) no produce el cese del gabinete, sino una simple remodelación ministerial.</div>
+<h4 class='subsubsection-title'>2.4.2. El Régimen Jurídico del Gobierno en Funciones (Artículo 21 LGob)</h4>
+<p>Conforme al artículo 101.2 CE, el Gobierno cesante continúa en funciones hasta la toma de posesión del nuevo Gobierno para evitar vacíos de poder:</p>
+<ul>
+<li><strong>Principio general</strong>: El Gobierno en funciones facilitará el normal desarrollo del proceso de formación del nuevo Gobierno y el traspaso de poderes, y limitará su gestión al <strong>despacho ordinario de los asuntos públicos</strong>, absteniéndose de adoptar, salvo casos de urgencia debidamente acreditados o por razones de interés general cuya apreciación expresa motive el acuerdo, cualesquiera otras medidas.</li>
+<li><strong>Facultades constitucionalmente vedadas al Presidente en funciones</strong>:</li>
+<li>No puede proponer al Rey la <strong>disolución de ninguna de las Cámaras, ni de las Cortes Generales</strong>.</li>
+<li>No puede plantear la <strong>cuestión de confianza</strong>.</li>
+<li>No puede proponer al Rey la convocatoria de un <strong>referéndum consultivo</strong>.</li>
+<li><strong>Facultades vedadas al Gobierno en funciones como órgano colegiado</strong>:</li>
+<li>No puede aprobar el <strong>Proyecto de Ley de Presupuestos Generales del Estado</strong>.</li>
+<li>No puede presentar <strong>proyectos de ley</strong> al Congreso de los Diputados o al Senado.</li>
+</ul>
+<hr class='divider'/>
+<h2 class='section-title'>3. EL CONTROL PARLAMENTARIO DEL GOBIERNO (TÍTULO V CE)</h2>
+<p>El Título V de la Constitución (artículos 108 a 116) disciplina las relaciones entre el Gobierno y las Cortes Generales bajo las premisas del parlamentarismo racionalizado.</p>
+<h3 class='subsection-title'>3.1. Principio de Responsabilidad Política Solidaria (Artículo 108 CE)</h3>
+<p>El <strong>artículo 108 CE</strong> establece que <em>"el Gobierno responde solidariamente de su gestión política ante el Congreso de los Diputados"</em>. </p>
+<ul>
+<li>Esta responsabilidad es de naturaleza estrictamente <strong>política</strong> (no jurídica ni penal).</li>
+<li>Se exige de modo exclusivo ante el <strong>Congreso de los Diputados</strong>, marginando al Senado de la capacidad de derribar o investir al Gobierno.</li>
+<li>La responsabilidad es <strong>solidaria</strong>: La Cámara enjuicia y censura la acción del Gobierno como cuerpo colectivo, sin perjuicio de la reprobación individual de Ministros (mediante mociones de reprobación, que carecen de eficacia jurídica destitutoria obligatoria).</li>
+</ul>
+<h3 class='subsection-title'>3.2. Instrumentos de Control Ordinario y Fiscalización</h3>
+<p>Son instrumentos de fiscalización continua que no conllevan por sí mismos el cese automático del Gobierno:</p>
+<ul>
+<li><strong>Peticiones de información (artículo 109 CE)</strong>: Las Cámaras y sus Comisiones pueden recabar, a través de sus Presidentes, las informaciones y ayuda que precisen del Gobierno y de sus departamentos y de cualesquiera autoridades del Estado y de las CCAA.</li>
+<li><strong>Comparecencias e información verbal (artículo 110 CE)</strong>: Las Cámaras y sus Comisiones pueden reclamar la presencia de los miembros del Gobierno. Estos tienen acceso a las sesiones de las Cámaras y de sus Comisiones y la facultad de hacerse oír en ellas.</li>
+<li><strong>Preguntas parlamentarias (artículo 111 CE)</strong>: Interpelaciones concretas formuladas por los Diputados y Senadores. Pueden ser de respuesta escrita o de <strong>respuesta oral en Pleno o Comisión</strong>. Los Reglamentos de las Cámaras reservan un tiempo mínimo semanal a este objeto (las tradicionales sesiones de control de los miércoles).</li>
+<li><strong>Interpelaciones y Mociones (artículo 111.2 CE)</strong>: Las interpelaciones versan sobre los motivos o propósitos de la conducta del ejecutivo en cuestiones de política general. Toda interpelación puede dar lugar a una <strong>moción en que la Cámara manifieste su posición</strong> política respecto a la materia debatida.</li>
+<li><strong>Comisiones de Investigación (artículo 76 CE)</strong>: Creadas por el Congreso, por el Senado o por ambas Cámaras conjuntamente sobre cualquier asunto de interés público. Sus conclusiones no son vinculantes para los tribunales ni afectan a las resoluciones judiciales, sin perjuicio de que se comuniquen al Ministerio Fiscal si se aprecian indicios de delito.</li>
+</ul>
+<hr class='divider'/>
+<h3 class='subsection-title'>3.3. Instrumentos de Control Extraordinario con Eficacia Destitutoria</h3>
+<h4 class='subsubsection-title'>3.3.1. La Cuestión de Confianza (Artículos 112 y 114.1 CE)</h4>
+<p>Es un instrumento de iniciativa gubernamental diseñado para que el Presidente refuerce su liderazgo político o consolide su mayoría parlamentaria:</p>
+<div class='code-card'><pre>
++-------------------------------------------------------------------------+
+|                  CUESTIÓN DE CONFIANZA (ARTÍCULOS 112 Y 114.1 CE)       |
++-------------------------------------------------------------------------+
+|  • INICIATIVA: Exclusiva del Presidente del Gobierno, PREVIA            |
+|                DELIBERACIÓN DEL CONSEJO DE MINISTROS.                   |
+|  • OBJETO: Su programa político o una declaración de política general.   |
+|  • VOTACIÓN: Tras el debate en el Congreso de los Diputados.            |
+|  • QUÓRUM DE APROBACIÓN: MAYORÍA SIMPLE de los Diputados presentes     |
+|                          (más votos a favor que en contra).             |
++-------------------------------------------------------------------------+
+       |
+       +---&gt; Si OBTIENE Mayoría Simple ---&gt; Gana la confianza; el Gobierno
+       |                                   continúa fortalecido.
+       |
+       +---&gt; Si NO OBTIENE Mayoría Simple -&gt; PIERDE la confianza.
+             |
+             v
++-------------------------------------------------------------------------+
+|  CONSECUENCIA (Art. 114.1 CE): El Presidente debe presentar su          |
+|  DIMISIÓN formal al Rey. Se abre de inmediato el proceso reglado de     |
+|  investidura de un nuevo Presidente conforme al artículo 99 CE.         |
++-------------------------------------------------------------------------+
+</pre></div>
+<ul>
+<li><strong>Mayoría exigida</strong>: A diferencia de la investidura inicial, la cuestión de confianza se entiende otorgada si obtiene el voto favorable de la <strong>mayoría simple</strong> de los Diputados presentes.</li>
+<li><strong>Efecto de la denegación</strong>: El artículo 114.1 CE impone que <em>"si el Congreso niega su confianza al Gobierno, éste presentará su dimisión al Rey, procediéndose a continuación a la designación de Presidente del Gobierno, según lo dispuesto en el artículo 99"</em>.</li>
+</ul>
+<h4 class='subsubsection-title'>3.3.2. La Moción de Censura (Artículos 113 y 114.2 CE)</h4>
+<p>Inspirada en el artículo 67 de la Ley Fundamental de Bonn de 1949, la Constitución adoptó el modelo de <strong>moción de censura constructiva</strong>: No persigue únicamente derribar al Gobierno en funciones, sino investir simultáneamente a un Presidente alternativo, evitando situaciones de acefalía política:</p>
+<div class='code-card'><pre>
++-------------------------------------------------------------------------+
+|                  MOCIÓN DE CENSURA CONSTRUCTIVA (ARTS. 113 Y 114.2 CE)  |
++-------------------------------------------------------------------------+
+|  1. NATURALEZA CONSTRUCTIVA: Debe incluir OBLIGATORIAMENTE a un         |
+|     CANDIDATO/A a la Presidencia del Gobierno.                         |
+|  2. INICIATIVA: Firmada por al menos la DÉCIMA PARTE (1/10) de los      |
+|     Diputados del Congreso (mínimo 35 DIPUTADOS de 350).               |
+|  3. PERÍODO DE ENFRIAMIENTO: No podrá ser votada hasta transcurridos    |
+|     CINCO DÍAS desde su presentación oficial.                           |
+|  4. MOCIONES ALTERNATIVAS: Pueden presentarse durante los DOS PRIMEROS  |
+|     DÍAS de dicho plazo de cinco días.                                  |
+|  5. QUÓRUM DE APROBACIÓN: Requiere el voto favorable de la              |
+|     MAYORÍA ABSOLUTA del Congreso de los Diputados (≥ 176 votos).       |
++-------------------------------------------------------------------------+
+       |
+       +---&gt; Si SE APRUEBA (Mayoría Absoluta):
+       |     • El Gobierno en pleno cesa de inmediato (Art. 114.2 CE).
+       |     • El candidato incluido se entiende INVESTIDO de la confianza
+       |       parlamentaria y es NOMBRADO PRESIDENTE POR EL REY.
+       |
+       +---&gt; Si SE RECHAZA (No alcanza Mayoría Absoluta):
+             • El Gobierno censurado permanece en el poder.
+             • Sanción a los firmantes: NO PODRÁN PRESENTAR OTRA MOCIÓN
+               DURANTE EL MISMO PERÍODO DE SESIONES (Art. 113.4 CE).
++-------------------------------------------------------------------------+
+</pre></div>
+<div class='table-container'><table>
+<thead><tr><th>Parámetro Comparativo</th><th>Cuestión de Confianza (Art. 112 CE)</th><th>Moción de Censura (Art. 113 CE)</th></tr></thead><tbody>
+<tr><td><strong>Sujeto que la plantea</strong></td><td>El Presidente del Gobierno</td><td>La oposición (al menos 1/10 de Diputados = 35)</td></tr>
+<tr><td><strong>Requisito previo</strong></td><td>Deliberación del Consejo de Ministros</td><td>Inclusión obligatoria de candidato alternativo</td></tr>
+<tr><td><strong>Cámara ante la que se sustancia</strong></td><td>Exclusivamente el Congreso de los Diputados</td><td>Exclusivamente el Congreso de los Diputados</td></tr>
+<tr><td><strong>Plazo de enfriamiento</strong></td><td>No previsto en la CE (según Reglamento)</td><td>Obligatorio: Votación pasados <strong>5 días</strong> (alternativas en <strong>2 días</strong>)</td></tr>
+<tr><td><strong>Mayoría para prosperar</strong></td><td><strong>Mayoría simple</strong> de votos emitidos</td><td><strong>Mayoría absoluta</strong> de la Cámara (al menos 176)</td></tr>
+<tr><td><strong>Efecto de la aprobación</strong></td><td>Reafirma y fortalece al Gobierno</td><td>Cese del Gobierno e investidura directa del candidato alternativo</td></tr>
+<tr><td><strong>Efecto del fracaso</strong></td><td>Dimisión obligatoria del Presidente al Rey</td><td>Los firmantes no pueden presentar otra en el mismo período</td></tr>
+</tbody></table></div>
+<hr class='divider'/>
+<h2 class='section-title'>4. ARTICULACIÓN PRÁCTICA CON LA ADMINISTRACIÓN LOCAL Y LA EDUCACIÓN SOCIAL EN EL AYUNTAMIENTO DE UTRERA</h2>
+<p>Las decisiones normativas y gubernativas adoptadas por el Consejo de Ministros de la Nación condicionan directamente el marco laboral, presupuestario y programático del <strong>Técnico/a Medio de Educación Social</strong> en el Excmo. Ayuntamiento de Utrera:</p>
+<ul>
+<li><strong>Financiación estatal de los Servicios Sociales Comunitarios</strong>: A través de los Acuerdos del Consejo de Ministros que aprueban los criterios de distribución territorial de créditos entre Comunidades Autónomas, se nutre el <strong>Plan Concertado de Prestaciones Básicas de Servicios Sociales</strong>. Estos fondos estatales se transfieren a la Junta de Andalucía y de esta al Ayuntamiento de Utrera, sustentando la dotación de las plazas de la Subescala Técnica en el Centro de Servicios Sociales Comunitarios (calle Catalina de Perea, 32).</li>
+<li><strong>Legislación estatal básica y Decretos del Gobierno</strong>: El Educador/a Social aplica sobre el terreno disposiciones aprobadas por el Gobierno de la Nación en materias concurrentes:</li>
+<li>Los Reales Decretos que desarrollan el Catálogo de Servicios y Prestaciones del Sistema para la Autonomía y Atención a la Dependencia (<strong>SAAD</strong>, al amparo de la Ley 39/2006).</li>
+<li>Los marcos reglamentarios de protección frente a la violencia infantil derivados de la Ley Orgánica 8/2021 (<strong>LOPIVI</strong>), que imponen protocolos específicos a las entidades locales.</li>
+<li>Las convocatorias estatales de subvenciones para programas contra la pobreza infantil y exclusión social en zonas desfavorecidas como la Barriada El Tinte de Utrera.</li>
+<li><strong>Coordinación interadministrativa</strong>: Aunque el personal técnico depende orgánicamente de la Corporación Local de Utrera y funcionalmente de la normativa autonómica andaluza, los estándares mínimos de protección social y los derechos de la ciudadanía se hallan blindados por la función ejecutiva y reglamentaria que ejerce el Gobierno de la Nación conforme al artículo 97 de la Constitución.</li>
+</ul>
+<hr class='divider'/>
+<h2 class='section-title'>SECCIONES PEDAGÓGICAS OBLIGATORIAS</h2>
+<h3 class='subsection-title'>A. DATOS DE EXAMEN (22 ELEMENTOS DE MEMORIZACIÓN PURA)</h3>
+<ul>
+<li><strong>Precepto rector de funciones del Gobierno</strong>: <strong>Artículo 97 CE</strong> (dirección política interior/exterior, administración civil/militar, defensa, función ejecutiva y potestad reglamentaria).</li>
+<li><strong>Miembros obligatorios del Gobierno (art. 98.1 CE y art. 1.2 Ley 50/1997)</strong>: <strong>Presidente</strong> y <strong>Ministros</strong> (Vicepresidentes son potestativos).</li>
+<li><strong>Condición jurídica de los Secretarios de Estado</strong>: Son órganos superiores de la Administración (Ley 40/2015), pero <strong>no son miembros del Gobierno</strong>.</li>
+<li><strong>Secretismo de deliberaciones (art. 5.3 Ley 50/1997)</strong>: Las reuniones del Consejo de Ministros son <strong>estrictamente secretas</strong>.</li>
+<li><strong>Órgano preparatorio preceptivo del Consejo de Ministros (art. 8 Ley 50/1997)</strong>: La <strong>Comisión General de Secretarios de Estado y Subsecretarios</strong>.</li>
+<li><strong>Refrendo de la propuesta y nombramiento del Presidente del Gobierno (art. 64.2 CE)</strong>: Corresponde al <strong>Presidente del Congreso de los Diputados</strong>.</li>
+<li><strong>Mayorías de investidura presidencial (art. 99.3 y 99.4 CE)</strong>: 1ª votación: <strong>Mayoría absoluta</strong> (176 votos). 2ª votación: <strong>Mayoría simple</strong>, exactamente <strong>48 horas después</strong>.</li>
+<li><strong>Plazo límite de disolución automática por bloqueo (art. 99.5 CE)</strong>: <strong>Dos meses</strong> a contar desde la primera votación de investidura.</li>
+<li><strong>Nombramiento y cese de Ministros (art. 100 CE)</strong>: Por el <strong>Rey</strong>, a propuesta exclusiva de su <strong>Presidente</strong>.</li>
+</ul>
+<p>10. <strong>Fuero procesal penal del Gobierno (art. 102.1 CE)</strong>: Exclusivamente la <strong>Sala de lo Penal del Tribunal Supremo</strong>.</p>
+<p>11. <strong>Acusación al Gobierno por traición (art. 102.2 CE)</strong>: Iniciativa de <strong>1/4 de los miembros del Congreso</strong> y aprobación por <strong>mayoría absoluta</strong>.</p>
+<p>12. <strong>Prohibición expresa de indulto (art. 102.3 CE)</strong>: No cabe el indulto ni la prerrogativa de gracia en acusaciones por traición o delitos contra la seguridad del Estado cometidos por miembros del Gobierno.</p>
+<p>13. <strong>Causas constitucionales de cese del Gobierno (art. 101.1 CE)</strong>: Elecciones generales, pérdida de confianza parlamentaria, <strong>dimisión</strong> o <strong>fallecimiento</strong> del Presidente.</p>
+<p>14. <strong>Facultades prohibidas al Presidente en funciones (art. 21 Ley 50/1997)</strong>: Disolver las Cortes, plantear cuestión de confianza y convocar referéndum.</p>
+<p>15. <strong>Facultades prohibidas al Gobierno en funciones</strong>: Aprobar el Proyecto de Presupuestos Generales del Estado y presentar proyectos de ley al Parlamento.</p>
+<p>16. <strong>Órgano ante el que responde el Gobierno (art. 108 CE)</strong>: Solidariamente ante el <strong>Congreso de los Diputados</strong> (el Senado no puede exigir responsabilidad política).</p>
+<p>17. <strong>Mayoría de aprobación de la Cuestión de Confianza (art. 112 CE)</strong>: <strong>Mayoría simple</strong> de los Diputados presentes.</p>
+<p>18. <strong>Consecuencia del rechazo de la Cuestión de Confianza (art. 114.1 CE)</strong>: <strong>Dimisión obligatoria del Presidente al Rey</strong> y apertura del proceso del art. 99 CE.</p>
+<p>19. <strong>Firma exigida para la Moción de Censura (art. 113.2 CE)</strong>: Al menos la <strong>décima parte (1/10) de los Diputados</strong> (mínimo de <strong>35 Diputados</strong>).</p>
+<p>20. <strong>Plazo de enfriamiento de la Moción de Censura (art. 113.3 CE)</strong>: <strong>Cinco días</strong> desde su presentación (mociones alternativas en los <strong>dos primeros días</strong>).</p>
+<p>21. <strong>Mayoría de aprobación de la Moción de Censura (art. 113.1 y 114.2 CE)</strong>: <strong>Mayoría absoluta del Congreso</strong> (al menos <strong>176 votos</strong>).</p>
+<p>22. <strong>Sanción por fracaso de la Moción de Censura (art. 113.4 CE)</strong>: Sus signatarios <strong>no podrán presentar otra durante el mismo período de sesiones</strong>.</p>
+<hr class='divider'/>
+<h3 class='subsection-title'>B. ESQUEMA DE REPASO RÁPIDO</h3>
+<div class='code-card'><pre>
+EL GOBIERNO EN LA CONSTITUCIÓN ESPAÑOLA (TÍTULO IV Y TÍTULO V)
+│
+├── 1. COMPOSICIÓN Y ESTRUCTURA (Art. 98 CE; Ley 50/1997)
+│   ├── Miembros obligatorios: Presidente del Gobierno y Ministros.
+│   ├── Miembros potestativos: Vicepresidente o Vicepresidentes.
+│   ├── NO forman parte: Secretarios de Estado (órganos superiores de administración).
+│   ├── Funcionamiento: Consejo de Ministros (deliberaciones SECRETAS).
+│   ├── Órgano preparatorio: Comisión General de Secretarios de Estado y Subsecretarios.
+│   └── Jerarquía normativa: Real Decreto-ley/Legislativo &gt; RD Presidente &gt; RD Consejo &gt; Orden Ministerial.
+│
+├── 2. DESIGNACIÓN Y ESTATUTO (Arts. 99 a 102 CE)
+│   ├── Investidura Presidencial (Art. 99):
+│   │   ├── 1ª Votación: MAYORÍA ABSOLUTA (≥ 176 votos).
+│   │   ├── 2ª Votación (a las 48 horas): MAYORÍA SIMPLE.
+│   │   └── Plazo límite: 2 MESES desde 1ª votación -&gt; Disolución de Cortes y elecciones.
+│   ├── Nombramiento de Ministros: Por el Rey a propuesta exclusiva del Presidente (Art. 100).
+│   ├── Aforamiento procesal: Sala de lo Penal del Tribunal Supremo (Art. 102.1).
+│   └── Traición (Art. 102.2/3): Iniciativa 1/4 Congreso + Mayoría Absoluta | PROHIBIDO EL INDULTO.
+│
+├── 3. CESE Y GOBIERNO EN FUNCIONES (Art. 101 CE; Art. 21 Ley 50/1997)
+│   ├── Causas de cese: Elecciones generales | Pérdida de confianza | Dimisión | Fallecimiento.
+│   ├── Cese del Presidente = Cese solidario de todo el Gobierno.
+│   └── Gobierno en Funciones: Despacho ordinario de asuntos | PROHIBIDO: disolver Cortes, plantear confianza,
+│                              convocar referéndum, aprobar Presupuestos o presentar proyectos de ley.
+│
+└── 4. CONTROL PARLAMENTARIO (Título V CE: Arts. 108 a 116)
+    ├── Responsabilidad solidaria: Exclusivamente ante el CONGRESO DE LOS DIPUTADOS (Art. 108).
+    ├── Control ordinario: Preguntas (sesiones semanales), interpelaciones, comparecencias, comisiones de inv.
+    └── Control extraordinario (Eficacia Destitutoria):
+        ├── CUESTIÓN DE CONFIANZA (Arts. 112 y 114.1):
+        │   ├── Iniciativa: Presidente (previa deliberación Consejo de Ministros) sobre programa.
+        │   ├── Aprobación: MAYORÍA SIMPLE de votos emitidos.
+        │   └── Denegación: Dimisión obligatoria del Presidente al Rey -&gt; Proceso Art. 99 CE.
+        └── MOCIÓN DE CENSURA CONSTRUCTIVA (Arts. 113 y 114.2):
+            ├── Requisito sustantivo: Debe incluir obligatoriamente CANDIDATO ALTERNATIVO.
+            ├── Firma: Al menos 1/10 de los Diputados (35 escaños).
+            ├── Plazo de espera: Votación tras 5 DÍAS (alternativas en los 2 primeros días).
+            ├── Aprobación: MAYORÍA ABSOLUTA del Congreso (≥ 176 votos).
+            └── Éxito: Cesa el Gobierno y el candidato queda investido Presidente nombrado por el Rey.
+</pre></div>
+<hr class='divider'/>
+<h3 class='subsection-title'>C. TRAMPAS DEL TEST</h3>
+<ul>
+<li><strong>Trampa</strong>: Afirmar que los Secretarios de Estado son miembros natos del Gobierno de la Nación.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: Es un error recurrente. Conforme al artículo 1.2 de la Ley 50/1997, el Gobierno se compone exclusivamente del <strong>Presidente, del Vicepresidente o Vicepresidentes y de los Ministros</strong>. Los Secretarios de Estado son órganos superiores de la Administración General del Estado (Ley 40/2015), pero no forman parte del Gobierno.</p>
+<ul>
+<li><strong>Trampa</strong>: Indicar que la propuesta regia de candidato a la Presidencia del Gobierno es refrendada por el Presidente del Gobierno saliente.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: Conforme al <strong>artículo 64.2 de la CE</strong>, la propuesta y el nombramiento del Presidente del Gobierno (así como la disolución de las Cortes prevista en el artículo 99.5) son refrendados obligatoriamente por el <strong>Presidente del Congreso de los Diputados</strong>, y no por el Presidente del Gobierno cesante.</p>
+<ul>
+<li><strong>Trampa</strong>: Preguntar por la mayoría exigida para aprobar una cuestión de confianza y responder mayoría absoluta.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: La cuestión de confianza se aprueba por <strong>mayoría simple</strong> de los Diputados presentes (artículo 112 CE). Es la <strong>moción de censura</strong> la que requiere preceptivamente <strong>mayoría absoluta</strong> de los miembros del Congreso (artículo 113.1 CE).</p>
+<ul>
+<li><strong>Trampa</strong>: Sostener que para presentar una moción de censura en el Congreso se requiere la firma de la cuarta parte (1/4) de los Diputados.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: En el Congreso de los Diputados la iniciativa de la moción de censura requiere la firma de al menos la <strong>décima parte (1/10)</strong> de los miembros (35 Diputados, art. 113.2 CE). La cuarta parte (1/4 = 28 diputados) se exige en el <strong>Parlamento de Andalucía</strong> (art. 126 EAAnd) o en el Congreso para la <strong>acusación por traición</strong> al Gobierno (art. 102.2 CE).</p>
+<ul>
+<li><strong>Trampa</strong>: Creer que el Senado puede derribar al Gobierno mediante la denegación de una cuestión de confianza o la aprobación de una censura.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: El artículo 108 de la CE consagra que el Gobierno responde solidariamente de su gestión política <strong>exclusivamente ante el Congreso de los Diputados</strong>. El Senado ejerce funciones de control ordinario (preguntas e interpelaciones), pero carece de facultades destitutorias.</p>
+<ul>
+<li><strong>Trampa</strong>: Suponer que el Gobierno en funciones puede aprobar un Real Decreto-ley o presentar un Proyecto de Ley en supuestos urgentes.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: El artículo 21.5 de la Ley 50/1997 prohíbe terminantemente al Gobierno en funciones la <strong>aprobación de proyectos de ley y la remisión de proyectos de presupuestos</strong>. Aunque excepcionalmente la jurisprudencia del TC ha admitido decretos-leyes estrictamente justificados por extraordinaria necesidad de catástrofe, la regla general prohíbe la iniciativa legislativa formal.</p>
+<ul>
+<li><strong>Trampa</strong>: Afirmar que el Rey puede conceder el indulto al Presidente del Gobierno si es condenado penalmente por el Tribunal Supremo.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: El <strong>artículo 102.3 de la CE prohíbe de forma taxativa y absoluta la prerrogativa real de gracia (indulto)</strong> para los delitos cometidos por el Presidente o miembros del Gobierno en el ejercicio de sus funciones.</p>
+<hr class='divider'/>
+<h3 class='subsection-title'>D. ENFOQUE PRÁCTICO PARA EL AYUNTAMIENTO DE UTRERA</h3>
+<p>En el Centro de Servicios Sociales Comunitarios del Excmo. Ayuntamiento de Utrera (calle Catalina de Perea, 32), la función ejecutiva y reglamentaria del Gobierno de la Nación tiene una manifestación práctica tangible:</p>
+<ul>
+<li><strong>Ejecución del Plan Concertado de Prestaciones Básicas</strong>: El Educador/a Social implementa programas socioeducativos cuya financiación inicial depende de Acuerdos del Consejo de Ministros que autorizan el reparto territorial de fondos para atención a familias vulnerables y lucha contra la pobreza infantil en barriadas prioritarias de Utrera (como El Tinte).</li>
+<li><strong>Despliegue operativo de Reales Decretos estatales</strong>: Los protocolos ante situaciones de desprotección y violencia sobre la infancia derivan de las directrices de la LOPIVI aprobadas por el Gobierno de la Nación, coordinándose el Técnico/a municipal de Utrera con las Fuerzas y Cuerpos de Seguridad del Estado (Guardia Civil) en el término municipal.</li>
+</ul>
+<hr class='divider'/>
+<h3 class='subsection-title'>E. FUENTES OFICIALES Y NORMATIVA CONSOLIDADA</h3>
+<ul>
+<li><strong>Boletín Oficial del Estado (BOE)</strong>:</li>
+<li><em>Constitución Española de 1978</em>: Título IV "Del Gobierno y de la Administración" (arts. 97 a 107) y Título V "De las relaciones entre el Gobierno y las Cortes Generales" (arts. 108 a 116) (BOE nº 311, de 29 de diciembre de 1978).</li>
+<li><em>Ley 50/1997, de 27 de noviembre</em>, del Gobierno (BOE nº 285, de 28 de noviembre de 1997; texto consolidado con reformas de la Ley 40/2015).</li>
+<li><em>Ley 40/2015, de 1 de octubre</em>, de Régimen Jurídico del Sector Público: Artículos 54 a 68 sobre órganos superiores y directivos (BOE nº 236, de 2 de octubre de 2015).</li>
+<li><em>Reglamento del Congreso de los Diputados</em>, de 10 de febrero de 1982: Artículos 170 a 179 sobre debate de investidura, cuestión de confianza y moción de censura.</li>
+<li><strong>Jurisprudencia Constitucional de Referencia</strong>:</li>
+<li><em>STC 16/1984 y STC 223/2006</em>: Naturaleza de la potestad reglamentaria del Gobierno y límites de los reglamentos ejecutivos.</li>
+<li><em>STC 124/2018</em>: Doctrina sobre los límites y facultades del Gobierno en funciones durante períodos de disolución parlamentaria.</li>
+<li><strong>Portales Oficiales</strong>:</li>
+<li>Presidencia del Gobierno / La Moncloa: [www.lamoncloa.gob.es](https://www.lamoncloa.gob.es) (Composición del Consejo de Ministros, referencias y Acuerdos de Gobierno).</li>
+</ul>
+</body>
+</html>

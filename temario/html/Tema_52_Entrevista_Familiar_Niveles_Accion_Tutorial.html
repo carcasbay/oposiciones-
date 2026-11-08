@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 52: La entrevista familiar. Niveles de intervención. Acción tutorial - Oposición Educación Social Utrera</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 18mm 18mm 18mm;
+    @top-left {
+      content: "OPOSICIÓN EDUCACIÓN SOCIAL (GRUPO A2) - AYUNTAMIENTO DE UTRERA | TEMA 52";
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 7.8pt;
+      color: #666;
+      border-bottom: 0.5pt solid #bbb;
+      padding-bottom: 2mm;
+    }
+    @top-right {
+      content: "TEMA 52: ENTREVISTA FAMILIAR Y ACCIÓN TUTORIAL";
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 7.8pt;
+      color: #666;
+      border-bottom: 0.5pt solid #bbb;
+      padding-bottom: 2mm;
+    }
+    @bottom-center {
+      content: "Página " counter(page) " de " counter(pages);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 8pt;
+      color: #666;
+    }
+  }
+
+  body {
+    font-family: 'Georgia', serif;
+    font-size: 9.8pt;
+    line-height: 1.40;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+  }
+
+  .header-box {
+    background: linear-gradient(135deg, #1b365d 0%, #2b547e 100%);
+    color: white;
+    padding: 9px 13px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    page-break-inside: avoid;
+  }
+
+  .inst-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10.2pt;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    color: #f0f4f8;
+  }
+
+  .badges-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 3px;
+  }
+
+  .badge {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 7.6pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 3px;
+    display: inline-block;
+  }
+
+  .badge-primary { background-color: #dbeafe; color: #1e40af; }
+  .badge-secondary { background-color: #f1f5f9; color: #334155; }
+  .badge-warning { background-color: #fef3c7; color: #92400e; }
+
+  h1.doc-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    color: #1b365d;
+    margin: 8px 0 5px 0;
+    line-height: 1.22;
+    text-align: left;
+    page-break-after: avoid;
+  }
+
+  h2.section-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10.8pt;
+    font-weight: bold;
+    color: #1b365d;
+    border-bottom: 1.5px solid #1b365d;
+    padding-bottom: 2.5px;
+    margin: 11px 0 5px 0;
+    text-align: left;
+    page-break-after: avoid;
+  }
+
+  h2.header-exam { color: #1e3a8a; border-color: #1e3a8a; }
+  h2.header-scheme { color: #047857; border-color: #047857; }
+  h2.header-traps { color: #b91c1c; border-color: #b91c1c; }
+  h2.header-practical { color: #4338ca; border-color: #4338ca; }
+  h2.header-sources { color: #374151; border-color: #374151; }
+
+  h3.subsection-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 9.8pt;
+    font-weight: 600;
+    color: #2b547e;
+    margin: 8px 0 3px 0;
+    text-align: left;
+    page-break-after: avoid;
+  }
+
+  h4.subsubsection-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 9.2pt;
+    font-weight: 600;
+    color: #334155;
+    margin: 6px 0 2px 0;
+    text-align: left;
+    page-break-after: avoid;
+  }
+
+  p {
+    margin: 0 0 5px 0;
+  }
+
+  ul {
+    margin: 2px 0 5px 16px;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 2.5px;
+  }
+
+  strong {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    color: #0f172a;
+  }
+
+  .ascii-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 3.5px solid #1b365d;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.0pt;
+    line-height: 1.20;
+    padding: 5px 7px;
+    margin: 5px 0;
+    white-space: pre;
+    overflow-x: hidden;
+    page-break-inside: avoid;
+    border-radius: 3px;
+  }
+
+  .table-container {
+    margin: 5px 0;
+    page-break-inside: avoid;
+  }
+
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.3pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  table.data-table th {
+    background-color: #1b365d;
+    color: white;
+    font-weight: 600;
+    padding: 4px 6px;
+    text-align: left;
+    border: 1px solid #1b365d;
+  }
+
+  table.data-table td {
+    padding: 3.5px 6px;
+    border: 1px solid #cbd5e1;
+    vertical-align: top;
+  }
+
+  table.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+  }
+
+  .trap-q {
+    background-color: #fff1f2;
+    border-left: 3px solid #e11d48;
+    padding: 3px 6px;
+    margin: 2.5px 0;
+    list-style: none;
+    font-size: 8.6pt;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .trap-a {
+    background-color: #f0fdf4;
+    border-left: 3px solid #16a34a;
+    padding: 3px 6px;
+    margin: 2px 0 5px 0;
+    list-style: none;
+    font-size: 8.6pt;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .exam-item {
+    background-color: #f0fdf4;
+    border-left: 3px solid #15803d;
+    padding: 3px 6px;
+    margin-bottom: 3px;
+    font-size: 8.4pt;
+    font-family: 'Segoe UI', sans-serif;
+    page-break-inside: avoid;
+    border-radius: 2px;
+  }
+
+  .num-item {
+    margin-bottom: 3.5px;
+  }
+
+  .divider {
+    border: 0;
+    border-top: 1px solid #cbd5e1;
+    margin: 8px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-box">
+  <div class="inst-title">Excmo. Ayuntamiento de Utrera | Subescala Técnica - Grupo A2</div>
+  <div class="badges-row">
+    <span class="badge badge-primary">Educador/a Social</span>
+    <span class="badge badge-secondary">BOP Sevilla nº 102 (29/05/2026)</span>
+    <span class="badge badge-warning">Tema 52 - Específico</span>
+  </div>
+</div>
+
+<h1 class="doc-title">Tema 52: La entrevista familiar. Niveles de intervención familiar. Técnicas y programas de intervención familiar. Acción tutorial. Concepto de tutoría y plan de acción tutorial. Las personas tutoras</h1>
+<p><strong>Convocatoria:</strong> Técnico/a Medio de Educación Social (Subescala Técnica, Grupo A2) — Excmo. Ayuntamiento de Utrera (Sevilla) <strong>Oferta de Empleo Público:</strong> Consolidada (BOP de Sevilla nº 102, de 29/05/2026) <strong>Bloque:</strong> Materias Específicas (Tema 52)</p>
+<hr class="divider"/>
+<h2 class="section-title">1. Introducción y Justificación Epistemológica y Legal</h2>
+<p>La intervención socioeducativa con familias y la articulación armónica entre el sistema educativo y el entorno convivencial del menor constituyen pilares cardinales en el ejercicio profesional de la <strong>Educación Social</strong> en la Administración Local. Los problemas que afectan al desarrollo infantil y juvenil —tales como el desajuste conductual, las dificultades de aprendizaje, la desmotivación escolar, la violencia filioparental o el absentismo— rara vez se manifiestan como hechos aislados de naturaleza puramente individual; representan, por el contrario, la expresión sintomática de disfunciones en las pautas relacionales del sistema familiar o de fracturas en el <strong>mesosistema</strong> que conecta a la familia con la institución escolar.</p>
+<p>Para responder a estos desafíos, el/la Educador/a Social debe dominar de manera rigurosa la <strong>entrevista familiar</strong> como técnica instrumental privilegiada de evaluación, diagnóstico y cambio, así como los distintos <strong>niveles de intervención familiar</strong> y el catálogo de <strong>técnicas y programas basados en la evidencia científica</strong>. De forma simultánea, el conocimiento profundo de la <strong>acción tutorial</strong>, del <strong>Plan de Acción Tutorial (PAT)</strong> y del rol de <strong>las personas tutoras</strong> en el sistema educativo resulta imprescindible para estructurar puentes de cooperación interinstitucional eficaces entre la escuela y los Servicios Sociales Comunitarios.</p>
+<p>En el marco del <strong>Excmo. Ayuntamiento de Utrera</strong>, el/la Técnico/a Medio de Educación Social (Grupo A2) desempeña sus cometidos en el <strong>Centro de Servicios Sociales Comunitarios (sito en calle Catalina de Perea, 32)</strong>, integrándose operativamente en el <strong>Equipo Municipal de Atención al Absentismo (EMAE)</strong>, en los dispositivos de intervención comunitaria de la estrategia <strong>ERACIS+ en la Barriada El Tinte</strong>, y en la coordinación técnica descentralizada con las pedanías agrícolas de <strong>Guadalema de los Quintero, Trajano y Pinzón</strong>. Dicha labor exige una coordinación constante con los equipos docentes y tutores de los centros de educación infantil, primaria y secundaria del municipio (<strong>CEIP Rodrigo Caro, Álvarez Quintero, Coca de la Piñera... e IES Ruiz Gijón, Ponce de León, Virgen de Consolación, José María Infantes</strong>).</p>
+<p>El anclaje normativo fundamental de esta materia se sustenta en el bloque de constitucionalidad y en la legislación sectorial educativa y de servicios sociales:</p>
+<ul>
+<li><strong>Constitución Española de 1978</strong>: El <strong>artículo 27 de la CE</strong> consagra el derecho a la educación, la participación de la comunidad educativa y la libertad de enseñanza; el <strong>artículo 39 de la CE</strong> encomienda a los poderes públicos la protección integral de la familia y de los menores.</li>
+<li><strong>Ley Orgánica 2/2006, de 3 de mayo, de Educación (LOE)</strong>, modificada por la <strong>Ley Orgánica 3/2020, de 29 de diciembre (LOMLOE)</strong>: El <strong>artículo 91</strong> establece como función preceptiva del profesorado la tutoría del alumnado, la dirección y orientación de su aprendizaje y el apoyo en su proceso educativo en colaboración con las familias. El <strong>artículo 121</strong> determina la obligatoriedad del Proyecto Educativo de Centro (PEC), en cuyo seno se integra de forma preceptiva el Plan de Acción Tutorial.</li>
+<li><strong>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA)</strong>: Los <strong>artículos 3 y 34</strong> configuran la orientación y la tutoría como factores indispensables de la calidad y equidad educativa.</li>
+<li><strong>Decretos 327/2010 y 328/2010, de 13 de julio (Reglamentos Orgánicos de IES y CEIP en Andalucía)</strong>: Regulan detalladamente la organización, competencias y nombramiento de las personas tutoras y el marco del Plan de Acción Tutorial.</li>
+<li><strong>Orden de 20 de junio de 2011 de la Junta de Andalucía</strong>: Establece medidas para la promoción de la convivencia en los centros docentes y regula el derecho de las familias a participar en el proceso educativo mediante los <strong>Compromisos Educativos</strong> y los <strong>Compromisos de Convivencia</strong>.</li>
+<li><strong>Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía</strong>, y <strong>Decreto 100/2022, de 7 de junio</strong>, que regula el papel de los Equipos de Tratamiento Familiar (ETF) en Andalucía.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="section-title">2. La Entrevista Familiar como Instrumento Técnico Socioeducativo</h2>
+<h3 class="subsection-title">2.1. Concepto y Fundamentación Epistemológica Sistémica</h3>
+<p>La <strong>entrevista familiar</strong> se define como una técnica de interacción comunicativa estructurada, directa, interpersonal y orientada a fines predeterminados, que se desarrolla entre un profesional técnico (en nuestro caso, el/la Educador/a Social) y los miembros que componen el sistema familiar. Su objetivo es explorar, comprender, evaluar y movilizar las dinámicas relacionales, los recursos propios y las pautas comunicativas de la familia para promover cambios constructivos ante situaciones de dificultad o crisis (<strong>Cibanal, Arce y Carballal, 2014</strong>).</p>
+<p>Lejos de concebirse como un mero interrogatorio de preguntas y respuestas, la entrevista familiar encuentra su matriz epistemológica en la <strong>Teoría General de Sistemas</strong> (<strong>Ludwig von Bertalanffy, 1968</strong>), en la <strong>Cibernética de Segundo Orden</strong> (<strong>Heinz von Foerster</strong>) y en las corrientes sistémicas aplicadas a la familia:</p>
+<pre class="ascii-box">                          PARADIGMAS SISTÉMICOS DE LA ENTREVISTA FAMILIAR
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ 1. TEORÍA DE LA COMUNICACIÓN HUMANA (Escuela de Palo Alto - Watzlawick)     │
+ │    · Imposibilidad de no comunicar (toda conducta es comunicación).          │
+ │    · Niveles de contenido (digital) y de relación (analógico/no verbal).     │
+ │    · Puntuación de las secuencias comunicativas entre los miembros.          │
+ │    · Relaciones simétricas (igualdad) y complementarias (diferencia/rol).    │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 2. ESCUELA ESTRUCTURAL (Salvador Minuchin, 1974)                            │
+ │    · Estructura familiar: pautas transaccionales y jerarquía de poder.       │
+ │    · Subsistemas: conyugal, parental y fraternal.                            │
+ │    · Límites y fronteras: claros, difusos (aglutinamiento) y rígidos.       │
+ │    · Disfunciones: alianzas, coaliciones y triangulaciones patógenas.        │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 3. ESCUELA DE MILÁN (Mara Selvini Palazzoli, Boscolo, Cecchin, Prata, 1980)  │
+ │    · Tres directrices metodológicas para el conductor de la sesión:          │
+ │      a) HIPOTETIZACIÓN: formulación de hipótesis explicativas provisionales. │
+ │      b) CIRCULARIDAD: habilidad para operar según la retroalimentación.      │
+ │      c) NEUTRALIDAD: no tomar partido ni aliarse con ningún miembro.        │
+ └─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+<div class="exam-item"><strong>1.</strong> <strong>Aportaciones de la Escuela de Palo Alto (Paul Watzlawick et al., 1967)</strong>:</div>
+<ul>
+<li><em>Teoría de la comunicación humana</em>: El síntoma que presenta el menor (absentismo, agresión, fracaso) no es una patología individual innata, sino un <strong>mensaje comunicativo</strong> inserto en un circuito transaccional repetitivo.</li>
+<li>En la entrevista, el profesional analiza no solo lo que la familia dice (<em>nivel digital/contenido</em>), sino cómo lo dice mediante la postura, la mirada, los silencios y el tono (<em>nivel analógico/relacional</em>).</li>
+</ul>
+<div class="exam-item"><strong>2.</strong> <strong>Aportaciones de la Escuela Estructural (Salvador Minuchin, 1974)</strong>:</div>
+<ul>
+<li><em>Estructura familiar</em>: La entrevista permite observar in situ cómo se sientan los miembros de la familia, quién habla por quién, qué coaliciones encubiertas existen y si los límites entre el subsistema parental y el fraternal son permeables, rígidos o difusos.</li>
+</ul>
+<div class="exam-item"><strong>3.</strong> <strong>Aportaciones de la Escuela de Milán (Mara Selvini Palazzoli et al., 1980)</strong>:</div>
+<ul>
+<li>En su obra fundamental <em>Hipotetización, circularidad y neutralidad: tres directrices para el conductor de la sesión</em>, establecen los tres ejes metodológicos que deben guiar la práctica del entrevistador:</li>
+<li><strong>Hipotetización</strong>: El profesional inicia la entrevista no desde la mente en blanco, sino formulando una hipótesis sistémica provisional basada en la información previa disponible, utilizándola como guía de exploración que se valida o modifica sobre la marcha.</li>
+<li><strong>Circularidad</strong>: Capacidad del profesional para dirigir su investigación basándose en las retroalimentaciones continuas de la familia en respuesta a la información que él solicita en términos de relaciones y diferencias.</li>
+<li><strong>Neutralidad</strong>: Disposición pragmática del entrevistador de no emitir juicios morales ni aliarse con ningún subgrupo familiar, mostrando idéntica receptividad hacia todos los discursos.</li>
+</ul>
+<h3 class="subsection-title">2.2. Tipologías de la Entrevista Familiar según su Finalidad</h3>
+<p>En el ámbito de los Servicios Sociales y de la intervención socioeducativa, la entrevista familiar adopta distintas modalidades en función de la etapa del proceso de intervención:</p>
+<div class="table-container"><table class="data-table"><thead><tr><th>Modalidad de Entrevista</th><th>Finalidad Central</th><th>Rol del Educador/a Social</th></tr></thead><tbody>
+<tr><td><strong>1. Entrevista de Acogida / Recepción</strong></td><td>Primera toma de contacto, clarificación de la demanda explícita e implícita, establecimiento del encuadre y creación de alianza (<em>rapport</em>).</td><td>Acogedor, empático, clarificador del marco institucional y delimitador del setting.</td></tr>
+<tr><td><strong>2. Entrevista Diagnóstica / de Valoración</strong></td><td>Exploración exhaustiva de la estructura, dinámicas, historia transgeneracional y factores de riesgo/protección mediante genograma.</td><td>Evaluador sistémico, observador de pautas comunicativas y reconstructor de la historia.</td></tr>
+<tr><td><strong>3. Entrevista de Orientación / Asesoramiento</strong></td><td>Capacitación parental, redefinición de pautas de crianza, modelado de límites y resolución constructiva de conflictos cotidianos.</td><td>Pedagógico, capacitador, facilitador de alternativas y promotor de competencias.</td></tr>
+<tr><td><strong>4. Entrevista de Tratamiento / Terapéutica</strong></td><td>Modificación profunda de estructuras relacionales rígidas, desarticulación de triangulaciones y superación de traumas o violencia.</td><td>Conductor sistémico, reencuadrador, movilizador de crisis y prescriptor de tareas.</td></tr>
+<tr><td><strong>5. Entrevista de Seguimiento y Monitorización</strong></td><td>Evaluación de los compromisos adquiridos, revisión de tareas asignadas y reajuste de acuerdos.</td><td>Verificador reflexivo, reforzador de logros y catalizador de la autorregulación.</td></tr>
+<tr><td><strong>6. Entrevista de Cierre / Evaluación Final</strong></td><td>Consolidación de aprendizajes, prevención de recaídas, balance global y desvinculación formal planificada.</td><td>Facilitador de la autonomía, sintetizador y validador del crecimiento familiar.</td></tr>
+</tbody></table></div>
+<h3 class="subsection-title">2.3. Fases Metodológicas de la Entrevista Familiar</h3>
+<p>El desarrollo técnico de la entrevista familiar exige el cumplimiento riguroso de una secuencia temporal dividida en cinco fases interconectadas:</p>
+<pre class="ascii-box">                       FASES DEL PROCESO DE LA ENTREVISTA FAMILIAR
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ 1. FASE PREPARATORIA / PRE-SESIÓN:                                         │
+ │    · Revisión del expediente (SISS / CoheSSión). Formulación de hipótesis.  │
+ │    · Convocatoria formal, preparación del espacio físico y encuadre.        │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 2. FASE SOCIAL Y DE ACOGIDA:                                               │
+ │    · Saludo individualizado, clima de distensión y ruptura de defensas.     │
+ │    · Explicitación del encuadre: objetivos, duración (60-90 min), normas.   │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 3. FASE DE EXPLORACIÓN E INTERACCIÓN (DESARROLLO):                          │
+ │    · Definición del problema: exploración de la perspectiva de cada miembro.│
+ │    · Preguntas circulares, construcción del genograma y observación in situ.│
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 4. FASE DE DEVOLUCIÓN E INTERVENCIÓN:                                       │
+ │    · Connotación positiva, reencuadre (reframing) del síntoma.               │
+ │    · Prescripción de tareas conductuales entre sesiones y acuerdos.         │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 5. FASE DE CIERRE Y POST-SESIÓN:                                            │
+ │    · Resumen integrador, fijación de próxima cita y despedida.              │
+ │    · Análisis reflexivo post-sesión y registro técnico en el expediente.   │
+ └─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+<p class="num-item"><strong>1.</strong> <strong>Fase Preparatoria / Pre-sesión</strong>:</p>
+<ul>
+<li>Comprende el trabajo técnico previo a la entrada de la familia en la sala. El profesional analiza las fichas de derivación (por ejemplo, del centro educativo o del EMAE), revisa los antecedentes en el sistema informático de Servicios Sociales (<strong>CoheSSión</strong> en Andalucía) y elabora una <strong>hipótesis de trabajo inicial</strong>.</li>
+<li>Se prepara el entorno físico: disposición circular de las sillas (sin mesas de despacho que actúen como barreras de poder), asegurando un ambiente de privacidad acústica y confort ambiental.</li>
+</ul>
+<p class="num-item"><strong>2.</strong> <strong>Fase Social y de Acogida</strong>:</p>
+<ul>
+<li>Los primeros cinco a diez minutos se dedican al establecimiento del <strong>rapport</strong> y a disminuir los niveles iniciales de angustia, desconfianza o actitud defensiva.</li>
+<li>El Educador/a Social saluda personalmente a todos los miembros de la familia, comenzando por los progenitores para respetar la jerarquía intergeneracional, e incluyendo con cercanía a los menores.</li>
+<li>Se fija el <strong>encuadre (<em>setting</em>)</strong>: se explican con claridad las reglas del juego (duración aproximada de 60 a 90 minutos; regla de turnos de palabra sin interrupciones; confidencialidad profesional amparada por la ley, con la salvedad de revelación de situaciones de maltrato grave o desamparo infantil).</li>
+</ul>
+<p class="num-item"><strong>3.</strong> <strong>Fase de Exploración e Interacción (Desarrollo)</strong>:</p>
+<ul>
+<li>Es el núcleo técnico de la sesión. El profesional invita a cada integrante a exponer su visión acerca de la situación familiar ("¿Qué os trae hoy aquí?", "¿Cómo ve cada uno lo que está ocurriendo?").</li>
+<li>El Educador/a Social observa la <strong>secuencia de interacción</strong>: quién toma la palabra primero, quién descalifica a quién, hacia dónde se dirigen las miradas de aprobación, y qué reacciones corporales suscita el relato de cada miembro.</li>
+<li>Se introduce la construcción activa del <strong>genograma familiar</strong> sobre pizarra o papel continuo, lo que externaliza el análisis y desculpabiliza al menor señalado.</li>
+</ul>
+<p class="num-item"><strong>4.</strong> <strong>Fase de Devolución e Intervención</strong>:</p>
+<ul>
+<li>El profesional realiza una devolución técnica fundamentada, empleando la <strong>connotación positiva</strong> (reconocer el esfuerzo y la intención protectora de conductas que resultan disfuncionales) y la <strong>redefinición o reencuadre (<em>reframing</em>)</strong>: transformar la etiqueta del menor "rebelde o vago" en la de un menor que "está manifestando una señal de alerta de que la familia necesita reorganizarse".</li>
+<li>Se consensúan <strong>tareas conductuales o compromisos específicos</strong> que la familia deberá ensayar en el hogar hasta la siguiente sesión.</li>
+</ul>
+<p class="num-item"><strong>5.</strong> <strong>Fase de Cierre y Post-sesión</strong>:</p>
+<ul>
+<li>Se efectúa una recapitulación de los acuerdos alcanzados, se pregunta a los miembros cómo se han sentido durante el encuentro y se fija el calendario de la próxima sesión.</li>
+<li>Tras la salida de la familia, el/la profesional dedica un tiempo técnico inmediato a la <strong>post-sesión</strong>: contraste de la hipótesis inicial con lo observado, registro pormenorizado en la historia social y anotación de los acuerdos para el seguimiento.</li>
+</ul>
+<h3 class="subsection-title">2.4. Habilidades Profesionales y Técnicas Comunicativas del Educador/a Social</h3>
+<p>El éxito de la entrevista familiar descansa en el despliegue armónico de competencias relacionales avanzadas:</p>
+<ul>
+<li><strong>Escucha Activa y Empatía</strong>: Capacidad de captar el marco de referencia interno de los interlocutores, validando sus emociones sin asumir como propias sus distorsiones cognitivas.</li>
+<li><strong>Contención Emocional y Regulación de la Escalada</strong>: Habilidad para intervenir con firmeza cuando emergen descalificaciones destructivas, insultos o violencia verbal entre miembros, pausando la interacción y recordando las reglas del encuadre.</li>
+<li><strong>Formulación de Preguntas Circulares</strong>: A diferencia de las preguntas lineales ("¿Por qué te escapas de clase?"), las preguntas circulares indagan en las relaciones, diferencias y percepciones mutuas: <em>"Cuando tu padre se enfada porque no vas al instituto, ¿qué hace tu madre?", "¿A quién acude tu hermana cuando se siente triste?"</em>.</li>
+<li><strong>Preguntas de Excepción y Pregunta Milagro (Steve de Shazer)</strong>: Focalizan la atención en los momentos en que el problema no ocurre, visibilizando las competencias latentes del sistema: <em>"¿Qué hacíais de diferente aquellos meses en los que tu hijo asistía puntualmente a clase y no había conflictos en casa?"</em>.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="section-title">3. Niveles de Intervención Familiar</h2>
+<p>La intervención socioeducativa con familias no puede aplicarse de manera homogénea e indiscriminada; debe graduarse en función de la gravedad de la problemática, la cronicidad de los factores de riesgo y la capacidad protectora del núcleo de convivencia. La literatura científica y la práctica institucional consolidada distinguen <strong>cuatro niveles de intervención familiar</strong>:</p>
+<pre class="ascii-box">                       NIVELES DE INTERVENCIÓN FAMILIAR GRADUADA
+  ┌─────────────────────────────────────────────────────────────────────────────┐
+  │ NIVEL 1: FORMATIVO Y EDUCATIVO (Prevención Primaria - Universal)           │
+  │ · Promoción de competencias parentales, Escuelas de Familias, talleres TIC. │
+  │ · Destinatarios: Población general de familias. Carácter no estigmatizante. │
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │ NIVEL 2: APOYO Y ORIENTACIÓN FAMILIAR (Prevención Secundaria)              │
+  │ · Abordaje de crisis evolutivas (adolescencia) o accidentales (divorcio).   │
+  │ · Mediación familiar, resolución de conflictos y reestructuración de normas.│
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │ NIVEL 3: TRATAMIENTO FAMILIAR ESPECIALIZADO (Prevención Terciaria)         │
+  │ · Equipos de Tratamiento Familiar (ETF - Decreto 100/2022).                 │
+  │ · Familias con menores en situación de riesgo o desprotección moderada.    │
+  │ · Proyecto de Tratamiento Familiar (PTF) intensivo en medio domiciliario.   │
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │ NIVEL 4: PROTECCIÓN JURÍDICO-INSTITUCIONAL (Ámbito Administrativo/Judicial)│
+  │ · Declaración de desamparo (art. 172 Código Civil; Ley 4/2021 de Andalucía).│
+  │ · Asunción de tutela por la entidad pública; acogimiento familiar/residencial│
+  └─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+<p class="num-item"><strong>1.</strong> <strong>Nivel 1: Educativo y Formativo (Prevención Primaria)</strong>:</p>
+<ul>
+<li>Carácter universal, proactivo y comunitario. Su objetivo es enriquecer las habilidades parentales y fortalecer los factores de protección de las familias antes de que emerjan disfunciones.</li>
+<li>Se canaliza mediante <strong>Escuelas de Familias</strong>, charlas en centros educativos o comunitarios sobre comunicación asertiva, gestión de pantallas, educación afectivo-sexual y fomento de hábitos saludables. No genera ninguna estigmatización en los participantes.</li>
+</ul>
+<p class="num-item"><strong>2.</strong> <strong>Nivel 2: Apoyo y Orientación Familiar (Prevención Secundaria)</strong>:</p>
+<ul>
+<li>Carácter focalizado ante crisis situacionales o dificultades relacionales incipientes. Actúa sobre familias que experimentan desorientación en el ejercicio de sus funciones educativas o crisis asociadas al ciclo vital (nacimiento de un nuevo hijo, tránsito a la adolescencia, separación o divorcio conflictivo, duelo familiar).</li>
+<li>Su metodología se basa en la orientación socioeducativa individualizada, el asesoramiento en pautas educativas y la <strong>mediación familiar</strong> para alcanzar acuerdos consensuados en la custodia o reparto de responsabilidades parentales.</li>
+</ul>
+<p class="num-item"><strong>3.</strong> <strong>Nivel 3: Tratamiento Familiar Especializado (Prevención Terciaria)</strong>:</p>
+<ul>
+<li>Dirigido a familias con menores en situación de <strong>riesgo grave o desprotección infantil moderada</strong>, donde se detectan dinámicas de negligencia en cuidados básicos, violencia filioparental, maltrato psicológico o absentismo escolar crónico asociado a desidia parental.</li>
+<li>En Andalucía, este nivel está encomendado a los <strong>Equipos de Tratamiento Familiar (ETF)</strong>, regulados por el <strong>Decreto 100/2022, de 7 de junio</strong>. Se fundamenta en una intervención interdisciplinar intensiva (Psicólogo/a, Trabajador/a Social y Educador/a Social) mediante un <strong>Proyecto de Tratamiento Familiar (PTF)</strong> desarrollado en el medio natural y domiciliario, con el objetivo irrenunciable de preservar la unidad familiar y evitar la separación de los menores.</li>
+</ul>
+<p class="num-item"><strong>4.</strong> <strong>Nivel 4: Protección Jurídico-Institucional (Ámbito Administrativo y Judicial)</strong>:</p>
+<ul>
+<li>Se activa cuando fracasa el tratamiento familiar o se constatan situaciones flagrantes de <strong>desamparo infantil</strong> (artículo 172 del Código Civil y Ley 4/2021 de Infancia y Adolescencia de Andalucía): abandono, maltrato físico o sexual grave o incapacidad parental manifiesta.</li>
+<li>Implica la adopción de medidas de protección jurídicas: asunción de la tutela legal por la Delegación Territorial competente de la Junta de Andalucía, suspensión de la patria potestad y formalización de acogimientos familiares (en familia extensa o ajena) o acogimiento residencial en centros de protección de menores.</li>
+</ul>
+<h3 class="subsection-title">2.5. El Paradigma Centrado en Competencias y Resiliencia Familiar</h3>
+<p>La práctica moderna de la Educación Social rechaza el tradicional modelo del déficit (que busca culpables y se centra en las carencias irreparables de la familia) y adopta el <strong>enfoque de competencias parentales y resiliencia familiar</strong>:</p>
+<ul>
+<li><strong>Competencias Parentales según Jorge Barudy y Maryorie Dantagnan (2005, 2010)</strong>:</li>
+<li><em>Competencias Vinculares</em>: Capacidad de sintonizar emocionalmente, brindar apego seguro y validar las necesidades del menor.</li>
+<li><em>Competencias Formativas</em>: Capacidad de estructurar normas claras, disciplina no violenta y transmitir valores cívicos.</li>
+<li><em>Competencias Protectoras</em>: Capacidad de garantizar un entorno seguro, higiénico y libre de peligros físicos o psicológicos.</li>
+<li><em>Competencias Reflexivas</em>: Capacidad de autoanalizar las propias pautas educativas y modular la conducta en beneficio de los hijos.</li>
+<li><strong>Resiliencia Familiar (Froma Walsh, 1998, 2003)</strong>: La familia se concibe como un sistema con fortalezas potenciales para superar adversidades extremas si se movilizan sus sistemas de creencias positivas, sus redes de apoyo social y sus procesos de comunicación abierta.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="section-title">4. Técnicas y Programas de Intervención Familiar</h2>
+<h3 class="subsection-title">4.1. Herramientas Gráficas de Evaluación y Diagnóstico Sociofamiliar</h3>
+<div class="exam-item"><strong>1.</strong> <strong>El Genograma Familiar (Monica McGoldrick y Randy Gerson, 1985)</strong>:</div>
+<ul>
+<li>Es la representación gráfica de la constelación familiar multigeneracional (mínimo tres generaciones) que recoge mediante simbología normalizada:</li>
+<li>La <strong>estructura biológica y legal</strong>: varones (cuadrados), mujeres (círculos), matrimonios (líneas horizontales continuas), divorcios (líneas cortadas por dos barras diagonales), hijos ordenados cronológicamente de izquierda a derecha.</li>
+<li>Los <strong>datos demográficos y vitales</strong>: edades, fechas de nacimiento, fallecimientos, profesiones y enfermedades relevantes.</li>
+<li>La <strong>calidad de las relaciones vinculares</strong>: líneas paralelas continuas (relación muy unida/estrecha), tres líneas paralelas (relación fusionada o aglutinada), líneas en zigzag (relación conflictiva), líneas interrumpidas (relación distante) y línea cortada con doble barra (corte de relación o distanciamiento total).</li>
+<li>Su valor radica en que permite descubrir patrones repetitivos de conducta a lo largo de las generaciones (transmisión intergeneracional del abandono, del absentismo o de las adicciones).</li>
+</ul>
+<div class="exam-item"><strong>2.</strong> <strong>El Ecomapa (Ann Hartman, 1978)</strong>:</div>
+<ul>
+<li>Es una representación gráfica concéntrica que sitúa al núcleo familiar en el círculo central y conecta dicho sistema con los distintos sistemas e instituciones de su entorno exterior: centro educativo, centro de salud, Servicios Sociales, red de amistades, empleo, recursos religiosos o deportivos.</li>
+<li>Permite visualizar de forma inmediata si la familia está aislada socialmente, si sus conexiones con los recursos comunitarios son fuentes de apoyo enriquecedoras o focos de estrés y conflicto, y qué puentes debe construir el Educador/a Social.</li>
+</ul>
+<h3 class="subsection-title">4.2. Técnicas Sistémicas y Conductuales Operativas</h3>
+<ul>
+<li><strong>Reencuadre o Reformulación Positiva (<em>Reframing</em>)</strong>: Técnica originaria de la escuela de Palo Alto que consiste en modificar el marco conceptual o emocional desde el que la familia percibe un acontecimiento, situándolo en otro marco que encaja igualmente bien con los hechos reales, pero cuyo significado cambia radicalmente la actitud hacia el síntoma.</li>
+<li><strong>Esculturas Familiares (Virginia Satir, 1972)</strong>: Técnica psicodramática no verbal donde un miembro de la familia coloca físicamente los cuerpos de los demás en el espacio de la sala (posturas, distancias, alturas y direcciones de la mirada), visibilizando la vivencia interna de las relaciones sin las distorsiones del lenguaje verbal.</li>
+<li><strong>Externalización del Problema (Michael White y David Epston, 1990 - Terapia Narrativa)</strong>: Procedimiento lingüístico que separa conceptualmente a la persona del problema que experimenta (<em>"el menor no es vago ni absentista; el absentismo es un intruso que se ha colado en la vida de la familia y le está robando su futuro"</em>). Al externalizar el síntoma, se elimina la culpa paralizante y la familia puede aliarse contra el problema.</li>
+<li><strong>Prescripción de Tareas Conductuales</strong>: Asignación de pautas de acción directas (como el registro de horas de sueño o la cena compartida sin dispositivos móviles) o tareas rituales estructuradas para restablecer jerarquías.</li>
+<li><strong>Técnicas de Entrenamiento Cognitivo-Conductual</strong>: Modelado (<em>modeling</em>), representación de papeles (<em>role-playing</em>), contratos de contingencias y técnica de <strong>resolución de problemas de D'Zurilla y Goldfried (1971)</strong> (definición del problema, generación de alternativas, toma de decisiones, puesta en práctica y verificación).</li>
+</ul>
+<h3 class="subsection-title">4.3. Programas de Intervención Familiar Basados en la Evidencia</h3>
+<p>La Pedagogía Social promueve la aplicación de programas rigurosamente protocolizados y evaluados empíricamente:</p>
+<ul>
+<li><strong>Programa Guía para el Desarrollo de Competencias Parentales</strong> (<strong>Raquel-Amaya Martínez González, 2009</strong>): Programa estructurado de intervención grupal para familias con menores en riesgo, centrado en el desarrollo de la autoestima, la comunicación asertiva y el fomento de la corresponsabilidad en el hogar.</li>
+<li><strong>Programa Vivir la Maternidad y Paternidad en Positivo</strong> (<strong>María José Rodrigo López et al., 2015</strong>): Avalado por el Ministerio de Derechos Sociales y la FEMP, promueve la parentalidad positiva comunitaria a través de módulos experienciales de autoformación parental.</li>
+<li><strong>El Proyecto de Tratamiento Familiar (PTF) en Andalucía</strong>: Conforme al <strong>Decreto 100/2022</strong>, es el instrumento técnico individualizado que plasma los objetivos, áreas de mejora, compromisos de la familia, calendario de intervenciones y evaluación continua del tratamiento integral en medio domiciliario.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="section-title">5. La Acción Tutorial en el Sistema Educativo</h2>
+<h3 class="subsection-title">5.1. Concepto y Fundamentación Pedagógica</h3>
+<p>La <strong>acción tutorial</strong> se define como el conjunto continuo, planificado y coherente de acciones pedagógicas y socioeducativas orientadas a acompañar, guiar y apoyar al alumnado de forma integral en su proceso de maduración personal, social, moral, académica y vocacional, prestando una atención prioritaria a la diversidad de sus necesidades y asegurando la coherencia formativa entre el centro escolar y la familia (<strong>Álvarez González y Bisquerra Alzina, 2012</strong>).</p>
+<p>La acción tutorial no es una actividad accesoria o decorativa; es una <strong>dimensión intrínseca, irrenunciable e inherente a la función docente</strong>:</p>
+<ul>
+<li><strong>Principio de Personalización Educativa</strong>: La enseñanza no puede reducirse a la mera instrucción curricular colectiva; exige considerar la singularidad biográfica, afectiva y cognitiva de cada alumno.</li>
+<li><strong>Principio Preventivo</strong>: Detección temprana de dificultades de aprendizaje, conductas de riesgo, acoso escolar o factores de desenganche socioeducativo.</li>
+<li><strong>Principio de Continuidad y Coordinación</strong>: Asegurar la transición fluida entre etapas educativas (Infantil-Primaria-ESO) y articular la coherencia formativa entre todos los profesores del grupo-clase.</li>
+</ul>
+<h3 class="subsection-title">5.2. Marco Normativo de la Acción Tutorial</h3>
+<p class="num-item"><strong>1.</strong> <strong>Legislación Básica Estatal</strong>:</p>
+<ul>
+<li><strong>Ley Orgánica 2/2006 (LOE), modificada por la LOMLOE 3/2020</strong>: El <strong>artículo 91.1</strong> sitúa a la cabeza de las funciones del profesorado: <em>"c) La tutoría de los alumnos, la dirección y la orientación de su aprendizaje y el apoyo en su proceso educativo, en colaboración, en su caso, con las familias"</em> y <em>"d) La orientación educativa, académica y profesional de los alumnos, en colaboración, en su caso, con los servicios o departamentos especializados"</em>.</li>
+<li><strong>Artículo 121</strong>: Establece que el Proyecto Educativo de Centro (PEC) recogerá los criterios para la organización y concreción de las medidas de atención a la diversidad y el <strong>Plan de Acción Tutorial</strong>.</li>
+</ul>
+<p class="num-item"><strong>2.</strong> <strong>Legislación Autonómica Andaluza</strong>:</p>
+<ul>
+<li><strong>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA)</strong>: Sus artículos 3 y 34 consagran la orientación y la tutoría como derechos del alumnado y señas de identidad del sistema público andaluz.</li>
+<li><strong>Decretos 327/2010 y 328/2010, de 13 de julio (Reglamentos Orgánicos de IES y CEIP en Andalucía)</strong>:</li>
+<li>El <strong>artículo 86</strong> del Decreto 327/2010 y el <strong>artículo 86</strong> del Decreto 328/2010 disponen con fuerza de ley: <em>"Cada unidad o grupo de alumnos y alumnas tendrá un tutor o tutora que será designado por la dirección del centro, a propuesta de la jefatura de estudios, de entre el profesorado que imparta docencia en el mismo"</em>.</li>
+<li>Regulan que en Educación Secundaria Obligatoria la persona tutora dispondrá en su horario lectivo de <strong>una hora semanal de tutoría con el grupo-clase</strong>, además de horas computables de atención individual a familias y de coordinación con el Departamento de Orientación.</li>
+<li><strong>Orden de 20 de junio de 2011</strong>: Regula los compromisos educativos y de convivencia como herramientas nucleares de la acción tutorial en Andalucía.</li>
+</ul>
+<h3 class="subsection-title">5.3. Dimensiones y Ámbitos de Actuación de la Acción Tutorial</h3>
+<pre class="ascii-box">                          DIMENSIONES DE LA ACCIÓN TUTORIAL
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ 1. CON EL ALUMNADO:                                                         │
+ │    · Individual: Seguimiento académico, autoconcepto, educación emocional,  │
+ │      atención a dificultades de aprendizaje, orientación académica/vocacional│
+ │    · Grupal: Cohesión de clase, clima de convivencia pacífica, prevención   │
+ │      del acoso escolar (bullying) y ciberacoso, técnicas de estudio.        │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 2. CON EL EQUIPO DOCENTE DEL GRUPO-CLASE:                                   │
+ │    · Presidencia y coordinación de las sesiones de evaluación (juntas).     │
+ │    · Unificación de criterios pedagógicos, seguimiento de adaptaciones.     │
+ │    · Recogida sistemática de información sobre el progreso del alumnado.    │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 3. CON LAS FAMILIAS:                                                        │
+ │    · Canales permanentes de información (reuniones colectivas, entrevistas).│
+ │    · Seguimiento a través de la plataforma iPasen.                          │
+ │    · Formalización de Compromisos Educativos y de Convivencia.              │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 4. CON EL ENTORNO COMUNITARIO Y SERVICIOS EXTERNOS:                         │
+ │    · Coordinación con el Departamento de Orientación / EOE.                 │
+ │    · Interlocución con Servicios Sociales Comunitarios (EMAE / Educador).   │
+ │    · Derivación ante salud mental infanto-juvenil (USMC-IJ) o protección.   │
+ └─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+<hr class="divider"/>
+<h2 class="section-title">6. El Plan de Acción Tutorial (PAT)</h2>
+<h3 class="subsection-title">6.1. Concepto, Naturaleza y Ubicación Institucional</h3>
+<p>El <strong>Plan de Acción Tutorial (PAT)</strong> es el documento marco institucional de carácter pedagógico y organizativo en el que se plasman de forma fundamentada, estructurada, contextualizada y temporalizada las líneas directrices, los objetivos, las actividades formativas y los criterios de evaluación de la acción tutorial y orientadora que se desarrollará en el centro docente durante el curso escolar.</p>
+<p>Su naturaleza jurídica y organizativa es nítida:</p>
+<ul>
+<li><strong>Integración formal en el Proyecto Educativo de Centro (PEC)</strong>: De conformidad con el artículo 121 de la LOMLOE, y los <strong>artículos 21.2.e del Decreto 327/2010</strong> y <strong>21.2.e del Decreto 328/2010</strong> de Andalucía, el Plan de Acción Tutorial forma <strong>parte integrante e indisociable del Proyecto Educativo</strong>. No es un documento volátil o desgajado del ideario pedagógico del centro.</li>
+<li><strong>Carácter vinculante</strong>: Sus directrices obligan a todo el claustro docente y deben orientar la programación general de los departamentos y ciclos.</li>
+</ul>
+<h3 class="subsection-title">6.2. Procedimiento de Elaboración, Aprobación y Coordinación</h3>
+<p>El procedimiento de tramitación del PAT presenta diferencias técnicas en función de la tipología del centro docente:</p>
+<p class="num-item"><strong>1.</strong> <strong>En los Institutos de Educación Secundaria (IES)</strong>:</p>
+<ul>
+<li><strong>Elaboración técnica</strong>: Coordinada por el <strong>Departamento de Orientación</strong>, de acuerdo con las directrices fijadas por el Equipo Técnico de Coordinación Pedagógica (ETCP) y la Jefatura de Estudios, y con las propuestas remitidas por los equipos de tutores/as de cada nivel.</li>
+<li><strong>Aprobación formal</strong>: Corresponde preceptivamente al <strong>Claustro de Profesorado</strong>, en tanto que órgano de gobierno pedagógico competente para aprobar los aspectos docentes del Proyecto Educativo.</li>
+<li><strong>Evaluación y Seguimiento</strong>: Evaluado de forma continua por la Jefatura de Estudios y el Departamento de Orientación, reflejándose sus propuestas de mejora en la Memoria de Autoevaluación anual del centro.</li>
+</ul>
+<p class="num-item"><strong>2.</strong> <strong>En los Colegios de Educación Infantil y Primaria (CEIP)</strong>:</p>
+<ul>
+<li><strong>Elaboración técnica</strong>: Elaborado por la <strong>Jefatura de Estudios</strong>, bajo las directrices del ETCP y con el asesoramiento especializado del <strong>Equipo de Orientación Educativa (EOE)</strong> de la zona.</li>
+<li><strong>Aprobación formal</strong>: Igualmente aprobada por el <strong>Claustro de Profesorado</strong>.</li>
+</ul>
+<h3 class="subsection-title">6.3. Estructura y Contenidos Nucleares del PAT</h3>
+<p>Un Plan de Acción Tutorial técnico debe estructurarse conforme a los siguientes módulos de contenidos:</p>
+<p class="num-item"><strong>1.</strong> <strong>Introducción y Análisis de la Realidad Socioeducativa</strong>: Justificación pedagógica basada en las características del entorno, el índice socioeconómico y cultural (ISEC) del centro y las necesidades detectadas en el curso precedente.</p>
+<div class="exam-item"><strong>2.</strong> <strong>Objetivos Generales del PAT</strong>:</div>
+<ul>
+<li>Favorecer la adaptación e integración del alumnado en el centro y grupo-clase.</li>
+<li>Desarrollar la autorregulación emocional, habilidades de comunicación y resolución pacífica de conflictos.</li>
+<li>Detectar precozmente necesidades específicas de apoyo educativo (NEAE).</li>
+<li>Prevenir el absentismo escolar y el desenganche formativo.</li>
+<li>Guiar la toma de decisiones vocacionales y académicas.</li>
+</ul>
+<p class="num-item"><strong>3.</strong> <strong>Líneas Temáticas Transversales para la Hora de Tutoría Grupal</strong>:</p>
+<ul>
+<li><em>Módulo de Acogida e Integración</em> (primeras semanas de curso: dinámicas de conocimiento y cohesión).</li>
+<li><em>Módulo de Habilidades de Aprendizaje</em> (organización de la agenda, técnicas de estudio, lectura comprensiva, gestión del tiempo).</li>
+<li><em>Módulo de Convivencia, Igualdad y Prevención</em> (acoso escolar, ciberbullying, coeducación, prevención de violencia de género y drogodependencias).</li>
+<li><em>Módulo de Educación Emocional</em> (autoestima, asertividad, gestión del fracaso y empatía).</li>
+<li><em>Módulo de Orientación Vocacional</em> (en 3º y 4º de ESO: itinerarios formativos de Bachillerato y Ciclos de Formación Profesional).</li>
+</ul>
+<p class="num-item"><strong>4.</strong> <strong>Plan de Coordinación y Atención a las Familias</strong>:</p>
+<ul>
+<li>Calendario de reuniones colectivas de inicio de curso y de fin de trimestre.</li>
+<li>Protocolo de citas y entrevistas individuales (mínimo una entrevista por curso con cada familia).</li>
+<li>Pautas para la formalización y seguimiento de Compromisos Educativos y de Convivencia.</li>
+<li>Protocolo de comunicación digital a través de la aplicación oficial <strong>iPasen</strong>.</li>
+</ul>
+<p class="num-item"><strong>5.</strong> <strong>Protocolo de Coordinación con Entidades y Recursos Externos</strong>:</p>
+<ul>
+<li>Procedimientos de derivación y enlace con los Servicios Sociales Comunitarios (EMAE de Utrera).</li>
+<li>Coordinación con el EOE y la Inspección de Educación.</li>
+</ul>
+<div class="exam-item"><strong>6.</strong> <strong>Mecanismos de Evaluación del PAT</strong>: Indicadores de logro cuantitativos y cualitativos (porcentaje de familias asistentes a reuniones, evolución del absentismo, índice de conflictividad de aula, satisfacción del alumnado y profesorado).</div>
+<hr class="divider"/>
+<h2 class="section-title">7. Las Personas Tutoras</h2>
+<h3 class="subsection-title">7.1. Nombramiento y Régimen Jurídico</h3>
+<p>Conforme a la normativa educativa andaluza (Decretos 327/2010 y 328/2010):</p>
+<ul>
+<li><strong>Designación</strong>: La persona tutora es nombrada formalmente por la <strong>Dirección del centro</strong>, a propuesta preceptiva de la <strong>Jefatura de Estudios</strong>.</li>
+<li><strong>Criterios de asignación</strong>: Se nombra de entre el profesorado que imparta docencia en el grupo-clase, procurando que recaiga en el docente que tenga asignado el mayor número de horas lectivas semanales con dicho grupo, garantizando la continuidad pedagógica en el ciclo siempre que resulte organizativamente posible.</li>
+</ul>
+<h3 class="subsection-title">7.2. Catálogo de Funciones de la Persona Tutora</h3>
+<p>Los Reglamentos Orgánicos de Centro en Andalucía articulan las funciones del tutor/a en tres esferas fundamentales:</p>
+<pre class="ascii-box">                          FUNCIONES DE LA PERSONA TUTORA
+  ┌─────────────────────────────────────────────────────────────────────────────┐
+  │ CON EL ALUMNADO:                                                            │
+  │ · Facilitar la integración del alumnado en el grupo y fomentar su           │
+  │   participación en las actividades escolares.                               │
+  │ · Efectuar el seguimiento global de su proceso de aprendizaje y maduración. │
+  │ · Coordinar las adaptaciones curriculares y medidas de atención a diversidad│
+  │ · Mediar en la resolución de conflictos que afecten al alumnado del grupo.  │
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │ CON EL EQUIPO DOCENTE:                                                      │
+  │ · Presidir las sesiones de evaluación del equipo docente del grupo-clase.   │
+  │ · Coordinar la información sobre el rendimiento académico y de conducta.   │
+  │ · Garantizar la coherencia pedagógica en las tareas y fechas de exámenes.   │
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │ CON LAS FAMILIAS:                                                           │
+  │ · Informar periódicamente sobre el rendimiento escolar y asistencia.        │
+  │ · Atender de forma individualizada a padres, madres o tutores legales.      │
+  │ · Promover la suscripción de Compromisos Educativos y de Convivencia.       │
+  │ · Fomentar la cooperación educativa activa entre la familia y el centro.    │
+  └─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+<h3 class="subsection-title">7.3. Perfil Competencial y Dificultades Prácticas de la Acción Tutorial</h3>
+<p>El ejercicio de la tutoría exige competencias profesionales complejas que trascienden el dominio de la materia curricular:</p>
+<ul>
+<li><strong>Competencia Comunicativa y Asertividad</strong>: Saber comunicar calificaciones insatisfactorias o conductas disruptivas a familias reticentes sin caer en la agresividad culpabilizadora ni en la pasividad evitativa.</li>
+<li><strong>Manejo de la Confidencialidad y Sigilo Profesional</strong>: Salvaguardar la intimidad de los menores y las situaciones familiares difíciles frente al resto de la comunidad escolar.</li>
+<li><strong>Dificultades frecuentes</strong>: La falta de tiempo lectivo suficiente en la jornada docente, la escasa formación inicial de los profesores de secundaria en dinámicas relacionales familiares, y la existencia de familias que se sitúan en posiciones de hostilidad o desentendimiento absoluto. Es aquí donde la articulación con el <strong>Educador/a Social municipal</strong> adquiere un valor decisivo.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="section-title">8. El/La Educador/a Social como Nexo de Articulación entre Tutoría e Intervención Familiar</h2>
+<p>La figura del Educador/a Social municipal de los Servicios Sociales Comunitarios complementa, enriquece y desatasca la labor de las personas tutoras cuando las problemáticas sociofamiliares desbordan el marco estrictamente académico del centro educativo:</p>
+<pre class="ascii-box">                        COMPLEMENTARIEDAD TÉCNICA Y OPERATIVA
+ ┌──────────────────────────────────────────┬──────────────────────────────────────────┐
+ │      PROFESOR/A TUTOR/A DE CENTRO        │       EDUCADOR/A SOCIAL MUNICIPAL        │
+ ├──────────────────────────────────────────┼──────────────────────────────────────────┤
+ │ · Ámbito de actuación: Aula y recinto    │ · Ámbito de actuación: Medio abierto,    │
+ │   escolar institucional.                 │   domicilio, barrio y comunidad.         │
+ │ · Foco principal: Progreso curricular,   │ · Foco principal: Dinámica relacional,   │
+ │   rendimiento, asistencia y convivencia. │   competencias parentales, necesidades.  │
+ │ · Metodología: Acción tutorial colectiva │ · Metodología: Intervención sociofamiliar│
+ │   y entrevistas periódicas de centro.    │   intensiva, visita a domicilio, mediación│
+ │ · Límite funcional: No puede acudir al   │ · Fortaleza técnica: Acceso directo a    │
+ │   domicilio ni intervenir en la calle.   │   la vivienda y al ecosistema familiar.  │
+ └──────────────────────────────────────────┴──────────────────────────────────────────┘
+</pre>
+<ul>
+<li><strong>Canalización y Derivación Coordinada</strong>: Cuando el tutor/a detecta absentismo reiterado (superación del umbral del 20%), sospecha de maltrato físico o negligencia severa, o constata el rechazo absoluto de los progenitores a acudir a las tutorías, emite la ficha técnica de derivación al <strong>Equipo Municipal de Atención al Absentismo (EMAE)</strong>.</li>
+<li><strong>Asesoramiento y Acompañamiento a la Tutoría</strong>: El Educador/a Social orienta al tutor/a sobre cómo enfocar entrevistas con familias en situación de extrema vulnerabilidad social o pertenencia a minorías étnicas, derribando prejuicios mutuos y facilitando un lenguaje común.</li>
+<li><strong>Intervención Conjunta en Casos Complejos</strong>: Celebración de entrevistas conjuntas (Tutor/a - Educador/a Social - Familia) en el centro educativo o en sede de Servicios Sociales, garantizando que los acuerdos del centro queden respaldados por el plan de intervención sociofamiliar en el hogar.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="section-title">9. Enfoque Práctico en los Servicios Sociales del Excmo. Ayuntamiento de Utrera</h2>
+<h3 class="subsection-title">9.1. Mapa Territorial y Recursos Educativos de Utrera</h3>
+<p>El <strong>Excmo. Ayuntamiento de Utrera</strong> articula su intervención social y comunitaria a través del <strong>Centro de Servicios Sociales Comunitarios (CSSC)</strong>, centralizado en sus dependencias de la <strong>calle Catalina de Perea, nº 32</strong>.</p>
+<p>La labor socioeducativa se despliega en constante interlocución con la red de centros del municipio:</p>
+<ul>
+<li><strong>Colegios de Educación Infantil y Primaria (CEIP)</strong>: CEIP Rodrigo Caro, CEIP Álvarez Quintero, CEIP Coca de la Piñera, CEIP Juan Antonio Velasco, CEIP Alfonso de Orleans, CEIP Al-Ándalus y CEIP María Montessori.</li>
+<li><strong>Institutos de Educación Secundaria (IES)</strong>: IES Ruiz Gijón, IES Ponce de León, IES Virgen de Consolación e IES José María Infantes.</li>
+<li><strong>Centros en Pedanías Rurales</strong>: Colegios Públicos Rurales y centros de primaria en <strong>Guadalema de los Quintero, Trajano y Pinzón</strong>, coordinados con los IES de la cabecera municipal mediante el transporte escolar regular.</li>
+</ul>
+<h3 class="subsection-title">9.2. Protocolo de Coordinación EMAE - Acción Tutorial</h3>
+<p>El <strong>Equipo Municipal de Atención al Absentismo (EMAE)</strong> de Utrera, compuesto por el/la Técnico/a Medio de Educación Social (A2), la Trabajadora Social y los Agentes Tutores de la Policía Local de Utrera, mantiene un calendario sistemático de reuniones con las Jefaturas de Estudios y tutores/as:</p>
+<div class="exam-item"><strong>1.</strong> <strong>Reunión de Coordinación Inicial de Curso (Octubre)</strong>: Revisión conjunta de los Planes de Acción Tutorial (PAT) de los centros para incardinar las actuaciones de prevención del absentismo y dinamización comunitaria.</div>
+<p class="num-item"><strong>2.</strong> <strong>Seguimiento Mensual de Casos Derivados</strong>: Canalización de las fichas de derivación en Fase 1 (centro educativo) que superan el 20% de faltas injustificadas. El Educador/a Social informa al tutor/a sobre los avances del plan sociofamiliar en domicilio.</p>
+<p class="num-item"><strong>3.</strong> <strong>Mesa Técnica de la Comisión Municipal de Absentismo</strong>: Elevación formal de expedientes y evaluación de acuerdos suscritos mediante Compromisos Educativos o de Convivencia.</p>
+<h3 class="subsection-title">9.3. Actuaciones Específicas en la Barriada El Tinte (ERACIS+)</h3>
+<p>En la <strong>Barriada El Tinte</strong>, clasificada como zona desfavorecida de Utrera y beneficiaria de la estrategia <strong>ERACIS+</strong>:</p>
+<ul>
+<li>El Educador/a Social dinamiza talleres de <strong>Refuerzo a la Acción Tutorial</strong> en el Centro Cívico del barrio, capacitando a madres y padres (con especial incidencia en familias de <strong>minoría étnica gitana</strong>) en el manejo de la plataforma digital <strong>iPasen</strong> y en el seguimiento de las agendas escolares.</li>
+<li>Se realizan visitas a domicilio conjuntas cuando se producen crisis agudas de desvinculación escolar, aplicando el genograma y la entrevista sistémica para desactivar dinámicas de abandono en la transición a la Educación Secundaria.</li>
+</ul>
+<h3 class="subsection-title">9.4. Descentralización en Pedanías: Guadalema, Trajano y Pinzón</h3>
+<p>Para combatir el aislamiento geográfico:</p>
+<ul>
+<li>El Educador/a Social realiza visitas semanales itinerantes a los centros escolares de las tres pedanías.</li>
+<li>Se coordinan entrevistas familiares directas en los consultorios o centros cívicos locales, evitando los desplazamientos forzosos de las familias a Utrera y asegurando un seguimiento directo del transporte escolar de los adolescentes escolarizados en los IES de la cabecera municipal.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="section-title">10. Secciones Pedagógicas de Cierre</h2>
+<h3 class="subsection-title">A. 25 Datos de Examen (Memorización Directa para Tribunal)</h3>
+<div class="exam-item"><strong>1.</strong> <strong>Paul Watzlawick (1967)</strong>: Escuela de Palo Alto; <em>Teoría de la comunicación humana</em>; 5 axiomas básicos (imposibilidad de no comunicar, contenido/relación, puntuación de secuencia, digital/analógico, simétrico/complementario).</div>
+<div class="exam-item"><strong>2.</strong> <strong>Salvador Minuchin (1974)</strong>: Escuela Estructural; conceptos de límites (claros, difusos, rígidos), subsistemas (conyugal, parental, fraternal), alianzas y triangulaciones.</div>
+<div class="exam-item"><strong>3.</strong> <strong>Escuela de Milán (1980)</strong>: Mara Selvini Palazzoli, Luigi Boscolo, Gianfranco Cecchin y Giuliana Prata; directrices metodológicas: <strong>hipotetización, circularidad y neutralidad</strong>.</div>
+<div class="exam-item"><strong>4.</strong> <strong>Fases canónicas de la entrevista familiar (5 etapas)</strong>: 1) Pre-sesión/Preparatoria, 2) Social/Acogida, 3) Exploración/Interacción (Desarrollo), 4) Devolución/Intervención, y 5) Cierre/Post-sesión.</div>
+<div class="exam-item"><strong>5.</strong> <strong>Duración óptima de la entrevista familiar</strong>: Sesiones estructuradas de <strong>60 a 90 minutos</strong> de duración máxima.</div>
+<div class="exam-item"><strong>6.</strong> <strong>Monica McGoldrick y Randy Gerson (1985)</strong>: Sistematización del <strong>Genograma familiar</strong> con simbología estandarizada y mínimo <strong>tres generaciones</strong>.</div>
+<div class="exam-item"><strong>7.</strong> <strong>Ann Hartman (1978)</strong>: Creación del <strong>Ecomapa</strong> para evaluar visualmente las conexiones ecológicas de la familia con los recursos externos.</div>
+<div class="exam-item"><strong>8.</strong> <strong>Virginia Satir (1972)</strong>: Técnica psicodramática de las <strong>esculturas familiares</strong> para representar distancias y vínculos emocionales en el espacio físico.</div>
+<div class="exam-item"><strong>9.</strong> <strong>Michael White y David Epston (1990)</strong>: Terapia Narrativa; técnica de <strong>externalización del problema</strong> (separar persona y síntoma).</div>
+<div class="exam-item"><strong>10.</strong> <strong>Steve de Shazer e Insoo Kim Berg</strong>: Terapia Breve Centrada en Soluciones; técnica de la <strong>pregunta milagro</strong> y preguntas de excepción.</div>
+<div class="exam-item"><strong>11.</strong> <strong>Cuatro niveles de intervención familiar</strong>: Nivel 1 (Educativo/Formativo - Prevención Primaria), Nivel 2 (Apoyo y Orientación - Secundaria), Nivel 3 (Tratamiento Familiar - Terciaria - ETF), y Nivel 4 (Protección y Desamparo - Jurídico).</div>
+<div class="exam-item"><strong>12.</strong> <strong>Jorge Barudy y Maryorie Dantagnan (2005, 2010)</strong>: Cuatro competencias parentales: <strong>vinculares, formativas, protectoras y reflexivas</strong>.</div>
+<div class="exam-item"><strong>13.</strong> <strong>Froma Walsh (1998, 2003)</strong>: Modelo de <strong>resiliencia familiar</strong> basado en fortalezas del sistema frente al paradigma del déficit.</div>
+<div class="exam-item"><strong>14.</strong> <strong>Artículo 91 de la LOMLOE 3/2020</strong>: Establece preceptivamente las funciones del profesorado, encabezadas por la tutoría y la orientación del alumnado en colaboración con las familias.</div>
+<div class="exam-item"><strong>15.</strong> <strong>Artículo 121 de la LOMLOE 3/2020</strong>: Regula el Proyecto Educativo de Centro (PEC), disponiendo la obligatoriedad de incorporar el Plan de Acción Tutorial.</div>
+<div class="exam-item"><strong>16.</strong> <strong>Artículos 21.2.e de los Decretos 327/2010 y 328/2010 de Andalucía</strong>: Determinan que el Plan de Acción Tutorial forma <strong>parte integrante e indisociable del Proyecto Educativo</strong>.</div>
+<div class="exam-item"><strong>17.</strong> <strong>Aprobación del PAT</strong>: Corresponde preceptivamente al <strong>Claustro de Profesorado</strong> (órgano técnico-pedagógico), a propuesta de la Jefatura de Estudios / Departamento de Orientación.</div>
+<div class="exam-item"><strong>18.</strong> <strong>Designación de las personas tutoras</strong>: Son nombradas por la <strong>Dirección del centro docente</strong>, a propuesta de la <strong>Jefatura de Estudios</strong> (Decretos 327/2010 y 328/2010).</div>
+<div class="exam-item"><strong>19.</strong> <strong>Horario lectivo de tutoría en ESO en Andalucía</strong>: Mínimo de <strong>1 hora semanal lectiva con el grupo-clase</strong> fijada en el horario general (Decreto 327/2010).</div>
+<div class="exam-item"><strong>20.</strong> <strong>Orden de 20 de junio de 2011 de Andalucía</strong>: Regula la formalización de <strong>Compromisos Educativos</strong> (estudio/rendimiento) y <strong>Compromisos de Convivencia</strong> (conducta/resolución pacífica).</div>
+<div class="exam-item"><strong>21.</strong> <strong>Decreto 100/2022, de 7 de junio</strong>: Regula la organización y funciones de los Equipos de Tratamiento Familiar (ETF) y el Proyecto de Tratamiento Familiar (PTF) en Andalucía.</div>
+<div class="exam-item"><strong>22.</strong> <strong>Artículo 172 del Código Civil y Ley 4/2021 de Andalucía</strong>: Regulación de la situación jurídica de <strong>desamparo infantil</strong> (asunción de tutela legal por la Administración).</div>
+<div class="exam-item"><strong>23.</strong> <strong>Sede central de Servicios Sociales en Utrera</strong>: <strong>Calle Catalina de Perea, nº 32</strong>, sede operativa del CSSC y del EMAE.</div>
+<div class="exam-item"><strong>24.</strong> <strong>Centros educativos clave en Utrera</strong>: CEIP Rodrigo Caro, Álvarez Quintero, Coca de la Piñera... e IES Ruiz Gijón, Ponce de León, Virgen de Consolación, José María Infantes.</div>
+<div class="exam-item"><strong>25.</strong> <strong>Pedanías agrícolas de Utrera</strong>: <strong>Guadalema de los Quintero, Trajano y Pinzón</strong> (atención socioeducativa descentralizada e itinerante).</div>
+<hr class="divider"/>
+<h3 class="subsection-title">B. Esquema Sinóptico de Repaso Rápido</h3>
+<pre class="ascii-box">                               ESQUEMA SINÓPTICO: TEMA 52
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ 1. LA ENTREVISTA FAMILIAR SISTÉMICA                                         │
+ │    · Modelos: Palo Alto (comunicación), Minuchin (estructura), Milán        │
+ │      (hipotetización, circularidad, neutralidad).                           │
+ │    · 5 Fases: Pre-sesión -&gt; Acogida -&gt; Desarrollo -&gt; Devolución -&gt; Cierre.  │
+ │    · Habilidades: Escucha activa, contención, preguntas circulares, reframing│
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 2. NIVELES DE INTERVENCIÓN FAMILIAR                                         │
+ │    · Nivel 1 (Formativo/Educativo): Universal, Escuelas de Familias.        │
+ │    · Nivel 2 (Apoyo/Orientación): Crisis evolutivas, mediación familiar.    │
+ │    · Nivel 3 (Tratamiento Especializado): ETF (Decreto 100/2022), PTF.      │
+ │    · Nivel 4 (Protección/Desamparo): Art. 172 CC, acogimiento o tutela.    │
+ │    · Enfoque: Competencias parentales (Barudy) y Resiliencia (Walsh).       │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 3. TÉCNICAS E INSTRUMENTOS                                                  │
+ │    · Gráficos: Genograma (McGoldrick, 3 gen.) y Ecomapa (Hartman, entorno). │
+ │    · Técnicas: Esculturas (Satir), externalización (White), prescripción.   │
+ │    · Programas: Programa Guía (Martínez G.), Vivir la Paternidad en Positivo│
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 4. ACCIÓN TUTORIAL Y PLAN DE ACCIÓN TUTORIAL (PAT)                          │
+ │    · Concepto: Dimensión inherente e inseparable de la docencia (LOMLOE 91).│
+ │    · PAT en el PEC: Obligatorio art. 121 LOMLOE y arts. 21 D. 327 y 328/2010│
+ │    · Elaboración: Dpto. Orientación (IES) / EOE (CEIP); Aprobación: CLAUSTRO│
+ │    · Dimensiones: Alumnado (grupo/individual), Docentes, Familias, Entorno. │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 5. PERSONAS TUTORAS Y ENFOQUE UTRERA                                        │
+ │    · Nombramiento: Dirección a propuesta de Jefatura de Estudios.           │
+ │    · Funciones: Evaluación, coordinación docente, enlace familiar e iPasen. │
+ │    · Utrera: CSSC Catalina de Perea 32; coordinación EMAE con tutores de    │
+ │      CEIP (Rodrigo Caro, Álvarez Q.) e IES (Ruiz Gijón, Ponce de León);     │
+ │      ERACIS+ en Barriada El Tinte y descentralización en Guadalema, Trajano │
+ │      y Pinzón.                                                              │
+ └─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+<hr class="divider"/>
+<h3 class="subsection-title">C. 7 Trampas Clásicas del Test Desarticuladas</h3>
+<div class="exam-item"><strong>1.</strong> <strong>Trampa sobre la ubicación formal del Plan de Acción Tutorial (PAT)</strong>:</div>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿En qué documento institucional se inserta formalmente el Plan de Acción Tutorial: en el Plan de Convivencia, en la Programación General Anual (PGA) como documento desgajado o en el Proyecto Educativo de Centro (PEC)?"</li>
+<li class="trap-a"><em>Desarticulación:</em> El PAT se incardina de forma obligatoria y preceptiva <strong>en el Proyecto Educativo de Centro (PEC)</strong> (artículo 121 de la LOMLOE y artículos 21.2.e de los Decretos 327/2010 y 328/2010 de Andalucía). Aunque sus actividades anuales concretas se programen cada curso, su marco directriz forma parte del PEC.</li>
+</ul>
+<div class="exam-item"><strong>2.</strong> <strong>Trampa sobre el órgano competente para la aprobación del PAT</strong>:</div>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿A qué órgano corresponde la aprobación definitiva del Plan de Acción Tutorial: al Consejo Escolar, a la Comisión de Coordinación Pedagógica o al Claustro de Profesorado?"</li>
+<li class="trap-a"><em>Desarticulación:</em> Al <strong>Claustro de Profesorado</strong>. El artículo 129 de la LOE-LOMLOE y la normativa andaluza atribuyen al Claustro la competencia exclusiva de aprobar los aspectos docentes y pedagógicos del Proyecto Educativo, entre los que se halla el PAT. El Consejo Escolar lo evalúa, pero no lo aprueba técnicamente.</li>
+</ul>
+<div class="exam-item"><strong>3.</strong> <strong>Trampa sobre el nombramiento de las personas tutoras</strong>:</div>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿Quién nombra formalmente a las personas tutoras: la Jefatura de Estudios, el Claustro de Profesorado o la Dirección del centro?"</li>
+<li class="trap-a"><em>Desarticulación:</em> La <strong>Dirección del centro</strong>, siempre a <strong>propuesta preceptiva de la Jefatura de Estudios</strong> (artículo 86 de los Decretos 327/2010 y 328/2010). Ni el Claustro ni las asambleas de familias tienen competencia de designación.</li>
+</ul>
+<p class="num-item"><strong>4.</strong> <strong>Trampa sobre las diferencias conceptuales entre Genograma y Ecomapa</strong>:</p>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿Qué instrumento técnico evalúa las conexiones, tensiones y recursos entre la familia y su entorno ecológico circundante: el Genograma o el Ecomapa?"</li>
+<li class="trap-a"><em>Desarticulación:</em> El <strong>Ecomapa (Ann Hartman, 1978)</strong>. El Genograma (McGoldrick y Gerson, 1985) evalúa la estructura interna, biográfica y transgeneracional (mínimo 3 generaciones) dentro del árbol familiar. El error habitual consiste en confundirlos o atribuir al genograma la representación de los sistemas externos.</li>
+</ul>
+<div class="exam-item"><strong>5.</strong> <strong>Trampa sobre las tres directrices de la Escuela de Milán</strong>:</div>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿Cuáles son los tres principios metodológicos fijados por Mara Selvini Palazzoli para la conducción de la sesión familiar?"</li>
+<li class="trap-a"><em>Desarticulación:</em> <strong>Hipotetización, circularidad y neutralidad</strong> (publicados en su obra de 1980). Las respuestas trampa suelen introducir términos como "alianza", "connotación positiva" o "jerarquía", que son técnicas operativas o conceptos estructurales de Minuchin, no los tres axiomas de conducción de Milán.</li>
+</ul>
+<div class="exam-item"><strong>6.</strong> <strong>Trampa sobre los cuatro niveles de intervención familiar</strong>:</div>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿En qué nivel de intervención familiar se encuadran las actuaciones de los Equipos de Tratamiento Familiar (ETF) regulados por el Decreto 100/2022 de Andalucía?"</li>
+<li class="trap-a"><em>Desarticulación:</em> En el <strong>Nivel 3: Tratamiento Familiar Especializado (Prevención Terciaria)</strong>. El Nivel 1 es educativo/universal; el Nivel 2 es de apoyo y orientación básica ante crisis no graves; y el Nivel 4 es el de protección y desamparo jurídico que implica la retirada de la guarda o tutela.</li>
+</ul>
+<p class="num-item"><strong>7.</strong> <strong>Trampa sobre el papel del Educador/a Social frente a la persona tutora</strong>:</p>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿Sustituye el Educador/a Social municipal a la persona tutora cuando una familia desatiende reiteradamente las citaciones escolares?"</li>
+<li class="trap-a"><em>Desarticulación:</em> <strong>Falso</strong>. El Educador/a Social <strong>nunca sustituye</strong> las funciones tutoriales docentes. Su papel es de <strong>articulación, mediación y complementariedad socioeducativa</strong> en el medio abierto y comunitario. El tutor mantiene su responsabilidad académica dentro del centro, mientras el Educador interviene en el hogar y en la calle para restablecer el vínculo familiar con la escuela.</li>
+</ul>
+<hr class="divider"/>
+<h3 class="subsection-title">D. Supuesto Práctico Modal en el Ayuntamiento de Utrera</h3>
+<h4 class="subsubsection-title">Supuesto: Intervención Coordinada entre Tutoría del IES Ruiz Gijón y Servicios Sociales ante Menor en Situación de Riesgo y Desajuste Conductual</h4>
+<p><strong>1. Identificación y Recepción de la Demanda:</strong> La persona tutora de 2º de ESO del <strong>IES Ruiz Gijón</strong> de Utrera detecta que el alumno <em>A.G.L.</em>, de 14 años de edad, presenta un cuadro agudo de absentismo selectivo (35% de faltas injustificadas en el último mes, concentradas a primera hora y los viernes), acompañado de conductas disruptivas graves en el aula (desafío verbal al profesorado y aislamiento del grupo de iguales).</p>
+<ul>
+<li>La tutora ha citado a los progenitores en dos ocasiones mediante la plataforma <strong>iPasen</strong> y por carta certificada, sin comparecencia de estos.</li>
+<li>Ante el fracaso de las medidas internas en Fase 1, la tutora, en coordinación con la Jefatura de Estudios y el Departamento de Orientación, remite la ficha de derivación al <strong>Centro de Servicios Sociales Comunitarios (calle Catalina de Perea, 32)</strong>, activando al <strong>Equipo Municipal de Atención al Absentismo (EMAE)</strong>.</li>
+</ul>
+<p><strong>2. Fase de Análisis e Hipotetización por el/la Educador/a Social:</strong></p>
+<ul>
+<li>El/La Educador/a Social del CSSC revisa el sistema <strong>CoheSSión</strong> y contacta telefónicamente con la tutora del IES Ruiz Gijón para unificar criterios.</li>
+<li>Se formula una <strong>hipótesis preliminar de trabajo</strong>: el menor manifiesta una conducta de desobediencia y absentismo como síntoma de una desorganización parental severa tras una separación conyugal conflictiva no resuelta, donde los límites generacionales se han diluido y el menor ha quedado parentalizado o desprotegido.</li>
+</ul>
+<p><strong>3. Desarrollo de la Entrevista Familiar en Medio Abierto / Domicilio:</strong></p>
+<ul>
+<li>El Educador/a Social realiza una <strong>visita a domicilio</strong> en la Barriada de Consolación de Utrera. Tras romper la actitud defensiva inicial mediante una acogida empática y clarificación del encuadre no punitivo, se convoca a ambos progenitores y al menor a una entrevista formal en la sala polivalente del CSSC de Catalina de Perea, 32.</li>
+<li><strong>Técnicas desplegadas durante la sesión</strong>:</li>
+<li><strong>Construcción del Genograma</strong>: Se dibuja junto a la familia la estructura trigeneracional. Se constata la ruptura traumática de la pareja hace 18 meses, con una hostilidad manifiesta entre ambos excónyuges y el repliegue del padre, quien ha cesado en sus visitas. La madre trabaja en jornadas partidas en el sector servicios, dejando al menor solo en el hogar durante las mañanas.</li>
+<li><strong>Preguntas Circulares</strong>: El Educador indaga las dinámicas relacionales: <em>"A.G.L., cuando tu madre se va a trabajar y te quedas solo en casa, ¿qué crees que piensa ella que tú haces?", "Madre, cuando su hijo no acude al instituto, ¿a quién cree él que está protegiendo o castigando con esa conducta?"</em>.</li>
+<li><strong>Reencuadre Positivo (<em>Reframing</em>)</strong>: El Educador redefine la disrupción del menor no como "maldad o vagancia", sino como una llamada de socorro para que sus padres vuelvan a comunicarse y ejerzan una autoridad compartida y afectuosa.</li>
+<li><strong>Externalización del Problema</strong>: Se trata al absentismo como "el desánimo que se ha instalado en casa tras la separación" y se convoca a la familia a unirse para expulsarlo.</li>
+</ul>
+<p><strong>4. Articulación con la Acción Tutorial y Plan Socioeducativo Familiar (PIF):</strong></p>
+<ul>
+<li><strong>Reunión Triangular en el IES Ruiz Gijón</strong>: El Educador Social acompaña a la madre a una reunión presencial en el instituto con la persona tutora y la orientadora educativa.</li>
+<li><strong>Suscripción de Instrumentos Contractuales</strong>:</li>
+<li>Se formaliza por escrito un <strong>Compromiso de Convivencia</strong> (Orden de 20 de junio de 2011) para erradicar las conductas disruptivas en clase mediante un sistema de refuerzos contingentes pactados.</li>
+<li>Se formaliza un <strong>Compromiso Educativo</strong> con la madre, acordando el control diario de puntualidad a través de la aplicación <strong>iPasen</strong> y la supervisión del horario de estudio nocturno.</li>
+<li><strong>Inclusión en Recursos Municipales</strong>:</li>
+<li>El menor se incorpora al <strong>Taller de Ocio Juvenil y Habilidades Sociales</strong> de la Casa de la Juventud de Utrera.</li>
+<li>La madre se inscribe en la <strong>Escuela de Familias</strong> del CSSC sobre pautas educativas tras el divorcio.</li>
+<li><strong>Protocolo con Policía Local (Agentes Tutores)</strong>: Seguimiento puntual matutino en las inmediaciones del IES Ruiz Gijón para evitar la permanencia del menor en la vía pública durante el horario lectivo.</li>
+</ul>
+<p><strong>5. Seguimiento y Evaluación:</strong></p>
+<ul>
+<li>En el plazo de seis semanas lectivas, el porcentaje de absentismo desciende del 35% al 2% (asistencia regularizada), cesando los partes de incidencias disciplinarias en el centro.</li>
+<li>La persona tutora y el Educador Social emiten informe favorable de seguimiento a la <strong>Comisión Municipal de Absentismo Escolar de Utrera</strong>, acordándose el mantenimiento del seguimiento trimestral en Fase 2 sin necesidad de elevación a Fiscalía de Menores.</li>
+</ul>
+<hr class="divider"/>
+<h3 class="subsection-title">E. Fuentes Oficiales y Bibliografía Consolidada</h3>
+<h4 class="subsubsection-title">Normativa Internacional, Estatal y Autonómica</h4>
+<ul>
+<li><strong>Constitución Española de 1978</strong> (<em>BOE nº 311, de 29 de diciembre de 1978</em>): Artículos 27 y 39.</li>
+<li><strong>Ley Orgánica 2/2006, de 3 de mayo, de Educación (LOE)</strong> (<em>BOE nº 106, de 4 de mayo de 2006</em>), modificada por la <strong>Ley Orgánica 3/2020, de 29 de diciembre (LOMLOE)</strong> (<em>BOE nº 340, de 30 de diciembre de 2020</em>): Artículos 91, 121, 126, 127 y 129.</li>
+<li><strong>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA)</strong> (<em>BOJA nº 252, de 26 de diciembre de 2007</em>): Artículos 3, 7, 8 y 34.</li>
+<li><strong>Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía</strong> (<em>BOJA nº 149, de 4 de agosto de 2021</em>).</li>
+<li><strong>Decreto 327/2010, de 13 de julio</strong>, por el que se aprueba el Reglamento Orgánico de los Institutos de Educación Secundaria (<em>BOJA nº 139, de 16 de julio de 2010</em>): Artículos 21, 86 a 92.</li>
+<li><strong>Decreto 328/2010, de 13 de julio</strong>, por el que se aprueba el Reglamento Orgánico de las Escuelas Infantiles de segundo ciclo y de los Colegios de Educación Primaria (<em>BOJA nº 139, de 16 de julio de 2010</em>): Artículos 21, 86 a 91.</li>
+<li><strong>Decreto 100/2022, de 7 de junio</strong>, por el que se regula el papel de los Equipos de Tratamiento Familiar en Andalucía (<em>BOJA nº 111, de 13 de junio de 2022</em>).</li>
+<li><strong>Orden de 19 de septiembre de 2005</strong>, de la Consejería de Educación, de desarrollo del Plan Integral de Absentismo Escolar en Andalucía (<em>BOJA nº 202, de 17 de octubre de 2005</em>).</li>
+<li><strong>Orden de 20 de junio de 2011</strong>, por la que se adoptan medidas para la promoción de la convivencia y se regula el derecho a las familias a participar en el proceso educativo (<em>BOJA nº 132, de 7 de julio de 2011</em>).</li>
+<li><strong>Código Civil de España</strong> (Real Decreto de 24 de julio de 1889): Artículos 154 y 172.</li>
+</ul>
+<h4 class="subsubsection-title">Bibliografía Doctrinal y Científica de Referencia</h4>
+<ul>
+<li><strong>Álvarez González, M., & Bisquerra Alzina, R. (2012).</strong> <em>Orientación educativa: Modelos, áreas, estrategias y recursos</em>. Wolters Kluwer.</li>
+<li><strong>Barudy, J., & Dantagnan, M. (2005).</strong> <em>Los buenos tratos a la infancia: Parentalidad, apego y resiliencia</em>. Gedisa.</li>
+<li><strong>Barudy, J., & Dantagnan, M. (2010).</strong> <em>Los desafíos invisibles de ser padre o madre: Fichas de trabajo</em>. Gedisa.</li>
+<li><strong>Bertalanffy, L. von (1968).</strong> <em>General System Theory: Foundations, Development, Applications</em>. George Braziller.</li>
+<li><strong>Cibanal, L., Arce, M. C., & Carballal, M. C. (2014).</strong> <em>Técnicas de comunicación y relación de ayuda en ciencias de la salud</em>. Elsevier.</li>
+<li><strong>D'Zurilla, T. J., & Goldfried, M. R. (1971).</strong> <em>Problem solving and behavior modification</em>. Journal of Abnormal Psychology, 78(1), 107-126.</li>
+<li><strong>Hartman, A. (1978).</strong> <em>Diagrammatic assessment of family relationships</em>. Social Casework, 59(8), 465-476.</li>
+<li><strong>Martínez González, R.-A. (2009).</strong> <em>Programa-Guía para el desarrollo de competencias emocionales, educativas y parentales</em>. Ministerio de Sanidad y Política Social.</li>
+<li><strong>McGoldrick, M., & Gerson, R. (1985).</strong> <em>Genograms in Family Assessment</em>. W. W. Norton & Company. (Trad. esp.: <em>Genogramas en la evaluación familiar</em>. Gedisa, 1987).</li>
+<li><strong>Minuchin, S. (1974).</strong> <em>Families and Family Therapy</em>. Harvard University Press. (Trad. esp.: <em>Familias y terapia familiar</em>. Gedisa, 1977).</li>
+<li><strong>Rodrigo López, M. J., Máiquez, M. L., & Martín, J. C. (2015).</strong> <em>Parentalidad positiva y políticas locales de apoyo a las familias</em>. FEMP.</li>
+<li><strong>Satir, V. (1972).</strong> <em>Peoplemaking</em>. Science and Behavior Books. (Trad. esp.: <em>Psicoterapia familiar conjunta</em>. Prensa Médica Mexicana).</li>
+<li><strong>Selvini Palazzoli, M., Boscolo, L., Cecchin, G., & Prata, G. (1980).</strong> <em>Hypothesizing - Circularity - Neutrality: Three Guidelines for the Conductor of the Session</em>. Family Process, 19(1), 3-12.</li>
+<li><strong>Walsh, F. (1998).</strong> <em>Strengthening Family Resilience</em>. Guilford Press. (Trad. esp.: <em>Resiliencia familiar: Estrategias para su desarrollo</em>. Amorrortu, 2004).</li>
+<li><strong>Watzlawick, P., Beavin, J. H., & Jackson, D. D. (1967).</strong> <em>Pragmatics of Human Communication: A Study of Interactional Patterns, Pathologies, and Paradoxes</em>. W. W. Norton & Company. (Trad. esp.: <em>Teoría de la comunicación humana</em>. Herder, 1981).</li>
+<li><strong>White, M., & Epston, D. (1990).</strong> <em>Narrative Means to Therapeutic Ends</em>. W. W. Norton & Company. (Trad. esp.: <em>Medios narrativos para fines terapéuticos</em>. Paidós, 1993).</li>
+</ul>
+
+
+</body>
+</html>

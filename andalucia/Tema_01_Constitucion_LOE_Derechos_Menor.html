@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 1: La Constitución Española. Perspectiva Social y Educativa. La Ley Orgánica de Educación. Derechos y Deberes del Menor en el Marco Constitucional y Educativo Español</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 1</h1>
+  <h2>La Constitución Española. Perspectiva Social y Educativa. La Ley Orgánica de Educación. Derechos y Deberes del Menor en el Marco Constitucional y Educativo Español</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Bloque:</strong> Materias Específicas</p>
+<p><strong>Tema Oficial:</strong> 1</p>
+<p><strong>Normativa Clave:</strong> Constitución Española de 1978 (arts. 9.2, 10, 14, 27 y 39); Ley Orgánica 2/2006 (LOE) modificada por Ley Orgánica 3/2020 (LOMLOE); Ley Orgánica 1/1996 de Protección Jurídica del Menor; Ley Orgánica 8/2021 (LOPIVI); Real Decreto 732/1995 de derechos y deberes de los alumnos.</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 1</div>
+  <div class="toc-item level-1">1. <strong>Introducción y contextualización en la Educación Social</strong></div>
+  <div class="toc-item level-1">2. <strong>La Constitución Española de 1978: Perspectiva social y principios rectores</strong></div>
+  <div class="toc-item level-2">2.1. El Estado social y democrático de Derecho y los valores superiores</div>
+  <div class="toc-item level-2">2.2. La igualdad material y la remoción de obstáculos: El artículo 9.2 CE</div>
+  <div class="toc-item level-2">2.3. La dignidad de la persona y el libre desarrollo de la personalidad: El artículo 10 CE</div>
+  <div class="toc-item level-2">2.4. La protección social, económica y jurídica de la familia y de la infancia: El artículo 39 CE</div>
+  <div class="toc-item level-1">3. <strong>La perspectiva educativa en la Constitución: Análisis exhaustivo del artículo 27 CE</strong></div>
+  <div class="toc-item level-2">3.1. Naturaleza jurídica y doble dimensión del derecho a la educación</div>
+  <div class="toc-item level-2">3.2. Objeto y fines de la educación (art. 27.2 CE)</div>
+  <div class="toc-item level-2">3.3. Libertad de enseñanza y derecho de los padres a la formación religiosa y moral (art. 27.3 CE)</div>
+  <div class="toc-item level-2">3.4. Gratuidad y obligatoriedad de la enseñanza básica (art. 27.4 CE)</div>
+  <div class="toc-item level-2">3.5. Programación general de la enseñanza y participación de la comunidad educativa (art. 27.5 y 27.7 CE)</div>
+  <div class="toc-item level-2">3.6. La doctrina del Tribunal Constitucional en materia educativa</div>
+  <div class="toc-item level-1">4. <strong>La Ley Orgánica de Educación (LOE) con las modificaciones de la LOMLOE</strong></div>
+  <div class="toc-item level-2">4.1. Marco general, principios y fines del sistema educativo español</div>
+  <div class="toc-item level-2">4.2. La equidad y la inclusión educativa como ejes transversales (Título II)</div>
+  <div class="toc-item level-2">4.3. El enfoque de derechos de la infancia conforme a la Convención de Naciones Unidas</div>
+  <div class="toc-item level-2">4.4. La figura del educador/a social en el marco escolar inclusivo</div>
+  <div class="toc-item level-1">5. <strong>Derechos y deberes del menor en el marco constitucional y educativo español</strong></div>
+  <div class="toc-item level-2">5.1. El menor como sujeto activo de derechos: Evolución del paradigma tutelar al de protección integral</div>
+  <div class="toc-item level-2">5.2. Catálogo de derechos del alumnado en el ámbito educativo</div>
+  <div class="toc-item level-2">5.3. Catálogo de deberes del alumnado: Corresponsabilidad y convivencia escolar</div>
+  <div class="toc-item level-2">5.4. Garantías, medidas correctoras y protocolos de protección frente a la violencia (LOPIVI)</div>
+  <div class="toc-item level-1">6. <strong>Conclusión y rol del educador/a social</strong></div>
+  <div class="toc-item level-1">7. <strong>Anexo: Mapa conceptual y tabla sinóptica del Tema 1</strong></div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y contextualización en la Educación Social</h2>
+
+<p>El análisis de la <strong>Constitución Española de 1978 (CE)</strong> y de la legislación educativa básica, encabezada por la <strong>Ley Orgánica 2/2006, de 3 de mayo, de Educación (LOE)</strong> con las modificaciones introducidas por la <strong>Ley Orgánica 3/2020, de 29 de diciembre (LOMLOE)</strong>, no constituye un mero ejercicio dogmático-jurídico, sino el basamento axiológico y normativo imprescindible sobre el que se asienta la intervención del <strong>Educador y la Educadora Social</strong> en el sistema educativo andaluz.</p>
+
+<p>La Educación Social, configurada como un derecho de la ciudadanía y una profesión pedagógica especializada en los procesos de socialización, prevención y compensación de desigualdades, encuentra en los mandatos constitucionales su legitimación directa. La escuela contemporánea no se concibe ya como una institución aislada orientada exclusivamente a la instrucción académica, sino como una <strong>comunidad educativa integradora, promotora del bienestar infantil y garante de los derechos fundamentales de todos los niños, niñas y adolescentes</strong>, especialmente de aquellos que se hallan en situaciones de vulnerabilidad, exclusión o conflicto social.</p>
+
+<h2 class="section-title">2. La Constitución Española de 1978: Perspectiva social y principios rectores</h2>
+
+<h3 class="sub-title">2.1. El Estado social y democrático de Derecho y los valores superiores</h3>
+
+<p>El <strong>artículo 1.1 de la CE</strong> define a España como un <em>"Estado social y democrático de Derecho, que propugna como valores superiores de su ordenamiento jurídico la libertad, la justicia, la igualdad y el pluralismo político"</em>.</p>
+
+<p>La cláusula de <strong>Estado social</strong> resulta capital para la Educación Social. Implica la superación del Estado liberal abstencionista: los poderes públicos asumen una función prestacional activa, responsabilizándose de procurar una distribución equitativa de los recursos, garantizar unos servicios públicos universales (educación, sanidad, servicios sociales) y corregir las disfunciones y desigualdades generadas por las fuerzas del mercado.</p>
+
+<h3 class="sub-title">2.2. La igualdad material y la remoción de obstáculos: El artículo 9.2 CE</h3>
+
+<p>Si el artículo 14 de la CE consagra la igualdad formal ante la ley (<em>"Los españoles son iguales ante la ley, sin que pueda prevalecer discriminación alguna por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social"</em>), el <strong>artículo 9.2 CE</strong> establece el principio de <strong>igualdad material o real</strong>:</p>
+
+<div class="callout">
+  <p><em>"Corresponde a los poderes públicos promover las condiciones para que la libertad y la igualdad del individuo y de los grupos en que se integra sean reales y efectivas; remover los obstáculos que impidan o dificulten su plenitud y facilitar la participación de todos los ciudadanos en la vida política, económica, cultural y social."</em></p>
+</div>
+
+<p>Este precepto es el <strong>mandato constitucional directo de la acción socioeducativa compensatoria</strong>. Justifica y legitima las medidas de discriminación positiva, la dotación de recursos específicos a zonas con necesidades de transformación social y la intervención de profesionales como los educadores sociales para derribar las barreras socioeconómicas, culturales y contextuales que impiden el pleno desarrollo de los menores.</p>
+
+<h3 class="sub-title">2.3. La dignidad de la persona y el libre desarrollo de la personalidad: El artículo 10 CE</h3>
+
+<p>El <strong>artículo 10.1 CE</strong> actúa como pórtico de los derechos fundamentales:</p>
+
+<div class="callout">
+  <p><em>"La dignidad de la persona, los derechos inviolables que le son inherentes, el libre desarrollo de la personalidad y el respeto a la ley y a los derechos de los demás son fundamento del orden político y de la paz social."</em></p>
+</div>
+
+<p>Asimismo, el <strong>artículo 10.2 CE</strong> vincula la interpretación de los derechos constitucionales a la Declaración Universal de Derechos Humanos y a los tratados y acuerdos internacionales ratificados por España, donde destaca con fuerza propia la <strong>Convención sobre los Derechos del Niño (CDN) de Naciones Unidas de 1989</strong> (ratificada en 1990).</p>
+
+<h3 class="sub-title">2.4. La protección social, económica y jurídica de la familia y de la infancia: El artículo 39 CE</h3>
+
+<p>Ubicado en el Capítulo III del Título I (<em>"De los principios rectores de la política social y económica"</em>), el <strong>artículo 39 CE</strong> dispone:</p>
+
+<ol>
+  <li><em>Los poderes públicos aseguran la protección social, económica y jurídica de la familia.</em></li>
+  <li><em>Los poderes públicos aseguran, asimismo, la protección integral de los hijos, iguales éstos ante la ley con independencia de su filiación, y de las madres, cualquiera que sea su estado civil.</em></li>
+  <li><em>Los padres deben prestar asistencia de todo orden a los hijos habidos dentro o fuera del matrimonio, durante su minoría de edad y en los demás casos en que legalmente proceda.</em></li>
+  <li><em>Los niños gozarán de la protección prevista en los acuerdos internacionales que velan por sus derechos.</em></li>
+</ol>
+
+<p>Este artículo consagra a los menores de edad como titulares plenos de derechos específicos de protección, articulando el deber tutelar de los progenitores y subsidiariamente del Estado a través del sistema de protección de menores y de la institución escolar.</p>
+
+<h2 class="section-title">3. La perspectiva educativa en la Constitución: Análisis exhaustivo del artículo 27 CE</h2>
+
+<p>El <strong>artículo 27 de la CE</strong> constituye el pacto educativo constitucional que equilibra la libertad y la igualdad, condensando las diferentes corrientes ideológicas y pedagógicas de la transición democrática.</p>
+
+<div class="diagram-box">
+  <pre>                          ARTÍCULO 27 CE
+           ┌─────────────────────┴─────────────────────┐
+   VERTIENTE PRESTACIONAL                     VERTIENTE DE LIBERTAD
+ (Derecho a la educación)                   (Libertad de enseñanza)
+ ├─ Derecho universal (27.1)                ├─ Libertad de cátedra (20.1.c)
+ ├─ Fines de desarrollo pleno (27.2)        ├─ Ideario y creación de centros (27.6)
+ ├─ Enseñanza básica obligatoria y          └─ Elección formación moral/religiosa
+ │  gratuita (27.4)                            por los padres (27.3)
+ ├─ Programación general (27.5)
+ └─ Participación de la comunidad (27.7)</pre>
+</div>
+
+<h3 class="sub-title">3.1. Naturaleza jurídica y doble dimensión del artículo 27.1 CE</h3>
+
+<p><em>El artículo 27.1 proclama: "Todos tienen el derecho a la educación. Se reconoce la libertad de enseñanza".</em> El Tribunal Constitucional (STC 86/1985, STC 337/1994) ha reiterado que el artículo 27 presenta una <strong>doble naturaleza</strong>:</p>
+
+<ul>
+  <li><strong>Como derecho de libertad (status libertatis):</strong> Facultad de los padres de elegir el tipo de educación para sus hijos y libertad de creación de centros docentes.</li>
+  <li><strong>Como derecho social o de prestación (status positivus):</strong> Obligación de los poderes públicos de crear centros, financiar la enseñanza y garantizar el acceso real y no discriminatorio a un sistema educativo de calidad.</li>
+</ul>
+
+<h3 class="sub-title">3.2. Objeto y fines de la educación (art. 27.2 CE)</h3>
+
+<div class="callout">
+  <p><em>"La educación tendrá por objeto el pleno desarrollo de la personalidad humana en el respeto a los principios democráticos de convivencia y a los derechos y libertades fundamentales."</em></p>
+</div>
+
+<p>Este mandato trasciende la concepción decimonónica de la escuela como mera transmisora de saberes cognitivos. El "pleno desarrollo de la personalidad" abarca la dimensión emocional, social, ética y cívica, conectando de lleno con los cometidos propios de la Educación Social: habilidades de relación, resolución pacífica de conflictos, pensamiento crítico y autonomía moral.</p>
+
+<h3 class="sub-title">3.3. Libertad de formación religiosa y moral (art. 27.3 CE)</h3>
+
+<p>Garantiza el derecho que asiste a los padres para que sus hijos reciban la formación religiosa y moral que esté de acuerdo con sus propias convicciones.</p>
+
+<h3 class="sub-title">3.4. Gratuidad y obligatoriedad de la enseñanza básica (art. 27.4 CE)</h3>
+
+<div class="callout">
+  <p><em>"La enseñanza básica es obligatoria y gratuita."</em></p>
+</div>
+
+<p>Comprende diez años de escolaridad (de los 6 a los 16 años de edad, articulados en Educación Primaria y Educación Secundaria Obligatoria). La obligatoriedad convierte la escolarización no solo en un derecho subjetivo, sino en un <strong>deber social ineludible</strong>, fundamentando legalmente los programas de prevención y control del absentismo escolar que desarrollan los educadores sociales.</p>
+
+<h3 class="sub-title">3.5. Programación general y participación de la comunidad educativa (art. 27.5 y 27.7 CE)</h3>
+
+<ul>
+  <li><strong>Art. 27.5:</strong> Los poderes públicos garantizan el derecho de todos a la educación mediante una programación general de la enseñanza, con participación efectiva de todos los sectores afectados y la creación de centros docentes.</li>
+  <li><strong>Art. 27.7:</strong> El profesorado, las familias y, en su caso, el alumnado intervendrán en el control y gestión de todos los centros sostenidos por la Administración con fondos públicos. Esto institucionaliza la <strong>democracia escolar</strong> mediante órganos colegiados como el <strong>Consejo Escolar</strong>.</li>
+</ul>
+
+<h2 class="section-title">4. La Ley Orgánica de Educación (LOE) con las modificaciones de la LOMLOE</h2>
+
+<p>La <strong>Ley Orgánica 2/2006, de 3 de mayo, de Educación (LOE)</strong>, profundamente modificada por la <strong>Ley Orgánica 3/2020, de 29 de diciembre (LOMLOE)</strong>, es la ley de cabecera del sistema educativo español.</p>
+
+<h3 class="sub-title">4.1. Principios fundamentales de la LOE-LOMLOE (artículo 1)</h3>
+
+<p>La ley incorpora cinco pilares esenciales en su exposición de motivos y artículo 1:</p>
+
+<ol>
+  <li><strong>El enfoque de los derechos de la infancia:</strong> Se asume explícitamente la Convención de los Derechos del Niño de 1989 como principio rector.</li>
+  <li><strong>La equidad y la educación inclusiva:</strong> Calidad para todo el alumnado, garantizando la igualdad de oportunidades y la accesibilidad universal.</li>
+  <li><strong>La igualdad de género efectiva:</strong> Coeducación, prevención de la violencia machista y fomento de la no discriminación.</li>
+  <li><strong>La competencia digital y el pensamiento crítico:</strong> Para reducir la brecha digital y fomentar el uso seguro y ético de las tecnologías.</li>
+  <li><strong>La educación para el desarrollo sostenible y la ciudadanía global:</strong> Conforme a la Agenda 2030 de la UNESCO.</li>
+</ol>
+
+<h3 class="sub-title">4.2. Fines del sistema educativo (artículo 2 LOE-LOMLOE)</h3>
+
+<p>Destacan para la Educación Social:</p>
+
+<ul>
+  <li>El pleno desarrollo de la personalidad y de las capacidades de los alumnos.</li>
+  <li>La educación en el respeto a los derechos y libertades fundamentales y en la igualdad de trato y no discriminación.</li>
+  <li>La educación en el ejercicio de la tolerancia y de la libertad, así como en la prevención y resolución pacífica de conflictos.</li>
+  <li>La formación para la paz, el respeto a los derechos humanos y la vida en común.</li>
+  <li>El desarrollo de la capacidad para regular el propio aprendizaje, confiar en sus aptitudes y desarrollar la creatividad, la iniciativa personal y el espíritu emprendedor.</li>
+</ul>
+
+<h3 class="sub-title">4.3. El Título II: Equidad en la educación</h3>
+
+<p>El Título II de la LOE-LOMLOE estructura la respuesta educativa ante la diversidad:</p>
+
+<ul>
+  <li><strong>Capítulo I: Alumnado con necesidad específica de apoyo educativo (ACNEAE):</strong>
+    <ul>
+      <li>Alumnado con necesidades educativas especiales (NEE derivadas de discapacidad o trastornos graves de conducta).</li>
+      <li>Retraso madurativo o trastornos del desarrollo del lenguaje y la comunicación.</li>
+      <li>Trastornos de atención o de aprendizaje.</li>
+      <li>Desconocimiento grave de la lengua de aprendizaje.</li>
+      <li><strong>Situación de vulnerabilidad socioeducativa</strong> (pobreza, exclusión social, itinerancia, desamparo).</li>
+      <li>Altas capacidades intelectuales.</li>
+      <li>Incorporación tardía al sistema educativo español o condiciones personales de historia escolar.</li>
+    </ul>
+  </li>
+  <li><strong>Capítulo II: Compensación de las desigualdades en educación:</strong>
+    <ul>
+      <li>Obligación de las Administraciones de desarrollar planes de compensación para personas, grupos y ámbitos territoriales en situaciones desfavorables.</li>
+      <li>Dotación de recursos materiales y humanos suplementarios a centros que escolaricen alumnado en situación vulnerable.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 class="sub-title">4.4. La figura del Educador/a Social en el marco de la LOMLOE</h3>
+
+<p>La LOMLOE enfatiza la necesidad de contar con <strong>equipos multidisciplinares</strong> en los centros y en las redes de orientación, reforzando la figura de profesionales sociocomunitarios para:</p>
+
+<ul>
+  <li>Vincular el centro educativo con los Servicios Sociales y las familias.</li>
+  <li>Promover climas de centro seguros e inclusivos.</li>
+  <li>Implementar protocolos de bienestar y protección frente al acoso y la violencia infantil.</li>
+</ul>
+
+<h2 class="section-title">5. Derechos y deberes del menor en el marco constitucional y educativo español</h2>
+
+<h3 class="sub-title">5.1. Evolución del estatus jurídico del menor: De objeto de tutela a sujeto de derechos</h3>
+
+<p>Tradicionalmente, el Derecho consideraba al menor como un mero objeto de protección y tutela bajo la patria potestad paterna. La aprobación de la <strong>Convención sobre los Derechos del Niño de 1989</strong>, ratificada por España, y la posterior <strong>Ley Orgánica 1/1996, de 15 de enero, de Protección Jurídica del Menor</strong>, supuso un cambio copernicano de paradigma:</p>
+
+<div class="diagram-box">
+  <pre>PARADIGMA TUTELAR CLÁSICO                  PARADIGMA DE PROTECCIÓN INTEGRAL
+(Menor como "objeto" pasivo)               (Menor como "sujeto" activo de derechos)
+┌───────────────────────────────┐          ┌───────────────────────────────┐
+│ • Incapacidad natural         │   ───►   │ • Capacidad progresiva        │
+│ • Paternalismo estatal        │          │ • Interés superior del menor  │
+│ • Menor invisible e inaudito  │          │ • Derecho a ser escuchado/a   │
+└───────────────────────────────┘          └───────────────────────────────┘</pre>
+</div>
+
+<p>Principios rectores de la L.O. 1/1996 (reforzados por la Ley 26/2015 y la LOPIVI 8/2021):</p>
+
+<ol>
+  <li><strong>La primacía del Interés Superior del Menor (favor minoris):</strong> Principio inspirador de toda decisión pública o judicial.</li>
+  <li><strong>El derecho a ser oído y escuchado:</strong> En cualquier procedimiento que le afecte, en función de su edad y madurez (siempre a partir de los 12 años).</li>
+  <li><strong>El derecho a la intimidad, honor y propia imagen.</strong></li>
+  <li><strong>El principio de no discriminación y la autonomía progresiva.</strong></li>
+</ol>
+
+<h3 class="sub-title">5.2. Catálogo de derechos del alumnado en el ámbito educativo</h3>
+
+<p>Regulados con carácter general en el <strong>Real Decreto 732/1995, de 5 de mayo</strong>, y en los decretos autonómicos de convivencia escolar:</p>
+
+<ul>
+  <li><strong>Derecho a una formación integral:</strong> A que se desarrollen todas sus capacidades morales, físicas, intelectuales y emocionales.</li>
+  <li><strong>Derecho al respeto a la identidad, integridad y dignidad personales:</strong> Protección absoluta frente a cualquier trato degradante, castigo físico o menoscabo moral.</li>
+  <li><strong>Derecho a la valoración objetiva del rendimiento escolar:</strong> Criterios de evaluación públicos, transparentes y posibilidad de reclamación formal.</li>
+  <li><strong>Derecho a la igualdad de oportunidades y a la compensación educativa:</strong> Apoyos específicos en casos de enfermedad, vulnerabilidad o desventaja sociocultural.</li>
+  <li><strong>Derecho a la protección social:</strong> En casos de desamparo, maltrato o violencia intrafamiliar.</li>
+  <li><strong>Derecho a la libertad de conciencia y convicciones religiosas o morales.</strong></li>
+  <li><strong>Derecho a la participación y de reunión en el centro:</strong> A asociarse, expresar sus opiniones y participar en los órganos de gobierno del centro (delegados, Consejo Escolar).</li>
+</ul>
+
+<h3 class="sub-title">5.3. Catálogo de deberes del alumnado</h3>
+
+<p>La normativa concibe los deberes como una vía de formación cívica y corresponsabilidad social:</p>
+
+<ul>
+  <li><strong>El deber del estudio:</strong> Obligación básica de esforzarse para alcanzar el máximo desarrollo de sus capacidades individuales y aprovechar las enseñanzas impartidas.</li>
+  <li><strong>El deber de asistencia a clase y puntualidad:</strong> Cumplimiento riguroso del calendario escolar durante la etapa obligatoria.</li>
+  <li><strong>El deber de respeto a la autoridad del profesorado:</strong> Cumplir las orientaciones del equipo docente y reconocer su labor directiva en el aula.</li>
+  <li><strong>El deber de respeto a los compañeros y a la comunidad educativa:</strong> Prohibición estricta de conductas de acoso, discriminación, mofa, agresión verbal o física.</li>
+  <li><strong>El deber de cuidado y uso correcto de las instalaciones:</strong> Respetar los bienes materiales del centro y de sus compañeros.</li>
+  <li><strong>El deber de cumplir y respetar las normas de convivencia del centro:</strong> Aceptando el Reglamento de Organización y Funcionamiento (ROF).</li>
+</ul>
+
+<h3 class="sub-title">5.4. Garantías y medidas correctoras: La LOPIVI (Ley Orgánica 8/2021)</h3>
+
+<p>Las conductas contrarias a las normas de convivencia se abordan primando el <strong>carácter educativo y recuperador</strong> frente al punitivo:</p>
+
+<ul>
+  <li>Se prohíben medidas correctoras que menoscaben la dignidad personal o el derecho a la educación obligatoria.</li>
+  <li>La <strong>LOPIVI (Ley Orgánica 8/2021, de 4 de junio)</strong> revoluciona el ámbito escolar instaurando:
+    <ul>
+      <li>La figura del <strong>Coordinador o Coordinadora de Bienestar y Protección</strong> en todos los centros escolares.</li>
+      <li>Protocolos obligatorios de detección e intervención frente al ciberacoso, la violencia sexual, el suicidio y la autolesión.</li>
+      <li>El fomento de una <strong>cultura del buen trato</strong> y la resolución dialógica de conflictos mediante la mediación escolar.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 class="section-title">6. Conclusión y rol del educador/a social</h2>
+
+<p>El entramado constitucional y educativo español sitúa al menor en el centro neurálgico del sistema, no como receptor pasivo de contenidos, sino como <strong>ciudadano de pleno derecho en proceso de desarrollo biopsicosocial</strong>.</p>
+
+<p>La labor del <strong>Educador/a Social</strong> se revela como la bisagra indispensable para transformar los principios formales de la Constitución (arts. 9.2, 10, 27 y 39) y de la LOMLOE en <strong>realidades tangibles de inclusión</strong>:</p>
+
+<ul>
+  <li>Interviniendo con las familias más vulnerables para garantizar el derecho a la educación frente al absentismo.</li>
+  <li>Fomentando la convivencia positiva, la mediación y el desarrollo de habilidades sociales frente a conductas disruptivas.</li>
+  <li>Articulando redes comunitarias que protejan al menor frente a la exclusión social, consolidando la escuela como el espacio más democrático, seguro y cohesionador de la sociedad.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">7. Anexo: Mapa conceptual y tabla sinóptica del Tema 1</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Bloque Temático</th>
+      <th>Preceptos y Normas Clave</th>
+      <th>Implicaciones para la Educación Social</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Constitución: Valores y Principios</strong></td>
+      <td>• Art. 1.1: Estado Social y Democrático.<br>• Art. 9.2: Igualdad real y remoción de obstáculos.<br>• Art. 10: Dignidad y libre desarrollo personal.<br>• Art. 14: Igualdad y no discriminación.</td>
+      <td>Justifica la discriminación positiva, la intervención socioeducativa compensatoria y la atención prioritaria a sectores vulnerables.</td>
+    </tr>
+    <tr>
+      <td><strong>Protección a la Familia y la Infancia</strong></td>
+      <td>• Art. 39 CE: Protección social, económica y jurídica.<br>• CDN de 1989 (ratificada en 1990).<br>• L.O. 1/1996 de Protección del Menor.</td>
+      <td>Transición de objeto de tutela a sujeto de derechos; primacía del Interés Superior del Menor y derecho a ser escuchado.</td>
+    </tr>
+    <tr>
+      <td><strong>Pacto Educativo Constitucional</strong></td>
+      <td>• Art. 27.1: Derecho a la educación y libertad de enseñanza.<br>• Art. 27.2: Fines (pleno desarrollo de la personalidad).<br>• Art. 27.4: Enseñanza básica obligatoria y gratuita.<br>• Art. 27.5 y 7: Programación general y Consejo Escolar.</td>
+      <td>Marco del servicio público educativo; justificación legal del control del absentismo escolar y participación comunitaria.</td>
+    </tr>
+    <tr>
+      <td><strong>LOE-LOMLOE: Principios y Fines</strong></td>
+      <td>• Art. 1 y 2 LOE-LOMLOE: Enfoque de derechos de la infancia, coeducación, sostenibilidad y competencia digital.</td>
+      <td>La educación inclusiva y la equidad dejan de ser medidas accesorias para ser el eje vertebrador de todo el sistema educativo.</td>
+    </tr>
+    <tr>
+      <td><strong>Atención a la Diversidad y Equidad</strong></td>
+      <td>• Título II LOE-LOMLOE (ACNEAE): Vulnerabilidad socioeducativa, compensación de desigualdades territoriales y de origen.</td>
+      <td>Dotación de recursos y profesionales especializados (educadores sociales) para centros en entornos desfavorecidos.</td>
+    </tr>
+    <tr>
+      <td><strong>Derechos del Alumnado</strong></td>
+      <td>• Formación integral, respeto a la dignidad e integridad, evaluación objetiva, igualdad de oportunidades, participación.</td>
+      <td>Garantía de entornos seguros y trato digno; derecho a apoyos individualizados en situaciones de riesgo o desventaja.</td>
+    </tr>
+    <tr>
+      <td><strong>Deberes del Alumnado</strong></td>
+      <td>• Deber de estudio, asistencia y puntualidad, respeto a la autoridad docente, respeto a iguales y cuidado de instalaciones.</td>
+      <td>Aprendizaje de la convivencia democrática y corresponsabilidad; abordaje educativo-restaurativo de las sanciones.</td>
+    </tr>
+    <tr>
+      <td><strong>Protección Integral frente a Violencia</strong></td>
+      <td>• Ley Orgánica 8/2021 (LOPIVI).<br>• Figura del Coordinador/a de Bienestar y Protección.<br>• Protocolos de acoso, ciberacoso y salud mental.</td>
+      <td>Detección precoz y coordinación interinstitucional (educativa, sanitaria, social y judicial) de la mano del educador social.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

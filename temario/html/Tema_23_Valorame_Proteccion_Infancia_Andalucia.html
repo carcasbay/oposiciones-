@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 23: El Valórame en Andalucía</title>
+<style>
+  @page {
+    size: A4;
+    margin: 1.6cm 1.4cm 1.6cm 1.4cm;
+  }
+
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    color: #1e293b;
+    line-height: 1.42;
+    font-size: 9.8pt;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+  }
+
+  .header-banner {
+    border-bottom: 2.5px solid #0f2942;
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+  }
+
+  .context-meta {
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #475569;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+
+  h1.theme-title {
+    font-size: 14.5pt;
+    color: #0f2942;
+    margin: 4px 0 6px 0;
+    line-height: 1.25;
+    font-weight: 800;
+    text-align: left;
+  }
+
+  .theme-subtitle {
+    font-size: 9.2pt;
+    color: #1e5f74;
+    font-weight: 600;
+  }
+
+  h2 {
+    color: #0f2942;
+    font-size: 11.5pt;
+    border-bottom: 1.5px solid #1e5f74;
+    padding-bottom: 3px;
+    margin-top: 18px;
+    margin-bottom: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  h3 {
+    color: #1e5f74;
+    font-size: 10.2pt;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  h4 {
+    color: #334155;
+    font-size: 9.3pt;
+    margin-top: 9px;
+    margin-bottom: 3px;
+    font-weight: 700;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  p {
+    margin: 0 0 6px 0;
+  }
+
+  b, strong {
+    color: #0f172a;
+    font-weight: 700;
+  }
+
+  ul, ol {
+    margin: 3px 0 7px 18px;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 3px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 9px 0;
+    font-size: 8.5pt;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  th, td {
+    border: 1px solid #cbd5e1;
+    padding: 5px 7px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    background-color: #0f2942;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  tr:nth-child(even) td {
+    background-color: #f8fafc;
+  }
+
+  .box {
+    border-radius: 4px;
+    padding: 7px 10px;
+    margin: 8px 0;
+    font-size: 8.8pt;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .box-trampa {
+    background-color: #fef2f2;
+    border-left: 4px solid #b91c1c;
+    color: #7f1d1d;
+  }
+
+  .box-trampa strong.title {
+    display: block;
+    color: #991b1b;
+    font-size: 9.2pt;
+    margin-bottom: 2px;
+    font-weight: 700;
+  }
+
+  .box-trampa p {
+    color: #450a0a;
+    margin: 2px 0;
+  }
+
+  .box-practico {
+    background-color: #f0fdf4;
+    border-left: 4px solid #15803d;
+    color: #14532d;
+  }
+
+  .box-practico strong.title {
+    display: block;
+    color: #166534;
+    font-size: 9.2pt;
+    margin-bottom: 2px;
+    font-weight: 700;
+  }
+
+  .datos-grid {
+    column-count: 2;
+    column-gap: 14px;
+    margin: 7px 0;
+    font-size: 8.6pt;
+  }
+
+  .dato-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 3px solid #0f2942;
+    padding: 4px 6px;
+    margin-bottom: 5px;
+  }
+
+  .dato-num {
+    font-weight: 800;
+    color: #0f2942;
+  }
+
+  .esquema-block {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 9px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.2pt;
+    line-height: 1.33;
+    white-space: pre-wrap;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    color: #0f172a;
+  }
+
+  .fuentes-list {
+    font-size: 8.3pt;
+    color: #334155;
+  }
+
+  .fuentes-list a {
+    color: #0284c7;
+    text-decoration: none;
+    word-break: break-all;
+  }
+
+  .page-break {
+    page-break-before: always;
+    break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-banner">
+  <div class="context-meta">Oposiciones Administración Local | Ayuntamiento de Utrera (Sevilla) &bull; Grupo A2 &bull; Técnico/a Medio de Educación Social</div>
+  <h1 class="theme-title">TEMA 23: EL VALÓRAME COMO INSTRUMENTO PARA LA VALORACIÓN DE LA GRAVEDAD DE LAS SITUACIONES DE RIESGO, DESPROTECCIÓN Y DESAMPARO DE LA INFANCIA Y ADOLESCENCIA EN ANDALUCÍA</h1>
+  <div class="theme-subtitle">Temario Específico &bull; Protección a la Infancia y Adolescencia en la Administración Local Andaluza</div>
+</div>
+
+<h2>1. MARCO NORMATIVO Y CONCEPTUAL: RIESGO, DESPROTECCIÓN Y DESAMPARO DE LA INFANCIA Y ADOLESCENCIA EN ANDALUCÍA</h2>
+
+<h3>Marco constitucional e internacional de referencia</h3>
+<p>La protección integral de las personas menores de edad se asienta en el mandato del <strong>artículo 39 de la Constitución Española de 1978 (CE)</strong>, que impone a los poderes públicos la obligación de asegurar la protección social, económica y jurídica de la familia y, de manera singular, de los hijos e hijas, iguales ante la ley con independencia de su filiación. Este imperativo se complementa con el artículo 10.2 CE, que ordena interpretar los derechos fundamentales conforme a los tratados internacionales ratificados por España, destacando la <strong>Convención sobre los Derechos del Niño de las Naciones Unidas de 20 de noviembre de 1989</strong> (ratificada por España mediante Instrumento de 30 de noviembre de 1990), cuyos cuatro principios rectores vinculan a toda la actuación administrativa: el <strong>interés superior del menor</strong> (art. 3.1 CDN), la no discriminación (art. 2), el derecho a la vida, la supervivencia y el desarrollo (art. 6), y el derecho a ser escuchado y expresar su opinión en todos los asuntos que le afecten (art. 12).</p>
+
+<h3>Título competencial autonómico y la Ley 4/2021 de Infancia y Adolescencia de Andalucía</h3>
+<p>En el ámbito de la Comunidad Autónoma de Andalucía, el <strong>artículo 61 del Estatuto de Autonomía para Andalucía (Ley Orgánica 2/2007, de 19 de marzo)</strong> atribuye a la Comunidad la competencia exclusiva en materia de servicios sociales, que comprende expresamente «la protección de menores y la promoción y protección de las familias y de la infancia». Asimismo, el artículo 18 del citado Estatuto reconoce a las personas menores de edad el derecho a recibir de los poderes públicos la protección y la atención integral necesarias para el desarrollo de su personalidad y bienestar.</p>
+
+<p>El marco legislativo autonómico vigente está configurado por la <strong>Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía</strong> (publicada en el BOJA nº 149, de 4 de agosto de 2021, y en el BOE nº 228, de 23 de septiembre de 2021; en vigor desde el 24 de octubre de 2021). Resulta fundamental advertir para el examen que la Disposición Derogatoria Única de la Ley 4/2021 <strong>derogó expresamente la Ley 1/1998, de 20 de abril, de los derechos y la atención al menor</strong>. Toda referencia a las categorías de riesgo y desamparo en Andalucía debe articularse hoy bajo el Título III de la Ley 4/2021 («Prevención, detección, valoración y actuación ante situaciones de desprotección y conflicto social»), coordinada horizontalmente con la <strong>Ley 9/2016, de 27 de diciembre, de Servicios Sociales de Andalucía</strong> (arts. 28, 42.2.d, 44.2 y 51) y con la <strong>Ley Orgánica 1/1996, de 15 de enero, de Protección Jurídica del Menor</strong> (modificada por la Ley 26/2015, de 28 de julio, y por la <strong>Ley Orgánica 8/2021, de 4 de junio, de protección integral a la infancia y la adolescencia frente a la violencia - LOPIVI</strong>).</p>
+
+<h3>El Decreto 210/2018 y el Sistema de Información sobre Maltrato Infantil de Andalucía (SIMIA)</h3>
+<p>El procedimiento técnico-administrativo ante situaciones de vulnerabilidad infantil está normado por el <strong>Decreto 210/2018, de 20 de noviembre</strong>, por el que se regula el procedimiento de actuación ante situaciones de riesgo y desamparo de la infancia y adolescencia en Andalucía (publicado en el BOJA nº 228, de 26 de noviembre de 2018). Este decreto regula la detección, notificación, valoración y adopción de medidas protectoras, e integra de forma obligatoria el <strong>SIMIA (Sistema de Información sobre Maltrato Infantil de Andalucía)</strong>. El SIMIA se erige como la plataforma telemática unificada que coordina a los Servicios Sociales Comunitarios y Especializados de Andalucía con los ámbitos educativo, sanitario, policial y judicial, canalizando las hojas de notificación de sospecha de maltrato infantil y sirviendo de soporte digital a los instrumentos técnicos de baremación.</p>
+
+<h3>Delimitación conceptual y jurídica: Desprotección, Riesgo y Desamparo</h3>
+<p>Para la correcta praxis del educador/a social y la resolución de preguntas test, es preceptivo delimitar con rigor técnico las tres categorías operativas de intervención:</p>
+<ol>
+  <li><strong>Desprotección infantil (concepto genérico)</strong>: Toda situación en la que las necesidades básicas de la persona menor de edad (físico-biológicas, cognitivas, emocionales o relacionales) no son satisfechas o existe un daño significativo o riesgo fundado de sufrirlo, como consecuencia de acciones u omisiones (activas o pasivas) protagonizadas por las personas que ostentan su patria potestad, tutela o guarda ordinaria (art. 95 de la Ley 4/2021).</li>
+  <li><strong>Situación de Riesgo (concepto específico local)</strong>: Se define en el <strong>artículo 17 de la Ley Orgánica 1/1996</strong> y en el <strong>artículo 98 de la Ley 4/2021 de Andalucía</strong> como aquella situación en la que, a causa de circunstancias personales, familiares o del entorno social, el desarrollo integral y el bienestar de la persona menor de edad se ven perjudicados o amenazados, <strong>sin alcanzar la gravedad suficiente para justificar su separación del núcleo familiar</strong>. Su rasgo distintivo esencial es la <strong>permanencia del menor en el domicilio</strong> y la competencia atribuida a la <strong>Administración Local</strong> (municipios de 20.000 o más habitantes, como el Ayuntamiento de Utrera, a través de sus Servicios Sociales Comunitarios y Equipos de Tratamiento Familiar - ETF). El objetivo prioritario es eliminar los factores de riesgo y capacitar a los progenitores mediante un plan socioeducativo y familiar.</li>
+  <li><strong>Situación de Desamparo (concepto específico autonómico)</strong>: Se define en el <strong>artículo 172.1 del Código Civil</strong> y en el <strong>artículo 109 de la Ley 4/2021 de Andalucía</strong> como aquella que se produce de hecho a causa del incumplimiento o del imposible o inadecuado ejercicio de los deberes de protección establecidos por las leyes para la guarda de las personas menores de edad, cuando estas queden privadas de la necesaria asistencia material o moral. Su consecuencia jurídica directa e inexcusable es la <strong>asunción automática de la tutela por ministerio de la ley (tutela <em>ex lege</em>) por parte de la Entidad Pública autonómica</strong> (la Consejería competente a través de su correspondiente Delegación Territorial), lo que conlleva la suspensión de la patria potestad o la remoción de la tutela ordinaria, la <strong>separación provisional o definitiva del menor de su entorno familiar</strong> y la adopción de una medida protectora formal: guarda administrativa, acogimiento familiar o acogimiento residencial (arts. 114 a 127 de la Ley 4/2021).</li>
+</ol>
+
+<h3>Distribución competencial entre la Administración Local y la Autonómica</h3>
+<p>El régimen competencial en infancia y adolescencia en Andalucía responde a un esquema descentralizado y de responsabilidad compartida:</p>
+<ul>
+  <li><strong>Competencias Municipales (Ayuntamiento de Utrera)</strong>: Conforme al artículo 25.2.e) de la LRBRL, al artículo 9.17 de la LAULA, al artículo 51 de la Ley 9/2016 y a los artículos 98 a 108 de la Ley 4/2021, corresponde a los municipios de 20.000 o más habitantes:
+    <ul>
+      <li>La prevención, detección precoz e información ante situaciones de vulnerabilidad social infantil.</li>
+      <li>La investigación, valoración técnica y diagnóstico de las situaciones de desprotección comunicadas en su territorio.</li>
+      <li>La <strong>declaración administrativa de la situación de riesgo</strong> y la aprobación del correspondiente <strong>Proyecto de Intervención Social (PIS)</strong> familiar y socioeducativo.</li>
+      <li>El tratamiento especializado en el medio a través de los <strong>Equipos de Tratamiento Familiar (ETF)</strong>.</li>
+      <li>La comunicación inmediata a la Entidad Pública autonómica y al Ministerio Fiscal cuando se constate una situación de desamparo grave o riesgo vital inminente.</li>
+    </ul>
+  </li>
+  <li><strong>Competencias Autonómicas (Junta de Andalucía)</strong>: Conforme al artículo 61 del Estatuto de Autonomía, al artículo 50 de la Ley 9/2016 y a los artículos 109 a 115 de la Ley 4/2021, corresponde a la Administración de la Junta de Andalucía (Consejería de Inclusión Social, Juventud, Familias e Igualdad):
+    <ul>
+      <li>La superior planificación, coordinación y fijación de estándares técnicos comunes en protección de menores.</li>
+      <li>La <strong>declaración formal de la situación de desamparo</strong> y la formalización de la tutela <em>ex lege</em>.</li>
+      <li>La adopción de medidas cautelares urgentes de asunción de guarda (art. 112 de la Ley 4/2021).</li>
+      <li>La gestión de los recursos de acogimiento familiar (de urgencia, temporal, permanente) y de los centros de acogimiento residencial.</li>
+      <li>Las propuestas judiciales de adopción y medidas de privación de la patria potestad.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>2. EL INSTRUMENTO VALÓRAME: NATURALEZA, OBJETIVOS, FUNDAMENTACIÓN Y ANTECEDENTES</h2>
+
+<h3>Aprobación oficial y vigencia normativa</h3>
+<p>El instrumento técnico denominado <strong>VALÓRAME</strong> («Instrumento para la valoración de la gravedad de las situaciones de riesgo, desprotección y desamparo de la infancia y adolescencia en Andalucía») fue formalmente aprobado y publicado mediante la <strong>Orden de 30 de julio de 2019</strong> de la Consejería de Igualdad, Políticas Sociales y Conciliación (publicada en el <strong>BOJA nº 152, de 8 de agosto de 2019</strong>).</p>
+
+<p>Con posterioridad inmediata, se advirtió la omisión de apartados en el anexo de la orden, publicándose la <strong>Corrección de errores de la Orden de 30 de julio de 2019 en el BOJA nº 160, de 21 de agosto de 2019</strong>, mediante la cual se sustituyó íntegramente la <strong>Hoja Resumen</strong> de valoración por el modelo normalizado definitivo, de obligatoria cumplimentación en el software SIMIA por parte de todos los profesionales de la red pública andaluza.</p>
+
+<h3>Antecedentes técnicos y comparados</h3>
+<p>VALÓRAME no es un instrumento aislado, sino el resultado de la evolución metodológica de la protección de menores en España durante las últimas dos décadas. Surge a iniciativa de la Dirección General de Infancia y Familias de la Junta de Andalucía en estrecha colaboración con el <strong>Observatorio de la Infancia en Andalucía (OIA)</strong> y equipos de investigación de la Universidad de Sevilla. Toma como referentes directos las mejores prácticas estatales e internacionales basadas en la evidencia, muy singularmente el instrumento <strong>BALORA</strong> (aprobado por Decreto 230/2011, de 8 de noviembre, en la Comunidad Autónoma del País Vasco, diseñado por Arruabarrena y De Paúl) y el instrumento de valoración de la Región de Murcia. VALÓRAME adapta y contextualiza estos baremos a la realidad social, organizativa y jurídica de la Comunidad Autónoma de Andalucía, sustituyendo las antiguas guías no normalizadas que propiciaban una acusada disparidad de criterios entre diferentes municipios y provincias.</p>
+
+<h3>Naturaleza técnico-jurídica: El Juicio Técnico Estructurado</h3>
+<p>Desde una perspectiva epistemológica y profesional, VALÓRAME se fundamenta en la metodología del <strong>Juicio Técnico Estructurado</strong> (<em>Structured Professional Judgement</em>). Esto implica que:</p>
+<ol>
+  <li><strong>No es un algoritmo mecánico ni una fórmula aritmética</strong>: La gravedad de un caso no resulta de sumar puntos de manera ciega. El instrumento guía al profesional a través de un examen exhaustivo de indicadores observables, pero requiere la ponderación cualitativa interdisciplinar de los profesionales (trabajador/a social, educador/a social y psicólogo/a).</li>
+  <li><strong>Es vinculante pero flexible</strong>: Su aplicación es preceptiva para los Servicios Sociales Comunitarios, los Equipos de Tratamiento Familiar y los Servicios de Protección de Menores de las Delegaciones Territoriales conforme al Decreto 210/2018, garantizando que ninguna decisión restrictiva de derechos (como la separación familiar) se adopte sin un informe técnico fundamentado en indicadores contrastables.</li>
+  <li><strong>Carácter dinámico y procesal</strong>: Permite reevaluaciones periódicas del caso a lo largo del itinerario socioeducativo, sirviendo como termómetro del progreso o retroceso familiar y midiendo el impacto del Proyecto de Intervención Social.</li>
+</ol>
+
+<h3>Objetivos esenciales de VALÓRAME</h3>
+<p>El artículo 1 de la Orden de 30 de julio de 2019 y el cuerpo del instrumento fijan los siguientes objetivos operativos:</p>
+<ul>
+  <li><strong>Homogeneizar y unificar los criterios técnicos</strong> de valoración en todo el territorio andaluz, asegurando la equidad y el principio de no discriminación en el acceso a la protección social para cualquier menor de la comunidad.</li>
+  <li><strong>Diferenciar con precisión técnica y jurídica las situaciones de riesgo leve/moderado frente a las de desprotección grave o desamparo</strong>, determinando si procede la intervención comunitaria en el medio o la incoación del procedimiento de tutela autonómica.</li>
+  <li><strong>Agilizar los tiempos de respuesta y toma de decisiones</strong>, reduciendo los periodos de incertidumbre y previniendo la cronificación del daño en el menor.</li>
+  <li><strong>Proporcionar un lenguaje operativo común</strong> entre la Administración Local y la Junta de Andalucía, así como con la Fiscalía de Menores y los Juzgados de Primera Instancia o Familia.</li>
+  <li><strong>Fundamentar objetivamente las resoluciones administrativas</strong>, garantizando la motivación técnica exigida por el artículo 35 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ante posibles recursos o impugnaciones judiciales de las familias.</li>
+</ul>
+
+<h3>Fundamentos teórico-metodológicos</h3>
+<p>VALÓRAME se sustenta sobre un sólido marco conceptual multidisciplinar: el <strong>Modelo Ecológico-Sistémico (Urie Bronfenbrenner)</strong>, que analiza el desarrollo del menor en la interacción con sus contextos familiar, escolar y comunitario; la <strong>Teoría del Apego (John Bowlby)</strong>, focalizada en la calidad del vínculo afectivo primario; y la <strong>Perspectiva de la Parentalidad Positiva (Recomendación Rec(2006)19 del Consejo de Europa)</strong>, que promueve el desarrollo de las capacidades de los progenitores delimitando los apoyos públicos necesarios.</p>
+
+<h2>3. ESTRUCTURA TÉCNICA, TIPOLOGÍAS DE DESPROTECCIÓN, INDICADORES Y NIVELES DE GRAVEDAD</h2>
+
+<h3>Taxonomía de las Necesidades Básicas en la Infancia y Adolescencia</h3>
+<p>El instrumento VALÓRAME parte de un postulado elemental: <strong>la desprotección infantil es la consecuencia del incumplimiento severo o la falta de cobertura sistemática de las necesidades universales de la persona menor de edad</strong>. El manual clasifica dichas necesidades en cuatro dimensiones fundamentales:</p>
+<ol>
+  <li><strong>Necesidades físico-biológicas</strong>: Alimentación adecuada y regular; atención a la salud y cuidados médicos; higiene personal y de la vivienda; vestido adaptado a la climatología y talla; alojamiento seguro y condiciones mínimas de habitabilidad.</li>
+  <li><strong>Necesidades de seguridad y protección</strong>: Supervisión y cuidado acorde a la etapa evolutiva; prevención de accidentes en el hogar o la vía pública; y defensa frente a agresiones físicas, sexuales o intimidatorias provenientes de terceros.</li>
+  <li><strong>Necesidades emocionales y afectivas</strong>: Seguridad afectiva y apego estable; afecto incondicional y aceptación; reconocimiento y refuerzo de la autoestima; empatía parental y respuesta adecuada ante los estados de angustia del menor.</li>
+  <li><strong>Necesidades cognitivas y sociales</strong>: Estimulación sensorial e intelectual temprana; escolarización obligatoria regular y apoyo al proceso educativo; interacción social normalizada con el grupo de iguales; asimilación de normas, límites y valores prosociales de convivencia; y fomento progresivo de la autonomía personal.</li>
+</ol>
+
+<h3>Las Tipologías de Desprotección y sus Indicadores Operacionales</h3>
+<p>VALÓRAME estructura la evaluación de los comportamientos parentales y de la situación del menor en <strong>siete tipologías de desprotección</strong>, cada una dotada de indicadores objetivos y graduados:</p>
+
+<h4>1. Negligencia</h4>
+<p>Es la tipología de mayor prevalencia en los Servicios Sociales Comunitarios. Consiste en la falta de respuesta pasiva o el descuido reiterado de los progenitores respecto a las necesidades del menor, disponiendo de los recursos o de los apoyos para satisfacerlas. Se subdivide en cuatro ámbitos específicos:</p>
+<ul>
+  <li><strong>1.1. Necesidades Físicas</strong>: Desatención de la salud (no administración de tratamientos prescritos, inasistencia a programas de vacunación o revisiones pediátricas obligatorias); desnutrición o alimentación desequilibrada grave; falta de higiene corporal extrema; ropa inadecuada o andrajosa; condiciones de infravivienda insalubre o peligrosa.</li>
+  <li><strong>1.2. Necesidades de Seguridad</strong>: Dejar al menor solo en el hogar sin la madurez necesaria; supervisión insuficiente que expone al menor a peligros graves (tóxicos accesibles, ventanas sin protección); permitir la convivencia con adultos que presentan conductas peligrosas o antecedentes de violencia.</li>
+  <li><strong>1.3. Necesidades Escolares / Formativas</strong>: <strong>Absentismo escolar injustificado y reiterado</strong>; falta de matriculación en la etapa de educación obligatoria (6 a 16 años); desinterés absoluto y no asistencia a las citaciones de la tutoría escolar; negación de material escolar indispensable.</li>
+  <li><strong>1.4. Necesidades Psíquicas / Emocionales</strong>: Frialdad y ausencia total de muestras de afecto; aislamiento dentro de la propia dinámica familiar; falta de estimulación comunicativa; ausencia de pautas normativas (crianza caótica) o permisividad extrema ante conductas de riesgo; desatención de trastornos del desarrollo o de salud mental diagnosticados en el menor.</li>
+</ul>
+
+<h4>2. Maltrato Físico</h4>
+<p>Acción no accidental de los progenitores o cuidadores que ocasiona daño físico, enfermedad o riesgo grave de padecerlos en el menor: empleo del castigo físico habitual como pauta disciplinaria; agresiones directas (golpes, bofetadas, quemaduras, cortes); privación deliberada de comida o agua como castigo; confinamiento físico o encierros forzados; y administración forzada de alcohol, drogas o fármacos no pautados.</p>
+
+<h4>3. Maltrato Emocional / Psicológico</h4>
+<p>Pauta persistente y reiterada de conductas parentales destructivas que lesionan gravemente el desarrollo afectivo, cognitivo y la autoestima del menor:</p>
+<ul>
+  <li><strong>Rechazo afectivo activo</strong>: Desprecio explícito, expresiones continuas de no desear al menor o atribuirle la causa de los males familiares.</li>
+  <li><strong>Aterrorizar</strong>: Amenazas verbales graves de abandono, internamiento, agresión física o muerte hacia el menor o sus seres queridos.</li>
+  <li><strong>Aislamiento forzado</strong>: Prohibición injustificada de relacionarse con iguales, salir del domicilio o participar en actividades escolares y comunitarias.</li>
+  <li><strong>Instrumentalización en el conflicto de pareja</strong>: Utilización del menor como arma arrojadiza en procesos de ruptura (manipulación deliberada o violencia vicaria).</li>
+  <li><strong>Exposición continuada a violencia de género</strong>: Presenciar agresiones físicas, amenazas o vejaciones entre los progenitores en el hogar, configurada como forma directa de maltrato infantil.</li>
+</ul>
+
+<h4>4. Abandono</h4>
+<p>Ruptura o renuncia manifiesta de las funciones de guarda y cuidado: expulsión del menor del domicilio familiar; negativa injustificada a recogerlo tras una estancia médica, tutelar o de terceros; o ausencia prolongada del hogar sin dejar al menor al cuidado de adultos responsables.</p>
+
+<h4>5. Violencia Sexual / Abuso Sexual y Explotación</h4>
+<p>Involucración del menor en actividades sexuales sin capacidad evolutiva para consentir: abuso intrafamiliar; abuso extrafamiliar consentido o no protegido por los progenitores; o utilización en pornografía o prostitución infantil.</p>
+
+<h4>6. Incapacidad Parental para el Control de la Conducta del Menor</h4>
+<p>Incompetencia manifiesta de los progenitores para reconducir conductas disruptivas graves del menor: violencia filioparental (agresiones severas de hijos a padres); conductas delictivas continuadas; fugas reiteradas del domicilio; o consumo incontrolado de sustancias tóxicas.</p>
+
+<h4>7. Otras Situaciones Específicas de Desprotección</h4>
+<p>Incluye el <strong>maltrato prenatal</strong> (consumo grave de tóxicos o negativa a controles obstétricos en la gestación); el <strong>Síndrome de Münchhausen por poderes</strong> (trastorno facticio impuesto a otro con simulación o inducción de patologías); la mendicidad infantil forzada; y la explotación laboral infantil o corrupción delictiva.</p>
+
+<h3>Gradación de la Gravedad en VALÓRAME</h3>
+<p>Cada tipología analizada se califica técnicamente en una escala de <strong>cuatro niveles de gravedad</strong>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width: 20%;">Nivel de Gravedad</th>
+      <th style="width: 45%;">Definición Técnica y Operacional</th>
+      <th style="width: 35%;">Impacto en el Desarrollo Infantil</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Leve</strong></td>
+      <td>Descuido puntual o de baja intensidad; carencias menores que no comprometen la integridad física ni el desarrollo evolutivo inmediato.</td>
+      <td>Alteraciones mínimas corregibles mediante orientación socioeducativa básica.</td>
+    </tr>
+    <tr>
+      <td><strong>Moderado</strong></td>
+      <td>Carencias significativas o pautas inadecuadas prolongadas; desatención de necesidades de salud o higiene no vitales; pautas educativas disfuncionales.</td>
+      <td>Compromiso apreciable del bienestar y retrasos leves en áreas de desarrollo psicosocial o escolar.</td>
+    </tr>
+    <tr>
+      <td><strong>Elevado</strong></td>
+      <td>Omisiones o agresiones graves crónicas; maltrato físico que deja lesiones; negligencia médica en patologías serias; absentismo escolar crónico.</td>
+      <td>Deterioro evidente del desarrollo físico, psicológico o emocional; cronificación del daño.</td>
+    </tr>
+    <tr>
+      <td><strong>Muy Elevado</strong></td>
+      <td>Riesgo vital inmediato, daño físico o psicológico irreparable; agresiones físicas severas; abuso sexual intrafamiliar; abandono absoluto.</td>
+      <td>Peligro inminente para la vida o integridad del menor; secuelas graves e irreversibles.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>El Cuestionario de Capacidades y Dificultades (SDQ) de Robert Goodman</h3>
+<p>Como instrumento psicométrico complementario incorporado en VALÓRAME, se incluye el <strong>Cuestionario de Capacidades y Dificultades (SDQ)</strong> de Robert Goodman:</p>
+<ul>
+  <li><strong>Población destinataria</strong>: Personas menores de edad entre <strong>4 y 17 años</strong>.</li>
+  <li><strong>Estructura</strong>: <strong>25 ítems</strong> divididos en <strong>5 subescalas</strong> de 5 ítems:
+    <ol>
+      <li><em>Síntomas emocionales</em> (quejas somáticas, miedos, tristeza).</li>
+      <li><em>Problemas de conducta</em> (rabietas, peleas, desobediencia, robos).</li>
+      <li><em>Hiperactividad / Déficit de atención</em> (inquietud, distracción, impulsividad).</li>
+      <li><em>Problemas de relación con compañeros</em> (aislamiento, acoso escolar).</li>
+      <li><em>Conducta prosocial</em> (empatía, compartir, ayudar a los demás).</li>
+    </ol>
+  </li>
+  <li><strong>Formatos triangulados</strong>: Versiones para progenitores, tutores escolares y <strong>autoinforme</strong> por el propio menor a partir de los <strong>11 años</strong>.</li>
+  <li><strong>Suplemento de impacto</strong>: Evalúa la interferencia del malestar del menor en su vida cotidiana (familia, amigos, aula y ocio).</li>
+</ul>
+
+<h3>Criterios de Ponderación y Factores Moduladores</h3>
+<p>La gravedad tipológica se modula considerando tres factores:</p>
+<ol>
+  <li><strong>Vulnerabilidad intrínseca del menor</strong>:
+    <ul>
+      <li><strong>Edad</strong>: En menores de <strong>0 a 3 años</strong> cualquier negligencia adquiere gravedad superior por su dependencia absoluta. El segundo tramo de alta vulnerabilidad abarca de los 3 a los 6 años.</li>
+      <li><strong>Discapacidad o enfermedad crónica</strong>: Incrementa de forma exponencial la lesividad de las omisiones de cuidado.</li>
+    </ul>
+  </li>
+  <li><strong>Parámetros del maltrato</strong>: Cronicidad, frecuencia continuada y concurrencia simultánea de múltiples tipologías.</li>
+  <li><strong>Factores parentales de cambio</strong>: <strong>Conciencia del problema</strong> (reconocimiento sincero de las dificultades); atribución de responsabilidad; <strong>motivación para el cambio</strong>; y trayectoria previa de colaboración con los servicios sociales.</li>
+</ol>
+
+<h2>4. EL PROCESO DE EVALUACIÓN, LA HOJA RESUMEN (SIMIA) Y LA TOMA DE DECISIONES TÉCNICAS EN EL ÁMBITO MUNICIPAL</h2>
+
+<h3>Fases del Procedimiento de Valoración</h3>
+<ol>
+  <li><strong>Fase 1: Detección y Notificación</strong>: Entrada vía hoja de notificación telemática del **SIMIA** desde escuelas, centros de salud, policía local o juzgados.</li>
+  <li><strong>Fase 2: Investigación Social e Interdisciplinar</strong>: Entrevistas a progenitores y al menor en entorno seguro (art. 12 CDN y art. 23 Ley 4/2021); **visita al domicilio familiar**; coordinación con escuela y pediatría; y consulta en CoheSSiona y SIMIA.</li>
+  <li><strong>Fase 3: Baremación analítica en VALÓRAME</strong>: Identificación de tipologías e indicadores objetivos; calificación de la gravedad (leve, moderada, elevada, muy elevada); y pase del cuestionario SDQ si procede.</li>
+  <li><strong>Fase 4: Análisis de ponderación y pronóstico</strong>: Valoración de la vulnerabilidad del menor y del potencial de cambio parental.</li>
+  <li><strong>Fase 5: Dictamen de Valoración Global y Hoja Resumen</strong>: Determinación de la gravedad global del expediente y volcado telemático en SIMIA.</li>
+  <li><strong>Fase 6: Propuesta de Intervención y Adopción de Medidas</strong>: Formalización del plan de actuación según el nivel dictaminado.</li>
+</ol>
+
+<h3>La Hoja Resumen Oficial de VALÓRAME</h3>
+<p>La <strong>Hoja Resumen</strong> (modelo definitivo normalizado en la <strong>Corrección de errores de la Orden de 30 de julio de 2019, BOJA nº 160, de 21 de agosto de 2019</strong>) es el documento oficial obligatorio que se cumplimenta en SIMIA y contiene cinco bloques preceptivos:</p>
+<ol>
+  <li><strong>Datos de Identificación del Menor y de la Unidad Familiar</strong> (nombre, fecha de nacimiento, código SIMIA, filiación y convivencia).</li>
+  <li><strong>Datos del Servicio y Equipo Técnico Responsable</strong> (identificación de Servicios Sociales Comunitarios o ETF de Utrera y firmas colegiadas).</li>
+  <li><strong>Cuadro de Tipologías e Indicadores Detectados</strong> (niveles asignados en cada tipología presente).</li>
+  <li><strong>Valoración Global de la Desprotección</strong> (calificación sintética del caso).</li>
+  <li><strong>Propuesta de Actuación Técnica</strong> (intervención en el medio vs propuesta de desamparo).</li>
+</ol>
+
+<h3>Niveles de Valoración Global y Toma de Decisiones Técnicas</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width: 25%;">Valoración Global</th>
+      <th style="width: 35%;">Órgano Competente</th>
+      <th style="width: 40%;">Actuación Técnica Socioeducativa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sin Desprotección</strong><br>(o riesgo no apreciable)</td>
+      <td>Servicios Sociales Comunitarios (Utrera)</td>
+      <td>Cierre y archivo del expediente o derivación a recursos preventivos universales y comunitarios.</td>
+    </tr>
+    <tr>
+      <td><strong>Situación de Riesgo</strong><br>(Leve o Moderado)</td>
+      <td>Servicios Sociales Comunitarios (Utrera)</td>
+      <td><strong>Declaración administrativa de riesgo</strong> (art. 98 Ley 4/2021); diseño y ejecución del <strong>PIS socioeducativo familiar</strong> con permanencia en el hogar.</td>
+    </tr>
+    <tr>
+      <td><strong>Desprotección Grave</strong>:<br>Intervención en el Medio</td>
+      <td>Servicios Sociales Comunitarios / ETF (Utrera)</td>
+      <td>Asunción por el <strong>Equipo de Tratamiento Familiar (ETF)</strong>; Proyecto de Tratamiento Familiar intensivo con permanencia del menor.</td>
+    </tr>
+    <tr>
+      <td><strong>Desprotección Grave</strong>:<br>Propuesta de Desamparo</td>
+      <td>Delegación Territorial de la Junta de Andalucía (Sevilla)</td>
+      <td>Envío urgente de expediente y Hoja Resumen vía SIMIA a la Junta y Fiscalía; resolución de <strong>Desamparo</strong>, asunción de <strong>tutela <em>ex lege</em></strong> y acogimiento.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Desglose operativo de las decisiones:</h4>
+<ul>
+  <li><strong>Situación de Riesgo (Leve o Moderado)</strong>: Corresponde al <strong>Ayuntamiento de Utrera</strong>. Se tramita el procedimiento de declaración de riesgo (arts. 100-104 Ley 4/2021). El <strong>Técnico/a Medio de Educación Social</strong> diseña y ejecuta el plan de trabajo socioeducativo familiar dentro del PIS (art. 46 Ley 9/2016): educación parental, mediación, control del absentismo y vinculación a la red comunitaria, suscribiendo el **contrato social** (art. 12.1.l Ley 9/2016).</li>
+  <li><strong>Desprotección Grave con Intervención en el Medio</strong>: Procede cuando concurre gravedad elevada pero los progenitores tienen capacidad de cambio y no hay riesgo físico inminente. El caso es asumido por el <strong>Equipo de Tratamiento Familiar (ETF)</strong> del Ayuntamiento de Utrera para un tratamiento especializado intensivo.</li>
+  <li><strong>Desprotección Grave con Propuesta de Desamparo</strong>: Procede ante peligro vital, abuso sexual severo, desamparo de hecho o fracaso del ETF. El Ayuntamiento remite las actuaciones a la <strong>Delegación Territorial de la Junta de Andalucía en Sevilla</strong> y al Ministerio Fiscal. La Junta dicta la <strong>Declaración de Desamparo</strong>, asume la tutela <em>ex lege</em> (art. 172 CC y art. 109 Ley 4/2021) y acuerda el acogimiento residencial o familiar.</li>
+  <li><strong>Medidas Cautelares Urgentes (artículo 112 de la Ley 4/2021)</strong>: Ante situaciones de flagrante desamparo con riesgo vital inminente (menor abandonado en vía pública, cuidadores inconscientes), los Servicios Sociales Comunitarios y Policía Local prestan auxilio inmediato, y la Entidad Pública autonómica asume la **guarda provisional urgente**, notificándolo al Ministerio Fiscal.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2>A) DATOS DE EXAMEN</h2>
+<div class="datos-grid">
+  <div class="dato-item"><span class="dato-num">1.</span> <strong>Denominación oficial</strong>: Instrumento para la valoración de la gravedad de las situaciones de riesgo, desprotección y desamparo de la infancia y adolescencia en Andalucía (<strong>VALÓRAME</strong>).</div>
+  <div class="dato-item"><span class="dato-num">2.</span> <strong>Orden de aprobación</strong>: <strong>Orden de 30 de julio de 2019</strong> de la Consejería de Igualdad, Políticas Sociales y Conciliación.</div>
+  <div class="dato-item"><span class="dato-num">3.</span> <strong>Publicación oficial</strong>: <strong>BOJA nº 152, de 8 de agosto de 2019</strong>.</div>
+  <div class="dato-item"><span class="dato-num">4.</span> <strong>Hoja Resumen definitiva</strong>: <strong>Corrección de errores</strong> publicada en el <strong>BOJA nº 160, de 21 de agosto de 2019</strong>.</div>
+  <div class="dato-item"><span class="dato-num">5.</span> <strong>Decreto regulador de riesgo y SIMIA</strong>: <strong>Decreto 210/2018, de 20 de noviembre</strong> (BOJA nº 228 de 26/11/2018).</div>
+  <div class="dato-item"><span class="dato-num">6.</span> <strong>Ley andaluza de infancia vigente</strong>: <strong>Ley 4/2021, de 27 de julio</strong>, de Infancia y Adolescencia de Andalucía.</div>
+  <div class="dato-item"><span class="dato-num">7.</span> <strong>Ley autonómica derogada</strong>: <strong>Ley 1/1998, de 20 de abril</strong>, de los derechos y la atención al menor (derogada expresamente por la Ley 4/2021).</div>
+  <div class="dato-item"><span class="dato-num">8.</span> <strong>Plataforma telemática obligatoria</strong>: <strong>SIMIA</strong> (Sistema de Información sobre Maltrato Infantil de Andalucía).</div>
+  <div class="dato-item"><span class="dato-num">9.</span> <strong>Tipologías evaluadas</strong>: <strong>7 tipologías</strong> de desprotección infantil.</div>
+  <div class="dato-item"><span class="dato-num">10.</span> <strong>Subcategorías de Negligencia</strong>: <strong>4 áreas</strong> (físicas, seguridad, escolares y psíquicas/emocionales).</div>
+  <div class="dato-item"><span class="dato-num">11.</span> <strong>Niveles de gravedad tipológica</strong>: <strong>4 niveles</strong> (Leve, Moderado, Elevado y Muy Elevado).</div>
+  <div class="dato-item"><span class="dato-num">12.</span> <strong>Cuestionario psicométrico</strong>: <strong>SDQ (Strengths and Difficulties Questionnaire)</strong> de Robert Goodman.</div>
+  <div class="dato-item"><span class="dato-num">13.</span> <strong>Rango de edad del SDQ</strong>: Menores entre <strong>4 y 17 años</strong>.</div>
+  <div class="dato-item"><span class="dato-num">14.</span> <strong>Estructura del SDQ</strong>: <strong>25 ítems</strong> en <strong>5 subescalas</strong> de 5 ítems cada una.</div>
+  <div class="dato-item"><span class="dato-num">15.</span> <strong>Edad para autoinforme SDQ</strong>: A partir de los <strong>11 años</strong> cumplidos.</div>
+  <div class="dato-item"><span class="dato-num">16.</span> <strong>Edad de máxima vulnerabilidad</strong>: Menores de <strong>0 a 3 años</strong> (y segundo tramo de 3 a 6 años).</div>
+  <div class="dato-item"><span class="dato-num">17.</span> <strong>Competencia en riesgo infantil</strong>: <strong>Administración Local (Ayuntamiento de Utrera)</strong>, permaneciendo el menor en su núcleo.</div>
+  <div class="dato-item"><span class="dato-num">18.</span> <strong>Competencia en desamparo</strong>: <strong>Comunidad Autónoma (Junta de Andalucía)</strong>, con separación del núcleo familiar.</div>
+  <div class="dato-item"><span class="dato-num">19.</span> <strong>Consecuencia del desamparo</strong>: Asunción de la <strong>tutela <em>ex lege</em></strong> por la Junta (art. 172.1 CC y art. 109 Ley 4/2021).</div>
+  <div class="dato-item"><span class="dato-num">20.</span> <strong>Equipo municipal de tratamiento</strong>: <strong>Equipo de Tratamiento Familiar (ETF)</strong>, en municipios de más de 20.000 habitantes.</div>
+  <div class="dato-item"><span class="dato-num">21.</span> <strong>Modelo técnico de evaluación</strong>: Metodología del <strong>Juicio Técnico Estructurado</strong> (criterios cualitativos no aritméticos).</div>
+  <div class="dato-item"><span class="dato-num">22.</span> <strong>Medidas cautelares urgentes</strong>: Reguladas en el <strong>artículo 112 de la Ley 4/2021</strong> (guarda provisional urgente comunicada al Fiscal).</div>
+</div>
+
+<h2>B) ESQUEMA PARA REPASO</h2>
+<div class="esquema-block">
+INSTRUMENTO VALÓRAME [ORDEN 30/07/2019 - BOJA 08/08/2019 | CORRECCIÓN ERRORES HOJA RESUMEN: BOJA 21/08/2019]
+│
+├── 1. MARCO NORMATIVO Y COMPETENCIAL
+│   ├── Marco Estatutario y Autonómico: Art. 61 Estatuto Autonomía | Ley 9/2016 de Servicios Sociales (arts. 28, 44, 51).
+│   ├── Ley 4/2021 de Infancia y Adolescencia de Andalucía (DEROGÓ a la Ley 1/1998): Título III (Desprotección).
+│   ├── Decreto 210/2018 (Procedimiento ante riesgo y desamparo en Andalucía e integración del SIMIA).
+│   ├── Ley Orgánica 1/1996 de Protección Jurídica del Menor (modificada por Ley 26/2015 y LOPIVI 8/2021).
+│   └── Diferencia Jurídica:
+│       ├── RIESGO (art. 17 LO 1/96 y art. 98 Ley 4/21) -> Permanece en hogar | Competencia: AYUNTAMIENTO (Utrera).
+│       └── DESAMPARO (art. 172 CC y art. 109 Ley 4/21) -> Tutela ex lege | Separación | Competencia: JUNTA ANDALUCÍA.
+│
+├── 2. NATURALEZA Y OBJETIVOS DE VALÓRAME
+│   ├── Origen: Consejería competente + Observatorio de la Infancia en Andalucía (OIA) | Antecedente: BALORA (Euskadi).
+│   ├── Naturaleza: Metodología del Juicio Técnico Estructurado (no es baremo aritmético ni suma ciega).
+│   └── Objetivos: Unificar criterios en Andalucía, agilizar decisiones, motivar resoluciones y conectar con SIMIA.
+│
+├── 3. ESTRUCTURA TÉCNICA Y BAREMACIÓN
+│   ├── Taxonomía Necesidades: Físico-biológicas, de seguridad, emocionales y cognitivas/sociales.
+│   ├── 7 Tipologías de Desprotección:
+│   │   ├── 1. Negligencia: Físicas, seguridad, escolares (absentismo) y psíquicas/emocionales.
+│   │   ├── 2. Maltrato Físico: Castigo corporal, lesiones, privación de comida/agua, encierros.
+│   │   ├── 3. Maltrato Emocional: Rechazo, aterrorizar, aislamiento, instrumentalización conyugal, violencia género.
+│   │   ├── 4. Abandono: Expulsión del domicilio, negativa de acogida, desatención prolongada.
+│   │   ├── 5. Violencia / Abuso Sexual: Intrafamiliar, extrafamiliar consentido, pornografía/prostitución.
+│   │   ├── 6. Incapacidad Parental Control Conducta: Violencia filioparental, conductas delictivas, adicciones.
+│   │   └── 7. Específicas: Maltrato prenatal, Münchhausen por poderes, mendicidad, explotación laboral.
+│   ├── Niveles de Gravedad por Tipología: Leve, Moderado, Elevado y Muy Elevado.
+│   ├── Cuestionario SDQ (Goodman): 4 a 17 años | 25 ítems | 5 subescalas | Autoinforme desde 11 años.
+│   └── Factores Moduladores: Vulnerabilidad (edad <3 años, discapacidad), cronicidad, conciencia y motivación parental.
+│
+├── 4. PROCESO DE EVALUACIÓN Y TOMA DE DECISIONES
+│   ├── Fases: 1. Detección (SIMIA) -> 2. Investigación social -> 3. Aplicación Valórame -> 4. Ponderación -> 5. Hoja Resumen.
+│   ├── Hoja Resumen Oficial (BOJA 21/08/2019): Documento normalizado telemático obligatorio dentro de SIMIA.
+│   └── Valoración Global y Destino del Caso:
+│       ├── Sin Desprotección -> Archivo o derivación a programas preventivos universales.
+│       ├── Riesgo Leve / Moderado -> Servicios Sociales Comunitarios (Utrera) -> Declaración Riesgo + PIS familiar.
+│       └── Desprotección Grave -> Bifurcación técnica:
+│           ├── Pronóstico favorable / colaboración -> Intervención en el Medio por ETF (Tratamiento Familiar).
+│           └── Riesgo vital / no colaboración / desamparo -> Propuesta DESAMPARO a Delegación Territorial Junta.
+│
+└── 5. ROL DEL EDUCADOR/A SOCIAL MUNICIPAL
+    └── Diseño del PIS, intervención socioeducativa domiciliaria, habilidades parentales, absentismo y contrato social.
+</div>
+
+<h2>C) TRAMPAS DEL TEST</h2>
+
+<div class="box box-trampa">
+  <strong class="title">1. Competencia en Declaración de Riesgo vs Declaración de Desamparo</strong>
+  <p><strong>Trampa común:</strong> Atribuir al Ayuntamiento o al Alcalde la potestad de declarar el desamparo y asumir la tutela de un menor.</p>
+  <p><strong>Clave jurídica:</strong> El <strong>Ayuntamiento (Utrera)</strong> solo tiene competencia para declarar formalmente la <strong>situación de riesgo</strong> (arts. 98 y 100 Ley 4/2021). La <strong>declaración de desamparo</strong> y la asunción de la tutela <em>ex lege</em> es potestad reservada en exclusiva a la <strong>Junta de Andalucía</strong> (art. 109 Ley 4/2021 y art. 172 Código Civil).</p>
+</div>
+
+<div class="box box-trampa">
+  <strong class="title">2. Ley de Menores de Andalucía: Ley 1/1998 (Derogada) vs Ley 4/2021 (Vigente)</strong>
+  <p><strong>Trampa común:</strong> Formular preguntas basadas en la Ley 1/1998, de 20 de abril.</p>
+  <p><strong>Clave jurídica:</strong> La Ley 1/1998 fue <strong>derogada expresamente</strong> por la Disposición Derogatoria Única de la <strong>Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía</strong>. Todas las respuestas deben fundarse en la Ley 4/2021.</p>
+</div>
+
+<div class="box box-trampa">
+  <strong class="title">3. Modelo de evaluación: Baremo aritmético vs Juicio Técnico Estructurado</strong>
+  <p><strong>Trampa común:</strong> Afirmar que el nivel de gravedad en VALÓRAME se obtiene mediante la suma aritmética de puntos de indicadores.</p>
+  <p><strong>Clave jurídica:</strong> VALÓRAME opera bajo la metodología del <strong>Juicio Técnico Estructurado</strong>. La gravedad exige la ponderación cualitativa interdisciplinar de la concurrencia de tipologías, edad del menor, cronicidad y motivación parental de cambio.</p>
+</div>
+
+<div class="box box-trampa">
+  <strong class="title">4. Vigencia de la Hoja Resumen oficial</strong>
+  <p><strong>Trampa común:</strong> Utilizar el anexo original de la Orden de 30 de julio de 2019 (BOJA nº 152).</p>
+  <p><strong>Clave jurídica:</strong> La orden original sufrió una <strong>Corrección de errores publicada en el BOJA nº 160, de 21 de agosto de 2019</strong>, que sustituyó completamente la Hoja Resumen por el modelo oficial definitivo integrado en SIMIA.</p>
+</div>
+
+<div class="box box-trampa">
+  <strong class="title">5. Destinatarios y rango de edad del Cuestionario SDQ</strong>
+  <p><strong>Trampa común:</strong> Indicar que el SDQ es aplicable a cualquier edad de 0 a 18 años o que menores de 6 años realizan autoinforme.</p>
+  <p><strong>Clave jurídica:</strong> El SDQ solo es válido entre los <strong>4 y 17 años de edad</strong>. El formato de <strong>autoinforme</strong> por el propio menor solo se administra a partir de los <strong>11 años</strong> cumplidos.</p>
+</div>
+
+<div class="box box-trampa">
+  <strong class="title">6. Desprotección Grave: ¿Siempre separación familiar inmediata?</strong>
+  <p><strong>Trampa común:</strong> Afirmar que ante una valoración de desprotección grave procede automáticamente la retirada del menor.</p>
+  <p><strong>Clave jurídica:</strong> Ante una desprotección grave existen <strong>dos opciones técnicas</strong> (art. 105 Ley 4/2021): si hay pronóstico favorable de cambio y no hay riesgo físico inminente, se interviene en el medio mediante el <strong>Equipo de Tratamiento Familiar (ETF)</strong>; solo se propone el desamparo si no hay motivación parental o hay peligro vital.</p>
+</div>
+
+<div class="box box-trampa">
+  <strong class="title">7. Internamientos forzosos y tutela institucional</strong>
+  <p><strong>Trampa común:</strong> Afirmar que los Servicios Sociales Municipales pueden ordenar el internamiento no voluntario de un menor en un centro residencial.</p>
+  <p><strong>Clave jurídica:</strong> Toda medida de internamiento forzoso o privación de custodia es una potestad de autoridad reservada a la <strong>Junta de Andalucía</strong> y a la autoridad judicial (art. 44.3 Ley 9/2016 y art. 778 bis Ley de Enjuiciamiento Civil).</p>
+</div>
+
+<h2>D) ENFOQUE PRÁCTICO</h2>
+<div class="box box-practico">
+  <strong class="title">Aplicación en Supuesto Práctico de Educación Social (Ayuntamiento de Utrera)</strong>
+  <p>En un supuesto práctico para el Ayuntamiento de Utrera, este tema se aplica al intervenir ante una notificación escolar por negligencia grave y absentismo crónico derivada vía SIMIA. El educador/a social realiza la investigación en el medio, aplica el instrumento <strong>VALÓRAME</strong> analizando los indicadores de la esfera física y escolar junto a la madre y el menor, administra el <strong>Cuestionario SDQ</strong> e identifica un nivel de gravedad moderado con adecuada conciencia de problema parental. Ello fundamenta la propuesta de <strong>Declaración de Riesgo</strong> municipal (art. 98 Ley 4/2021) y el diseño del <strong>PIS socioeducativo</strong>, articulando pautas de organización doméstica, control de asistencia escolar y firma del contrato social (art. 12 Ley 9/2016), evitando la cronificación hacia el desamparo.</p>
+</div>
+
+<h2>E) FUENTES OFICIALES</h2>
+<div class="fuentes-list">
+  <p>&bull; <strong>Boletín Oficial de la Junta de Andalucía (BOJA)</strong>: Orden de 30 de julio de 2019, por la que se aprueba y publica el instrumento VALÓRAME (BOJA nº 152, de 8 de agosto de 2019):<br>
+  <a href="https://www.juntadeandalucia.es/boja/2019/152/1">https://www.juntadeandalucia.es/boja/2019/152/1</a></p>
+  <p>&bull; <strong>Boletín Oficial de la Junta de Andalucía (BOJA)</strong>: Corrección de errores de la Orden de 30 de julio de 2019 (Hoja Resumen definitiva, BOJA nº 160, de 21 de agosto de 2019):<br>
+  <a href="https://www.juntadeandalucia.es/boja/2019/160/1">https://www.juntadeandalucia.es/boja/2019/160/1</a></p>
+  <p>&bull; <strong>Boletín Oficial de la Junta de Andalucía (BOJA)</strong>: Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía (BOJA nº 149, de 4 de agosto de 2021):<br>
+  <a href="https://www.juntadeandalucia.es/boja/2021/149/1">https://www.juntadeandalucia.es/boja/2021/149/1</a></p>
+  <p>&bull; <strong>Boletín Oficial de la Junta de Andalucía (BOJA)</strong>: Decreto 210/2018, de 20 de noviembre, de procedimiento de actuación ante riesgo y desamparo (SIMIA, BOJA nº 228, de 26 de noviembre de 2018):<br>
+  <a href="https://www.juntadeandalucia.es/boja/2018/228/1">https://www.juntadeandalucia.es/boja/2018/228/1</a></p>
+  <p>&bull; <strong>Observatorio de la Infancia y Familias de Andalucía</strong>: Portal oficial y documentación técnica sobre VALÓRAME y SIMIA:<br>
+  <a href="https://www.observatoriodelainfancia.es">https://www.observatoriodelainfancia.es</a></p>
+</div>
+
+</body>
+</html>

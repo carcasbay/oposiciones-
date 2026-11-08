@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 5: La Pedagogía Social: Evolución y Concepciones. Los Paradigmas de Investigación en las Ciencias Sociales. La Educación Social como Objeto de Estudio de la Pedagogía Social. Objetivos y Perspectivas de la Educación Social</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 5</h1>
+  <h2>La Pedagogía Social: Evolución y Concepciones. Los Paradigmas de Investigación en las Ciencias Sociales. La Educación Social como Objeto de Estudio de la Pedagogía Social. Objetivos y Perspectivas de la Educación Social</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Bloque:</strong> Materias Específicas</p>
+<p><strong>Tema Oficial:</strong> 5</p>
+<p><strong>Fundamentación Teórica:</strong> Paul Natorp, Hermann Nohl, Klaus Mollenhauer, Quintana Cabañas, José María Quintana, Petrus, Fermoso, Caride, Sáez Carreras; Paradigmas de Habermas, Kuhn y Fals Borda; Documentos profesionalizadores del Consejo General de Colegios Oficiales de Educadoras y Educadores Sociales (CGCEES / ASEDES).</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 5</div>
+  <div class="toc-item level-1">1. <strong>Introducción: La identidad epistemológica de la Educación Social</strong></div>
+  <div class="toc-item level-1">2. <strong>La Pedagogía Social: Génesis, evolución histórica y concepciones teóricas</strong></div>
+  <div class="toc-item level-2">2.1. El nacimiento de la Pedagogía Social en Alemania: De Paul Natorp a Hermann Nohl</div>
+  <div class="toc-item level-2">2.2. La evolución europea de entreguerras y posguerra: Klaus Mollenhauer y la pedagogía crítica</div>
+  <div class="toc-item level-2">2.3. Desarrollo e institucionalización de la Pedagogía Social en España: De la ILE al reconocimiento universitario</div>
+  <div class="toc-item level-2">2.4. Principales concepciones doctrinales de la Pedagogía Social</div>
+  <div class="toc-item level-1">3. <strong>Los paradigmas de investigación en las ciencias sociales y su proyección en la intervención socioeducativa</strong></div>
+  <div class="toc-item level-2">3.1. Concepto de paradigma (Kuhn) e intereses del conocimiento (Habermas)</div>
+  <div class="toc-item level-2">3.2. El paradigma positivista / empírico-analítico (Interés técnico)</div>
+  <div class="toc-item level-2">3.3. El paradigma interpretativo / hermenéutico (Interés práctico)</div>
+  <div class="toc-item level-2">3.4. El paradigma sociocrítico y la Investigación-Acción Participativa - IAP (Interés emancipatorio)</div>
+  <div class="toc-item level-2">3.5. La complementariedad y triangulación metodológica en Educación Social</div>
+  <div class="toc-item level-1">4. <strong>La Educación Social como objeto de estudio de la Pedagogía Social</strong></div>
+  <div class="toc-item level-2">4.1. Distinción epistemológica: Pedagogía Social (teoría) y Educación Social (praxis)</div>
+  <div class="toc-item level-2">4.2. Definición formal de la Educación Social según el Consejo General de Colegios de Educadoras y Educadores Sociales (CGCEES)</div>
+  <div class="toc-item level-2">4.3. Los dos ejes vertebradores: Incorporación a las redes sociales y promoción cultural</div>
+  <div class="toc-item level-1">5. <strong>Objetivos y perspectivas contemporáneas de la Educación Social</strong></div>
+  <div class="toc-item level-2">5.1. Objetivos esenciales: Prevención, mediación, inserción y empoderamiento</div>
+  <div class="toc-item level-2">5.2. Perspectivas y modelos teóricos: Del modelo asistencial-tecnológico al modelo crítico-emancipador y sistémico</div>
+  <div class="toc-item level-2">5.3. Nuevos retos de la Educación Social en la sociedad red</div>
+  <div class="toc-item level-1">6. <strong>Conclusión</strong></div>
+  <div class="toc-item level-1">7. <strong>Anexo: Mapa conceptual y tabla sinóptica del Tema 5</strong></div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción: La identidad epistemológica de la Educación Social</h2>
+
+<p>El Tema 5 aborda las raíces científicas y epistemológicas sobre las que se edifica la profesión de <strong>Educador y Educadora Social</strong>. Lejos de constituir una mera ocupación asistencial o caritativa, la Educación Social se consolida como una <strong>disciplina pedagógica rigurosa y un derecho inalienable de la ciudadanía</strong>.</p>
+
+<p>La <strong>Pedagogía Social</strong> surge como la rama de las Ciencias de la Educación que reflexiona teóricamente sobre la educación no formal, los procesos de socialización y las respuestas educativas ante las situaciones de necesidad, inadaptación o conflicto social. A su vez, los paradigmas de investigación en ciencias sociales proporcionan las herramientas analíticas para comprender la realidad comunitaria, mientras que los objetivos y perspectivas de la profesión definen su compromiso irrenunciable con la <strong>emancipación, la inclusión y los derechos humanos</strong>.</p>
+
+<h2 class="section-title">2. La Pedagogía Social: Génesis, evolución histórica y concepciones teóricas</h2>
+
+<h3 class="sub-title">2.1. El nacimiento de la Pedagogía Social en Alemania</h3>
+
+<p>La Pedagogía Social nace en Alemania en el último tercio del siglo XIX como respuesta a las profundas fracturas humanas ocasionadas por la industrialización salvaje, la migración masiva a las urbes y la desarticulación familiar:</p>
+
+<ul>
+  <li><strong>Paul Natorp (1854-1924):</strong> Publica en 1898 su célebre obra <em>Sozialpädagogik</em>. Desde una perspectiva filosófica neokantiana, sostiene una premisa clásica: <em>"Toda educación es social y toda sociedad es educativa"</em>. Para Natorp no existe una pedagogía individual separada; el ser humano solo se hace humano en comunidad. Su enfoque es de corte idealista y sociológico-filosófico.</li>
+  <li><strong>Hermann Nohl (1879-1960):</strong> Tras la catástrofe de la Primera Guerra Mundial y la República de Weimar, orienta la Pedagogía Social hacia una dimensión pragmática: <strong>el auxilio y ayuda a la juventud desamparada y marginada</strong> (<em>Jugendwohlfahrt</em>). Introduce el método hermenéutico y sitúa al educador como abogado y defensor de la infancia en dificultad.</li>
+  <li><strong>Gertrud Bäumer (1873-1954):</strong> Sistematiza la Pedagogía Social como el ámbito formativo que actúa allí donde la familia y la escuela tradicional fracasan o resultan insuficientes.</li>
+</ul>
+
+<div class="diagram-box">
+  <pre>                          EVOLUCIÓN EN ALEMANIA
+   PAUL NATORP (1898)          ──►   HERMANN NOHL (Años 20)
+   (Pedagogía comunitaria y          (Auxilio a la juventud,
+    filosófico-social)                protección y ayuda social)
+                │                                  │
+                └───────────────┬──────────────────┘
+                                ▼
+                     KLAUS MOLLENHAUER (Años 60)
+                     (Teoría crítica de la acción
+                      y pedagogía emancipatoria)</pre>
+</div>
+
+<h3 class="sub-title">2.2. La posguerra y Klaus Mollenhauer</h3>
+
+<p>En los años sesenta y setenta del siglo XX, <strong>Klaus Mollenhauer</strong> introduce la teoría sociocrítica (vinculada a la Escuela de Frankfurt). Define la Pedagogía Social como una ciencia crítica que analiza las condiciones estructurales de opresión y busca la <strong>emancipación del sujeto mediante la praxis educativa reflexiva</strong>.</p>
+
+<h3 class="sub-title">2.3. Desarrollo e institucionalización en España</h3>
+
+<p>En España, el florecimiento de la Pedagogía Social estuvo condicionado por las vicisitudes históricas:</p>
+
+<ol>
+  <li><strong>Precursores (finales del XIX y principios del XX):</strong> Concepción Arenal (reforma penitenciaria y ayuda a los desfavorecidos), la Institución Libre de Enseñanza (ILE) y las Casas de Familia del Padre Manjón.</li>
+  <li><strong>Dictadura franquista:</strong> Freno doctrinal y retroceso asistencialista de corte benéfico-religioso.</li>
+  <li><strong>La Transición democrática y reconocimiento académico (años 80-90):</strong>
+    <ul>
+      <li>Figuras como <strong>José María Quintana Cabañas, Antoni Petrus, Paciano Fermoso, José Antonio Caride y Juan Sáez Carreras</strong> impulsan la investigación pedagógico-social.</li>
+      <li>Hito institucional: Creación oficial del título universitario de <strong>Diplomado en Educación Social por Real Decreto 1420/1991, de 30 de agosto</strong> (actualmente Grado Universitario en Educación Social adaptado al Espacio Europeo de Educación Superior).</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 class="sub-title">2.4. Principales concepciones teóricas de la Pedagogía Social</h3>
+
+<p>A lo largo de su historia se han identificado tres grandes concepciones doctrinales:</p>
+
+<ul>
+  <li><strong>Concepción sociologista o comunitaria (Natorp):</strong> Educación de y para la comunidad; socialización de todos los ciudadanos.</li>
+  <li><strong>Concepción adaptativa o de ayuda a la inadaptación (Nohl, Bäumer):</strong> Intervención especializada y curativa dirigida a sectores con carencias, exclusión o conductas desviadas.</li>
+  <li><strong>Concepción pedagógico-crítica e integral contemporánea (Caride, Petrus):</strong> Ciencia de la educación no formal y comunitaria orientada al desarrollo sociopersonal, la ciudadanía activa, la prevención y la mejora de la calidad de vida de toda la población.</li>
+</ul>
+
+<h2 class="section-title">3. Los paradigmas de investigación en las ciencias sociales y su proyección en la Educación Social</h2>
+
+<p>Un paradigma científico (según <strong>Thomas Kuhn</strong>) es un marco conceptual, metodológico y ontológico compartido por una comunidad científica para interpretar la realidad. <strong>Jürgen Habermas</strong> clasificó la producción científica según los tres "intereses del conocimiento":</p>
+
+<div class="diagram-box">
+  <pre>                        PARADIGMAS DE INVESTIGACIÓN
+           ┌──────────────────────┼──────────────────────┐
+      POSITIVISTA             INTERPRETATIVO           SOCIOCRÍTICO
+ ├─ Interés Técnico       ├─ Interés Práctico     ├─ Interés Emancipatorio
+ ├─ Cuantitativo y        ├─ Cualitativo y        ├─ Dialógico y
+ │  experimental          │  comprensivo          │  participativo (IAP)
+ ├─ Busca leyes causales  ├─ Busca significados   ├─ Transforma opresiones
+ └─ Explicar y controlar  └─ Comprender contexto  └─ Emancipar y liberar</pre>
+</div>
+
+<h3 class="sub-title">3.1. El paradigma positivista / empírico-analítico (Interés técnico)</h3>
+
+<ul>
+  <li><strong>Ontología:</strong> La realidad social es objetiva, única, medible y externa al investigador.</li>
+  <li><strong>Metodología:</strong> Métodos cuantitativos, encuestas estandarizadas, análisis estadístico y diseños experimentales. Busca leyes universales de causa-efecto.</li>
+  <li><strong>Aplicación en Educación Social:</strong> Estudios epidemiológicos de absentismo escolar, estadísticas sociodemográficas de pobreza o medición del impacto cuantitativo de programas.</li>
+</ul>
+
+<h3 class="sub-title">3.2. El paradigma interpretativo / hermenéutico (Interés práctico)</h3>
+
+<ul>
+  <li><strong>Ontología:</strong> La realidad social es múltiple, dinámica, construida intersubjetivamente por los propios actores sociales.</li>
+  <li><strong>Metodología:</strong> Cualitativa: entrevistas en profundidad, grupos de discusión, observación participante, historias de vida y análisis del discurso. Su meta es el <em>Verstehen</em> (comprensión empática del significado de las acciones humanas).</li>
+  <li><strong>Aplicación en Educación Social:</strong> El estudio de caso individual, análisis de la vivencia familiar de desamparo y comprensión del clima de convivencia en el aula.</li>
+</ul>
+
+<h3 class="sub-title">3.3. El paradigma sociocrítico (Interés emancipatorio)</h3>
+
+<ul>
+  <li><strong>Ontología:</strong> La realidad social está condicionada por estructuras históricas de dominación, relaciones de poder asimétricas y desigualdades de clase, etnia y género.</li>
+  <li><strong>Metodología:</strong> <strong>Investigación-Acción Participativa (IAP)</strong> desarrollada por <strong>Kurt Lewin y Orlando Fals Borda</strong>. No se investiga "sobre" las personas, sino "con" las personas: investigación, acción y transformación son inseparables.</li>
+  <li><strong>Aplicación en Educación Social:</strong> Diagnósticos comunitarios participativos en barrios ERACIS, proyectos de autogestión juvenil y empoderamiento de minorías excluidas.</li>
+</ul>
+
+<h3 class="sub-title">3.4. La complementariedad y triangulación metodológica</h3>
+
+<p>En la intervención socioeducativa contemporánea se rechaza el dogmatismo metodológico: se impone la <strong>triangulación metodológica</strong> (combinación de datos cuantitativos de escala macro con análisis cualitativos situados e implicación comunitaria participativa).</p>
+
+<h2 class="section-title">4. La Educación Social como objeto de estudio de la Pedagogía Social</h2>
+
+<h3 class="sub-title">4.1. Distinción epistemológica clásica: Teoría y Praxis</h3>
+
+<ul>
+  <li><strong>Pedagogía Social:</strong> Es la disciplina científica, teórica y normativa. Elabora modelos conceptuales, formula principios éticos y diseña metodologías de intervención.</li>
+  <li><strong>Educación Social:</strong> Es la <strong>práctica pedagógica real</strong>, la acción formativa concreta, la profesión colegiada y la realidad experiencial que se desarrolla en los territorios e instituciones.</li>
+</ul>
+
+<h3 class="sub-title">4.2. Definición profesional del CGCEES / ASEDES</h3>
+
+<p>El Consejo General de Colegios Oficiales de Educadoras y Educadores Sociales (CGCEES), en sus <em>Documentos Profesionalizadores (2007)</em>, formuló una definición canónica de referencia:</p>
+
+<div class="callout">
+  <div class="callout-title">Definición de Educación Social (CGCEES / ASEDES):</div>
+  <p><em>"Derecho de la ciudadanía que se concreta en el reconocimiento de una profesión de carácter pedagógico, generadora de contextos educativos y acciones mediadoras y formativas, que son ámbito de competencia profesional del educador social, posibilitando:</em></p>
+  <p><em>1. La incorporación del sujeto de la educación a la diversidad de las redes sociales, entendida como el desarrollo de la sociabilidad y la circulación social.</em></p>
+  <p><em>2. La promoción cultural y social, entendida como apertura a nuevas posibilidades de la adquisición de bienes culturales que amplíen las perspectivas formativas, de ocio y de participación cívica."</em></p>
+</div>
+
+<h3 class="sub-title">4.3. Los dos ejes fundamentales de la definición</h3>
+
+<ol>
+  <li><strong>La circulación social y sociabilidad:</strong> Evitar que el sujeto quede atrapado en guetos de exclusión, dotándole de competencias y habilidades de relación para transitar con autonomía por los circuitos normalizados de la sociedad.</li>
+  <li><strong>La apropiación de bienes culturales:</strong> La educación social no es contención policial ni mera beneficencia material; es acceso democrático a la cultura, al arte, a la tecnología y al pensamiento crítico.</li>
+</ol>
+
+<h2 class="section-title">5. Objetivos y perspectivas contemporáneas de la Educación Social</h2>
+
+<h3 class="sub-title">5.1. Objetivos estratégicos de la intervención socioeducativa</h3>
+
+<ul>
+  <li><strong>Objetivo de prevención primaria y secundaria:</strong> Anticiparse a la aparición de factores de riesgo y vulnerabilidad en la infancia y juventud.</li>
+  <li><strong>Objetivo de normalización e inclusión:</strong> Facilitar la integración positiva de personas y grupos en dificultad sin exigir la asimilación cultural destructiva de su identidad.</li>
+  <li><strong>Objetivo de mediación:</strong> Intervenir pacíficamente en conflictos interpersonales, escolares, familiares o interculturales.</li>
+  <li><strong>Objetivo de empoderamiento comunitario:</strong> Promover la autoorganización cívica para que los colectivos desfavorecidos sean protagonistas de su propia transformación.</li>
+</ul>
+
+<h3 class="sub-title">5.2. Perspectivas teóricas de la Educación Social</h3>
+
+<div class="diagram-box">
+  <pre>                         PERSPECTIVAS DE INTERVENCIÓN
+   MODELO ASISTENCIAL / TECNOLÓGICO  ──►  Reacciona ante el déficit, adapta al sujeto
+                                           a las normas preestablecidas.
+   MODELO CRÍTICO / EMANCIPADOR      ──►  Cuestiona las causas de la opresión, busca
+                                           el empoderamiento y la justicia social.
+   MODELO SISTÉMICO / ECOLÓGICO      ──►  Interviene en las redes y ecosistemas
+                                           (escuela-familia-comunidad).</pre>
+</div>
+
+<ul>
+  <li><strong>Modelo asistencial-adaptativo:</strong> Concibe al usuario como un "inadaptado" con déficits individuales que deben ser corregidos para que se adapte al orden social existente. Perspectiva superada por su sesgo estigmatizante.</li>
+  <li><strong>Modelo crítico-emancipador:</strong> Concibe al sujeto como titular de derechos frente a un sistema que genera desigualdad estructural. El educador acompaña procesos de toma de conciencia crítica (Freire) y transformación social.</li>
+  <li><strong>Modelo ecológico-sistémico (Bronfenbrenner):</strong> Interviene sobre los distintos niveles del ecosistema humano (microsistema, mesosistema, exosistema y macrosistema), reconociendo que los problemas escolares o de conducta no se resuelven aislando al individuo, sino modificando las relaciones entre su familia, su centro escolar y su barrio.</li>
+</ul>
+
+<h2 class="section-title">6. Conclusión</h2>
+
+<p>La Pedagogía Social ha recorrido un largo camino desde las formulaciones teóricas de Natorp y Nohl hasta configurarse como una ciencia madura comprometida con la emancipación humana.</p>
+
+<p>La <strong>Educación Social</strong>, como su objeto de estudio y realización práctica, no se define por un público diana restringido (los "marginados"), sino como un <strong>derecho de toda la ciudadanía a lo largo de toda su vida</strong>. En el sistema educativo andaluz, el Educador/a Social aplica esta fundamentación epistemológica como profesional pedagógico de proximidad, garantizando la equidad, promoviendo la sociabilidad y defendiendo los derechos de la infancia y juventud más vulnerable.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">7. Anexo: Mapa conceptual y tabla sinóptica del Tema 5</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Autores / Referentes</th>
+      <th>Concepto y Aportación Teórica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Orígenes de la Pedagogía Social</strong></td>
+      <td>Paul Natorp (1898) • Hermann Nohl (años 20) • Gertrud Bäumer</td>
+      <td>• Natorp: Toda educación es social y comunitaria.<br>• Nohl: Auxilio y pedagogía del cuidado a la juventud desamparada.</td>
+    </tr>
+    <tr>
+      <td><strong>Evolución Contemporánea</strong></td>
+      <td>Klaus Mollenhauer • Quintana Cabañas • Petrus • Caride • Sáez</td>
+      <td>Superación del enfoque de beneficencia hacia la ciencia de la educación no formal y emancipatoria.</td>
+    </tr>
+    <tr>
+      <td><strong>Institucionalización en España</strong></td>
+      <td>RD 1420/1991 • Grado en Educación Social (EEES)</td>
+      <td>Creación de la titulación oficial y colegios profesionales oficiales (CGCEES).</td>
+    </tr>
+    <tr>
+      <td><strong>Paradigma Positivista</strong></td>
+      <td>Augusto Comte • Enfoque empírico-analítico</td>
+      <td>Interés técnico • Métodos cuantitativos, objetividad, encuestas y leyes generales explicativas.</td>
+    </tr>
+    <tr>
+      <td><strong>Paradigma Interpretativo</strong></td>
+      <td>Wilhelm Dilthey • Max Weber • Fenomenología</td>
+      <td>Interés práctico • Métodos cualitativos (entrevistas, historias de vida, estudio de casos), comprensión de significados.</td>
+    </tr>
+    <tr>
+      <td><strong>Paradigma Sociocrítico</strong></td>
+      <td>Escuela de Frankfurt • Habermas • Freire • Fals Borda</td>
+      <td>Interés emancipatorio • Investigación-Acción Participativa (IAP), crítica ideológica y transformación social activa.</td>
+    </tr>
+    <tr>
+      <td><strong>Definición de Educación Social</strong></td>
+      <td>Documentos Profesionalizadores CGCEES (2007)</td>
+      <td>Profesión pedagógica y derecho de la ciudadanía centrada en: 1) Sociabilidad y redes; 2) Promoción cultural.</td>
+    </tr>
+    <tr>
+      <td><strong>Modelos de Intervención</strong></td>
+      <td>Tecnológico/Asistencial • Crítico/Emancipador • Ecológico-Sistémico</td>
+      <td>Evolución desde la corrección de déficits hacia el empoderamiento cívico y el trabajo en red comunitaria.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

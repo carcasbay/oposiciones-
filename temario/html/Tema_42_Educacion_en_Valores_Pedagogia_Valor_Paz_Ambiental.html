@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 42 — Educación en Valores, Paz, Igualdad y Educación Ambiental</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 18mm 17mm 18mm 17mm;
+    @top-left {
+      content: "OPOSICIÓN EDUCACIÓN SOCIAL (GRUPO A2) - AYUNTAMIENTO DE UTRERA | TEMA 42";
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 7.4pt;
+      color: #64748b;
+      font-weight: 600;
+    }
+    @top-right {
+      content: "TEMA 42: EDUCACIÓN EN VALORES Y SOSTENIBILIDAD";
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 7.4pt;
+      color: #64748b;
+      font-weight: 600;
+    }
+    @bottom-center {
+      content: "Página " counter(page) " de " counter(pages);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 8pt;
+      color: #666;
+    }
+  }
+
+  body {
+    font-family: 'Georgia', serif;
+    font-size: 9.7pt;
+    line-height: 1.40;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+  }
+
+  .header-box {
+    background: linear-gradient(135deg, #1b365d 0%, #2b547e 100%);
+    color: white;
+    padding: 9px 13px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    page-break-inside: avoid;
+  }
+
+  .inst-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10.2pt;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    color: #f0f4f8;
+  }
+
+  .badges-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 3px;
+  }
+
+  .badge {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 7.6pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 3px;
+    display: inline-block;
+  }
+
+  .badge-primary { background-color: #dbeafe; color: #1e40af; }
+  .badge-secondary { background-color: #f1f5f9; color: #334155; }
+  .badge-warning { background-color: #fef3c7; color: #92400e; }
+
+  h1.doc-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 12.8pt;
+    font-weight: bold;
+    color: #1b365d;
+    margin: 8px 0 5px 0;
+    line-height: 1.22;
+    text-align: left;
+    page-break-after: avoid;
+  }
+
+  h2.section-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10.6pt;
+    font-weight: bold;
+    color: #1b365d;
+    border-bottom: 1.5px solid #1b365d;
+    padding-bottom: 2.5px;
+    margin: 11px 0 5px 0;
+    text-align: left;
+    page-break-after: avoid;
+  }
+
+  h2.header-exam { color: #1e3a8a; border-color: #1e3a8a; }
+  h2.header-scheme { color: #047857; border-color: #047857; }
+  h2.header-traps { color: #b91c1c; border-color: #b91c1c; }
+  h2.header-practical { color: #4338ca; border-color: #4338ca; }
+  h2.header-sources { color: #374151; border-color: #374151; }
+
+  h3.subsection-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 9.7pt;
+    font-weight: 600;
+    color: #2b547e;
+    margin: 8px 0 3px 0;
+    text-align: left;
+    page-break-after: avoid;
+  }
+
+  h4.subsubsection-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 9.1pt;
+    font-weight: 600;
+    color: #334155;
+    margin: 6px 0 2px 0;
+    text-align: left;
+    page-break-after: avoid;
+  }
+
+  p {
+    margin: 0 0 5px 0;
+  }
+
+  ul {
+    margin: 2px 0 5px 16px;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 2.5px;
+  }
+
+  strong {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    color: #0f172a;
+  }
+
+  .ascii-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 3.5px solid #1b365d;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 6.8pt;
+    line-height: 1.18;
+    padding: 5px 7px;
+    margin: 5px 0;
+    white-space: pre;
+    overflow-x: hidden;
+    page-break-inside: avoid;
+    border-radius: 3px;
+  }
+
+  .quote-box {
+    background-color: #f8fafc;
+    border-left: 3.5px solid #3b82f6;
+    padding: 4px 8px;
+    margin: 5px 0;
+    font-style: italic;
+    font-size: 9.1pt;
+    color: #1e293b;
+    page-break-inside: avoid;
+    border-radius: 2px;
+  }
+
+  .table-container {
+    margin: 5px 0;
+    page-break-inside: avoid;
+  }
+
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.2pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  table.data-table th {
+    background-color: #1b365d;
+    color: white;
+    font-weight: 600;
+    padding: 4px 6px;
+    text-align: left;
+    border: 1px solid #1b365d;
+  }
+
+  table.data-table td {
+    padding: 3.5px 6px;
+    border: 1px solid #cbd5e1;
+    vertical-align: top;
+  }
+
+  table.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+  }
+
+  .trap-q {
+    background-color: #fff1f2;
+    border-left: 3px solid #e11d48;
+    padding: 3px 6px;
+    margin: 2.5px 0;
+    list-style: none;
+    font-size: 8.6pt;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .trap-a {
+    background-color: #f0fdf4;
+    border-left: 3px solid #16a34a;
+    padding: 3px 6px;
+    margin: 2px 0 5px 0;
+    list-style: none;
+    font-size: 8.6pt;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .exam-item {
+    background-color: #f0fdf4;
+    border-left: 3px solid #15803d;
+    padding: 3px 6px;
+    margin-bottom: 3px;
+    font-size: 8.4pt;
+    font-family: 'Segoe UI', sans-serif;
+    page-break-inside: avoid;
+    border-radius: 2px;
+  }
+
+  .num-item {
+    margin-bottom: 3.5px;
+  }
+
+  .divider {
+    border: 0;
+    border-top: 1px solid #cbd5e1;
+    margin: 8px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-box">
+  <div class="inst-title">Excmo. Ayuntamiento de Utrera | Subescala Técnica - Grupo A2</div>
+  <div class="badges-row">
+    <span class="badge badge-primary">Educador/a Social</span>
+    <span class="badge badge-secondary">BOP Sevilla nº 102 (29/05/2026)</span>
+    <span class="badge badge-warning">Tema 42 - Específico</span>
+  </div>
+</div>
+
+<h1 class="doc-title">Tema 42 — Educación en valores. Pedagogía del valor. Igualdad y tolerancia. Educación para la paz. Educación ambiental.</h1>
+<p><strong>Convocatoria</strong>: Subescala Técnica - Educador/a Social (Grupo A2). Excmo. Ayuntamiento de Utrera.</p>
+<p><strong>Oferta de Empleo Público Consolidada</strong>: Boletín Oficial de la Provincia (BOP) de Sevilla nº 102, de 29/05/2026.</p>
+<p><strong>Especialidad</strong>: Intervención Socioeducativa en Valores, Convivencia Ciudadana, Igualdad y Sostenibilidad Ecosocial.</p>
+<hr class="divider" />
+<h2 class="section-title">1. Educación en Valores y Pedagogía del Valor</h2>
+<h3 class="subsection-title">1.1. Fundamentación Epistemológica y Axiológica: Concepto y Naturaleza del Valor</h3>
+<p>La educación es una praxis intrínsecamente teleológica y axiológica: resulta ontológicamente imposible educar en un vacío moral o en una supuesta neutralidad aséptica (<strong>Paulo Freire, 1970; Antoni Petrus, 1997</strong>). Todo acto pedagógico, explícita o implícitamente a través del currículo oculto, transmite, refuerza o cuestiona una determinada jerarquía de valores. Educar no es solo instruir o adiestrar en habilidades técnicas; educar es humanizar, capacitar para el discernimiento ético y acompañar en la construcción de proyectos vitales de sentido.</p>
+<p>Desde la axiología filosófica y pedagógica (<strong>Max Scheler, 1916; José Ortega y Gasset, 1923; Enrique Gervilla Castillo, 2003</strong>), el <strong>valor</strong> se define como una cualidad relacional o estimativa, real o ideal, atribuida a objetos, conductas, actitudes o ideas, que despierta atracción, preferencia y adhesión ética, orientando la acción humana hacia la autorrealización personal y la dignidad colectiva:</p>
+<ul><li><strong>Polaridad</strong>: Cada valor tiene su contravalor o disvalor correspondiente (justicia vs. injusticia, paz vs. violencia, solidaridad vs. insolidaridad, sostenibilidad vs. depredación ecosistémica).</li></ul>
+<ul><li><strong>Jerarquía</strong>: Los valores no son planos ni homogéneos; se estructuran en escalas jerárquicas dinámicas que varían según los individuos, los grupos sociales y los periodos históricos. Scheler propuso una escala que transita desde los valores sensibles y vitales hasta los valores espirituales (estéticos, jurídicos e intelectuales) y religiosos.</li></ul>
+<ul><li><strong>Inagotabilidad y Trascendencia</strong>: El valor nunca se realiza de forma definitiva y perfecta en la experiencia empírica; opera como un horizonte regulativo que dinamiza permanentemente la conducta moral humana hacia cotas superiores de dignidad.</li></ul>
+<p>En el marco de la Pedagogía Social contemporánea, la <strong>Pedagogía del Valor</strong> trasciende la mera instrucción informativa sobre preceptos cívicos o códigos de conducta: constituye el diseño deliberado, sistemático, participativo y crítico de experiencias vivenciales y comunitarias que permitan a las personas interiorizar libremente criterios éticos para la toma de decisiones, la autorregulación responsable y el compromiso transformador con su entorno social.</p>
+<h3 class="subsection-title">1.2. Teorías del Desarrollo Moral: De Piaget y Kohlberg a la Ética del Cuidado</h3>
+<p>La fundamentación psicológica y pedagógica de la educación moral se asienta en sólidos modelos evolutivos y cognitivo-conductuales:</p>
+<div class="ascii-box">                    TEORÍAS DEL DESARROLLO MORAL Y AXIOLÓGICO
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ 1. JEAN PIAGET (1932) - El Criterio Moral en el Niño:                      │
+ │    · Moral Heterónoma (Realismo Moral, &lt;7 años): Reglas sagradas e          │
+ │      inmutables impuestas por el adulto; responsabilidad objetiva (juzga    │
+ │      por el daño material) y sanciones expiatorias / justicia inmanente.    │
+ │    · Moral Autónoma (Relativismo Moral, &gt;8-10 años): Reglas como acuerdos   │
+ │      consensuados entre iguales; basadas en la reciprocidad, el respeto     │
+ │      mutuo, la equidad y la responsabilidad subjetiva (mide la intención).  │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 2. LAWRENCE KOHLBERG (1981) - Estadios del Juicio Moral:                    │
+ │    · Nivel I: Preconvencional (individualista, egocéntrico):                │
+ │      - Estadio 1: Orientación al castigo y la obediencia ciega heterónoma.  │
+ │      - Estadio 2: Orientación instrumental relativista (intercambio útil).  │
+ │    · Nivel II: Convencional (conformidad con las normas del grupo):         │
+ │      - Estadio 3: Orientación del "buen chico/buena chica" (aprobación).    │
+ │      - Estadio 4: Orientación hacia la ley y el orden institucional.        │
+ │    · Nivel III: Posconvencional / De Principios (autonomía ética universal):│
+ │      - Estadio 5: Contrato social y derechos individuales reconocidos.      │
+ │      - Estadio 6: Principios éticos universales autoelegidos (justicia pura)│
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 3. CAROL GILLIGAN (1982) - La Ética del Cuidado (Ethics of Care):           │
+ │    · Crítica al sesgo androcéntrico de Kohlberg (basado en justicia formal).│
+ │    · Voz moral diferente: Centrada en la relacionalidad, la empatía afectiva│
+ │      la atención a la vulnerabilidad y la preservación del vínculo humano.  │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 4. JAMES REST (1986) - Modelo de los Cuatro Componentes Morales:            │
+ │    · Sensibilidad Moral (reconocer el conflicto ético).                     │
+ │    · Juicio Moral (evaluar lo correcto; evaluado mediante el test DIT).     │
+ │    · Motivación Moral (priorizar el valor ético sobre intereses espurios).  │
+ │    · Carácter/Implementación Moral (perseverancia, resiliencia y valentía). │
+ └─────────────────────────────────────────────────────────────────────────────┘</div>
+<h4 class="subsubsection-title">Las Aportaciones de Jean Piaget (1932)</h4>
+<p>En su obra pionera <em>El criterio moral en el niño</em>, Piaget investigó cómo los menores interiorizan las normas mediante la observación del juego de canicas y el análisis de pequeños dilemas sobre la mentira y la torpeza. Constató que el juicio moral evoluciona desde una <strong>fase heterónoma</strong> (donde la norma es externa, inmutable y sagrada, y las sanciones deben ser severas y expiatorias) hacia una <strong>fase autónoma</strong> (donde la norma surge de la cooperación voluntaria entre iguales, puede modificarse por consenso democrático y las sanciones buscan la reciprocidad y la reparación restaurativa del daño).</p>
+<h4 class="subsubsection-title">El Modelo Estructural de Lawrence Kohlberg (1981)</h4>
+<p>Kohlberg demostró que el desarrollo moral no depende de la asimilación pasiva de mandatos culturales, sino de un proceso secuencial e invariante de reestructuración cognitiva del concepto de <strong>justicia</strong>. A través de dilemas morales clásicos (como el famoso <strong>Dilema de Heinz</strong>, quien debe decidir si robar una medicina que no puede pagar para salvar la vida de su esposa moribunda), Kohlberg evidenció que lo decisivo para determinar el estadio moral no es la conducta elegida (robar o no robar), sino la <strong>estructura del razonamiento subyacente</strong>:</p>
+<ul><li>Los estadios 1 y 2 buscan evitar el castigo u obtener premios inmediatos.</li></ul>
+<ul><li>Los estadios 3 y 4 buscan encajar en la comunidad y preservar la cohesión social establecida.</li></ul>
+<ul><li>Los estadios 5 y 6 apelan a derechos fundamentales inalienables que están por encima de las leyes positivas de un Estado cuando estas son injustas.</li></ul>
+<h3 class="subsection-title">1.3. La Ética de Mínimos y la Ética de Máximos de Adela Cortina</h3>
+<p>Una aportación axiológica capital para la intervención socioeducativa en sociedades democráticas heterogéneas es la formulada por la filósofa <strong>Adela Cortina (1996, 2017)</strong> al distinguir entre:</p>
+<ul><li><strong>Ética de Máximos (Éticas de la Felicidad)</strong>: Conjuntos comprensivos de ideales de vida buena, cosmovisiones religiosas, espirituales o doctrinales particulares. Son plurales, no exigibles coactivamente a toda la ciudadanía y pertenecen al ámbito de la libre elección personal o comunitaria.</li></ul>
+<ul><li><strong>Ética de Mínimos (Ética Cívica de la Justicia)</strong>: Conjunto de exigencias éticas universales irrenunciables que hacen posible la convivencia pacífica entre ciudadanos con distintas éticas de máximos. Se fundamentan en el respeto incondicional a los derechos humanos, la libertad política, la igualdad de oportunidades, la solidaridad activa y el diálogo democrático.</li></ul>
+<p>El Educador/a Social municipal trabaja desde la <strong>ética de mínimos</strong>: no impone modelos particulares de felicidad, pero garantiza y exige de forma intransigente el respeto a los mínimos de justicia, igualdad y no violencia compartidos por el ordenamiento constitucional.</p>
+<h3 class="subsection-title">1.4. Modelos Metodológicos en Educación en Valores</h3>
+<p>En la práctica socioeducativa contemporánea se distinguen cuatro grandes enfoques metodológicos (<strong>Josep Maria Puig Rovira, 1996; Miquel Martínez, 1998; Jaume Trilla, 1992</strong>):</p>
+<div class="num-item"><strong>1.</strong> <strong>Modelo de Transmisión e Inculcación Normativa</strong>:</div>
+<ul><li>Transmisión vertical y conductual de pautas cívicas mediante modelado de figuras de referencia y refuerzo social. Útil en edades tempranas para consolidar hábitos, pero insuficiente si no genera criterio moral autónomo.</li></ul>
+<div class="num-item"><strong>2.</strong> <strong>Modelo de Clarificación de Valores (Louis Raths, Merrill Harmin y Sidney Simon, 1966)</strong>:</div>
+<ul><li>Proceso reflexivo y experiencial en tres fases (<em>Elección</em> libre y consciente entre alternativas; <em>Estimación</em> y aprecio público del valor; y <em>Actuación</em> coherente y reiterada en la vida cotidiana). Ayuda a desterrar incoherencias entre lo que se predica y lo que se practica.</li></ul>
+<div class="num-item"><strong>3.</strong> <strong>Modelo de Discusión de Dilemas Socio-Morales (Lawrence Kohlberg)</strong>:</div>
+<ul><li>Presentación de situaciones conflictivas reales o hipotéticas en las que entran en colisión dos valores legítimos (p. ej., lealtad al grupo de iguales vs. veracidad ante un caso de acoso escolar). El debate guiado genera <strong>disonancia cognitiva moral</strong>, desestabilizando razonamientos simplistas y favoreciendo el salto hacia estadios superiores de empatía y justicia.</li></ul>
+<ul><li><strong>La Comunidad Justa de Kohlberg</strong>: Experiencia de autogobierno democrático escolar o residencial donde educadores y jóvenes gestionan la convivencia mediante asambleas deliberativas con voto igualitario.</li></ul>
+<div class="num-item"><strong>4.</strong> <strong>Modelo de Construcción Dialógica de la Personalidad Moral (Puig Rovira y Martínez)</strong>:</div>
+<ul><li>Paradigma hegemónico en la Educación Social española: el valor se co-construye en la interacción dialógica con la comunidad, conjugando el razonamiento reflexivo, la sensibilidad afectiva, la empatía y la participación sociocomunitaria.</li></ul>
+<ul><li><strong>Metodología Nuclear: El Aprendizaje-Servicio (ApS)</strong>: Metodología educativa que integra el aprendizaje de contenidos y valores cívicos con la prestación de un servicio desinteresado y transformador a la comunidad (p. ej., jóvenes en riesgo que rehabilitan una zona verde degradada o diseñan talleres para personas mayores en soledad).</li></ul>
+<hr class="divider" />
+<h2 class="section-title">2. Igualdad y Tolerancia en la Intervención Socioeducativa</h2>
+<h3 class="subsection-title">2.1. El Principio Constitucional de Igualdad y la Coeducación</h3>
+<p>El principio de igualdad constituye uno de los ejes vertebradores del Estado social y democrático de derecho consagrado en la Constitución Española de 1978:</p>
+<ul><li><strong>Artículo 1.1 CE</strong>: Proclama la igualdad como valor superior del ordenamiento jurídico.</li></ul>
+<ul><li><strong>Artículo 14 CE</strong>: Reconoce el derecho fundamental a la igualdad formal de toda la ciudadanía ante la ley, prohibiendo de forma taxativa cualquier discriminación por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra circunstancia personal o social.</li></ul>
+<ul><li><strong>Artículo 9.2 CE (Cláusula de Igualdad Real y Efectiva)</strong>: Mandato constitucional imperativo que impone a los poderes públicos (Estado, Comunidades Autónomas y Administraciones Locales) la obligación positiva de <em>"promover las condiciones para que la libertad y la igualdad del individuo y de los grupos en que se integra sean reales y efectivas; remover los obstáculos que impidan o dificulten su plenitud y facilitar la participación de todos los ciudadanos en la vida política, económica, cultural y social"</em>.</li></ul>
+<div class="ascii-box">                    MARCO NORMATIVO DE IGUALDAD Y COEDUCACIÓN
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ ÁMBITO ESTATAL:                                                             │
+ │ · Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres │
+ │   y hombres: Principio de transversalidad de género (*gender mainstreaming*)│
+ │   obligatorio en todas las políticas públicas municipales.                  │
+ │ · Ley Orgánica 1/2004, de 28 de diciembre, de Medidas de Protección         │
+ │   Integral contra la Violencia de Género.                                   │
+ │ · Ley 4/2023, de 28 de febrero, para la igualdad real y efectiva de las    │
+ │   personas trans y para la garantía de los derechos de las personas LGTBI.  │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ ÁMBITO AUTONÓMICO ANDALUZ:                                                  │
+ │ · Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de      │
+ │   género en Andalucía (modificada por Ley 9/2018): Coeducación y planes.    │
+ │ · Ley 13/2007, de 26 de noviembre, de medidas de prevención y protección    │
+ │   integral contra la violencia de género en Andalucía.                      │
+ │ · Ley 8/2017, de 28 de diciembre, para garantizar los derechos, la igualdad │
+ │   de trato y no discriminación de las personas LGTBI y sus familias.        │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ PRÁCTICA COEDUCATIVA EN EDUCACIÓN SOCIAL:                                   │
+ │ · Desmontaje del androcentrismo cultural y visibilización de las mujeres.   │
+ │ · Deconstrucción de micromachismos en el lenguaje, ocio y redes sociales.   │
+ │ · Fomento de NUEVAS MASCULINIDADES corresponsables, cuidadoras y pacíficas. │
+ │ · Prevención de la ciberviolencia de género y control digital en parejas.   │
+ └─────────────────────────────────────────────────────────────────────────────┘</div>
+<p>La <strong>Coeducación</strong> socioeducativa supera con creces la simple coexistencia física en aulas o centros mixtos: es la intervención pedagógica planificada y sistemática que cuestiona los mandatos tradicionales de género, visibiliza las aportaciones de las mujeres a lo largo de la historia, enseña la corresponsabilidad en el ámbito doméstico y de los cuidados, y erradica las construcciones machistas que legitiman la dominación sobre las mujeres.</p>
+<h3 class="subsection-title">2.2. La Discriminación Interseccional y la Diversidad LGTBI</h3>
+<p>En la intervención comunitaria contemporánea resulta imprescindible incorporar el enfoque de la <strong>interseccionalidad</strong> (<strong>Kimberlé Crenshaw, 1989</strong>):</p>
+<ul><li>La discriminación rara vez se produce por un único factor aislado; opera como un sistema de vectores interconectados (género, etnia, clase social, discapacidad, edad y orientación afectivo-sexual). Una mujer joven de etnia gitana, en desempleo y en una barriada desfavorecida sufre una discriminación compuesta (<em>múltiple e interseccional</em>) cualitativamente diferente a la suma matemática de opresiones aisladas.</li></ul>
+<ul><li>La <strong>Ley 4/2023 estatal</strong> y la <strong>Ley 8/2017 de Andalucía</strong> consolidan el marco de protección contra la LGTBIfobia, exigiendo a los Servicios Sociales Comunitarios protocolos de acogida y acompañamiento respetuoso a personas trans e identidades no binarias, previniendo el acoso escolar o social y combatiendo los delitos de odio tipificados en el artículo 510 del Código Penal.</li></ul>
+<h3 class="subsection-title">2.3. La Tolerancia y sus Límites Éticos: La Paradoja de Popper</h3>
+<p>El concepto de tolerancia ha experimentado una mutación epistemológica radical:</p>
+<ul><li><strong>Declaración de Principios sobre la Tolerancia (UNESCO, 1995)</strong>: La tolerancia no es complacencia, desdén ni mera indulgencia resignada; es el <strong>reconocimiento activo y positivo de la universalidad de los derechos humanos y la libertad intrínseca de todas las personas</strong>.</li></ul>
+<ul><li><strong>Tolerancia Pasiva vs. Tolerancia Activa</strong>: La tolerancia pasiva se conforma con no agredir físicamente al diferente mientras se mantenga aislado ("tolerar como quien tolera un dolor de cabeza"); la <strong>tolerancia activa</strong> busca activamente el diálogo intercultural, el mestizaje enriquecedor y la cooperación compartida en la vida pública.</li></ul>
+<h4 class="subsubsection-title">La Paradoja de la Tolerancia de Karl Popper</h4>
+<p>En su obra fundamental <em>La sociedad abierta y sus enemigos</em> (1945), <strong>Karl Popper</strong> demostró con lucidez implacable la contradicción lógica de la tolerancia ingenua o ilimitada:</p>
+<div class="quote-box"><em>"La tolerancia ilimitada debe conducir a la desaparición de la tolerancia. Si extendemos la tolerancia ilimitada incluso a aquellos que son intolerantes; si no estamos dispuestos a defender una sociedad tolerante contra el atropello de los intolerantes, los tolerantes serán destruidos y, con ellos, la tolerancia. Deberemos reclamar el derecho a no tolerar a los intolerantes si pretenden imponer sus doctrinas por la fuerza o rechazan el marco del diálogo racional."</em></div>
+<p>El límite ético e institucional incontrovertible de la tolerancia en un Estado democrático es la <strong>violencia, el odio y la negación de los derechos humanos</strong>: no se pueden tolerar discursos fascistas, aporofóbicos, racistas o que promuevan la violencia machista, pues socavan los cimientos que hacen posible la libertad de todos.</p>
+<hr class="divider" />
+<h2 class="section-title">3. Educación para la Paz (Irenología y No Violencia)</h2>
+<h3 class="subsection-title">3.1. Fundamentación Epistemológica: La Irenología y Johan Galtung</h3>
+<p>La <strong>Educación para la Paz</strong> se fundamenta teóricamente en la <em>Irenología</em> (disciplina científica dedicada a la investigación sobre la paz y el conflicto). Sus pilares contemporáneos fueron formulados por el sociólogo y matemático <strong>Johan Galtung (1969, 1996)</strong>:</p>
+<div class="ascii-box">                      EL MODELO GALTUNGIANO DE LA PAZ
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ 1. PAZ NEGATIVA VS. PAZ POSITIVA:                                           │
+ │    · Paz Negativa: Mera ausencia de conflicto bélico abierto, guerra o      │
+ │      violencia física directa. Mantenimiento del statu quo por represión.   │
+ │    · Paz Positiva: Presencia activa de JUSTICIA SOCIAL, igualdad real,      │
+ │      satisfacción de necesidades humanas básicas (salud, educación, techo), │
+ │      bienestar equitativo y desarme estructural. Construcción compartida.   │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 2. EL TRIÁNGULO DE LA VIOLENCIA (Johan Galtung):                            │
+ │                                                                             │
+ │                               VIOLENCIA DIRECTA                             │
+ │                         (Física, verbal, visible, puntual)                  │
+ │                                      ▲                                      │
+ │                                     / \                                     │
+ │                                    /   \                                    │
+ │                                   /     \                                   │
+ │                                  /       \                                  │
+ │                                 /         \                                 │
+ │                                ▼           ▼                                 │
+ │                      VIOLENCIA              VIOLENCIA                       │
+ │                     ESTRUCTURAL              CULTURAL                       │
+ │               (Pobreza, exclusión,    (Discursos de odio, machismo,          │
+ │                desigualdad material)    mitos legitimadores, aporofobia)    │
+ └─────────────────────────────────────────────────────────────────────────────┘</div>
+<ul><li><strong>Violencia Directa</strong>: Es la violencia visible, observable y fenoménica (golpes, insultos, tiroteos, guerras). Representa únicamente la parte emergente del iceberg de la violencia.</li></ul>
+<ul><li><strong>Violencia Estructural</strong>: Es la violencia intrínseca a los sistemas sociopolíticos y económicos que impiden sistemáticamente a amplios sectores de la población acceder a los recursos mínimos de supervivencia y dignidad (pobreza infantil crónica, desahucios, falta de acceso a sanidad o empleo digno).</li></ul>
+<ul><li><strong>Violencia Cultural</strong>: Conjunto de mitos, ideologías, expresiones lingüísticas, preceptos religiosos o productos culturales que legitiman y justifican la violencia directa y la violencia estructural ("los pobres son delincuentes por naturaleza", "las mujeres deben servir al varón", "el fuerte tiene derecho a someter al débil").</li></ul>
+<p>La <strong>Declaración de Sevilla sobre la Violencia (UNESCO, 1986)</strong>, formulada por un panel internacional de científicos eminentes (entre ellos neurobiólogos, psicólogos y sociólogos), desmanteló categóricamente el mito biológico de la violencia, concluyendo de forma unánime que: <strong>la especie humana no está biológicamente predeterminada para la guerra ni para la violencia; la violencia no está inscrita en nuestros genes, sino que es un comportamiento aprendido culturalmente y, por ende, puede ser desaprendido y erradicado mediante la educación.</strong></p>
+<h3 class="subsection-title">3.2. Paradigma de la No Violencia: De Gandhi y Luther King a la Comunicación No Violenta</h3>
+<p>La pedagogía de la paz bebe de tradiciones universales de transformación pacífica:</p>
+<ul><li><strong>Mahatma Gandhi</strong>: Concepto de <strong>Ahimsa</strong> (compromiso ético de no dañar a ningún ser viviente en pensamiento, palabra u obra) y <strong>Satyagraha</strong> (fuerza del alma o perseverancia pacífica en la verdad). Demostró que la no violencia no es pasividad cobarde, sino la forma más elevada y eficaz de valentía y combate político contra la opresión.</li></ul>
+<ul><li><strong>Martin Luther King Jr.</strong>: Liderazgo del movimiento por los derechos civiles en Estados Unidos mediante marchas pacíficas, boicots económicos y desobediencia civil no violenta, apelando a la conciencia moral colectiva.</li></ul>
+<ul><li><strong>Nelson Mandela</strong>: Conducción modélica de la transición post-Apartheid en Sudáfrica a través de las Comisiones de la Verdad y Reconciliación, sustituyendo la venganza retributiva por la sanación comunitaria y la justicia restaurativa.</li></ul>
+<ul><li><strong>La Comunicación No Violenta - CNV (Marshall Rosenberg, 1999)</strong>:</li></ul>
+<p>Estructura metodológica de cuatro fases que desarticula la agresión verbal:</p>
+<div class="num-item"><strong>1.</strong> <em>Observación de Hechos Objetivos</em>: Describir lo que ocurre sin juzgar ni adjetivar moralmente.</div>
+<div class="num-item"><strong>2.</strong> <em>Expresión de Sentimientos</em>: Nombrar las emociones experimentadas (tristeza, rabia, angustia) en primera persona, sin culpabilizar al otro.</div>
+<div class="num-item"><strong>3.</strong> <em>Identificación de Necesidades Universales</em>: Reconocer qué necesidad humana no satisfecha origina la emoción (respeto, seguridad, autonomía).</div>
+<div class="num-item"><strong>4.</strong> <em>Formulación de Peticiones Positivas</em>: Proponer una acción concreta, viable, negociable y formulada en positivo para satisfacer la necesidad.</div>
+<h3 class="subsection-title">3.3. Resolución Pacífica de Conflictos y Justicia Restaurativa</h3>
+<p>El conflicto es consustancial a la vida comunitaria: no debe confundirse con la violencia. La violencia es una forma destructiva y patológica de afrontar el conflicto, mientras que el conflicto en sí mismo es una <strong>oportunidad pedagógica de aprendizaje, reajuste y crecimiento relacional</strong> (<strong>Xesús Jares, 1999; Josep Redorta, 2004</strong>).</p>
+<div class="ascii-box">                 MÉTODOS ALTERNATIVOS DE RESOLUCIÓN DE CONFLICTOS
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ 1. MODELO DE AFRONTAMIENTO DE THOMAS-KILMANN (1974):                        │
+ │    · Cruza dos variables: Asertividad (interés por uno mismo) y Cooperación │
+ │      (interés por el otro):                                                 │
+ │      - Competición (Gano/Pierdes)     - Evasión (Pierdo/Pierdes)            │
+ │      - Acomodación (Pierdo/Ganas)     - Compromiso (Pacto intermedio)       │
+ │      - COLABORACIÓN (Gano/Ganas - Win-Win): Meta de la Educación Social.    │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 2. FASES DEL PROTOCOLO DE MEDIACIÓN SOCIOEDUCATIVA:                         │
+ │    · Fase 1: Pre-mediación (entrevistas individuales; análisis de viabilidad)│
+ │    · Fase 2: Entrada y Encuadre (reglas del juego: respeto, confidencialidad)│
+ │    · Fase 3: Cuéntame (exposición de versiones sin interrupciones).         │
+ │    · Fase 4: Clarificación del Conflicto (identificar intereses comunes).   │
+ │    · Fase 5: Generación de Opciones (lluvia de ideas colaborativa).          │
+ │    · Fase 6: Acuerdo Escrito (pacto SMART: específico, medible, alcanzable). │
+ │    · Fase 7: Seguimiento y Evaluación posterior del compromiso adquirido.   │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 3. JUSTICIA RESTAURATIVA (Círculos de Paz Comunitarios):                    │
+ │    · Supera la pregunta retributiva punitiva ("¿qué norma se rompió y qué   │
+ │      castigo imponemos?") para preguntar:                                   │
+ │      - ¿Quién ha resultado dañado y cómo se siente?                         │
+ │      - ¿Cuáles son sus necesidades materiales y emocionales?                │
+ │      - ¿Cómo puede la persona que causó el daño repararlo y reintegrarse?   │
+ └─────────────────────────────────────────────────────────────────────────────┘</div>
+<hr class="divider" />
+<h2 class="section-title">4. Educación Ambiental y Sostenibilidad</h2>
+<h3 class="subsection-title">4.1. Evolución Histórica y Marco Normativo Internacional, Estatal y Autonómico</h3>
+<p>La crisis ecosocial planetaria (calentamiento global, pérdida irreversible de biodiversidad, desertificación acelerada, estrés hídrico y contaminación microplástica) ha situado a la <strong>Educación Ambiental</strong> en el epicentro de las políticas públicas y socioeducativas:</p>
+<div class="ascii-box">                    HITOS HISTÓRICOS DE LA EDUCACIÓN AMBIENTAL
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ 1972: CONFERENCIA DE ESTOCOLMO (ONU):                                       │
+ │ · Principio 19: Primera proclamación formal de la educación ambiental como   │
+ │   herramienta indispensable para la supervivencia humana.                   │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 1975: SEMINARIO DE BELGRADO (CARTA DE BELGRADO - UNESCO/PNUMA):             │
+ │ · Fija la meta universal: lograr que la población mundial tenga conciencia   │
+ │   del medio ambiente, adquiera conocimientos, aptitudes, actitudes y         │
+ │   motivación para trabajar individual y colectivamente por la sostenibilidad│
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 1977: CONFERENCIA INTERGUBERNAMENTAL DE TBILISI:                            │
+ │ · Define los principios rectores: interdisciplinariedad, enfoque a lo largo │
+ │   de toda la vida, arraigo comunitario y solución práctica de problemas.    │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 1992: CUMBRE DE LA TIERRA DE RÍO DE JANEIRO:                                │
+ │ · Agenda 21 y Tratado de Educación Ambiental para Sociedades Sustentables.  │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 2015: AGENDA 2030 Y OBJETIVOS DE DESARROLLO SOSTENIBLE (ONU):               │
+ │ · Meta 4.7 del ODS 4: Educación para el desarrollo sostenible y estilos de   │
+ │   vida sostenibles; transversalidad en ODS 11, 12, 13, 14 y 15.             │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ MARCO ESTATAL Y ANDALUZ:                                                    │
+ │ · Ley 7/2021, de 20 de mayo, de cambio climático y transición energética:   │
+ │   Artículo 35: fomento de la educación ambiental en todos los ámbitos.      │
+ │ · PAEAS (Plan de Acción de Educación Ambiental para la Sostenibilidad       │
+ │   2021-2025): Estrategia interministerial de descarbonización pedagógica.   │
+ │ · Ley 8/2018, de 8 de octubre, de medidas frente al cambio climático y      │
+ │   para la transición hacia un nuevo modelo energético en Andalucía.         │
+ └─────────────────────────────────────────────────────────────────────────────┘</div>
+<h3 class="subsection-title">4.2. Enfoques Pedagógicos de la Educación Ambiental: Hacia el Paradigma Ecosocial</h3>
+<p>A lo largo de su evolución se han consolidado distintos paradigmas pedagógicos (<strong>Arthur Lucas, 1972; Lucie Sauvé, 2005; María Novo, 2006</strong>):</p>
+<div class="num-item"><strong>1.</strong> <strong>La Trilogía de Arthur Lucas (1972)</strong>:</div>
+<ul><li><em>Educación SOBRE el Medio</em>: Enfoque cognitivo e informativo centrado en el conocimiento científico de los ciclos biogeoquímicos y ecosistemas.</li></ul>
+<ul><li><em>Educación EN el Medio</em>: Enfoque vivencial y sensorial donde la naturaleza actúa como aula abierta y recurso didáctico directo.</li></ul>
+<ul><li><em>Educación PARA el Medio</em>: Enfoque axiológico y teleológico orientado a la conservación, la ética cívica y la movilización transformadora ciudadana.</li></ul>
+<div class="num-item"><strong>2.</strong> <strong>Enfoque Conservacionista y Tecnocéntrico</strong>:</div>
+<ul><li>Limita la educación a la recogida selectiva de basuras y la fascinación por especies animales exóticas, o confía ingenuamente en que la tecnología resolverá por sí sola el colapso ecológico sin alterar los patrones hiperconsumistas de la sociedad de mercado.</li></ul>
+<div class="num-item"><strong>3.</strong> <strong>Enfoque Ecosocial, Crítico y Emancipador (Pedagogía de la Sostenibilidad)</strong>:</div>
+<ul><li>Paradigma asumido por la Educación Social contemporánea (<strong>Yayo Herrero, 2015; Vandana Shiva, 2005</strong>). Parte de dos verdades ecológicas insoslayables:</li></ul>
+<ul><li><strong>Ecodependencia</strong>: La vida humana es biológicamente imposible al margen de los límites y ciclos de la biosfera. Somos naturaleza encarnada.</li></ul>
+<ul><li><strong>Interdependencia</strong>: Ningún ser humano sobrevive sin los cuidados ajenos recibidos en la infancia, vejez o enfermedad.</li></ul>
+<ul><li><strong>Huella Ecológica (William Rees y Mathis Wackernagel, 1996)</strong>: Medida del impacto humano sobre la biocapacidad del planeta. La educación ecosocial cuestiona el crecimiento económico exponencial en un planeta con límites físicos evidentes, promoviendo el consumo de proximidad, la justicia climática y la sobriedad comunitaria.</li></ul>
+<h3 class="subsection-title">4.3. Metodologías Prácticas de Educación Ambiental en la Comunidad</h3>
+<ul><li><strong>Huertos Urbanos Comunitarios</strong>: Aulas abiertas de soberanía alimentaria, compostaje doméstico de materia orgánica, contacto intergeneracional y terapia psicosocial al aire libre.</li></ul>
+<ul><li><strong>Auditorías Ambientales Ciudadanas</strong>: Mapeo participativo barrial de puntos negros de vertidos, derroche lumínico o déficit de arbolado, elevando propuestas formales al pleno municipal.</li></ul>
+<ul><li><strong>Custodia del Territorio y Reforestación Comunitaria</strong>: Participación directa de menores y familias en la plantación de especies arbóreas autóctonas y el desbroce ecológico de senderos y márgenes fluviales.</li></ul>
+<hr class="divider" />
+<h2 class="section-title">5. El Papel del Educador/a Social en el Excmo. Ayuntamiento de Utrera</h2>
+<h3 class="subsection-title">5.1. El Centro de Servicios Sociales Comunitarios (CSSC) de Utrera</h3>
+<p>En el organigrama del <strong>Excmo. Ayuntamiento de Utrera</strong>, el/la Técnico/a Medio de Educación Social (A2) ejerce sus funciones desde el <strong>Centro de Servicios Sociales Comunitarios (CSSC)</strong>, situado en la <strong>calle Catalina de Perea, nº 32</strong>:</p>
+<ul><li>Los programas de valores no se conciben como charlas pasivas de aula, sino como una <strong>estrategia transversal de desarrollo comunitario e inclusión participativa</strong>, articulada con la <strong>Agenda Urbana Utrera 2030</strong> y el compromiso de Utrera en la <strong>Asociación Internacional de Ciudades Educadoras (AICE)</strong>.</li></ul>
+<div class="ascii-box">                    CIRCUITO SOCIOEDUCATIVO EN VALORES EN UTRERA
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ SEDE CENTRAL: CSSC Utrera (calle Catalina de Perea, 32):                    │
+ │ · Coordinación transversal: Servicios Sociales, Igualdad y Medio Ambiente.   │
+ │ · Equipo de Tratamiento Familiar (ETF - Decreto 100/2022): Coeducación y    │
+ │   crianza positiva no violenta en el domicilio familiar.                    │
+ ├──────────────────────────────────────┬──────────────────────────────────────┤
+                                        │ Intervención territorializada
+                                        ▼
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ BARRIADA EL TINTE - PLAN LOCAL ERACIS+ (Centro Cívico El Tinte):            │
+ │ · Huerto Ecosocial Intergeneracional: Espacio de convivencia intercultural.  │
+ │ · Talleres de Nuevas Masculinidades y desmontaje de micromachismos en redes.│
+ │ · Círculos restaurativos de resolución pacífica de conflictos vecinales.     │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ PATRIMONIO NATURAL Y RESERVAS ECOLÓGICAS DE UTRERA:                         │
+ │ · Reserva Natural Complejo Endorreico de Utrera (Zarracatín, Arjona y       │
+ │   Alcaparrosa - Sitio Ramsar): Aulas de naturaleza y sensibilización hídrica│
+ │ · Parque de Consolación, Pinar de Doña y Cañada Real de Utrera:             │
+ │   Custodia del territorio, reforestaciones juveniles y ocio verde activo.   │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ PEDANÍAS RURALES: Guadalema de los Quintero, Trajano y Pinzón               │
+ │ · Talleres de agroecología, reducción de plásticos y cuidado del agua.      │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ RED EDUCATIVA MUNICIPAL (IES Ruiz Gijón, Ponce de León, Virgen Consolación; │
+ │ CEIP Rodrigo Caro, Álvarez Quintero, Coca de la Piñera...): EMAE y Mediación│
+ └─────────────────────────────────────────────────────────────────────────────┘</div>
+<h3 class="subsection-title">5.2. Convivencia, Mediación y Coeducación en Utrera</h3>
+<div class="num-item"><strong>1.</strong> <strong>Red Municipal de Mediación entre Iguales</strong>:</div>
+<ul><li>En coordinación con los institutos de secundaria (<strong>IES Ruiz Gijón, IES Ponce de León e IES Virgen de Consolación</strong>), el Educador/a Social forma a grupos de adolescentes mediadores, canalizando conflictos de convivencia y absentismo en estrecha colaboración con el <strong>Equipo Municipal de Absentismo (EMAE)</strong>.</li></ul>
+<div class="num-item"><strong>2.</strong> <strong>Coeducación con el Centro Municipal de Información a la Mujer (CMIM)</strong>:</div>
+<ul><li>Talleres de prevención de la ciberviolencia y el control digital en parejas jóvenes de Utrera, promoviendo masculinidades cuidadoras y deconstruyendo el mito del amor romántico dependiente.</li></ul>
+<div class="num-item"><strong>3.</strong> <strong>Resolución Restaurativa en la Barriada El Tinte (ERACIS+)</strong>:</div>
+<ul><li>Círculos de paz vecinales que resuelven litigios de convivencia entre comunidades de vecinos, fomentando el respeto mutuo entre familias gitanas, población autóctona y colectivos migrantes.</li></ul>
+<h3 class="subsection-title">5.3. Pedagogía Ecosocial y Custodia del Patrimonio Natural de Utrera</h3>
+<p>El término municipal de Utrera atesora un capital natural de excepcional valor ecológico que el Educador/a Social dinamiza formativamente:</p>
+<ul><li><strong>Reserva Natural del Complejo Endorreico de Utrera</strong>:</li></ul>
+<p>Formado por las <strong>lagunas de Zarracatín, Arjona y Alcaparrosa</strong>, amparadas por la Ley 2/1989 de Espacios Protegidos de Andalucía y el Convenio de Ramsar. Constituye un ecosistema salino estacional de alto valor biológico para la avifauna (flamenco común, malvasía cabeciblanca). El Educador/a Social lidera itinerarios de sensibilización ecosocial con jóvenes en riesgo, reflexionando sobre la escasez del agua y el cambio climático en la comarca de La Campiña.</p>
+<ul><li><strong>El Parque de Consolación y el Pinar de Doña</strong>:</li></ul>
+<p>Espacios verdes periurbanos donde se organizan jornadas de voluntariado ambiental juvenil, recogida comunitaria de plásticos y plantación de flora mediterránea autóctona.</p>
+<ul><li><strong>Pedanías Agrícolas (Guadalema de los Quintero, Trajano y Pinzón)</strong>:</li></ul>
+<p>Talleres itinerantes sobre agroecología, gestión de envases fitosanitarios y custodia de los canales de riego del Bajo Guadalquivir.</p>
+<hr class="divider" />
+<h2 class="section-title">6. Secciones Pedagógicas de Cierre</h2>
+<h3 class="subsection-title">A. 25 Datos de Examen (Memorización Directa para Tribunal)</h3>
+<div class="exam-item"><strong>1.</strong> <strong>Axiología pedagógica</strong>: Estudio sistemático de los valores; caracterizados por su <strong>polaridad, jerarquía e inagotabilidad</strong> (<strong>Max Scheler</strong>).</div>
+<div class="exam-item"><strong>2.</strong> <strong>Jean Piaget (1932)</strong>: Obra <em>El criterio moral en el niño</em>; divide el desarrollo moral en <strong>Heterónomo</strong> (<7 años, realismo moral) y <strong>Autónomo</strong> (>8-10 años, cooperación).</div>
+<div class="exam-item"><strong>3.</strong> <strong>Lawrence Kohlberg (1981)</strong>: <strong>3 niveles (Preconvencional, Convencional y Posconvencional) y 6 estadios</strong> del juicio moral basado en la justicia.</div>
+<div class="exam-item"><strong>4.</strong> <strong>Dilema de Heinz</strong>: Instrumento metodológico clásico de Kohlberg para evaluar el nivel de razonamiento moral.</div>
+<div class="exam-item"><strong>5.</strong> <strong>Comunidad Justa</strong>: Modelo kohlbergiano de autogobierno democrático y asambleario escolar y residencial.</div>
+<div class="exam-item"><strong>6.</strong> <strong>Carol Gilligan (1982)</strong>: Obra <em>In a Different Voice</em>; formula la <strong>Ética del Cuidado (<em>Ethics of Care</em>)</strong> frente al sesgo masculino de justicia formal.</div>
+<div class="exam-item"><strong>7.</strong> <strong>James Rest (1986)</strong>: Modelo de 4 componentes (Sensibilidad, Juicio, Motivación y Carácter moral) y test DIT (<em>Defining Issues Test</em>).</div>
+<div class="exam-item"><strong>8.</strong> <strong>Clarificación de Valores</strong>: Metodología de <strong>Raths, Harmin y Simon (1966)</strong> en 3 etapas: Elección, Estimación y Actuación.</div>
+<div class="exam-item"><strong>9.</strong> <strong>Construcción Dialógica de la Personalidad Moral</strong>: Paradigma de <strong>Josep Maria Puig Rovira y Miquel Martínez</strong>.</div>
+<div class="exam-item"><strong>10.</strong> <strong>Aprendizaje-Servicio (ApS)</strong>: Metodología pedagógica que fusiona aprendizaje curricular/ético con un servicio solidario a la comunidad.</div>
+<div class="exam-item"><strong>11.</strong> <strong>Art. 1.1 y 14 CE</strong>: La igualdad como valor superior del ordenamiento y derecho fundamental que prohíbe cualquier discriminación.</div>
+<div class="exam-item"><strong>12.</strong> <strong>Art. 9.2 CE</strong>: Mandato a los poderes públicos de remover obstáculos para lograr la <strong>igualdad real y efectiva</strong>.</div>
+<div class="exam-item"><strong>13.</strong> <strong>Ley Orgánica 3/2007</strong>: Marco estatal para la igualdad efectiva de mujeres y hombres y transversalidad de género (<em>gender mainstreaming</em>).</div>
+<div class="exam-item"><strong>14.</strong> <strong>Ley 12/2007 de Andalucía</strong>: Promoción de la igualdad de género en Andalucía (modificada por Ley 9/2018).</div>
+<div class="exam-item"><strong>15.</strong> <strong>Paradoja de la Tolerancia</strong>: Formulada por <strong>Karl Popper (1945)</strong>: la tolerancia ilimitada conduce a la destrucción de la tolerancia por los intolerantes.</div>
+<div class="exam-item"><strong>16.</strong> <strong>Declaración de Principios sobre la Tolerancia (UNESCO, 1995)</strong>: La tolerancia como actitud activa de reconocimiento de los derechos humanos.</div>
+<div class="exam-item"><strong>17.</strong> <strong>Johan Galtung (1969, 1996)</strong>: Padre de la Irenología; formula la diferencia entre <strong>Paz Negativa</strong> (ausencia de guerra) y <strong>Paz Positiva</strong> (justicia social y equidad).</div>
+<div class="exam-item"><strong>18.</strong> <strong>Triángulo de la Violencia de Galtung</strong>: <strong>Violencia Directa</strong> (visible), <strong>Violencia Estructural</strong> (injusticia social) y <strong>Violencia Cultural</strong> (simbólica).</div>
+<div class="exam-item"><strong>19.</strong> <strong>Declaración de Sevilla sobre la Violencia (UNESCO, 1986)</strong>: Concluye que la violencia humana no está genéticamente predeterminada.</div>
+<div class="exam-item"><strong>20.</strong> <strong>Comunicación No Violenta (CNV)</strong>: Técnica de <strong>Marshall Rosenberg (1999)</strong>: Hechos, Sentimientos, Necesidades y Peticiones.</div>
+<div class="exam-item"><strong>21.</strong> <strong>Arthur Lucas (1972)</strong>: Tres dimensiones de la educación ambiental: Educación <strong>sobre</strong>, <strong>en</strong> y <strong>para</strong> el medio ambiente.</div>
+<div class="exam-item"><strong>22.</strong> <strong>Hitos Internacionales de Educación Ambiental</strong>: Estocolmo 1972, Carta de Belgrado 1975, Tbilisi 1977, Río 1992 y ODS 4.7 (Agenda 2030).</div>
+<div class="exam-item"><strong>23.</strong> <strong>Ley 7/2021 de Cambio Climático y PAEAS (2021-2025)</strong>: Marco normativo estatal para la transición energética y educación ecosocial.</div>
+<div class="exam-item"><strong>24.</strong> <strong>Complejo Endorreico de Utrera</strong>: Reserva Natural formada por las <strong>lagunas de Zarracatín, Arjona y Alcaparrosa</strong>, humedal Ramsar clave de Andalucía.</div>
+<div class="exam-item"><strong>25.</strong> <strong>Ubicación de Servicios Sociales en Utrera</strong>: Centro de Servicios Sociales Comunitarios en <strong>calle Catalina de Perea, nº 32</strong>.</div>
+<hr class="divider" />
+<h3 class="subsection-title">B. Esquema Sinóptico de Repaso Rápido</h3>
+<div class="ascii-box">                                  EDUCACIÓN EN VALORES Y PEDAGOGÍA DEL VALOR
+                                                       │
+        ┌──────────────────────────────────────────────┼──────────────────────────────────────────────┐
+        ▼                                              ▼                                              ▼
+DESARROLLO MORAL Y AXIOLOGÍA                   IGUALDAD Y TOLERANCIA ACTIVA                   CULTURA DE PAZ Y NO VIOLENCIA
+· Axiología (Scheler/Gervilla):                · Art. 1.1, 14 y 9.2 CE (Igualdad real).       · Irenología (Johan Galtung):
+  Polaridad, jerarquía, inagotabilidad.        · LO 3/2007 e Igualdad Andaluza (L. 12/2007).    - Paz Negativa vs. Paz Positiva.
+· Modelos evolutivos:                          · Coeducación: Desmontaje de roles machistas     - Triángulo de la Violencia:
+  - Piaget (Heterónoma -&gt; Autónoma).             y nuevas masculinidades cuidadoras.              Directa, Estructural, Cultural.
+  - Kohlberg (Pre, Convencional, Pos).         · Paradoja de Karl Popper: La tolerancia       · No Violencia: Gandhi y King.
+  - Gilligan (Ética del Cuidado).                ilimitada destruye la tolerancia; el límite  · Declaración de Sevilla (UNESCO 1986).
+· Ética de Mínimos vs. Máximos (Cortina).        son los derechos humanos universales.        · CNV (Marshall Rosenberg):
+· Metodología: Clarificación, Dilemas          · Discriminación Interseccional (Crenshaw)       Hecho -&gt; Sentimiento -&gt; Necesidad -&gt; Petición.
+  morales, Construcción dialógica (Puig          y Ley 4/2023 (Derechos LGTBI).               · Resolución de Conflictos: Thomas-Kilmann,
+  Rovira) y Aprendizaje-Servicio (ApS).        · UNESCO (1995): Tolerancia activa.              Mediación socioeducativa y Justicia Restaurativa.
+        │                                              │                                              │
+        └──────────────────────────────────────────────┼──────────────────────────────────────────────┘
+                                                       │
+                                                       ▼
+                                   EDUCACIÓN AMBIENTAL Y SOSTENIBILIDAD ECOSOCIAL
+ · Hitos: Estocolmo 1972 -&gt; Carta de Belgrado 1975 -&gt; Tbilisi 1977 -&gt; Cumbre de Río 1992 (Agenda 21).
+ · Agenda 2030: Meta 4.7 ODS 4; Ley 7/2021 de Cambio Climático y PAEAS (2021-2025); Ley 8/2018 de Andalucía.
+ · Trilogía de Lucas (1972): Educación SOBRE, EN y PARA el medio ambiente.
+ · Paradigma Ecosocial Crítico: Ecodependencia e interdependencia (Yayo Herrero); Huella Ecológica (Rees/Wackernagel).
+ · Metodologías: Huertos urbanos comunitarios, auditorías ambientales ciudadanas y custodia del territorio.
+                                                       │
+                                                       ▼
+                         INTERVENCIÓN DEL EDUCADOR/A SOCIAL EN EL AYTO. DE UTRERA
+ · Centro de Servicios Sociales Comunitarios (CSSC en calle Catalina de Perea, nº 32).
+ · Coeducación y Prevención: Coordinación con CMIM Utrera y talleres de nuevas masculinidades en IES.
+ · Convivencia Escolar: Equipos de Mediación entre Iguales en IES Ruiz Gijón, Ponce de León y EMAE.
+ · Transformación Comunitaria: Barriada El Tinte (ERACIS+) - Huerto Ecosocial y círculos restaurativos.
+ · Custodia Ambiental de Utrera: Reserva Natural Complejo Endorreico (Zarracatín, Arjona, Alcaparrosa) y Parque Consolación.
+ · Pedanías Rurales: Agroecología y sostenibilidad comunitaria en Guadalema de los Quintero, Trajano y Pinzón.</div>
+<hr class="divider" />
+<h3 class="subsection-title">C. 7 Trampas Clásicas del Test Desarticuladas</h3>
+<div class="exam-item"><strong>1.</strong> <strong>Trampa</strong>: <em>Según Lawrence Kohlberg, la inmensa mayoría de la población adulta alcanza de forma natural el Estadio 6 del nivel posconvencional durante su madurez biológica.</em></div>
+<ul><li><strong>Desarticulación</strong>: Falso. Las investigaciones empíricas de Kohlberg demostraron que la mayoría de los adultos se estabilizan en el nivel <strong>Convencional (Estadios 3 y 4)</strong>, y solo una minoría reducida alcanza el nivel Posconvencional (Estadio 5 y excepcionalmente el Estadio 6). El desarrollo moral no es un proceso biológico madurativo automático, sino una construcción socioeducativa mediada por el conflicto cognitivo y el diálogo.</li></ul>
+<div class="exam-item"><strong>2.</strong> <strong>Trampa</strong>: <em>Carol Gilligan consideró que la teoría del desarrollo moral de Kohlberg era plenamente universal y aplicable con idéntica validez científica a hombres y mujeres.</em></div>
+<ul><li><strong>Desarticulación</strong>: Falso. Gilligan demostró que la teoría de Kohlberg presentaba un profundo sesgo androcéntrico al haber sido construida sobre muestras exclusivamente masculinas, jerarquizando la justicia formal abstracta por encima de la <strong>Ética del Cuidado (<em>Ethics of Care</em>)</strong>, que valora los vínculos, la empatía relacional y la protección a los vulnerables.</li></ul>
+<div class="exam-item"><strong>3.</strong> <strong>Trampa</strong>: <em>La tolerancia como valor cívico democrático exige admitir y respetar de manera incondicionada cualquier manifestación ideológica, incluidos los discursos fascistas, machistas y racistas.</em></div>
+<ul><li><strong>Desarticulación</strong>: Falso. Conforme a la <strong>Paradoja de la Tolerancia de Karl Popper</strong>, la tolerancia no puede ser ilimitada; una sociedad que tolera a los intolerantes termina destruyendo las bases de la convivencia libre. El límite ético e institucional irrebasable de la tolerancia son los derechos humanos, la no discriminación y la no violencia.</li></ul>
+<div class="exam-item"><strong>4.</strong> <strong>Trampa</strong>: <em>En la taxonomía de Johan Galtung, la mera firma de un armisticio, un alto el fuego o la ausencia temporal de enfrentamientos armados directos constituye una situación de Paz Positiva.</em></div>
+<ul><li><strong>Desarticulación</strong>: Falso. La simple ausencia de enfrentamientos bélicos o violencia física directa es <strong>Paz Negativa</strong>. La <strong>Paz Positiva</strong> exige la erradicación de la violencia estructural y cultural, requiriendo justicia social, satisfacción de necesidades humanas básicas, equidad y cohesión democrática.</li></ul>
+<div class="exam-item"><strong>5.</strong> <strong>Trampa</strong>: <em>La Declaración de Sevilla sobre la Violencia de 1986 afirmó que el ser humano tiene instintos genéticamente predeterminados para la agresividad y la guerra.</em></div>
+<ul><li><strong>Desarticulación</strong>: Falso. La Declaración de Sevilla (UNESCO, 1986) sentenció científicamente lo contrario: es científicamente incorrecto decir que la guerra está inscrita en la naturaleza biológica humana; la violencia es un producto cultural aprendido y, en consecuencia, puede ser erradicado educativamente.</li></ul>
+<div class="exam-item"><strong>6.</strong> <strong>Trampa</strong>: <em>En el proceso de mediación socioeducativa, el mediador actúa como árbitro judicial emitiendo un laudo vinculante con la sanción económica o disciplinaria correspondiente a la parte culpable.</em></div>
+<ul><li><strong>Desarticulación</strong>: Falso. El mediador/a <strong>jamás juzga, arbitra ni impone sanciones o soluciones</strong>. Es un tercero neutral que facilita la comunicación entre las partes para que sean ellas mismas quienes alcancen un acuerdo mutuo voluntario y restablezcan el vínculo convivencial.</li></ul>
+<div class="exam-item"><strong>7.</strong> <strong>Trampa</strong>: <em>El Aprendizaje-Servicio (ApS) es una actividad extraescolar de beneficencia caritativa independiente de los objetivos curriculares y pedagógicos.</em></div>
+<ul><li><strong>Desarticulación</strong>: Falso. El ApS es una <strong>metodología pedagógica formal</strong> que vincula intencionalmente los aprendizajes curriculares y formativos con un servicio solidario estructurado y reflexivo a la comunidad.</li></ul>
+<hr class="divider" />
+<h3 class="subsection-title">D. Supuesto Práctico Modal en el Ayuntamiento de Utrera</h3>
+<h4 class="subsubsection-title">Planteamiento del Caso</h4>
+<p>El equipo directivo del <strong>IES Ruiz Gijón</strong> y la presidencia de la Asociación Vecinal de la <strong>Barriada El Tinte</strong> trasladan su preocupación al <strong>Centro de Servicios Sociales Comunitarios (CSSC)</strong> del Excmo. Ayuntamiento de Utrera (<strong>calle Catalina de Perea, nº 32</strong>). Se ha detectado un repunte severo de conflictividad relacional entre adolescentes del barrio:</p>
+<ul><li>Proliferación de <strong>micromachismos y ciberviolencia de control</strong> en parejas jóvenes a través de redes sociales (Instagram, TikTok, WhatsApp), normalizando los celos posesivos y la invasión de la privacidad.</li></ul>
+<ul><li>Actitudes de <strong>intolerancia y microrracismos cruzados</strong> entre jóvenes de etnia gitana, población autóctona y menores migrantes en las plazas y canchas deportivas de la barriada.</li></ul>
+<ul><li>Deterioro vandálico recurrente de las zonas verdes y parques infantiles del barrio, con acumulación de residuos plásticos, quema de contenedores y desconexión afectiva hacia el patrimonio natural de Utrera.</li></ul>
+<p>El Ayuntamiento encomienda al Técnico/a Medio de Educación Social (A2) el diseño e implementación de un <strong>Proyecto de Intervención Comunitaria en Valores</strong> bajo la metodología del Aprendizaje-Servicio (ApS), denominado: <em>"Utrera Convivencia Ecosocial: Igualdad, Paz y Custodia del Territorio"</em>.</p>
+<h4 class="subsubsection-title">Intervención Técnica del Educador/a Social del Ayuntamiento de Utrera</h4>
+<div class="ascii-box">                  PLAN OPERATIVO DE INTERVENCIÓN TÉCNICA
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ FASE 1: DIAGNÓSTICO PARTICIPATIVO Y MAPEO DE ACTIVOS (Mes 1)                │
+ │ · Entrevistas con IES Ruiz Gijón, CEIP Álvarez Quintero, Centro Cívico El   │
+ │   Tinte y Centro Municipal de Información a la Mujer (CMIM).                │
+ │ · Grupos focales con jóvenes líderes gitanos, migrantes y autóctonos.       │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ FASE 2: COEDUCACIÓN Y COMUNICACIÓN NO VIOLENTA (Meses 2 y 3)                │
+ │ · Talleres de Nuevas Masculinidades y desmontaje de mitos del amor romántico│
+ │   en el IES Ruiz Gijón y Centro Cívico El Tinte.                            │
+ │ · Entrenamiento en Comunicación No Violenta (CNV de Rosenberg) y creación   │
+ │   de la RED MUNICIPAL DE ALUMNADO MEDIADOR ENTRE IGUALES.                   │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ FASE 3: ACCIÓN ECOSOCIAL EN APRENDIZAJE-SERVICIO (Meses 4 y 5)              │
+ │ · Creación del "Huerto Ecosocial Intergeneracional El Tinte": trabajo       │
+ │   compartido entre jóvenes en conflicto y personas mayores del barrio.      │
+ │ · Jornada de Custodia del Territorio en la Reserva Natural del COMPLEJO     │
+ │   ENDORREICO DE UTRERA (Laguna de Zarracatín): limpieza de residuos,        │
+ │   observación de avifauna y concienciación sobre el estrés hídrico.         │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ FASE 4: EVALUACIÓN COMUNITARIA Y FESTIVAL DE LA CONVIVENCIA (Mes 6)         │
+ │ · Círculos de diálogo restaurativo para evaluar la reducción de agresiones. │
+ │ · Jornada pública comunitaria: presentación de la guía de convivencia joven │
+ │   y reparto de cosechas del huerto a comedores sociales locales.            │
+ └─────────────────────────────────────────────────────────────────────────────┘</div>
+<div class="num-item"><strong>1.</strong> <strong>Fase 1: Diagnóstico Comunitario Participativo (Mes 1)</strong>:</div>
+<ul><li>El Educador/a Social convoca una mesa de coordinación técnica en la sede de Catalina de Perea con el departamento de orientación del IES Ruiz Gijón, el <strong>Equipo Municipal de Absentismo (EMAE)</strong>, el CMIM y el equipo del <strong>Plan Local ERACIS+</strong>. Se realiza un mapeo socioeducativo de activos en El Tinte, identificando a los jóvenes con mayor liderazgo informal para sumarlos como agentes de cambio.</li></ul>
+<div class="num-item"><strong>2.</strong> <strong>Fase 2: Bloque de Igualdad, Tolerancia y Educación para la Paz (Meses 2 y 3)</strong>:</div>
+<ul><li><em>Coeducación</em>: Talleres experienciales sobre ciberviolencia y relaciones de buentrato, desmontando la ecuación "celos = amor" y fomentando modelos de masculinidad no hegemónica, corresponsable y no violenta.</li></ul>
+<ul><li><em>Irenología y Mediación</em>: Formación de 20 jóvenes mediadores entre iguales en el IES Ruiz Gijón mediante la metodología de la CNV (Marshall Rosenberg). Se constituyen los "Puntos de Paz" en los recreos y en el Centro Cívico El Tinte, resolviendo pacíficamente pequeños conflictos cotidianos mediante círculos restaurativos.</li></ul>
+<div class="num-item"><strong>3.</strong> <strong>Fase 3: Bloque Ecosocial en Aprendizaje-Servicio (Meses 4 y 5)</strong>:</div>
+<ul><li><em>Huerto Ecosocial de El Tinte</em>: Transformación de un solar municipal degradado contiguo al Centro Cívico en un huerto ecológico comunitario. Los jóvenes que antes protagonizaban actos vandálicos aprenden técnicas de compostaje, siembra y riego eficiente guiados por personas mayores jubiladas de la barriada, propiciando un encuentro intergeneracional e intercultural sin precedentes.</li></ul>
+<ul><li><em>Custodia Ecosistémica en el Complejo Endorreico de Utrera</em>: Salida formativa y de servicio a la <strong>Reserva Natural de las lagunas de Zarracatín y Arjona</strong>, coordinada con la Delegación de Medio Ambiente del Ayuntamiento. Los jóvenes realizan una recogida selectiva de plásticos en la Cañada Real, instalan cartelería pedagógica diseñada por ellos mismos y comprenden vivencialmente el impacto del cambio climático en la avifauna de su propio municipio.</li></ul>
+<div class="num-item"><strong>4.</strong> <strong>Fase 4: Evaluación y Transferencia Comunitaria (Mes 6)</strong>:</div>
+<ul><li>A través de la evaluación continua se constata: reducción del 75% en partes disciplinarios por violencia verbal en el IES Ruiz Gijón, cese total de actos vandálicos en el parque de El Tinte y consolidación de la red de mediadores juveniles. El proyecto culmina con una fiesta de la convivencia en la plaza central de El Tinte, donde se reparte la cosecha ecológica a familias vulnerables y se entrega a los participantes el certificado municipal de competencias socioambientales.</li></ul>
+<hr class="divider" />
+<h3 class="subsection-title">E. Fuentes Oficiales y Bibliografía Consolidada</h3>
+<ul><li><strong>Cortina, A.</strong> (1996). <em>El quehacer ético: Guía para la educación moral</em>. Santillana.</li></ul>
+<ul><li><strong>Cortina, A.</strong> (2017). <em>Aporofobia, el rechazo al pobre: Un desafío para la sociedad democrática</em>. Paidós.</li></ul>
+<ul><li><strong>Freire, P.</strong> (1970). <em>Pedagogía del oprimido</em>. Siglo XXI Editores.</li></ul>
+<ul><li><strong>Galtung, J.</strong> (1996). <em>Peace by Peaceful Means: Peace and Conflict, Development and Civilization</em>. SAGE Publications.</li></ul>
+<ul><li><strong>Gervilla Castillo, E.</strong> (2003). <em>Educación familiar: Nuevas relaciones humanas y humanizadoras</em>. Narcea.</li></ul>
+<ul><li><strong>Gilligan, C.</strong> (1982). <em>In a Different Voice: Psychological Theory and Women's Development</em>. Harvard University Press.</li></ul>
+<ul><li><strong>Herrero, Y.</strong> (2015). <em>Apuntes sobre ecofeminismo</em>. Boletín ECOS nº 30, CIP-Ecosocial.</li></ul>
+<ul><li><strong>Jares, X. R.</strong> (1999). <em>Educación para la paz: Su teoría y su práctica</em>. Editorial Popular.</li></ul>
+<ul><li><strong>Junta de Andalucía</strong>. (2007). <em>Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía</em>. BOJA nº 247, de 18 de diciembre de 2007.</li></ul>
+<ul><li><strong>Junta de Andalucía</strong>. (2018). <em>Ley 8/2018, de 8 de octubre, de medidas frente al cambio climático y para la transición hacia un nuevo modelo energético en Andalucía</em>. BOJA nº 200, de 16 de octubre de 2018.</li></ul>
+<ul><li><strong>Kohlberg, L.</strong> (1981). <em>Essays on Moral Development: Vol. I. The Philosophy of Moral Development</em>. Harper & Row.</li></ul>
+<ul><li><strong>Ministerio para la Transición Ecológica</strong>. (2021). <em>Plan de Acción de Educación Ambiental para la Sostenibilidad (PAEAS 2021-2025)</em>. Gobierno de España.</li></ul>
+<ul><li><strong>Novo, M.</strong> (2006). <em>El desarrollo sostenible: Su dimensión ambiental y educativa</em>. Pearson Educación / UNESCO.</li></ul>
+<ul><li><strong>Piaget, J.</strong> (1932). <em>Le jugement moral chez l'enfant</em>. Félix Alcan.</li></ul>
+<ul><li><strong>Popper, K.</strong> (1945). <em>The Open Society and Its Enemies</em>. Routledge.</li></ul>
+<ul><li><strong>Puig Rovira, J. M.</strong> (1996). <em>La construcción de la personalidad moral</em>. Editorial Paidós.</li></ul>
+<ul><li><strong>Reino de España</strong>. (2007). <em>Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres</em>. BOE nº 71, de 23 de marzo de 2007.</li></ul>
+<ul><li><strong>Reino de España</strong>. (2021). <em>Ley 7/2021, de 20 de mayo, de cambio climático y transición energética</em>. BOE nº 121, de 21 de mayo de 2021.</li></ul>
+<ul><li><strong>Rosenberg, M. B.</strong> (1999). <em>Nonviolent Communication: A Language of Life</em>. PuddleDancer Press.</li></ul>
+<ul><li><strong>Scheler, M.</strong> (1916). <em>Der Formalismus in der Ethik und die materiale Wertethik</em>. Max Niemeyer.</li></ul>
+<ul><li><strong>Shiva, V.</strong> (2005). <em>Earth Democracy: Justice, Sustainability, and Peace</em>. South End Press.</li></ul>
+<ul><li><strong>UNESCO</strong>. (1986). <em>Declaración de Sevilla sobre la Violencia</em>. 25ª reunión de la Conferencia General de la UNESCO.</li></ul>
+<ul><li><strong>UNESCO</strong>. (1995). <em>Declaración de Principios sobre la Tolerancia</em>. Conferencia General de la UNESCO.</li></ul>
+
+</body>
+</html>

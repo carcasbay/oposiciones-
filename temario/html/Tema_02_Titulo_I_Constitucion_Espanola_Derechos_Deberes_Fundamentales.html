@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tema 02: Título I de la Constitución Española</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 18mm 16mm 18mm 16mm;
+            @bottom-right {
+                content: counter(page);
+                font-family: 'Segoe UI', Arial, sans-serif;
+                font-size: 9pt;
+                color: #555;
+            }
+            @bottom-left {
+                content: "Oposiciones Utrera - Técnico/a Medio Educación Social (A2)";
+                font-family: 'Segoe UI', Arial, sans-serif;
+                font-size: 9pt;
+                color: #777;
+            }
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #222;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-card {
+            border-bottom: 2px solid #8c1d1d;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        .badge-bar {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .badge {
+            background: #ffebee;
+            color: #b71c1c;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 7.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px solid #ffcdd2;
+        }
+
+        .badge-secondary {
+            background: #e3f2fd;
+            color: #0d47a1;
+            border-color: #bbdefb;
+        }
+
+        .doc-title {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 17pt;
+            font-weight: 800;
+            color: #8c1d1d;
+            line-height: 1.25;
+            margin: 0 0 10px 0;
+            text-align: left;
+        }
+
+        .section-title {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 12.5pt;
+            font-weight: 700;
+            color: #8c1d1d;
+            border-left: 4px solid #8c1d1d;
+            padding-left: 8px;
+            margin-top: 22px;
+            margin-bottom: 10px;
+            page-break-after: avoid;
+        }
+
+        .subsection-title {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 11pt;
+            font-weight: 700;
+            color: #b71c1c;
+            margin-top: 16px;
+            margin-bottom: 6px;
+            page-break-after: avoid;
+        }
+
+        .subsubsection-title {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 10pt;
+            font-weight: 700;
+            color: #333;
+            margin-top: 12px;
+            margin-bottom: 4px;
+            page-break-after: avoid;
+        }
+
+        p {
+            margin: 0 0 8px 0;
+            text-align: justify;
+        }
+
+        strong {
+            color: #7f0000;
+            font-weight: 700;
+        }
+
+        ul, ol {
+            margin: 4px 0 10px 20px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 4px;
+            text-align: justify;
+        }
+
+        .divider {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 18px 0;
+        }
+
+        .table-container {
+            margin: 12px 0;
+            page-break-inside: avoid;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 8.5pt;
+        }
+
+        th {
+            background-color: #8c1d1d;
+            color: #fff;
+            font-weight: 700;
+            padding: 7px 9px;
+            border: 1px solid #701010;
+            text-align: left;
+        }
+
+        td {
+            padding: 6px 9px;
+            border: 1px solid #dcdcdc;
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fffafb;
+        }
+
+        .code-card {
+            background: #fff8f8;
+            border: 1px solid #ebd4d4;
+            border-left: 3.5px solid #8c1d1d;
+            border-radius: 4px;
+            padding: 10px 14px;
+            margin: 12px 0;
+            page-break-inside: avoid;
+        }
+
+        .quote-card {
+            background: #fff3e0;
+            border-left: 4px solid #ef6c00;
+            border-radius: 4px;
+            padding: 8px 12px;
+            margin: 10px 0;
+            font-style: italic;
+            font-size: 9.5pt;
+            color: #5d4037;
+            page-break-inside: avoid;
+        }
+
+        pre {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 8pt;
+            line-height: 1.35;
+            margin: 0;
+            color: #4a1010;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-card">
+        <div class="badge-bar">
+            <span class="badge">Tema 02 - Parte General</span>
+            <span class="badge badge-secondary">Educación Social (A2)</span>
+            <span class="badge">Ayto. de Utrera</span>
+        </div>
+    </div>
+    <h1 class='doc-title'>TEMA 2: TÍTULO I DE LA CONSTITUCIÓN ESPAÑOLA DE 1978: DE LOS DERECHOS Y DEBERES FUNDAMENTALES</h1>
+<p><strong>Programa Oficial</strong>: Oposiciones al Cuerpo de Técnico/a Medio de Educación Social (Subescala Técnica, Grupo A2).  </p>
+<p><strong>Convocatoria</strong>: Excmo. Ayuntamiento de Utrera (Sevilla).  </p>
+<p><strong>Bases</strong>: Boletín Oficial de la Provincia de Sevilla nº 102 (29/05/2026).  </p>
+<p><strong>Normativa Principal</strong>: Constitución Española de 1978 (Título I, arts. 10 a 55, con la reforma del artículo 49 de 15 de febrero de 2024 y del artículo 13.2 de 27 de agosto de 1992); Ley Orgánica 2/1979, de 3 de octubre, del Tribunal Constitucional; Ley Orgánica 3/1981, de 6 de abril, del Defensor del Pueblo; Ley Orgánica 4/1981, de 1 de junio, de los estados de alarma, excepción y sitio.</p>
+<hr class='divider'/>
+<h2 class='section-title'>1. EL TÍTULO I DE LA CONSTITUCIÓN ESPAÑOLA: CONCEPTO, FUNDAMENTO Y ESTRUCTURA GENERAL</h2>
+<h3 class='subsection-title'>1.1. Concepto y Significación Dogmática</h3>
+<p>El Título I de la Constitución Española de 1978 (en adelante, <strong>CE</strong>), rubricado <em>"De los derechos y deberes fundamentales"</em>, constituye el núcleo sustantivo de la denominada parte dogmática del texto constitucional. Abarca del <strong>artículo 10 al artículo 55</strong> y representa la consagración jurídico-positiva del estatuto básico de la persona en el Estado social y democrático de Derecho propugnado por el artículo 1.1 CE.</p>
+<p>En la dogmática constitucional contemporánea, los derechos fundamentales despliegan una <strong>doble dimensión</strong>:</p>
+<ul>
+<li><strong>Dimensión subjetiva</strong>: Garantizan un ámbito de libertad e indemnidad personal frente al poder público y frente a terceros, dotando a sus titulares de facultades de exigencia jurídica directa y accionabilidad procesal.</li>
+<li><strong>Dimensión objetiva</strong>: Operan como componentes estructurales y axiológicos del ordenamiento jurídico general. Vinculan a todos los poderes públicos y condicionan la interpretación de todo el derecho positivo, que debe orientarse a su máxima efectividad.</li>
+</ul>
+<h3 class='subsection-title'>1.2. El Fundamento del Orden Político: La Dignidad Humana (Artículo 10)</h3>
+<p>El <strong>artículo 10</strong> ejerce de pórtico dogmático de todo el Título I, estableciendo las bases ontológicas y hermenéuticas de los derechos humanos:</p>
+<ul>
+<li><strong>Artículo 10.1 (Fundamento de la paz social)</strong>: <em>"La dignidad de la persona, los derechos inviolables que le son inherentes, el libre desarrollo de la personalidad, el respeto a la ley y a los derechos de los demás son fundamento del orden político y de la paz social"</em>.</li>
+<li>La dignidad humana se concibe por el Tribunal Constitucional (STC 53/1985, STC 120/1990) como un <em>prius</em> ético y jurídico, un valor espiritual preexistente que el poder público no otorga, sino que reconoce y tiene el deber insoslayable de respetar y proteger.</li>
+<li>El libre desarrollo de la personalidad constituye el principio motor de la autonomía individual, que veda cualquier intento de paternalismo estatal invasivo.</li>
+<li><strong>Artículo 10.2 (Criterio hermenéutico internacional)</strong>: <em>"Las normas relativas a los derechos fundamentales y a las libertades que la Constitución reconoce se interpretarán de conformidad con la Declaración Universal de Derechos Humanos y los tratados y acuerdos internacionales sobre las mismas materias ratificados por España"</em>.</li>
+<li>No opera como una cláusula de incorporación directa de nuevos derechos materiales al texto constitucional, sino como una <strong>norma obligatoria de apertura hermenéutica e interpretación conforme</strong>.</li>
+<li>Impone a los tribunales y a las Administraciones Públicas el deber de ajustar la interpretación de los preceptos constitucionales a la jurisprudencia del Tribunal Europeo de Derechos Humanos (TEDH) en aplicación del Convenio de Roma de 1950, de la Carta Social Europea, del Pacto Internacional de Derechos Civiles y Políticos, de la Convención sobre los Derechos del Niño (CDN) de 1989 y de la <strong>Convención Internacional sobre los Derechos de las Personas con Discapacidad de 2006</strong>.</li>
+</ul>
+<h3 class='subsection-title'>1.3. Estructura y Sistemática Interna del Título I</h3>
+<p>El Título I está integrado por <strong>46 artículos</strong> articulados formalmente de la siguiente manera:</p>
+<div class='code-card'><pre>
++-------------------------------------------------------------------------+
+|                  ESTRUCTURA SISTEMÁTICA DEL TÍTULO I CE                 |
++-------------------------------------------------------------------------+
+|  • ARTÍCULO 10: Pórtico axiológico y hermenéutica internacional         |
+|  • CAPÍTULO I: De los españoles y los extranjeros (Arts. 11 a 13)       |
+|  • CAPÍTULO II: Derechos y libertades (Arts. 14 a 38)                   |
+|    - Artículo 14: Principio general de igualdad ante la ley             |
+|    - Sección 1ª: De los derechos fundamentales y de las libertades      |
+|                  públicas (Arts. 15 a 29) [Máxima protección]           |
+|    - Sección 2ª: De los derechos y deberes de los ciudadanos            |
+|                  (Arts. 30 a 38) [Protección ordinaria]                 |
+|  • CAPÍTULO III: De los principios rectores de la política social y     |
+|                  económica (Arts. 39 a 52) [Eficacia informadora]       |
+|  • CAPÍTULO IV: De las garantías de las libertades y derechos           |
+|                  fundamentales (Arts. 53 y 54)                          |
+|  • CAPÍTULO V: De la suspensión de los derechos y libertades (Art. 55)  |
++-------------------------------------------------------------------------+
+</pre></div>
+<hr class='divider'/>
+<h2 class='section-title'>2. CAPÍTULO I: DE LOS ESPAÑOLES Y LOS EXTRANJEROS (ARTS. 11 A 13)</h2>
+<p>Este primer capítulo delimita el estatuto personal y las condiciones subjetivas de titularidad de los derechos constitucionales:</p>
+<h3 class='subsection-title'>2.1. La Nacionalidad Española (Artículo 11)</h3>
+<ul>
+<li><strong>Artículo 11.1</strong>: La nacionalidad española se adquiere, se conserva y se pierde de acuerdo con lo establecido por la ley (Código Civil, artículos 17 a 28).</li>
+<li><strong>Artículo 11.2 (Garantía absoluta de origen)</strong>: <em>"Ningún español de origen podrá ser privado de su nacionalidad"</em>. La Constitución prohíbe la sanción de privación de nacionalidad a quienes la ostentan de origen, garantizándoles la indemnidad de su condición de nacionales.</li>
+<li><strong>Artículo 11.3 (Doble nacionalidad)</strong>: El Estado podrá concertar tratados de doble nacionalidad con los países iberoamericanos o con aquellos que hayan tenido o tengan una particular vinculación con España. En estos mismos países, aun cuando no reconozcan a sus ciudadanos un derecho recíproco, podrán naturalizarse los españoles sin perder su nacionalidad de origen.</li>
+</ul>
+<h3 class='subsection-title'>2.2. La Mayoría de Edad (Artículo 12)</h3>
+<p>El <strong>artículo 12</strong> establece con brevedad tajante: <em>"Los españoles son mayores de edad a los dieciocho años"</em>. </p>
+<ul>
+<li>Fija un límite biológico uniforme para la adquisición plena de la capacidad de obrar política y civil, suprimiendo la histórica distinción a los 21 años.</li>
+<li>A partir de las cero horas del día del décimo octavo cumpleaños, se extingue la patria potestad o tutela y se adquiere el sufragio activo y pasivo general (salvo excepciones sectoriales legalmente previstas).</li>
+</ul>
+<h3 class='subsection-title'>2.3. Régimen de Derechos de los Extranjeros, Sufragio, Extradición y Asilo (Artículo 13)</h3>
+<ul>
+<li><strong>Artículo 13.1 (Titularidad de derechos)</strong>: Los extranjeros gozan en España de las libertades públicas que garantiza el Título I en los términos que establezcan los tratados y la ley (Ley Orgánica 4/2000 sobre derechos y libertades de los extranjeros en España). La doctrina del TC (STC 107/1984, STC 236/2007) clasifica los derechos de los extranjeros en tres bloques:</li>
+<li><em>Derechos inherentes a la dignidad humana</em>: Pertenecen por igual a nacionales y extranjeros, independientemente de su situación administrativa regular o irregular (vida, integridad, intimidad, tutela judicial efectiva, libertad ideológica).</li>
+<li><em>Derechos de configuración legal</em>: Su régimen de ejercicio se modula legalmente para extranjeros (reunión, asociación, sindicación, trabajo).</li>
+<li><em>Derechos exclusivos de los nacionales</em>: Derechos de participación política del artículo 23 CE, con la única excepción del sufragio municipal.</li>
+<li><strong>Artículo 13.2 (Derecho de sufragio en elecciones municipales y Reforma de 1992)</strong>:</li>
+<li>Texto original: Reservaba exclusivamente a los españoles el derecho de sufragio en el artículo 23, salvo lo que pudiera establecerse por tratado o ley para el sufragio <em>activo</em> en elecciones municipales bajo reciprocidad.</li>
+<li><strong>Reforma constitucional de 27 de agosto de 1992</strong>: Añadió las palabras <strong>"y pasivo"</strong> para posibilitar la ratificación del Tratado de Maastricht de la Unión Europea. Actualmente, los ciudadanos de la Unión Europea residentes en España (y los de terceros países con tratado bilateral de reciprocidad, como Reino Unido, Colombia, Ecuador, etc.) pueden ser tanto electores (<em>sufragio activo</em>) como elegibles (<em>sufragio pasivo</em>) exclusivamente en las <strong>elecciones municipales</strong>.</li>
+<li><strong>Artículo 13.3 (Extradición)</strong>: La extradición solo se otorgará en cumplimiento de un tratado o de la ley, atendiendo al principio de reciprocidad. <strong>Quedan excluidos de la extradición los delitos políticos</strong>, no considerándose tales los actos de terrorismo.</li>
+<li><strong>Artículo 13.4 (Derecho de asilo)</strong>: La ley establecerá los términos en que los ciudadanos de otros países y los apátridas podrán gozar del derecho de asilo en España (Ley 12/2009 reguladora del derecho de asilo y de la protección subsidiaria).</li>
+</ul>
+<hr class='divider'/>
+<h2 class='section-title'>3. CAPÍTULO II: DERECHOS Y LIBERTADES (ARTS. 14 A 38)</h2>
+<p>El Capítulo II alberga el catálogo formal de los derechos subjetivos clásicos y libertades civiles.</p>
+<h3 class='subsection-title'>3.1. El Principio de Igualdad (Artículo 14)</h3>
+<p>Ubicado como cabecera y pórtico del Capítulo II, el <strong>artículo 14</strong> proclama: <em>"Los españoles son iguales ante la ley, sin que pueda prevalecer discriminación alguna por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social"</em>.</p>
+<ul>
+<li><strong>Doble naturaleza</strong>: Es un derecho subjetivo autónomo invocable en amparo judicial y constitucional, y a la vez un principio informador de toda la actividad estatal.</li>
+<li><strong>Igualdad en la ley</strong>: Vincula al legislador, prohibiendo leyes singulares arbitrarias o discriminatorias que otorguen un trato desigual a supuestos fácticos sustancialmente idénticos sin una justificación objetiva y razonable.</li>
+<li><strong>Igualdad en la aplicación de la ley</strong>: Vincula a la Administración y a los órganos judiciales, impidiendo que un mismo órgano modifique arbitrariamente el sentido de sus decisiones previas ante supuestos iguales sin aportar una motivación fundamentada del cambio de criterio.</li>
+<li><strong>Las categorías sospechosas de discriminación</strong>: El listado de causas expresas (<em>nacimiento, raza, sexo, religión, opinión</em>) impone un canon de control judicial estrictísimo ante cualquier diferenciación normativa basada en ellas.</li>
+</ul>
+<h3 class='subsection-title'>3.2. Sección 1ª: De los Derechos Fundamentales y de las Libertades Públicas (Arts. 15 a 29)</h3>
+<p>Esta sección contiene el bloque de derechos con el máximo rango de blindaje constitucional:</p>
+<h4 class='subsubsection-title'>Artículo 15: Derecho a la Vida y a la Integridad Física y Moral</h4>
+<ul>
+<li><em>"Todos tienen derecho a la vida y a la integridad física y moral, sin que, en ningún caso, puedan ser sometidos a tortura ni a penas o tratos inhumanos o degradantes. Queda abolida la pena de muerte, salvo lo que puedan disponer las leyes penales militares para tiempos de guerra"</em>.</li>
+<li><em>Abolición plena</em>: Aunque el texto constitucional dejó una salvedad militar, la Ley Orgánica 11/1995 abolió definitivamente la pena de muerte también en el Código Penal Militar, ratificando España los protocolos europeos de abolición total en cualquier circunstancia.</li>
+</ul>
+<h4 class='subsubsection-title'>Artículo 16: Libertad Ideológica, Religiosa y de Culto</h4>
+<ul>
+<li>Se garantiza la libertad ideológica, religiosa y de culto de los individuos y las comunidades sin más limitación que el mantenimiento del orden público protegido por la ley.</li>
+<li><strong>Inmunidad de declaración (16.2)</strong>: Nadie podrá ser obligado a declarar sobre su ideología, religión o creencias.</li>
+<li><strong>Aconfesionalidad estatal y cooperación (16.3)</strong>: Ninguna confesión tendrá carácter estatal. Los poderes públicos tendrán en cuenta las creencias religiosas de la sociedad española y mantendrán las consiguientes relaciones de cooperación con la Iglesia Católica y las demás confesiones (acuerdos de 1979 y leyes de cooperación de 1992 con evangélicos, judíos y musulmanes).</li>
+</ul>
+<h4 class='subsubsection-title'>Artículo 17: Derecho a la Libertad y a la Seguridad</h4>
+<ul>
+<li>Nadie puede ser privado de su libertad sino con la observancia de lo establecido en la ley y en los casos previstos por ella.</li>
+<li><strong>Plazos de detención preventiva (17.2)</strong>: No podrá durar más del tiempo estrictamente necesario para la realización de las averiguaciones tendentes al esclarecimiento de los hechos, y, en todo caso, en el <strong>plazo máximo de setenta y dos horas (72 h)</strong>, el detenido deberá ser puesto en libertad o a disposición de la autoridad judicial.</li>
+<li><strong>Garantías y derechos del detenido (17.3)</strong>:</li>
+<li>Ser informado de forma inmediata, y de modo que le sea comprensible, de sus derechos y de las razones de su detención.</li>
+<li>No ser obligado a declarar.</li>
+<li>Garantía de asistencia de letrado en las diligencias policiales y judiciales, en los términos que la ley establezca.</li>
+<li><strong>Habeas Corpus (17.4)</strong>: Procedimiento regulado por la Ley Orgánica 6/1984 para producir la inmediata puesta a disposición judicial de toda persona ilegalmente detenida. Asimismo, la ley determinará el plazo máximo de duración de la prisión provisional.</li>
+</ul>
+<h4 class='subsubsection-title'>Artículo 18: Intimidad, Inviolabilidad del Domicilio y Secreto de Comunicaciones</h4>
+<ul>
+<li><strong>Artículo 18.1</strong>: Se garantiza el derecho al honor, a la intimidad personal y familiar y a la propia imagen (Ley Orgánica 1/1982 de protección civil).</li>
+<li><strong>Artículo 18.2 (Inviolabilidad del domicilio)</strong>: El domicilio es inviolable. Ninguna entrada o registro podrá hacerse en él sin consentimiento del titular o resolución judicial, <strong>salvo en caso de flagrante delito</strong>.</li>
+<li><strong>Artículo 18.3 (Secreto de las comunicaciones)</strong>: Se garantiza el secreto de las comunicaciones y, en especial, de las postales, telegráficas y telefónicas, salvo resolución judicial.</li>
+<li><strong>Artículo 18.4 (Límites a la informática / Protección de datos)</strong>: La ley limitará el uso de la informática para garantizar el honor y la intimidad personal y familiar de los ciudadanos y el pleno ejercicio de sus derechos (consagrado por el TC como derecho fundamental autónomo a la protección de datos personales; Ley Orgánica 3/2018 y RGPD europeo).</li>
+</ul>
+<h4 class='subsubsection-title'>Artículo 19: Libertad de Residencia y Circulación</h4>
+<ul>
+<li>Los españoles tienen derecho a elegir libremente su residencia y a circular por el territorio nacional. Tienen derecho a entrar y salir libremente de España en los términos que la ley establezca, sin que este derecho pueda ser limitado por motivos políticos o ideológicos.</li>
+</ul>
+<h4 class='subsubsection-title'>Artículo 20: Libertades de Expresión e Información</h4>
+<ul>
+<li>Garantiza la libertad de expresión de pensamientos, ideas y opiniones mediante la palabra o escrito (20.1.a); la producción y creación literaria, artística, científica y técnica (20.1.b); la libertad de cátedra (20.1.c); y el derecho a comunicar o recibir libremente información veraz por cualquier medio de difusión (20.1.d).</li>
+<li>Garantías específicas: Cláusula de conciencia y secreto profesional en el ejercicio de estas libertades.</li>
+<li><strong>Prohibición de censura previa (20.2)</strong>: El ejercicio de estos derechos no puede restringirse mediante ningún tipo de censura previa.</li>
+<li><strong>Secuestro judicial tasado (20.5)</strong>: Solo podrá acordarse el secuestro de publicaciones, grabaciones y otros medios de información en virtud de <strong>resolución judicial motivada</strong>.</li>
+</ul>
+<h4 class='subsubsection-title'>Artículo 21: Derecho de Reunión y Manifestación</h4>
+<ul>
+<li>Se reconoce el derecho de reunión pacífica y sin armas. <strong>El ejercicio de este derecho no necesitará autorización previa</strong>.</li>
+<li><strong>Reuniones en lugares de tránsito público y manifestaciones</strong>: Se dará <strong>comunicación previa a la autoridad</strong>, que solo podrá prohibirlas cuando existan razones fundadas de alteración del orden público, con peligro para personas o bienes (Ley Orgánica 9/1983 reguladora del derecho de reunión).</li>
+</ul>
+<h4 class='subsubsection-title'>Artículo 22: Derecho de Asociación</h4>
+<ul>
+<li>Se reconoce el derecho de asociación (Ley Orgánica 1/2002).</li>
+<li><strong>Asociaciones prohibidas (22.2 y 22.5)</strong>: Las que persigan fines o utilicen medios tipificados como delito son ilegales. Se prohíben taxativamente las <strong>asociaciones secretas</strong> y las de <strong>carácter paramilitar</strong>.</li>
+<li><strong>Inscripción registral (22.3)</strong>: Las asociaciones constituidas al amparo de este artículo deberán inscribirse en un registro a los solos efectos de <strong>publicidad</strong>.</li>
+<li><strong>Garantía judicial de extinción (22.4)</strong>: Las asociaciones solo podrán ser disueltas o suspendidas en sus actividades en virtud de <strong>resolución judicial motivada</strong>.</li>
+</ul>
+<h4 class='subsubsection-title'>Artículo 23: Participación Política y Acceso a Cargos Públicos</h4>
+<ul>
+<li><strong>Artículo 23.1</strong>: Derecho a participar en los asuntos públicos, directamente o por medio de representantes, libremente elegidos en elecciones periódicas por sufragio universal.</li>
+<li><strong>Artículo 23.2</strong>: Derecho a acceder en condiciones de igualdad a las funciones y cargos públicos, con los requisitos que señalen las leyes (rige el acceso a la función pública bajo los principios constitucionales de igualdad, mérito y capacidad del artículo 103.3 CE).</li>
+</ul>
+<h4 class='subsubsection-title'>Artículo 24: Tutela Judicial Efectiva y Garantías Procesales</h4>
+<ul>
+<li><strong>Artículo 24.1</strong>: Todas las personas tienen derecho a obtener la tutela efectiva de los jueces y tribunales en el ejercicio de sus derechos e intereses legítimos, <strong>sin que, en ningún caso, pueda producirse indefensión</strong>.</li>
+<li><strong>Artículo 24.2 (Garantías procesales básicas)</strong>: Derecho al juez ordinario predeterminado por la ley; a la defensa y asistencia de letrado; a ser informados de la acusación formulada; a un proceso público sin dilaciones indebidas y con todas las garantías; a utilizar los medios de prueba pertinentes para su defensa; a no declarar contra sí mismos; a no confesarse culpables; y a la <strong>presunción de inocencia</strong>. La ley regulará los casos en que, por razón de parentesco o de secreto profesional, no se estará obligado a declarar sobre hechos presuntamente delictivos.</li>
+</ul>
+<h4 class='subsubsection-title'>Artículo 25: Principio de Legalidad Penal y Reinserción Social</h4>
+<ul>
+<li><strong>Artículo 25.1</strong>: Nadie puede ser condenado o sancionado por acciones u omisiones que en el momento de producirse no constituyan delito, falta o infracción administrativa, según la legislación vigente en aquel momento (<em>principio de legalidad y tipicidad penal y administrativa</em>).</li>
+<li><strong>Artículo 25.2 (Orientación penitenciaria)</strong>: Las penas privativas de libertad y las medidas de seguridad estarán orientadas hacia la <strong>reeducación y reinserción social</strong> y no podrán consistir en trabajos forzados. El condenado a prisión gozará de los derechos fundamentales del Título I, a excepción de los que se vean expresamente limitados por el contenido del fallo condenatorio, el sentido de la pena y la ley penitenciaria.</li>
+<li><strong>Artículo 25.3 (Límite sancionador civil)</strong>: La Administración civil <strong>no podrá imponer sanciones que, directa o subsidiariamente, impliquen privación de libertad</strong> (las multas administrativas no pueden transformarse en arresto domiciliario ni prisión).</li>
+</ul>
+<h4 class='subsubsection-title'>Artículo 26: Prohibición de Tribunales de Honor</h4>
+<ul>
+<li>Se prohíben los Tribunales de Honor en el ámbito de la Administración civil y de las organizaciones profesionales.</li>
+</ul>
+<h4 class='subsubsection-title'>Artículo 27: Derecho a la Educación y Libertad de Enseñanza</h4>
+<ul>
+<li>Todos tienen el derecho a la educación. Se reconoce la libertad de enseñanza.</li>
+<li><strong>Fines de la educación (27.2)</strong>: El pleno desarrollo de la personalidad humana en el respeto a los principios democráticos de convivencia y a los derechos y libertades fundamentales.</li>
+<li><strong>Garantía religiosa (27.3)</strong>: Los poderes públicos garantizan el derecho que asiste a los padres para que sus hijos reciban la formación religiosa y moral que esté de acuerdo con sus propias convicciones.</li>
+<li><strong>Enseñanza básica (27.4)</strong>: La enseñanza básica es <strong>obligatoria y gratuita</strong>.</li>
+<li>Autonomía universitaria (27.10) y participación de la comunidad educativa (27.5 y 27.7).</li>
+</ul>
+<h4 class='subsubsection-title'>Artículo 28: Libertad Sindical y Derecho a la Huelga</h4>
+<ul>
+<li><strong>Artículo 28.1 (Libertad sindical)</strong>: Todos tienen derecho a sindicarse libremente. Comprende el derecho a fundar sindicatos y afiliarse al de su elección. La ley podrá limitar o exceptuar el ejercicio de este derecho a las Fuerzas Armadas o institutos armados o demás cuerpos sometidos a disciplina militar, y regulará las peculiaridades para los funcionarios públicos.</li>
+<li><strong>Artículo 28.2 (Derecho a la huelga)</strong>: Se reconoce el derecho a la huelga de los trabajadores para la defensa de sus intereses. La ley que regule su ejercicio establecerá las garantías precisas para asegurar el mantenimiento de los <strong>servicios esenciales de la comunidad</strong>.</li>
+</ul>
+<h4 class='subsubsection-title'>Artículo 29: Derecho de Petición</h4>
+<ul>
+<li>Todos los españoles tendrán el derecho de petición individual y colectiva, por escrito, en la forma y con los efectos que determine la ley (Ley Orgánica 4/2001).</li>
+<li>Los miembros de las Fuerzas o Institutos armados o de los Cuerpos sometidos a disciplina militar podrán ejercer este derecho <strong>solo individualmente</strong> y con arreglo a lo dispuesto en su legislación específica.</li>
+</ul>
+<hr class='divider'/>
+<h3 class='subsection-title'>3.3. Sección 2ª: De los Derechos y Deberes de los Ciudadanos (Arts. 30 a 38)</h3>
+<p>Esta sección contiene deberes constitucionales y derechos de naturaleza cívica, patrimonial y profesional:</p>
+<ul>
+<li><strong>Artículo 30 (Defensa y objeción de conciencia)</strong>: Los españoles tienen el derecho y el deber de defender a España. Se reconoce la <strong>objeción de conciencia</strong> (30.2, único derecho de esta sección que goza de recurso de amparo conforme al art. 53.2 CE). Se prevé el servicio civil sustitutorio y deberes ciudadanos en catástrofes.</li>
+<li><strong>Artículo 31 (Sistema tributario)</strong>: Todos contribuirán al sostenimiento de los gastos públicos de acuerdo con su capacidad económica mediante un sistema tributario justo inspirado en los principios de <strong>igualdad y progresividad</strong> que, en ningún caso, tendrá <strong>alcance confiscatorio</strong>. El gasto público realizará una asignación equitativa de los recursos.</li>
+<li><strong>Artículo 32 (Matrimonio)</strong>: El hombre y la mujer tienen derecho a contraer matrimonio con plena igualdad jurídica. La ley regulará sus formas, edad, capacidad y causas de separación y disolución.</li>
+<li><strong>Artículo 33 (Propiedad privada y herencia)</strong>: Se reconoce el derecho a la propiedad privada y a la herencia. La <strong>función social</strong> delimitará su contenido de acuerdo con las leyes. Nadie podrá ser privado de sus bienes y derechos sino por causa justificada de <strong>utilidad pública o interés social</strong>, mediante la correspondiente indemnización y de conformidad con la ley.</li>
+<li><strong>Artículo 34 (Fundaciones)</strong>: Se reconoce el derecho de fundación para fines de interés general.</li>
+<li><strong>Artículo 35 (Trabajo)</strong>: Todos los españoles tienen el deber de trabajar y el derecho al trabajo, a la libre elección de profesión u oficio, a la promoción a través del trabajo y a una remuneración suficiente para satisfacer sus necesidades y las de su familia, sin que en ningún caso pueda hacerse discriminación por razón de sexo.</li>
+<li><strong>Artículo 36 (Colegios profesionales)</strong>: La ley regulará las peculiaridades propias del régimen jurídico de los Colegios Profesionales y el ejercicio de las profesiones tituladas. La estructura interna y el funcionamiento de los Colegios deberán ser democráticos.</li>
+<li><strong>Artículo 37 (Convenios y conflictos laborales)</strong>: La ley garantizará el derecho a la negociación colectiva laboral entre los representantes de trabajadores y empresarios, así como la fuerza vinculante de los convenios. Se reconoce el derecho de los trabajadores y empresarios a adoptar medidas de conflicto colectivo garantizando servicios esenciales.</li>
+<li><strong>Artículo 38 (Libertad de empresa)</strong>: Se reconoce la libertad de empresa en el marco de la economía de mercado. Los poderes públicos garantizan y protegen su ejercicio y la defensa de la productividad.</li>
+</ul>
+<hr class='divider'/>
+<h2 class='section-title'>4. CAPÍTULO III: DE LOS PRINCIPIOS RECTORES DE LA POLÍTICA SOCIAL Y ECONÓMICA (ARTS. 39 A 52)</h2>
+<p>El Capítulo III articula el compromiso social del Estado español. No confieren derechos subjetivos de aplicación judicial directa e inmediata, sino pautas axiológicas que vinculan al legislador y a la Administración:</p>
+<div class='code-card'><pre>
++-------------------------------------------------------------------------+
+|        PRINCIPIOS RECTORES DE LA POLÍTICA SOCIAL Y ECONÓMICA            |
++-------------------------------------------------------------------------+
+|  Art. 39: Protección integral de la familia y de los menores            |
+|  Art. 40: Redistribución de la renta, pleno empleo, seguridad laboral   |
+|  Art. 41: Régimen público de Seguridad Social y desempleo               |
+|  Art. 42: Protección de los trabajadores españoles en el extranjero     |
+|  Art. 43: Protección de la salud y fomento del deporte                  |
+|  Art. 44: Acceso a la cultura y fomento de la ciencia/investigación     |
+|  Art. 45: Medio ambiente adecuado y utilización racional de recursos    |
+|  Art. 46: Conservación y protección del patrimonio histórico/cultural   |
+|  Art. 47: Derecho a una vivienda digna y regulación del suelo           |
+|  Art. 48: Participación libre y eficaz de la juventud                   |
+|  Art. 49: PERSONAS CON DISCAPACIDAD (REFORMA DE 15/02/2024)            |
+|  Art. 50: Tercera edad: Pensiones actualizadas y servicios sociales     |
+|  Art. 51: Defensa de los consumidores y usuarios                        |
+|  Art. 52: Organizaciones profesionales de intereses económicos          |
++-------------------------------------------------------------------------+
+</pre></div>
+<h3 class='subsection-title'>4.1. Familia y Menores (Artículo 39)</h3>
+<p>Es el precepto básico del Derecho de Familia y de la Protección de Menores en España:</p>
+<ul>
+<li><strong>Artículo 39.1</strong>: Los poderes públicos aseguran la <strong>protección social, económica y jurídica de la familia</strong>.</li>
+<li><strong>Artículo 39.2</strong>: Los poderes públicos aseguran, asimismo, la <strong>protección integral de los hijos</strong>, iguales estos ante la ley con independencia de su filiación, y de las madres, cualquiera que sea su estado civil. La ley posibilitará la investigación de la paternidad.</li>
+<li><strong>Artículo 39.3</strong>: Los padres deben prestar asistencia de todo orden a los hijos habidos dentro o fuera del matrimonio, durante su minoría de edad y en los demás casos en que legalmente proceda.</li>
+<li><strong>Artículo 39.4</strong>: Los <strong>niños gozarán de la protección prevista en los acuerdos internacionales</strong> que velan por sus derechos (reforzado por la LO 1/1996 de Protección Jurídica del Menor y la Ley 4/2021 de Andalucía).</li>
+</ul>
+<h3 class='subsection-title'>4.2. Régimen del Nuevo Artículo 49 CE: Personas con Discapacidad (Reforma Constitucional de 15 de Febrero de 2024)</h3>
+<p>La modificación del <strong>artículo 49</strong> (aprobada por el Congreso el 18 de enero de 2024, por el Senado el 25 de enero de 2024, sancionada el 15 de febrero de 2024 y publicada en el BOE nº 43 el 17 de febrero de 2024) es el hito de mayor impacto social de la Constitución en las últimas décadas:</p>
+<ul>
+<li><strong>Superación del modelo asistencial/médico</strong>: Sustituyó el término denigratorio del texto original (<em>"disminuidos físicos, sensoriales y psíquicos"</em>) por la expresión digna y normalizada de <strong>"personas con discapacidad"</strong>, adecuándose a la Convención Internacional sobre los Derechos de las Personas con Discapacidad de la ONU de 2006.</li>
+<li><strong>Contenido del nuevo apartado 1</strong>: <em>"Las personas con discapacidad ejercen los derechos previstos en este Título en condiciones de libertad e igualdad reales y efectivas. Se regulará por ley la protección de los derechos de las personas con discapacidad, asegurando su inclusión social y su participación en la comunidad"</em>.</li>
+<li><strong>Contenido del nuevo apartado 2</strong>: <em>"Los poderes públicos impulsarán las políticas que garanticen la plena autonomía personal y la inclusión social de las personas con discapacidad, en entornos universalmente accesibles. Asimismo, fomentarán la participación de sus organizaciones, en los términos que la ley prevea. Se atenderán particularmente las necesidades específicas de las mujeres y los menores con discapacidad"</em>.</li>
+<li>Consagra la <strong>accesibilidad universal</strong> como mandato imperativo a las Administraciones locales.</li>
+<li>Introduce una perspectiva de interseccionalidad reforzada para <strong>mujeres y menores con discapacidad</strong>, colectivos con mayor vulnerabilidad frente a abusos o desprotección.</li>
+</ul>
+<h3 class='subsection-title'>4.3. Tercera Edad y Servicios Sociales Especializados (Artículo 50)</h3>
+<ul>
+<li>Los poderes públicos garantizarán, mediante <strong>pensiones adecuadas y periódicamente actualizadas</strong>, la suficiencia económica a los ciudadanos durante la tercera edad.</li>
+<li>Asimismo, y con independencia de las obligaciones familiares, promoverán su bienestar mediante un sistema de <strong>servicios sociales que atenderán sus problemas específicos de salud, vivienda, cultura y ocio</strong>.</li>
+</ul>
+<hr class='divider'/>
+<h2 class='section-title'>5. CAPÍTULOS IV Y V: SISTEMA DE GARANTÍAS Y SUSPENSIÓN DE DERECHOS (ARTS. 53 A 55)</h2>
+<h3 class='subsection-title'>5.1. El Sistema Escalonado de Garantías (Artículo 53 CE)</h3>
+<p>El artículo 53 articula un sistema de protección piramidal en tres niveles según la ubicación topográfica de cada derecho:</p>
+<div class='code-card'><pre>
+                  /                 /  \     NIVEL 2: MÁXIMA PROTECCIÓN (Art. 53.2)
+                /    \    • Art. 14 + Arts. 15 a 29 + Art. 30.2 (Objeción)
+               /------\   • Procedimiento preferente y sumario ordinario
+              /        \  • RECURSO DE AMPARO ante el Tribunal Constitucional
+             /          \ • Reserva de LEY ORGÁNICA (solo para Arts. 15 a 29)
+            /------------           /              \    NIVEL 1: PROTECCIÓN GENERAL (Art. 53.1)
+          /                \   • Todo el Capítulo II (Arts. 14 a 38)
+         /                  \  • Vinculación inmediata a poderes públicos
+        /                    \ • Reserva de LEY ORDINARIA + Contenido esencial
+       /                      \• RECURSO DE INCONSTITUCIONALIDAD
+      /------------------------     /                          \   NIVEL 3: EFICACIA INFORMADORA (Art. 53.3)
+    /                            \  • Capítulo III: Principios Rectores (Arts. 39-52)
+   /                              \ • Informan legislación, práctica judicial y admón.
+  /________________________________\• Solo alegables ante tribunales según sus leyes
+</pre></div>
+<div class='table-container'><table>
+<thead><tr><th>Nivel de Garantía</th><th>Precepto Constitucional</th><th>Derechos Incluidos</th><th>Mecanismos de Protección y Garantías</th></tr></thead><tbody>
+<tr><td><strong>Nivel 2 (Reforzado)</strong></td><td>Artículo 53.2 CE</td><td>- Artículo 14<br>- Sección 1ª Cap. II (arts. 15 a 29)<br>- Artículo 30.2 (Objeción de conciencia)</td><td>1. Tutela judicial ordinaria por procedimiento <strong>preferente y sumario</strong>.<br>2. <strong>Recurso de amparo</strong> ante el Tribunal Constitucional.<br>3. Reserva de <strong>Ley Orgánica</strong> (art. 81 CE) exclusiva para arts. 15 a 29.</td></tr>
+<tr><td><strong>Nivel 1 (Ordinario)</strong></td><td>Artículo 53.1 CE</td><td>Todo el Capítulo II (arts. 14 a 38)</td><td>1. <strong>Vinculación inmediata</strong> a todos los poderes públicos.<br>2. Reserva de <strong>Ley formal</strong> que regule su ejercicio.<br>3. Respeto indisponible a su <strong>contenido esencial</strong>.<br>4. Recurso de inconstitucionalidad contra leyes que los vulneren.</td></tr>
+<tr><td><strong>Nivel 3 (Informador)</strong></td><td>Artículo 53.3 CE</td><td>Capítulo III: Principios rectores (arts. 39 a 52)</td><td>1. <strong>Eficacia informadora</strong> de la legislación, práctica judicial y actuación administrativa.<br>2. Solo alegables ante la jurisdicción ordinaria <strong>de acuerdo con lo que dispongan las leyes que los desarrollen</strong>.</td></tr>
+</tbody></table></div>
+<h3 class='subsection-title'>5.2. El Defensor del Pueblo (Artículo 54 CE)</h3>
+<ul>
+<li><em>"Una ley orgánica regulará la institución del Defensor del Pueblo, como alto comisionado de las Cortes Generales, designado por éstas para la defensa de los derechos comprendidos en este Título, a cuyo efecto podrá supervisar la actividad de la Administración, dando cuenta a las Cortes Generales"</em>.</li>
+<li><strong>Régimen básico (Ley Orgánica 3/1981)</strong>:</li>
+<li>Elegido por las Cortes Generales para un mandato de <strong>5 años</strong> por mayoría cualificada de <strong>3/5 del Congreso y 3/5 del Senado</strong>.</li>
+<li>Goza de inviolabilidad, inmunidad y fuero procesal ante la Sala de lo Penal del Tribunal Supremo.</li>
+<li>Facultades inspectoras universales sobre la Administración General del Estado, autonómica y local (incluido el Ayuntamiento de Utrera).</li>
+<li>Está legitimado activamente para interponer <strong>recurso de inconstitucionalidad</strong> y <strong>recurso de amparo</strong> ante el Tribunal Constitucional (artículo 162 CE).</li>
+</ul>
+<h3 class='subsection-title'>5.3. Suspensión de los Derechos y Libertades (Artículo 55 CE)</h3>
+<p>El ordenamiento prevé mecanismos de excepción para situaciones extraordinarias que pongan en peligro la seguridad nacional o el orden constitucional:</p>
+<h4 class='subsubsection-title'>5.3.1. Suspensión General o Colectiva (Artículo 55.1 CE)</h4>
+<p>Se aplica cuando se declara el <strong>estado de excepción</strong> o el <strong>estado de sitio</strong> en los términos del artículo 116 CE y la Ley Orgánica 4/1981:</p>
+<ul>
+<li><strong>Derechos susceptibles de suspensión</strong>:</li>
+<li><em>Artículo 17</em>: Libertad y seguridad personal (apartados 1 y 2: plazo de detención).</li>
+<li><em>Artículo 18.2</em>: Inviolabilidad del domicilio.</li>
+<li><em>Artículo 18.3</em>: Secreto de las comunicaciones.</li>
+<li><em>Artículo 19</em>: Libertad de residencia y circulación.</li>
+<li><em>Artículo 20.1.a y d</em>: Libertad de expresión e información.</li>
+<li><em>Artículo 20.5</em>: Secuestro de publicaciones y medios de comunicación.</li>
+<li><em>Artículo 21</em>: Derecho de reunión y manifestación.</li>
+<li><em>Artículo 28.2</em>: Derecho a la huelga.</li>
+<li><em>Artículo 37.2</em>: Derecho a medidas de conflicto colectivo.</li>
+<li><strong>La gran excepción de examen</strong>: El <strong>artículo 17.3 (derechos del detenido a ser informado y a la asistencia letrada) queda exceptuado de suspensión en el estado de excepción</strong>. Dicho precepto <strong>solo puede ser suspendido en el estado de sitio</strong> (artículo 55.1 <em>in fine</em>).</li>
+<li><strong>Inmunidad en estado de alarma</strong>: En el estado de alarma <strong>no se puede suspender ningún derecho fundamental</strong> (únicamente cabe la limitación de la circulación de personas por razones sanitarias o de protección civil).</li>
+</ul>
+<h4 class='subsubsection-title'>5.3.2. Suspensión Individual de Derechos (Artículo 55.2 CE)</h4>
+<ul>
+<li>Una ley orgánica (materializada en el artículo 520 bis de la Ley de Enjuiciamiento Criminal) podrá determinar la forma y los casos en los que, de forma <strong>individual y con la necesaria intervención judicial y el adecuado control parlamentario</strong>, determinados derechos pueden ser suspendidos para personas determinadas en investigaciones sobre la actuación de <strong>bandas armadas o elementos terroristas</strong>.</li>
+<li><strong>Derechos suspendibles individualmente</strong> (lista cerrada):</li>
+<li><em>Artículo 17.2</em>: Plazo máximo de detención preventiva (puede prolongarse judicialmente hasta 48 horas adicionales, alcanzando un total de <strong>cinco días / 120 horas</strong>).</li>
+<li><em>Artículo 18.2</em>: Inviolabilidad del domicilio (entradas y registros sin autorización judicial previa en supuestos de urgencia, con inmediata dación de cuenta judicial).</li>
+<li><em>Artículo 18.3</em>: Secreto de las comunicaciones (intervención de comunicaciones previa resolución o confirmación judicial en 72 horas).</li>
+<li>La utilización injustificada o abusiva de estas facultades produce <strong>responsabilidad penal</strong> como violación de los derechos y libertades reconocidos por las leyes.</li>
+</ul>
+<hr class='divider'/>
+<h2 class='section-title'>6. ARTICULACIÓN PRÁCTICA CON LA ADMINISTRACIÓN LOCAL Y LA EDUCACIÓN SOCIAL EN EL AYUNTAMIENTO DE UTRERA</h2>
+<p>El Título I de la Constitución constituye el mapa ontológico sobre el que se estructuran las competencias técnicas del <strong>Técnico/a Medio de Educación Social</strong> en el Centro de Servicios Sociales Comunitarios (CSSC) del Excmo. Ayuntamiento de Utrera (calle Catalina de Perea, 32):</p>
+<ul>
+<li><strong>La protección integral del menor (artículo 39 CE)</strong>: El Educador/a Social actúa como garante primario del interés superior del menor ante situaciones de desamparo, negligencia parental o conflicto convivencial grave en barriadas prioritarias como El Tinte o VPO periféricas, derivando y coordinando medidas con los Equipos de Tratamiento Familiar (ETF) y los Servicios de Protección de Menores de la Junta de Andalucía.</li>
+<li><strong>Garantía del derecho a la educación (artículo 27 CE)</strong>: Participación activa en el Equipo Municipal de Absentismo Escolar (EMAE) de Utrera, realizando la intervención socioeducativa con familias en situación de absentismo o fracaso escolar crónico para garantizar la escolarización obligatoria (27.4).</li>
+<li><strong>El mandato de inclusión del nuevo artículo 49 CE</strong>: El Técnico/a de Educación Social municipal implementa actuaciones de accesibilidad universal en entornos comunitarios de Utrera, diseñando talleres de habilidades sociales para personas con diversidad funcional y prestando apoyo especializado a familias con menores o mujeres con discapacidad sujetas a situaciones de exclusión múltiple.</li>
+<li><strong>Respeto a la intimidad y protección de datos (artículo 18 CE)</strong>: En el manejo de expedientes del Sistema de Información de Servicios Sociales de Andalucía (Coas-NetCoas) y del Sistema de Información sobre Maltrato Infantil de Andalucía (SIMIA), el Educador/a Social tiene el deber riguroso de preservar el secreto profesional y la intimidad familiar de los usuarios frente a intromisiones indebidas.</li>
+</ul>
+<hr class='divider'/>
+<h2 class='section-title'>SECCIONES PEDAGÓGICAS OBLIGATORIAS</h2>
+<h3 class='subsection-title'>A. DATOS DE EXAMEN (22 ELEMENTOS DE MEMORIZACIÓN PURA)</h3>
+<ul>
+<li><strong>Artículos que abarca el Título I</strong>: Del <strong>artículo 10 al artículo 55</strong> (46 artículos en total).</li>
+<li><strong>Mayoría de edad (art. 12 CE)</strong>: A los <strong>18 años</strong>.</li>
+<li><strong>Reforma del sufragio municipal (art. 13.2 CE)</strong>: Reforma de <strong>27 de agosto de 1992</strong>, añadiendo el sufragio <em>"y pasivo"</em>.</li>
+<li><strong>Delitos excluidos de la extradición (art. 13.3 CE)</strong>: Delitos políticos (el terrorismo <strong>no</strong> se considera delito político).</li>
+<li><strong>Ubicación del principio de igualdad</strong>: <strong>Artículo 14</strong>, pórtico del Capítulo II (goza de amparo, pero no pertenece a la Sección 1ª).</li>
+<li><strong>Abolición de la pena de muerte (art. 15 CE)</strong>: Abolida en la CE salvo leyes militares de guerra; abolida plenamente en todo caso por <strong>LO 11/1995</strong>.</li>
+<li><strong>Plazo máximo de detención preventiva (art. 17.2 CE)</strong>: El tiempo estrictamente necesario y, en todo caso, máximo de <strong>72 horas</strong>.</li>
+<li><strong>Plazo ampliado de detención terrorista (art. 55.2 CE y 520 bis LECrim)</strong>: Hasta <strong>48 horas adicionales</strong> (máximo total de <strong>120 horas / 5 días</strong>).</li>
+<li><strong>Excepción a la inviolabilidad del domicilio (art. 18.2 CE)</strong>: Consentimiento del titular, resolución judicial o <strong>flagrante delito</strong>.</li>
+</ul>
+<p>10. <strong>Requisitos del derecho de reunión (art. 21 CE)</strong>: No necesita autorización previa; en lugares de tránsito público y manifestaciones se exige <strong>comunicación previa a la autoridad</strong>.</p>
+<p>11. <strong>Asociaciones prohibidas (art. 22 CE)</strong>: Las secretas y las de carácter <strong>paramilitar</strong>.</p>
+<p>12. <strong>Orientación de las penas privativas de libertad (art. 25.2 CE)</strong>: Orientadas hacia la <strong>reeducación y reinserción social</strong>.</p>
+<p>13. <strong>Prohibición a la Administración civil (art. 25.3 CE)</strong>: No puede imponer sanciones que directa o subsidiariamente impliquen <strong>privación de libertad</strong>.</p>
+<p>14. <strong>Enseñanza básica (art. 27.4 CE)</strong>: Es <strong>obligatoria y gratuita</strong>.</p>
+<p>15. <strong>Único derecho de la Sección 2ª con recurso de amparo</strong>: La <strong>objeción de conciencia</strong> del <strong>artículo 30.2 CE</strong> (conforme al art. 53.2 CE).</p>
+<p>16. <strong>Protección integral de menores (art. 39.4 CE)</strong>: Remisión expresa a los acuerdos internacionales que velan por sus derechos.</p>
+<p>17. <strong>Fecha exacta de la reforma del artículo 49 CE</strong>: <strong>15 de febrero de 2024</strong> (publicada en el BOE el 17 de febrero de 2024; "personas con discapacidad").</p>
+<p>18. <strong>Eficacia del Capítulo III (art. 53.3 CE)</strong>: Informan la legislación, práctica judicial y actuación de los poderes públicos; solo alegables ante los tribunales según las leyes que los desarrollen.</p>
+<p>19. <strong>Derechos con reserva de Ley Orgánica (art. 81.1 CE)</strong>: Exclusivamente los de la <strong>Sección 1ª del Capítulo II del Título I (arts. 15 a 29)</strong>.</p>
+<p>20. <strong>Mandato y elección del Defensor del Pueblo (art. 54 CE y LO 3/1981)</strong>: Elegido por <strong>5 años</strong> por mayoría de <strong>3/5 de Congreso y 3/5 de Senado</strong>.</p>
+<p>21. <strong>Derecho que NO se puede suspender en estado de excepción (art. 55.1 CE)</strong>: El <strong>artículo 17.3</strong> (asistencia letrada e información de derechos al detenido), que solo puede suspenderse en <strong>estado de sitio</strong>.</p>
+<p>22. <strong>Derechos suspendibles en estado de alarma</strong>: <strong>Ninguno</strong> (solo caben limitaciones o restricciones de circulación conforme a la LO 4/1981).</p>
+<hr class='divider'/>
+<h3 class='subsection-title'>B. ESQUEMA DE REPASO RÁPIDO</h3>
+<div class='code-card'><pre>
+TÍTULO I DE LA CONSTITUCIÓN ESPAÑOLA (ARTS. 10 AL 55)
+│
+├── ARTÍCULO 10: Dignidad humana (10.1) | Hermenéutica conforme a tratados internacionales (10.2)
+│
+├── CAPÍTULO I: DE LOS ESPAÑOLES Y LOS EXTRANJEROS (Arts. 11 a 13)
+│   ├── Art. 11: Nacionalidad (no privación a españoles de origen | tratados doble nacionalidad)
+│   ├── Art. 12: Mayoría de edad a los 18 AÑOS
+│   └── Art. 13: Extranjeros (Sufragio municipal activo y PASIVO [Reforma 1992] | No extradición política | Asilo)
+│
+├── CAPÍTULO II: DERECHOS Y LIBERTADES (Arts. 14 a 38)
+│   ├── ART. 14: IGUALDAD ANTE LA LEY (Prohibición discriminación: sexo, raza, religión...)
+│   │
+│   ├── SECCIÓN 1ª: DERECHOS FUNDAMENTALES Y LIBERTADES PÚBLICAS (Arts. 15 a 29)
+│   │   ├── Art. 15: Vida e integridad (Abolición pena de muerte) | Art. 16: Ideología y religión (Aconfesional)
+│   │   ├── Art. 17: Libertad y seguridad (Detención máx. 72h | Derechos detenido | Habeas Corpus)
+│   │   ├── Art. 18: Intimidad, imagen, domicilio inviolable (flagrante delito), secreto comunicaciones, protección datos
+│   │   ├── Art. 19: Circulación y residencia | Art. 20: Expresión e información (No censura previa)
+│   │   ├── Art. 21: Reunión (Sin autorización; comunicación previa en manifestaciones)
+│   │   ├── Art. 22: Asociación (Inscripción publicidad; prohibidas secretas y paramilitares)
+│   │   ├── Art. 23: Participación y acceso a cargos públicos | Art. 24: Tutela judicial efectiva (Sin indefensión)
+│   │   ├── Art. 25: Legalidad penal (Reinserción | No arresto civil) | Art. 26: Prohibidos Tribunales de Honor
+│   │   ├── Art. 27: Educación obligatoria y gratuita | Art. 28: Sindicación y Huelga | Art. 29: Petición
+│   │
+│   └── SECCIÓN 2ª: DERECHOS Y DEBERES DE LOS CIUDADANOS (Arts. 30 a 38)
+│       ├── Art. 30: Defensa y OBJECIÓN DE CONCIENCIA (30.2) | Art. 31: Sistema tributario justo y progresivo
+│       ├── Art. 32: Matrimonio | Art. 33: Propiedad privada (Función social) | Art. 34: Fundaciones
+│       └── Art. 35: Trabajo | Art. 36: Colegios profesionales | Art. 37: Convenios | Art. 38: Libertad de empresa
+│
+├── CAPÍTULO III: PRINCIPIOS RECTORES (Arts. 39 a 52)
+│   ├── Art. 39: Familia y Menores | Art. 40: Empleo y salud laboral | Art. 41: Seguridad Social | Art. 43: Salud
+│   ├── Art. 47: Vivienda | Art. 48: Juventud | Art. 49: PERSONAS CON DISCAPACIDAD (REFORMA 2024) | Art. 50: 3ª Edad
+│
+├── CAPÍTULO IV: GARANTÍAS (Arts. 53 y 54)
+│   ├── Nivel 1 (Art. 53.1): Todo Cap. II -&gt; Reserva de Ley, Contenido Esencial, Recurso Inconstitucionalidad
+│   ├── Nivel 2 (Art. 53.2): Art. 14 + Arts. 15-29 + Art. 30.2 -&gt; Preferente y Sumario + AMPARO TC + Ley Orgánica (15-29)
+│   ├── Nivel 3 (Art. 53.3): Cap. III -&gt; Principios informadores alegables según leyes de desarrollo
+│   └── Art. 54: Defensor del Pueblo (Alto comisionado de Cortes, 5 años, mayoría 3/5)
+│
+└── CAPÍTULO V: SUSPENSIÓN DE DERECHOS (Art. 55)
+    ├── General (55.1): Excepción y Sitio (Arts. 17, 18.2/3, 19, 20, 21, 28.2, 37.2 | Art. 17.3 SOLO EN SITIO)
+    └── Individual (55.2): Terrorismo por LO judicializada (Arts. 17.2 [+48h], 18.2 y 18.3)
+</pre></div>
+<hr class='divider'/>
+<h3 class='subsection-title'>C. TRAMPAS DEL TEST</h3>
+<ul>
+<li><strong>Trampa</strong>: Considerar que el artículo 14 (principio de igualdad) está integrado dentro de la Sección 1ª del Capítulo II del Título I.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: El artículo 14 es el <strong>pórtico previo</strong> a las Secciones 1ª y 2ª. Por ello, <strong>no requiere desarrollo mediante Ley Orgánica</strong> (que se reserva a los arts. 15 a 29 según el art. 81.1 CE), aunque <strong>sí goza de recurso de amparo</strong> por mandato expreso del artículo 53.2 CE.</p>
+<ul>
+<li><strong>Trampa</strong>: Creer que el derecho al trabajo (artículo 35 CE) o el derecho a una vivienda digna (artículo 47 CE) son recurribles en amparo ante el Tribunal Constitucional.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: El recurso de amparo constitucional está reservado con carácter exclusivo y tasado al <strong>artículo 14</strong>, a la <strong>Sección 1ª (artículos 15 a 29)</strong> y a la <strong>objeción de conciencia del artículo 30.2</strong>. El trabajo (art. 35) es un derecho de la Sección 2ª sin amparo, y la vivienda (art. 47) es un principio rector del Capítulo III.</p>
+<ul>
+<li><strong>Trampa</strong>: Afirmar que en el estado de excepción se puede suspender el derecho del detenido a ser asistido por letrado y a ser informado de la acusación (artículo 17.3 CE).</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: Es la trampa más reiterada en oposiciones. El <strong>artículo 17.3 queda exceptuado de suspensión en el estado de excepción</strong>; solo puede suspenderse de forma excepcional en el <strong>estado de sitio</strong> (artículo 55.1 CE <em>in fine</em>).</p>
+<ul>
+<li><strong>Trampa</strong>: Responder que en el estado de alarma se suspenden los derechos de circulación y residencia del artículo 19 CE.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: En el estado de alarma <strong>no se suspende ningún derecho fundamental</strong>. La jurisprudencia constitucional ha aclarado que solo caben <em>medidas de limitación o restricción</em> de la libertad de circulación por razones sanitarias o de protección civil, pero no una suspensión del derecho.</p>
+<ul>
+<li><strong>Trampa</strong>: Suponer que las asociaciones secretas o paramilitares pueden legalizarse mediante su inscripción en el registro del Ministerio del Interior.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: La Constitución <strong>prohíbe taxativamente las asociaciones secretas y las de carácter paramilitar</strong> (artículo 22.5 CE), declarándolas radicalmente ilegales. La inscripción registral (art. 22.3) es obligatoria para las legales únicamente a efectos de publicidad.</p>
+<ul>
+<li><strong>Trampa</strong>: Indicar que la detención preventiva puede prorrogarse indefinidamente hasta que el juez tome declaración al detenido.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: La detención preventiva tiene un <strong>límite absoluto improrrogable ordinario de 72 horas</strong> (artículo 17.2 CE). Únicamente en investigaciones por terrorismo, conforme al artículo 55.2 CE y artículo 520 bis LECrim, puede prorrogarse judicialmente hasta un máximo adicional de 48 horas (total de 120 horas / 5 días).</p>
+<ul>
+<li><strong>Trampa</strong>: Afirmar que la reforma del artículo 49 de la Constitución de febrero de 2024 requirió referéndum obligatorio o disolución de Cortes.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: El artículo 49 pertenece al <strong>Capítulo III del Título I</strong> (principios rectores). Por consiguiente, se tramitó mediante el <strong>procedimiento ordinario del artículo 167 CE</strong>, sin disolución de Cortes y sin someterse a referéndum, al no ser solicitado por el 10% de los parlamentarios.</p>
+<hr class='divider'/>
+<h3 class='subsection-title'>D. ENFOQUE PRÁCTICO PARA EL AYUNTAMIENTO DE UTRERA</h3>
+<p>En el Centro de Servicios Sociales Comunitarios del Excmo. Ayuntamiento de Utrera (calle Catalina de Perea, 32), el <strong>Técnico/a Medio de Educación Social</strong> traduce el Título I en garantías técnico-jurídicas cotidianas:</p>
+<ul>
+<li><strong>Tutela efectiva frente al absentismo escolar (artículo 27 CE)</strong>: Al intervenir desde el Equipo Municipal de Absentismo Escolar (EMAE) de Utrera con familias de la Barriada El Tinte o VPO periféricas, el Educador/a Social defiende el derecho fundamental a la educación y el deber de escolarización básica obligatoria (27.4), diseñando planes de seguimiento y evitando derivaciones punitivas a Fiscalía salvo agotamiento de la vía socioeducativa.</li>
+<li><strong>Intervención con personas con discapacidad (artículo 49 CE reformado)</strong>: Tras la reforma de febrero de 2024, los proyectos socioeducativos municipales deben enfocarse hacia la autonomía personal, vida independiente y accesibilidad universal, priorizando medidas contra la desprotección y violencia sobre mujeres y menores con discapacidad.</li>
+<li><strong>Protección familiar y de la infancia (artículo 39 CE)</strong>: Toda actuación en los Equipos de Tratamiento Familiar (ETF) y de valoración de riesgo (VALÓRAME) se asienta en la garantía constitucional de protección a la familia y al interés superior del menor.</li>
+</ul>
+<hr class='divider'/>
+<h3 class='subsection-title'>E. FUENTES OFICIALES Y NORMATIVA CONSOLIDADA</h3>
+<ul>
+<li><strong>Boletín Oficial del Estado (BOE)</strong>:</li>
+<li><em>Constitución Española de 1978</em>: Título I "De los derechos y deberes fundamentales", artículos 10 a 55 (BOE nº 311, de 29 de diciembre de 1978).</li>
+<li><em>Reforma del artículo 13.2 de la Constitución Española</em>, de 27 de agosto de 1992 (BOE nº 207, de 28 de agosto de 1992).</li>
+<li><em>Reforma del artículo 49 de la Constitución Española</em>, de 15 de febrero de 2024 (BOE nº 43, de 17 de febrero de 2024).</li>
+<li><em>Ley Orgánica 2/1979, de 3 de octubre</em>, del Tribunal Constitucional (BOE nº 239, de 5 de octubre de 1979).</li>
+<li><em>Ley Orgánica 3/1981, de 6 de abril</em>, del Defensor del Pueblo (BOE nº 109, de 7 de mayo de 1981).</li>
+<li><em>Ley Orgánica 4/1981, de 1 de junio</em>, de los estados de alarma, excepción y sitio (BOE nº 134, de 5 de junio de 1981).</li>
+<li><em>Ley Orgánica 6/1984, de 24 de mayo</em>, reguladora del procedimiento de Habeas Corpus (BOE nº 126, de 26 de mayo de 1984).</li>
+<li><strong>Jurisprudencia Constitucional Relevante</strong>:</li>
+<li><em>STC 107/1984 y STC 236/2007</em>: Doctrina sobre los derechos de los extranjeros en España.</li>
+<li><em>STC 53/1985 y STC 120/1990</em>: La dignidad humana como fundamento del orden político y los derechos inherentes.</li>
+<li><em>STC 292/2000</em>: El derecho fundamental autónomo a la protección de datos derivado del artículo 18.4 CE.</li>
+</ul>
+</body>
+</html>

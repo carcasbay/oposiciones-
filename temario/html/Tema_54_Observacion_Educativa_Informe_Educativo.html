@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 54: La observación educativa y el informe educativo - Oposición Educación Social Utrera</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 18mm 18mm 18mm;
+    @top-left {
+      content: "OPOSICIÓN EDUCACIÓN SOCIAL (GRUPO A2) - AYUNTAMIENTO DE UTRERA | TEMA 54";
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 7.8pt;
+      color: #666;
+      border-bottom: 0.5pt solid #bbb;
+      padding-bottom: 2mm;
+    }
+    @top-right {
+      content: "TEMA 54: OBSERVACIÓN EDUCATIVA E INFORME EDUCATIVO";
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 7.8pt;
+      color: #666;
+      border-bottom: 0.5pt solid #bbb;
+      padding-bottom: 2mm;
+    }
+    @bottom-center {
+      content: "Página " counter(page) " de " counter(pages);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 8pt;
+      color: #666;
+    }
+  }
+
+  body {
+    font-family: 'Georgia', serif;
+    font-size: 9.8pt;
+    line-height: 1.40;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+  }
+
+  .header-box {
+    background: linear-gradient(135deg, #1b365d 0%, #2b547e 100%);
+    color: white;
+    padding: 9px 13px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    page-break-inside: avoid;
+  }
+
+  .inst-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10.2pt;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    color: #f0f4f8;
+  }
+
+  .badges-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 3px;
+  }
+
+  .badge {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 7.6pt;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 3px;
+    display: inline-block;
+  }
+
+  .badge-primary { background-color: #dbeafe; color: #1e40af; }
+  .badge-secondary { background-color: #f1f5f9; color: #334155; }
+  .badge-warning { background-color: #fef3c7; color: #92400e; }
+
+  h1.doc-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    color: #1b365d;
+    margin: 8px 0 5px 0;
+    line-height: 1.22;
+    text-align: left;
+    page-break-after: avoid;
+  }
+
+  h2.section-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10.8pt;
+    font-weight: bold;
+    color: #1b365d;
+    border-bottom: 1.5px solid #1b365d;
+    padding-bottom: 2.5px;
+    margin: 11px 0 5px 0;
+    text-align: left;
+    page-break-after: avoid;
+  }
+
+  h2.header-exam { color: #1e3a8a; border-color: #1e3a8a; }
+  h2.header-scheme { color: #047857; border-color: #047857; }
+  h2.header-traps { color: #b91c1c; border-color: #b91c1c; }
+  h2.header-practical { color: #4338ca; border-color: #4338ca; }
+  h2.header-sources { color: #374151; border-color: #374151; }
+
+  h3.subsection-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 9.8pt;
+    font-weight: 600;
+    color: #2b547e;
+    margin: 8px 0 3px 0;
+    text-align: left;
+    page-break-after: avoid;
+  }
+
+  h4.subsubsection-title {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 9.2pt;
+    font-weight: 600;
+    color: #334155;
+    margin: 6px 0 2px 0;
+    text-align: left;
+    page-break-after: avoid;
+  }
+
+  p {
+    margin: 0 0 5px 0;
+  }
+
+  ul {
+    margin: 2px 0 5px 16px;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 2.5px;
+  }
+
+  strong {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    color: #0f172a;
+  }
+
+  .ascii-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 3.5px solid #1b365d;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 6.9pt;
+    line-height: 1.18;
+    padding: 5px 7px;
+    margin: 5px 0;
+    white-space: pre;
+    overflow-x: hidden;
+    page-break-inside: avoid;
+    border-radius: 3px;
+  }
+
+  .table-container {
+    margin: 5px 0;
+    page-break-inside: avoid;
+  }
+
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.3pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  table.data-table th {
+    background-color: #1b365d;
+    color: white;
+    font-weight: 600;
+    padding: 4px 6px;
+    text-align: left;
+    border: 1px solid #1b365d;
+  }
+
+  table.data-table td {
+    padding: 3.5px 6px;
+    border: 1px solid #cbd5e1;
+    vertical-align: top;
+  }
+
+  table.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+  }
+
+  .trap-q {
+    background-color: #fff1f2;
+    border-left: 3px solid #e11d48;
+    padding: 3px 6px;
+    margin: 2.5px 0;
+    list-style: none;
+    font-size: 8.6pt;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .trap-a {
+    background-color: #f0fdf4;
+    border-left: 3px solid #16a34a;
+    padding: 3px 6px;
+    margin: 2px 0 5px 0;
+    list-style: none;
+    font-size: 8.6pt;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .exam-item {
+    background-color: #f0fdf4;
+    border-left: 3px solid #15803d;
+    padding: 3px 6px;
+    margin-bottom: 3px;
+    font-size: 8.4pt;
+    font-family: 'Segoe UI', sans-serif;
+    page-break-inside: avoid;
+    border-radius: 2px;
+  }
+
+  .num-item {
+    margin-bottom: 3.5px;
+  }
+
+  .divider {
+    border: 0;
+    border-top: 1px solid #cbd5e1;
+    margin: 8px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-box">
+  <div class="inst-title">Excmo. Ayuntamiento de Utrera | Subescala Técnica - Grupo A2</div>
+  <div class="badges-row">
+    <span class="badge badge-primary">Educador/a Social</span>
+    <span class="badge badge-secondary">BOP Sevilla nº 102 (29/05/2026)</span>
+    <span class="badge badge-warning">Tema 54 - Específico</span>
+  </div>
+</div>
+
+<h1 class="doc-title">Tema 54: La observación educativa. La observación como método evaluativo. Tipología de la observación. El informe educativo. Diversos tipos de informe. Objetivos, método, resultados y conclusión</h1>
+<p><strong>Convocatoria:</strong> Técnico/a Medio de Educación Social (Subescala Técnica, Grupo A2) — Excmo. Ayuntamiento de Utrera (Sevilla) <strong>Oferta de Empleo Público:</strong> Consolidada (BOP de Sevilla nº 102, de 29/05/2026) <strong>Bloque:</strong> Materias Específicas (Tema 54)</p>
+<hr class="divider"/>
+<h2 class="section-title">1. Introducción y Justificación Epistemológica y Legal</h2>
+<p>La intervención de la <strong>Educación Social</strong> en la Administración Local exige cimentar sus diagnósticos, valoraciones y propuestas de intervención en evidencias empíricas rigurosas, verificables y sistemáticas. La toma de decisiones socioeducativas que afectan a la vida de menores y unidades familiares —tales como la incoación de un protocolo de absentismo, la derivación a un Equipo de Tratamiento Familiar o la propuesta de una medida cautelar de protección infantil— no puede descansar en meras impresiones intuitivas o valoraciones subjetivas desarticuladas. En este marco, <strong>la observación educativa</strong> se erige como el método de evaluación científica por excelencia en el medio natural y abierto, mientras que <strong>el informe educativo o socioeducativo</strong> constituye el vehículo formal, pericial y administrativo en el que cristaliza dicho conocimiento técnico.</p>
+<p>Desde la perspectiva de la <strong>Pedagogía Social</strong>, la observación profesional trasciende la contemplación ingenua de la realidad cotidiana para transformarse en un procedimiento sistemático, planificado, deliberado y sometido a estrictos controles de fiabilidad y validez. Paralelamente, el informe socioeducativo no es un simple trámite burocrático, sino un <strong>documento técnico vinculante dotado de valor probatorio</strong>, cuya redacción compromete la responsabilidad deontológica y jurídica del profesional.</p>
+<p>En el ámbito del <strong>Excmo. Ayuntamiento de Utrera</strong>, el/la Técnico/a Medio de Educación Social (Grupo A2) despliega estas herramientas desde el <strong>Centro de Servicios Sociales Comunitarios (sito en calle Catalina de Perea, 32)</strong>, integrándose en el <strong>Equipo Municipal de Atención al Absentismo (EMAE)</strong>, en los programas comunitarios de la estrategia <strong>ERACIS+ en la Barriada El Tinte</strong>, y en la atención itinerante descentralizada en las pedanías rurales de <strong>Guadalema de los Quintero, Trajano y Pinzón</strong>, colaborando estrechamente con la red de colegios e institutos del municipio (<strong>CEIP Rodrigo Caro, Álvarez Quintero, Coca de la Piñera... e IES Ruiz Gijón, Ponce de León, Virgen de Consolación, José María Infantes</strong>).</p>
+<h3 class="subsection-title">Fundamentación Constitucional y Corpus Jurídico</h3>
+<p>El desarrollo y custodia de los procesos observacionales y de los informes socioeducativos se enmarcan en un riguroso bloque de legalidad:</p>
+<ul>
+<li><strong>Constitución Española de 1978</strong>: El <strong>artículo 18.1 de la CE</strong> consagra el derecho fundamental al honor, a la intimidad personal y familiar y a la propia imagen; el <strong>artículo 27 de la CE</strong> garantiza el derecho fundamental a la educación; y el <strong>artículo 39 de la CE</strong> impone a los poderes públicos la obligación de asegurar la protección social, económica y jurídica de la familia y de los menores.</li>
+<li><strong>Protección de Datos Personales y Garantía Digital</strong>: Conforme al Reglamento General de Protección de Datos (<strong>RGPD UE 2016/679</strong>) y a la <strong>Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD)</strong>, los datos relativos a menores y familias en situación de vulnerabilidad gozan de la consideración de categorías de especial protección, obligando al estricto deber de <strong>secreto profesional</strong> (tipificado penalmente en el <strong>artículo 199 del Código Penal</strong>).</li>
+<li><strong>Legislación Sectorial Autonómica</strong>:</li>
+<li><strong>Ley 9/2016, de 27 de diciembre, de Servicios Sociales de Andalucía</strong>: Regula la <strong>Historia Social Única</strong> como instrumento básico de información y coordinación interinstitucional.</li>
+<li><strong>Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía</strong>: Consagra el principio del interés superior de la persona menor y el valor pericial de los informes emitidos por los equipos de los Servicios Sociales Comunitarios.</li>
+<li><strong>Decreto 100/2022, de 7 de junio</strong>, de Tratamiento Familiar en Andalucía, y <strong>Orden de 19 de septiembre de 2005</strong>, reguladora del Plan Integral de Absentismo Escolar en Andalucía.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="section-title">2. La Observación Educativa: Concepto, Fundamentos y Rigor Metodológico</h2>
+<h3 class="subsection-title">2.1. Concepto y Delimitación Científica de la Observación Educativa</h3>
+<p>La <strong>observación educativa</strong> se define científicamente como un método sistemático de recogida de información y evaluación pedagógica mediante el cual un observador entrenado atiende, percibe, codifica y registra de forma deliberada, intencionada y objetiva la conducta espontánea o provocada de uno o varios sujetos en sus contextos naturales o estructurados de vida, con el propósito de describir, comprender, explicar o modificar pautas comportamentales e interactivas (<strong>Mª Teresa Anguera, 1988, 2003; Postic y De Ketele, 1992</strong>).</p>
+<p>A diferencia de la observación espontánea, informal o cotidiana (caracterizada por ser asistemática, selectiva, sesgada por prejuicios y carente de registro objetivo), la <strong>observación científica y profesional</strong> reúne las siguientes características definitorias:</p>
+<ul>
+<li><strong>Intencionalidad y Planificación</strong>: Responde a un marco teórico previo, persigue objetivos evaluativos explícitos y cuenta con una delimitación temporal y contextual prefijada.</li>
+<li><strong>Sistematización y Protocolización</strong>: Emplea instrumentos de codificación estandarizados o categorías conductuales previamente operativizadas.</li>
+<li><strong>Objetividad y Contrastabilidad</strong>: Los datos recogidos son independientes de las filias o fobias del observador, siendo susceptibles de verificación por otros profesionales.</li>
+<li><strong>Control de Validez y Fiabilidad</strong>: Se somete a análisis métricos para garantizar la pureza del dato y la ausencia de distorsiones.</li>
+</ul>
+<pre class="ascii-box">                         ELEMENTOS DEL SISTEMA OBSERVACIONAL
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ 1. EL OBSERVADOR TÉCNICO: Profesional entrenado (Educador/a Social).         │
+ │ 2. EL SUJETO U OBJETO: Menor, grupo de iguales o sistema familiar.          │
+ │ 3. EL CONTEXTO / SITUACIÓN: Medio natural (aula, domicilio, calle, plaza).  │
+ │ 4. EL MARCO CATEGORIAL: Catálogo de conductas operativas y exhaustivas (EME)│
+ │ 5. EL INSTRUMENTO DE REGISTRO: Hoja de codificación, escala o diario.       │
+ │ 6. EL CONTROL MÉTRICO: Análisis de fiabilidad inter-observadores (Kappa).   │
+ └─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+<h3 class="subsection-title">2.2. Garantías Científicas: Fiabilidad y Validez del Proceso Observacional</h3>
+<p>Para que los datos derivados de la observación educativa posean validez técnica y probatoria, deben superar dos filtros psicométricos indispensables:</p>
+<p class="num-item"><strong>1.</strong> <strong>La Fiabilidad de la Observación</strong>:</p>
+<ul>
+<li><strong>Fiabilidad Inter-observadores (Concordancia)</strong>: Grado de acuerdo o coincidencia entre dos o más observadores independientes que registran simultáneamente la misma sesión conductual.</li>
+<li><strong>El Coeficiente Kappa de Cohen (Jacob Cohen, 1960)</strong>: Es el estadístico canónico para cuantificar la concordancia inter-observadores en datos categoriales, ya que corrige el porcentaje de acuerdo simple <strong>descontando el efecto del azar</strong>:</li>
+</ul>
+<p>$$\kappa = rac{P_o - P_e}{1 - P_e}$$ <em>(Donde $P_o$ es la proporción de acuerdo observado y $P_e$ es la proporción de acuerdo esperable por puro azar. Un valor $\kappa \ge 0,70$ se considera técnicamente aceptable, y $\kappa \ge 0,80$ excelente).</em></p>
+<ul>
+<li><strong>Fiabilidad Intra-observador (Consistencia Temporal)</strong>: Estabilidad con la que un mismo observador codifica idénticas conductas visualizadas en grabaciones en dos momentos temporales distintos.</li>
+</ul>
+<p class="num-item"><strong>2.</strong> <strong>La Validez de la Observación</strong>:</p>
+<ul>
+<li><strong>Validez de Contenido</strong>: Garantía de que el sistema de categorías conductuales representa verdaderamente la totalidad de dimensiones de la conducta que se pretende evaluar.</li>
+<li><strong>Validez de Constructo</strong>: Coherencia de las categorías observadas con el marco teórico de referencia (ej., teoría del apego, habilidades sociales).</li>
+<li><strong>Validez Ecológica</strong>: Grado en que los datos obtenidos en la observación reflejan la conducta real y espontánea de los sujetos en sus entornos naturales de vida (el hogar en la Barriada El Tinte, el recreo en el IES Ponce de León) y no una respuesta forzada ante una situación artificial.</li>
+</ul>
+<h3 class="subsection-title">2.3. Fuentes de Sesgo y Errores en la Observación Educativa</h3>
+<p>El/La Educador/a Social debe conocer y controlar activamente las fuentes de distorsión que amenazan la pureza de la observación:</p>
+<div class="table-container"><table class="data-table"><thead><tr><th>Fuente de Sesgo</th><th>Mecanismo de Distorsión</th><th>Estrategia Técnica de Control</th></tr></thead><tbody>
+<tr><td><strong>Reactividad del Sujeto (Efecto Hawthorne)</strong></td><td>Modificación artificial de la conducta del sujeto al percatarse de que está siendo observado.</td><td>Periodo previo de habituación; uso de observación participante discreta en medio natural.</td></tr>
+<tr><td><strong>Deriva del Observador (<em>Observer Drift</em>)</strong></td><td>Relajación o cambio progresivo involuntario en los criterios de codificación a lo largo del tiempo.</td><td>Reentrenamiento periódico y sesiones de calibración con manual de definiciones operativas.</td></tr>
+<tr><td><strong>Efecto de las Expectativas (Efecto Pigmalión / Rosenthal)</strong></td><td>Tendencia del observador a percibir y registrar aquello que anticipa o desea encontrar según sus hipótesis.</td><td>Uso de observadores ciegos a las hipótesis de intervención; registro mecánico inmediato.</td></tr>
+<tr><td><strong>Sesgo de Halo</strong></td><td>Contaminación del juicio observacional por una impresión global previa, positiva o negativa, del sujeto.</td><td>Operacionalización de conductas atómicas despojadas de juicios morales globales.</td></tr>
+<tr><td><strong>Error de Tendencia Central y Severidad</strong></td><td>Tendencia a calificar siempre en valores medios o, por el contrario, en extremos de excesivo rigor o complacencia.</td><td>Empleo de escalas con anclajes conductuales objetivos y número par de categorías forzadas.</td></tr>
+</tbody></table></div>
+<hr class="divider"/>
+<h2 class="section-title">3. La Observación como Método Evaluativo</h2>
+<h3 class="subsection-title">3.1. Funciones de la Observación en el Proceso Evaluativo</h3>
+<p>En la intervención socioeducativa, la observación no se reduce a un fin en sí misma; es un <strong>método transversal de evaluación</strong> que acompaña secuencialmente todas las etapas de la intervención:</p>
+<pre class="ascii-box">                      FUNCIONES EVALUATIVAS DE LA OBSERVACIÓN
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ 1. EVALUACIÓN INICIAL / DIAGNÓSTICA:                                        │
+ │    · Determinación de la Línea Base ($A$): frecuencia e intensidad inicial. │
+ │    · Detección precoz de factores de riesgo, negligencia o maltrato.        │
+ │    · Identificación de competencias y fortalezas del sistema familiar.      │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 2. EVALUACIÓN PROCESUAL / FORMATIVA:                                        │
+ │    · Seguimiento in situ de la aplicación del plan socioeducativo.          │
+ │    · Monitorización de avances, resistencias o estancamientos conductuales. │
+ │    · Retroalimentación continua para el reajuste del programa (feedback).   │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 3. EVALUACIÓN FINAL / SUMATIVA:                                             │
+ │    · Verificación del grado de consecución de las metas operativas.         │
+ │    · Constatación empírica de la consolidación de hábitos y autonomía.      │
+ │    · Justificación técnica del cierre de caso o desvinculación formal.      │
+ └─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+<h3 class="subsection-title">3.2. Fases Metodológicas del Proceso Observacional Evaluativo</h3>
+<p>La aplicación de la observación como método evaluativo sigue un itinerario rigurosamente pautado:</p>
+<p class="num-item"><strong>1.</strong> <strong>Delimitación del Objeto y Formulación de Objetivos</strong>: Clarificar qué se observa y para qué (ej., evaluar la interacción comunicativa madre-hijo durante el horario de tareas escolares en el domicilio).</p>
+<p class="num-item"><strong>2.</strong> <strong>Definición Operacional de Conductas</strong>: Formular las conductas en términos observables, descriptivos y precisos, asegurando que el sistema categorial sea <strong>exhaustivo</strong> (cualquier conducta relevante tiene cabida) y <strong>mutuamente excluyente (EME)</strong> (ninguna conducta puede clasificarse en dos categorías simultáneamente).</p>
+<div class="exam-item"><strong>3.</strong> <strong>Selección del Diseño Observacional (Mª Teresa Anguera)</strong>:</div>
+<ul>
+<li><em>Puntual</em> (una única sesión de observación diagnóstica) vs. <em>De Seguimiento / Longitudinal</em> (sesiones repetidas a lo largo de semanas o meses).</li>
+<li><em>Unidimensional</em> (un único nivel de respuesta, ej. contacto ocular) vs. <em>Multidimensional</em> (múltiples niveles: lenguaje verbal, proxemia, postura corporal, tono de voz).</li>
+<li><em>Individual</em> (un menor focal) vs. <em>Diádico o Grupal</em> (interacción de la unidad familiar o del aula).</li>
+</ul>
+<p class="num-item"><strong>4.</strong> <strong>Muestreo Observacional y Planificación Temporal</strong>:</p>
+<ul>
+<li><em>Muestreo de Sujetos</em>: Selección de individuos diana dentro del grupo.</li>
+<li><em>Muestreo de Tiempo</em>: Determinar la duración de las sesiones, intervalos de observación y de registro (muestreo de intervalo parcial, completo o de momento temporal).</li>
+<li><em>Muestreo de Situaciones</em>: Diversificación de contextos para capturar la variabilidad de la conducta (recreo, aula ordinaria, parque, domicilio).</li>
+</ul>
+<p class="num-item"><strong>5.</strong> <strong>Registro, Codificación y Análisis de Datos</strong>: Traslado de las observaciones a matrices de datos para su tratamiento descriptivo, secuencial o de retardo (<em>lag analysis</em>).</p>
+<hr class="divider"/>
+<h2 class="section-title">4. Tipología de la Observación</h2>
+<p>La literatura metodológica clasifica la observación en función de múltiples ejes taxonómicos que todo profesional debe dominar con precisión:</p>
+<pre class="ascii-box">                            TIPOLOGÍA DE LA OBSERVACIÓN
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ SEGÚN EL GRADO DE ESTRUCTURACIÓN:                                           │
+ │ · No Estructurada / Asistemática: Registro libre, cualitativo y exploratorio│
+ │ · Semiestructurada: Guiones orientativos de observación focalizada.         │
+ │ · Estructurada / Sistemática: Protocolos cerrados y categorías exhaustivas. │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ SEGÚN EL PAPEL DEL OBSERVADOR:                                              │
+ │ · No Participante / Externa: Distanciamiento neutral, no interacción.      │
+ │ · Participante: Integración activa del profesional en la dinámica comunitaria│
+ │ · Auto-observación: El propio usuario registra su conducta (autorregistro). │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ SEGÚN EL ESCENARIO:                                                         │
+ │ · De Laboratorio / Artificial: Situaciones de prueba (cámara de Gesell).    │
+ │ · En Medio Natural / De Campo: Escenarios reales de vida (domicilio, calle). │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ SEGÚN EL CONOCIMIENTO DEL SUJETO:                                           │
+ │ · Manifiesta / Abierta: El sujeto conoce explícitamente que es observado.   │
+ │ · Encubierta: El sujeto desconoce la observación (límites éticos y legales).│
+ └─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+<h3 class="subsection-title">4.1. Análisis Comparativo de las Principales Modalidades</h3>
+<ul>
+<li><strong>Observación Estructurada vs. No Estructurada</strong>:</li>
+<li>La <em>observación no estructurada</em> es sumamente valiosa en las fases iniciales de contacto e inserción comunitaria (como la prospección en la Barriada El Tinte), permitiendo captar la complejidad de la vida comunitaria sin encorsetarla en etiquetas previas.</li>
+<li>La <em>observación estructurada</em> es indispensable en la evaluación de programas conductuales o en el diagnóstico pericial, donde se requiere máxima precisión cuantitativa sobre frecuencias e intensidades.</li>
+<li><strong>Observación Participante en Educación Social</strong>:</li>
+<li>Es la herramienta emblemática del Educador/a Social en el <strong>medio abierto</strong>. El profesional no se aísla tras un cristal unidireccional; comparte espacios, juegos, asambleas y actividades comunitarias con los menores y familias. Esta cercanía permite reducir la reactividad a medio plazo y acceder a los significados internos de la subcultura barrial, exigiendo una constante <strong>vigilancia epistemológica</strong> para no perder la objetividad técnica.</li>
+</ul>
+<h3 class="subsection-title">4.2. Instrumentos Técnicos de Registro Observacional</h3>
+<p class="num-item"><strong>1.</strong> <strong>Registros Narrativos y Cualitativos</strong>:</p>
+<ul>
+<li><strong>Notas de Campo</strong>: Anotaciones breves, sintéticas y en tiempo real tomadas sobre el terreno para preservar detalles significativos.</li>
+<li><strong>Diario de Campo</strong>: Cuaderno de trabajo personal y reflexivo del Educador/a Social en el que se reconstruye la jornada, integrando la descripción fáctica de los hechos, el análisis socioeducativo y las vivencias e impresiones del profesional.</li>
+<li><strong>Registro Anecdótico</strong>: Descripción incidental y detallada de un episodio conductual significativo e imprevisto (un conflicto violento en el recreo, una revelación espontánea de maltrato), recogiendo de forma literal qué ocurrió, antecedentes y reacciones del entorno.</li>
+</ul>
+<p class="num-item"><strong>2.</strong> <strong>Escalas e Instrumentos Cuantitativos Estructurados</strong>:</p>
+<ul>
+<li><strong>Listas de Control o Cotejo (<em>Checklists</em>)</strong>: Inventarios dicotómicos de conductas o rasgos observables donde el profesional señala exclusivamente su <strong>presencia o ausencia</strong> (Sí / No).</li>
+<li><strong>Escalas de Estimación o Apreciación</strong>: Evalúan el grado, frecuencia o intensidad con que se manifiesta una conducta:</li>
+<li><em>Escalas Numéricas</em>: Asignan valores cuantitativos continuos (ej., 1 a 5).</li>
+<li><em>Escalas Gráficas</em>: Valoración visual a lo largo de un continuo con marcas.</li>
+<li><em>Escalas Descriptivas</em>: Cada nivel de la escala se define mediante indicadores comportamentales explícitos (las más fiables técnicamente).</li>
+</ul>
+<p class="num-item"><strong>3.</strong> <strong>Sistemas de Categorías y Matrices de Interacción</strong>:</p>
+<ul>
+<li>Códigos formales cerrados donde cada unidad de conducta se asigna a una categoría alfanumérica en tiempo real, permitiendo análisis secuenciales informatizados.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="section-title">5. El Informe Educativo y Socioeducativo</h2>
+<h3 class="subsection-title">5.1. Concepto y Naturaleza Jurídico-Técnica</h3>
+<p>El <strong>informe educativo o socioeducativo</strong> es un documento técnico, formal, escrito, confidencial y pericial mediante el cual un/a profesional de la Educación Social expone de manera estructurada, rigurosa, comprensible y fundamentada los datos recabados, la metodología evaluativa empleada, los resultados del análisis funcional y sistémico, y el juicio diagnóstico emitido acerca de la situación evolutiva, convivencial y social de un menor o núcleo familiar, concluyendo con una propuesta de intervención, derivación o adopción de medidas (<strong>Consejo General de Colegios de Educadoras y Educadores Sociales - CGCEES, 2007</strong>).</p>
+<p>Naturaleza y alcance del informe socioeducativo:</p>
+<ul>
+<li><strong>Carácter de Documento Oficial</strong>: Forma parte del expediente administrativo municipal custodiado en los Servicios Sociales Comunitarios (CSSC) y en la <strong>Historia Social Única de Andalucía (Ley 9/2016)</strong>.</li>
+<li><strong>Valor Pericial y Probatorio</strong>: Constituye una prueba documental y técnica fundamental en procedimientos administrativos (decretos de absentismo, planes de tratamiento familiar, expedientes de desprotección) y en procedimientos judiciales ante los Juzgados de Familia o la <strong>Fiscalía de Menores</strong>.</li>
+<li><strong>Garantías Deontológicas</strong>: Exige el máximo respeto a la veracidad, a la no estigmatización de las personas usuarias, a la prudencia y delimitación de los juicios de valor, y al deber inexcusable de secreto profesional (<strong>artículo 199 del Código Penal</strong>).</li>
+</ul>
+<h3 class="subsection-title">5.2. Diversos Tipos de Informe Socioeducativo</h3>
+<p>En la práctica municipal de los Servicios Sociales y de los programas educativos se diferencian las siguientes modalidades según su finalidad y destinatario:</p>
+<div class="table-container"><table class="data-table"><thead><tr><th>Tipo de Informe</th><th>Finalidad y Momento de Emisión</th><th>Destinatario Principal</th></tr></thead><tbody>
+<tr><td><strong>1. Informe de Valoración Inicial / Diagnóstico</strong></td><td>Apertura de caso; análisis integral de la demanda, factores de riesgo y competencias familiares; fundamenta el diseño del PIF.</td><td>Equipo interdisciplinar del CSSC, Comisión Técnica.</td></tr>
+<tr><td><strong>2. Informe de Seguimiento y Evolución</strong></td><td>Monitorización periódica (trimestral o semestral); evaluación del cumplimiento de compromisos y evolución de la conducta.</td><td>EMAE, Comisión Municipal de Absentismo, ETF.</td></tr>
+<tr><td><strong>3. Informe de Derivación / Propuesta Técnica</strong></td><td>Solicitud formal de derivación a un recurso especializado ante la insuficiencia de la atención primaria.</td><td>Equipo de Tratamiento Familiar (ETF), Salud Mental (USMC-IJ).</td></tr>
+<tr><td><strong>4. Informe Pericial / Judicial</strong></td><td>Respuesta a requerimientos judiciales formales en procesos de custodia, régimen de visitas o responsabilidad penal del menor.</td><td>Juzgados de Primera Instancia e Instrucción, Fiscalía de Menores.</td></tr>
+<tr><td><strong>5. Informe de Evaluación Final y Cierre</strong></td><td>Balance global de resultados tras la consecución de objetivos o derivación definitiva; archivo formal del expediente.</td><td>Jefatura de Servicios Sociales, Archivo Municipal.</td></tr>
+</tbody></table></div>
+<hr class="divider"/>
+<h2 class="section-title">6. Estructura Técnica del Informe: Objetivos, Método, Resultados y Conclusión</h2>
+<p>La redacción de un informe socioeducativo de excelencia profesional debe articularse de forma nítida en <strong>cuatro grandes bloques estructurales canónicos</strong>:</p>
+<pre class="ascii-box">                       ESTRUCTURA CANÓNICA DEL INFORME SOCIOEDUCATIVO
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ 1. OBJETIVOS Y DATOS IDENTIFICATIVOS:                                       │
+ │    · Datos del menor y familia (nombre, fecha nacimiento, domicilio).       │
+ │    · Profesional emisor (Educador/a Social, nº colegiado, dependencia).    │
+ │    · Institución: Excmo. Ayuntamiento de Utrera - CSSC.                    │
+ │    · Motivo explícito de emisión y objetivos técnicos periciales.          │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 2. MÉTODO E INSTRUMENTOS DE EVALUACIÓN:                                     │
+ │    · Técnicas aplicadas: Observación en medio natural (aula, domicilio).   │
+ │    · Entrevistas familiares sistémicas, genograma, ecomapa.                 │
+ │    · Consulta de sistemas oficiales (SÉNECA, CoheSSión) y coordinación.     │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 3. RESULTADOS / ANÁLISIS DE LA INFORMACIÓN:                                 │
+ │    · Área escolar (asistencia, rendimiento, adaptación entre iguales).      │
+ │    · Área sociofamiliar (estructura, competencias parentales, vivienda).    │
+ │    · Área personal / conductual (desarrollo emocional, habilidades sociales)│
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 4. CONCLUSIONES Y PROPUESTA DE INTERVENCIÓN:                                │
+ │    · Juicio diagnóstico técnico fundamentado y pronóstico evolutivo.        │
+ │    · Propuesta concreta de medidas, compromisos y derivaciones.             │
+ │    · Fecha, lugar (Utrera), firma y sello profesional colegiado.            │
+ └─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+<h3 class="subsection-title">6.1. Bloque 1: Datos de Identificación y Objetivos</h3>
+<ul>
+<li><strong>Datos Generales</strong>: Identificación completa del menor (nombre, apellidos, fecha y lugar de nacimiento, DNI si dispone, centro educativo y curso en el que está matriculado) y de sus progenitores o tutores legales.</li>
+<li><strong>Datos del Emisor e Institución</strong>: Nombre del profesional, titulación, número de colegiación profesional en el Colegio Profesional de Educadoras y Educadores Sociales de Andalucía (<strong>CoPESA</strong>), adscripción al Centro de Servicios Sociales Comunitarios del Excmo. Ayuntamiento de Utrera.</li>
+<li><strong>Motivo y Objetivos del Informe</strong>: Se formula de manera transparente por qué se emite el informe (demanda del centro escolar por absentismo, requerimiento de la Comisión Municipal de Absentismo, oficio del Juzgado o seguimiento del Plan Local de Inclusión) y cuál es el objetivo técnico específico que persigue el documento.</li>
+</ul>
+<h3 class="subsection-title">6.2. Bloque 2: Método e Instrumentos de Evaluación</h3>
+<p>En este apartado se detalla el <strong>itinerario metodológico riguroso</strong> seguido para recabar la información, lo que confiere validez científica y pericial al dictamen:</p>
+<ul>
+<li><strong>Observación Directa en Medio Natural</strong>: Número de sesiones observacionales, lugares (recreos y aulas del IES Ruiz Gijón, domicilio familiar en Barriada El Tinte), instrumentos de registro empleados (notas de campo, escalas de estimación conductual).</li>
+<li><strong>Entrevistas Individuales y Familiares</strong>: Número y fechas de las entrevistas mantenidas con el menor, con los progenitores juntos y por separado, y entrevistas conjuntas con el equipo docente.</li>
+<li><strong>Técnicas Sociofamiliares</strong>: Construcción del Genograma trigeneracional y del Ecomapa.</li>
+<li><strong>Fuentes Documentales Oficiales</strong>: Análisis del historial de asistencia y calificaciones en el sistema de gestión educativa de la Junta de Andalucía (<strong>SÉNECA</strong>) y de los antecedentes convivenciales y prestaciones en el sistema informático de los Servicios Sociales (<strong>CoheSSión</strong>).</li>
+</ul>
+<h3 class="subsection-title">6.3. Bloque 3: Resultados y Análisis de la Información</h3>
+<p>Constituye el cuerpo descriptivo y analítico del informe, debiendo redactarse con lenguaje técnico, objetivo, riguroso y libre de descalificaciones morales. Se organiza en áreas funcionales:</p>
+<div class="exam-item"><strong>1.</strong> <strong>Área Académica y Escolar</strong>: Análisis pormenorizado de las tasas de asistencia y absentismo (porcentajes de faltas justificadas e injustificadas según la Orden de 19/09/2005), rendimiento en las diferentes áreas curriculares, relación con el profesorado y grado de adaptación al grupo de iguales.</div>
+<p class="num-item"><strong>2.</strong> <strong>Área Familiar y Dinámica Convivencial</strong>: Composición de la unidad de convivencia, relaciones afectivas, estilo educativo predominante (Baumrind, Maccoby y Martin), competencias parentales (Barudy y Dantagnan), cumplimiento de normas y rutinas domésticas, situación habitacional y socioeconómica.</p>
+<p class="num-item"><strong>3.</strong> <strong>Área Personal, Social y Comunitaria</strong>: Grado de autonomía personal e higiene, desarrollo socioemocional, autoconcepto, uso del tiempo libre y ocio, relaciones en el barrio, vinculación a recursos comunitarios y factores protectores identificados.</p>
+<h3 class="subsection-title">6.4. Bloque 4: Conclusión Diagnóstica y Propuesta de Intervención</h3>
+<ul>
+<li><strong>Diagnóstico Socioeducativo</strong>: Juicio técnico integrador donde el profesional sintetiza la situación, explica la funcionalidad del desajuste o del absentismo a la luz del análisis sistémico y funcional, y formula un <strong>pronóstico evolutivo</strong> (qué ocurrirá si no se interviene o si se mantienen las pautas actuales).</li>
+<li><strong>Propuesta de Intervención y Recomendaciones</strong>: Plan de acción concreto, graduado y realista:</li>
+<li>Propuesta de suscripción o revisión de <strong>Compromisos Educativos o de Convivencia</strong> (Orden de 20 de junio de 2011).</li>
+<li>Medidas de apoyo socioeducativo domiciliario o inclusión en programas de refuerzo escolar de la estrategia <strong>ERACIS+</strong>.</li>
+<li>Derivación técnica, en su caso, al <strong>Equipo de Tratamiento Familiar (ETF)</strong> bajo el Decreto 100/2022 o elevación formal a la <strong>Comisión Provincial de Absentismo y Fiscalía de Menores</strong> en casos de negligencia grave reiterada.</li>
+<li><strong>Formalización</strong>: Fecha oficial de emisión, lugar (Utrera), firma electrónica del/de la Educador/a Social y visado de la Jefatura de Servicios Sociales.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="section-title">7. Enfoque Práctico en los Servicios Sociales del Excmo. Ayuntamiento de Utrera</h2>
+<h3 class="subsection-title">7.1. Organización Institucional en Utrera</h3>
+<p>El <strong>Excmo. Ayuntamiento de Utrera</strong> centraliza la atención social primaria en el <strong>Centro de Servicios Sociales Comunitarios (CSSC)</strong>, situado en la <strong>calle Catalina de Perea, nº 32</strong>. Desde estas dependencias, el/la Educador/a Social emite y tramita informes socioeducativos en constante coordinación intersectorial:</p>
+<ul>
+<li><strong>Informes del EMAE</strong>: Informes de valoración y propuesta de medidas elevados a la <strong>Comisión Municipal de Absentismo Escolar de Utrera</strong>, cuya presidencia ostenta la Alcaldía o Concejalía delegada.</li>
+<li><strong>Informes de Derivación al ETF</strong>: Aplicación rigurosa del instrumento <strong>VALÓRAME</strong> (<strong>Decreto 100/2022</strong>) para fundamentar el tratamiento familiar intensivo en casos de desprotección infantil moderada.</li>
+</ul>
+<h3 class="subsection-title">7.2. Intervención en Zonas Desfavorecidas: ERACIS+ en la Barriada El Tinte</h3>
+<p>En la <strong>Barriada El Tinte</strong>, la observación educativa y los informes adquieren rasgos propios:</p>
+<ul>
+<li><strong>Observación en las Aulas Socioeducativas del Centro Cívico</strong>: El Educador/a Social registra de manera continua la conducta prosocial, el aprendizaje de hábitos de estudio y la interacción de menores (con especial atención al colectivo de <strong>minoría étnica gitana</strong>).</li>
+<li><strong>Informes Socioeducativos de Inclusión</strong>: Documentan la superación de situaciones de desvinculación escolar, avalando el mantenimiento de prestaciones sociales vinculadas al cumplimiento de itinerarios formativos familiares.</li>
+</ul>
+<h3 class="subsection-title">7.3. Descentralización en las Pedanías: Guadalema, Trajano y Pinzón</h3>
+<p>La intervención socioeducativa en el medio rural de Utrera exige que los informes recojan las variables singulares de la lejanía geográfica:</p>
+<ul>
+<li>Informes técnicos sobre necesidades de transporte escolar hacia los IES de Utrera.</li>
+<li>Observación directa de las condiciones de socialización de los adolescentes en las pedanías de <strong>Guadalema de los Quintero, Trajano y Pinzón</strong>, proponiendo actividades comunitarias que prevengan el aislamiento y el desenganche escolar.</li>
+</ul>
+<hr class="divider"/>
+<h2 class="section-title">8. Secciones Pedagógicas de Cierre</h2>
+<h3 class="subsection-title">A. 25 Datos de Examen (Memorización Directa para Tribunal)</h3>
+<div class="exam-item"><strong>1.</strong> <strong>Mª Teresa Anguera (1979, 1988, 2003)</strong>: Máxima referente científica de la metodología observacional en España; clasificación de diseños observacionales (puntual/seguimiento, uni/multidimensional, individual/diádico).</div>
+<div class="exam-item"><strong>2.</strong> <strong>Postic y De Ketele (1992)</strong>: Obra fundamental <em>Observar las situaciones educativas</em>; distinción canónica entre observación evaluativa inicial, procesual y sumativa.</div>
+<div class="exam-item"><strong>3.</strong> <strong>Jacob Cohen (1960)</strong>: Coeficiente <strong>Kappa de Cohen</strong> ($\kappa$); mide la concordancia inter-observadores corrigiendo el porcentaje de acuerdo debido al azar.</div>
+<div class="exam-item"><strong>4.</strong> <strong>Criterio de excelencia del coeficiente Kappa</strong>: Un valor de $\kappa \ge 0,70$ se considera técnicamente aceptable, y $\kappa \ge 0,80$ excelente.</div>
+<div class="exam-item"><strong>5.</strong> <strong>Efecto Hawthorne (Reactividad)</strong>: Modificación involuntaria o artificial de la conducta del sujeto observado derivada del hecho de saberse objeto de observación.</div>
+<div class="exam-item"><strong>6.</strong> <strong>Efecto Pigmalión / Rosenthal (1968)</strong>: Sesgo por las expectativas previas del observador sobre el sujeto, condicionando la percepción y registro del dato.</div>
+<div class="exam-item"><strong>7.</strong> <strong>Deriva del Observador (<em>Observer Drift</em>)</strong>: Desviación o relajación progresiva involuntaria en la aplicación de los criterios de codificación a lo largo del tiempo.</div>
+<div class="exam-item"><strong>8.</strong> <strong>Condición de los sistemas de categorías</strong>: Deben ser obligatoriamente <strong>exhaustivos</strong> y <strong>mutuamente excluyentes (EME)</strong>.</div>
+<div class="exam-item"><strong>9.</strong> <strong>Observación Participante</strong>: Técnica de inserción del Educador/a Social en el medio natural abierto (calle, barrio) donde el observador comparte actividades con el grupo.</div>
+<div class="exam-item"><strong>10.</strong> <strong>Instrumentos narrativos</strong>: Notas de campo, diario de campo (reflexivo y longitudinal) y registros anecdóticos (incidentes críticos).</div>
+<div class="exam-item"><strong>11.</strong> <strong>Listas de Control (<em>Checklists</em>) vs. Escalas de Estimación</strong>: Las listas de control evalúan presencia/ausencia dicotómica (Sí/No); las escalas evalúan grado, intensidad o frecuencia continua.</div>
+<div class="exam-item"><strong>12.</strong> <strong>El Informe Socioeducativo</strong>: Documento técnico, formal, pericial y confidencial emitido por el Educador/a Social con valor probatorio administrativo y judicial.</div>
+<div class="exam-item"><strong>13.</strong> <strong>Cuatro bloques estructurales del informe</strong>: 1) Objetivos y datos identificativos, 2) Método e instrumentos, 3) Resultados y análisis por áreas, 4) Conclusiones diagnósticas y propuesta.</div>
+<div class="exam-item"><strong>14.</strong> <strong>Artículo 199 del Código Penal</strong>: Tipifica el delito de revelación de secretos por profesional con penas de prisión de uno a cuatro años e inhabilitación especial.</div>
+<div class="exam-item"><strong>15.</strong> <strong>Artículo 18 de la Constitución Española de 1978</strong>: Garantiza el derecho fundamental a la intimidad personal y familiar, y a la propia imagen.</div>
+<div class="exam-item"><strong>16.</strong> <strong>Ley Orgánica 3/2018 (LOPDGDD)</strong>: Regula la protección de datos personales y garantía de los derechos digitales, amparando el tratamiento de datos de menores en servicios sociales.</div>
+<div class="exam-item"><strong>17.</strong> <strong>Historia Social Única</strong>: Regulada por la <strong>Ley 9/2016 de Servicios Sociales de Andalucía</strong> como expediente documental único por usuario.</div>
+<div class="exam-item"><strong>18.</strong> <strong>Ley 4/2021 de Infancia y Adolescencia de Andalucía</strong>: Fundamenta el valor técnico pericial de los informes de los Servicios Sociales Comunitarios en situaciones de riesgo.</div>
+<div class="exam-item"><strong>19.</strong> <strong>Decreto 100/2022 de la Junta de Andalucía</strong>: Regula el papel de los Equipos de Tratamiento Familiar (ETF) y la emisión del informe socioeducativo del PTF.</div>
+<div class="exam-item"><strong>20.</strong> <strong>Instrumento VALÓRAME</strong>: Escala técnica oficial en Andalucía para la valoración de la gravedad de situaciones de riesgo y desprotección infantil.</div>
+<div class="exam-item"><strong>21.</strong> <strong>Orden de 19 de septiembre de 2005</strong>: Regula los informes técnicos en los protocolos de absentismo escolar en Andalucía (Fase 1, 2 y 3).</div>
+<div class="exam-item"><strong>22.</strong> <strong>Sede central de Servicios Sociales en Utrera</strong>: <strong>Calle Catalina de Perea, nº 32</strong> (CSSC, EMAE y coordinación del ETF).</div>
+<div class="exam-item"><strong>23.</strong> <strong>Presidencia de la Comisión Municipal de Absentismo de Utrera</strong>: Ostentada por la <strong>Alcaldía</strong> o concejal/a delegado/a (nunca por el inspector escolar ni el director del centro).</div>
+<div class="exam-item"><strong>24.</strong> <strong>Barriada El Tinte (ERACIS+)</strong>: Área prioritaria de Utrera para observación educativa comunitaria en Aulas Socioeducativas y mediación intercultural.</div>
+<div class="exam-item"><strong>25.</strong> <strong>Pedanías agrícolas de Utrera</strong>: <strong>Guadalema de los Quintero, Trajano y Pinzón</strong> (atención socioeducativa e informes descentralizados).</div>
+<hr class="divider"/>
+<h3 class="subsection-title">B. Esquema Sinóptico de Repaso Rápido</h3>
+<pre class="ascii-box">                               ESQUEMA SINÓPTICO: TEMA 54
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ 1. LA OBSERVACIÓN EDUCATIVA CIENTÍFICA                                      │
+ │    · Características: Sistemática, intencional, objetiva y contrastable.    │
+ │    · Control psicométrico: Fiabilidad inter-observador (Kappa de Cohen $\ge$│
+ │      0,70) y Validez ecológica en medio natural.                           │
+ │    · Sesgos: Reactividad (Hawthorne), Deriva del observador, Pigmalión.     │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 2. LA OBSERVACIÓN COMO MÉTODO EVALUATIVO                                    │
+ │    · Funciones: Inicial (Línea Base), Formativa (procesual), Sumativa.      │
+ │    · Proceso: Objetivos -&gt; Categorías (EME) -&gt; Muestreo -&gt; Registro.        │
+ │    · Diseños (Anguera): Puntual vs. Seguimiento; Uni vs. Multidimensional.  │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 3. TIPOLOGÍA E INSTRUMENTOS                                                 │
+ │    · Estructuración: No estructurada (abierta) vs. Estructurada (cerrada).  │
+ │    · Participación: No participante vs. Participante (medio abierto).       │
+ │    · Instrumentos: Narrativos (Diario de campo, Anecdótico) vs. Cuantitativos│
+ │      (Listas de control Sí/No, Escalas numéricas/descriptivas).             │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 4. EL INFORME EDUCATIVO / SOCIOEDUCATIVO                                    │
+ │    · Naturaleza: Documento formal, técnico, pericial y probatorio.          │
+ │    · Límites éticos: Art. 18 CE (intimidad), LOPDGDD 3/2018, Art. 199 CP    │
+ │      (secreto profesional). Historia Social Única (Ley 9/2016 Andalucía).   │
+ │    · Tipos: Diagnóstico, Seguimiento, Derivación (ETF/Fiscalía), Pericial. │
+ ├─────────────────────────────────────────────────────────────────────────────┤
+ │ 5. ESTRUCTURA CANÓNICA EN 4 BLOQUES Y ENFOQUE UTRERA                        │
+ │    · Bloques: 1) Objetivos e Id., 2) Método, 3) Resultados, 4) Conclusiones.│
+ │    · Utrera: CSSC Catalina de Perea 32 (EMAE, ETF Decreto 100/2022).        │
+ │    · Áreas locales: ERACIS+ Barriada El Tinte (aulas socioeducativas) y     │
+ │      pedanías rurales (Guadalema, Trajano, Pinzón).                         │
+ └─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+<hr class="divider"/>
+<h3 class="subsection-title">C. 7 Trampas Clásicas del Test Desarticuladas</h3>
+<div class="exam-item"><strong>1.</strong> <strong>La trampa sobre el cálculo del Coeficiente Kappa de Cohen</strong>:</div>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿Por qué se utiliza el coeficiente Kappa de Cohen en lugar del simple porcentaje de acuerdo para medir la fiabilidad de la observación?"</li>
+<li class="trap-a"><em>Desarticulación:</em> Porque el porcentaje de acuerdo simple sobreestima la concordancia real, ya que no contempla las coincidencias casuales. <strong>El coeficiente Kappa descuenta explícitamente el porcentaje de acuerdo que cabría esperar por puro azar</strong>. Atribuir a Kappa una medida de "validez" o considerarlo un porcentaje simple es un error habitual en el test.</li>
+</ul>
+<div class="exam-item"><strong>2.</strong> <strong>La trampa entre Listas de Control (<em>Checklists</em>) y Escalas de Estimación</strong>:</div>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿Qué instrumento observacional permite cuantificar la intensidad o frecuencia gradual con la que se manifiesta una conducta?"</li>
+<li class="trap-a"><em>Desarticulación:</em> <strong>La Escala de Estimación o Apreciación</strong>. Las Listas de Control o Cotejo son exclusivamente <strong>dicotómicas</strong> (registran únicamente la presencia o ausencia: Sí / No), sin admitir gradaciones intermedias de intensidad o frecuencia.</li>
+</ul>
+<div class="exam-item"><strong>3.</strong> <strong>La trampa sobre el significado del Efecto Hawthorne</strong>:</div>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿En qué consiste el Efecto Hawthorne en la observación educativa?"</li>
+<li class="trap-a"><em>Desarticulación:</em> Es el fenómeno de <strong>reactividad del sujeto observado</strong>, por el cual una persona modifica su comportamiento natural al saberse observada. No debe confundirse con el Efecto Pigmalión o Rosenthal (que alude al sesgo del observador derivado de sus expectativas subjetivas previas).</li>
+</ul>
+<p class="num-item"><strong>4.</strong> <strong>La trampa sobre los requisitos del sistema de categorías observacionales</strong>:</p>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿Qué dos condiciones técnicas debe reunir de forma preceptiva un sistema de categorías observacionales estructurado?"</li>
+<li class="trap-a"><em>Desarticulación:</em> Debe ser <strong>exhaustivo</strong> (cualquier conducta relevante emitida por el sujeto debe poder asignarse a una categoría) y <strong>mutuamente excluyente (EME)</strong> (cada evento de conducta solo puede clasificarse en una única categoría, sin solapamiento entre ellas).</li>
+</ul>
+<div class="exam-item"><strong>5.</strong> <strong>La trampa sobre el carácter del Informe Socioeducativo</strong>:</div>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿Es el informe socioeducativo emitido por el Educador/a Social un mero documento informativo sin consecuencias vinculantes?"</li>
+<li class="trap-a"><em>Desarticulación:</em> <strong>Falso</strong>. El informe socioeducativo es un <strong>documento técnico oficial con valor probatorio y pericial</strong> en vía administrativa y judicial. Puede fundamentar la retirada de custodias, declaraciones de desamparo, incoación de causas penales por abandono familiar (art. 226 CP) o concesión de recursos del Sistema de Servicios Sociales.</li>
+</ul>
+<p class="num-item"><strong>6.</strong> <strong>La trampa sobre la revelación de datos en el informe socioeducativo</strong>:</p>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿Puede el Educador/a Social incluir en el informe socioeducativo datos íntimos de la vida conyugal o historial médico no relacionados con el objetivo del informe?"</li>
+<li class="trap-a"><em>Desarticulación:</em> <strong>Rotundamente no</strong>. Rige el principio de <strong>pertinencia y minimización de datos</strong> consagrado en el RGPD y en la LOPDGDD 3/2018. Solo pueden consignarse aquellos datos estrictamente indispensables y relevantes para el objetivo técnico del informe. La divulgación de datos irrelevantes lesiona el artículo 18 de la CE y puede constituir delito de revelación de secretos (art. 199 CP).</li>
+</ul>
+<p class="num-item"><strong>7.</strong> <strong>La trampa sobre la estructura del informe: ubicación de las propuestas</strong>:</p>
+<ul>
+<li class="trap-q"><em>Pregunta trampa:</em> "¿En qué bloque del informe socioeducativo deben recogerse las medidas socioeducativas y derivaciones propuestas: en el método, en los resultados o en la conclusión diagnóstica?"</li>
+<li class="trap-a"><em>Desarticulación:</em> En el <strong>Bloque de Conclusión Diagnóstica y Propuesta de Intervención</strong> (cuarto bloque canónico). En el método solo se describen los instrumentos empleados, y en los resultados se exponen los hechos descriptivos y objetivos evaluados.</li>
+</ul>
+<hr class="divider"/>
+<h3 class="subsection-title">D. Supuesto Práctico Modal: Modelo Completo de Informe Socioeducativo Tipo en el Ayuntamiento de Utrera</h3>
+<p>A continuación se transcribe un <strong>modelo real y técnico de Informe Socioeducativo Pericial</strong> emitido por el/la Técnico/a Medio de Educación Social del Excmo. Ayuntamiento de Utrera:</p>
+<pre class="ascii-box">                      EXCMO. AYUNTAMIENTO DE UTRERA (SEVILLA)
+               ÁREA DE POLÍTICAS SOCIALES, IGUALDAD Y PLAN ERACIS+
+                  CENTRO DE SERVICIOS SOCIALES COMUNITARIOS (CSSC)
+                            Calle Catalina de Perea, nº 32
+ ─────────────────────────────────────────────────────────────────────────────
+                             INFORME SOCIOEDUCATIVO
+ ─────────────────────────────────────────────────────────────────────────────
+ Expediente CoheSSión: UTR-2026/0482-FAM         Fecha de emisión: 24/10/2026
+ Asunto: Valoración Socioeducativa por Absentismo y Conducta Disruptiva
+ Destinatario: Comisión Municipal de Absentismo Escolar / Fiscalía de Menores
+
+ 1. DATOS DE IDENTIFICACIÓN DE LA PERSONA MENOR Y UNIDAD CONVIVENCIAL
+ · Nombre y Apellidos del Menor: J.M.R.
+ · Fecha y Lugar de Nacimiento: 14/03/2013 (13 años), Utrera (Sevilla).
+ · Domicilio: Calle Pinsapo, Bloque 4, Barriada El Tinte, 41710 Utrera.
+ · Centro Educativo: IES Ponce de León (Utrera). Curso: 2º de ESO (Grupo C).
+ · Progenitores:
+   - Madre: Dña. R.R.M., 36 años, en situación de desempleo.
+   - Padre: D. J.M.S., 38 años, trabajos agrícolas temporales en recolección.
+ · Composición Familiar: Núcleo biparental con 3 hijos menores (J.M.R. de 13 años,
+   M.R. de 9 años escolarizada en CEIP Álvarez Quintero, y A.R. de 4 años).
+
+ 2. PROFESIONAL EMISOR E INSTITUCIÓN
+ · Técnico/a Medio de Educación Social (Subescala Técnica, Grupo A2).
+ · Colegiado/a nº 1482 del Colegio Profesional de Educadoras y Educadores
+   Sociales de Andalucía (CoPESA).
+ · Adscripción: Centro de Servicios Sociales Comunitarios (calle Catalina de
+   Perea, 32), adscrito al Equipo Municipal de Atención al Absentismo (EMAE).
+
+ 3. MOTIVO DEL INFORME Y OBJETIVOS TÉCNICOS
+ El presente informe se emite a solicitud de la Comisión Municipal de Absentismo
+ Escolar tras derivación formal efectuada por la Jefatura de Estudios del IES
+ Ponce de León en el marco de la Fase 2 de la Orden de 19 de septiembre de 2005.
+ · Objetivo Técnico: Evaluar de forma integral la dinámica sociofamiliar y
+   académica de J.M.R., determinar las causas funcionales del absentismo selectivo
+   y de las conductas disruptivas registradas, y proponer un plan de intervención
+   socioeducativa en medio abierto y comunitario.
+
+ 4. METODOLOGÍA E INSTRUMENTOS EVALUATIVOS EMPLEADOS
+ Las actuaciones se desarrollaron entre el 15/09/2026 y el 20/10/2026:
+ a) Observación Directa en Medio Natural:
+    - 4 sesiones de observación participante en el aula y patio del IES Ponce
+      de León (registro de interacción con iguales mediante escala descriptiva).
+    - 3 visitas a domicilio en la Barriada El Tinte durante el horario de tareas.
+    - 2 sesiones de observación en el Aula Socioeducativa de ERACIS+ (Centro Cívico).
+ b) Entrevistas Semiestructuradas y Sistémicas:
+    - 2 entrevistas individuales con el menor J.M.R. en sede del CSSC.
+    - 2 entrevistas con la madre y 1 con ambos progenitores en el domicilio.
+    - 2 sesiones de coordinación técnica con la tutora y la orientadora del IES.
+ c) Instrumentos Técnicos Específicos:
+    - Elaboración del Genograma Familiar trigeneracional y del Ecomapa relacional.
+    - Aplicación de la Escala de Detección de Riesgo Infantil (VALÓRAME).
+ d) Análisis Documental:
+    - Consulta del historial de asistencias e incidencias en sistema SÉNECA.
+    - Revisión de antecedentes sociales en el sistema CoheSSión.
+
+ 5. RESULTADOS DEL ANÁLISIS SOCIOEDUCATIVO POR ÁREAS
+ A) Área Escolar:
+ En el sistema SÉNECA consta un 28% de faltas injustificadas en el primer mes
+ lectivo (concentradas los lunes a primera hora y viernes completos). Se detecta
+ desfase curricular en lectoescritura y matemáticas. En el aula, el menor adopta
+ conductas oposicionistas ante tareas complejas, buscando la expulsión al pasillo
+ como mecanismo de escape/evitación de la frustración académica. Con iguales
+ muestra liderazgo informal en conductas de desobediencia.
+ B) Área Familiar y Dinámica de Convivencia:
+ Familia perteneciente a la minoría étnica gitana, arraigada en la Barriada El
+ Tinte. El estilo educativo parental predominante es permisivo-indulgente con
+ pautas inconsistentes: la madre desiste en la imposición de límites para evitar
+ los gritos del menor, cediendo el uso continuado de dispositivos móviles. El
+ padre pasa largas jornadas en faenas del campo, delegando la crianza en la madre
+ sin pautas compartidas. La vivienda reúne condiciones básicas de habitabilidad.
+ C) Área Personal y Social:
+ J.M.R. presenta adecuadas capacidades cognitivas y buen desarrollo físico, pero
+ baja tolerancia a la frustración y escasas habilidades de autorregulación
+ emocional. En su tiempo libre permanece en la vía pública sin supervisión adulta.
+ Se identifica como factor protector su motivación hacia los deportes colectivos
+ y el afecto positivo presente en el núcleo familiar.
+
+ 6. CONCLUSIÓN DIAGNÓSTICA SOCIOEDUCATIVA
+ Se dictamina que J.M.R. se encuentra en una situación de RIESGO SOCIAL Y DESAJUSTE
+ SOCIOEDUCATIVO MODERADO (Decreto 100/2022 y escala VALÓRAME), manifestado en
+ absentismo escolar selectivo cronificado y conductas disruptivas de escape.
+ Dicha conducta no responde a una patología individual, sino a la interacción
+ entre un desfase curricular no adaptado en el IES Ponce de León y un patrón
+ parental de inconsistencia de límites en el hogar, donde la ausencia de rutinas
+ cronifica la permanencia del menor en la calle. Pronóstico favorable supeditado a
+ intervención conductual coordinada centro-familia.
+
+ 7. PROPUESTA DE INTERVENCIÓN SOCIOEDUCATIVA
+ Se propone a la Comisión Municipal de Absentismo el siguiente plan de acción:
+ 1. Formalización de un Compromiso Educativo y de Convivencia (Orden 20/06/2011)
+    en el IES Ponce de León, con adaptación curricular de tareas y tutoría de apoyo.
+ 2. Inclusión obligatoria del menor en el Aula Socioeducativa de ERACIS+ en el
+    Centro Cívico de El Tinte (apoyo escolar vespertino y economía de fichas).
+ 3. Derivación de los progenitores al Taller Municipal de Parentalidad Positiva del
+    CSSC (calle Catalina de Perea, 32) para entrenamiento en límites conductuales.
+ 4. Inclusión del menor en las Escuelas Deportivas Municipales de Utrera.
+ 5. Mantenimiento del expediente en Fase 2 (EMAE) con seguimiento quincenal,
+    desaconsejando en este momento la remisión a Fiscalía de Menores al existir
+    compromiso explícito de colaboración familiar.
+
+ En Utrera, a 24 de octubre de 2026.
+ Firmado digitalmente:
+ El/La Técnico/a Medio de Educación Social (A2)
+ Colegiado/a nº 1482 CoPESA — Excmo. Ayuntamiento de Utrera
+ Visado: Jefatura del Centro de Servicios Sociales Comunitarios (Catalina de Perea, 32)
+</pre>
+<hr class="divider"/>
+<h3 class="subsection-title">E. Fuentes Oficiales y Bibliografía Consolidada</h3>
+<h4 class="subsubsection-title">Normativa Internacional, Estatal y Autonómica</h4>
+<ul>
+<li><strong>Constitución Española de 1978</strong> (<em>BOE nº 311, de 29 de diciembre de 1978</em>): Artículos 18, 27 y 39.</li>
+<li><strong>Ley Orgánica 1/1996, de 15 de enero, de Protección Jurídica del Menor</strong> (<em>BOE nº 15, de 17 de enero de 1996</em>).</li>
+<li><strong>Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD)</strong> (<em>BOE nº 294, de 6 de diciembre de 2018</em>).</li>
+<li><strong>Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD)</strong>, de 27 de abril de 2016, relativo a la protección de datos personales.</li>
+<li><strong>Código Penal de España</strong> (Ley Orgánica 10/1995, de 23 de noviembre): Artículos 199 (secreto profesional) y 226 (abandono de familia).</li>
+<li><strong>Ley 9/2016, de 27 de diciembre, de Servicios Sociales de Andalucía</strong> (<em>BOJA nº 249, de 29 de diciembre de 2016</em>): Historia Social Única.</li>
+<li><strong>Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía</strong> (<em>BOJA nº 149, de 4 de agosto de 2021</em>).</li>
+<li><strong>Decreto 100/2022, de 7 de junio</strong>, por el que se regula el papel de los Equipos de Tratamiento Familiar en Andalucía (<em>BOJA nº 111, de 13 de junio de 2022</em>).</li>
+<li><strong>Orden de 19 de septiembre de 2005</strong>, de la Consejería de Educación, por la que se desarrolla el Plan Integral para la Prevención, Control y Seguimiento del Absentismo Escolar (<em>BOJA nº 202, de 17 de octubre de 2005</em>).</li>
+<li><strong>Orden de 20 de junio de 2011</strong>, por la que se adoptan medidas para la promoción de la convivencia en los centros docentes sostenidos con fondos públicos (<em>BOJA nº 132, de 7 de julio de 2011</em>).</li>
+</ul>
+<h4 class="subsubsection-title">Bibliografía Doctrinal y Científica de Referencia</h4>
+<ul>
+<li><strong>Anguera, M. T. (1988).</strong> <em>Observación en la escuela</em>. Graó.</li>
+<li><strong>Anguera, M. T. (2003).</strong> <em>La observación pedagógica</em>. En R. Fernández-Ballesteros (Dir.), <em>Evaluación psicológica: Conceptos, métodos y estudio de casos</em>. Pirámide.</li>
+<li><strong>Cohen, J. (1960).</strong> <em>A coefficient of agreement for nominal scales</em>. Educational and Psychological Measurement, 20(1), 37-46.</li>
+<li><strong>Cohen, L., Manion, L., & Morrison, K. (2018).</strong> <em>Research Methods in Education</em> (8ª ed.). Routledge.</li>
+<li><strong>Consejo General de Colegios Oficiales de Educadoras y Educadores Sociales (CGCEES). (2007).</strong> <em>Documentos profesionalizadores: Definición de Educación Social, Código Deontológico y Catálogo de Competencias</em>. CGCEES.</li>
+<li><strong>Fernández-Ballesteros, R. (Dir.). (2014).</strong> <em>Evaluación psicológica: Conceptos, métodos y estudio de casos</em> (2ª ed.). Pirámide.</li>
+<li><strong>Postic, M., & De Ketele, J.-M. (1992).</strong> <em>Observar las situaciones educativas</em>. Narcea.</li>
+<li><strong>Rosenthal, R., & Jacobson, L. (1968).</strong> <em>Pygmalion in the Classroom: Teacher Expectation and Pupils' Intellectual Development</em>. Holt, Rinehart and Winston.</li>
+<li><strong>Silva, F. (Coord.). (1995).</strong> <em>Evaluación conductual y pedagogía</em>. Pirámide.</li>
+<li><strong>Suárez, A. (2011).</strong> <em>El informe social y el informe socioeducativo: Criterios técnicos de elaboración y garantías periciales</em>. Dykinson.</li>
+</ul>
+
+
+</body>
+</html>

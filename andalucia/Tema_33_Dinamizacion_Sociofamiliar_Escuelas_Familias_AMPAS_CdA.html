@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 33: La Dinamización Sociofamiliar en la Comunidad Educativa. Trabajos Individuales, Entrevistas Grupales, Talleres y Escuelas de Familias. Familias y Asociacionismo en el Ámbito Educativo: El Papel del Educador y la Educadora Social en la Orientación y Formación para las Asociaciones de Madres y Padres. El Papel de las Familias en las Comunidades de Aprendizaje</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 33</h1>
+  <h2>La Dinamización Sociofamiliar en la Comunidad Educativa. Trabajos Individuales, Entrevistas Grupales, Talleres y Escuelas de Familias. Familias y Asociacionismo en el Ámbito Educativo: El Papel del Educador y la Educadora Social en la Orientación y Formación para las Asociaciones de Madres y Padres. El Papel de las Familias en las Comunidades de Aprendizaje</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Carácter:</strong> Materias Específicas del Programa Oficial</p>
+<p><strong>Marco Legal y Documental:</strong></p>
+<ul class="meta-sublist">
+<li>Ley Orgánica 8/1985, de 3 de julio, reguladora del Derecho a la Educación (LODE, art. 5: derecho de asociación de padres y madres).</li>
+<li>Real Decreto 1533/1986, de 11 de julio (Asociaciones de Padres de Alumnos).</li>
+<li>Decreto 27/1988, de 10 de febrero, por el que se regulan las Asociaciones de Padres de Alumnos en Andalucía.</li>
+<li>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA), arts. 14 a 18.</li>
+<li>Orden de 8 de junio de 2012 (Comunidades de Aprendizaje en Andalucía).</li>
+<li>Instrucciones de 17 de septiembre de 2010 de la Dirección General de Participación e Innovación Educativa.</li>
+</ul>
+<p><strong>Autores y Doctrinas de Referencia:</strong> Ramón Flecha (Participación educativa de la comunidad y CdA), Joyce Epstein (Modelo de las 6 tipologías de implicación familiar), Paulo Freire (Educación comunitaria y diálogo), Pere Darder (Escuelas de padres y comunidad escolar).</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 33</div>
+  <div class="toc-item level-1">1. Introducción y sentido de la dinamización sociofamiliar en la escuela pública andaluza.</div>
+  <div class="toc-item level-1">2. Metodología y dispositivos para la dinamización sociofamiliar:</div>
+  <div class="toc-item level-2">2.1. Intervención individualizada: La entrevista socioeducativa de orientación.</div>
+  <div class="toc-item level-2">2.2. Dispositivos grupales: Entrevistas colectivas y círculos dialógicos.</div>
+  <div class="toc-item level-2">2.3. Talleres formativos vivenciales con familias.</div>
+  <div class="toc-item level-2">2.4. Las Escuelas de Familias: Diseño, contenidos, metodología y evaluación.</div>
+  <div class="toc-item level-1">3. El asociacionismo familiar en el sistema educativo:</div>
+  <div class="toc-item level-2">3.1. Marco jurídico de las Asociaciones de Madres y Padres del Alumnado (AMPAs).</div>
+  <div class="toc-item level-2">3.2. Estructura federativa en Andalucía (CODAPA).</div>
+  <div class="toc-item level-2">3.3. Dificultades y retos actuales del asociacionismo familiar.</div>
+  <div class="toc-item level-1">4. El rol del educador o educadora social en la orientación y formación de las AMPAs:</div>
+  <div class="toc-item level-2">4.1. Asesoramiento técnico en diseño de proyectos y solicitud de subvenciones.</div>
+  <div class="toc-item level-2">4.2. Apertura del AMPA a la diversidad cultural y social del barrio.</div>
+  <div class="toc-item level-1">5. El papel protagónico de las familias en las Comunidades de Aprendizaje (CdA):</div>
+  <div class="toc-item level-2">5.1. La familia como agente educativo dentro del aula (voluntariado en Grupos Interactivos).</div>
+  <div class="toc-item level-2">5.2. Las Comisiones Mixtas de Trabajo y la toma de decisiones compartida.</div>
+  <div class="toc-item level-2">5.3. Los programas de Formación de Familiares.</div>
+  <div class="toc-item level-1">6. Conclusión.</div>
+  <div class="toc-item level-1">7. Anexo: Mapa conceptual y tabla sinóptica del Tema 33.</div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y sentido de la dinamización sociofamiliar</h2>
+
+<p>La dinamización sociofamiliar no es una mera cortesía institucional ni un trámite burocrático de entrega de notas; constituye el <strong>motor primordial de la cohesión escolar y una condición indispensable para el éxito educativo de la infancia</strong> (Joyce Epstein). Durante años, la relación entre el centro docente y las familias se rigió por un modelo de distanciamiento jerárquico o "invitación pasiva", donde a los padres se les convocaba solo cuando sus hijos cometían faltas graves o para actos lúdicos festivos.</p>
+
+<p>La <strong>Educación Social</strong> promueve una transformación radical de esta relación: la escuela debe convertirse en una <strong>auténtica comunidad educadora y democrática</strong>, abierta al barrio, donde las familias no sean tratadas como "clientes" o "espectadores", sino como <strong>aliadas pedagógicas insustituibles y coinvestigadoras de la educación de sus hijos</strong> (Paulo Freire, Ramón Flecha).</p>
+
+<p>En Andalucía, el Educador y la Educadora Social ejerce como el principal agente dinamizador: genera espacios de encuentro cálidos, revitaliza las AMPAs, conduce escuelas de familias participativas y derriba las barreras de desconfianza que alejan a los sectores más vulnerables de la vida escolar.</p>
+
+<h2 class="section-title">2. Metodología y dispositivos para la dinamización sociofamiliar</h2>
+
+<p>La intervención con familias despliega una batería graduada de estrategias técnicas:</p>
+
+<div class="diagram-box">
+  <pre>                  DISPOSITIVOS DE DINAMIZACIÓN SOCIOFAMILIAR
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ INDIVIDUALIZADOS     │ GRUPALES / TALLERES  │ COMUNITARIOS / CdA   │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Entrevistas socio- │ • Círculos de diálogo│ • Escuelas de familia│
+ │   educativas         │ • Talleres vivencial.│ • Comisiones mixtas  │
+ │ • Visitas a domicilio│ • Grupos de apoyo    │ • Voluntariado en    │
+ │ • Pactos familiares  │   mutuo entre iguales│   Grupos Interactiv. │
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<h3 class="sub-title">2.1. Intervención Individualizada: La Entrevista Socioeducativa</h3>
+
+<p>Espacio íntimo y de estricta confidencialidad para explorar las dificultades específicas de un hogar (problemas de conducta, absentismo, desahucios, duelos). El educador social utiliza la escucha activa y la reformulación positiva, huyendo del reproche y buscando acuerdos realistas.</p>
+
+<h3 class="sub-title">2.2. Dispositivos Grupales y Talleres Vivenciales</h3>
+
+<p>Espacios participativos donde se trabaja a través de dinámicas activas (role-playing, análisis de dilemas, visionado de vídeos). Permite a las familias compartir vivencias, descubrir que sus dudas son comunes y tejer redes de apoyo mutuo que combaten la soledad en la crianza.</p>
+
+<h3 class="sub-title">2.3. Las Escuelas de Familias</h3>
+
+<p>Dispositivo socioeducativo nuclear coordinado por el Educador Social:</p>
+
+<ul>
+  <li><strong>Diseño Técnico:</strong> Diagnóstico previo de intereses de las familias mediante encuestas sencillas, fijación de un calendario compatible con la jornada laboral y habilitación de un servicio de ludoteca infantil para facilitar la asistencia.</li>
+  <li><strong>Contenidos Nucleares:</strong> Pautas de parentalidad positiva, establecimiento de normas y límites sin castigo físico, prevención de adicciones digitales y apuestas online, educación afectivo-sexual y fomento de la autoestima adolescente.</li>
+  <li><strong>Metodología Dialógica:</strong> Superación de la clase magistral médica o pedagógica; el educador actúa como facilitador que modera el debate a partir de la inteligencia cultural de los propios padres.</li>
+</ul>
+
+<h2 class="section-title">3. El asociacionismo familiar en el sistema educativo</h2>
+
+<h3 class="sub-title">3.1. Marco Jurídico de las AMPAs</h3>
+
+<ul>
+  <li><strong>LODE (Ley Orgánica 8/1985, art. 5):</strong> Consagra el derecho fundamental de los padres a asociarse libremente en el ámbito escolar.</li>
+  <li><strong>Decreto 27/1988 de Andalucía:</strong> Regula las Asociaciones de Madres y Padres del Alumnado en la comunidad, garantizando su derecho a utilizar las instalaciones escolares, recibir información del PEC y elevar propuestas a los órganos de gobierno.</li>
+  <li><strong>Estructura Representativa:</strong> Las AMPAs se agrupan en Federaciones provinciales y en la Confederación Andaluza de Asociaciones de Madres y Padres del Alumnado (<strong>CODAPA</strong>), con voz y voto en el Consejo Escolar de Andalucía.</li>
+</ul>
+
+<h3 class="sub-title">3.2. Retos Actuales de las AMPAs</h3>
+
+<p>Escasa participación de las familias jóvenes, sobrecarga de las juntas directivas (monopolizadas a menudo por unos pocos progenitores) y dificultad para integrar a familias migrantes o de minorías étnicas.</p>
+
+<h2 class="section-title">4. El rol del educador/a social con las AMPAs</h2>
+
+<p>De acuerdo con las <strong>Instrucciones de 17 de septiembre de 2010</strong>, el educador social despliega una labor de asesoramiento técnico y empoderamiento asociativo:</p>
+
+<ol>
+  <li><strong>Asesoramiento en Gestión y Proyectos:</strong> Ayuda a la directiva del AMPA en la elaboración de proyectos de actividades extraescolares y solicitud de subvenciones públicas municipales y autonómicas.</li>
+  <li><strong>Apertura a la Diversidad:</strong> Estrategias de mediación intercultural para incorporar a madres y padres gitanos e inmigrantes a los órganos directivos del AMPA.</li>
+  <li><strong>Coorganización de Actividades Comunitarias:</strong> Diseño conjunto de fiestas escolares interculturales, mercadillos solidarios, bancos de libros y semanas culturales del centro.</li>
+</ol>
+
+<h2 class="section-title">5. El papel protagónico de las familias en las Comunidades de Aprendizaje (CdA)</h2>
+
+<p>En los centros reconocidos como Comunidad de Aprendizaje (<strong>Orden de 8 de junio de 2012</strong>), las familias no son meras colaboradoras externas; son <strong>protagonistas centrales y decisorias de la vida escolar</strong>:</p>
+
+<div class="diagram-box">
+  <pre>                  PARTICIPACIÓN FAMILIAR EN LAS CdA
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ DENTRO DEL AULA      │ EN LA GESTIÓN        │ EN SU FORMACIÓN      │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Voluntariado en los│ • Comisiones Mixtas  │ • Formación de fami- │
+ │   Grupos Interactiv. │   paritarias (50% fa-│   liares: TIC, caste-│
+ │ • Tertulias Dialógic.│   milias y docentes) │   llano, alfabetizac.│
+ │ • Coeducación real   │ • Asamblea del Sueño │ • Éxito compartido   │
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<ol>
+  <li><strong>Voluntariado en Grupos Interactivos:</strong> Madres, abuelas y vecinos entran semanalmente al aula ordinaria para dinamizar los pequeños grupos de trabajo bajo la coordinación del profesor, multiplicando las interacciones adultas positivas con el alumnado.</li>
+  <li><strong>Las Comisiones Mixtas de Trabajo:</strong> Órganos de decisión paritarios (docentes, familias, educador social y alumnado) encargados de llevar a cabo los objetivos priorizados en "El Sueño" del centro (Comisión de Aprendizajes, Comisión de Convivencia, Comisión de Patios e Infraestructuras).</li>
+  <li><strong>Formación de Familiares:</strong> La escuela abre sus aulas por las tardes para formar a las propias madres y padres a petición suya (cursos de alfabetización, informática básica, español para personas extranjeras), demostrando la investigación de INCLUD-ED que <strong>a mayor formación académica de los familiares, mayor es el éxito escolar de sus hijos</strong>.</li>
+</ol>
+
+<h2 class="section-title">6. Conclusión</h2>
+
+<p>La escuela pública andaluza solo alcanza su verdadera grandeza democrática cuando sus puertas y sus aulas se abren de par en par a las familias de la comunidad.</p>
+
+<p>El <strong>Educador y la Educadora Social</strong> es el puente humano que hace posible este encuentro: acoge las incertidumbres de la crianza, revitaliza el tejido asociativo de las AMPAs y hace realidad el sueño de una escuela donde docentes, familias y vecinos caminan juntos para forjar un porvenir de igualdad, sabiduría y dignidad para todas las infancias.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">7. Anexo: Mapa conceptual y tabla sinóptica del Tema 33</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Normativa / Doctrinas Clave</th>
+      <th>Conceptos e Implicación Práctica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Dinamización Sociofamiliar</strong></td>
+      <td>Joyce Epstein • Paulo Freire</td>
+      <td>Superación del modelo jerárquico; la familia como aliada pedagógica e impulsora de equidad.</td>
+    </tr>
+    <tr>
+      <td><strong>Escuelas de Familias</strong></td>
+      <td>Parentalidad positiva • Grupalidad</td>
+      <td>Diagnóstico de intereses, horarios conciliadores, metodologías dialógicas y apoyo entre iguales.</td>
+    </tr>
+    <tr>
+      <td><strong>Marco Legal AMPAs</strong></td>
+      <td>LODE (art. 5) • Decreto 27/1988</td>
+      <td>Derecho fundamental de asociación familiar; uso de instalaciones del centro y representación en CODAPA.</td>
+    </tr>
+    <tr>
+      <td><strong>Asesoramiento Técnico</strong></td>
+      <td>Instrucciones de 17 de septiembre de 2010</td>
+      <td>Asesoramiento del educador social a las AMPAs en proyectos, subvenciones y apertura a minorías.</td>
+    </tr>
+    <tr>
+      <td><strong>Familias en las CdA</strong></td>
+      <td>Orden 8 de junio de 2012 • INCLUD-ED</td>
+      <td>Participación decisoria en Comisiones Mixtas y voluntariado directo en Grupos Interactivos.</td>
+    </tr>
+    <tr>
+      <td><strong>Formación de Familiares</strong></td>
+      <td>AEE del Proyecto INCLUD-ED</td>
+      <td>Cursos de alfabetización y TIC para progenitores; correlación directa con el éxito escolar infantil.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>Perfil técnico vertebrador</td>
+      <td>Coordinador de escuelas de familias, dinamizador de voluntariado y mediador con familias en riesgo.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

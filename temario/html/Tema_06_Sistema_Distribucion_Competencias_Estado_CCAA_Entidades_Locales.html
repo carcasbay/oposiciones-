@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tema 06: Distribución de Competencias y Régimen Local</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 18mm 16mm 18mm 16mm;
+            @bottom-right {
+                content: counter(page);
+                font-family: 'Segoe UI', Arial, sans-serif;
+                font-size: 9pt;
+                color: #555;
+            }
+            @bottom-left {
+                content: "Oposiciones Utrera - Técnico/a Medio Educación Social (A2)";
+                font-family: 'Segoe UI', Arial, sans-serif;
+                font-size: 9pt;
+                color: #777;
+            }
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #222;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-card {
+            border-bottom: 2px solid #2e4d34;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        .badge-bar {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .badge {
+            background: #e8f5e9;
+            color: #1b5e20;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 7.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px solid #c8e6c9;
+        }
+
+        .badge-secondary {
+            background: #e3f2fd;
+            color: #0d47a1;
+            border-color: #bbdefb;
+        }
+
+        .doc-title {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 17pt;
+            font-weight: 800;
+            color: #1b4324;
+            line-height: 1.25;
+            margin: 0 0 10px 0;
+            text-align: left;
+        }
+
+        .section-title {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 12.5pt;
+            font-weight: 700;
+            color: #2e4d34;
+            border-left: 4px solid #2e4d34;
+            padding-left: 8px;
+            margin-top: 22px;
+            margin-bottom: 10px;
+            page-break-after: avoid;
+        }
+
+        .subsection-title {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 11pt;
+            font-weight: 700;
+            color: #1b5e20;
+            margin-top: 16px;
+            margin-bottom: 6px;
+            page-break-after: avoid;
+        }
+
+        .subsubsection-title {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 10pt;
+            font-weight: 700;
+            color: #333;
+            margin-top: 12px;
+            margin-bottom: 4px;
+            page-break-after: avoid;
+        }
+
+        p {
+            margin: 0 0 8px 0;
+            text-align: justify;
+        }
+
+        strong {
+            color: #1a331f;
+            font-weight: 700;
+        }
+
+        ul, ol {
+            margin: 4px 0 10px 20px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 4px;
+            text-align: justify;
+        }
+
+        .divider {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 18px 0;
+        }
+
+        .table-container {
+            margin: 12px 0;
+            page-break-inside: avoid;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 8.5pt;
+        }
+
+        th {
+            background-color: #2e4d34;
+            color: #fff;
+            font-weight: 700;
+            padding: 7px 9px;
+            border: 1px solid #1a331f;
+            text-align: left;
+        }
+
+        td {
+            padding: 6px 9px;
+            border: 1px solid #dcdcdc;
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7faf7;
+        }
+
+        .code-card {
+            background: #f4f8f4;
+            border: 1px solid #cce0ce;
+            border-left: 3.5px solid #2e4d34;
+            border-radius: 4px;
+            padding: 10px 14px;
+            margin: 12px 0;
+            page-break-inside: avoid;
+        }
+
+        .quote-card {
+            background: #fff8e1;
+            border-left: 4px solid #ff8f00;
+            border-radius: 4px;
+            padding: 8px 12px;
+            margin: 10px 0;
+            font-style: italic;
+            font-size: 9.5pt;
+            color: #4e342e;
+            page-break-inside: avoid;
+        }
+
+        pre {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 8pt;
+            line-height: 1.35;
+            margin: 0;
+            color: #1a331f;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-card">
+        <div class="badge-bar">
+            <span class="badge">Tema 06 - Parte General</span>
+            <span class="badge badge-secondary">Educación Social (A2)</span>
+            <span class="badge">Ayto. de Utrera</span>
+        </div>
+    </div>
+    <h1 class='doc-title'>TEMA 6: EL SISTEMA DE DISTRIBUCIÓN DE COMPETENCIAS ENTRE EL ESTADO Y LAS COMUNIDADES AUTÓNOMAS. LAS RELACIONES ENTRE EL ESTADO Y LAS COMUNIDADES AUTÓNOMAS. EL MARCO COMPETENCIAL DE LAS ENTIDADES LOCALES</h1>
+<p><strong>Programa Oficial</strong>: Oposiciones al Cuerpo de Técnico/a Medio de Educación Social (Subescala Técnica, Grupo A2).  </p>
+<p><strong>Convocatoria</strong>: Excmo. Ayuntamiento de Utrera (Sevilla).  </p>
+<p><strong>Bases</strong>: Boletín Oficial de la Provincia de Sevilla nº 102 (29/05/2026).  </p>
+<p><strong>Normativa Principal</strong>: Constitución Española de 1978 (arts. 137, 140, 141, 148, 149 y 150); Ley Orgánica 2/2007, de 19 de marzo, de reforma del Estatuto de Autonomía para Andalucía (arts. 42 y 61); Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local (arts. 7.4, 25, 26 y 27); Ley 5/2010, de 11 de junio, de Autonomía Local de Andalucía (art. 9); Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (Título III, arts. 140 a 158).</p>
+<hr class='divider'/>
+<h2 class='section-title'>1. EL SISTEMA DE DISTRIBUCIÓN DE COMPETENCIAS ENTRE EL ESTADO Y LAS COMUNIDADES AUTÓNOMAS</h2>
+<h3 class='subsection-title'>1.1. Fundamento Constitucional y la Técnica del Doble Listado</h3>
+<p>El modelo de distribución competencial diseñado por la Constitución Española de 1978 (en adelante, <strong>CE</strong>) no fijó un reparto estático o cerrado en el propio texto constitucional, sino que articuló un mecanismo complejo basado en el <strong>principio dispositivo</strong> y en la denominada técnica del <strong>doble listado competencial</strong>, complementada por un conjunto de reglas de cierre hermenéutico:</p>
+<ul>
+<li><strong>El listado de competencias asumibles por las CCAA (Artículo 148.1 CE)</strong>:</li>
+<li>Contiene una enumeración positiva de <strong>22 materias</strong> que las Comunidades Autónomas podían asumir originariamente en sus respectivos Estatutos desde el momento inicial de su constitución.</li>
+<li>Destacan, por su directa proyección en los servicios a la ciudadanía:</li>
+<li><em>Asistencia social</em> (artículo 148.1.20ª).</li>
+<li><em>Sanidad e higiene</em> (artículo 148.1.21ª).</li>
+<li><em>Ordenación del territorio, urbanismo y vivienda</em> (artículo 148.1.3ª).</li>
+<li><em>Fomento de la cultura y la investigación</em> (artículo 148.1.17ª).</li>
+<li><strong>El listado de competencias exclusivas del Estado (Artículo 149.1 CE)</strong>:</li>
+<li>Contiene una relación tasada de <strong>32 materias</strong> reservadas con carácter indisponible a la titularidad del Estado central.</li>
+<li>Títulos competenciales estatales de máxima relevancia:</li>
+<li><strong>Artículo 149.1.1ª</strong>: La regulación de las <strong>condiciones básicas que garanticen la igualdad de todos los españoles</strong> en el ejercicio de los derechos y en el cumplimiento de los deberes constitucionales. (Título transversal que fundamenta leyes estatales como la Ley 39/2006 de Dependencia o la LOPIVI).</li>
+<li><strong>Artículo 149.1.2ª</strong>: Nacionalidad, inmigración, emigración, extranjería y derecho de asilo.</li>
+<li><strong>Artículo 149.1.18ª</strong>: Las <strong>bases del régimen jurídico de las Administraciones Públicas</strong> y del régimen estatutario de sus funcionarios; el <strong>procedimiento administrativo común</strong>; y el sistema de responsabilidad patrimonial de todas las Administraciones.</li>
+<li><strong>Artículo 149.1.16ª</strong>: Sanidad exterior; <strong>bases y coordinación general de la sanidad</strong>; legislación sobre productos farmacéuticos.</li>
+<li><strong>Artículo 149.1.30ª</strong>: Regulación de las condiciones de obtención, expedición y homologación de <strong>títulos académicos y profesionales</strong> y normas básicas para el desarrollo del artículo 27 de la Constitución (educación).</li>
+</ul>
+<h3 class='subsection-title'>1.2. Las Tres Cláusulas de Cierre del Artículo 149.3 CE</h3>
+<p>Para resolver los vacíos normativos y prevenir lagunas competenciales, el <strong>artículo 149.3 de la CE</strong> consagra tres reglas estructurales de articulación del ordenamiento jurídico:</p>
+<div class='code-card'><pre>
++-------------------------------------------------------------------------+
+|                  CLÁUSULAS DE CIERRE DEL ARTÍCULO 149.3 CE              |
++-------------------------------------------------------------------------+
+|  1. CLÁUSULA RESIDUAL:                                                  |
+|     • Materias no atribuidas expresamente al Estado: pueden ser         |
+|       asumidas por las CCAA en sus Estatutos de Autonomía.              |
+|     • Materias no asumidas por los Estatutos: corresponden al Estado.   |
++-------------------------------------------------------------------------+
+|  2. CLÁUSULA DE PREVALENCIA:                                            |
+|     • En caso de conflicto de normas, prevalece el Derecho estatal      |
+|       sobre el autonómico en todo lo no atribuido a competencia         |
+|       exclusiva de la Comunidad Autónoma.                               |
++-------------------------------------------------------------------------+
+|  3. CLÁUSULA DE SUPLETORIEDAD:                                          |
+|     • El Derecho estatal es, en todo caso, supletorio del autonómico.   |
+|     • LÍMITE JURISPRUDENCIAL (SSTC 118/1996 y 61/1997): El Estado NO    |
+|       puede legislar materias exclusivas autonómicas con el único       |
+|       pretexto de dictar derecho supletorio.                            |
++-------------------------------------------------------------------------+
+</pre></div>
+<ul>
+<li><strong>La Cláusula Residual</strong>:</li>
+<li>Operativa en doble sentido:</li>
+<li>Si una materia no está atribuida expresamente al Estado por el artículo 149.1, las CCAA pueden asumirla legítimamente a través de sus Estatutos de Autonomía.</li>
+<li>Si una Comunidad Autónoma decide no asumir en su Estatuto una materia disponible, dicha competencia permanece automáticamente en la esfera del Estado central.</li>
+<li><strong>La Cláusula de Prevalencia</strong>:</li>
+<li>En caso de concurrencia conflictiva entre normas estatales y autonómicas sobre un mismo objeto material, <strong>las normas del Estado prevalecerán sobre las de las Comunidades Autónomas</strong> en todo aquello que no esté formalmente atribuido a la exclusiva competencia de estas.</li>
+<li><strong>La Cláusula de Supletoriedad y su Doctrina Constitucional</strong>:</li>
+<li>Dispone que <em>"el Derecho estatal será, en todo caso, supletorio del Derecho de las Comunidades Autónomas"</em>.</li>
+<li><strong>Doctrina imperativa del Tribunal Constitucional (SSTC 118/1996 y 61/1997)</strong>: El Tribunal Constitucional fijó con rotundidad que la supletoriedad no constituye un título atributivo de competencia genérico que faculte al legislador estatal para dictar normas en materias transferidas en exclusiva a las CCAA. El Estado <strong>solo puede dictar normas cuando ostenta un título competencial propio</strong> (sea exclusivo, básico o concurrente), quedando prohibida la promulgación de leyes estatales con propósito puramente supletorio.</li>
+</ul>
+<h3 class='subsection-title'>1.3. Tipología de Competencias según la Intensidad de las Potestades</h3>
+<p>Atendiendo a las potestades públicas que concurren sobre cada materia (legislativa, reglamentaria y ejecutiva), la jurisprudencia constitucional y el <strong>artículo 42 del Estatuto de Autonomía para Andalucía (EAAnd)</strong> distinguen cuatro categorías:</p>
+<ul>
+<li><strong>Competencias Exclusivas (artículo 42.1 EAAnd)</strong>:</li>
+<li>La Comunidad Autónoma ostenta de forma íntegra la <strong>potestad legislativa, la potestad reglamentaria y la función ejecutiva</strong>, respetando únicamente las normas constitucionales e internacionales.</li>
+<li><em>Materia nuclear de examen</em>: En virtud del <strong>artículo 61 del EAAnd</strong>, corresponde a la Comunidad Autónoma de Andalucía la <strong>competencia exclusiva en materia de servicios sociales, voluntariado, menores y familias</strong>.</li>
+<li><strong>Competencias Compartidas (artículo 42.2 EAAnd)</strong>:</li>
+<li>Reparto funcional vertical sobre una misma materia:</li>
+<li>Al <strong>Estado</strong> le corresponde la <strong>legislación básica</strong> (principios o bases generales uniformes mediante ley formal).</li>
+<li>A la <strong>Comunidad Autónoma</strong> le corresponde la <strong>potestad legislativa de desarrollo</strong>, la potestad reglamentaria ejecutiva y la función ejecutiva de gestión.</li>
+<li>Ejemplos: Sanidad (art. 55 EAAnd), Educación (art. 52 EAAnd) y Medio Ambiente (art. 57 EAAnd).</li>
+<li><strong>Competencias Ejecutivas (artículo 42.3 EAAnd)</strong>:</li>
+<li>El Estado ostenta la potestad legislativa y la potestad reglamentaria sustantiva.</li>
+<li>La Comunidad Autónoma asume exclusivamente la <strong>función ejecutiva íntegra</strong> (gestión material, tramitación de expedientes, inspección técnica y potestad sancionadora), pudiendo dictar reglamentos organizativos internos.</li>
+<li>Ejemplo: Legislación laboral y ejecución de políticas de empleo (art. 63 EAAnd).</li>
+<li><strong>Competencias sobre la Aplicación del Derecho de la Unión Europea (artículo 42.4 EAAnd)</strong>:</li>
+<li>Ejecución autonómica de las directivas y reglamentos comunitarios que incidan sobre materias de su competencia.</li>
+</ul>
+<h3 class='subsection-title'>1.4. Vías Extraestatutarias de Modificación Competencial (Artículo 150 CE)</h3>
+<p>El reparto competencial estatutario puede ser alterado o modulado por las Cortes Generales sin necesidad de reformar los Estatutos mediante las tres técnicas previstas en el artículo 150 de la Constitución:</p>
+<ul>
+<li><strong>Leyes Marco (Artículo 150.1 CE)</strong>: Las Cortes Generales, en materias de competencia estatal, pueden atribuir a todas o a alguna de las Comunidades Autónomas la facultad de dictar, para sí mismas, normas legislativas en el marco de los principios, bases y directrices fijados por una ley estatal, estableciendo modalidades de control parlamentario.</li>
+<li><strong>Leyes de Transferencia o Delegación (Artículo 150.2 CE)</strong>: El Estado puede transferir o delegar en las Comunidades Autónomas, mediante <strong>Ley Orgánica</strong>, facultades correspondientes a materias de titularidad estatal que por su propia naturaleza sean susceptibles de transferencia o delegación. La ley preverá en cada caso la correspondiente transferencia de medios financieros y las formas de control estatal reservadas.</li>
+<li><strong>Leyes de Armonización (Artículo 150.3 CE)</strong>: El Estado puede dictar leyes que establezcan los principios necesarios para armonizar las disposiciones normativas de las CCAA, aun en el caso de materias atribuidas a la competencia de estas, cuando así lo exija el <strong>interés general</strong>. La apreciación de esta necesidad corresponde a las <strong>Cortes Generales por mayoría absoluta de cada Cámara</strong> (Congreso y Senado).</li>
+</ul>
+<hr class='divider'/>
+<h2 class='section-title'>2. LAS RELACIONES ENTRE EL ESTADO Y LAS COMUNIDADES AUTÓNOMAS</h2>
+<h3 class='subsection-title'>2.1. Principios Rectores y Marco de Relaciones</h3>
+<p>Las relaciones entre la Administración General del Estado y las CCAA se rigen por los principios de <strong>lealtad constitucional, cooperación, colaboración y coordinación</strong> consagrados en el Título III de la <strong>Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (LRJSP)</strong>.</p>
+<h3 class='subsection-title'>2.2. Órganos e Instrumentos de Cooperación</h3>
+<p>La cooperación institucional se articula a través de órganos colegiados multilaterales y bilaterales:</p>
+<ul>
+<li><strong>La Conferencia de Presidentes (Artículo 146 Ley 40/2015)</strong>:</li>
+<li>Máximo órgano de cooperación política multilateral entre el Estado y las Comunidades Autónomas.</li>
+<li>Integrada por el Presidente del Gobierno (que la preside) y los Presidentes de las diecisiete CCAA y de las Ciudades de Ceuta y Melilla.</li>
+<li>Adopta acuerdos de naturaleza directiva y estratégica sobre asuntos de máxima trascendencia estatal o comunitaria europea.</li>
+<li><strong>Las Conferencias Sectoriales (Artículo 147 Ley 40/2015)</strong>:</li>
+<li>Órganos de encuentro multilateral por ramas materiales específicas.</li>
+<li>Integradas por el <strong>Ministro titular del ramo</strong> y los <strong>Consejeros competentes de las diecisiete CCAA</strong>.</li>
+<li>Destaca la <strong>Conferencia Sectorial de Servicios Sociales</strong>, donde se consensúan los criterios de reparto del Plan Concertado de Prestaciones Básicas y fondos de dependencia.</li>
+<li><em>Eficacia de los acuerdos</em>: Son obligatorios para las administraciones que voten a favor (art. 151 LRJSP).</li>
+<li><strong>Las Comisiones Bilaterales de Cooperación (Artículo 153 Ley 40/2015)</strong>:</li>
+<li>Órganos de interlocución directa de composición paritaria entre el Estado y una Comunidad Autónoma individual para el seguimiento de asuntos estatutarios singulares.</li>
+<li><strong>Los Convenios Interadministrativos (Artículos 47 a 53 Ley 40/2015)</strong>:</li>
+<li>Acuerdos formalizados entre el Estado y las CCAA para coordinar financiación y proyectos técnicos comunes.</li>
+</ul>
+<h3 class='subsection-title'>2.3. Resolución de Conflictos Intersubjetivos</h3>
+<p>Cuando surgen discrepancias sobre la invasión ilegítima de competencias, el ordenamiento contempla vías preventivas y jurisdiccionales:</p>
+<ul>
+<li><strong>Procedimiento Preventivo de Negociación Bilateral (Artículo 33.2 de la LOTC)</strong>:</li>
+<li>Mecanismo extrajudicial para evitar recursos de inconstitucionalidad contra leyes.</li>
+<li>El Presidente del Gobierno o los Gobiernos autonómicos pueden convocar la Comisión Bilateral de Cooperación en el plazo de <strong>tres meses</strong> desde la publicación de la ley en disputa.</li>
+<li>La iniciación del procedimiento <strong>amplía el plazo para interponer el recurso de inconstitucionalidad de tres a nueve meses</strong>, permitiendo negociar modificaciones legales consensuadas.</li>
+<li><strong>Conflictos de Competencia ante el Tribunal Constitucional (Título IV LOTC, arts. 60 a 72)</strong>:</li>
+<li><em>Conflictos positivos</em>: Planteados cuando el Estado o una CA consideran que una disposición, resolución o acto de la otra administración no respeta el orden competencial establecido. Si lo plantea el Estado, el Presidente del Gobierno puede invocar el <strong>artículo 161.2 de la CE</strong>, produciendo la <strong>suspensión automática del acto o norma autonómica recurrida por un plazo máximo de cinco meses</strong> (debiendo el TC ratificarla o levantarla antes de dicho plazo).</li>
+<li><em>Conflictos negativos</em>: Suscitados cuando un ciudadano o entidad requiere a dos administraciones distintas y ambas se declaran formalmente incompetentes por entender que corresponde a la otra.</li>
+</ul>
+<hr class='divider'/>
+<h2 class='section-title'>3. EL MARCO COMPETENCIAL DE LAS ENTIDADES LOCALES</h2>
+<h3 class='subsection-title'>3.1. Fundamento Constitucional de la Autonomía Local</h3>
+<p>Los <strong>artículos 137 y 140 de la CE</strong> garantizan la autonomía del Municipio para la gestión de sus intereses propios. Dicha autonomía está blindada por la doctrina del Tribunal Constitucional (garantía institucional), que impide al Estado o a las CCAA desapoderar a los Ayuntamientos de un núcleo sustancial de competencias.</p>
+<p>A su vez, el <strong>artículo 4.3 de la Carta Europea de la Autonomía Local de 1985</strong> (ratificada por España) consagra el <strong>principio de subsidiariedad</strong>: El ejercicio de las responsabilidades públicas debe corresponder preferentemente a las autoridades más cercanas a los ciudadanos.</p>
+<div class='code-card'><pre>
++-------------------------------------------------------------------------+
+|                  MARCO COMPETENCIAL MUNICIPAL (LRBRL TRAS LRSAL)        |
++-------------------------------------------------------------------------+
+|  COMPETENCIAS PROPIAS (Art. 25 LRBRL):                                  |
+|  • Atribuidas por Ley formal estatal o autonómica.                      |
+|  • Se ejercen en régimen de autonomía y bajo propia responsabilidad.    |
+|  • Art. 25.2.e: EVALUACIÓN E INFORMACIÓN DE NECESIDADES SOCIALES Y      |
+|    ATENCIÓN INMEDIATA A PERSONAS EN RIESGO DE EXCLUSIÓN SOCIAL.         |
++-------------------------------------------------------------------------+
+|  SERVICIOS MÍNIMOS OBLIGATORIOS (Art. 26 LRBRL):                        |
+|  • Todos los municipios: Alumbrado, cementerio, residuos, agua, etc.    |
+|  • &gt; 5.000 hab: Parque público, biblioteca, tratamiento residuos.       |
+|  • &gt; 20.000 hab. (UTRERA ~52.000 hab.): PROTECCIÓN CIVIL, EVALUACIÓN E  |
+|    INFORMACIÓN DE NECESIDADES SOCIALES / EXCLUSIÓN SOCIAL, EXTINCIÓN    |
+|    DE INCENDIOS E INSTALACIONES DEPORTIVAS.                             |
+|  • &gt; 50.000 hab.: Transporte colectivo urbano y medio ambiente.         |
++-------------------------------------------------------------------------+
+|  COMPETENCIAS DELEGADAS (Art. 27 LRBRL):                                |
+|  • Delegadas por Estado o CCAA con ACOMPAÑAMIENTO FINANCIERO DEL 100%.  |
++-------------------------------------------------------------------------+
+|  COMPETENCIAS DISTINTAS (Art. 7.4 LRBRL - "Impropias"):                 |
+|  • Exigen INFORME DE NO DUPLICIDAD (de la CA) e INFORME DE              |
+|    SOSTENIBILIDAD FINANCIERA (del Ministerio de Hacienda).              |
++-------------------------------------------------------------------------+
+</pre></div>
+<h3 class='subsection-title'>3.2. Régimen Competencial en la Ley 7/1985 (LRBRL) tras la Reforma LRSAL (Ley 27/2013)</h3>
+<p>La <strong>Ley 27/2013, de 27 de diciembre, de Racionalización y Sostenibilidad de la Administración Local (LRSAL)</strong> reestructuró el marco competencial municipal bajo el principio de <em>"una administración, una competencia"</em> para evitar duplicidades y garantizar la estabilidad presupuestaria (artículo 135 CE):</p>
+<h4 class='subsubsection-title'>3.2.1. Las Competencias Propias (Artículo 25 LRBRL)</h4>
+<ul>
+<li>Las competencias propias de los Municipios solo pueden ser determinadas por <strong>Ley del Estado o de la Comunidad Autónoma</strong>, debiendo evaluarse previamente el impacto financiero y garantizarse la suficiencia presupuestaria (artículo 25.1).</li>
+<li>Se ejercen en régimen de autonomía y bajo la propia responsabilidad del Ayuntamiento.</li>
+<li><strong>Materia social nuclear (artículo 25.2.e LRBRL)</strong>: El Municipio ejerce competencias propias en <em>"evaluación e información de situaciones de necesidad social y la atención inmediata a personas en situación o riesgo de exclusión social"</em>.</li>
+</ul>
+<h4 class='subsubsection-title'>3.2.2. Servicios Mínimos Obligatorios según Población (Artículo 26 LRBRL)</h4>
+<p>El artículo 26 de la LRBRL impone a los Municipios la prestación obligatoria de determinados servicios públicos por tramos demográficos:</p>
+<ul>
+<li><strong>En todos los Municipios (cualquiera que sea su población)</strong>:</li>
+<li>Alumbrado público.</li>
+<li>Cementerio y servicios funerarios.</li>
+<li>Recogida de residuos.</li>
+<li>Limpieza viaria.</li>
+<li>Abastecimiento domiciliario de agua potable.</li>
+<li>Alcantarillado.</li>
+<li>Acceso a los núcleos de población.</li>
+<li>Pavimentación de las vías públicas.</li>
+<li><strong>En los Municipios con población superior a 5.000 habitantes</strong>, además:</li>
+<li>Parque público.</li>
+<li>Biblioteca pública.</li>
+<li>Tratamiento de residuos.</li>
+<li><strong>En los Municipios con población superior a 20.000 habitantes</strong> (<strong>tramo en el que se ubica Utrera con aprox. 52.000 habitantes</strong>), además:</li>
+<li>Protección civil.</li>
+<li><strong>Evaluación e información de situaciones de necesidad social y la atención inmediata a personas en situación o riesgo de exclusión social</strong>.</li>
+<li>Prevención y extinción de incendios.</li>
+<li>Instalaciones deportivas de uso público.</li>
+<li><strong>En los Municipios con población superior a 50.000 habitantes</strong>, además:</li>
+<li>Transporte colectivo urbano de viajeros.</li>
+<li>Medio ambiente urbano.</li>
+</ul>
+<h4 class='subsubsection-title'>3.2.3. Competencias Delegadas (Artículo 27 LRBRL)</h4>
+<ul>
+<li>El Estado y las Comunidades Autónomas pueden delegar en los municipios el ejercicio de competencias en materias que afecten a sus intereses locales.</li>
+<li><strong>Garantía financiera imperativa</strong>: La delegación debe ir acompañada preceptivamente de la <strong>financiación íntegra de los costes</strong> mediante transferencias presupuestarias fijadas en el acuerdo de delegación.</li>
+</ul>
+<h4 class='subsubsection-title'>3.2.4. Competencias Distintas de las Propias y Delegadas (Artículo 7.4 LRBRL)</h4>
+<ul>
+<li>Las entidades locales solo podrán ejercer competencias distintas de las propias y de las atribuidas por delegación cuando no se ponga en riesgo la sostenibilidad financiera y no se incurra en duplicidad administrativa.</li>
+<li><strong>Requisitos de examen</strong>: Exige con carácter preceptivo y vinculante:</li>
+<li><strong>Informe de inexistencia de duplicidades</strong>, emitido por la Administración autonómica competente.</li>
+<li><strong>Informe de sostenibilidad financiera</strong>, emitido por el órgano competente del Ministerio de Hacienda.</li>
+</ul>
+<hr class='divider'/>
+<h3 class='subsection-title'>3.3. El Catálogo Andaluz: Ley 5/2010, de 11 de junio, de Autonomía Local de Andalucía (LAULA)</h3>
+<p>La Comunidad Autónoma de Andalucía blindó estatutaria y legalmente el marco competencial de sus municipios a través de la <strong>Ley 5/2010 (LAULA)</strong>, en desarrollo de los artículos 60 y 91 a 98 del EAAnd:</p>
+<h4 class='subsubsection-title'>3.3.1. Las 27 Competencias Propias Municipales (Artículo 9 LAULA)</h4>
+<p>El <strong>artículo 9 de la LAULA</strong> contiene el catálogo material de competencias municipales propias garantizadas frente a la legislación sectorial autonómica. Destacan de forma cardinal para la Educación Social:</p>
+<ul>
+<li><strong>Artículo 9.1 (Servicios Sociales Comunitarios)</strong>: Gestión y prestación de los <strong>Servicios Sociales Comunitarios</strong>, que comprende la información, valoración y orientación; la ayuda a domicilio y teleasistencia; la inserción social; y los programas de tratamiento y prevención de la exclusión social.</li>
+<li><strong>Artículo 9.17 (Educación y Absentismo)</strong>: Participación en la vigilancia del cumplimiento de la escolaridad obligatoria y la <strong>cooperación con la administración educativa en la prevención del absentismo escolar</strong>.</li>
+<li><strong>Artículo 9.18 (Igualdad de género)</strong>: Promoción de la igualdad entre mujeres y hombres y prevención de la violencia de género.</li>
+<li><strong>Artículo 9.19 (Infancia, adolescencia y juventud)</strong>: Promoción de políticas activas dirigidas a la infancia, la adolescencia y la juventud, especialmente en materia de ocio y participación.</li>
+</ul>
+<h4 class='subsubsection-title'>3.3.2. Garantías de Suficiencia Financiera</h4>
+<p>Conforme al artículo 25 de la LAULA y al artículo 91 del EAAnd, cualquier norma o ley andaluza que atribuya nuevas competencias propias a los municipios debe incorporar obligatoriamente una <strong>memoria económica que evalúe su impacto y determine las transferencias financieras incondicionadas necesarias</strong> para garantizar la suficiencia económica municipal (vinculado a la Ley 6/2010 de la <strong>Patrica</strong>).</p>
+<hr class='divider'/>
+<h2 class='section-title'>4. ARTICULACIÓN PRÁCTICA CON LA ADMINISTRACIÓN LOCAL Y LA EDUCACIÓN SOCIAL EN EL AYUNTAMIENTO DE UTRERA</h2>
+<p>El entramado competencial multinivel se traduce de forma inmediata en la operativa diaria del <strong>Técnico/a Medio de Educación Social</strong> en el Centro de Servicios Sociales Comunitarios del Excmo. Ayuntamiento de Utrera (calle Catalina de Perea, 32):</p>
+<ul>
+<li><strong>La titularidad municipal de la prestación social (arts. 25.2.e y 26.1.c LRBRL y art. 9.1 LAULA)</strong>:</li>
+<li>Al ser Utrera un municipio con una población superior a 20.000 habitantes (~52.000 hab.), la evaluación de situaciones de necesidad social y la atención directa a personas en exclusión es un <strong>servicio público municipal propio y obligatorio por ley</strong>.</li>
+<li>El puesto de Educador/a Social en Utrera no depende de una concesión graciable o contingente, sino que forma parte de la estructura obligatoria de la Subescala Técnica para prestar este servicio esencial.</li>
+<li><strong>Conexión con las competencias exclusivas de la Junta de Andalucía (art. 61 EAAnd)</strong>:</li>
+<li>La Junta de Andalucía legisla en exclusiva y ordena el Sistema Público de Servicios Sociales (Ley 9/2016).</li>
+<li>En el CSSC de Utrera, el Educador/a Social ejecuta los programas socioeducativos regulados por decretos autonómicos, como el <strong>Programa de Tratamiento a Familias con Menores (ETF, Decreto 100/2022)</strong> o el protocolo de maltrato infantil (<strong>SIMIA, Decreto 210/2018</strong>), financiados en régimen de cooperación técnica y financiera entre la Junta y el Ayuntamiento de Utrera.</li>
+<li><strong>El mandato específico en absentismo escolar (art. 9.17 LAULA)</strong>:</li>
+<li>El Técnico/a de Educación Social municipal integra el <strong>Equipo Municipal de Absentismo Escolar (EMAE)</strong> de Utrera, coordinándose con los centros escolares de primaria y secundaria para la prevención y seguimiento de casos de absentismo crónico en zonas vulnerables como la Barriada El Tinte, ejerciendo la competencia municipal propia atribuida expresamente por la ley andaluza.</li>
+</ul>
+<hr class='divider'/>
+<h2 class='section-title'>SECCIONES PEDAGÓGICAS OBLIGATORIAS</h2>
+<h3 class='subsection-title'>A. DATOS DE EXAMEN (22 ELEMENTOS DE MEMORIZACIÓN PURA)</h3>
+<ul>
+<li><strong>Materias del artículo 148.1 CE</strong>: <strong>22 materias</strong> asumibles originariamente por las CCAA (asistencia social en 148.1.20ª).</li>
+<li><strong>Materias del artículo 149.1 CE</strong>: <strong>32 materias</strong> reservadas a la competencia exclusiva del Estado central.</li>
+<li><strong>Igualdad básica de los españoles (art. 149.1.1ª CE)</strong>: Competencia exclusiva del Estado (título transversal de leyes sociales).</li>
+<li><strong>Bases de las AAPP y responsabilidad patrimonial</strong>: <strong>Artículo 149.1.18ª CE</strong> (exclusiva del Estado).</li>
+<li><strong>Cláusulas de cierre del artículo 149.3 CE</strong>: Tres cláusulas: <strong>residual</strong>, <strong>de prevalencia</strong> y <strong>de supletoriedad</strong>.</li>
+<li><strong>Doctrina constitucional de la supletoriedad (SSTC 118/1996 y 61/1997)</strong>: El Estado <strong>no puede legislar materias exclusivas autonómicas con el único fin de crear derecho supletorio</strong>.</li>
+<li><strong>Competencia exclusiva en Servicios Sociales en Andalucía</strong>: <strong>Artículo 61 del Estatuto de Autonomía para Andalucía (LO 2/2007)</strong>.</li>
+<li><strong>Tipología competencial del artículo 42 EAAnd</strong>: Cuatro tipos: <strong>exclusivas</strong> (42.1), <strong>compartidas</strong> (42.2), <strong>ejecutivas</strong> (42.3) y de <strong>aplicación del Derecho de la UE</strong> (42.4).</li>
+<li><strong>Leyes del artículo 150 CE</strong>: Leyes marco (150.1), <strong>Leyes de transferencia o delegación mediante Ley Orgánica (150.2)</strong> y Leyes de armonización (150.3).</li>
+</ul>
+<p>10. <strong>Mayoría exigida en leyes de armonización (art. 150.3 CE)</strong>: <strong>Mayoría absoluta de cada Cámara</strong> (Congreso y Senado).</p>
+<p>11. <strong>Máximo órgano multilateral de cooperación política</strong>: La <strong>Conferencia de Presidentes</strong> (art. 146 Ley 40/2015).</p>
+<p>12. <strong>Composición de Conferencias Sectoriales (art. 147 Ley 40/2015)</strong>: Ministro del ramo y Consejeros autonómicos correspondientes.</p>
+<p>13. <strong>Plazos del artículo 33.2 de la LOTC</strong>: Comisión Bilateral en <strong>3 meses</strong> para negociar discrepancias; amplía el plazo del recurso de inconstitucionalidad de 3 a <strong>9 meses</strong>.</p>
+<p>14. <strong>Suspensión automática por recurso del Gobierno (art. 161.2 CE)</strong>: Suspensión por un <strong>plazo máximo de 5 meses</strong> (el TC debe ratificarla o levantarla).</p>
+<p>15. <strong>Competencia municipal propia en servicios sociales (art. 25.2.e LRBRL)</strong>: Evaluación e información de necesidades sociales y atención inmediata a personas en riesgo de exclusión social.</p>
+<p>16. <strong>Tramo de población para servicios sociales obligatorios (art. 26.1.c LRBRL)</strong>: Municipios de <strong>más de 20.000 habitantes</strong> (como Utrera).</p>
+<p>17. <strong>Servicios obligatorios en más de 20.000 hab. (art. 26.1.c LRBRL)</strong>: Protección civil, servicios sociales/exclusión, extinción de incendios e instalaciones deportivas.</p>
+<p>18. <strong>Servicios obligatorios en más de 50.000 hab. (art. 26.1.d LRBRL)</strong>: Transporte colectivo urbano de viajeros y medio ambiente urbano.</p>
+<p>19. <strong>Requisitos de competencias impropias (art. 7.4 LRBRL)</strong>: Informes vinculantes de <strong>no duplicidad</strong> (de la CA) y de <strong>sostenibilidad financiera</strong> (del Ministerio de Hacienda).</p>
+<p>20. <strong>Catálogo de competencias propias andaluzas (art. 9 LAULA)</strong>: 27 competencias municipales propias (destaca 9.1 Servicios Sociales Comunitarios y 9.17 absentismo escolar).</p>
+<p>21. <strong>Garantía financiera de competencias municipales (art. 25 LAULA y art. 91 EAAnd)</strong>: <strong>Memoria económica preceptiva</strong> con dotación de créditos transferidos.</p>
+<p>22. <strong>Principio rector del artículo 4.3 de la Carta Europea de 1985</strong>: <strong>Principio de subsidiariedad</strong> (preferencia por la autoridad más cercana al ciudadano).</p>
+<hr class='divider'/>
+<h3 class='subsection-title'>B. ESQUEMA DE REPASO RÁPIDO</h3>
+<div class='code-card'><pre>
+DISTRIBUCIÓN COMPETENCIAL Y RÉGIMEN LOCAL MULTINIVEL
+│
+├── 1. EL REPARTO CONSTITUCIONAL ESTADO - CCAA
+│   ├── Art. 148.1 CE: 22 Materias autonómicas originarias (Asistencia social en 148.1.20ª).
+│   ├── Art. 149.1 CE: 32 Materias exclusivas del Estado (149.1.1ª Igualdad básica; 149.1.18ª Bases AAPP).
+│   ├── Art. 149.3 CE: Cláusulas de cierre:
+│   │   ├── Residual: No atribuidas al Estado pueden asumirse por CCAA en Estatutos; si no, al Estado.
+│   │   ├── Prevalencia: Norma estatal prevalece salvo competencia exclusiva autonómica.
+│   │   └── Supletoriedad: Derecho estatal supletorio (LÍMITE TC: Prohibido legislar sin título propio).
+│   └── Art. 150 CE: Leyes Marco (150.1) | Leyes Orgánicas Transferencia (150.2) | Armonización Mayoría Absoluta (150.3).
+│
+├── 2. RELACIONES ESTADO - COMUNIDADES AUTÓNOMAS
+│   ├── Principio Rector: Lealtad constitucional, cooperación y coordinación (Ley 40/2015).
+│   ├── Órganos: Conferencia de Presidentes (multilateral política) | Conferencias Sectoriales (multilateral técnica).
+│   └── Conflictos: Art. 33.2 LOTC (3 meses para negociar -&gt; amplía a 9 meses recurso TC) | Suspensión 5 meses (161.2 CE).
+│
+└── 3. EL MARCO COMPETENCIAL LOCAL (LRBRL TRAS LRSAL Y LAULA)
+    ├── Competencias Propias Municipales (Art. 25.2.e LRBRL): Información necesidades sociales y exclusión.
+    ├── Servicios Mínimos Obligatorios (Art. 26 LRBRL):
+    │   ├── Todos: Alumbrado, cementerio, basuras, limpieza, agua potable, alcantarillado, pavimentación.
+    │   ├── &gt; 5.000 hab.: Parque público, biblioteca pública y tratamiento de residuos.
+    │   ├── &gt; 20.000 hab. (UTRERA ~52.000 hab.): SERVICIOS SOCIALES / EXCLUSIÓN, PROTECCIÓN CIVIL,
+    │   │                                       EXTINCIÓN DE INCENDIOS E INSTALACIONES DEPORTIVAS.
+    │   └── &gt; 50.000 hab.: Transporte urbano colectivo y medio ambiente urbano.
+    ├── Competencias Delegadas (Art. 27 LRBRL): Con garantía de financiación íntegra (100%).
+    ├── Competencias Impropias (Art. 7.4 LRBRL): Informe de NO DUPLICIDAD (CA) + SOSTENIBILIDAD (Hacienda).
+    └── Catálogo Andaluz (Art. 9 LAULA): 27 competencias propias -&gt; 9.1 Servicios Sociales Comunitarios | 9.17 Absentismo.
+</pre></div>
+<hr class='divider'/>
+<h3 class='subsection-title'>C. TRAMPAS DEL TEST</h3>
+<ul>
+<li><strong>Trampa</strong>: Considerar que la cláusula de supletoriedad del artículo 149.3 CE permite al Estado dictar normas supletorias sobre cualquier materia cuando las CCAA no hayan legislado.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: Es falso. La doctrina del TC (<strong>SSTC 118/1996 y 61/1997</strong>) determinó que la supletoriedad no es un título competencial. El Estado <strong>no puede dictar normas en materias de competencia exclusiva autonómica con el único objeto de crear derecho supletorio</strong>.</p>
+<ul>
+<li><strong>Trampa</strong>: Responder que en los municipios de más de 5.000 habitantes los servicios sociales comunitarios ya son obligatorios según la LRBRL.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: Conforme al artículo 26.1.c de la LRBRL, la obligación de prestar servicios de evaluación de necesidades sociales y atención a personas en riesgo de exclusión social se impone preceptivamente a los <strong>municipios con población superior a 20.000 habitantes</strong> (y no a partir de 5.000).</p>
+<ul>
+<li><strong>Trampa</strong>: Sostener que las leyes de transferencia o delegación del artículo 150.2 de la CE se aprueban mediante ley ordinaria de las Cortes.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: El <strong>artículo 150.2 CE exige expresamente que las leyes de transferencia o delegación revistan la forma de LEY ORGÁNICA</strong> (aprobadas por mayoría absoluta del Congreso en votación final de conjunto).</p>
+<ul>
+<li><strong>Trampa</strong>: Afirmar que para ejercer competencias distintas de las propias (artículo 7.4 LRBRL) basta con un acuerdo del Pleno del Ayuntamiento.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: Es nulo de pleno derecho sin los <strong>dos informes preceptivos y vinculantes</strong>: el informe de <strong>no duplicidad</strong> emitido por la Comunidad Autónoma y el informe de <strong>sostenibilidad financiera</strong> emitido por el Ministerio de Hacienda.</p>
+<ul>
+<li><strong>Trampa</strong>: Confundir el plazo de ampliación del recurso de inconstitucionalidad del artículo 33.2 de la LOTC.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: El plazo ordinario para interponer recurso es de 3 meses. Si se convoca la Comisión Bilateral dentro de esos primeros 3 meses para negociar, el plazo se amplía a un total de <strong>nueve meses</strong> (y no seis ni doce).</p>
+<ul>
+<li><strong>Trampa</strong>: Creer que las leyes de armonización del artículo 150.3 CE exigen mayoría de dos tercios.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: La apreciación de la necesidad de dictar una ley de armonización requiere la <strong>mayoría absoluta de cada Cámara</strong> (Congreso de los Diputados y Senado).</p>
+<ul>
+<li><strong>Trampa</strong>: Indicar que la competencia en Servicios Sociales es compartida entre el Estado y la Junta de Andalucía.</li>
+</ul>
+<p>   <strong>Clave Jurídica</strong>: Conforme al <strong>artículo 61 del Estatuto de Autonomía para Andalucía</strong>, la competencia sobre <strong>servicios sociales es EXCLUSIVA de la Comunidad Autónoma de Andalucía</strong>. El Estado solo interviene de forma transversal fijando las condiciones básicas de igualdad (artículo 149.1.1ª CE).</p>
+<hr class='divider'/>
+<h3 class='subsection-title'>D. ENFOQUE PRÁCTICO PARA EL AYUNTAMIENTO DE UTRERA</h3>
+<p>En el Centro de Servicios Sociales Comunitarios del Excmo. Ayuntamiento de Utrera (calle Catalina de Perea, 32), el marco competencial multinivel se expresa con máxima claridad técnica:</p>
+<ul>
+<li><strong>Utrera como municipio de más de 20.000 habitantes (~52.000 hab.)</strong>: Conforme al artículo 26.1.c de la LRBRL y al artículo 9.1 de la LAULA, la gestión de los Servicios Sociales Comunitarios y la atención a personas en riesgo de exclusión social es una <strong>competencia propia municipal obligatoria</strong>.</li>
+<li><strong>La intervención técnica del Educador/a Social en barriadas vulnerables</strong>: En zonas como El Tinte, el Técnico/a de Educación Social ejecuta programas de apoyo a unidades familiares en riesgo (ETF) y de prevención de la marginación que constituyen la materialización directa de la competencia propia municipal del artículo 25.2.e de la LRBRL, financiada mediante el Plan Concertado de Servicios Sociales articulado por la Junta de Andalucía y el Estado.</li>
+<li><strong>Acción municipal frente al absentismo escolar</strong>: Al amparo del artículo 9.17 de la LAULA, el Educador/a Social lidera el Equipo Municipal de Absentismo Escolar (EMAE) de Utrera, ejerciendo una competencia propia municipal de vigilancia de la escolaridad en coordinación con los centros escolares de la localidad.</li>
+</ul>
+<hr class='divider'/>
+<h3 class='subsection-title'>E. FUENTES OFICIALES Y NORMATIVA CONSOLIDADA</h3>
+<ul>
+<li><strong>Boletín Oficial del Estado (BOE)</strong>:</li>
+<li><em>Constitución Española de 1978</em>: Artículos 137, 140, 141, 148, 149 y 150 (BOE nº 311, de 29 de diciembre de 1978).</li>
+<li><em>Ley 7/1985, de 2 de abril</em>, Reguladora de las Bases del Régimen Local - LRBRL: Artículos 7.4, 25, 26 y 27 tras reforma LRSAL (BOE nº 80, de 3 de abril de 1985).</li>
+<li><em>Ley 40/2015, de 1 de octubre</em>, de Régimen Jurídico del Sector Público: Título III "Relaciones interadministrativas", artículos 140 a 158 (BOE nº 236, de 2 de octubre de 2015).</li>
+<li><em>Ley Orgánica 2/1979, de 3 de octubre</em>, del Tribunal Constitucional: Artículos 33.2 y Título IV (BOE nº 239, de 5 de octubre de 1979).</li>
+<li><strong>Boletín Oficial de la Junta de Andalucía (BOJA)</strong>:</li>
+<li><em>Ley Orgánica 2/2007, de 19 de marzo</em>, de reforma del Estatuto de Autonomía para Andalucía: Artículos 42 y 61 (BOJA nº 56, de 20 de marzo de 2007; BOE nº 68, de 20 de marzo de 2007).</li>
+<li><em>Ley 5/2010, de 11 de junio</em>, de Autonomía Local de Andalucía - LAULA: Artículos 8, 9 y 25 (BOJA nº 122, de 23 de junio de 2010).</li>
+<li><strong>Jurisprudencia Constitucional Relevante</strong>:</li>
+<li><em>SSTC 118/1996 y 61/1997</em>: Doctrina vinculante sobre los límites de la cláusula de supletoriedad del Derecho estatal.</li>
+<li><em>STC 214/1989 y STC 41/2016</em>: Constitucionalidad del marco competencial local tras la LRSAL y garantía institucional de la autonomía local.</li>
+</ul>
+</body>
+</html>

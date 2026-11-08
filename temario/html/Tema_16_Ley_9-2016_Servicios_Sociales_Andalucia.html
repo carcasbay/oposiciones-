@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 16: Ley 9/2016 de Servicios Sociales de Andalucía</title>
+<style>
+  @page {
+    size: A4;
+    margin: 1.6cm 1.4cm 1.6cm 1.4cm;
+  }
+
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    color: #1e293b;
+    line-height: 1.42;
+    font-size: 9.8pt;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+  }
+
+  .header-banner {
+    border-bottom: 2.5px solid #0f2942;
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+  }
+
+  .context-meta {
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #475569;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+
+  h1.theme-title {
+    font-size: 14.5pt;
+    color: #0f2942;
+    margin: 4px 0 6px 0;
+    line-height: 1.25;
+    font-weight: 800;
+    text-align: left;
+  }
+
+  .theme-subtitle {
+    font-size: 9.2pt;
+    color: #1e5f74;
+    font-weight: 600;
+  }
+
+  h2 {
+    color: #0f2942;
+    font-size: 11.5pt;
+    border-bottom: 1.5px solid #1e5f74;
+    padding-bottom: 3px;
+    margin-top: 18px;
+    margin-bottom: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  h3 {
+    color: #1e5f74;
+    font-size: 10.2pt;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  h4 {
+    color: #334155;
+    font-size: 9.3pt;
+    margin-top: 9px;
+    margin-bottom: 3px;
+    font-weight: 700;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  p {
+    margin: 0 0 6px 0;
+  }
+
+  b, strong {
+    color: #0f172a;
+    font-weight: 700;
+  }
+
+  ul, ol {
+    margin: 3px 0 7px 18px;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 3px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 9px 0;
+    font-size: 8.5pt;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  th, td {
+    border: 1px solid #cbd5e1;
+    padding: 5px 7px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    background-color: #0f2942;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  tr:nth-child(even) td {
+    background-color: #f8fafc;
+  }
+
+  .box {
+    border-radius: 4px;
+    padding: 7px 10px;
+    margin: 8px 0;
+    font-size: 8.8pt;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .box-trampa {
+    background-color: #fef2f2;
+    border-left: 4px solid #b91c1c;
+    color: #7f1d1d;
+  }
+
+  .box-trampa strong.title {
+    display: block;
+    color: #991b1b;
+    font-size: 9.2pt;
+    margin-bottom: 2px;
+    font-weight: 700;
+  }
+
+  .box-trampa p {
+    color: #450a0a;
+    margin: 2px 0;
+  }
+
+  .box-practico {
+    background-color: #f0fdf4;
+    border-left: 4px solid #15803d;
+    color: #14532d;
+  }
+
+  .box-practico strong.title {
+    display: block;
+    color: #166534;
+    font-size: 9.2pt;
+    margin-bottom: 2px;
+    font-weight: 700;
+  }
+
+  .datos-grid {
+    column-count: 2;
+    column-gap: 14px;
+    margin: 7px 0;
+    font-size: 8.6pt;
+  }
+
+  .dato-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 3px solid #0f2942;
+    padding: 4px 6px;
+    margin-bottom: 5px;
+  }
+
+  .dato-num {
+    font-weight: 800;
+    color: #0f2942;
+  }
+
+  .esquema-block {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 9px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.3pt;
+    line-height: 1.33;
+    white-space: pre-wrap;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    color: #0f172a;
+  }
+
+  .fuentes-list {
+    font-size: 8.3pt;
+    color: #334155;
+  }
+
+  .fuentes-list a {
+    color: #0284c7;
+    text-decoration: none;
+    word-break: break-all;
+  }
+
+  .page-break {
+    page-break-before: always;
+    break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-banner">
+  <div class="context-meta">Oposiciones Administración Local | Ayuntamiento de Utrera (Sevilla) &bull; Grupo A2 &bull; Técnico/a Medio de Educación Social</div>
+  <h1 class="theme-title">TEMA 16: LEY 9/2016, DE 27 DE DICIEMBRE, DE SERVICIOS SOCIALES DE ANDALUCÍA. MOTIVOS. NOVEDADES Y ESTRUCTURA</h1>
+  <div class="theme-subtitle">Temario Específico &bull; Régimen Jurídico del Sistema Público de Servicios Sociales de Andalucía</div>
+</div>
+
+<h2>1. LEY 9/2016, DE 27 DE DICIEMBRE, DE SERVICIOS SOCIALES DE ANDALUCÍA</h2>
+
+<h3>Marco constitucional, estatutario y competencial de inserción</h3>
+<p>La <strong>Ley 9/2016, de 27 de diciembre, de Servicios Sociales de Andalucía</strong> (publicada en el BOJA nº 248, de 29 de diciembre de 2016, y en el BOE nº 18, de 21 de enero de 2017; con entrada en vigor el 18 de enero de 2017 conforme a su Disposición Final 3ª) constituye la norma básica y de cabecera que regula el <strong>Sistema Público de Servicios Sociales de Andalucía (SPSS)</strong>. Su promulgación se inserta de pleno en la arquitectura constitucional que define a España como un Estado social y democrático de Derecho (art. 1.1 de la Constitución Española de 1978, en adelante CE), el mandato a los poderes públicos de promover las condiciones para que la libertad y la igualdad sean reales y efectivas (art. 9.2 CE), los principios rectores de la política social y económica —protección a la familia e infancia (art. 39 CE), redistribución de la renta y progreso social (art. 40.1 CE), juventud (art. 48 CE), personas con discapacidad (art. 49 CE) y personas mayores (art. 50 CE)— y el título competencial de asistencia social atribuible a las comunidades autónomas (art. 148.1.20ª CE), bajo la reserva estatal de fijación de las condiciones básicas que garanticen la igualdad en el ejercicio de los derechos y deberes constitucionales (art. 149.1.1ª CE).</p>
+
+<p>En el orden autonómico, la norma encuentra su habilitación estatutaria principal en el <strong>artículo 61 del Estatuto de Autonomía para Andalucía (Ley Orgánica 2/2007, de 19 de marzo)</strong>, que atribuye a la Comunidad Autónoma la competencia exclusiva sobre:</p>
+<ul>
+  <li>La regulación, ordenación y gestión de los servicios sociales, las prestaciones técnicas y las prestaciones económicas con finalidad asistencial o complementarias de otros sistemas de protección pública.</li>
+  <li>Los planes y programas específicos dirigidos a personas y colectivos en situación de necesidad social.</li>
+  <li>Las instituciones públicas de protección y tutela de personas necesitadas de protección especial, incluida la creación de centros de ayuda, reinserción y rehabilitación.</li>
+  <li>La protección de menores y la promoción y protección de las familias y de la infancia.</li>
+  <li>El voluntariado social.</li>
+</ul>
+
+<p>A ello se añade la potestad conferida por el <strong>artículo 84 del Estatuto de Autonomía</strong>, que reconoce a la Junta de Andalucía la competencia para organizar y administrar todos los servicios relacionados con servicios sociales y ejercer la tutela de las instituciones y entidades en esta materia. Asimismo, conecta orgánicamente con los derechos estatutarios vinculantes: derecho de acceso en condiciones de igualdad a las prestaciones de un sistema público de servicios sociales (art. 23.1 EAAnd), derecho a una renta básica que garantice condiciones de vida dignas (art. 23.2 EAAnd), igualdad de género (art. 15 EAAnd), protección contra la violencia de género (art. 16 EAAnd), protección familiar (art. 17 EAAnd), derechos de la infancia (art. 18 EAAnd), derechos de las personas mayores (art. 19 EAAnd) y derechos de las personas con discapacidad o en situación de dependencia (art. 24 EAAnd).</p>
+
+<p>En la esfera de la administración local andaluza, la Ley 9/2016 articula una gobernanza multinivel de cooperación interadministrativa obligatoria con municipios y provincias, respetando el principio de autonomía local (arts. 137 y 140 CE) y proyectando las competencias municipales propias delimitadas en el artículo 25.2.e) de la <strong>Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local (LRBRL)</strong> —«evaluación e información de situaciones de necesidad social y la atención inmediata a personas en situación o riesgo de exclusión social»— y en el artículo 9.17 de la <strong>Ley 5/2010, de 11 de junio, de Autonomía Local de Andalucía (LAULA)</strong>, que blinda como competencia propia municipal la gestión y ordenación de los <strong>Servicios Sociales Comunitarios</strong>.</p>
+
+<h3>Objeto de la Ley y definición del Sistema Público</h3>
+<p>El <strong>artículo 1 de la Ley 9/2016</strong> concreta su objeto mediante cinco directrices normativas:</p>
+<ol type="a">
+  <li>Promover y garantizar el derecho universal de todas las personas a las prestaciones y servicios del SPSS en condiciones de igualdad, equidad y dignidad, con el fin de alcanzar su pleno desarrollo individual y social.</li>
+  <li>Ordenar y regular el SPSS asegurando el acceso universal a sus recursos y prestaciones.</li>
+  <li>Ordenar y regular el acceso a las <strong>prestaciones garantizadas</strong> del sistema como un <strong>derecho subjetivo</strong> exigible ante las Administraciones Públicas competentes.</li>
+  <li>Ordenar y regular el papel de la <strong>iniciativa privada</strong> en materia de servicios sociales, fijando las condiciones de su participación e introduciendo el marco regulador del <strong>concierto social</strong>.</li>
+  <li>Garantizar instrumentos y medidas para que los servicios sociales se presten en las mejores condiciones de calidad y con la máxima eficiencia en el uso de los recursos públicos.</li>
+</ol>
+
+<p>El <strong>artículo 2 de la Ley 9/2016</strong> define el SPSS como la red integrada de responsabilidad y control público orientada a la protección y cobertura de las necesidades sociales derivadas de la interacción de las personas con su entorno relacional, grupal o comunitario. El apartado 2 del citado artículo tipifica las <strong>necesidades sociales</strong> que son objeto directo de atención:</p>
+<ul>
+  <li>Carencias en el acceso a recursos que garanticen unas condiciones de vida dignas.</li>
+  <li>Ausencia de un adecuado entorno de convivencia personal, familiar y social.</li>
+  <li>Dificultades para lograr la plena integración social.</li>
+  <li>Falta de autonomía personal, comprensiva tanto de carencias materiales como funcionales.</li>
+  <li>Carencia de cauces efectivos para la participación social comunitaria.</li>
+</ul>
+<p>El sistema desarrolla estatutariamente una cuádruple función: <strong>promotora, preventiva, protectora y asistencial</strong> (art. 2.5 de la Ley 9/2016), configurándose como el cuarto pilar del Estado de Bienestar en el territorio andaluz, coordinado horizontalmente con los sistemas de salud, educación, empleo, vivienda y justicia.</p>
+
+<h3>Ámbito de aplicación y conceptos legales nucleares</h3>
+<p>El ámbito de aplicación de la norma (art. 4 de la Ley 9/2016) abarca todos los servicios, centros, prestaciones y actuaciones del SPSS. No obstante, por razones imperiosas de interés general y de salvaguarda de colectivos vulnerables, la ley somete también a los <strong>servicios sociales privados no integrados</strong> al cumplimiento imperativo de:</p>
+<ul>
+  <li>Los derechos y obligaciones de las personas usuarias y profesionales.</li>
+  <li>El régimen de autorización administrativa previa, declaración responsable, acreditación, registro e inspección de centros y servicios.</li>
+  <li>El régimen tipificado de infracciones y sanciones (Título VI de la Ley 9/2016).</li>
+</ul>
+
+<p>El <strong>artículo 3 de la Ley 9/2016</strong> establece un catálogo cerrado de definiciones técnicas y operativas indispensables para el desempeño profesional:</p>
+<ul>
+  <li><strong>Autonomía personal</strong>: Capacidad de controlar, afrontar y tomar, por propia iniciativa, decisiones personales acerca de cómo vivir de acuerdo con las normas y preferencias propias, así como de desarrollar las actividades básicas de la vida diaria (ABVD).</li>
+  <li><strong>Derechos subjetivos</strong>: Aquellos derechos de los que disfrutan las personas titulares, de acceso universal, exigibles jurídicamente ante la Administración competente, que asume la obligación indelegable de garantizarlos.</li>
+  <li><strong>Proyecto de Intervención Social (PIS)</strong>: Actuación técnica diseñada para garantizar el carácter integral y la continuidad de la atención, articulada a partir de un diagnóstico valorativo de la situación de necesidad social.</li>
+  <li><strong>Contrato programa</strong>: Herramienta plurianual de gestión y financiación que vincula la asignación de recursos económicos al cumplimiento de directrices, objetivos evaluables, estándares de calidad e indicadores de rendimiento.</li>
+  <li><strong>Acreditación administrativa</strong>: Acto administrativo reglado por el que se reconoce que una entidad, centro o servicio social cumple con idoneidad los requisitos reglamentarios para asegurar prestaciones de alta calidad.</li>
+  <li><strong>Entidades de iniciativa social</strong>: Fundaciones, asociaciones, organizaciones de voluntariado y demás entidades sin ánimo de lucro (incluyendo expresamente a las cooperativas sin fin lucrativo según su legislación específica). Se diferencian legalmente de las <strong>entidades con ánimo de lucro</strong> (empresas mercantiles) y de las <strong>organizaciones de ayuda mutua</strong> (asociaciones de personas afectadas por una problemática común o familiares).</li>
+</ul>
+
+<h3>Objetivos y principios rectores del Sistema</h3>
+<p>Los objetivos esenciales de la política social andaluza quedan definidos en el <strong>artículo 5 de la Ley 9/2016</strong> (letras a a la ñ), destacando la universalidad del acceso; la promoción de la autonomía personal y cobertura de la dependencia; el abordaje preventivo y la dinamización comunitaria; la intervención interdisciplinar en los planos individual, familiar, grupal y comunitario; el empoderamiento mediante la educación social; la erradicación de discriminaciones por razón de sexo, género, etnia, discapacidad o cualquier otra condición; y la estructuración de una atención de proximidad, territorializada y sostenible.</p>
+
+<p>Dichos objetivos se canalizan a través de los <strong>principios rectores</strong> recogidos en el <strong>artículo 25 de la Ley 9/2016</strong>: <strong>universalidad</strong>, <strong>igualdad y no discriminación</strong>, <strong>responsabilidad pública</strong>, <strong>proximidad y descentralización</strong>, <strong>atención integral y personalizada</strong>, <strong>continuidad de la atención</strong>, <strong>participación ciudadana</strong>, <strong>calidad, eficiencia y sostenibilidad</strong>, y <strong>libertad de elección y autodeterminación</strong>.</p>
+
+<h3>Titularidad del derecho y tipología jurídica de las prestaciones</h3>
+<p>Conforme al <strong>artículo 6 de la Ley 9/2016</strong>, son personas titulares del derecho a los servicios y prestaciones del SPSS:</p>
+<ol type="a">
+  <li>Quienes tengan <strong>vecindad administrativa</strong> en cualquier municipio andaluz (empadronamiento).</li>
+  <li>Las <strong>personas andaluzas en el exterior</strong>, en los términos previstos en la Ley 8/2006, de 24 de octubre, del Estatuto de los Andaluces en el Mundo.</li>
+  <li>Las <strong>personas menores de edad extranjeras</strong> que se encuentren en Andalucía, con plenitud de derechos con independencia de su situación documental o administrativa.</li>
+  <li>Las personas solicitantes de <strong>asilo, refugiadas o con protección subsidiaria</strong>, conforme a la normativa de extranjería y tratados internacionales.</li>
+  <li>Toda persona transeúnte que se encuentre en Andalucía en situación de <strong>urgencia personal, familiar o social</strong>, para la cobertura de dicha contingencia, teniendo garantizados en todo caso los servicios de información, valoración, diagnóstico y orientación en el nivel primario y especializado.</li>
+</ol>
+<p>Para el acceso a los recursos de dependencia rige la Ley estatal 39/2006, de 14 de diciembre (SAAD).</p>
+
+<p>El <strong>artículo 7 de la Ley 9/2016</strong> opera la bifurcación jurídica nuclear de las prestaciones:</p>
+<ul>
+  <li><strong>Prestaciones garantizadas</strong>: Son aquellas cuya provisión se configura como un <strong>derecho subjetivo pleno</strong>. Su concesión es reglada e inexcusable si la persona reúne los requisitos legales, sin que pueda denegarse o demorarse alegando insuficiencia de crédito presupuestario. Son exigibles ante la Administración y tutelables ante la jurisdicción contencioso-administrativa (art. 7.3 y art. 8).</li>
+  <li><strong>Prestaciones condicionadas</strong>: Son aquellas no calificadas como derecho subjetivo en el Catálogo de Prestaciones. Su concesión queda supeditada a la <strong>disponibilidad presupuestaria</strong> del ejercicio y al orden de prelación y baremación que objetivamente se fije.</li>
+</ul>
+
+<h3>Estatuto de Derechos y Deberes de la Ciudadanía y Personas Usuarias (Título I)</h3>
+<p>El Título I consagra un estatuto garantista articulado en tres ámbitos de protección:</p>
+<ul>
+  <li><strong>Derechos de la ciudadanía (art. 9 de la Ley 9/2016)</strong>: Acceso universal en igualdad; participación; servicios de calidad; acceso a prestaciones garantizadas; información, sugerencia y queja; y el derecho a otorgar <strong>instrucciones previas y voluntades anticipadas</strong> (art. 9.g) respecto a futuras medidas de apoyo o cuidados asistenciales.</li>
+  <li><strong>Derechos de las personas usuarias (art. 10 de la Ley 9/2016)</strong>: Atención personalizada mediante <strong>Proyecto de Intervención Social (PIS)</strong>; asignación preceptiva de un <strong>profesional de referencia</strong>, con derecho a su libre elección y a una <strong>segunda opinión diagnóstica</strong> (salvo en protección de menores, art. 10.c); apoyos al ejercicio de la capacidad jurídica (art. 10.d); información en formato accesible y acceso a su expediente individual (art. 10.e); consentimiento informado por escrito en ingresos residenciales (art. 10.f); confidencialidad y reserva profesional (art. 10.j); atención domiciliaria urgente (art. 10.k); y profesional de referencia asignado en municipios donde se hallen transeúntes o personas sin hogar ante emergencias (art. 10.o).</li>
+  <li><strong>Derechos en centros residenciales y de día (art. 11 de la Ley 9/2016)</strong>: Libertad de ingreso, permanencia y salida; consideración del centro residencial como <strong>domicilio a todos los efectos legales</strong> (art. 11.i); personalización del espacio privativo (art. 11.e); secreto de comunicaciones; y la expresa <strong>prohibición de sujeciones mecánicas o químicas</strong> sin prescripción facultativa y supervisión técnica, salvo riesgo inminente para la seguridad física (art. 11.m).</li>
+  <li><strong>Deberes de las personas usuarias (art. 12 de la Ley 9/2016)</strong>: Veracidad de datos; colaboración y cumplimiento activo de los acuerdos del PIS (art. 12.1.c); comunicación de variaciones de circunstancias; <strong>copago</strong> en el coste de los servicios según su capacidad económica; destino finalista y <strong>reintegro de prestaciones indebidas</strong>; respeto riguroso al personal profesional (art. 12.1.j); cuidado de las instalaciones; y firma preceptiva del <strong>contrato social</strong> con la entidad prestadora (art. 12.1.l).</li>
+</ul>
+<p>El artículo 13 de la Ley 9/2016 mandata la aprobación reglamentaria de la <strong>Carta de Derechos y Deberes de las Personas Usuarias</strong>.</p>
+
+<h2>2. MOTIVOS</h2>
+
+<p>La Exposición de Motivos de la Ley 9/2016 se articula en cinco apartados correlativos (I a V) que fundamentan la necesidad social, dogmática y técnica de la norma:</p>
+
+<h3>Apartado I: Evolución conceptual y Derechos Humanos Emergentes</h3>
+<p>El primer apartado examina la evolución de los servicios sociales desde un enfoque asistencialista o benéfico hacia su consolidación como un sistema público estructurado sobre derechos de ciudadanía. Justifica la intervención pública como un deber ineludible en el Estado social para corregir desigualdades estructurales, erradicar la pobreza y afianzar la justicia social como un derecho exigible. Esta fundamentación enlaza directamente con los compromisos internacionales ratificados por España: Declaración Universal de Derechos Humanos de 1948, Carta Social Europea de 1961, Carta de Derechos Fundamentales de la UE del año 2000, Convención de la ONU sobre los Derechos de las Personas con Discapacidad de 2006 y la <strong>Declaración Universal de Derechos Humanos Emergentes de 2007</strong>, que consagra una democracia paritaria, participativa y solidaria, y erige la erradicación de la pobreza extrema en un deber vinculante para los poderes públicos.</p>
+
+<h3>Apartado II: Anclaje constitucional y desarrollo estatutario andaluz</h3>
+<p>El segundo apartado desgrana el soporte constitucional. La Constitución de 1978 no consagra un modelo cerrado de servicios sociales, sino que impone mandatos de acción en los principios rectores (arts. 39 a 50 CE) y asigna la competencia exclusiva en asistencia social a las comunidades autónomas a través del artículo 148.1.20ª CE. En este marco, el <strong>Estatuto de Autonomía para Andalucía de 2007</strong> dotó a la Comunidad de competencia exclusiva plena sobre servicios sociales (art. 61 EAAnd) y organización de los mismos (art. 84 EAAnd), reconociendo un amplio catálogo de derechos sociales vinculantes. Asimismo, la exposición de motivos resalta la trascendencia de la <strong>Ley 39/2006, de 14 de diciembre (LAPAD)</strong>, que configuró un derecho subjetivo estatal a la atención a la dependencia que requería una integración orgánica y funcional eficiente en la red andaluza.</p>
+
+<h3>Apartado III: El agotamiento histórico de la Ley 2/1988, de 4 de abril</h3>
+<p>El tercer bloque justifica la derogación de la <strong>Ley 2/1988, de 4 de abril, de Servicios Sociales de Andalucía</strong>. Con más de 27 años de vigencia, la norma de 1988 permitió consolidar la primera red pública tras las transferencias del INSERSO (RD 1752/1984, de 1 de agosto). No obstante, el texto constata su obsolescencia objetiva por tres causas:</p>
+<ol>
+  <li><strong>Dispersión normativa sectorial</strong>: Tras 1988 se promulgaron leyes sectoriales independientes (drogas Ley 4/1997, menores Ley 1/1998, personas con discapacidad Ley 1/1999, personas mayores Ley 6/1999, mediación familiar Ley 1/2009, igualdad Ley 12/2007 y violencia de género Ley 13/2007), lo que derivó en una regulación fragmentada que demandaba una ley general integradora.</li>
+  <li><strong>Transformaciones sociodemográficas profundas</strong>: El envejecimiento de la población, la pluralidad familiar, el incremento de hogares unipersonales, las crisis económicas y los flujos migratorios sobrepasaron las herramientas de la ley de 1988.</li>
+  <li><strong>Carencia de un núcleo de derechos subjetivos garantizados</strong>: La Ley 2/1988 operaba bajo un modelo presupuestario graciable y condicionado, carente de exigibilidad jurídica plena ante los tribunales.</li>
+</ol>
+
+<h3>Apartado IV: Pilares del nuevo modelo y armonización con el Derecho Comunitario</h3>
+<p>El cuarto apartado formula las líneas matrices de la transformación:</p>
+<ul>
+  <li><strong>Personalización y derecho subjetivo</strong>: El SPSS adquiere naturaleza propia, universal y estructurada sobre un <strong>Catálogo de Prestaciones</strong> que diferencia taxativamente lo garantizado de lo condicionado.</li>
+  <li><strong>Centralidad de los Servicios Sociales Comunitarios</strong>: Ratifica a los comunitarios como puerta de entrada al sistema, introduciendo la figura obligatoria del <strong>profesional de referencia</strong> para asegurar la continuidad asistencial.</li>
+  <li><strong>Perspectiva de género transversal</strong>: Impone la necesidad de despatriarcalizar y desfamiliarizar los cuidados, reconociendo el valor de la tarea pero superando el rol asignado tradicionalmente a la mujer como proveedora exclusiva informal.</li>
+  <li><strong>Adaptación a la Directiva 2014/24/UE y el Concierto Social</strong>: La directiva europea de contratación pública habilitó fórmulas no contractuales para los servicios a las personas. La ley andaluza introduce la <strong>acción concertada</strong>, priorizando a las entidades de iniciativa social sin ánimo de lucro por criterios de arraigo y proximidad.</li>
+  <li><strong>Blindaje competencial local frente a la LRSAL</strong>: La ley se fundamenta formalmente en la <strong>Sentencia del Tribunal Constitucional 41/2016, de 3 de marzo</strong> (que estimó parcialmente el recurso contra la Ley estatal 27/2013 de Racionalización y Sostenibilidad de la Administración Local), declarando que la asistencia social es competencia autonómica y que corresponde a la Comunidad Autónoma atribuir y financiar las competencias locales en la materia.</li>
+</ul>
+
+<h3>Apartado V: Sistemática y estructura formal del texto</h3>
+<p>El quinto apartado resume la estructura formal de la norma: 141 artículos ordenados en un Título Preliminar y seis Títulos numerados, seis Disposiciones Adicionales, tres Disposiciones Transitorias, una Disposición Derogatoria Única y tres Disposiciones Finales.</p>
+
+<h2>3. NOVEDADES Y ESTRUCTURA</h2>
+
+<h3>3.1. Novedades sustantivas y organizativas de la Ley 9/2016</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width: 28%;">Elemento Comparativo</th>
+      <th style="width: 36%;">Régimen Precedente (Ley 2/1988)</th>
+      <th style="width: 36%;">Modelo Actual (Ley 9/2016)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Acceso a prestaciones</strong></td>
+      <td>Acceso asistencial condicionado a disponibilidad presupuestaria contingente.</td>
+      <td><strong>Derecho subjetivo garantizado</strong> exigible en vía administrativa y judicial (arts. 7 y 42).</td>
+    </tr>
+    <tr>
+      <td><strong>Catálogo de recursos</strong></td>
+      <td>Catálogo orientativo y sin vinculación reglamentaria formal.</td>
+      <td><strong>Catálogo de Prestaciones vinculante</strong> aprobado por Consejo de Gobierno (art. 41).</td>
+    </tr>
+    <tr>
+      <td><strong>Figura profesional</strong></td>
+      <td>Intervención fragmentada por programas sin garantía de continuidad.</td>
+      <td><strong>Profesional de referencia preceptivo</strong> como garante del itinerario único (art. 29).</td>
+    </tr>
+    <tr>
+      <td><strong>Soporte documental</strong></td>
+      <td>Expediente administrativo físico en papel, disperso e inconexo.</td>
+      <td><strong>Historia Social Única Electrónica y Sistema CoheSSiona</strong> interoperable (art. 47).</td>
+    </tr>
+    <tr>
+      <td><strong>Colaboración privada</strong></td>
+      <td>Contratación administrativa general (precio) o subvenciones anuales.</td>
+      <td><strong>Concierto Social no contractual</strong> con preferencia a iniciativa social (art. 101).</td>
+    </tr>
+    <tr>
+      <td><strong>Financiación interadmon.</strong></td>
+      <td>Convenios anuales del Plan Concertado de difícil estabilidad.</td>
+      <td><strong>Contratos programa plurianuales</strong> vinculados a resultados y calidad (art. 121).</td>
+    </tr>
+    <tr>
+      <td><strong>Dimensión ética</strong></td>
+      <td>Inexistencia de comités y marcos de deliberación bioética formal.</td>
+      <td><strong>Comités de Ética</strong> autonómico y asistenciales locales tipificados (art. 70).</td>
+    </tr>
+    <tr>
+      <td><strong>Régimen sancionador</strong></td>
+      <td>Regulación residual e incompleta, remitiendo a leyes sectoriales.</td>
+      <td>Régimen exhaustivo tipificado: multas de hasta 600.000 € y prescripciones tasadas (Título VI).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Análisis de las Novedades Nucleares:</h4>
+<ol>
+  <li><strong>Consagración del Derecho Subjetivo (arts. 7 y 42)</strong>: Se garantiza por ley el acceso al SIVOA, la valoración diagnóstica, la atención inmediata ante urgencias, la protección a la infancia en riesgo/desamparo, las prestaciones del SAAD (teleasistencia, SAD, centro de día, residencia) y las prestaciones económicas vinculadas (renta mínima, dependencia, acogimiento familiar).</li>
+  <li><strong>Reorganización funcional y territorial en dos niveles</strong>:
+    <ul>
+      <li><strong>Nivel Comunitario (arts. 27-31)</strong>: Puerta de entrada ordinaria y sede del diagnóstico, asignación del profesional de referencia y elaboración del PIS.</li>
+      <li><strong>Nivel Especializado (arts. 32-35)</strong>: Atención de mayor intensidad técnica o residencial, accesible por derivación fundamentada desde el comunitario.</li>
+      <li><strong>Zona Básica de Servicios Sociales (ZBSS, art. 38)</strong>: Demarcación territorial para los comunitarios con un módulo de <strong>20.000 habitantes</strong> (adaptable en áreas rurales).</li>
+      <li><strong>Área de Servicios Sociales (art. 39)</strong>: Unidad territorial supramunicipal para organizar los recursos especializados.</li>
+    </ul>
+  </li>
+  <li><strong>Instrumentos técnicos unificados de intervención</strong>:
+    <ul>
+      <li><strong>Tarjeta Social (art. 47.1)</strong>: Documento identificativo individual digital, compatible con la tarjeta sanitaria andaluza.</li>
+      <li><strong>Historia Social Única Electrónica y Sistema CoheSSiona (arts. 47 y 47 bis a 47 quáter)</strong>: Plataforma telemática interoperable que integra todos los datos del usuario en Andalucía.</li>
+      <li><strong>Proyecto de Intervención Social (PIS, art. 46)</strong>: Plan interdisciplinar único (trabajo social, educación social, psicología) consensuado con la persona o unidad de convivencia.</li>
+    </ul>
+  </li>
+  <li><strong>Blindaje de la Gestión Pública Directa (art. 44.2)</strong>: Quedan reservadas en exclusiva a la administración pública (sin posibilidad de externalización ni concesión): el SIVOA, la redacción y evaluación del PIS, el desempeño del profesional de referencia y equipos comunitarios, la gestión de prestaciones económicas y el ejercicio de potestades públicas (autoridad, internamientos forzosos y tutela de menores).</li>
+  <li><strong>Creación del Concierto Social (arts. 101-107)</strong>: Modalidad no contractual para proveer servicios a las personas, con prioridad legal a entidades de iniciativa social sin fin de lucro (art. 103). Vigencia máxima de 4 años prorrogables por otros 4 (total máximo: 8 años).</li>
+  <li><strong>Contratos Programa (arts. 121-123)</strong>: Acuerdos plurianuales de estabilidad presupuestaria entre administraciones para fijar dotaciones, ratios e indicadores de calidad.</li>
+  <li><strong>Comités de Ética en Servicios Sociales (arts. 70-72)</strong>: Órganos interdisciplinares de deliberación ética ante conflictos de valores en la práctica social asistencial.</li>
+</ol>
+
+<h4>Reformas normativas posteriores verificadas:</h4>
+<ul>
+  <li><strong>Decreto-ley 2/2020, de 9 de marzo</strong>: Incorporó el <strong>artículo 85 bis</strong>, instaurando el <em>procedimiento único</em> integrado para tramitar y resolver de forma conjunta la autorización de funcionamiento y la acreditación administrativa de centros y servicios.</li>
+  <li><strong>Decreto-ley 9/2020, de 15 de abril</strong>: Añadió los <strong>artículos 47 bis, 47 ter y 47 quáter</strong>, fijando la habilitación jurídica conforme al RGPD y LOPDGDD para el tratamiento y cesión de datos en el Sistema CoheSSiona y blindando el deber de secreto profesional.</li>
+  <li><strong>Decreto-ley 3/2024, de 6 de febrero</strong> (en vigor desde el 16 de febrero de 2024):
+    <ul>
+      <li>Modificó el <strong>artículo 17.2.a) de la Ley 9/2016</strong>: los informes del <strong>Consejo de Servicios Sociales de Andalucía</strong> sobre anteproyectos de ley, decretos, planes estratégicos y catálogos de prestaciones pasaron de ser «preceptivos» a ser <strong>«previos y facultativos»</strong>.</li>
+      <li>Unificó procedimentalmente el reconocimiento de la situación de dependencia y del Programa Individual de Atención (PIA) en una única resolución administrativa en Andalucía.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>3.2. Estructura sistemática y analítica de la Ley 9/2016</h3>
+<p>La Ley 9/2016 se articula formalmente en un <strong>Título Preliminar, 6 Títulos numerados, 141 artículos, 6 Disposiciones Adicionales, 3 Disposiciones Transitorias, 1 Disposición Derogatoria Única y 3 Disposiciones Finales</strong>:</p>
+
+<ul>
+  <li><strong>TÍTULO PRELIMINAR: Disposiciones generales (artículos 1 a 8)</strong>. Objeto (art. 1); definición y funciones del SPSS (art. 2); catálogo de definiciones legales (art. 3); ámbito de aplicación (art. 4); quince objetivos de la política social (art. 5); titulares del derecho subjetivo (art. 6); prestaciones garantizadas y condicionadas (art. 7); y protección jurídica de los derechos (art. 8).</li>
+  <li><strong>TÍTULO I: La ciudadanía y el sistema público de servicios sociales (artículos 9 a 23)</strong>.
+    <ul>
+      <li><em>Capítulo I (arts. 9 a 13)</em>: Derechos y obligaciones. Derechos de la ciudadanía (art. 9), derechos de personas usuarias (art. 10), derechos en centros residenciales y de día (art. 11), obligaciones de las personas usuarias (art. 12) y Carta de Derechos y Deberes (art. 13).</li>
+      <li><em>Capítulo II (arts. 14 a 23)</em>: Participación ciudadana. Promoción y fines (arts. 14-15); órganos colegiados consultivos (art. 16); Consejo de Servicios Sociales de Andalucía (art. 17, informes previos y facultativos tras D-ley 3/2024); consejos sectoriales, provinciales y locales (arts. 18-19); participación digital (art. 20); voluntariado (art. 21); ayuda mutua (art. 22); y participación infantil (art. 23).</li>
+    </ul>
+  </li>
+  <li><strong>TÍTULO II: Organización y funcionamiento del Sistema Público de Servicios Sociales de Andalucía (artículos 24 a 72)</strong>.
+    <ul>
+      <li><em>Capítulo I (arts. 24 y 25)</em>: SPSS y principios rectores.</li>
+      <li><em>Capítulo II (arts. 26 a 35)</em>: Organización funcional. Servicios Sociales Comunitarios (arts. 27-28), profesional de referencia (art. 29), equipos multiprofesionales con trabajo social, educación social y psicología (art. 30), centros comunitarios (art. 31), Servicios Sociales Especializados y su acceso por derivación (arts. 32-35).</li>
+      <li><em>Capítulo III (arts. 36 a 39)</em>: Organización territorial. Mapa de Servicios Sociales (art. 37), Zona Básica de Servicios Sociales (ZBSS, módulo 20.000 hab., art. 38) y Área de Servicios Sociales (art. 39).</li>
+      <li><em>Capítulo IV (arts. 40 a 44)</em>: Prestaciones del SPSS. Prestaciones de servicio y económicas (art. 40), Catálogo de Prestaciones aprobado por Consejo de Gobierno (art. 41), prestaciones garantizadas (art. 42), prestaciones condicionadas (art. 43) y reserva exclusiva de gestión pública directa (art. 44).</li>
+      <li><em>Capítulo V (arts. 45 a 48)</em>: Proceso de intervención. Modelo de atención integral centrada en la persona (art. 45); Proyecto de Intervención Social (PIS, art. 46); Tarjeta Social e Historia Social Única Electrónica - Sistema CoheSSiona (art. 47); bases jurídicas de tratamiento de datos personales en CoheSSiona (arts. 47 bis, 47 ter y 47 quáter); y Sistema de Información unificado (art. 48).</li>
+      <li><em>Capítulo VI (arts. 49 a 52)</em>: Competencias públicas. Consejo de Gobierno (art. 49), Consejería competente (art. 50), Municipios para localidades de 20.000 o más hab. (art. 51) y Diputaciones Provinciales para municipios de menos de 20.000 hab. (art. 52).</li>
+      <li><em>Capítulo VII (arts. 53 a 58)</em>: Coordinación interadministrativa, convenios y coordinación sociosanitaria y socioeducativa.</li>
+      <li><em>Capítulo VIII (arts. 59 a 63)</em>: Profesionales de los servicios sociales (cualificación, formación continua, secreto profesional y condición de agentes de la autoridad).</li>
+      <li><em>Capítulo IX (arts. 64 a 69)</em>: Investigación social, I+D+i y transferencia de conocimiento.</li>
+      <li><em>Capítulo X (arts. 70 a 72)</em>: Ética en los servicios sociales. Creación del Comité de Ética de los Servicios Sociales de Andalucía y comités asistenciales locales.</li>
+    </ul>
+  </li>
+  <li><strong>TÍTULO III: Planificación, calidad, innovación e inspección (artículos 73 a 97)</strong>.
+    <ul>
+      <li><em>Capítulo I (arts. 73 a 77)</em>: Planificación. Plan Estratégico de Servicios Sociales cuatrienal aprobado por el Consejo de Gobierno.</li>
+      <li><em>Capítulo II (arts. 78 a 82)</em>: Calidad, auditorías, cartas de servicios y evaluación continua.</li>
+      <li><em>Capítulo III (arts. 83 a 86)</em>: Autorización administrativa previa, declaración responsable, acreditación y Registro de Entidades, Centros y Servicios. Procedimiento único integrado (art. 85 bis).</li>
+      <li><em>Capítulo IV (arts. 87 a 97)</em>: Función inspectora. Personal inspector como agentes de la autoridad (art. 90), valor probatorio de actas (art. 94) y medidas provisionalísimas de cierre cautelar ante riesgo inminente (art. 96).</li>
+    </ul>
+  </li>
+  <li><strong>TÍTULO IV: Iniciativa social e iniciativa privada (artículos 98 a 114)</strong>.
+    <ul>
+      <li><em>Capítulo I (arts. 98 a 100)</em>: Disposiciones generales y colaboración privada.</li>
+      <li><em>Capítulo II (arts. 101 a 107)</em>: Concierto Social (naturaleza no contractual, prioridad legal a entidades de iniciativa social sin ánimo de lucro, vigencia 4+4=8 años).</li>
+      <li><em>Capítulo III (arts. 108 y 109)</em>: Convenios y subvenciones.</li>
+      <li><em>Capítulo IV (arts. 110 y 111)</em>: Partenariado, patrocinio y mecenazgo social.</li>
+      <li><em>Capítulo V (arts. 112 a 114)</em>: Declaración formal de entidades de interés social.</li>
+    </ul>
+  </li>
+  <li><strong>TÍTULO V: Financiación del Sistema Público de Servicios Sociales de Andalucía (artículos 115 a 123)</strong>.
+    <ul>
+      <li><em>Capítulo I (arts. 115 y 116)</em>: Fuentes de financiación públicas y privadas.</li>
+      <li><em>Capítulo II (arts. 117 a 120)</em>: Aportación de la ciudadanía / Copago. Criterios de progresividad, garantía de mínimos vitales exentos y no condicionamiento de urgencias sociales.</li>
+      <li><em>Capítulo III (arts. 121 a 123)</em>: Contratos programa plurianuales vinculados a objetivos evaluables.</li>
+    </ul>
+  </li>
+  <li><strong>TÍTULO VI: Régimen sancionador (artículos 124 a 141)</strong>.
+    <ul>
+      <li><em>Capítulo I (arts. 124 a 129)</em>: Disposiciones generales, sujetos responsables y medidas provisionales. Prescripción de infracciones: leves 1 año, graves 2 años, muy graves 3 años (art. 128).</li>
+      <li><em>Capítulo II (arts. 130 a 135)</em>: Infracciones tipificadas: leves (art. 132), graves (art. 133) y muy graves (art. 134).</li>
+      <li><em>Capítulo III (arts. 136 a 141)</em>: Sanciones. Cuantías de multas (art. 138: leves hasta 6.000 €; graves de 6.001 a 60.000 €; muy graves de 60.001 a 600.000 €). Sanciones accesorias de cierre e inhabilitación (art. 139). Prescripción de sanciones: leves 1 año, graves 2 años, muy graves 3 años (art. 140). Órganos competentes para sancionar: Delegaciones Territoriales hasta 30.000 €; Dirección General / Consejería hasta 180.000 €; Consejo de Gobierno para multas superiores a 180.000 € y cierre definitivo (art. 141).</li>
+    </ul>
+  </li>
+  <li><strong>DISPOSICIONES ADICIONALES (6)</strong>: 1ª Catálogo de Prestaciones; 2ª Plan Estratégico; 3ª Mapa de Servicios Sociales; 4ª Suficiencia financiera del SAAD; 5ª Financiación local transitoria; 6ª Régimen de conciertos preexistentes.</li>
+  <li><strong>DISPOSICIONES TRANSITORIAS (3)</strong>: 1ª Régimen transitorio de autorizaciones y acreditaciones; 2ª Procedimientos sancionadores incoados; 3ª Habilitación provisional de personal con experiencia previa prolongada.</li>
+  <li><strong>DISPOSICIÓN DEROGATORIA ÚNICA</strong>: Deroga expresamente la <strong>Ley 2/1988, de 4 de abril, de Servicios Sociales de Andalucía</strong>, y cuantas disposiciones de igual o inferior rango se opongan a la ley.</li>
+  <li><strong>DISPOSICIONES FINALES (3)</strong>: 1ª Modificación de la Ley 6/1999, de personas mayores de Andalucía; 2ª Habilitación para desarrollo reglamentario; 3ª Entrada en vigor a los veinte días naturales de su publicación en BOJA (<strong>18 de enero de 2017</strong>).</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2>A) DATOS DE EXAMEN</h2>
+<div class="datos-grid">
+  <div class="dato-item"><span class="dato-num">1.</span> <strong>Fecha de aprobación</strong>: 27 de diciembre de 2016.</div>
+  <div class="dato-item"><span class="dato-num">2.</span> <strong>Publicación oficial</strong>: BOJA nº 248 (29/12/2016); BOE nº 18 (21/01/2017).</div>
+  <div class="dato-item"><span class="dato-num">3.</span> <strong>Entrada en vigor</strong>: 18 de enero de 2017 (a los 20 días naturales de publicarse en BOJA, DF 3ª).</div>
+  <div class="dato-item"><span class="dato-num">4.</span> <strong>Norma derogada expresamente</strong>: Ley 2/1988, de 4 de abril, de Servicios Sociales de Andalucía.</div>
+  <div class="dato-item"><span class="dato-num">5.</span> <strong>Estructura numérica</strong>: 141 artículos, 7 Títulos (Preliminar + I a VI), 6 DA, 3 DT, 1 DD y 3 DF.</div>
+  <div class="dato-item"><span class="dato-num">6.</span> <strong>Competencia exclusiva estatutaria</strong>: Artículo 61 del Estatuto de Autonomía de Andalucía (2007).</div>
+  <div class="dato-item"><span class="dato-num">7.</span> <strong>Módulo poblacional ZBSS</strong>: 20.000 habitantes (art. 38.2).</div>
+  <div class="dato-item"><span class="dato-num">8.</span> <strong>Umbral poblacional municipal</strong>: Municipios de &ge;20.000 hab. gestionan los comunitarios; en &lt;20.000 hab. asume Diputación (arts. 51 y 52).</div>
+  <div class="dato-item"><span class="dato-num">9.</span> <strong>Multas leves</strong>: Hasta 6.000 euros (art. 138.1.a).</div>
+  <div class="dato-item"><span class="dato-num">10.</span> <strong>Multas graves</strong>: De 6.001 a 60.000 euros (art. 138.1.b).</div>
+  <div class="dato-item"><span class="dato-num">11.</span> <strong>Multas muy graves</strong>: De 60.001 a 600.000 euros (art. 138.1.c).</div>
+  <div class="dato-item"><span class="dato-num">12.</span> <strong>Prescripción de infracciones</strong>: Leves 1 año; graves 2 años; muy graves 3 años (art. 128.1).</div>
+  <div class="dato-item"><span class="dato-num">13.</span> <strong>Prescripción de sanciones</strong>: Leves 1 año; graves 2 años; muy graves 3 años (art. 140.1).</div>
+  <div class="dato-item"><span class="dato-num">14.</span> <strong>Aprobación del Catálogo de Prestaciones</strong>: Consejo de Gobierno mediante Decreto (arts. 41 y 49.b).</div>
+  <div class="dato-item"><span class="dato-num">15.</span> <strong>Aprobación del Plan Estratégico</strong>: Consejo de Gobierno; vigencia cuatrienal (arts. 49.c y 74.2).</div>
+  <div class="dato-item"><span class="dato-num">16.</span> <strong>Sanciones &gt;180.000 € y cierre definitivo</strong>: Competencia exclusiva del Consejo de Gobierno (art. 141.d).</div>
+  <div class="dato-item"><span class="dato-num">17.</span> <strong>Duración máxima del Concierto Social</strong>: 4 años + 4 años de prórroga = 8 años máximo absoluto (art. 104.2).</div>
+  <div class="dato-item"><span class="dato-num">18.</span> <strong>Informes del Consejo de SS.SS. de Andalucía</strong>: Previos y facultativos tras el Decreto-ley 3/2024 (art. 17.2.a).</div>
+  <div class="dato-item"><span class="dato-num">19.</span> <strong>Procedimiento único autorización/acreditación</strong>: Artículo 85 bis (introducido por Decreto-ley 2/2020).</div>
+  <div class="dato-item"><span class="dato-num">20.</span> <strong>Plataforma Historia Social Electrónica</strong>: Sistema CoheSSiona (arts. 47, 47 bis a 47 quáter).</div>
+  <div class="dato-item"><span class="dato-num">21.</span> <strong>Siglas clave oficiales</strong>: SPSS, PIS, SIVOA, ZBSS, SAAD, PIA.</div>
+  <div class="dato-item"><span class="dato-num">22.</span> <strong>Potestad inspectora</strong>: Agentes de la autoridad con presunción de certeza en actas (arts. 90 y 94).</div>
+</div>
+
+<h2>B) ESQUEMA PARA REPASO</h2>
+<div class="esquema-block">
+LEY 9/2016 (27 DICIEMBRE) DE SERVICIOS SOCIALES DE ANDALUCÍA [BOJA 29/12/16 | ENTRADA EN VIGOR: 18/01/2017]
+│
+├── TÍTULO PRELIMINAR (Arts. 1-8): Disposiciones Generales
+│   ├── Art. 1: Objeto (garantizar derecho universal, regular SPSS y concierto social).
+│   ├── Art. 2: SPSS (cobertura necesidades; funciones: promotora, preventiva, protectora y asistencial).
+│   ├── Art. 3: Definiciones (Autonomía, Derecho Subjetivo, PIS, Contrato Programa, Iniciativa Social).
+│   ├── Art. 6: Titulares (Vecindad adm., andaluces exterior, menores extranjeros, asilo/refugio, urgencias).
+│   └── Art. 7: Tipología (Garantizadas = derecho subjetivo exigible; Condicionadas = según disponibilidad).
+│
+├── TÍTULO I (Arts. 9-23): La Ciudadanía y el Sistema Público de Servicios Sociales
+│   ├── Cap. I (Arts. 9-13): Derechos y Deberes (Prof. Referencia art. 10.c; voluntades anticipadas art. 9.g;
+│   │   prohibidas sujeciones sin médico art. 11.m; copago y contrato social art. 12; Carta Derechos art. 13).
+│   └── Cap. II (Arts. 14-23): Participación (Consejo de SS.SS. de Andalucía art. 17: informes FACULTATIVOS tras D-ley 3/2024).
+│
+├── TÍTULO II (Arts. 24-72): Organización y Funcionamiento del SPSS
+│   ├── Estructura Funcional: Comunitarios (puerta entrada, SIVOA, ZBSS: 20.000 hab.) y Especializados (Áreas de SS.SS.).
+│   ├── Art. 29: Profesional de Referencia | Art. 30: Equipos Multiprofesionales (Trabajo/Educación Social/Psicología).
+│   ├── Art. 41: Catálogo de Prestaciones (aprueba Consejo de Gobierno) | Art. 42: Prestaciones Garantizadas.
+│   ├── Art. 44.2: RESERVA GESTIÓN PÚBLICA DIRECTA (SIVOA, PIS, Prof. Referencia, ayudas económicas, autoridad).
+│   ├── Proceso Intervención: PIS (art. 46); Tarjeta Social e Historia Social Única Electrónica - CoheSSiona (arts. 47 a 47 quáter).
+│   ├── Competencias: Consejo de Gobierno (Catálogo, sanciones >180.000 €); Consejería (Plan, Mapa, sanciones hasta 180.000 €);
+│   │   Municipios &ge;20.000 hab. (gestión Comunitarios); Diputaciones &lt;20.000 hab. (asumen Comunitarios en menores).
+│   └── Cap. X (Arts. 70-72): Ética en Servicios Sociales (Comité de Ética de Andalucía y comités asistenciales locales).
+│
+├── TÍTULO III (Arts. 73-97): Planificación, Calidad, Innovación e Inspección
+│   ├── Plan Estratégico cuatrienal (art. 74) | Art. 85 bis: Procedimiento Único autorización/acreditación (D-ley 2/2020).
+│   └── Inspección de SS.SS. (arts. 87-97): Agentes de autoridad, actas con presunción de certeza, cierre cautelar.
+│
+├── TÍTULO IV (Arts. 98-114): Iniciativa Social e Iniciativa Privada
+│   └── Cap. II: CONCIERTO SOCIAL (no contractual, prioridad iniciativa social sin lucro, vigencia máx. 4+4=8 años).
+│
+├── TÍTULO V (Arts. 115-123): Financiación
+│   └── Copago progresivo con mínimos exentos (arts. 117-120) | Contratos Programa plurianuales vinculados a fines (arts. 121-123).
+│
+├── TÍTULO VI (Arts. 124-141): Régimen Sancionador
+│   ├── Infracciones: Leves (art. 132), Graves (art. 133), Muy Graves (art. 134).
+│   ├── Multas: Leves (&le;6.000 €), Graves (6.001 a 60.000 €), Muy Graves (60.001 a 600.000 €).
+│   └── Prescripción simétrica de infracciones y sanciones: Leves 1 año; Graves 2 años; Muy Graves 3 años.
+│
+└── PARTE FINAL: 6 DA (Catálogo, Plan, Mapa, SAAD); 3 DT; 1 DD (deroga Ley 2/1988); 3 DF (Entrada en vigor: 18/01/2017).
+</div>
+
+<h2>C) TRAMPAS DEL TEST</h2>
+
+<div class="box box-trampa">
+  <strong class="title">1. Aprobación del Catálogo de Prestaciones vs Mapa de Servicios Sociales</strong>
+  <p><strong>Trampa común:</strong> Señalar que el Catálogo de Prestaciones se aprueba por Orden de la Consejería.</p>
+  <p><strong>Clave jurídica:</strong> El <strong>Catálogo de Prestaciones del SPSS</strong> se aprueba preceptivamente por Decreto del <strong>Consejo de Gobierno</strong> (arts. 41 y 49.b). El <strong>Mapa de Servicios Sociales</strong> lo elabora y aprueba directamente la <strong>Consejería competente</strong> (art. 50.d).</p>
+</div>
+
+<div class="box box-trampa">
+  <strong class="title">2. Informes del Consejo de Servicios Sociales de Andalucía tras el Decreto-ley 3/2024</strong>
+  <p><strong>Trampa común:</strong> Preguntar si su informe sobre anteproyectos de ley o decretos sigue siendo preceptivo.</p>
+  <p><strong>Clave jurídica:</strong> Tras la modificación del art. 17.2.a por el artículo 125 del <strong>Decreto-ley 3/2024, de 6 de febrero</strong>, los informes del Consejo son <strong>previos y facultativos</strong> (su solicitud ya no es obligatoria para el Consejo de Gobierno).</p>
+</div>
+
+<div class="box box-trampa">
+  <strong class="title">3. Competencia sobre Servicios Sociales Comunitarios (Municipio vs Diputación)</strong>
+  <p><strong>Trampa común:</strong> Afirmar que todo ayuntamiento andaluz gestiona directamente los Servicios Sociales Comunitarios.</p>
+  <p><strong>Clave jurídica:</strong> Solo los municipios con <strong>población igual o superior a 20.000 habitantes</strong> (como Utrera) tienen competencia para gestionar y sostener centros de servicios sociales comunitarios propios (art. 51). En municipios de <strong>menos de 20.000 habitantes</strong> la competencia y gestión directa recae en la <strong>Diputación Provincial</strong> (art. 52.a).</p>
+</div>
+
+<div class="box box-trampa">
+  <strong class="title">4. Naturaleza jurídica y plazo máximo del Concierto Social</strong>
+  <p><strong>Trampa común:</strong> Calificar el concierto social como un contrato de servicios ordinario de la Ley de Contratos del Sector Público adjudicado por subasta económica.</p>
+  <p><strong>Clave jurídica:</strong> El concierto social es un régimen de <strong>prestación no contractual</strong> (Directiva 2014/24/UE y arts. 101 a 107 de la Ley 9/2016) basado en la solidaridad y proximidad, con <strong>prioridad legal para entidades de iniciativa social sin ánimo de lucro</strong> (art. 103). Su duración máxima es de <strong>4 años prorrogables por otros 4 (máximo absoluto: 8 años)</strong>.</p>
+</div>
+
+<div class="box box-trampa">
+  <strong class="title">5. Órganos competentes para sancionar infracciones muy graves</strong>
+  <p><strong>Trampa común:</strong> Atribuir al titular de la Consejería la imposición de cualquier sanción por infracción muy grave.</p>
+  <p><strong>Clave jurídica:</strong> La Consejería solo sanciona infracciones muy graves entre 60.001 y 180.000 euros (art. 141.c). Si la propuesta de multa es <strong>superior a 180.000 euros o implica el cierre definitivo del centro</strong>, la competencia sancionadora corresponde con carácter exclusivo al <strong>Consejo de Gobierno</strong> (art. 141.d).</p>
+</div>
+
+<div class="box box-trampa">
+  <strong class="title">6. Prescripción de infracciones vs Prescripción de sanciones</strong>
+  <p><strong>Trampa común:</strong> Mezclar los plazos de prescripción de infracciones y sanciones haciendo escalas dispares.</p>
+  <p><strong>Clave jurídica:</strong> En la Ley 9/2016 los plazos son <strong>idénticos y simétricos</strong> para ambas figuras: <strong>leves 1 año, graves 2 años, muy graves 3 años</strong> (arts. 128 y 140).</p>
+</div>
+
+<div class="box box-trampa">
+  <strong class="title">7. Reserva de Gestión Pública Directa (artículo 44.2)</strong>
+  <p><strong>Trampa común:</strong> Incluir la redacción del PIS o las funciones del profesional de referencia en pliegos de externalización privada.</p>
+  <p><strong>Clave jurídica:</strong> El art. 44.2 blinda como <strong>gestión pública directa indelegable</strong> el SIVOA, la elaboración/evaluación del PIS, el profesional de referencia, las ayudas económicas y las potestades de autoridad (menores e internamientos).</p>
+</div>
+
+<h2>D) ENFOQUE PRÁCTICO</h2>
+<div class="box box-practico">
+  <strong class="title">Aplicación en Supuesto Práctico de Educación Social (Ayuntamiento de Utrera)</strong>
+  <p>En un supuesto práctico para el Ayuntamiento de Utrera (población superior a 20.000 habitantes), este tema se aplica al encuadrar la intervención socioeducativa en los <strong>Servicios Sociales Comunitarios</strong> (art. 27), integrando al educador/a social en el equipo multiprofesional (art. 30) para diseñar y ejecutar el <strong>Proyecto de Intervención Social (PIS)</strong> (art. 46). Dicha praxis garantiza la reserva de gestión pública directa del diagnóstico y seguimiento (art. 44.2), operando bajo el modelo de atención centrada en la persona (art. 45), coordinándose obligatoriamente con el <strong>profesional de referencia</strong> (art. 29) y documentando las actuaciones en la Historia Social Única mediante el <strong>Sistema CoheSSiona</strong> (arts. 47 a 47 quáter).</p>
+</div>
+
+<h2>E) FUENTES OFICIALES</h2>
+<div class="fuentes-list">
+  <p>&bull; <strong>Boletín Oficial del Estado (BOE)</strong>: Ley 9/2016, de 27 de diciembre, de Servicios Sociales de Andalucía (Texto Consolidado con última actualización de 16/02/2024 por Decreto-ley 3/2024):<br>
+  <a href="https://www.boe.es/eli/es-an/l/2016/12/27/9/con">https://www.boe.es/eli/es-an/l/2016/12/27/9/con</a></p>
+  <p>&bull; <strong>Boletín Oficial de la Junta de Andalucía (BOJA)</strong>: Publicación inicial de la Ley 9/2016 (BOJA nº 248, de 29 de diciembre de 2016):<br>
+  <a href="https://www.juntadeandalucia.es/boja/2016/248/1">https://www.juntadeandalucia.es/boja/2016/248/1</a></p>
+  <p>&bull; <strong>Boletín Oficial de la Junta de Andalucía (BOJA)</strong>: Decreto-ley 3/2024, de 6 de febrero, de simplificación y racionalización administrativa (BOJA nº 34, de 16 de febrero de 2024, modificador del art. 17):<br>
+  <a href="https://www.juntadeandalucia.es/boja/2024/34/2">https://www.juntadeandalucia.es/boja/2024/34/2</a></p>
+  <p>&bull; <strong>Boletín Oficial de la Junta de Andalucía (BOJA)</strong>: Decreto 41/2018, de 20 de febrero, por el que se regula el concierto social en Andalucía (BOJA nº 40, de 27 de febrero de 2018):<br>
+  <a href="https://www.juntadeandalucia.es/boja/2018/40/1">https://www.juntadeandalucia.es/boja/2018/40/1</a></p>
+  <p>&bull; <strong>Consejería de Inclusión Social, Juventud, Familias e Igualdad de la Junta de Andalucía</strong>: Portal institucional y marco normativo regulador:<br>
+  <a href="https://www.juntadeandalucia.es/organismos/inclusionsocialjuventudfamiliaseigualdad.html">https://www.juntadeandalucia.es/organismos/inclusionsocialjuventudfamiliaseigualdad.html</a></p>
+</div>
+
+</body>
+</html>

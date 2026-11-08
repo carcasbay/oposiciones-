@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 12: La Dimensión Moral de la Educación. Actitudes y Valores Morales a través de las Áreas del Currículo. La Educación del Razonamiento y del Juicio Moral. Actuación e Intervención del Educador o Educadora Social en el Desarrollo de Actitudes y Valores Morales. Educación para la Ciudadanía y para el Desarrollo del Pensamiento Crítico</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 12</h1>
+  <h2>La Dimensión Moral de la Educación. Actitudes y Valores Morales a través de las Áreas del Currículo. La Educación del Razonamiento y del Juicio Moral. Actuación e Intervención del Educador o Educadora Social en el Desarrollo de Actitudes y Valores Morales. Educación para la Ciudadanía y para el Desarrollo del Pensamiento Crítico</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Bloque:</strong> Materias Específicas</p>
+<p><strong>Tema Oficial:</strong> 12</p>
+<p><strong>Normativa Clave:</strong> Constitución Española (arts. 10 y 27.2); LOMLOE 3/2020 (arts. 1 y 2); Ley 17/2007 (LEA - arts. 4 y 39); Decretos 100, 101 y 102/2023 de currículo en Andalucía; Instrucciones de 17 de septiembre de 2010.</p>
+<p><strong>Autores y Referentes:</strong> Jean Piaget, Lawrence Kohlberg, Carol Gilligan, Matthew Lipman, Paulo Freire, Jürgen Habermas, Louis Raths, Fernando Savater.</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 12</div>
+  <div class="toc-item level-1">1. <strong>Introducción y contextualización en la Educación Social</strong></div>
+  <div class="toc-item level-1">2. <strong>La dimensión moral de la educación: Fundamentación ética y constitucional</strong></div>
+  <div class="toc-item level-2">2.1. El pleno desarrollo de la personalidad y los valores democráticos (art. 27.2 CE)</div>
+  <div class="toc-item level-2">2.2. Adoctrinamiento frente a educación moral emancipadora y autónoma</div>
+  <div class="toc-item level-2">2.3. Estructura de las actitudes morales: Componente cognitivo, afectivo y conductual</div>
+  <div class="toc-item level-1">3. <strong>Actitudes y valores morales a través de las áreas del currículo</strong></div>
+  <div class="toc-item level-2">3.1. La transversalidad axiológica en el currículo competencial de la LOMLOE</div>
+  <div class="toc-item level-2">3.2. Ejes de valor prioritarios en Andalucía: Coeducación, cultura de paz, sostenibilidad y diversidad</div>
+  <div class="toc-item level-2">3.3. Metodologías activas y situaciones de aprendizaje éticamente situadas</div>
+  <div class="toc-item level-1">4. <strong>La educación del razonamiento y del juicio moral: Modelos teóricos y métodos</strong></div>
+  <div class="toc-item level-2">4.1. De la moral heterónoma a la moral autónoma (Jean Piaget)</div>
+  <div class="toc-item level-2">4.2. Los tres niveles y seis estadios del juicio moral de Lawrence Kohlberg</div>
+  <div class="toc-item level-2">4.3. La ética del cuidado y la responsabilidad relacional (Carol Gilligan)</div>
+  <div class="toc-item level-2">4.4. Estrategias didácticas: Discusión de dilemas morales, clarificación de valores (Raths) y role-playing</div>
+  <div class="toc-item level-1">5. <strong>Educación para la ciudadanía y desarrollo del pensamiento crítico</strong></div>
+  <div class="toc-item level-2">5.1. La ciudadanía activa, democrática y global en la sociedad de la información</div>
+  <div class="toc-item level-2">5.2. El desarrollo del pensamiento crítico frente a la desinformación, bulos y discursos de odio</div>
+  <div class="toc-item level-2">5.3. Filosofía para Niños (Matthew Lipman) y las comunidades de investigación dialógica</div>
+  <div class="toc-item level-1">6. <strong>Actuación e intervención del educador o educadora social</strong></div>
+  <div class="toc-item level-2">6.1. La mirada socioeducativa en el Plan de Convivencia y en el POAT</div>
+  <div class="toc-item level-2">6.2. Dinamización de asambleas escolares, círculos de paz y prácticas restaurativas</div>
+  <div class="toc-item level-2">6.3. El Aprendizaje-Servicio (ApS) como puente entre la reflexión ética y el compromiso comunitario</div>
+  <div class="toc-item level-2">6.4. Mediación en conflictos morales reales del entorno escolar y barrial</div>
+  <div class="toc-item level-1">7. <strong>Conclusión</strong></div>
+  <div class="toc-item level-1">8. <strong>Anexo: Mapa conceptual y tabla sinóptica del Tema 12</strong></div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y contextualización en la Educación Social</h2>
+
+<p>Educar no es únicamente instruir en conocimientos científicos o técnicos; es, fundamentalmente, <strong>un acto moral y humanizador</strong>. Como afirmaba Fernando Savater, la educación es la revelación de los demás al sujeto y el aprendizaje del oficio humano de convivir en justicia y libertad.</p>
+
+<p>El <strong>artículo 27.2 de la Constitución Española</strong> proclama que la educación tiene por objeto el <em>pleno desarrollo de la personalidad humana en el respeto a los principios democráticos de convivencia y a los derechos y libertades fundamentales</em>. Este mandato ético vincula a todo el sistema educativo: el currículo no puede ser axiológicamente neutro; debe comprometerse de forma militante con la dignidad humana, la no discriminación, la paz y la solidaridad social.</p>
+
+<p>Para el <strong>Educador y la Educadora Social</strong>, la dimensión moral de la educación constituye su territorio por excelencia. Lejos de imponer recetas morales dogmáticas, el educador social actúa como un facilitador de la <strong>autonomía moral y del pensamiento crítico</strong>. En un contexto saturado de polarización, sobreexposición a pantallas, individualismo consumista y discursos de odio, la intervención socioeducativa proporciona espacios deliberativos donde la infancia y la juventud aprenden a pensar por sí mismas, a empatizar con el sufrimiento ajeno y a comprometerse activamente en la mejora democrática de su comunidad.</p>
+
+<h2 class="section-title">2. La dimensión moral de la educación: Fundamentación ética y constitucional</h2>
+
+<h3 class="sub-title">2.1. El marco constitucional y legal</h3>
+
+<p>La educación moral en un Estado democrático y aconfesional se fundamenta en los <strong>valores superiores del ordenamiento jurídico (art. 1.1 CE: libertad, justicia, igualdad y pluralismo)</strong> y en los <strong>derechos inviolables que sustentan la dignidad de la persona (art. 10 CE)</strong>. La LOMLOE sitúa la educación moral no como una materia marginal, sino como el principio vertebrador del Perfil de Salida del alumnado.</p>
+
+<h3 class="sub-title">2.2. Adoctrinamiento moral frente a educación moral autónoma</h3>
+
+<p>Es crucial distinguir dos modelos pedagógicos antagónicos:</p>
+
+<ul>
+  <li><strong>Modelo heterónomo / Adoctrinamiento:</strong> Transmisión autoritaria de una moral cerrada, exigiendo sumisión pasiva y castigando la disidencia mediante la culpa o el miedo.</li>
+  <li><strong>Modelo autónomo / Emancipador:</strong> Enfoque constructivista y dialógico que busca dotar al menor de herramientas racionales y emocionales para construir autónomamente su propia jerarquía de valores, respetando los derechos humanos universales.</li>
+</ul>
+
+<h3 class="sub-title">2.3. Estructura tridimensional de las actitudes morales</h3>
+
+<p>Cualquier actitud o valor moral integra tres componentes inseparables:</p>
+
+<ol>
+  <li><strong>Componente Cognitivo:</strong> Creencias, ideas y juicios racionales sobre lo justo, lo equitativo y lo bueno.</li>
+  <li><strong>Componente Afectivo:</strong> Empatía, compasión, indignación ética ante la injusticia y resonancia emocional con el dolor del otro.</li>
+  <li><strong>Componente Conductual:</strong> Disposición práctica y congruencia real para actuar en defensa de los principios morales asumidos, incluso ante la presión grupal contraria.</li>
+</ol>
+
+<h2 class="section-title">3. Actitudes y valores morales a través de las áreas del currículo</h2>
+
+<h3 class="sub-title">3.1. La transversalidad en el currículo competencial</h3>
+
+<p>La <strong>LOMLOE</strong> y los Decretos curriculares de Andalucía (Decretos 100/2023, 101/2023 y 102/2023) disponen que la educación en valores debe integrarse de forma <strong>transversal en todas las áreas, materias y Situaciones de Aprendizaje</strong>:</p>
+
+<div class="diagram-box">
+  <pre>                       EJES TRANSVERSALES DE VALOR EN ANDALUCÍA
+ ┌────────────────────────────────────┬────────────────────────────────────┐
+ │ IGUALDAD DE GÉNERO Y COEDUCACIÓN   │ CULTURA DE PAZ Y NO VIOLENCIA      │
+ ├────────────────────────────────────┼────────────────────────────────────┤
+ │ Desmontaje de roles machistas y    │ Resolución pacífica, mediación     │
+ │ prevención de la violencia sexista │ y rechazo frontal a las guerras    │
+ ├────────────────────────────────────┼────────────────────────────────────┤
+ │ SOSTENIBILIDAD Y MEDIO AMBIENTE    │ DIÁLOGO INTERCULTURAL Y DIVERSIDAD │
+ ├────────────────────────────────────┼────────────────────────────────────┤
+ │ Cuidado del planeta, emergencia    │ Erradicación del racismo y respeto │
+ │ climática y consumo responsable    │ al pueblo gitano e inmigrantes     │
+ └────────────────────────────────────┴────────────────────────────────────┘</pre>
+</div>
+
+<h3 class="sub-title">3.2. Metodologías éticamente situadas</h3>
+
+<p>Los valores no se aprenden memorizando definiciones abstractas, sino a través de <strong>experiencias vivenciadas</strong>: debates en asamblea, simulaciones de dilemas reales de la sociedad, análisis crítico de noticias de prensa y proyectos colaborativos.</p>
+
+<h2 class="section-title">4. La educación del razonamiento y del juicio moral: Modelos teóricos y métodos</h2>
+
+<h3 class="sub-title">4.1. De la heteronomía a la autonomía moral (Jean Piaget)</h3>
+
+<p>En su obra clásica <em>El criterio moral en el niño</em> (1932), Piaget constató que el juicio moral progresa a través de dos grandes etapas:</p>
+
+<ul>
+  <li><strong>Moral Heterónoma o de Realismo Moral (hasta los 7-8 años):</strong> Las normas son sagradas, externas e inmutables, dictadas por los adultos. La gravedad de una falta se juzga por el daño material visible (<strong>responsabilidad objetiva</strong>) sin considerar la intencionalidad del sujeto. Prima la justicia retributiva y el castigo expiatorio.</li>
+  <li><strong>Moral Autónoma o de Cooperación (a partir de los 8-10 años):</strong> Las normas se comprenden como acuerdos sociales basados en la reciprocidad y el respeto mutuo entre iguales. Las reglas pueden modificarse democráticamente si el grupo lo consensúa. Se valora la intencionalidad subjetiva (<strong>responsabilidad subjetiva</strong>) y prima la justicia distributiva y reparadora.</li>
+</ul>
+
+<h3 class="sub-title">4.2. La teoría del desarrollo moral de Lawrence Kohlberg</h3>
+
+<p>Kohlberg amplió las tesis piagetianas, formulando una secuencia universal de tres niveles y seis estadios:</p>
+
+<div class="diagram-box">
+  <pre>                      ESTADIOS DEL JUICIO MORAL (KOHLBERG)
+ ┌────────────────────────────────────────────────────────────────────────┐
+ │ NIVEL I: PRECONVENCIONAL (Perspectiva egocéntrica del individuo)       │
+ │ ├─ Estadio 1: Orientación hacia el castigo y la obediencia estricta.   │
+ │ └─ Estadio 2: Orientación instrumental y hedonista ("ojo por ojo").    │
+ ├────────────────────────────────────────────────────────────────────────┤
+ │ NIVEL II: CONVENCIONAL (Perspectiva de miembro de la sociedad)         │
+ │ ├─ Estadio 3: Conformidad interpersonal y rol de "buen chico/a".       │
+ │ └─ Estadio 4: Mantenimiento del orden social, la autoridad y la ley.   │
+ ├────────────────────────────────────────────────────────────────────────┤
+ │ NIVEL III: POSCONVENCIONAL O DE PRINCIPIOS (Perspectiva supra-social)  │
+ │ ├─ Estadio 5: Contrato social, utilidad general y derechos humanos.    │
+ │ └─ Estadio 6: Adhesión a principios éticos universales de justicia.    │
+ └────────────────────────────────────────────────────────────────────────┘</pre>
+</div>
+
+<h3 class="sub-title">4.3. La Ética del Cuidado de Carol Gilligan</h3>
+
+<p>En <em>In a Different Voice</em> (1982), <strong>Carol Gilligan</strong> denunció el sesgo patriarcal del modelo de Kohlberg, que primaba la justicia abstracta formal y relegaba a estadios inferiores las respuestas centradas en la empatía. Gilligan formuló la <strong>Ética del Cuidado (<em>Ethics of Care</em>)</strong>:</p>
+
+<ul>
+  <li>Frente a la moral abstracta de derechos y deberes imparciales, postula una moral arraigada en la <strong>responsabilidad relacional, la atención a la vulnerabilidad del otro y la prevención activa del sufrimiento ajeno</strong>.</li>
+  <li>Ambos enfoques (justicia y cuidado) son complementarios e indispensables para la Educación Social.</li>
+</ul>
+
+<h3 class="sub-title">4.4. Técnicas pedagógicas de desarrollo moral</h3>
+
+<ol>
+  <li><strong>Discusión de Dilemas Morales:</strong> Presentación de situaciones conflictivas donde colisionan dos valores legítimos (por ejemplo, el dilema de Heinz de Kohlberg). El debate entre iguales genera un <strong>conflicto sociocognitivo</strong> que empuja al sujeto a transitar hacia estadios morales superiores.</li>
+  <li><strong>Clarificación de Valores (Louis Raths, Harmin y Simon):</strong> Metodología centrada en ayudar al menor a ser consciente de sus propios valores a través de tres fases: elegir libremente, valorar y actuar coherentemente.</li>
+  <li><strong>Juego de Roles (Role-Playing):</strong> Vivenciar corporal y emocionalmente la perspectiva de personas discriminadas o víctimas de acoso para despertar la empatía activa.</li>
+</ol>
+
+<h2 class="section-title">5. Educación para la ciudadanía y desarrollo del pensamiento crítico</h2>
+
+<h3 class="sub-title">5.1. Ciudadanía democrática y crítica</h3>
+
+<p>La ciudadanía no se reduce a poseer un documento de identidad o votar cada cuatro años; es un <strong>estilo de vida cívico participativo</strong> basado en la defensa de los bienes comunes, el pago solidario de impuestos, la solidaridad vecinal y la exigencia de transparencia a los poderes públicos.</p>
+
+<h3 class="sub-title">5.2. El Pensamiento Crítico en la era digital</h3>
+
+<p>En un ecosistema mediático intoxicado por algoritmos de polarización, <em>fake news</em>, bulos xenófobos y discursos de odio en redes sociales, el pensamiento crítico es una <strong>herramienta de supervivencia democrática</strong>:</p>
+
+<ul>
+  <li>Enseñar a contrastar fuentes y verificar datos.</li>
+  <li>Detectar falacias lógicas y sesgos de confirmación.</li>
+  <li>Diferenciar hechos objetivos de meras opiniones viscerales.</li>
+</ul>
+
+<h3 class="sub-title">5.3. Filosofía para Niños (Matthew Lipman)</h3>
+
+<p>El programa de Lipman transforma el aula en una <strong>Comunidad de Investigación Dialógica</strong>: a través de relatos y preguntas socráticas guiadas, los menores aprenden a formular buenas preguntas, justificar razones, escuchar activamente y construir conocimiento de forma colectiva y cooperativa.</p>
+
+<h2 class="section-title">6. Actuación e intervención del educador o educadora social</h2>
+
+<p>En el marco de las <strong>Instrucciones de 17 de septiembre de 2010</strong>, el Educador Social ejerce como dinamizador ético en el centro educativo:</p>
+
+<div class="diagram-box">
+  <pre>                  ÁMBITOS DE INTERVENCIÓN MORAL Y CIUDADANA
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ TUTORÍA Y AULA (POAT)│ CONVIVENCIA Y MEDIAC.│ COMUNIDAD Y TERRITORIO│
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Talleres dilemas   │ • Círculos restaurat.│ • Aprendizaje-Servic.│
+ │ • Clarificación valor│ • Mediación escolar  │ • Voluntariado local │
+ │ • Educación afectiva │ • Aula de Convivencia│ • Campañas cívicas   │
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<ol>
+  <li><strong>En la Acción Tutorial (POAT):</strong> Conduce sesiones monográficas de debate ético: dilemas sobre el uso de redes sociales, difusión de fotos íntimas sin consentimiento, lealtad mal entendida encubriendo acoso escolar o prejuicios racistas.</li>
+  <li><strong>En el Plan de Convivencia y Prácticas Restaurativas:</strong> En el <strong>Aula de Convivencia</strong>, sustituye el castigo punitivo por el diálogo restaurativo: el infractor reflexiona sobre el impacto moral de su conducta en la víctima y acuerda medidas de reparación del daño.</li>
+  <li><strong>El Aprendizaje-Servicio (ApS):</strong> Diseña proyectos donde el alumnado pone sus competencias al servicio del barrio: apoyo a comedores sociales, campañas de acompañamiento a personas ancianas solas o proyectos medioambientales de limpieza fluvial, convirtiendo la teoría moral en acción cívica transformadora.</li>
+  <li><strong>Mediación Comunitaria:</strong> Interviene en conflictos interculturales o vecinales que repercuten en la escuela, promoviendo el entendimiento entre familias de diferentes orígenes étnicos.</li>
+</ol>
+
+<h2 class="section-title">7. Conclusión</h2>
+
+<p>La educación moral no persigue domesticar al alumnado para que acepte dócilmente el mundo tal como es, sino <strong>formar ciudadanas y ciudadanos libres, críticos y compasivos capaces de transformarlo en favor de la justicia social</strong>.</p>
+
+<p>El <strong>Educador y la Educadora Social</strong> encarna esta dimensión ética en el sistema educativo andaluz: no adoctrina, sino que abre espacios de diálogo dialógico; no impone castigos estériles, sino que educa en la responsabilidad restaurativa; y conecta la escuela con las urgencias éticas de su comunidad para forjar una sociedad democrática, solidaria y en paz.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">8. Anexo: Mapa conceptual y tabla sinóptica del Tema 12</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Autores y Referentes</th>
+      <th>Conceptos Clave e Implicaciones Prácticas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Dimensión Moral</strong></td>
+      <td>Art. 27.2 CE • LOMLOE • Fernando Savater</td>
+      <td>Pleno desarrollo de la personalidad y valores democráticos; superación del adoctrinamiento hacia la autonomía moral.</td>
+    </tr>
+    <tr>
+      <td><strong>Estructura Actitudinal</strong></td>
+      <td>Componentes cognitivo, afectivo y conductual</td>
+      <td>La moral exige coherencia entre lo que se piensa, lo que se siente (empatía) y cómo se actúa realmente.</td>
+    </tr>
+    <tr>
+      <td><strong>Desarrollo del Juicio</strong></td>
+      <td>Jean Piaget (1932)</td>
+      <td>Tránsito de la moral heterónoma (realismo moral y castigo expiatorio) a la moral autónoma (cooperación y reciprocidad).</td>
+    </tr>
+    <tr>
+      <td><strong>Estadios de Kohlberg</strong></td>
+      <td>Lawrence Kohlberg (3 niveles y 6 estadios)</td>
+      <td>Preconvencional (obediencia/premio), Convencional (buen chico/ley y orden) y Posconvencional (derechos humanos y principios).</td>
+    </tr>
+    <tr>
+      <td><strong>Ética del Cuidado</strong></td>
+      <td>Carol Gilligan (<em>In a Different Voice</em>, 1982)</td>
+      <td>Complementariedad de la justicia abstracta con la responsabilidad relacional, la atención a la vulnerabilidad y el no daño.</td>
+    </tr>
+    <tr>
+      <td><strong>Métodos Pedagógicos</strong></td>
+      <td>Dilemas morales • Clarificación de valores (Raths)</td>
+      <td>Generación de conflicto sociocognitivo, juego de roles y elección consciente de valores éticos.</td>
+    </tr>
+    <tr>
+      <td><strong>Pensamiento Crítico</strong></td>
+      <td>Matthew Lipman (Filosofía para Niños) • Freire</td>
+      <td>Comunidades de investigación dialógica; detección de bulos, desinformación y discursos de odio en la era digital.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>Aprendizaje-Servicio (ApS) • Prácticas restaurativas</td>
+      <td>Transformación del Aula de Convivencia en espacio de reparación ética y conexión solidaria con el barrio y ONGs.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

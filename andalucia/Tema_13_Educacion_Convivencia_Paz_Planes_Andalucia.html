@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 13: Educación para la Convivencia y para la Paz. La Educación y el Desarrollo de Actitudes Cooperativas, Democráticas y Cívicas. La Convivencia en los Centros Educativos. El Proyecto Educativo y el Reglamento de Organización y Funcionamiento. Actuación e Intervención del Educador o Educadora Social. Planes y Programas Educativos para la Mejora de la Convivencia</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 13</h1>
+  <h2>Educación para la Convivencia y para la Paz. La Educación y el Desarrollo de Actitudes Cooperativas, Democráticas y Cívicas. La Convivencia en los Centros Educativos. El Proyecto Educativo y el Reglamento de Organización y Funcionamiento. Actuación e Intervención del Educador o Educadora Social. Planes y Programas Educativos para la Mejora de la Convivencia</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Bloque:</strong> Materias Específicas</p>
+<p><strong>Tema Oficial:</strong> 13</p>
+<p><strong>Normativa Clave:</strong> Ley 17/2007 de Educación de Andalucía (LEA - arts. 21-26); Decretos 327/2010 y 328/2010 (Reglamentos Orgánicos de IES y Primaria); Orden de 20 de junio de 2011 (Medidas para la convivencia en centros andaluces); Ley Orgánica 8/2021 (LOPIVI); Instrucciones de 17 de septiembre de 2010.</p>
+<p><strong>Autores y Referentes:</strong> Johan Galtung, David y Roger Johnson, Juan Carlos Torrego, Rosario Ortega Ruiz, Pedro M.ª Uruñuela, Paco Cascón Soriano.</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 13</div>
+  <div class="toc-item level-1">1. <strong>Introducción y contextualización en la Educación Social</strong></div>
+  <div class="toc-item level-1">2. <strong>Educación para la convivencia y para la paz: Fundamentos teóricos</strong></div>
+  <div class="toc-item level-2">2.1. El concepto de Paz Positiva y el triángulo de la violencia de Johan Galtung</div>
+  <div class="toc-item level-2">2.2. Cultura de Paz: Principios de la Declaración de Naciones Unidas (1999)</div>
+  <div class="toc-item level-2">2.3. Desarrollo de actitudes cooperativas y cívicas: El aprendizaje cooperativo (Johnson &amp; Johnson)</div>
+  <div class="toc-item level-2">2.4. El conflicto como oportunidad pedagógica de crecimiento relacional (Cascón Soriano)</div>
+  <div class="toc-item level-1">3. <strong>La convivencia en los centros educativos: Modelos de gestión</strong></div>
+  <div class="toc-item level-2">3.1. Modelo sancionador-punitivo frente al modelo relacional e integrado-restaurativo</div>
+  <div class="toc-item level-2">3.2. Factores de riesgo y factores protectores de la convivencia escolar</div>
+  <div class="toc-item level-2">3.3. La justicia restaurativa en la escuela: Responsabilidad activa y reparación del daño</div>
+  <div class="toc-item level-1">4. <strong>El marco institucional del centro: El Proyecto Educativo (PEC) y el ROF</strong></div>
+  <div class="toc-item level-2">4.1. El Plan de Convivencia en el Proyecto Educativo: Diagnóstico, objetivos y medidas</div>
+  <div class="toc-item level-2">4.2. La Comisión de Convivencia del Consejo Escolar: Funciones y composición</div>
+  <div class="toc-item level-2">4.3. El Aula de Convivencia: Naturaleza formativa, pedagógica y reflexiva</div>
+  <div class="toc-item level-2">4.4. El Reglamento de Organización y Funcionamiento (ROF): Tipificación de conductas y medidas correctoras</div>
+  <div class="toc-item level-1">5. <strong>Planes y programas educativos para la mejora de la convivencia en Andalucía</strong></div>
+  <div class="toc-item level-2">5.1. Red Andaluza <em>"Escuela: Espacio de Paz"</em></div>
+  <div class="toc-item level-2">5.2. Programa ADA (Ayuda Entre Iguales para la resolución pacífica de conflictos)</div>
+  <div class="toc-item level-2">5.3. Programa ConRed (Ciberconvivencia y prevención del ciberacoso)</div>
+  <div class="toc-item level-2">5.4. Protocolos preceptivos de actuación de la Consejería de Desarrollo Educativo:</div>
+  <div class="toc-item level-3">A) Protocolo de Acoso Escolar y Ciberacoso</div>
+  <div class="toc-item level-3">B) Protocolo de Maltrato Infantil (SIMIA)</div>
+  <div class="toc-item level-3">C) Protocolo de prevención de conductas autolesivas e ideación suicida</div>
+  <div class="toc-item level-3">D) Protocolo de agresión hacia el profesorado y personal del centro</div>
+  <div class="toc-item level-3">E) Protocolo de atención a la diversidad e identidad de género</div>
+  <div class="toc-item level-1">6. <strong>Actuación e intervención del educador o educadora social</strong></div>
+  <div class="toc-item level-2">6.1. Dinamización del Plan de Convivencia y asesoramiento a la Comisión de Convivencia</div>
+  <div class="toc-item level-2">6.2. Gestión socioeducativa del Aula de Convivencia</div>
+  <div class="toc-item level-2">6.3. Formación y coordinación de los equipos de Alumnado Ayudante y Mediación Escolar</div>
+  <div class="toc-item level-2">6.4. Mediación familiar y trabajo en red comunitaria frente al absentismo y la violencia</div>
+  <div class="toc-item level-1">7. <strong>Conclusión</strong></div>
+  <div class="toc-item level-1">8. <strong>Anexo: Mapa conceptual y tabla sinóptica del Tema 13</strong></div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y contextualización en la Educación Social</h2>
+
+<p>Aprender a convivir no es un requisito instrumental previo para poder enseñar contenidos; es <strong>uno de los fines supremos de la educación</strong>. Vivir en sociedad exige el aprendizaje sistemático del diálogo, la empatía, el respeto a la alteridad y la resolución noviolenta de los inevitables desacuerdos inherentes a las relaciones humanas.</p>
+
+<p>La <strong>Comunidad Autónoma de Andalucía</strong> ha situado históricamente la cultura de paz en la cúspide de sus prioridades políticas y formativas. Los artículos 21 a 26 de la <strong>Ley 17/2007 (LEA)</strong>, desarrollados por la <strong>Orden de 20 de junio de 2011</strong>, establecen que la convivencia escolar debe gestionarse desde un modelo formativo, preventivo y restaurativo, superando definitivamente el viejo paradigma de la expulsión pasiva del alumnado conflictivo.</p>
+
+<p>En este marco, el <strong>Educador y la Educadora Social</strong> constituye la figura profesional de referencia. Adscrito a la Jefatura de Estudios y trabajando codo a codo con la Orientación y el profesorado, el educador social dinamiza el Plan de Convivencia, gestiona el Aula de Convivencia como un espacio de reeducación emocional, capacita a los equipos de mediación escolar entre iguales y conecta a la escuela con las familias y la comunidad local para tejer entornos seguros y protectores.</p>
+
+<h2 class="section-title">2. Educación para la convivencia y para la paz: Fundamentos teóricos</h2>
+
+<h3 class="sub-title">2.1. El concepto de Paz Positiva y la tipología de la violencia (Johan Galtung)</h3>
+
+<p><strong>Johan Galtung</strong>, padre de la investigación para la paz, revolucionó la comprensión del conflicto distinguiendo dos conceptos:</p>
+
+<ul>
+  <li><strong>Paz Negativa:</strong> La simple ausencia de conflicto bélico o violencia física directa.</li>
+  <li><strong>Paz Positiva:</strong> Presencia activa de <strong>justicia social, igualdad real, satisfacción de las necesidades humanas básicas y resolución dialógica de las controversias</strong>.</li>
+</ul>
+
+<div class="diagram-box">
+  <pre>                        EL TRIÁNGULO DE LA VIOLENCIA (GALTUNG)
+                                   VIOLENCIA DIRECTA
+                               (Visible: golpes, insultos)
+                                      ▲
+                                     / \
+                                    /   \
+                                   /     \
+                                  /       \
+           VIOLENCIA ESTRUCTURAL ◄─────────► VIOLENCIA CULTURAL
+      (Invisible: pobreza, exclusión,        (Invisible: machismo, racismo,
+       desigualdad de oportunidades)          relatos de legitimación)</pre>
+</div>
+
+<p>Para educar en la paz, la escuela no puede limitarse a sancionar la <strong>violencia directa</strong> (agresiones en el patio); debe combatir la <strong>violencia estructural</strong> (segregación, fracaso escolar) y deconstruir la <strong>violencia cultural</strong> (micromachismos, homofobia, clasismo).</p>
+
+<h3 class="sub-title">2.2. Cultura de Paz</h3>
+
+<p>Definida por la Asamblea General de las Naciones Unidas (Resolución 53/243 de 1999) como un conjunto de valores, actitudes, tradiciones y comportamientos basados en el respeto a los derechos humanos, la adhesión a los principios de libertad y justicia, el rechazo a la violencia y el fomento de la cooperación y el diálogo intercultural.</p>
+
+<h3 class="sub-title">2.3. Aprendizaje cooperativo (David y Roger Johnson)</h3>
+
+<p>Frente al modelo competitivo tradicional (donde el éxito individual exige el fracaso del compañero), el aprendizaje cooperativo articula la <strong>interdependencia positiva</strong>: el alumnado aprende que solo puede alcanzar su meta si sus compañeros también la alcanzan. Fomenta la responsabilidad individual, la interacción cara a cara y el desarrollo de habilidades prosociales.</p>
+
+<h3 class="sub-title">2.4. El conflicto como oportunidad educativa (Paco Cascón Soriano)</h3>
+
+<p>El conflicto es <strong>natural, inevitable y motor de transformación social</strong>. El conflicto no equivale a violencia; la violencia es únicamente una forma destructiva y aprendida de gestionar el conflicto. La educación para la paz enseña la técnica de la <strong>pro-vención</strong>: proveer de herramientas antes de que el conflicto escale hacia la agresión física o verbal.</p>
+
+<h2 class="section-title">3. La convivencia en los centros educativos: Modelos de gestión</h2>
+
+<div class="diagram-box">
+  <pre>                        MODELOS DE GESTIÓN DE LA CONVIVENCIA
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │   MODELO PUNITIVO    │   MODELO RELACIONAL  │   MODELO INTEGRADO   │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Foco en la norma   │ • Foco en las partes │ • Foco en la comuni. │
+ │ • Culpa y castigo    │ • Mediación externa  │ • Normas democráticas│
+ │ • Expulsión pasiva   │ • Solución acordada  │ • Justicia restaurat.│
+ │ • No hay aprendizaje │ • Reparación mutua   │ • Aula Convivencia   │
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<ol>
+  <li><strong>Modelo Punitivo / Sancionador:</strong> Aplica mecánicamente sanciones disciplinarias. Tiende a expulsar al infractor, lo que cronifica su desenganche escolar y no repara el daño a la víctima.</li>
+  <li><strong>Modelo Relacional:</strong> Introduce la <strong>mediación</strong>: un tercero neutral ayuda a los implicados a comunicarse para alcanzar un acuerdo libre y voluntario.</li>
+  <li><strong>Modelo Integrado / Restaurativo y Comunitario (Juan Carlos Torrego, Pedro M.ª Uruñuela):</strong> El modelo consagrado en Andalucía. Combina normas democráticas consensuadas con <strong>prácticas restaurativas</strong>: el infractor asume su responsabilidad activa, comprende el daño causado a la víctima y a la comunidad, y realiza acciones directas de reparación y cambio de conducta.</li>
+</ol>
+
+<h2 class="section-title">4. El marco institucional del centro: El Proyecto Educativo (PEC) y el ROF</h2>
+
+<h3 class="sub-title">4.1. El Plan de Convivencia en el Proyecto Educativo</h3>
+
+<p>Regulado por los Decretos 327/2010 y 328/2010 y la Orden de 20 de junio de 2011, el Plan de Convivencia integra:</p>
+
+<ul>
+  <li>Diagnóstico riguroso del clima escolar.</li>
+  <li>Normas de convivencia generales del centro y normas consensuadas de aula.</li>
+  <li>Composición y funcionamiento de la <strong>Comisión de Convivencia</strong> del Consejo Escolar.</li>
+  <li>Medidas preventivas y formativas para fomentar la igualdad y el buen trato.</li>
+  <li>Organización del <strong>Aula de Convivencia</strong>.</li>
+  <li>Procedimiento de mediación escolar y compromisos de convivencia con las familias.</li>
+</ul>
+
+<h3 class="sub-title">4.2. El Aula de Convivencia en Andalucía</h3>
+
+<p>Lejos de constituir un espacio de aislamiento o castigo pasivo, el Aula de Convivencia es un <strong>dispositivo socioeducativo de atención personalizada</strong>:</p>
+
+<ul>
+  <li>Atiende al alumnado que ha cometido conductas gravemente perjudiciales para la convivencia que conllevan la privación temporal del derecho de asistencia a determinadas clases.</li>
+  <li>El alumno trabaja con el <strong>Educador/a Social o profesorado de atención a la convivencia</strong> en tareas formativas curriculares y actividades de reflexión emocional, asunción de responsabilidad y empatía con la víctima.</li>
+</ul>
+
+<h3 class="sub-title">4.3. El Reglamento de Organización y Funcionamiento (ROF)</h3>
+
+<p>Tipifica con garantías jurídicas:</p>
+
+<ul>
+  <li><strong>Conductas contrarias a las normas de convivencia:</strong> Faltas injustificadas de puntualidad, desobediencia menor, deterioro leve de materiales (corrección mediante amonestación, tareas en el centro o privación de recreos).</li>
+  <li><strong>Conductas gravemente perjudiciales para la convivencia:</strong> Agresiones físicas o morales, acoso escolar, injurias al profesorado, uso o tráfico de drogas (corrección mediante asistencia al Aula de Convivencia, realización de tareas de reparación o suspensión del derecho de asistencia al centro de 3 a 30 días, garantizando siempre el seguimiento pedagógico y las pruebas de evaluación).</li>
+</ul>
+
+<h2 class="section-title">5. Planes y programas educativos para la mejora de la convivencia en Andalucía</h2>
+
+<h3 class="sub-title">5.1. Red Andaluza <em>"Escuela: Espacio de Paz"</em></h3>
+
+<p>Iniciativa pionera de la Junta de Andalucía a la que se adscriben voluntariamente los centros públicos. Desarrolla seis ámbitos de intervención: mejora de la gestión de aula, convivencia pacífica, prevención de la violencia, fomento de valores cívicos, participación familiar y apertura al entorno. Los centros con proyectos destacados reciben el reconocimiento de <strong>"Centro Promotor de Convivencia Positiva"</strong>.</p>
+
+<h3 class="sub-title">5.2. Programa ADA (Ayuda Entre Iguales para la resolución de conflictos)</h3>
+
+<p>Formación y dinamización de equipos de <strong>Alumnado Ayudante y Mediador</strong>:</p>
+
+<ul>
+  <li>Detectan a compañeros en situación de aislamiento o burlas.</li>
+  <li>Ofrecen acogida al alumnado recién llegado.</li>
+  <li>Intervienen como mediadores en conflictos de baja intensidad entre iguales, rompiendo la "ley del silencio" que ampara el acoso escolar.</li>
+</ul>
+
+<h3 class="sub-title">5.3. Programa ConRed (Ciberconvivencia)</h3>
+
+<p>Diseñado en colaboración con la Universidad de Córdoba (Rosario Ortega Ruiz), previene el <strong>ciberbullying y los riesgos en redes sociales</strong>, entrenando al alumnado en la gestión de su privacidad y el respeto en entornos digitales.</p>
+
+<h3 class="sub-title">5.4. Protocolos preceptivos de la Consejería</h3>
+
+<p>Procedimientos de obligado cumplimiento que fijan pasos tasados de actuación inmediata:</p>
+
+<ol>
+  <li><strong>Protocolo de Acoso Escolar y Ciberacoso:</strong> Apertura formal de expediente informativo, adopción de medidas cautelares de protección a la víctima, investigación, plan de intervención y comunicación al Servicio de Inspección Educativa.</li>
+  <li><strong>Protocolo de Maltrato Infantil (SIMIA):</strong> Detección, valoración e intervención inmediata coordinada con Servicios Sociales y Salud.</li>
+  <li><strong>Protocolo de Prevención de Autolesiones e Ideación Suicida:</strong> Evaluación del riesgo, custodia y vigilancia continua, aviso a familia y derivación urgente a Salud Mental (USMIJ).</li>
+  <li><strong>Protocolo de Agresión al Profesorado:</strong> Asistencia jurídica, psicológica y médica inmediata al docente agredido.</li>
+  <li><strong>Protocolo de Atención a la Identidad de Género:</strong> Adecuación del nombre registral, uso de instalaciones y respeto a la diversidad trans.</li>
+</ol>
+
+<h2 class="section-title">6. Actuación e intervención del educador o educadora social</h2>
+
+<p>En el marco de las <strong>Instrucciones de 17 de septiembre de 2010</strong>, el Educador Social es el motor operativo de la convivencia escolar:</p>
+
+<div class="diagram-box">
+  <pre>                  FUNCIONES DEL EDUCADOR/A SOCIAL EN CONVIVENCIA
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │  AULA DE CONVIVENCIA │ MEDIACIÓN Y ALUMNADO │ FAMILIA Y COMUNIDAD  │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • Tutoría emocional  │ • Coordina prog. ADA │ • Compromisos conv.  │
+ │ • Tareas restaurat.  │ • Mediación formal   │ • Escuelas Familias  │
+ │ • Reeducación pautas │ • Dinamización patio │ • Enlace SSCC y P.Tut│
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<ol>
+  <li><strong>Gestión y dinamización del Aula de Convivencia:</strong> Realiza el seguimiento individualizado del alumnado derivado, desarmando la hostilidad mediante el diálogo y diseñando tareas formativas de reparación.</li>
+  <li><strong>Liderazgo del programa Alumnado Ayudante (ADA):</strong> Selecciona, forma y acompaña a los escolares mediadores en reuniones quincenales de seguimiento.</li>
+  <li><strong>Mediación directa:</strong> Conduce procesos de mediación en conflictos complejos entre alumnos, entre familias y centro, o en disputas vecinales que repercuten en las aulas.</li>
+  <li><strong>Compromisos de Convivencia con familias:</strong> Diseña y supervisa contratos pedagógicos donde la familia y el centro acuerdan pautas coordinadas para reconducir conductas disruptivas.</li>
+</ol>
+
+<h2 class="section-title">7. Conclusión</h2>
+
+<p>La paz no es una meta abstracta, sino un <strong>hábito diario de respeto, cuidado mutuo y justicia social</strong>. La convivencia escolar no se decreta mediante reglamentos disciplinarios; se construye a través de relaciones democráticas, escucha empática y espacios de encuentro.</p>
+
+<p>El <strong>Educador y la Educadora Social</strong> encarna el corazón del modelo restaurativo andaluz: transforma los expedientes sancionadores en oportunidades educativas, enseña al alumnado a resolver pacíficamente sus diferencias, apoya a las familias desbordadas y hace posible que las escuelas andaluzas sean auténticos <strong>espacios de paz, equidad y fraternidad cívica</strong>.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">8. Anexo: Mapa conceptual y tabla sinóptica del Tema 13</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Autores y Referentes</th>
+      <th>Conceptos Clave e Implicaciones Prácticas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Teoría de la Paz</strong></td>
+      <td>Johan Galtung • UNESCO (1999)</td>
+      <td>Paz Positiva (justicia y equidad) vs. Paz Negativa; deconstrucción del triángulo de la violencia (directa, estructural y cultural).</td>
+    </tr>
+    <tr>
+      <td><strong>Aprendizaje Cooperativo</strong></td>
+      <td>David y Roger Johnson</td>
+      <td>Interdependencia positiva, responsabilidad individual, habilidades prosociales e interacción enriquecedora.</td>
+    </tr>
+    <tr>
+      <td><strong>El Conflicto</strong></td>
+      <td>Paco Cascón Soriano (Pro-vención)</td>
+      <td>El conflicto como motor positivo de cambio; la violencia como respuesta aprendida evitable.</td>
+    </tr>
+    <tr>
+      <td><strong>Modelos de Convivencia</strong></td>
+      <td>Punitivo • Relacional • Integrado/Restaurativo (Torrego, Uruñuela)</td>
+      <td>De la sanción expulsiva a la responsabilización activa, mediación y reparación comunitaria del daño.</td>
+    </tr>
+    <tr>
+      <td><strong>Plan de Convivencia</strong></td>
+      <td>LEA (Arts. 21-26) • Decretos 327/328 • Orden 20-jun-2011</td>
+      <td>Documento del PEC: Comisión de Convivencia, Aula de Convivencia y compromisos de convivencia con familias.</td>
+    </tr>
+    <tr>
+      <td><strong>El Aula de Convivencia</strong></td>
+      <td>Dispositivo socioeducativo de reflexión</td>
+      <td>Espacio formativo que sustituye la expulsión pasiva por el diálogo, autorregulación y tareas de reparación.</td>
+    </tr>
+    <tr>
+      <td><strong>Programas en Andalucía</strong></td>
+      <td>Red "Escuela: Espacio de Paz" • ADA • ConRed</td>
+      <td>Reconocimiento a centros promotores, equipos de Alumnado Ayudante y prevención del ciberacoso escolar.</td>
+    </tr>
+    <tr>
+      <td><strong>Protocolos Obligatorios</strong></td>
+      <td>Acoso escolar • SIMIA • Suicidio • Agresión docente • Identidad de género</td>
+      <td>Procedimientos de actuación tasada con medidas cautelares de protección inmediata.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>Instrucciones de 17 de septiembre de 2010</td>
+      <td>Dinamizador del Aula de Convivencia, formador de mediadores ADA, mediador familiar y nexo comunitario.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

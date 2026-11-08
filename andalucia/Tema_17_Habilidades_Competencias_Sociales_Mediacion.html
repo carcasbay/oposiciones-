@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 17: Las Habilidades y Competencias Sociales. Concepto y Aplicación. Desarrollo Formativo de las Habilidades y Competencias Sociales por Parte del Educador o Educadora Social. La Asertividad y los Estilos de Comunicación Pasivos y/o Agresivos. Técnicas Asertivas y Entrenamiento Educativo. Regulación de Conflictos. La Mediación</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo A2.2018 - Educación Social (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.52;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #7c3aed;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #7c3aed;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #4c1d95;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    color: #5b21b6;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #4c1d95;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #1e1b4b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #4c1d95;
+    border-bottom: 1.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #6d28d9;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #5b21b6;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #faf5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #5b21b6;
+    margin-bottom: 5px;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #4c1d95;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  code.inline-code {
+    background-color: #f1f5f9;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 9pt;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #faf5ff;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO ESPECÍFICO - EDUCACIÓN SOCIAL (A2.2018)</div>
+  <h1>TEMA 17</h1>
+  <h2>Las Habilidades y Competencias Sociales. Concepto y Aplicación. Desarrollo Formativo de las Habilidades y Competencias Sociales por Parte del Educador o Educadora Social. La Asertividad y los Estilos de Comunicación Pasivos y/o Agresivos. Técnicas Asertivas y Entrenamiento Educativo. Regulación de Conflictos. La Mediación</h2>
+  <div class="meta-box">
+<p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p><strong>Especialidad:</strong> Educación Social (A2.2018)</p>
+<p><strong>Carácter:</strong> Materias Específicas del Programa Oficial</p>
+<p><strong>Marco Legal y Documental:</strong></p>
+<ul class="meta-sublist">
+<li>Ley 17/2007, de 10 de diciembre, de Educación de Andalucía (LEA).</li>
+<li>Decreto 19/2007, de 23 de enero, por el que se adoptan medidas para la promoción de la convivencia en centros docentes de Andalucía.</li>
+<li>Orden de 20 de junio de 2011, por la que se adoptan medidas para la promoción de la convivencia en los centros docentes sostenidos con fondos públicos.</li>
+<li>Instrucciones de 17 de septiembre de 2010 de la Dirección General de Participación e Innovación Educativa.</li>
+</ul>
+<p><strong>Autores y Doctrinas de Referencia:</strong> Vicente E. Caballo (Evaluación y entrenamiento de las habilidades sociales), Inés Monjas Casares (Programa de enseñanza de habilidades de interacción social - PEHIS), Albert Bandura (Aprendizaje vicario y modelado), Thomas Gordon (Mensajes "Yo" y escucha activa), John Paul Lederach (Teoría de las 3 "P" del conflicto: Personas, Proceso, Problema), Johan Galtung (Triángulo de la violencia y paz positiva).</p>
+</div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 17</div>
+  <div class="toc-item level-1">1. Introducción y relevancia de la competencia social en la Educación Social.</div>
+  <div class="toc-item level-1">2. Concepto y taxonomía de las habilidades sociales:</div>
+  <div class="toc-item level-2">2.1. Diferencia entre habilidades sociales y competencia social.</div>
+  <div class="toc-item level-2">2.2. Componentes conductuales, cognitivos y fisiológicos.</div>
+  <div class="toc-item level-1">3. Los estilos de comunicación interpersonal:</div>
+  <div class="toc-item level-2">3.1. Estilo pasivo / inhibido.</div>
+  <div class="toc-item level-2">3.2. Estilo agresivo.</div>
+  <div class="toc-item level-2">3.3. Estilo pasivo-agresivo.</div>
+  <div class="toc-item level-2">3.4. El estilo asertivo: Concepto y derechos asertivos fundamentales.</div>
+  <div class="toc-item level-1">4. Técnicas asertivas y programas de entrenamiento educativo (EHS):</div>
+  <div class="toc-item level-2">4.1. Fases del entrenamiento en habilidades sociales (modelado, ensayo, feedback, generalización).</div>
+  <div class="toc-item level-2">4.2. Principales técnicas asertivas (disco rayado, banco de niebla, asertividad empática, mensaje "Yo").</div>
+  <div class="toc-item level-1">5. La regulación y transformación positiva de los conflictos:</div>
+  <div class="toc-item level-2">5.1. El conflicto como motor pedagógico de cambio.</div>
+  <div class="toc-item level-2">5.2. La estructura del conflicto según Lederach: Personas, Proceso y Problema (Las 3 "P").</div>
+  <div class="toc-item level-1">6. La mediación escolar en Andalucía:</div>
+  <div class="toc-item level-2">6.1. Principios rectores (voluntariedad, confidencialidad, imparcialidad).</div>
+  <div class="toc-item level-2">6.2. Fases del proceso mediador.</div>
+  <div class="toc-item level-2">6.3. Los equipos de mediación y alumnado ayudante (Decreto 19/2007).</div>
+  <div class="toc-item level-1">7. Actuación e intervención del educador o educadora social.</div>
+  <div class="toc-item level-1">8. Conclusión.</div>
+  <div class="toc-item level-1">9. Anexo: Mapa conceptual y tabla sinóptica del Tema 17.</div>
+</div>
+
+<!-- DESARROLLO ÍNTEGRO DE CONTENIDOS -->
+<h2 class="section-title">1. Introducción y relevancia de la competencia social en la Educación Social</h2>
+
+<p>El ser humano es un ser constitutivamente relacional. La capacidad para interactuar de forma constructiva, empática y asertiva con el entorno social no es un mero rasgo innato o accidental, sino un <strong>conjunto estructurado de competencias que se aprenden, perfeccionan y modulan a lo largo de todo el ciclo vital</strong>. En las sociedades contemporáneas, marcadas por el individualismo competitivo, la digitalización acelerada de las relaciones y la pluralidad cultural, el déficit en competencias socioemocionales se traduce frecuentemente en situaciones de exclusión social, violencia interpersonal, acoso escolar y fracaso académico.</p>
+
+<p>Para la <strong>Educación Social</strong>, el desarrollo formativo de las habilidades y competencias sociales constituye uno de los núcleos vertebrales de su identidad profesional. Lejos de concebirse como un mero adiestramiento superficial en "buenas maneras", el entrenamiento en habilidades sociales representa una <strong>herramienta pedagógica de empoderamiento ciudadano</strong>, orientada a dotar a las personas —especialmente a la infancia y adolescencia más vulnerable— de recursos internos para defender sus derechos, respetar a los demás, gestionar pacíficamente sus discrepancias y forjar redes de afecto y apoyo mutuo.</p>
+
+<p>En los centros educativos de la Junta de Andalucía, el Educador y la Educadora Social diseña e implementa programas socioafectivos, coordina equipos de mediación escolar y entrena al alumnado en asertividad, consolidando un clima escolar democrático y libre de violencias.</p>
+
+<h2 class="section-title">2. Concepto y taxonomía de las habilidades sociales</h2>
+
+<h3 class="sub-title">2.1. Diferencia entre habilidades sociales y competencia social</h3>
+
+<ul>
+  <li><strong>Habilidades Sociales (HHSS):</strong> Conductas observables, aprendidas y contextualizadas que una persona emite en una situación interpersonal para expresar sentimientos, actitudes, deseos u opiniones de modo adecuado a la situación, respetando esas conductas en los demás (Vicente Caballo).</li>
+  <li><strong>Competencia Social:</strong> Constructo evaluativo y global más amplio. Alude a la capacidad de la persona para integrar de forma armónica sus pensamientos, emociones y conductas con el fin de alcanzar metas personales adaptativas y socialmente valoradas (Inés Monjas).</li>
+</ul>
+
+<h3 class="sub-title">2.2. Componentes de la respuesta interpersonal</h3>
+
+<p>La emisión de una habilidad social requiere la sincronía de tres dimensiones:</p>
+
+<ol>
+  <li><strong>Componentes Conductuales / Expresivos:</strong>
+    <ul>
+      <li><em>No verbales:</em> Mirada fija pero no desafiante, expresión facial congruente, postura abierta y distancia interpersonal (proxemia).</li>
+      <li><em>Paralingüísticos:</em> Tono firme, volumen audible, fluidez verbal, pausas y velocidad moderada.</li>
+      <li><em>Verbales:</em> Contenido del mensaje, preguntas abiertas, autorrevelaciones y fórmulas de cortesía.</li>
+    </ul>
+  </li>
+  <li><strong>Componentes Cognitivos:</strong> Creencias, autodiálogo interno, expectativas de autoeficacia (Albert Bandura) y capacidad de toma de perspectiva empática (teoría de la mente).</li>
+  <li><strong>Componentes Fisiológicos:</strong> Regulación del ritmo cardíaco, respiración y tensión muscular ante situaciones de presión interpersonal.</li>
+</ol>
+
+<h2 class="section-title">3. Los estilos de comunicación interpersonal</h2>
+
+<p>La forma en que las personas interactúan ante discrepancias o demandas ajenas se agrupa en cuatro estilos comunicativos básicos:</p>
+
+<div class="diagram-box">
+  <pre>                            ESTILOS DE COMUNICACIÓN
+ ┌──────────────────────┬──────────────────────┬──────────────────────┐
+ │ ESTILO PASIVO        │ ESTILO ASERTIVO      │ ESTILO AGRESIVO      │
+ ├──────────────────────┼──────────────────────┼──────────────────────┤
+ │ • No defiende dchos. │ • Defiende derechos  │ • Vulnera derechos   │
+ │ • Cede por temor     │   respetando al otro │ • Impone su voluntad │
+ │ • Baja autoestima    │ • Autoestima sana    │ • Falta de empatía   │
+ │ • Resentimiento      │ • Relaciones firmes  │ • Soledad / rechazo  │
+ └──────────────────────┴──────────────────────┴──────────────────────┘</pre>
+</div>
+
+<h3 class="sub-title">3.1. Estilo Pasivo / Inhibido</h3>
+
+<p>La persona antepone sistemáticamente los deseos de los demás a los propios por temor al rechazo o al conflicto. No expresa sus verdaderos sentimientos. Consecuencias: acumulación de frustración, somatizaciones, ansiedad y pérdida de dignidad personal.</p>
+
+<h3 class="sub-title">3.2. Estilo Agresivo</h3>
+
+<p>Se defienden los objetivos propios atropellando, humillando o descalificando a los interlocutores. La persona utiliza amenazas, lenguaje despectivo o interrupciones constantes. Consecuencias: aislamiento forzado, rechazo del grupo de iguales y escalada de violencia.</p>
+
+<h3 class="sub-title">3.3. Estilo Pasivo-Agresivo</h3>
+
+<p>Forma encubierta de agresión. La persona no expresa su desacuerdo abiertamente, pero sabotea indirectamente las relaciones mediante el sarcasmo, los rumores maliciosos, la ley del hielo o el incumplimiento disimulado de compromisos.</p>
+
+<h3 class="sub-title">3.4. El Estilo Asertivo y los Derechos Asertivos</h3>
+
+<p>Capacidad de expresar las propias opiniones, emociones y límites de forma clara, directa, honesta y respetuosa, reconociendo el valor intrínseco del otro. Entre los <strong>derechos asertivos básicos</strong> formulados por Manuel J. Smith destacan:</p>
+
+<ul>
+  <li>Derecho a decir «No» sin sentirse culpable.</li>
+  <li>Derecho a cometer errores y responsabilizarse de ellos.</li>
+  <li>Derecho a cambiar de opinión y a decir «No lo sé» o «No lo entiendo».</li>
+  <li>Derecho a ser tratado con respeto y dignidad.</li>
+</ul>
+
+<h2 class="section-title">4. Técnicas asertivas y programas de entrenamiento educativo (EHS)</h2>
+
+<h3 class="sub-title">4.1. Fases del Entrenamiento en Habilidades Sociales (EHS)</h3>
+
+<p>Inspirado en el aprendizaje social cognitivo (Bandura, Caballo, Monjas):</p>
+
+<ol>
+  <li><strong>Justificación e Instrucción:</strong> Explicación teórica de la habilidad y de su utilidad adaptativa.</li>
+  <li><strong>Modelado (Aprendizaje Vicario):</strong> Demostración guiada de la conducta idónea por parte del educador o de un igual competente.</li>
+  <li><strong>Ensayo Conductual (<em>Role-Playing</em>):</strong> Práctica simulada de la habilidad en situaciones realistas estructuradas.</li>
+  <li><strong>Retroalimentación y Refuerzo Social (<em>Feedback</em>):</strong> Reconocimiento inmediato de los aciertos y reorientación no punitiva de los errores.</li>
+  <li><strong>Transferencia y Generalización:</strong> Tareas para casa y aplicación de la conducta aprendida a la vida real en el aula y la familia.</li>
+</ol>
+
+<h3 class="sub-title">4.2. Principales Técnicas Asertivas</h3>
+
+<ul>
+  <li><strong>Mensaje "YO" (Thomas Gordon):</strong> Estructura comunicativa en cuatro pasos sin culpabilizar: (1) Describir el hecho objetivo sin juzgar; (2) Expresar cómo me hace sentir; (3) Explicar las consecuencias concretas; (4) Solicitar un cambio específico de conducta.</li>
+  <li><strong>Disco Rayado:</strong> Repetición serena, tranquila y constante del propio punto de vista o negativa, sin alterarse ni entrar en discusiones colaterales.</li>
+  <li><strong>Banco de Niebla:</strong> Aceptar la parte de verdad que pueda haber en la crítica del otro sin ceder en el derecho básico propio ni contraatacar.</li>
+  <li><strong>Asertividad Empática:</strong> Validar primero la emoción o postura de la otra persona antes de plantear la propia necesidad o negativa.</li>
+  <li><strong>Aplazamiento Asertivo:</strong> Postergar la conversación cuando los ánimos están excesivamente alterados para evitar respuestas impulsivas agresivas.</li>
+</ul>
+
+<h2 class="section-title">5. La regulación y transformación positiva de los conflictos</h2>
+
+<h3 class="sub-title">5.1. El conflicto como motor pedagógico</h3>
+
+<p>En la Educación Social contemporánea, el conflicto no se define como una anomalía o un fracaso escolar que deba ser ocultado o castigado, sino como una <strong>realidad connatural a la convivencia humana y una oportunidad invaluable de aprendizaje cívico</strong>. El objetivo no es eliminar el conflicto, sino transformarlo pacíficamente sin recurrir a la coacción ni a la violencia.</p>
+
+<h3 class="sub-title">5.2. La estructura del conflicto según John Paul Lederach (Las 3 "P")</h3>
+
+<p>Para intervenir eficazmente en una disputa, el educador social analiza:</p>
+
+<ul>
+  <li><strong>Personas:</strong> Actores directos e indirectos, sus emociones (miedo, ira, vergüenza), percepciones de la realidad y necesidades psicológicas fundamentales.</li>
+  <li><strong>Proceso:</strong> La historia de la escalada del conflicto, los patrones de comunicación empleados y los intentos previos de resolución.</li>
+  <li><strong>Problema:</strong> Los intereses y necesidades sustantivas contrapuestas subyacentes, diferenciándolos de las posiciones rígidas iniciales.</li>
+</ul>
+
+<h2 class="section-title">6. La mediación escolar en Andalucía</h2>
+
+<p>La <strong>mediación escolar</strong> es un proceso voluntario, dialogado y confidencial en el que dos o más partes enfrentadas acuden a una tercera persona neutral (el mediador o equipo mediador) para restablecer la comunicación y construir por sí mismas un acuerdo mutuamente satisfactorio.</p>
+
+<h3 class="sub-title">6.1. Principios de la Mediación Escolar</h3>
+
+<ul>
+  <li><strong>Voluntariedad:</strong> Nadie puede ser obligado a mediar ni a llegar a un acuerdo.</li>
+  <li><strong>Confidencialidad:</strong> Lo tratado en la sesión no puede trascender fuera del espacio mediador.</li>
+  <li><strong>Imparcialidad y Neutralidad:</strong> El mediador no actúa como juez, no busca culpables ni impone sanciones.</li>
+  <li><strong>Protagonismo de las Partes:</strong> Son los propios alumnos o docentes en conflicto quienes diseñan la solución.</li>
+</ul>
+
+<h3 class="sub-title">6.2. Fases del Proceso Mediador</h3>
+
+<ol>
+  <li><strong>Pre-mediación:</strong> Entrevistas individuales previas para evaluar la idoneidad del caso y preparar la sesión conjunta.</li>
+  <li><strong>Presentación y Reglas del Juego:</strong> Establecimiento del marco de respeto (no interrumpir, no insultar).</li>
+  <li><strong>Cuéntame (Desahogo Emocional):</strong> Cada parte expone su visión del conflicto y expresa sus sentimientos mientras la otra escucha.</li>
+  <li><strong>Clarificación del Problema:</strong> Identificación de los intereses reales y necesidades compartidas.</li>
+  <li><strong>Generación de Opciones (Lluvia de Ideas):</strong> Búsqueda creativa de alternativas y propuestas de solución.</li>
+  <li><strong>Pacto y Acuerdo:</strong> Redacción clara, realista y equilibrada de compromisos concretos asumidos por ambas partes, con fecha de seguimiento.</li>
+</ol>
+
+<h3 class="sub-title">6.3. Marco Andaluz: Decreto 19/2007 y Equipos de Mediación</h3>
+
+<p>El Decreto 19/2007 y la Orden de 20 de junio de 2011 institucionalizan la mediación en los Reglamentos de Organización y Funcionamiento (ROF) de los centros andaluces. Destaca la figura del <strong>alumnado ayudante y mediador entre iguales</strong>, que previene la escalada de agresiones en recreos y pasillos.</p>
+
+<h2 class="section-title">7. Actuación e intervención del educador o educadora social</h2>
+
+<p>Conforme a las <strong>Instrucciones de 17 de septiembre de 2010</strong>, el Educador Social ejerce competencias especializadas:</p>
+
+<ol>
+  <li><strong>Diseño de Programas de Competencia Social en el POAT:</strong> Talleres en tutorías sobre asertividad, gestión de la ira y empatía basados en programas validados (Monjas, Bisquerra).</li>
+  <li><strong>Formación y Dinamización de Equipos de Alumnado Mediador:</strong> Selección, formación continua y tutorización de los estudiantes mediadores del centro.</li>
+  <li><strong>Intervención Directa en Conflictos Complejos:</strong> Conducción de procesos de mediación interpersonal o grupal en situaciones de tensión comunitaria, intercultural o vecinal que repercuten en el centro escolar.</li>
+  <li><strong>Escuelas de Familias sobre Comunicación Familiar:</strong> Entrenamiento a progenitores en técnicas asertivas y mensajes "Yo" para superar dinámicas intrafamiliares autoritarias o permisivas.</li>
+</ol>
+
+<h2 class="section-title">8. Conclusión</h2>
+
+<p>Las competencias sociales y la mediación pacífica no son meros complementos decorativos del currículo escolar, sino los <strong>cimientos indispensables para la construcción de una sociedad pacífica, democrática y cohesionada</strong>.</p>
+
+<p>El <strong>Educador y la Educadora Social</strong> aporta al sistema educativo andaluz una mirada experta y humana: enseña a nombrar las discrepancias sin recurrir al agravio, entrena en la defensa digna de los derechos propios y capacita a las nuevas generaciones para resolver sus desacuerdos a través de la fuerza transformadora de la palabra y el respeto mutuo.</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">9. Anexo: Mapa conceptual y tabla sinóptica del Tema 17</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Eje Temático</th>
+      <th>Normativa / Autores Clave</th>
+      <th>Conceptos e Implicación Práctica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Competencia Social</strong></td>
+      <td>Vicente E. Caballo • Inés Monjas</td>
+      <td>Integración armónica de componentes conductuales, cognitivos y fisiológicos en la interacción.</td>
+    </tr>
+    <tr>
+      <td><strong>Aprendizaje Social</strong></td>
+      <td>Albert Bandura</td>
+      <td>Modelado, autoeficacia, ensayo conductual y refuerzo vicario en el aula.</td>
+    </tr>
+    <tr>
+      <td><strong>Estilos Comunicativos</strong></td>
+      <td>Manuel J. Smith</td>
+      <td>Inhibido/pasivo, agresivo, pasivo-agresivo y asertivo. Cartilla de derechos asertivos básicos.</td>
+    </tr>
+    <tr>
+      <td><strong>Técnicas Asertivas</strong></td>
+      <td>Thomas Gordon</td>
+      <td>Mensaje "Yo" (4 pasos sin culpabilizar), disco rayado, banco de niebla y aplazamiento asertivo.</td>
+    </tr>
+    <tr>
+      <td><strong>Estructura del Conflicto</strong></td>
+      <td>John Paul Lederach (Las 3 "P")</td>
+      <td>Análisis pedagógico de Personas (emociones), Proceso (escalada) y Problema (intereses de fondo).</td>
+    </tr>
+    <tr>
+      <td><strong>Mediación Escolar</strong></td>
+      <td>Decreto 19/2007 • Orden 20 junio 2011</td>
+      <td>Proceso voluntario, confidencial e imparcial. Transformación de la sanción punitiva en acuerdo restaurativo.</td>
+    </tr>
+    <tr>
+      <td><strong>Rol del Educador/a Social</strong></td>
+      <td>Instrucciones de 17 de septiembre de 2010</td>
+      <td>Formador de mediadores escolares, dinamizador de HHSS en el POAT y mediación en conflictos complejos.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

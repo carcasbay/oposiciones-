@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 31 — Desarrollo Emocional: Bebés, Infantil, Primaria y Adolescencia</title>
+<style>
+    @page {
+        size: A4 portrait;
+        margin: 18mm 18mm 18mm 18mm;
+        @bottom-right {
+            content: counter(page);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 8pt;
+            color: #666;
+        }
+    }
+
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 10pt;
+        line-height: 1.5;
+        color: #1a1a1a;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Encabezado Institucional */
+    .header-box {
+        border-bottom: 2px solid #1a365d;
+        padding-bottom: 12px;
+        margin-bottom: 20px;
+    }
+
+    .badge-bar {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .badge {
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 7.5pt;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 3px 8px;
+        border-radius: 3px;
+        letter-spacing: 0.5px;
+    }
+
+    .badge-primary { background-color: #1a365d; color: #ffffff; }
+    .badge-secondary { background-color: #2b6cb0; color: #ffffff; }
+    .badge-accent { background-color: #c53030; color: #ffffff; }
+
+    h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16pt;
+        font-weight: 800;
+        color: #1a365d;
+        margin: 0 0 6px 0;
+        line-height: 1.25;
+    }
+
+    .meta-line {
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 8.5pt;
+        color: #4a5568;
+        margin: 0;
+    }
+
+    h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12pt;
+        font-weight: 700;
+        color: #2b6cb0;
+        border-bottom: 1px solid #cbd5e0;
+        padding-bottom: 4px;
+        margin-top: 22px;
+        margin-bottom: 10px;
+        page-break-after: avoid;
+    }
+
+    h3 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 10.5pt;
+        font-weight: 700;
+        color: #2d3748;
+        margin-top: 14px;
+        margin-bottom: 6px;
+        page-break-after: avoid;
+    }
+
+    h4 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 9.5pt;
+        font-weight: 700;
+        color: #4a5568;
+        margin-top: 10px;
+        margin-bottom: 4px;
+        page-break-after: avoid;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 8px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    strong {
+        color: #0f172a;
+        font-weight: 700;
+    }
+
+    /* Listas */
+    ul, ol {
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 4px;
+        text-align: justify;
+    }
+
+    /* Tablas */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 12px;
+        margin-bottom: 14px;
+        font-size: 8.5pt;
+        font-family: 'Segoe UI', sans-serif;
+        page-break-inside: avoid;
+    }
+
+    th, td {
+        border: 1px solid #cbd5e0;
+        padding: 6px 8px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th {
+        background-color: #ebf8ff;
+        color: #2b6cb0;
+        font-weight: 700;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f7fafc;
+    }
+
+    /* Bloques de código / ASCII */
+    pre {
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 4px;
+        padding: 8px 12px;
+        font-family: 'Consolas', 'Courier New', Courier, monospace;
+        font-size: 7.5pt;
+        line-height: 1.35;
+        color: #1e293b;
+        overflow-x: auto;
+        margin-top: 8px;
+        margin-bottom: 12px;
+        page-break-inside: avoid;
+    }
+
+    code {
+        font-family: 'Consolas', 'Courier New', Courier, monospace;
+        font-size: 8.5pt;
+    }
+
+    /* Cajas Pedagógicas y Estilizadas */
+    .box-exam {
+        background-color: #f0fdf4;
+        border-left: 4px solid #16a34a;
+        padding: 10px 14px;
+        margin: 14px 0;
+        font-size: 9pt;
+        border-radius: 0 4px 4px 0;
+    }
+
+    .box-warning {
+        background-color: #fffbeb;
+        border-left: 4px solid #d97706;
+        padding: 10px 14px;
+        margin: 14px 0;
+        font-size: 9pt;
+        border-radius: 0 4px 4px 0;
+    }
+
+    .box-utrera {
+        background-color: #eff6ff;
+        border-left: 4px solid #2563eb;
+        padding: 10px 14px;
+        margin: 14px 0;
+        font-size: 9pt;
+        border-radius: 0 4px 4px 0;
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background: #e2e8f0;
+        margin: 18px 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="header-box">
+    <div class="badge-bar">
+        <span class="badge badge-primary">Oposición Utrera</span>
+        <span class="badge badge-secondary">Técnico/a Medio Educación Social (A2)</span>
+        <span class="badge badge-accent">Materias Específicas · Tema 31</span>
+    </div>
+    <h1>Tema 31: Desarrollo emocional. Concepto de emoción. La expresión emocional en bebés. El desarrollo de la comprensión emocional en la educación infantil y en las fases educativas obligatorias. Emociones y adolescencia</h1>
+    <p class="meta-line"><strong>Ámbito</strong>: Psicología del Desarrollo Infantil y Juvenil · Acción Socioeducativa Municipal y Protección a la Infancia</p>
+</div>
+
+<h1>Tema 31 — Desarrollo emocional. Concepto de emoción. La expresión emocional en bebés. El desarrollo de la comprensión emocional en la educación infantil y en las fases educativas obligatorias. Emociones y adolescencia</h1>
+<p><strong>Convocatoria</strong>: Técnico/a Medio de Educación Social (Subescala Técnica, Grupo A2).<br />
+<strong>Organismo</strong>: Excmo. Ayuntamiento de Utrera (Sevilla). Oferta de Empleo Público consolidada (BOP de Sevilla nº 102, de 29/05/2026).<br />
+<strong>Bloque</strong>: Materias Específicas. Ámbito: Psicología del Desarrollo y Acción Socioeducativa Municipal.</p>
+<hr />
+<h2>1. Introducción y Justificación Epistemológica y Socioeducativa</h2>
+<p>El desarrollo emocional constituye el andamiaje sobre el que se estructuran la personalidad, la sociabilidad, la adaptación escolar y el bienestar psicológico a lo largo de todo el ciclo vital. Lejos de concebirse como un fenómeno meramente subjetivo o reactivo, la emoción es un proceso psicobiológico, relacional y cultural de primer orden, indispensable para la supervivencia filogenética y ontogenética humana. En la infancia y la adolescencia, el tránsito desde una reactividad afectiva indiferenciada hacia la competencia emocional plena —que integra la autorregulación, la comprensión empática, la tolerancia a la frustración y la capacidad de expresar adecuadamente los propios estados internos— depende de manera inexorable de la calidad de los vínculos tempranos de apego y de las pautas de socialización del entorno sociofamiliar y comunitario.</p>
+<p>En el marco competencial de la <strong>Educación Social en la Administración Local</strong>, encomendada por los artículos 25.2.e y 26.1.c de la <strong>Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local (LRBRL)</strong>, y desarrollada en la <strong>Ley 9/2016, de 27 de diciembre, de Servicios Sociales de Andalucía (LSSA)</strong>, el conocimiento riguroso de las leyes que rigen el desarrollo socioafectivo adquiere un valor instrumental indispensable. El educador y la educadora social en los Servicios Sociales Comunitarios del Excmo. Ayuntamiento de Utrera intervienen de forma directa ante situaciones de grave vulnerabilidad psicosocial, negligencia en los cuidados, desestructuración familiar, desajustes comportamentales en el aula, absentismo crónico y desregulación emocional adolescente.</p>
+<p>Asimismo, el marco tuitivo estatal configurado por la <strong>Ley Orgánica 8/2021, de 4 de junio, de protección integral a la infancia y la adolescencia frente a la violencia (LOPIVI)</strong>, y la normativa autonómica articulada en la <strong>Ley 4/2021, de 27 de julio, de Infancia y Adolescencia de Andalucía</strong>, sitúan el buen trato infantil, la parentalidad positiva y el bienestar emocional en el epicentro de las políticas públicas. La detección precoz de anomalías en el desarrollo afectivo —tales como patrones de apego desorganizado, déficits severos de empatía, alexitimia o desbordamientos emocionales en el contexto escolar— permite desplegar intervenciones socioeducativas individualizadas y grupales orientadas a reparar las trayectorias afectivas dañadas y prevenir el enquistamiento de patologías de salud mental.</p>
+<pre><code>                  SISTEMA DE DESARROLLO EMOCIONAL HUMANO
+  +--------------------------------------------------------------------+
+  | 1. Base Biológica e Inconsciente (Tronco cerebral, Amígdala)       |
+  | 2. Apego y Vínculo Temprano (Sintonía diádica, Bowlby/Ainsworth)   |
+  | 3. Socialización y ToM (Comprensión de causas, reglas de display)  |
+  | 4. Autorregulación Consciente (Corteza Prefrontal, Afrontamiento)  |
+  +--------------------------------------------------------------------+
+</code></pre>
+<hr />
+<h2>2. Concepto de Emoción y Modelos Teóricos Fundamentales</h2>
+<h3>2.1. Definición y Naturaleza Multidimensional de la Emoción</h3>
+<p>Desde la perspectiva de la psicología contemporánea del desarrollo, la <strong>emoción</strong> se define como un patrón complejo de cambios corporales, cognitivos y conductuales que se activa de forma adaptativa y relativamente breve en respuesta a un estímulo significativo (interno o externo) evaluado por el individuo como relevante para sus metas, supervivencia o bienestar (Scherer, 2005). </p>
+<p>La emoción no es un estado unitario, sino un constructo tridimensional integrado por tres subsistemas interdependientes:
+1. <strong>Componente neurofisiológico y biológico</strong>: Activación del sistema nervioso autónomo (simpático y parasimpático) y del <strong>eje hipotálamo-hipofisario-adrenal (HHA)</strong>. Implica variaciones en la tasa cardíaca, presión arterial, conductancia galvánica de la piel, secreción hormonal (adrenalina, cortisol) y activación de estructuras subcorticales del sistema límbico, prioritariamente la <strong>amígdala</strong> (centro de procesamiento del peligro y valencia emocional) y la corteza insular.
+2. <strong>Componente conductual-expresivo o motor</strong>: Manifestaciones observables que cumplen una función comunicativa inmediata hacia el grupo social. Incluye la <strong>expresión facial</strong> (movimientos musculares codificados mediante el Sistema de Codificación de Acción Facial o FACS de Paul Ekman), el tono y prosodia de la voz, la postura corporal, los gestos y las respuestas de aproximación, evitación o inmovilidad (<em>freezing</em>).
+3. <strong>Componente cognitivo-vivencial o subjetivo</strong>: La experiencia consciente de la emoción, denominada tradicionalmente vivencia o sentimiento subjetivo. Comprende los procesos de valoración perceptiva y cognitiva (<strong>appraisal</strong>), la atribución de significado, la interpretación del contexto y la posterior categorización semántica del estado interno.</p>
+<pre><code>                           CONSTRUCTO EMOCIÓN
+            +-----------------------------------------------+
+            |               ESTÍMULO RELEVANTE              |
+            +-----------------------------------------------+
+                                    |
+            +-----------------------+-----------------------+
+            |                       |                       |
+            v                       v                       v
+     [NEUROFISIOLÓGICO]       [CONDUCTUAL]             [COGNITIVO]
+    - Amígdala/Límbico       - Mímica Facial (FACS)   - Valoración (Appraisal)
+    - SNA y Eje HHA          - Postura y Prosodia     - Sentimiento consciente
+    - Ritmo cardíaco         - Huida / Acercamiento   - Etiquetado verbal
+</code></pre>
+<h3>2.2. Diferenciación Conceptual para Pruebas Selectivas</h3>
+<p>Uno de los focos de confusión más recurrentes en exámenes de oposición radica en la asimilación errónea entre emoción, sentimiento, estado de ánimo y temperamento. Es imperativo deslindar estos cuatro conceptos:</p>
+<ul>
+<li><strong>Emoción</strong>: Reacción psicofisiológica intensa, aguda, reactiva a un estímulo específico identificable y de <strong>corta duración</strong> (desde segundos hasta pocos minutos). Presenta un marcado componente somático e involuntario.</li>
+<li><strong>Sentimiento</strong>: Elaboración cognitiva consciente y reflexiva de la emoción. Ocurre cuando el individuo toma conciencia de su estado emocional subjetivo, evalúa su trascendencia y lo integra en su estructura de memoria biográfica. Es de menor intensidad fisiológica que la emoción, pero posee una <strong>duración prolongada</strong> en el tiempo (días, meses o años; ej.: amor filial, rencor, gratitud).</li>
+<li><strong>Estado de ánimo (<em>mood</em>)</strong>: Estado afectivo global, difuso, de intensidad moderada o baja, cuya duración abarca desde varias horas hasta semanas, y que frecuentemente <strong>carece de un estímulo desencadenante inmediato o identificable</strong>. Modula el umbral de activación de las emociones (un estado de ánimo irritable facilita la aparición de la emoción de ira).</li>
+<li><strong>Temperamento</strong>: Disposición biológica y constitucional innata que determina la reactividad emocional básica y el patrón de autorregulación del sujeto ante los estímulos ambientales. Posee una base genética heredable, es observable desde los primeros días de vida y muestra una notable estabilidad temporal a lo largo del desarrollo (Thomas y Chess, 1977; Rothbart, 2011).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Dimensión</th>
+<th style="text-align: left;">Emoción</th>
+<th style="text-align: left;">Sentimiento</th>
+<th style="text-align: left;">Estado de Ánimo (<em>Mood</em>)</th>
+<th style="text-align: left;">Temperamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Duración</strong></td>
+<td style="text-align: left;">Segundos o minutos (muy breve)</td>
+<td style="text-align: left;">Días, meses, años (prolongado)</td>
+<td style="text-align: left;">Horas o semanas (intermedio)</td>
+<td style="text-align: left;">Estable en todo el ciclo vital</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Intensidad</strong></td>
+<td style="text-align: left;">Alta o muy alta</td>
+<td style="text-align: left;">Media o moderada</td>
+<td style="text-align: left;">Baja o difusa</td>
+<td style="text-align: left;">Variable según reactividad innata</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Desencadenante</strong></td>
+<td style="text-align: left;">Estímulo específico claro</td>
+<td style="text-align: left;">Interpretación cognitiva</td>
+<td style="text-align: left;">Difuso, acumulativo o inespecífico</td>
+<td style="text-align: left;">Base genética / Neurobiológica</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Componente clave</strong></td>
+<td style="text-align: left;">Fisiológico y motor</td>
+<td style="text-align: left;">Cognitivo y vivencial</td>
+<td style="text-align: left;">Tonalidad afectiva de fondo</td>
+<td style="text-align: left;">Reactividad y autorregulación innata</td>
+</tr>
+</tbody>
+</table>
+<h3>2.3. Principales Modelos Teóricos del Desarrollo Emocional</h3>
+<h4>2.3.1. Enfoque Evolucionista y Biológico: Darwin, Ekman e Izard</h4>
+<p>Inaugurado por Charles Darwin en su trascendental obra <em>La expresión de las emociones en los animales y en el hombre</em> (1872), este paradigma postula que las emociones son adaptaciones filogenéticas universales que han evolucionado para asegurar la supervivencia de la especie. Darwin constató la universalidad de las expresiones faciales en distintas culturas e incluso en individuos ciegos de nacimiento.</p>
+<p>En el siglo XX, <strong>Paul Ekman</strong> sistematizó esta teoría demostrando transculturalmente la existencia de <strong>seis emociones básicas universales</strong>: <strong>alegría</strong>, <strong>tristeza</strong>, <strong>ira</strong>, <strong>miedo</strong>, <strong>asco</strong> y <strong>sorpresa</strong>. Cada una de ellas posee un patrón de activación neuromuscular facial único, involuntario y transculturalmente reconocible. Por su parte, <strong>Carroll Izard</strong> (Teoría de las Emociones Diferenciales - DET, 1977) defiende que las emociones primarias operan como sistemas discretos e innatos que maduran según un reloj biológico madurativo, sirviendo de motor motivacional primario antes de la consolidación del pensamiento conceptual.</p>
+<h4>2.3.2. Enfoque Cognitivo-Evaluativo: Lazarus y Schachter-Singer</h4>
+<p>Frente al biologicismo puro, las teorías cognitivas subrayan que una emoción no surge automáticamente del estímulo, sino de la interpretación subjetiva que el sujeto hace del mismo. 
+- <strong>Stanley Schachter y Jerome Singer (1962)</strong> formularon la <strong>teoría bifactorial de la emoción</strong>: la emoción requiere dos ingredientes indispensables: una activación fisiológica inespecífica (<em>arousal</em>) y una posterior atribución o etiquetado cognitivo derivado de las claves situacionales del entorno.
+- <strong>Richard Lazarus (1991)</strong> desarrolló el modelo del <strong>appraisal</strong> (evaluación cognitiva), distinguiendo entre la <strong>evaluación primaria</strong> (el individuo valora si el estímulo es positivo, neutro o amenazante para sus metas o bienestar) y la <strong>evaluación secundaria</strong> (valoración de los propios recursos y estrategias de afrontamiento disponibles para hacer frente a la situación).</p>
+<h4>2.3.3. Enfoque Funcionalista y Contextual: Campos y Saarni</h4>
+<p>Liderado por Joseph Campos (1989) y Carolyn Saarni (1999), el funcionalismo sostiene que las emociones no deben entenderse como meros estados intrapsíquicos aislados, sino como procesos dinámicos bidireccionales orientados a establecer, mantener o alterar la relación entre el individuo y su entorno social. Las emociones cumplen tres funciones rectoras:
+1. Función adaptativa: Preparar el organismo para la acción inmediata (ej.: huir ante el peligro).
+2. Función social o comunicativa: Señalar a los congéneres intenciones, demandas y estados afectivos, facilitando la interacción interpersonal y el apego.
+3. Función motivacional: Dirigir e impulsar la conducta hacia metas específicas, confiriendo relevancia a las experiencias vitales.</p>
+<h4>2.3.4. La Teoría del Apego como Regulador Emocional Primario: Bowlby y Ainsworth</h4>
+<p>Formulada por el psiquiatra británico <strong>John Bowlby</strong> (trilogía <em>El apego y la pérdida</em>, 1969-1980), la <strong>Teoría del Apego</strong> constituye el pilar explicativo central del desarrollo socioafectivo infantil. Bowlby postuló que los seres humanos nacen dotados biológicamente de un sistema de conductas de apego (llanto, sonrisa, succión, seguimiento visual, prensión) cuya meta primordial es mantener la proximidad con una figura de cuidado preferente (<strong>figura de apego</strong>), concebida como <strong>base segura</strong> a partir de la cual explorar el mundo físico y como <strong>refugio de calma y consuelo</strong> ante la amenaza o el estrés.</p>
+<p>A partir de estas experiencias interactivas tempranas, el niño interioriza los denominados <strong>Modelos Operativos Internos (MOI)</strong> o esquemas cognitivo-afectivos sobre sí mismo (si es digno de ser querido y protegido) y sobre los demás (si son accesibles, fiables y benevolentes).</p>
+<p><strong>Mary Ainsworth</strong> (1978), mediante el célebre diseño experimental de la <strong>Situación Extraña</strong> (procedimiento de laboratorio de 8 episodios de estrés creciente con separaciones y reencuentros breves con la madre y un adulto extraño en niños de 12 a 18 meses), clasificó las pautas de vinculación afectiva en tres patrones organizados:
+1. <strong>Apego Seguro (Tipo B)</strong>: Representa aproximadamente el 60-65% de la población normativa. El infante utiliza al cuidador como base segura para la exploración; manifiesta protesta o angustia moderada ante la separación, pero busca activamente la proximidad física en el reencuentro, logrando ser consolado con rapidez y retomando el juego exploratorio. Refleja cuidadores sensibles, accesibles y contingentes.
+2. <strong>Apego Inseguro-Evitativo (Tipo A)</strong>: Abarca un 20% de los casos. Muestra aparente indiferencia o desconexión emocional ante la marcha de la figura de apego y evita activamente el contacto visual o físico en el reencuentro, centrando su atención en los objetos inanimados. Los estudios psicofisiológicos demuestran que mantienen una elevadísima taquicardia y secreción de cortisol interna, pero han aprendido a inhibir la expresión conductual ante cuidadores intrusivos, fríos o rechazantes.
+3. <strong>Apego Inseguro-Ambivalente o Resistente (Tipo C)</strong>: Suponen un 10-15%. Manifiestan una angustia masiva e inconsolable durante la separación y una exploración del entorno prácticamente nula. En el reencuentro muestran conductas simultáneas de búsqueda desesperada de contacto y cólera/oposición activa (golpear o empujar a la madre). Refleja cuidadores impredecibles e inconstantes en sus respuestas (hiperactivación del sistema de apego).</p>
+<p>Posteriormente, <strong>Mary Main y Judith Solomon (1986)</strong> identificaron un cuarto patrón patológico esencial para los Servicios Sociales:
+4. <strong>Apego Inseguro-Desorganizado/Desorientado (Tipo D)</strong>: Caracterizado por la ausencia absoluta de una estrategia conductual coherente ante el estrés. En el reencuentro, el bebé exhibe conductas paradójicas, congelación motora (<em>freezing</em>), estereotipias, posturas asimétricas o aproximación de espaldas con mirada perdida. Este patrón emerge cuando <strong>la figura de apego es al mismo tiempo la fuente de temor y el único refugio biológico posible</strong> (situación de "miedo sin solución"), siendo un indicador de altísima correlación con maltrato infantil, abuso sexual, negligencia severa o psicopatología parental no tratada.</p>
+<pre><code>                     PATRONES DE APEGO (AINSWORTH / MAIN)
+  +-------------------------------------------------------------------------+
+  | TIPO B: SEGURO       | Base de exploración; consuelo rápido en reunión. |
+  | TIPO A: EVITATIVO     | Supresión de afecto; evita contacto en reunión.  |
+  | TIPO C: AMBIVALENTE   | Angustia masiva; busca contacto y agrede a la vez|
+  | TIPO D: DESORGANIZADO | Colapso de estrategia; freezing; indicador maltrato|
+  +-------------------------------------------------------------------------+
+</code></pre>
+<h4>2.3.5. Modelos de Inteligencia Emocional y Competencia Emocional</h4>
+<p>El estudio de las capacidades emocionales experimentó una revolución a finales del siglo XX:
+- <strong>Peter Salovey y John Mayer (1990)</strong> acuñaron científicamente el constructo de <strong>Inteligencia Emocional (IE)</strong>, definiéndolo como la habilidad para percibir, valorar y expresar emociones con exactitud, acceder o generar sentimientos que faciliten el pensamiento, comprender emociones y el conocimiento emocional, y regular las emociones promoviendo el crecimiento emocional e intelectual.
+- <strong>Daniel Goleman (1995)</strong> popularizó mundialmente el concepto estructurándolo en cinco componentes básicos: autoconciencia emocional, autorregulación, automotivación, empatía y habilidades sociales.
+- <strong>Rafael Bisquerra (2000)</strong> y el GROP (Grupo de Investigación en Orientación Psicopedagógica) articularon el modelo de <strong>Competencia Emocional</strong>, concebida como el conjunto de conocimientos, capacidades, habilidades y actitudes necesarias para comprender, expresar y autorregular de forma apropiada los fenómenos emocionales. Establece cinco grandes bloques de competencias: conciencia emocional, regulación emocional, autonomía emocional, competencia social y competencias para la vida y el bienestar.</p>
+<hr />
+<h2>3. La Expresión Emocional en Bebés (0 a 2 Años)</h2>
+<h3>3.1. Expresión Inata y Emociones Primarias Tempranas</h3>
+<p>Durante las primeras semanas de vida extrauterina, el repertorio emocional del recién nacido está gobernado por mecanismos neurofisiológicos de carácter involuntario y reactivo, orientados prioritariamente al mantenimiento del equilibrio homeostático.</p>
+<ol>
+<li><strong>El llanto neonatal</strong>: Es la herramienta de comunicación y supervivencia más eficaz del neonato. Inicialmente indiferenciado, responde al malestar fisiológico (hambre, dolor, frío, sobreestimulación). Hacia las <strong>4-6 semanas</strong>, la madre o cuidador sensible es capaz de discriminar tipologías de llanto: el llanto rítmico básico (hambre/cansancio), el llanto de dolor (inicio súbito, alta intensidad con pausas de apnea) y el llanto de cólera o demanda interactiva.</li>
+<li><strong>La sonrisa</strong>:</li>
+<li><strong>Sonrisa refleja o endógena (0 a 6 semanas)</strong>: Se produce de manera espontánea durante las fases de sueño activo o MOR (movimientos oculares rápidos) o en estados de relajación subcortical, sin mediar ningún estímulo visual externo. Posee naturaleza puramente biológica.</li>
+<li><strong>Sonrisa social (hacia los 2-3 meses)</strong>: Surge de forma intencional y recíproca ante la visión del rostro humano en posición frontal (preferentemente los ojos) y la audición de la voz humana en tono agudo (<em>motherese</em> o habla dirigida a bebés). Constituye un hito evolutivo capital que consolida el apego y la sincronía interactiva.</li>
+<li><strong>Diferenciación de emociones primarias básicas (3 a 7 meses)</strong>:</li>
+<li><strong>Alegría</strong>: Manifestada por sonrisas abiertas a los 3 meses y <strong>carcajadas sonoras hacia los 4 meses</strong>, especialmente en juegos interactivos basados en el ritmo y la sorpresa motriz (como el juego del cucú-tras o <em>peek-a-boo</em>).</li>
+<li><strong>Ira y frustración</strong>: Se hace evidente entre los <strong>4 y 6 meses</strong>, cuando al bebé se le priva de un objeto deseado o se restringen físicamente sus movimientos motores intencionales.</li>
+<li><strong>Tristeza</strong>: Aparece en el mismo período, frecuentemente asociada a la pérdida prolongada de estimulación o a la desconexión afectiva materna.</li>
+</ol>
+<h3>3.2. Hitos Afectivos del Segundo Semestre de Vida: Miedos del Desarrollo</h3>
+<p>Hacia el segundo semestre del primer año de vida (entre los <strong>7 y 9 meses</strong>), se produce un salto cualitativo trascendental en la organización psíquica del lactante, coincidiendo con la emergencia del apego focalizado y la consolidación de la permanencia del objeto (subetapa 4 sensoriomotriz de Piaget):</p>
+<ul>
+<li><strong>Miedo a los extraños (<em>stranger anxiety</em>)</strong>: René Spitz lo denominó el <strong>segundo organizador psíquico</strong> o "angustia del octavo mes". El bebé ya no sonríe indiscriminadamente a cualquier adulto que se asome a su cuna; ante la presencia de un rostro no familiar, retira la mirada, se aferra a su cuidador primario, llora o se muestra temeroso. No es un signo patológico, sino una prueba concluyente de que el bebé discrimina perfectamente la figura de referencia frente al resto del mundo.</li>
+<li><strong>Ansiedad o angustia de separación</strong>: Manifestación de malestar agudo, llanto y búsqueda desesperada cuando la figura de apego se aleja o desaparece de su campo perceptual. Alcanza su pico máximo de intensidad entre los <strong>12 y 18 meses</strong> para descender paulatinamente a medida que el niño adquiere representación simbólica, permanencia del objeto y capacidad verbal para anticipar el retorno del adulto.</li>
+</ul>
+<h3>3.3. Mecanismos de Comunicación Diádica y Regulación Temprana</h3>
+<p>El bebé no posee inicialmente la capacidad biológica ni psicológica de autorregular sus emociones; depende por completo de la <strong>corregulación</strong> externa proporcionada por la figura cuidadora sensible (atribución de mente y contención emocional):</p>
+<ol>
+<li><strong>Sincronía o sintonía interactiva</strong>: Ajuste rítmico, temporal y afectivo entre las conductas del bebé y las del adulto. Edward Tronick diseñó el célebre paradigma del <strong>Rostro Inexpresivo (<em>Still Face Paradigm</em>, 1978)</strong> para demostrar la potencia de este mecanismo: cuando una madre interrumpe abruptamente la interacción fluida con su bebé de 3-5 meses y mantiene un rostro completamente rígido e inexpresivo durante dos minutos, el lactante despliega inicialmente sonrisas y vocalizaciones para restablecer el contacto; al fracasar, experimenta una inmediata desorganización conductual, arqueo motor, estrés fisiológico severo y llanto desesperado, lo que demuestra la extrema vulnerabilidad del bebé ante la indisponibilidad afectiva parental.</li>
+<li><strong>Referenciación social (<em>social referencing</em>, 8 a 12 meses)</strong>: Proceso mediante el cual el bebé, ante una situación novedosa, ambigua o potencialmente peligrosa, busca visualmente el rostro de su figura de apego y utiliza su expresión emocional (tranquilidad vs. miedo/alarma) para evaluar el suceso y regular su propia conducta. Un experimento clásico que lo corrobora es el <strong>abismo visual de Gibson y Walk</strong>: si la madre sonríe desde el otro lado del falso precipicio de cristal, el bebé cruza gateando; si la madre exhibe pánico o desaprobación, el bebé retrocede y llora.</li>
+</ol>
+<h3>3.4. Emergencia de las Emociones Autoconscientes o Secundarias (18 a 24 Meses)</h3>
+<p>A diferencia de las emociones primarias (alegría, miedo, ira), las <strong>emociones secundarias, sociomorales o autoconscientes</strong> no están presentes en el nacimiento. Para que emerjan, se requiere el cumplimiento de dos prerrequisitos cognitivos fundamentales:
+1. <strong>Autorreconocimiento o conciencia del yo</strong>: Capacidad de concebirse a sí mismo como un ente independiente y diferenciado de los demás. Michael Lewis y Jeanne Brooks-Gunn (1979) diseñaron la <strong>prueba del espejo o de la mancha de carmín</strong>: se coloca discretamente una mancha roja en la nariz del niño y se le sitúa frente al espejo. Si el menor intenta tocar la nariz en el reflejo del cristal (menos de 15 meses), carece de autoconciencia; si <strong>se toca su propia nariz</strong> (entre los <strong>18 y 24 meses</strong>), demuestra que comprende que la imagen reflejada es su propio cuerpo.
+2. <strong>Interiorización de normas y expectativas sociales</strong>: Comprensión incipiente de que existen reglas y juicios de valor en el entorno sociocultural.</p>
+<p>A partir de los <strong>18-24 meses</strong> y a lo largo del tercer año de vida, emergen las emociones autoconscientes:
+- <strong>Vergüenza</strong>: Surge ante la transgresión evidente de una norma social o la incompetencia pública; el menor baja la mirada, encoge el cuerpo y desea desaparecer de la vista del grupo.
+- <strong>Culpa</strong>: Se desencadena cuando el niño percibe que su conducta ha causado daño directo a otra persona o destruido un objeto valorado; suele acompañarse de conductas tempranas de reparación (devolver el juguete arrebatado, acariciar al hermano agredido).
+- <strong>Orgullo</strong>: Manifestación de alegría y satisfacción expansiva orientada hacia uno mismo tras haber completado con éxito una meta de dificultad perceptible (ej.: construir una torre de bloques y gritar "¡mira yo solo!").
+- <strong>Envidia y celos</strong>: Reacciones ante la amenaza de pérdida de exclusividad afectiva frente a la llegada de un hermano o el reparto de atención parental.</p>
+<pre><code>                   CRONOLOGÍA DE LA EXPRESIÓN EMOCIONAL (0-2 AÑOS)
+  0 - 6 semanas : Llanto indiferenciado y sonrisa refleja (endógena/MOR).
+  2 - 3 meses   : Sonrisa social (recíproca ante rostro y voz humana).
+  3 - 4 meses   : Alegría manifiesta, carcajadas sonoras (juegos motrices).
+  4 - 6 meses   : Ira ante restricción motora y tristeza por desconexión.
+  7 - 9 meses   : Miedo a los extraños (Spitz) y ansiedad de separación.
+  8 - 12 meses  : Referenciación social (evalúa el peligro mirando al cuidador).
+  18 - 24 meses : Autorreconocimiento (prueba del espejo de Lewis) y
+                  aparición de emociones autoconscientes: vergüenza, culpa, orgullo.
+</code></pre>
+<hr />
+<h2>4. El Desarrollo de la Comprensión Emocional en la Educación Infantil (2 a 6 Años)</h2>
+<p>Durante la etapa de Educación Infantil, coincidente con el estadio preoperacional piagetiano y la consolidación de la función simbólica y el lenguaje verbal, la vida emocional del niño experimenta una transformación radical: las emociones dejan de ser meras reacciones somatomotoras para convertirse en objetos de pensamiento y comunicación social.</p>
+<h3>4.1. Etiquetado Verbal y Discriminación de Causas Emocionales</h3>
+<p>Entre los 2 y los 4 años, se produce una auténtica explosión en el vocabulario afectivo:
+- <strong>Identificación y denominación de emociones básicas</strong>: El niño aprende a aplicar correctamente etiquetas lingüísticas como <em>contento</em>, <em>triste</em>, <em>enfadado</em> o <em>asustado</em>, tanto a sus propios estados vivenciales como a las expresiones faciales de los adultos o personajes de cuentos ilustrados.
+- <strong>Comprensión de causas externas o situacionales (3 a 4 años)</strong>: En un primer momento, el niño vincula rígidamente la emoción a sucesos físicos exteriores observables: un niño está contento porque "tiene una golosina", o está triste porque "se le ha caído la pelota". 
+- <strong>Comprensión de causas internas (deseos y metas, 4 a 5 años)</strong>: El niño comprende gradualmente que las emociones no dependen únicamente de la situación objetiva, sino de los <strong>deseos internos</strong> de la persona. Entiende que un mismo suceso puede provocar alegría en un sujeto y frustración en otro dependiendo de lo que cada uno deseara previamente (Wellman y Banerjee, 1991).</p>
+<h3>4.2. Teoría de la Mente (ToM) y Comprensión Emocional Avanzada</h3>
+<p>Hacia los <strong>4-5 años</strong>, se produce un hito cognitivo crucial: la adquisición de la <strong>Teoría de la Mente (ToM)</strong> o capacidad de atribuir estados mentales independientes (pensamientos, creencias, intenciones) a uno mismo y a los demás.
+- <strong>Emociones basadas en creencias erróneas</strong>: Antes de los 4 años, los niños asumen que la gente se emociona en función de la realidad objetiva. Hacia los 4-5 años (evaluado mediante la clásica tarea de falsa creencia de Sally y Anne o de la caja de bombones/Smarties de Perner, Leekam y Wimmer, 1987), el menor comprende que una persona puede experimentar alegría o miedo <strong>a causa de una creencia falsa que no se corresponde con la realidad física</strong> (ej.: saltar de alegría al abrir un envoltorio creyendo que contiene un juguete, cuando en realidad hay un libro aburrido).</p>
+<h3>4.3. Reglas de Exhibición Emocional (<em>Display Rules</em>)</h3>
+<p>En torno a los 4-6 años, los infantes comienzan a interiorizar las <strong>reglas de exhibición emocional (<em>display rules</em>)</strong> (Paul Ekman; Carolyn Saarni, 1984), que son las normas tácitas aprendidas en una cultura que prescriben cuándo, dónde y cómo es socialmente apropiado mostrar, disimular o modular la expresión pública de un sentimiento.
+- Hacia los <strong>4-5 años</strong>, los niños ya son capaces de intentar enmascarar deliberadamente una emoción negativa para proteger los sentimientos de un tercero o evitar el castigo (ej.: forzar una media sonrisa de cortesía al recibir un regalo poco atractivo de su abuela, experimento clásico de Saarni del "regalo decepcionante"). No obstante, en esta etapa preescolar, los niños aún cometen frecuentes filtraciones faciales o posturales que delatan su estado interno real.</p>
+<h3>4.4. Génesis de la Autorregulación Emocional Preescolar</h3>
+<p>La autorregulación emocional es el proceso por el cual los individuos modulan, atenúan, inhiben o potencian la intensidad, duración y forma de expresión de sus estados afectivos para alcanzar metas o adaptarse al entorno (Gross, 1998).
+- Durante la etapa infantil, se produce el tránsito desde la regulación puramente heterónoma (el adulto calma meciendo o abrazando) hacia la <strong>autorregulación autónoma incipiente</strong>.
+- <strong>Mecanismos reguladores infantiles</strong>: Uso de la <strong>atención selectiva y distracción conductual</strong> (taparse los ojos o marcharse ante escenas temibles en televisión), el recurso al <strong>juego simbólico o de ficción</strong> como catarsis elaborativa de conflictos afectivos (médicos, monstruos), y el uso crucial del <strong>habla privada</strong> (en consonancia con Lev Vygotsky), mediante la cual el menor verbaliza en voz alta instrucciones directivas para serenarse ("no llores, mamá vendrá pronto").</p>
+<hr />
+<h2>5. El Desarrollo de la Comprensión Emocional en las Fases Educativas Obligatorias: Educación Primaria (6 a 12 Años)</h2>
+<p>El ingreso y permanencia en la Educación Primaria (6 a 12 años) coincide con el estadio de las <strong>operaciones concretas de Piaget</strong> y la escolarización formal. Las mayores capacidades de descentración cognitiva, reversibilidad mental y razonamiento causal provocan una profunda sofisticación en el universo emocional del menor.</p>
+<h3>5.1. Comprensión de la Ambivalencia Emocional (Modelo de Susan Harter)</h3>
+<p>Uno de los logros evolutivos más decisivos de la infancia media es la capacidad para entender que se pueden experimentar <strong>emociones contradictorias simultáneas</strong> ante una misma persona, objeto o circunstancia (ej.: sentir amor y enfado simultáneo hacia un progenitor, o experimentar alegría por ganar una competición deportiva y tristeza por la derrota de su mejor amigo).</p>
+<p><strong>Susan Harter (1982, 1986)</strong> describió una secuencia evolutiva en cuatro niveles sobre la comprensión infantil de la ambivalencia:</p>
+<pre><code>                  NIVELES DE AMBIVALENCIA EMOCIONAL (HARTER)
+  ========================================================================
+  NIVEL 0 (4-5 años)  : Niega rotundamente que puedan coexistir dos emociones.
+                        O se está contento, o se está triste (&quot;es imposible&quot;).
+  ------------------------------------------------------------------------
+  NIVEL 1 (6-7 años)  : Admite dos emociones sucesivas en el tiempo, o bien
+                        dos emociones simultáneas pero de idéntica valencia
+                        (positivas o negativas) hacia dos estímulos diferentes
+                        (ej.: &quot;estoy triste porque llueve y enfadado con Pepe&quot;).
+  ------------------------------------------------------------------------
+  NIVEL 2 (8-9 años)  : Admite dos emociones simultáneas de diferente valencia
+                        (positiva y negativa), pero dirigidas forzosamente a
+                        dos estímulos distintos (ej.: &quot;contento por sacar un 10
+                        y asustado porque el profesor castigó a mi amigo&quot;).
+  ------------------------------------------------------------------------
+  NIVEL 3 (10-12 años): Consolida la plena ambivalencia: experimenta dos emociones
+                        opuestas (positiva y negativa) de forma simultánea
+                        hacia un MISMO estímulo, persona o situación (ej.: &quot;quiero
+                        ir al campamento porque veré amigos, pero tengo miedo
+                        de echar de menos mi casa&quot;).
+  ========================================================================
+</code></pre>
+<h3>5.2. Distinción Consolidada entre Emoción Sentida y Emoción Expresada</h3>
+<p>A partir de los 7-8 años, los niños comprenden a la perfección la disociación entre la realidad afectiva interna y la apariencia conductual externa. Saben que un sujeto puede estar llorando por dentro mientras finge sonreír por fuera, y son conscientes de las múltiples motivaciones psicosociales que justifican dicha discrepancia:
+- Motivaciones prosociales: Proteger el bienestar ajeno o no ofender a los anfitriones.
+- Motivaciones de autoprotección: Evitar ser objeto de burlas en el grupo de iguales o impedir que un rival sepa que una ofensa verbal ha causado dolor.</p>
+<h3>5.3. Maduración de Emociones Morales y Justicia Distributiva</h3>
+<p>En esta fase se consolidan las emociones complejas de base moral:
+- <strong>Culpa reparatoria frente a vergüenza social</strong>: El menor distingue con nitidez el remordimiento moral interno (asociado a la conciencia moral freudiana o al razonamiento convencional de Kohlberg) de la vergüenza por el ridículo social. La culpa se enfoca en la conducta reprochable y moviliza la conducta prosocial de reparación del daño.
+- <strong>Orgullo auténtico por el esfuerzo</strong>: No se enorgullece ya de cualquier tarea fortuita, sino de aquellas que han exigido perseverancia y superación de dificultades.
+- <strong>Desarrollo de la empatía</strong>: De la empatía egocéntrica o mimética inicial de la primera infancia se transita hacia la <strong>empatía cognitiva y compasiva</strong> (Martin Hoffman, 2000): el niño es capaz de empatizar con personas que no están presentes físicamente e incluso con colectivos enteros que padecen situaciones crónicas de opresión o sufrimiento (personas refugiadas, familias sin hogar).</p>
+<h3>5.4. Estrategias de Afrontamiento (<em>Coping</em>) y Socialización en el Grupo de Iguales</h3>
+<p>En la etapa de 6 a 12 años, las estrategias de regulación emocional se enriquecen mediante el uso del <strong>afrontamiento cognitivo</strong>. Richard Lazarus y Susan Folkman (1984) distinguieron dos grandes modalidades que los menores emplean estratégicamente:
+1. <strong>Afrontamiento centrado en el problema</strong>: Acciones directas orientadas a modificar o eliminar la fuente del estrés cuando la situación es percibida como controlable (ej.: pedir ayuda al profesor para resolver un conflicto con un compañero, organizar un calendario de estudio).
+2. <strong>Afrontamiento centrado en la emoción</strong>: Estrategias internas orientadas a regular el malestar emocional cuando la situación objetiva es inmodificable o incontrolable (ej.: reevaluación cognitiva, aceptación, búsqueda de consuelo en amigos, técnicas de relajación somática).</p>
+<p>En la Educación Primaria, el <strong>grupo de iguales (<em>peer group</em>)</strong> se convierte en el tribunal socializador prioritario. La aceptación o el rechazo por parte de los compañeros de clase modela de manera determinante la <strong>autoestima</strong> global del niño (dimensiones de competencia académica, física, aceptación social y conducta, Harter, 1985). Los menores que sufren rechazo entre iguales o acoso escolar experimentan patrones de hiperreactividad ansiosa, indefensión aprendida o agresividad reactiva que requieren la intervención directa del Educador/a Social.</p>
+<hr />
+<h2>6. Emociones y Adolescencia (12 a 16/18 Años - Educación Secundaria Obligatoria)</h2>
+<p>La adolescencia constituye un período de transición evolutiva caracterizado por profundas transformaciones biológicas, neurocognitivas y psicosociales. Lejos de constituir un mero mito cultural, el "torbellino emocional" tradicionalmente atribuido a la adolescencia posee una sólida explicación en las ciencias del neurodesarrollo contemporáneo.</p>
+<h3>6.1. Neurobiología del Cerebro Adolescente: El Modelo de Sistemas Duales</h3>
+<p>Durante décadas se atribuyeron las fluctuaciones del estado de ánimo adolescente exclusivamente a las hormonas sexuales puberales (estrógenos y testosterona). No obstante, los avances en neuroimagen funcional han revelado que el factor decisivo reside en la asincronía madurativa del sistema nervioso central, conceptualizada en el <strong>Modelo de Sistemas Duales</strong> (Laurence Steinberg, 2008; B.J. Casey, 2008):</p>
+<ol>
+<li><strong>El Sistema Socioemocional o Límbico</strong>: Integrado por la <strong>amígdala</strong>, el cuerpo estriado (núcleo accumbens) y la corteza órbitofrontal. Este sistema es el responsable de la reactividad afectiva, la búsqueda de sensaciones, la vivencia de recompensas y la motivación de pertenencia grupal. Experimenta una maduración acelerada y una hiperactivación bioquímica masiva al inicio de la pubertad (hacia los <strong>11-13 años</strong>), catalizada por la oleada de neurotransmisores como la <strong>dopamina</strong>.</li>
+<li><strong>El Sistema de Control Cognitivo</strong>: Asentado en la <strong>corteza prefrontal (dorsolateral y ventromedial)</strong>. Es el centro operativo rector de las <strong>Funciones Ejecutivas</strong>: inhibición de impulsos, planificación a largo plazo, sopesamiento reflexivo de riesgos y autorregulación emocional avanzada. Este sistema posee una <strong>maduración extraordinariamente lenta y tardía</strong>, que no se completa definitivamente hasta los <strong>20-25 años de edad</strong>, a través de los complejos procesos de <strong>poda sináptica</strong> (eliminación de conexiones no utilizadas) y <strong>mielinización</strong> (aumento de la velocidad de transmisión del axón).</li>
+</ol>
+<pre><code>          EL DESEQUILIBRIO NEUROBIOLÓGICO ADOLESCENTE (STEINBERG)
+
+  Intensidad /
+  Maduración
+     ^
+     |         SISTEMA SOCIOEMOCIONAL / LÍMBICO (Amígdala, Accumbens)
+     |          (Maduración temprana y explosiva: 11-14 años)
+     |          /------------------------------------------------     |         /                                                       |        /      BRECHA DE VULNERABILIDAD                          |       /       Y BÚSQUEDA DE RIESGOS                             |      /                                                          |     /           SISTEMA DE CONTROL COGNITIVO (Corteza Prefrontal)
+     |    /             (Maduración lineal y muy tardía: hasta los 20-25 años)
+     |   /             /--------------------------------------------
+     |  /             /
+     +------------------------------------------------------------&gt; Edad
+        10          14          18          22          25 años
+</code></pre>
+<p>Esta brecha temporal de varios años en la que el "motor emocional" (sistema límbico) ruge a plena potencia mientras los "frenos ejecutivos" (corteza prefrontal) aún están en fase de ensamblaje, explica la extrema impulsividad, la búsqueda constante de sensaciones intensas, la hipersensibilidad al rechazo de los iguales y la propensión a asumir riesgos.</p>
+<h3>6.2. Particularidades Psicológicas y Egocentrismo Afectivo</h3>
+<p>En el plano psicosocial, la transición adolescente viene modulada por procesos clave:
+- <strong>Labilidad emocional e intensidad afectiva</strong>: Los adolescentes experimentan transiciones muy bruscas entre estados de euforia, apatía profunda e irritabilidad. Las emociones se viven con un carácter absoluto, radical y apremiante.
+- <strong>Egocentrismo adolescente de David Elkind (1967)</strong>: Vinculado a la emergencia del estadio de las operaciones formales de Piaget, el adolescente proyecta sus nuevas capacidades de abstracción sobre sí mismo y sobre la mirada ajena:
+  - <strong>La audiencia imaginaria</strong>: Convicción subjetiva distorsionada de que todo el mundo está observando, juzgando y pendiente continuamente de sus acciones, vestimenta, aspecto físico o errores. Genera una aguda autoconciencia, timidez extrema y temor al ridículo social.
+  - <strong>La fábula o mito personal</strong>: Creencia de que sus vivencias, sentimientos y sufrimientos son totalmente únicos, irrepetibles y jamás experimentados por nadie más ("tú no puedes entender lo que siento"), acompañada de un sentimiento de <strong>invulnerabilidad ilimitada</strong> ("a mí nunca me va a pasar un accidente de moto, ni un embarazo, ni una sobredosis").
+- <strong>Construcción de la identidad frente a confusión de roles (Erik Erikson, 1968)</strong>: La crisis psicosocial nuclear de esta etapa es la consolidación de la propia identidad personal, vocacional, sexual y moral. El adolescente necesita distanciarse afectivamente de la autoridad parental (proceso de individuación) y transferir sus necesidades primarias de validación y apego hacia el grupo de pares.</p>
+<h3>6.3. Factores de Riesgo, Desregulación Emocional y Problemáticas Actuales</h3>
+<p>En la sociedad contemporánea, la vulnerabilidad socioemocional de la adolescencia se traduce en manifestaciones clínicas y psicosociales de gravedad creciente que demandan una intervención socioeducativa especializada:</p>
+<ol>
+<li><strong>Conductas de riesgo en grupo</strong>: El consumo experimental y abusivo de alcohol (binge drinking) y tóxicos, la conducción temeraria y las prácticas sexuales desprotegidas no se explican por desconocimiento del peligro, sino por el "efecto facilitador del grupo de iguales", donde la necesidad de aprobación social desactiva momentáneamente el escaso control prefrontal.</li>
+<li><strong>Conductas Autolesivas No Suicidas (CANS) e Ideación Suicida</strong>: Epidemia silenciosa en la salud mental infanto-juvenil. Las autolesiones (cortes, quemaduras) no suelen tener una intencionalidad letal primaria, sino que operan como un intento patológico y desesperado de <strong>regulación emocional</strong>: transformar un dolor psíquico insoportable, vacío o ansiedad intolerable en una sensación física localizada y controlable. El suicidio constituye ya la primera causa de muerte no natural en jóvenes de 15 a 29 años en España.</li>
+<li><strong>Ciberacoso, grooming y violencia de género digital</strong>: El ecosistema digital y las redes sociales operan como amplificadores desreguladores. La exposición permanente a modelos corporales idealizados fomenta trastornos de la conducta alimentaria (TCA). Asimismo, la presión por el estatus digital propicia dinámicas de violencia de género digital (control de contraseñas, geolocalización invasiva, sextorsión y difusión no consentida de imágenes íntimas).</li>
+<li><strong>Violencia filioparental (VFP)</strong>: Agresiones físicas, verbales o económicas reiteradas de hijos adolescentes hacia sus progenitores, asociada a estilos educativos parentales de sobreprotección o permisividad extrema (síndrome del emperador) o a historiales de negligencia y apego traumático.</li>
+</ol>
+<hr />
+<h2>7. La Intervención del Educador/a Social en los Servicios Sociales Municipales</h2>
+<p>El Educador y la Educadora Social del Ayuntamiento de Utrera desempeñan un rol estructural en el abordaje técnico del desarrollo emocional, aplicando una metodología socioeducativa basada en el acompañamiento, la pedagogía vincular, el modelado y la capacitación comunitaria.</p>
+<pre><code>         NIVELES DE INTERVENCIÓN SOCIOEDUCATIVA DEL EDUCADOR SOCIAL
+  ========================================================================
+  1. NIVEL FAMILIAR/DOMICILIARIO  | Fomento de Parentalidad Positiva y
+                                  | apego seguro (Decreto 100/2022 ETF).
+  ------------------------------------------------------------------------
+  2. NIVEL INDIVIDUAL/TUTELAR     | Acompañamiento, alfabetización afectiva
+                                  | y Proyecto Educativo Individual (PEI).
+  ------------------------------------------------------------------------
+  3. NIVEL GRUPAL/ESCOLAR         | Talleres de Inteligencia Emocional y
+                                  | coordinación con EMAE y centros de ESO.
+  ------------------------------------------------------------------------
+  4. NIVEL COMUNITARIO            | Redes de ocio saludable y dinamización
+                                  | en Zonas Desfavorecidas (ERACIS+).
+  ========================================================================
+</code></pre>
+<h3>7.1. Detección Temprana y Promoción del Apego Seguro en Primera Infancia</h3>
+<ul>
+<li>En las visitas domiciliarias y entrevistas de valoración en el Centro de Servicios Sociales Comunitarios de Utrera, el Educador Social observa minuciosamente los patrones de sintonía diádica: si el progenitor sostiene la mirada, si responde con calma al llanto, si ridiculiza la expresión de miedo del bebé o si existe congelación motora indicativa de apego desorganizado (Tipo D).</li>
+<li>Aplicación de los criterios técnicos del <strong>Instrumento VALÓRAME</strong> (Orden de 30 de julio de 2019 de la Junta de Andalucía) para graduar el riesgo de desprotección infantil, identificando la negligencia afectiva y el maltrato emocional.</li>
+<li>Trabajo coordinado con los <strong>Equipos de Tratamiento Familiar (ETF)</strong> al amparo del <strong>Decreto 100/2022, de 7 de junio</strong>, entrenando a progenitores con competencias mermadas en pautas de crianza positiva, límites no punitivos y contención afectiva.</li>
+</ul>
+<h3>7.2. Intervención con Menores en Fases Educativas Obligatorias y Absentismo</h3>
+<ul>
+<li><strong>Alfabetización emocional individualizada</strong>: Enmarcada en el <strong>Proyecto Educativo Individualizado (PEI)</strong> como concreción técnica del Proyecto de Intervención Social (art. 34 de la Ley 9/2016 de Servicios Sociales de Andalucía). Dotar al menor de herramientas para identificar su ira o frustración antes de que derive en violencia contra objetos o iguales en el aula.</li>
+<li><strong>Intervención en el Equipo Municipal de Absentismo Escolar (EMAE)</strong>: Desmontar la raíz emocional subyacente al absentismo escolar crónico. Con frecuencia, detrás del absentista no hay desinterés pedagógico, sino fobia escolar motivada por ansiedad social, pánico al fracaso ante los compañeros, o cuadros depresivos encubiertos por situaciones familiares adversas.</li>
+</ul>
+<h3>7.3. Abordaje Socioeducativo con Adolescentes en Riesgo y sus Familias</h3>
+<ul>
+<li><strong>Espacios de escucha activa sin juicio</strong>: En la sede municipal o en espacios comunitarios abiertos, el Educador Social actúa como una figura adulta de referencia ("otro significativo") capaz de desarticular la audiencia imaginaria y validar el sufrimiento del adolescente.</li>
+<li><strong>Talleres grupales de habilidades para la vida y gestión emocional</strong>: Trabajo en dinámicas sobre tolerancia a la frustración, reevaluación cognitiva (<em>coping</em>), prevención de la ciberviolencia y deconstrucción de los mitos del amor romántico que sustentan la dependencia emocional en las relaciones de noviazgo juvenil.</li>
+<li><strong>Dinamización comunitaria e inserción juvenil</strong>: Fomentar alternativas de ocio saludable y empoderamiento personal en el marco de la <strong>Estrategia Regional Andaluza para la Cohesión e Inclusión Social (ERACIS+)</strong>, combatiendo la anomia y el aislamiento emocional en barrios vulnerables.</li>
+</ul>
+<hr />
+<h2>8. Secciones Pedagógicas de Cierre Obligatorias</h2>
+<h3>A. Datos de Examen (25 Ítems de Memorización Clave)</h3>
+<ol>
+<li><strong>Definición de emoción</strong>: Patrón complejo multidimensional que aúna respuesta neurofisiológica, motora-expresiva y cognitiva-vivencial, de carácter breve e intenso.</li>
+<li><strong>Emoción vs. Sentimiento</strong>: La emoción es aguda, somática y de corta duración (segundos/minutos); el sentimiento es una toma de conciencia cognitiva reflexiva y de larga duración (días/años).</li>
+<li><strong>Estado de ánimo (<em>Mood</em>)</strong>: Tono afectivo difuso, global y de intensidad moderada, que dura horas o semanas y suele carecer de estímulo desencadenante claro.</li>
+<li><strong>Temperamento</strong>: Disposición biológica y constitucional innata, observable desde el nacimiento y con relativa estabilidad a lo largo de la vida (Thomas y Chess; Rothbart).</li>
+<li><strong>Emociones básicas universales (Paul Ekman)</strong>: Son seis: alegría, tristeza, ira, miedo, asco y sorpresa.</li>
+<li><strong>Teoría bifactorial de la emoción</strong>: Schachter y Singer (1962); requiere activación fisiológica inespecífica (<em>arousal</em>) más etiquetado o atribución cognitiva.</li>
+<li><strong>Appraisal (Evaluación cognitiva)</strong>: Richard Lazarus (1991); distingue entre evaluación primaria (amenaza/meta) y evaluación secundaria (recursos de afrontamiento).</li>
+<li><strong>Teoría del Apego</strong>: John Bowlby (trilogía 1969-1980); figura de apego como base segura para explorar y refugio de calma ante el estrés.</li>
+<li><strong>Situación Extraña (1978)</strong>: Procedimiento experimental de laboratorio diseñado por Mary Ainsworth para clasificar patrones de apego en bebés de 12-18 meses.</li>
+<li><strong>Tipos de apego organizados de Ainsworth</strong>: Apego Seguro (Tipo B), Inseguro-Evitativo (Tipo A) e Inseguro-Ambivalente/Resistente (Tipo C).</li>
+<li><strong>Apego Desorganizado/Desorientado (Tipo D)</strong>: Descrito por Mary Main y Judith Solomon (1986); colapso de estrategias y "miedo sin solución"; alta correlación con maltrato infantil severo.</li>
+<li><strong>Modelo de Competencia Emocional</strong>: Rafael Bisquerra (GROP, 2000); estructura cinco dimensiones: conciencia, regulación, autonomía, competencia social y habilidades para la vida.</li>
+<li><strong>Sonrisa refleja vs. Sonrisa social</strong>: La refleja ocurre al nacer (0-6 semanas, sueño MOR, subcortical); la social aparece hacia las 6-8 semanas o 2-3 meses ante el rostro humano.</li>
+<li><strong>Miedo a los extraños</strong>: Segundo organizador psíquico de René Spitz (angustia del 8º mes); emerge entre los 7 y 9 meses.</li>
+<li><strong>Ansiedad de separación</strong>: Malestar ante la partida de la figura de apego; pico máximo entre los 12 y 18 meses.</li>
+<li><strong>Still Face Paradigm (Paradigma del Rostro Inexpresivo)</strong>: Edward Tronick (1978); demostró la sincronía diádica y el impacto del congelamiento afectivo materno.</li>
+<li><strong>Referenciación social (<em>Social Referencing</em>)</strong>: 8 a 12 meses; el bebé mira la expresión emocional de la madre para evaluar si una situación ambigua es segura o peligrosa.</li>
+<li><strong>Prueba de la mancha de carmín (Espejo)</strong>: Michael Lewis y Jeanne Brooks-Gunn (1979); evalúa el autorreconocimiento visual; superada con éxito entre los 18 y 24 meses.</li>
+<li><strong>Emociones autoconscientes/secundarias</strong>: Vergüenza, culpa, orgullo, timidez; emergen entre los 18 y 24 meses tras la adquisición de la autoconciencia.</li>
+<li><strong>Reglas de exhibición (<em>Display Rules</em>)</strong>: Normas culturales que regulan la expresión pública apropiada de emociones (Paul Ekman; Carolyn Saarni).</li>
+<li><strong>Ambivalencia emocional (Susan Harter)</strong>: Nivel 0 (4-5 años, niega); Nivel 1 (6-7 años, consecutivas o misma valencia); Nivel 2 (8-9 años, distinta valencia en dos estímulos); Nivel 3 (10-12 años, opuestas simultáneas a un mismo estímulo).</li>
+<li><strong>Afrontamiento (<em>Coping</em>)</strong>: Lazarus y Folkman (1984); afrontamiento centrado en el problema (controlable) vs. centrado en la emoción (incontrolable).</li>
+<li><strong>Modelo de Sistemas Duales en la adolescencia</strong>: Laurence Steinberg (2008); brecha madurativa entre sistema socioemocional/límbico (temprano) y sistema de control prefrontal (tardío).</li>
+<li><strong>Egocentrismo adolescente</strong>: David Elkind (1967); formuló los conceptos de "audiencia imaginaria" (todos me miran) y "fábula personal" (soy único e invulnerable).</li>
+<li><strong>Conductas Autolesivas No Suicidas (CANS)</strong>: Función primordial de regulación emocional patológica (aliviar angustia psíquica intolerable mediante dolor físico).</li>
+</ol>
+<hr />
+<h3>B. Esquema de Repaso Rápido</h3>
+<pre><code>  ETAPA EVOLUTIVA   | PRINCIPALES HITOS Y ADQUISICIONES EMOCIONALES
+  ==================+===========================================================
+  0 A 6 MESES       | * Llanto indiferenciado y diferenciado.
+                    | * Sonrisa refleja (subcortical) -&gt; Sonrisa social (2-3 m).
+                    | * Alegría (4 m), ira/frustración y tristeza (4-6 m).
+  ------------------+-----------------------------------------------------------
+  7 A 12 MESES      | * Angustia del 8º mes o miedo a extraños (Spitz).
+                    | * Ansiedad de separación (pico 12-18 m).
+                    | * Referenciación social (8-12 m) ante la incertidumbre.
+  ------------------+-----------------------------------------------------------
+  18 A 24 MESES     | * Autorreconocimiento frente al espejo (Lewis y Brooks-Gunn).
+                    | * Emergencia de emociones autoconscientes (vergüenza,
+                    |   culpa, orgullo, envidia).
+  ------------------+-----------------------------------------------------------
+  2 A 6 AÑOS        | * Etiquetado verbal de emociones básicas.
+  (INFANTIL)        | * Comprensión de causas: externas -&gt; internas (deseos/ToM).
+                    | * Inicio de reglas de exhibición (display rules).
+                    | * Autorregulación incipiente: habla privada y juego simbólico.
+  ------------------+-----------------------------------------------------------
+  6 A 12 AÑOS       | * Ambivalencia emocional plena hacia un mismo objeto (Harter).
+  (PRIMARIA)        | * Distinción neta entre emoción sentida y aparente.
+                    | * Afrontamiento (Lazarus y Folkman): problema vs. emoción.
+                    | * Autoestima dependiente del grupo de iguales y empatía moral.
+  ------------------+-----------------------------------------------------------
+  12 A 16/18 AÑOS   | * Asincronía neurobiológica: Sistema límbico hiperactivo vs.
+  (ADOLESCENCIA)    |   Corteza prefrontal inmadura (Sistemas Duales de Steinberg).
+                    | * Egocentrismo de Elkind: audiencia imaginaria y fábula personal.
+                    | * Crisis de identidad (Erikson) y búsqueda de pertenencia grupal.
+                    | * Vulnerabilidad: conductas de riesgo, CANS, ciberacoso.
+</code></pre>
+<hr />
+<h3>C. Trampas del Test (Confusiones Críticas Desarticuladas)</h3>
+<ol>
+<li><strong>Confundir la sonrisa refleja con la sonrisa social</strong>:<br />
+<em>Trampa</em>: Afirmar que el recién nacido sonríe a la madre a los pocos días de nacer como respuesta comunicativa consciente.<br />
+<em>Realidad</em>: La sonrisa de los primeros 30-40 días es refleja/endógena (subcortical, vinculada a relajación física o sueño MOR). La sonrisa social surge hacia los 2-3 meses ante la interacción visual humana.</li>
+<li><strong>Autoría de la Situación Extraña vs. Teoría del Apego</strong>:<br />
+<em>Trampa</em>: Atribuir el experimento de la Situación Extraña a John Bowlby.<br />
+<em>Realidad</em>: John Bowlby formuló la base teórica del Apego; quien diseñó el procedimiento experimental de la Situación Extraña para clasificar los apegos fue <strong>Mary Ainsworth</strong> (1978).</li>
+<li><strong>El Apego Desorganizado no fue formulado por Ainsworth</strong>:<br />
+<em>Trampa</em>: Asegurar que Ainsworth definió originalmente 4 estilos de apego.<br />
+<em>Realidad</em>: Ainsworth definió únicamente tres patrones: A (Evitativo), B (Seguro) y C (Ambivalente). El cuarto patrón, Tipo D (Desorganizado/Desorientado), fue descubierto e incorporado por <strong>Mary Main y Judith Solomon</strong> en 1986.</li>
+<li><strong>Edad de las emociones autoconscientes</strong>:<br />
+<em>Trampa</em>: Sostener que un bebé de 6 o 9 meses puede sentir vergüenza o culpa.<br />
+<em>Realidad</em>: Las emociones autoconscientes exigen autoconciencia previa (autorreconocimiento del yo evaluado en la prueba del espejo), que no cristaliza antes de los <strong>18-24 meses</strong>.</li>
+<li><strong>Desarrollo de la ambivalencia emocional según Susan Harter</strong>:<br />
+<em>Trampa</em>: Proponer que un niño de 6 años es plenamente capaz de sentir y verbalizar amor y rabia simultáneamente hacia un mismo profesor.<br />
+<em>Realidad</em>: A los 6-7 años sólo se admiten emociones de idéntica valencia o en momentos sucesivos. La ambivalencia de signo opuesto hacia un mismo objeto o persona sólo se alcanza en el Nivel 3 de Harter, entre los <strong>10 y 12 años</strong>.</li>
+<li><strong>Cerebro adolescente y hormonas</strong>:<br />
+<em>Trampa</em>: Considerar que la impulsividad y asunción de riesgos del adolescente se debe exclusivamente a un desajuste de las hormonas sexuales.<br />
+<em>Realidad</em>: La neurociencia contemporánea demuestra que el factor causal primario es el <strong>desequilibrio madurativo neurobiológico</strong> entre el sistema límbico hiperreactivo y la lentísima maduración de la corteza prefrontal (Modelo de Sistemas Duales de Steinberg).</li>
+<li><strong>Naturaleza de las conductas autolesivas (CANS)</strong>:<br />
+<em>Trampa</em>: Tratar las autolesiones adolescentes de forma unívoca como un intento frustrado de suicidio.<br />
+<em>Realidad</em>: Las CANS cumplen primordialmente una función patológica de <strong>regulación y alivio de la angustia emocional</strong> insoportable; no buscan el cese de la vida en su origen, aunque incrementan de forma exponencial el riesgo de suicidio posterior si no se interviene.</li>
+</ol>
+<hr />
+<h3>D. Enfoque Práctico en el Excmo. Ayuntamiento de Utrera</h3>
+<p>La articulación del conocimiento sobre desarrollo emocional se plasma en la labor cotidiana del Educador/a Social municipal a través de dispositivos y programas específicos:</p>
+<ol>
+<li><strong>Centro de Servicios Sociales Comunitarios de Utrera (calle Catalina de Perea, 32)</strong>:</li>
+<li><strong>Atención a la primera infancia y derivación al CAIT de Utrera</strong>: Identificación en familias perceptoras de rentas mínimas (IMV, Renta Mínima de Andalucía) de indicadores de frialdad emocional, negligencia grave o sospecha de apego desorganizado. Coordinación con el Centro de Atención Infantil Temprana (CAIT) de Utrera conforme a la <strong>Ley 1/2023, de 16 de febrero</strong>, para intervenciones preventivas diádicas.</li>
+<li><strong>Coordinación con el Equipo de Tratamiento Familiar (ETF)</strong>: Derivación y trabajo conjunto bajo el marco del <strong>Decreto 100/2022</strong>, interviniendo en el domicilio mediante programas de parentalidad positiva que enseñan a padres y madres con dificultades a sintonizar afectivamente con sus hijos, erradicando el castigo físico y las humillaciones verbales.</li>
+<li><strong>Equipo Municipal de Absentismo Escolar (EMAE) de Utrera</strong>:</li>
+<li>Coordinación estrecha con los Departamentos de Orientación de los Institutos de Educación Secundaria del municipio (<strong>IES Ruiz Gijón, IES Ponce de León, IES José María Infantes, IES Virgen de Consolación</strong>) y colegios de Primaria (<strong>CEIP Rodrigo Caro, CEIP Álvarez Quintero</strong>).</li>
+<li>Abordaje de casos de absentismo escolar en los que subyace desregulación emocional, fobia escolar, fobia social tras periodos de acoso escolar o desconexión motivacional vinculada a desestructuración familiar.</li>
+<li><strong>Intervención Comunitaria en la Barriada El Tinte y Pedanías de Utrera</strong>:</li>
+<li>Ejecución de planes grupales y socioeducativos en la <strong>Barriada El Tinte</strong> en el contexto de la <strong>Estrategia Regional Andaluza para la Cohesión e Inclusión Social (ERACIS+)</strong>.</li>
+<li>Talleres de alfabetización emocional, resiliencia y prevención de conductas autolesivas y adicciones en jóvenes de zonas vulnerables y en las pedanías utreranas (<strong>Guadalema de los Quintero, Trajano y Pinzón</strong>), descentralizando los recursos socioeducativos y rompiendo el aislamiento psicosocial.</li>
+</ol>
+<hr />
+<h3>E. Fuentes Oficiales y Bibliografía Científica Consolidada</h3>
+<ul>
+<li><strong>Ainsworth, M. D. S., Blehar, M. C., Waters, E., &amp; Wall, S.</strong> (1978). <em>Patterns of attachment: A psychological study of the strange situation</em>. Lawrence Erlbaum.</li>
+<li><strong>Bisquerra Alzina, R.</strong> (2000). <em>Educación emocional y bienestar</em>. Praxis.</li>
+<li><strong>Bowlby, J.</strong> (1969/1982). <em>Attachment and loss: Vol. 1. Attachment</em>. Basic Books.</li>
+<li><strong>Darwin, C.</strong> (1872). <em>The expression of the emotions in man and animals</em>. John Murray.</li>
+<li><strong>Ekman, P.</strong> (1972). <em>Universals and cultural differences in facial expressions of emotion</em>. In J. Cole (Ed.), <em>Nebraska Symposium on Motivation</em>. University of Nebraska Press.</li>
+<li><strong>Elkind, D.</strong> (1967). Egocentrism in adolescence. <em>Child Development</em>, 38(4), 1025-1034.</li>
+<li><strong>Harter, S.</strong> (1982). The Perceived Competence Scale for Children. <em>Child Development</em>, 53(1), 87-97.</li>
+<li><strong>Lazarus, R. S.</strong> (1991). <em>Emotion and adaptation</em>. Oxford University Press.</li>
+<li><strong>Lewis, M., &amp; Brooks-Gunn, J.</strong> (1979). <em>Social cognition and the acquisition of self</em>. Plenum Press.</li>
+<li><strong>Main, M., &amp; Solomon, J.</strong> (1986). Discovery of an insecure-disorganized/disoriented attachment pattern. In T. B. Brazelton &amp; M. W. Yogman (Eds.), <em>Affective development in infancy</em> (pp. 95-124). Ablex.</li>
+<li><strong>Saarni, C.</strong> (1999). <em>The development of emotional competence</em>. Guilford Press.</li>
+<li><strong>Steinberg, L.</strong> (2008). A social neuroscience perspective on adolescent risk-taking. <em>Developmental Review</em>, 28(1), 78-106.</li>
+<li><strong>Tronick, E., et al.</strong> (1978). The infant's response to entrapment between contradictory messages in face-to-face interaction. <em>Journal of the American Academy of Child Psychiatry</em>, 17(1), 1-13.</li>
+<li><strong>Ley Orgánica 8/2021, de 4 de junio</strong>, de protección integral a la infancia y la adolescencia frente a la violencia (LOPIVI). <em>BOE nº 134, de 05/06/2021</em>.</li>
+<li><strong>Ley 4/2021, de 27 de julio</strong>, de Infancia y Adolescencia de Andalucía. <em>BOJA nº 149, de 04/08/2021</em>.</li>
+<li><strong>Ley 9/2016, de 27 de diciembre</strong>, de Servicios Sociales de Andalucía. <em>BOJA nº 8, de 13/01/2017</em>.</li>
+<li><strong>Decreto 100/2022, de 7 de junio</strong>, por el que se regula el Programa de Tratamiento a Familias con Menores en Situación de Riesgo o Desprotección. <em>BOJA nº 111, de 13/06/2022</em>.</li>
+<li><strong>Orden de 30 de julio de 2019</strong>, por la que se aprueba y publica el instrumento para la valoración de la gravedad de las situaciones de riesgo y desprotección en los servicios sociales comunitarios y especializados (VALÓRAME). <em>BOJA nº 150, de 06/08/2019</em>.</li>
+</ul>
+
+</body>
+</html>
