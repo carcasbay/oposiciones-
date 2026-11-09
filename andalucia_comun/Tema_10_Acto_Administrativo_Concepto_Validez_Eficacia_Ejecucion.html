@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TEMA 10: El Acto Administrativo: Concepto, Elementos y Clases. Requisitos de Validez: Forma y Motivación. Eficacia de los Actos Administrativos: Notificación y Publicación. Ejecutividad, Presunción de Validez y Medios de Ejecución Forzosa</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (Grupo A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #065f46;
+      font-weight: 500;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #059669;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #065f46;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #059669;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #059669;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #059669;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout p {
+    margin: 0;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #065f46;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #d1fae5;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f0fdf4;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO COMÚN — JUNTA DE ANDALUCÍA (GRUPO A2)</div>
+  <h1>TEMA 10</h1>
+  <h2>El Acto Administrativo: Concepto, Elementos y Clases. Requisitos de Validez: Forma y Motivación. Eficacia de los Actos Administrativos: Notificación y Publicación. Ejecutividad, Presunción de Validez y Medios de Ejecución Forzosa</h2>
+  <div class="meta-box">
+    <p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo / Cuerpo General (A2)</p>
+    <p><strong>Entidad Convocante:</strong> Junta de Andalucía (Consejería de Justicia, Administración Local y Función Pública / IAAP)</p>
+    <p><strong>Bloque:</strong> Programa de Materias Comunes</p>
+    <p><strong>Tema Oficial:</strong> Tema 10</p>
+    <p><strong>Normativa Clave de Referencia:</strong></p>
+    <p>Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (LPACAP): Título III (De los actos administrativos, arts. 34 a 52) y Título VII (De la ejecución, arts. 97 a 105).</p>
+    <p>Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (LRJSP).</p>
+    <p>Ley 9/2007, de 22 de octubre, de la Administración de la Junta de Andalucía (LAJA).</p>
+    <p>Ley 29/1998, de 13 de julio, reguladora de la Jurisdicción Contencioso-Administrativa (LJCA).</p>
+    <p>Constitución Española de 1978: Artículos 9.3, 24, 103 y 106.</p>
+
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General de TEMA 10</div>
+  <div class="toc-item level-1">1. <strong>El acto administrativo: Concepto, naturaleza y distinción de figuras afines</strong></div>
+  <div class="toc-item level-2">1.1. Definición doctrinal clásica y formulación legal</div>
+  <div class="toc-item level-2">1.2. Distinción entre acto administrativo y disposición general (reglamento)</div>
+  <div class="toc-item level-2">1.3. La presunción de validez y la prerrogativa de autotutela administrativa</div>
+  <div class="toc-item level-1">2. <strong>Elementos del acto administrativo</strong></div>
+  <div class="toc-item level-2">2.1. Elemento subjetivo: Administración actuante, competencia e investidura del órgano (abstención y recusación)</div>
+  <div class="toc-item level-2">2.2. Elemento objetivo: Objeto, presupuesto de hecho y elementos accidentales (término, condición y modo)</div>
+  <div class="toc-item level-2">2.3. Elemento causal: La causa del acto y el fin público perseguido (la desviación de poder)</div>
+  <div class="toc-item level-2">2.4. Elemento formal: El cauce procedimental y los requisitos de exteriorización</div>
+  <div class="toc-item level-1">3. <strong>Clases de actos administrativos</strong></div>
+  <div class="toc-item level-2">3.1. Actos resolutorios (definitivos) y actos de trámite (ordinarios y cualificados)</div>
+  <div class="toc-item level-2">3.2. Actos favorables (declarativos de derechos) y actos de gravamen (restrictivos)</div>
+  <div class="toc-item level-2">3.3. Actos reglados y actos discrecionales: Técnicas de control jurisdiccional</div>
+  <div class="toc-item level-2">3.4. Actos expresos, tácitos y presuntos: La institución del silencio administrativo</div>
+  <div class="toc-item level-2">3.5. Actos que ponen fin a la vía administrativa y actos que no ponen fin (art. 114 LPACAP y art. 112 LAJA)</div>
+  <div class="toc-item level-2">3.6. Actos firmes o consentidos y actos confirmatorios</div>
+  <div class="toc-item level-1">4. <strong>Requisitos de validez del acto administrativo</strong></div>
+  <div class="toc-item level-2">4.1. La forma del acto administrativo: Forma escrita y medios electrónicos (art. 36 LPACAP)</div>
+  <div class="toc-item level-2">4.2. La motivación del acto administrativo (artículo 35 LPACAP)</div>
+  <div class="toc-item level-3">4.2.1. Fundamento constitucional: Garantía frente a la arbitrariedad (art. 9.3 y 24 CE)</div>
+  <div class="toc-item level-3">4.2.2. Supuestos tasados de motivación preceptiva</div>
+  <div class="toc-item level-3">4.2.3. Estructura y alcance de la motivación sucinta de hechos y fundamentos jurídicos</div>
+  <div class="toc-item level-1">5. <strong>Eficacia de los actos administrativos</strong></div>
+  <div class="toc-item level-2">5.1. Regla general: Presunción de validez y eficacia inmediata (*iuris tantum*, art. 39.1 LPACAP)</div>
+  <div class="toc-item level-2">5.2. Supuestos de eficacia demorada (artículo 39.2 LPACAP)</div>
+  <div class="toc-item level-2">5.3. Eficacia retroactiva excepcional (artículo 39.3 LPACAP)</div>
+  <div class="toc-item level-2">5.4. La notificación de los actos administrativos:</div>
+  <div class="toc-item level-3">5.4.1. Actos sujetos a notificación obligatoria y plazo (art. 40.1 y 40.2 LPACAP)</div>
+  <div class="toc-item level-3">5.4.2. Contenido preceptivo de la notificación y eficacia de las notificaciones defectuosas</div>
+  <div class="toc-item level-3">5.4.3. Medios de práctica: La notificación electrónica preferente (art. 41 y 43 LPACAP)</div>
+  <div class="toc-item level-3">5.4.4. Rechazo de la notificación y cómputo de los diez días naturales</div>
+  <div class="toc-item level-3">5.4.5. Notificación infructuosa y publicación edictal en el BOE (art. 44 LPACAP)</div>
+  <div class="toc-item level-2">5.5. La publicación de los actos administrativos: Supuestos legales (artículo 45 LPACAP)</div>
+  <div class="toc-item level-1">6. <strong>Ejecutividad y ejecución forzosa de los actos administrativos</strong></div>
+  <div class="toc-item level-2">6.1. La autotutela ejecutiva: Ejecutividad y ejecutoriedad (artículos 98 y 99 LPACAP)</div>
+  <div class="toc-item level-2">6.2. La suspensión de la ejecutividad: En vía administrativa (art. 117 LPACAP) y en vía judicial cautelar</div>
+  <div class="toc-item level-2">6.3. Principios rectores de la ejecución forzosa: Proporcionalidad y menor onerosidad (art. 100 LPACAP)</div>
+  <div class="toc-item level-2">6.4. Los medios de ejecución forzosa:</div>
+  <div class="toc-item level-3">6.4.1. Apremio sobre el patrimonio (artículo 101 LPACAP)</div>
+  <div class="toc-item level-3">6.4.2. Ejecución subsidiaria (artículo 102 LPACAP)</div>
+  <div class="toc-item level-3">6.4.3. Multa coercitiva (artículo 103 LPACAP)</div>
+  <div class="toc-item level-3">6.4.4. Compulsión sobre las personas y la autorización judicial de entrada en domicilio (artículo 104 LPACAP y art. 8.6 LJCA)</div>
+  <div class="toc-item level-1">7. <strong>Conclusión y trascendencia práctica en el Cuerpo Técnico Facultativo (A2)</strong></div>
+  <div class="toc-item level-1">8. <strong>Anexo: Tablas sinópticas de medios de ejecución forzosa y requisitos de notificación</strong></div>
+
+</div>
+
+<h2 class="section-title">1. El acto administrativo: Concepto, naturaleza y distinción de figuras afines</h2>
+
+<h3 class="sub-title">1.1. Definición doctrinal y formulación legal</h3>
+<p>La doctrina administrativista española e internacional coincide en la formulación clásica debida al profesor italiano <strong>Guido Zanobini</strong>, perfeccionada en España por <strong>Eduardo García de Enterría</strong>:</p>
+<div class="callout"><p><em>"El acto administrativo es la declaración de voluntad, de juicio, de conocimiento o de deseo realizada por una Administración pública en el ejercicio de una potestad administrativa distinta de la potestad reglamentaria."</em></p></div>
+<p>Notas definitorias del concepto:
+1. <strong>Es una declaración intelectual:</strong> No es una mera actividad material o física (vía de hecho), sino una exteriorización formal del pensamiento (voluntad decisoria, juicio técnico pericial, conocimiento registral o deseo de colaboración).
+2. <strong>Emana de una Administración pública:</strong> Quedan excluidos los actos de los particulares y los contratos de Derecho Privado puro, si bien los actos preparatorios de éstos son actos administrativos separables.
+3. <strong>Ejercicio de una potestad administrativa:</strong> El acto es fruto del ejercicio de un poder atribuido previamente por el ordenamiento jurídico con arreglo al principio de legalidad (art. 103.1 CE).
+4. <strong>Distinta de la potestad reglamentaria:</strong> Se distingue radicalmente del reglamento; el acto se agota con su cumplimiento (<em>non consumitur usu</em> en el reglamento), mientras que el reglamento se incorpora de manera abstracta y permanente al sistema normativo.</p>
+<h3 class="sub-title">1.2. La presunción de validez y la autotutela administrativa</h3>
+<p>A diferencia de las relaciones jurídicas privadas, en las que nadie puede alterar unilateralmente la esfera ajena sin auxilio judicial, la Administración goza de la <strong>autotutela declarativa</strong> (sus actos se presumen válidos desde que se dictan) y de la <strong>autotutela ejecutiva</strong> (puede ejecutar sus propios actos por sus propios medios sin necesidad de recabar autorización previa de los Tribunales, salvo entrada domiciliaria).</p>
+<hr />
+<h2 class="section-title">2. Elementos del acto administrativo</h2>
+
+<p>El acto administrativo exige la concurrencia armónica de cuatro categorías de elementos esenciales para su validez:</p>
+<div class="diagram-box"><pre>                        ELEMENTOS DEL ACTO ADMINISTRATIVO
+      ┌────────────────────────────────┬────────────────────────────────┐
+ELEMENTOS SUBJETIVOS             ELEMENTOS OBJETIVOS              ELEMENTOS FORMALES
+├─ Administración Pública        ├─ Presupuesto de hecho legal    ├─ Procedimiento legal
+├─ Órgano competente             ├─ Contenido lícito y posible    ├─ Exteriorización formal
+├─ Investidura legal del titular ├─ Fin público (Causa lícita)    └─ Motivación (art. 35)
+└─ Ausencia de causas abstención └─ Elementos accidentales
+</pre></div>
+<h3 class="sub-title">2.1. Elemento subjetivo</h3>
+<ul>
+<li><strong>La Administración Pública competente:</strong> El órgano que dicta el acto debe pertenecer a una Administración investida de potestad jurídica.</li>
+<li><strong>Competencia material, territorial y jerárquica:</strong> El acto debe ser dictado por el órgano al que la norma atribuya la competencia. La incompetencia manifiesta por razón de la materia o del territorio determina la <strong>nulidad de pleno derecho</strong> del acto (art. 47.1.b LPACAP); la incompetencia jerárquica es susceptible de convalidación por el superior (art. 52.3 LPACAP).</li>
+<li><strong>El titular del órgano (imparcialidad):</strong> La persona física que encarna el órgano debe estar legalmente nombrada e investida. Asimismo, debe abstenerse de intervenir si concurre alguna de las causas del <strong>artículo 23 de la Ley 40/2015</strong> (interés personal, parentesco, amistad íntima o enemistad manifiesta, servicio pericial o relación de servicio), pudiendo ser recusado por los interesados (art. 24 Ley 40/2015).</li>
+</ul>
+<h3 class="sub-title">2.2. Elemento objetivo</h3>
+<ul>
+<li><strong>El contenido u objeto del acto (artículo 34.1 LPACAP):</strong> El contenido de los actos se ajustará a lo dispuesto por el ordenamiento jurídico y será determinado y adecuado a los fines de aquéllos.</li>
+<li><strong>Licitud, posibilidad y adecuación:</strong> El objeto debe ser material y jurídicamente posible; son nulos de pleno derecho los actos de contenido imposible o constitutivos de infracción penal (art. 47.1.c y d LPACAP).</li>
+<li><strong>Elementos accidentales:</strong></li>
+<li><em>Término:</em> Momento temporal en que se inician o cesan los efectos del acto.</li>
+<li><em>Condición:</em> Suceso futuro e incierto del que se hace depender la eficacia del acto.</li>
+<li><em>Modo:</em> Carga u obligación adicional impuesta al beneficiario de un acto favorable (ej. justificar una subvención en un plazo determinado).</li>
+</ul>
+<h3 class="sub-title">2.3. Elemento causal y teleológico</h3>
+<ul>
+<li><strong>La Causa:</strong> Es la adecuación objetiva entre el supuesto de hecho fáctico que legitima la actuación y el fin de interés público amparado por la ley.</li>
+<li><strong>La Desviación de Poder:</strong> Si el órgano ejerce potestades administrativas para fines distintos de los fijados por el ordenamiento jurídico, incurre en desviación de poder (proscrita por el art. 106.1 CE y causa de anulabilidad según el art. 48.1 LPACAP).</li>
+</ul>
+<h3 class="sub-title">2.4. Elemento formal</h3>
+<p>El acto administrativo no puede manifestarse de forma arbitraria; debe producirse a través del <strong>procedimiento administrativo legalmente establecido</strong> (art. 105.c CE y art. 34.2 LPACAP). El defecto de forma solo determina la anulabilidad cuando el acto carezca de los requisitos formales indispensables para alcanzar su fin o dé lugar a indefensión de los interesados (art. 48.2 LPACAP).</p>
+<hr />
+<h2 class="section-title">3. Clases de actos administrativos</h2>
+
+<ol>
+<li><strong>Actos resolutorios (definitivos) frente a actos de trámite:</strong></li>
+<li><em>Resolutorios:</em> Ponen fin al procedimiento decidiendo sobre el fondo del asunto.</li>
+<li><em>De trámite:</em> Preparan la resolución final (informes, dictámenes, propuestas). Como regla general no son recurribles de forma autónoma, salvo los <strong>actos de trámite cualificados</strong> (art. 112.1 LPACAP): aquellos que deciden directa o indirectamente el fondo del asunto, determinan la imposibilidad de continuar el procedimiento, o producen indefensión o perjuicio irreparable a derechos o intereses legítimos.</li>
+<li><strong>Actos favorables frente a actos de gravamen:</strong></li>
+<li><em>Favorables:</em> Amplían la esfera jurídica de los administrados (autorizaciones, concesiones, licencias, subvenciones). Tienen carácter irrevocable como regla general, exigiéndose el procedimiento cualificado de revisión de oficio o lesividad para dejarlos sin efecto.</li>
+<li><em>De gravamen:</em> Restringen derechos o imponen obligaciones o sanciones (sanciones tributarias, órdenes de demolición). Exigen motivación obligatoria (art. 35.1.a LPACAP) y no pueden aplicarse retroactivamente <em>in peius</em> (art. 9.3 CE).</li>
+<li><strong>Actos reglados frente a actos discrecionales:</strong></li>
+<li><em>Reglados:</em> La norma determina con precisión todos los presupuestos y la consecuencia jurídica exacta; la Administración se limita a aplicar la ley sin margen de apreciación subjetiva.</li>
+<li><em>Discrecionales:</em> La norma otorga un margen de apreciación y libre elección entre varias alternativas igualmente legítimas. La discrecionalidad no equivale a arbitrariedad (proscrita por el art. 9.3 CE) y está sujeta a control judicial estricto sobre los hechos determinantes, el fin público, la motivación y los principios generales del Derecho.</li>
+<li><strong>Actos que ponen fin a la vía administrativa frente a actos que no ponen fin:</strong></li>
+<li>Los que ponen fin (art. 114 LPACAP y art. 112 LAJA) agotan la vía administrativa y solo son susceptibles de <strong>recurso potestativo de reposición</strong> o de recurso directo ante la Jurisdicción Contencioso-Administrativa.</li>
+<li>Los que no ponen fin exigen la previa interposición preceptiva del <strong>recurso de alzada</strong> ante el superior jerárquico antes de acudir a los Tribunales.</li>
+<li><strong>Actos firmes frente a actos recurribles:</strong> Los actos firmes son aquellos frente a los que no cabe recurso ordinario alguno por haber transcurrido los plazos legales para impugnarlos (<em>consentidos</em>).</li>
+</ol>
+<hr />
+<h2 class="section-title">4. Requisitos de validez del acto administrativo</h2>
+
+<h3 class="sub-title">4.1. La forma del acto administrativo (artículo 36 LPACAP)</h3>
+<ul>
+<li><strong>Regla general de producción electrónica:</strong> Los actos administrativos se producirán por escrito a través de <strong>medios electrónicos</strong>, a menos que su naturaleza exija otra forma más adecuada de expresión y constancia.</li>
+<li><strong>Constancia documental:</strong> Cuando los órganos colegiados adopten acuerdos, el acta levantada por el Secretario constituirá el documento acreditativo fehaciente. En casos excepcionales de órdenes verbales (ej. policía de tráfico o emergencias), la constancia escrita del acto se efectuará tan pronto como sea posible si el administrado lo solicita.</li>
+</ul>
+<h3 class="sub-title">4.2. La motivación del acto administrativo (artículo 35 LPACAP)</h3>
+<p>La motivación es la exteriorización formal de las razones de hecho y de Derecho que fundamentan la decisión administrativa. Constituye una exigencia sustantiva de raigambre constitucional vinculada a la tutela judicial efectiva (art. 24 CE) y al control de la arbitrariedad (art. 9.3 CE).</p>
+<div class="diagram-box"><pre>                      SUPUESTOS TASADOS DE MOTIVACIÓN OBLIGATORIA
+                               (Artículo 35.1 LPACAP)
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ a) Actos que limiten derechos subjetivos o intereses legítimos.             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ b) Actos que resuelvan procedimientos de revisión de oficio, recursos      │
+│    administrativos y reclamaciones previas a la vía judicial.               │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ c) Actos que se separen del criterio seguido en actuaciones precedentes     │
+│    o del dictamen de órganos consultivos.                                   │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ d) Acuerdos de suspensión de actos y adopción de medidas provisionales.     │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ e) Acuerdos de aplicación de la tramitación de urgencia o de ampliación     │
+│    de plazos del procedimiento.                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ f) Actos que resuelvan procedimientos sancionadores o de responsabilidad   │
+│    patrimonial de las Administraciones Públicas.                            │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ g) Actos que se dicten en el ejercicio de potestades discrecionales.        │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ h) Acuerdos de caducidad y de desistimiento por la Administración.          │
+└─────────────────────────────────────────────────────────────────────────────┘
+</pre></div>
+<div class="callout"><p><strong>ESTRUCTURA DE LA MOTIVACIÓN (art. 35.2 LPACAP):</strong>
+La motivación de los actos se realizará con sucinta referencia de hechos y fundamentos de derecho. En los procedimientos selectivos o de concurrencia competitiva, la motivación podrá remitirse a los informes o actas de los tribunales calificadores.</p></div>
+<hr />
+<h2 class="section-title">5. Eficacia de los actos administrativos</h2>
+
+<h3 class="sub-title">5.1. Regla general: Presunción de validez y eficacia inmediata</h3>
+<p>El <strong>artículo 39.1 de la LPACAP</strong> consagra la presunción legal de validez:</p>
+<div class="callout"><p><em>"Los actos de las Administraciones Públicas sujetos al Derecho Administrativo se presumirán válidos y producirán efectos desde la fecha en que se dicten, salvo que en ellos se disponga otra cosa."</em></p></div>
+<p>La presunción es de carácter <em>iuris tantum</em> (admite prueba en contrario mediante su impugnación y anulación formal).</p>
+<h3 class="sub-title">5.2. Eficacia demorada (artículo 39.2 LPACAP)</h3>
+<p>La eficacia del acto quedará demorada en los siguientes supuestos legalmente previstos:
+1. Cuando así lo exija el contenido del propio acto (sometimiento a condición suspensiva o plazo inicial).
+2. Cuando el acto esté supeditado a notificación o publicación oficial.
+3. Cuando requiera la aprobación preceptiva de una autoridad superior.</p>
+<h3 class="sub-title">5.3. Eficacia retroactiva excepcional (artículo 39.3 LPACAP)</h3>
+<p>Excepcionalmente, podrá otorgarse eficacia retroactiva a los actos:
+* Cuando se dicten en sustitución de actos anulados.
+* Cuando produzcan efectos favorables al interesado, siempre que los supuestos de hecho necesarios existieran ya en la fecha a que se retrotraiga la eficacia y ésta no lesione derechos o intereses legítimos de otras personas.</p>
+<h3 class="sub-title">5.4. La notificación de los actos administrativos</h3>
+<p>La notificación es el acto formal de comunicación individualizada mediante el cual se pone en conocimiento del administrado el contenido de una resolución que afecta a sus derechos o intereses:</p>
+<ul>
+<li><strong>Actos sujetos a notificación (art. 40.1 LPACAP):</strong> Se notificarán a los interesados las resoluciones y actos administrativos que afecten a sus derechos e intereses.</li>
+<li><strong>Plazo de notificación (art. 40.2 LPACAP):</strong> Toda notificación deberá ser cursada dentro del plazo de <strong>diez días</strong> a partir de la fecha en que el acto haya sido dictado.</li>
+<li><strong>Contenido preceptivo de la notificación:</strong></li>
+<li>El texto íntegro de la resolución.</li>
+<li>La indicación de si el acto pone o no fin a la vía administrativa.</li>
+<li>Los recursos que procedan en vía administrativa y judicial.</li>
+<li>El órgano ante el que hubieran de presentarse los recursos.</li>
+<li>El plazo legal para interponerlos.</li>
+<li><strong>Eficacia de las notificaciones defectuosas (art. 40.3 LPACAP):</strong> Las notificaciones que conteniendo el texto íntegro del acto omitan alguno de los demás requisitos surtirán efecto a partir de la fecha en que el interesado realice actuaciones que supongan el conocimiento del contenido o interponga cualquier recurso procedente.</li>
+</ul>
+<div class="diagram-box"><pre>                      RÉGIMEN DE NOTIFICACIÓN ELECTRÓNICA
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Sujetos Obligados a Relacionarse Electrónicamente (Art. 14.2 LPACAP):       │
+│ • Personas jurídicas y entidades sin personalidad jurídica.                 │
+│ • Quienes ejerzan una actividad profesional con colegiación obligatoria.    │
+│ • Empleados de las Administraciones Públicas para trámites funcionariales.  │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Puesta a disposición en Sede Electrónica:                                   │
+│ • La notificación se entiende practicada cuando el interesado o su repre-   │
+│   sentante accede formalmente a su contenido.                               │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Rechazo de la Notificación (Art. 43.2 LPACAP):                              │
+│ • Si transcurren DIEZ DÍAS NATURALES desde la puesta a disposición sin que  │
+│   se acceda al contenido, se entiende RECHAZADA la notificación.            │
+│ • Se tiene por efectuado el trámite formal siguiéndose el procedimiento.    │
+└─────────────────────────────────────────────────────────────────────────────┘
+</pre></div>
+<ul>
+<li><strong>Notificación infructuosa o edictal (artículo 44 LPACAP):</strong> Cuando los interesados en un procedimiento sean desconocidos, se ignore el lugar de la notificación o, intentada ésta, no se hubiese podido practicar, la notificación se hará por medio de un anuncio publicado exclusivamente en el <strong>Boletín Oficial del Estado (BOE)</strong>. Facultativamente, las CCAA o entes locales podrán publicarlo en sus diarios oficiales (BOJA) o tablones edictales.</li>
+</ul>
+<h3 class="sub-title">5.5. La publicación de los actos administrativos (artículo 45 LPACAP)</h3>
+<p>Los actos administrativos serán objeto de publicación oficial cuando:
+* El acto tenga por destinatario a una <strong>pluralidad indeterminada de personas</strong>.
+* Se trate de procedimientos selectivos o de concurrencia competitiva (oposiciones, concursos de méritos, convocatorias de subvenciones).
+* Así lo aconsejen razones de interés público apreciadas por el órgano competente.</p>
+<hr />
+<h2 class="section-title">6. Ejecutividad y ejecución forzosa de los actos administrativos</h2>
+
+<h3 class="sub-title">6.1. La autotutela ejecutiva (artículos 98 y 99 LPACAP)</h3>
+<p>Los actos de las Administraciones Públicas sujetos al Derecho Administrativo serán <strong>inmediatamente ejecutivos</strong> (art. 98.1 LPACAP), salvo que:
+1. Se produzca la suspensión formal de la eficacia del acto (en vía de recurso o judicial).
+2. Se trate de una resolución de un procedimiento sancionador contra la que quepa algún recurso ordinario en vía administrativa (hasta que no adquiera firmeza administrativa, la sanción no es ejecutiva: art. 98.1.b LPACAP).
+3. Una disposición legal establezca lo contrario o se requiera aprobación superior.</p>
+<ul>
+<li><strong>Ejecución forzosa (art. 99 LPACAP):</strong> Las Administraciones Públicas, a través de sus órganos competentes en cada caso, podrán proceder, previo apercibimiento, a la ejecución forzosa de los actos administrativos, salvo en los supuestos en que se suspenda la ejecución de acuerdo con la ley, o cuando la Constitución o la ley exijan la intervención de un órgano judicial.</li>
+</ul>
+<h3 class="sub-title">6.2. La suspensión de la ejecución en vía administrativa (artículo 117 LPACAP)</h3>
+<p>Como regla general, la interposición de cualquier recurso administrativo no suspende la ejecución del acto impugnado. No obstante, el órgano competente para resolverlo podrá suspenderla, de oficio o a solicitud del recurrente:
+* Si la ejecución pudiera causar <strong>perjuicios de imposible o difícil reparación</strong>.
+* Si la impugnación se fundamenta en alguna de las causas de <strong>nulidad de pleno derecho</strong> del artículo 47.1 LPACAP.
+* <strong>Silencio positivo en la suspensión (art. 117.3 LPACAP):</strong> La ejecución se entenderá suspendida si transcurrido <strong>un mes</strong> desde que la solicitud de suspensión haya tenido entrada en el registro de la Administración competente para decidir, el órgano no hubiera dictado y notificado resolución expresa.</p>
+<h3 class="sub-title">6.3. Los medios de ejecución forzosa (artículo 100 LPACAP)</h3>
+<p>Las Administraciones utilizarán el medio que resulte más adecuado, respetando el principio de proporcionalidad y eligiendo el medio que resulte menos gravoso para el obligado:</p>
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Medio de Ejecución</th>
+<th style="text-align: left;">Ámbito Material de Aplicación</th>
+<th style="text-align: left;">Procedimiento y Notas Distintivas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Apremio sobre el patrimonio</strong> <em>(art. 101)</em></td>
+<td style="text-align: left;">Deudas pecuniarias líquidas (impuestos, tasas, reintegro de subvenciones, multas).</td>
+<td style="text-align: left;">Se sigue el procedimiento del Reglamento General de Recaudación: providencia de apremio, recargos y embargo de cuentas o bienes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ejecución subsidiaria</strong> <em>(art. 102)</em></td>
+<td style="text-align: left;">Actos que por no ser personalísimos puedan ser realizados por persona distinta del obligado.</td>
+<td style="text-align: left;">La Administración realiza la prestación por sí o a través de terceros a costa del obligado (ej. demolición de obra ruinosa o retirada de escombros).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Multa coercitiva</strong> <em>(art. 103)</em></td>
+<td style="text-align: left;">Actos personalísimos o de hacer en los que no proceda la compulsión directa, o el deber sea reiterable.</td>
+<td style="text-align: left;">Imposición sucesiva y reiterada de multas en lapsos de tiempo para vencer la resistencia del obligado. Debe estar <strong>autorizada expresamente por ley</strong>. Compatible con sanciones administrativas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Compulsión sobre las personas</strong> <em>(art. 104)</em></td>
+<td style="text-align: left;">Actos personalísimos de no hacer o soportar.</td>
+<td style="text-align: left;">Ejercicio de coacción física legítima dentro del respeto a la dignidad personal y derechos fundamentales (ej. desalojo de edificio en ruina inminente o disolución de aglomeración peligrosa).</td>
+</tr>
+</tbody>
+</table>
+<div class="callout"><p><strong>AUTORIZACIÓN JUDICIAL DE ENTRADA EN DOMICILIO (art. 100.3 LPACAP y art. 8.6 LJCA):</strong>
+Si para la ejecución de un acto administrativo (ej. una orden de demolición o un desalojo forzoso) fuere necesario entrar en el domicilio del afectado o en los restantes lugares que requieran la autorización de su titular, la Administración debe obtener preceptivamente el consentimiento del titular o, en su defecto, la <strong>autorización judicial previa otorgada por el Juzgado de lo Contencioso-Administrativo</strong>.</p></div>
+<hr />
+<h2 class="section-title">7. Conclusión y trascendencia práctica en el Cuerpo Técnico Facultativo (A2)</h2>
+
+<p>El acto administrativo es la manifestación jurídica central de la actividad técnica de los funcionarios de la Junta de Andalucía. Cualquier informe técnico vinculante, propuesta de liquidación, resolución de concesión o trámite inspectivo constituye un acto administrativo sometido a las exigencias inexcusables de competencia, forma escrita y motivación exigidas por la Ley 39/2015. El conocimiento escrupuloso de los plazos de notificación, de los efectos del silencio administrativo y de los límites y garantías de la ejecución forzosa es la salvaguarda de los derechos de la ciudadanía andaluza y de la validez jurídica de la gestión pública autonómica.</p>
+<hr />
+<h2 class="section-title">8. Anexo: Tablas sinópticas de medios de ejecución forzosa y requisitos de notificación</h2>
+
+<div class="diagram-box"><pre>                     MEDIOS DE EJECUCIÓN FORZOSA (ART. 100 LPACAP)
+┌───────────────────────┬───────────────────────────────┬────────────────────────┐
+│ MEDIO DE EJECUCIÓN    │ TIPO DE OBLIGACIÓN            │ REQUISITO FORMAL       │
+├───────────────────────┼───────────────────────────────┼────────────────────────┤
+│ Apremio sobre el      │ Deudas pecuniarias líquidas   │ Providencia de apremio │
+│ patrimonio            │ dinerarias                    │ y título ejecutivo     │
+├───────────────────────┼───────────────────────────────┼────────────────────────┤
+│ Ejecución subsidiaria │ Obligaciones de hacer NO      │ Previo apercibimiento  │
+│                       │ personalísimas                │ y valoración económica │
+├───────────────────────┼───────────────────────────────┼────────────────────────┤
+│ Multa coercitiva      │ Actos personalísimos en los   │ Autorización expresa   │
+│                       │ que cabe reiteración temporal │ conferida por Ley      │
+├───────────────────────┼───────────────────────────────┼────────────────────────┤
+│ Compulsión sobre las  │ Obligaciones personalísimas de│ Autorización judicial  │
+│ personas              │ no hacer o soportar           │ previa para domicilio  │
+└───────────────────────┴───────────────────────────────┴────────────────────────┘
+</pre></div>
+
+</body>
+</html>

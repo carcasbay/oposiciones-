@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TEMA 14: La responsabilidad patrimonial de las Administraciones Públicas: Fundamento constitucional y marco normativo. Requisitos de la lesión indemnizable. Procedimiento ordinario y abreviado. Responsabilidad de autoridades y personal</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (Grupo A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #065f46;
+      font-weight: 500;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #059669;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #065f46;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #059669;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #059669;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #059669;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout p {
+    margin: 0;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #065f46;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #d1fae5;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f0fdf4;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO COMÚN — JUNTA DE ANDALUCÍA (GRUPO A2)</div>
+  <h1>TEMA 14</h1>
+  <h2>La responsabilidad patrimonial de las Administraciones Públicas: Fundamento constitucional y marco normativo. Requisitos de la lesión indemnizable. Procedimiento ordinario y abreviado. Responsabilidad de autoridades y personal</h2>
+  <div class="meta-box">
+    <p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+    <p><strong>Especialidad:</strong> Materias Comunes (Grupo A2)</p>
+    <p><strong>Bloque:</strong> Materias Comunes</p>
+    <p><strong>Tema Oficial:</strong> 14</p>
+    <p><strong>Normativa Clave:</strong> Constitución Española de 1978 (arts. 9.3, 106.2 y 149.1.18ª); Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (arts. 32 a 37); Ley 39/2015, de 1 de octubre, del PACAP (arts. 65, 67, 81, 91, 92 y 96); Ley 4/2005, de 8 de abril, del Consejo Consultivo de Andalucía; Sentencia del Tribunal de Justicia de la Unión Europea (Gran Sala) de 28 de junio de 2022 (Asunto C-278/20, Comisión/España).</p>
+
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General de TEMA 14</div>
+  <div class="toc-item level-1">1. <strong>Fundamento constitucional y evolución histórica de la responsabilidad patrimonial</strong></div>
+  <div class="toc-item level-2">1.1. Del dogma de la irresponsabilidad soberana a la cláusula del Estado social de Derecho</div>
+  <div class="toc-item level-2">1.2. El marco constitucional: Artículos 106.2, 9.3 y 149.1.18ª CE</div>
+  <div class="toc-item level-2">1.3. La bifurcación normativa en 2015: Ley 40/2015 (sustantiva) y Ley 39/2015 (adjetiva)</div>
+  <div class="toc-item level-1">2. <strong>Caracteres dogmáticos del sistema español de responsabilidad patrimonial</strong></div>
+  <div class="toc-item level-2">2.1. Sistema unitario y general: Cobertura universal de la actividad administrativa</div>
+  <div class="toc-item level-2">2.2. Sistema de responsabilidad directa: Superación de la vía subsidiaria</div>
+  <div class="toc-item level-2">2.3. Sistema objetivo: Funcionamiento normal o anormal y principio de socialización del riesgo</div>
+  <div class="toc-item level-1">3. <strong>Requisitos sustantivos de la lesión indemnizable</strong></div>
+  <div class="toc-item level-2">3.1. Existencia de un daño o lesión material: Efectivo, evaluable e individualizado</div>
+  <div class="toc-item level-2">3.2. El concepto de antijuridicidad: El deber jurídico de soportar el daño y estándares de servicio</div>
+  <div class="toc-item level-2">3.3. Título de imputación y relación de causalidad</div>
+  <div class="toc-item level-2">3.4. Ruptura del nexo causal: Fuerza mayor frente a caso fortuito</div>
+  <div class="toc-item level-2">3.5. Concurrencia de causas: Culpa de la víctima, intervención de terceros y responsabilidad compartida (art. 33 Ley 40/2015)</div>
+  <div class="toc-item level-1">4. <strong>Modalidades específicas de responsabilidad patrimonial</strong></div>
+  <div class="toc-item level-2">4.1. Responsabilidad patrimonial por actos de concesionarios y contratistas públicos</div>
+  <div class="toc-item level-2">4.2. Responsabilidad del Estado legislador por leyes inconstitucionales (art. 32.4 Ley 40/2015)</div>
+  <div class="toc-item level-2">4.3. Responsabilidad por infracción del Derecho de la Unión Europea: La STJUE de 28 de junio de 2022</div>
+  <div class="toc-item level-2">4.4. Responsabilidad derivada de la Administración de Justicia (error judicial y funcionamiento anormal)</div>
+  <div class="toc-item level-1">5. <strong>Determinación de la indemnización</strong></div>
+  <div class="toc-item level-2">5.1. Principio de reparación integral (*restitutio in integrum*)</div>
+  <div class="toc-item level-2">5.2. Criterios y baremos de valoración (art. 34 Ley 40/2015)</div>
+  <div class="toc-item level-2">5.3. Momento temporal de valoración y actualización de cuantías</div>
+  <div class="toc-item level-2">5.4. Formas de abono: Pago en metálico, compensación en especie y pagos periódicos</div>
+  <div class="toc-item level-1">6. <strong>Procedimiento de responsabilidad patrimonial</strong></div>
+  <div class="toc-item level-2">6.1. Iniciación del procedimiento: De oficio y a solicitud de interesado (art. 67 Ley 39/2015)</div>
+  <div class="toc-item level-2">6.2. El plazo de prescripción de un año: *Dies a quo* en daños físicos, psíquicos y continuados</div>
+  <div class="toc-item level-2">6.3. Instrucción: Informe preceptivo del servicio causante (art. 81.1) y dictamen del Consejo Consultivo de Andalucía</div>
+  <div class="toc-item level-2">6.4. Terminación convencional y propuesta de acuerdo (art. 86 y 91 Ley 39/2015)</div>
+  <div class="toc-item level-2">6.5. Resolución expresa, plazo máximo (seis meses) y efectos del silencio desestimatorio</div>
+  <div class="toc-item level-2">6.6. Tramitación simplificada del procedimiento (art. 96 Ley 39/2015)</div>
+  <div class="toc-item level-1">7. <strong>Responsabilidad de autoridades y del personal al servicio de las Administraciones Públicas</strong></div>
+  <div class="toc-item level-2">7.1. Exigencia directa frente a la Administración y prohibición de demanda directa al funcionario</div>
+  <div class="toc-item level-2">7.2. La acción de regreso administrativa (art. 36 Ley 40/2015): Requisitos, dolo y culpa grave</div>
+  <div class="toc-item level-2">7.3. Responsabilidad por daños a los bienes de la propia Administración</div>
+  <div class="toc-item level-2">7.4. Responsabilidad penal y civil derivada de delito (art. 37 Ley 40/2015)</div>
+  <div class="toc-item level-1">8. <strong>Conclusiones y mapa competencial en la Junta de Andalucía</strong></div>
+  <div class="toc-item level-1">9. <strong>Anexo: Tabla sinóptica y mapas conceptuales del Tema 14</strong></div>
+
+</div>
+
+<h2 class="section-title">1. Fundamento constitucional y evolución histórica de la responsabilidad patrimonial</h2>
+
+<h3 class="sub-title">1.1. Del dogma de la irresponsabilidad soberana a la cláusula del Estado social de Derecho</h3>
+<p>Históricamente, los regímenes absolutistas consagraban la máxima de que "el Rey no puede hacer el mal" (<em>the King can do no wrong</em>), derivando en la irresponsabilidad patrimonial del Estado. El Estado de Derecho contemporáneo quiebra este postulado al erigir la responsabilidad del poder público como una garantía esencial de la ciudadanía frente a las cargas desproporcionadas derivadas de la acción administrativa.</p>
+<h3 class="sub-title">1.2. El marco constitucional</h3>
+<p>La Constitución Española de 1978 sitúa a España en la vanguardia del Derecho comparado al dotar a la institución de un anclaje constitucional directo:
+* <strong>Artículo 9.3 CE:</strong> Garantiza el principio de legalidad, la jerarquía normativa, la publicidad de las normas, la irretroactividad de las disposiciones sancionadoras no favorables o restrictivas de derechos individuales, la seguridad jurídica, la interdicción de la arbitrariedad y la <strong>responsabilidad de los poderes públicos</strong>.
+* <strong>Artículo 106.2 CE (Precepto angular):</strong></p>
+<div class="callout"><p><em>"Los particulares, en los términos establecidos por la ley, tendrán derecho a ser indemnizados por toda lesión que sufran en cualquiera de sus bienes y derechos, salvo en los casos de fuerza mayor, siempre que la lesión sea consecuencia del funcionamiento de los servicios públicos."</em>
+* <strong>Artículo 149.1.18ª CE:</strong> Atribuye al Estado la competencia exclusiva para fijar el <strong>sistema de responsabilidad de todas las Administraciones Públicas</strong>, garantizando un régimen indemnizatorio homogéneo e igualitario en todo el territorio nacional.</p></div>
+<h3 class="sub-title">1.3. La bifurcación normativa en 2015</h3>
+<p>Con la reforma legislativa de 2015, el régimen común se escindió en dos cuerpos normativos complementarios:
+1. <strong>Régimen sustantivo:</strong> Regulado en el <strong>Capítulo IV del Título Preliminar de la Ley 40/2015 (arts. 32 a 37)</strong>, comprensivo de los requisitos de la lesión, los títulos de imputación, la valoración del daño, la concurrencia de causas y la acción de regreso contra el personal.
+2. <strong>Régimen adjetivo o procedimental:</strong> Regulado en la <strong>Ley 39/2015 (arts. 65, 67, 81, 91, 92 y 96)</strong>, que integra las especialidades del procedimiento administrativo de reclamación en el cauce común ordinario y simplificado.</p>
+<hr />
+<h2 class="section-title">2. Caracteres dogmáticos del sistema español de responsabilidad patrimonial</h2>
+
+<p>El sistema español se distingue por tres notas estructurales definidas por el Tribunal Supremo:</p>
+<div class="diagram-box"><pre>                  RASGOS DEL SISTEMA DE RESPONSABILIDAD
+   ┌───────────────────────┐ ┌───────────────────────┐ ┌───────────────────────┐
+   │       UNITARIO        │ │        DIRECTO        │ │        OBJETIVO       │
+   │  (Art. 149.1.18ª CE)  │ │   (Art. 36.1 LRJSP)   │ │   (Art. 32.1 LRJSP)   │
+   ├───────────────────────┤ ├───────────────────────┤ ├───────────────────────┤
+   │ Aplica por igual a    │ La víctima demanda      │ No exige culpa ni     │
+   │ AGE, Comunidades      │ directamente a la       │ negligencia. Cubre el │
+   │ Autónomas, Entidades  │ Administración, no al   │ funcionamiento tanto  │
+   │ Locales y sector      │ funcionario que causó   │ &quot;normal&quot; como         │
+   │ público instrumental. │ materialmente el daño.  │ &quot;anormal&quot; del servicio│
+   └───────────────────────┘ └───────────────────────┘ └───────────────────────┘
+</pre></div>
+<ol>
+<li><strong>Unitario y general:</strong> No se circunscribe a la actividad de Derecho Administrativo clásico, sino que cubre los actos de gestión privada de la Administración, las omisiones de vigilancia y la actuación de entes instrumentales.</li>
+<li><strong>Directo:</strong> El particular perjudicado acciona directamente contra la Administración titular del servicio público, sin que sea preciso individualizar la culpa de un agente concreto ni litigar previamente contra el empleado público.</li>
+<li><strong>Objetivo:</strong> Se fundamenta en el principio del <strong>riesgo creado</strong> y en la <strong>solidaridad social</strong>: los perjuicios singulares causados por una actividad pública en beneficio de la colectividad no deben ser soportados en solitario por el ciudadano lesionado.</li>
+</ol>
+<hr />
+<h2 class="section-title">3. Requisitos sustantivos de la lesión indemnizable</h2>
+
+<p>Para que nazca el derecho a la indemnización, la jurisprudencia del Tribunal Supremo exige la concurrencia cumulativa de cuatro presupuestos:</p>
+<div class="diagram-box"><pre>                              PRESUPUESTOS CUMULATIVOS
+┌─────────────────────────┬─────────────────────────┬─────────────────────────┐
+│     1. DAÑO EFECTIVO    │    2. ANTIJURIDICIDAD   │  3. NEXO DE CAUSALIDAD  │
+│    E INDIVIDUALIZADO    │  DEL DAÑO (SIN DEBER)   │   CON SERVICIO PÚBLICO  │
+├─────────────────────────┼─────────────────────────┼─────────────────────────┤
+│ • Real y constatado.    │ • El lesionado no tenga │ • Causa adecuada y      │
+│ • Evaluable en dinero.  │   el deber jurídico de  │   eficiente imputable a │
+│ • Individualizado en    │   soportarlo según la   │   la Administración.    │
+│   persona o grupo.      │   ley o los estándares. │ • Ausencia fuerza mayor.│
+└─────────────────────────┴─────────────────────────┴─────────────────────────┘
+</pre></div>
+<h3 class="sub-title">3.1. Existencia del daño</h3>
+<ul>
+<li><strong>Efectivo y real:</strong> Quedan excluidos los daños hipotéticos, contingentes o meras expectativas de ganancia no acreditadas.</li>
+<li><strong>Evaluable económicamente:</strong> Susceptible de cuantificación monetaria objetiva, comprendiendo tanto el <strong>daño material</strong> (<em>daño emergente</em> y <em>lucro cesante</em>) como el <strong>daño moral</strong> (sufrimiento psicológico, dolor corporal, pérdida de agrado).</li>
+<li><strong>Individualizado:</strong> Referido a una persona singular o a un grupo determinado o fácilmente determinable de personas. No son indemnizables los sacrificios generales o cargas genéricas impuestas por la convivencia social o las leyes a toda la ciudadanía.</li>
+</ul>
+<h3 class="sub-title">3.2. La antijuridicidad del daño</h3>
+<p>El artículo 32.1 de la Ley 40/2015 precisa que los particulares tienen derecho a ser indemnizados <em>"salvo en los casos de fuerza mayor o de daños que el particular tenga el deber jurídico de soportar de acuerdo con la Ley"</em>.
+* La antijuridicidad no radica en la conducta de la Administración (que puede ser formalmente legal), sino en el <strong>resultado lesivo</strong>: el ciudadano no está obligado por ninguna norma a sufrir ese detrimento patrimonial.
+* <strong>El estándar de rendimiento del servicio:</strong> En materias técnicas o sanitarias (ámbito de la <em>lex artis ad hoc</em>), si la Administración prestó el servicio conforme a los protocolos científicos y técnicos disponibles en el momento, el daño no se considera antijurídico, debiendo el ciudadano soportarlo al ser un riesgo inherente al estado de la ciencia (art. 34.1 LRJSP).</p>
+<h3 class="sub-title">3.3. Relación de causalidad: Fuerza mayor frente a caso fortuito</h3>
+<p>El daño debe ser consecuencia directa del funcionamiento del servicio público, aplicándose la teoría de la <strong>causalidad adecuada</strong>:
+* <strong>Fuerza mayor (Causa de exoneración absoluta):</strong> Suceso exterior a la esfera del servicio público, absolutamente imprevisible e inevitable aun empleando la mayor diligencia (ej. terremoto, inundación catastrófica extraordinaria que supere todos los periodos de retorno históricos). <strong>Exonera de responsabilidad a la Administración</strong> (art. 106.2 CE).
+* <strong>Caso fortuito (No exonera a la Administración):</strong> Suceso que, aunque imprevisible o inevitable, es <strong>interno y consustancial al funcionamiento ordinario del servicio</strong> o a los medios materiales empleados (ej. rotura imprevista de una tubería de abastecimiento de agua por fatiga del material, fallo en el sistema de frenos de un vehículo oficial). <strong>La Administración responde plenamente</strong>.</p>
+<h3 class="sub-title">3.4. Concurrencia de causas y responsabilidad compartida (art. 33 Ley 40/2015)</h3>
+<ul>
+<li><strong>Concurrencia de la propia víctima:</strong> Si el administrado contribuyó negligentemente a la causación del daño (ej. cruzar una calzada en obras saltándose vallas señalizadas), la indemnización se modera proporcionalmente (<em>concurrencia de culpas</em>) o se extingue si la culpa exclusiva de la víctima rompe el nexo causal.</li>
+<li><strong>Responsabilidad concurrente de varias Administraciones Públicas (art. 33 LRJSP):</strong></li>
+<li>Cuando derive de fórmulas conjuntas de actuación (ej. consorcio, convenio de colaboración), responderán de forma <strong>solidaria</strong>, salvo que el instrumento de cooperación distribuya la responsabilidad de forma expresa.</li>
+<li>Cuando no sea posible determinar qué Administración produjo materialmente el daño, la responsabilidad será igualmente <strong>solidaria</strong>.</li>
+<li>Si la actuación deriva de competencias concurrentes, la responsabilidad se distribuirá según criterios de interés público tutelado, intensidad de la intervención y competencias respectivas.</li>
+</ul>
+<hr />
+<h2 class="section-title">4. Modalidades específicas de responsabilidad patrimonial</h2>
+
+<h3 class="sub-title">4.1. Responsabilidad por actos de contratistas públicos</h3>
+<p>De acuerdo con el artículo 196 de la Ley 9/2017 (LCSP), la regla general es que la obligación de indemnizar los daños y perjuicios causados a terceros como consecuencia de las operaciones de ejecución de un contrato público corresponde al <strong>contratista</strong>.</p>
+<p><strong>Excepciones donde responde la Administración directamente:</strong>
+1. Cuando el daño sea consecuencia inmediata y directa de una <strong>orden directa dada por la Administración</strong> al contratista.
+2. Cuando el daño se derive de los <strong>vicios del proyecto</strong> elaborado por la propia Administración en el contrato de obras.</p>
+<h3 class="sub-title">4.2. Responsabilidad del Estado legislador (art. 32.3 a 32.6 Ley 40/2015)</h3>
+<p>Procede cuando los daños deriven de la aplicación de normas con rango de ley:
+* <strong>Leyes declaradas inconstitucionales (art. 32.4):</strong> Procede cuando el particular haya obtenido, en cualquier instancia, sentencia firme desestimatoria de un recurso contra la actuación administrativa que ocasionó el daño, siempre que el particular hubiera alegado la inconstitucionalidad posteriormente declarada.
+* <strong>Leyes contrarias al Derecho de la Unión Europea (art. 32.5):</strong> La <strong>Sentencia del TJUE de 28 de junio de 2022 (Asunto C-278/20)</strong> declaró contrarias a los principios de efectividad y equivalencia de la UE las restricciones desproporcionadas impuestas por el legislador español en la Ley 40/2015 (que exigían sentencia firme desestimatoria previa habiendo invocado la norma comunitaria y limitaban la indemnización a los cinco años anteriores). El régimen ha sido flexibilizado para garantizar la reparación efectiva de los daños causados por vulneración del Derecho comunitario.</p>
+<hr />
+<h2 class="section-title">5. Determinación de la indemnización</h2>
+
+<h3 class="sub-title">5.1. Principio de reparación integral</h3>
+<p>La indemnización debe colocar al perjudicado en la misma situación patrimonial en que se encontraría de no haberse producido el hecho lesivo (<em>principio de indemnidad</em>).</p>
+<h3 class="sub-title">5.2. Criterios y baremos de valoración (art. 34 Ley 40/2015)</h3>
+<ul>
+<li>La indemnización se calculará con arreglo a los criterios de valoración establecidos en la <strong>legislación fiscal, de expropiación forzosa y demás normas aplicables</strong>, ponderándose, en su caso, las valoraciones predominantes en el mercado.</li>
+<li>En casos de muerte o lesiones corporales, se utilizará con carácter general preceptivo o analógico el <strong>Baremo de accidentes de tráfico</strong> (Texto Refundido de la Ley sobre Responsabilidad Civil y Seguro en la Circulación de Vehículos a Motor, aprobado por Real Decreto Legislativo 8/2004).</li>
+</ul>
+<h3 class="sub-title">5.3. Momento temporal y actualización de la cuantía (art. 34.3)</h3>
+<p>La cuantía de la indemnización se calculará con referencia al <strong>día en que la lesión efectivamente se produjo</strong>, sin perjuicio de su <strong>actualización a la fecha en que se ponga fin al procedimiento</strong> de responsabilidad con arreglo al Índice de Precios al Consumo (IPC) y de los intereses que procedan por demora.</p>
+<h3 class="sub-title">5.4. Formas de abono (art. 34.4)</h3>
+<p>La indemnización podrá abonarse mediante:
+1. Pago de una suma alzada en metálico (regla general).
+2. <strong>Compensación en especie</strong>, cuando resulte más adecuado para lograr la reparación debida y convenga al interés público.
+3. <strong>Pagos periódicos</strong>, siempre que conste el acuerdo con el interesado.</p>
+<hr />
+<h2 class="section-title">6. Procedimiento de responsabilidad patrimonial</h2>
+
+<p>El procedimiento se rige por las especialidades de la Ley 39/2015:</p>
+<div class="diagram-box"><pre>                     PROCEDIMIENTO DE RESPONSABILIDAD
+┌───────────────────┬──────────────────────────────────────────────────────────┐
+│ FASE              │ REGLAS Y PLAZOS ESPECÍFICOS                              │
+├───────────────────┼──────────────────────────────────────────────────────────┤
+│ Iniciación        │ • A instancia de parte o de oficio (art. 65 y 67).       │
+│                   │ • Plazo de prescripción: UN AÑO desde el hecho lesivo o  │
+│                   │   desde la determinación del alcance secuelar/alta.      │
+├───────────────────┼──────────────────────────────────────────────────────────┤
+│ Instrucción       │ • Informe preceptivo del servicio causante (10 días).    │
+│                   │ • Pruebas y alegaciones. Audiencia previa (10-15 días).  │
+│                   │ • Dictamen del Consejo Consultivo de Andalucía cuando    │
+│                   │   la indemnización supere 50.000 € (o ley sectorial).    │
+├───────────────────┼──────────────────────────────────────────────────────────┤
+│ Resolución        │ • Plazo máximo legal: SEIS MESES (art. 91.3 LPACAP).     │
+│                   │ • Efecto del silencio administrativo: DESESTIMATORIO.    │
+├───────────────────┼──────────────────────────────────────────────────────────┤
+│ Vía Abreviada     │ • Plazo de tramitación: TREINTA DÍAS HÁBILES (art. 96).  │
+│                   │ • Requiere certeza en el nexo causal, daño y cuantía.    │
+└───────────────────┴──────────────────────────────────────────────────────────┘
+</pre></div>
+<h3 class="sub-title">6.1. El plazo de prescripción de un año (art. 67.1 Ley 39/2015)</h3>
+<p>El derecho a reclamar prescribirá al <strong>año</strong> de producido el hecho o el acto que motive la indemnización o de manifestarse su efecto lesivo:
+* <strong>En caso de daños de carácter físico o psíquico a las personas:</strong> El plazo empezará a computarse desde la <strong>curación o la determinación del alcance de las secuelas</strong> (fecha del alta médica definitiva o resolución firme de incapacidad).
+* <strong>En casos de anulación en vía administrativa o judicial de un acto o disposición:</strong> El plazo de un año se computará desde la <strong>notificación de la resolución administrativa o de la sentencia firme</strong>.
+* <strong>Por daños derivados de leyes inconstitucionales o contrarias al Derecho de la UE:</strong> El plazo de un año se computará desde la publicación en el BOE o en el DOUE de la sentencia declarativa.</p>
+<h3 class="sub-title">6.2. El dictamen del Consejo Consultivo de Andalucía</h3>
+<p>En el ámbito de la Junta de Andalucía, conforme a la <strong>Ley 4/2005 del Consejo Consultivo de Andalucía (art. 17.10)</strong>, es <strong>preceptivo solicitar dictamen</strong> del Consejo Consultivo en los expedientes de responsabilidad patrimonial tramitados por la Junta de Andalucía o por las entidades locales andaluzas cuando la cuantía reclamada sea superior a <strong>50.000 euros</strong>.</p>
+<hr />
+<h2 class="section-title">7. Responsabilidad de autoridades y del personal al servicio de las Administraciones Públicas</h2>
+
+<h3 class="sub-title">7.1. Exigencia directa frente a la Administración (art. 36.1 Ley 40/2015)</h3>
+<p>Los particulares exigirán directamente a las Administraciones Públicas correspondientes las indemnizaciones por los daños causados por las autoridades y personal a su servicio. Se proscribe cualquier demanda civil o administrativa directa de la víctima contra el funcionario o empleado en el ejercicio de sus funciones.</p>
+<h3 class="sub-title">7.2. La acción de regreso (art. 36.2 Ley 40/2015)</h3>
+<p>Una vez satisfecha la indemnización al particular lesionado, la Administración tiene la <strong>obligación legal de exigir de oficio</strong> de sus autoridades y demás personal a su servicio la responsabilidad en que hubieran incurrido:
+* <strong>Presupuesto subjetivo:</strong> Solo procede si concurre <strong>dolo, o culpa o negligencia graves</strong>. Queda excluida la culpa leve o el error profesional excusable.
+* <strong>Criterios de ponderación (art. 36.3):</strong> Para hacer efectiva la responsabilidad, se ponderarán:
+  * El resultado dañoso producido.
+  * El grado de culpabilidad.
+  * La responsabilidad profesional del personal.
+  * Su relación con la producción del resultado lesivo.</p>
+<h3 class="sub-title">7.3. Daños a los bienes propios de la Administración (art. 36.5 Ley 40/2015)</h3>
+<p>Asimismo, la Administración instruirá procedimiento disciplinario/patrimonial e indemnizatorio contra su personal cuando éste, mediando dolo o culpa grave, cause daños directos en los bienes o derechos de la propia Administración Pública.</p>
+<h3 class="sub-title">7.4. Responsabilidad penal y civil derivada del delito (art. 37 Ley 40/2015)</h3>
+<ul>
+<li>La exigencia de responsabilidad penal del personal no suspende los procedimientos de reconocimiento de responsabilidad patrimonial que se instruyan, salvo que la fijación de los hechos por el orden judicial penal sea necesaria para la determinación de la responsabilidad administrativa.</li>
+<li>En el proceso penal, la Administración Pública responderá subsidiariamente de los daños causados por delitos cometidos por sus autoridades, funcionarios y agentes en el ejercicio de sus cargos (art. 121 del Código Penal).</li>
+</ul>
+<hr />
+<h2 class="section-title">8. Conclusiones y mapa competencial en la Junta de Andalucía</h2>
+
+<p>El sistema de responsabilidad patrimonial constituye una institución garantista nuclear en la Junta de Andalucía:
+1. Permite compensar a los ciudadanos por los daños y perjuicios derivados del funcionamiento de los servicios públicos esenciales (sanidad, carreteras, educación, medio ambiente) sin exigirles una prueba diabólica de culpa personal.
+2. Exige a las Secretarías Generales Técnicas y órganos instructores un riguroso cumplimiento de los plazos de prescripción anual, la valoración pericial conforme a baremos oficiales y el trámite preceptivo ante el <strong>Consejo Consultivo de Andalucía</strong>.
+3. Reserva la acción de regreso como un mecanismo moralizador y de salvaguarda de los caudales públicos frente a actuaciones funcionariales presididas por dolo o culpa temeraria.</p>
+<hr />
+<h2 class="section-title">9. Anexo: Tabla sinóptica y mapas conceptuales del Tema 14</h2>
+
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Elemento</th>
+<th style="text-align: left;">Precepto Legal</th>
+<th style="text-align: left;">Criterio Jurídico Aplicable</th>
+<th style="text-align: left;">Consecuencia Práctica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Fundamento Constitucional</strong></td>
+<td style="text-align: left;">Art. 106.2 CE</td>
+<td style="text-align: left;">Derecho subjetivo a ser indemnizado por lesión administrativa.</td>
+<td style="text-align: left;">Cobertura universal de todas las Administraciones Públicas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título de Imputación</strong></td>
+<td style="text-align: left;">Art. 32 LRJSP</td>
+<td style="text-align: left;">Funcionamiento normal o anormal de los servicios públicos.</td>
+<td style="text-align: left;">Sistema objetivo: no precisa culpa del empleado público.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Fuerza Mayor</strong></td>
+<td style="text-align: left;">Art. 106.2 CE y 32 LRJSP</td>
+<td style="text-align: left;">Causa exterior, imprevisible e irresistible.</td>
+<td style="text-align: left;">Exonera de responsabilidad a la Administración pública.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Caso Fortuito</strong></td>
+<td style="text-align: left;">Jurisprudencia TS</td>
+<td style="text-align: left;">Causa interna al servicio público, aunque imprevisible.</td>
+<td style="text-align: left;">NO exonera: la Administración indemniza el daño.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Plazo de Prescripción</strong></td>
+<td style="text-align: left;">Art. 67.1 LPACAP</td>
+<td style="text-align: left;">UN AÑO desde el hecho lesivo o alta/secuelas definitivas.</td>
+<td style="text-align: left;">Prescripción extintiva de la acción de reclamación.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Dictamen Consultivo</strong></td>
+<td style="text-align: left;">Ley 4/2005 CCA</td>
+<td style="text-align: left;">Preceptivo en cuantías superiores a 50.000 € en Andalucía.</td>
+<td style="text-align: left;">Trámite esencial de garantía jurídica previa a resolver.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Plazo de Resolución</strong></td>
+<td style="text-align: left;">Art. 91.3 LPACAP</td>
+<td style="text-align: left;">SEIS MESES en el procedimiento ordinario.</td>
+<td style="text-align: left;">Silencio administrativo con efecto DESESTIMATORIO.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Procedimiento Simplificado</strong></td>
+<td style="text-align: left;">Art. 96 LPACAP</td>
+<td style="text-align: left;">Plazo de 30 días si el daño y cuantía son inequívocos.</td>
+<td style="text-align: left;">Agilización formal y resolución sumaria.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Acción de Regreso</strong></td>
+<td style="text-align: left;">Art. 36.2 LRJSP</td>
+<td style="text-align: left;">Deber de la Administración de repetir contra el funcionario.</td>
+<td style="text-align: left;">Solo exigible si concurrió DOLO o CULPA GRAVE.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Daño en Contratistas</strong></td>
+<td style="text-align: left;">Art. 196 LCSP</td>
+<td style="text-align: left;">Responsabilidad del contratista como regla general.</td>
+<td style="text-align: left;">Responde la Administración si hubo orden directa o vicio de proyecto.</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

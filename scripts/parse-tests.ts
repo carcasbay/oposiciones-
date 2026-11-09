@@ -35,7 +35,9 @@ export interface TemaInfo {
 function parseMarkdownTest(
   filePath: string,
   temasMarkdownDir: string,
-  oposicionId: OposicionId
+  oposicionId: OposicionId,
+  bloqueForzado?: 'comun' | 'especifico',
+  idOffset: number = 0
 ): { tema: TemaInfo; preguntas: Pregunta[] } | null {
   const content = fs.readFileSync(filePath, 'utf-8');
   const fileName = path.basename(filePath);
@@ -50,7 +52,6 @@ function parseMarkdownTest(
 
   // 2. Extraer título del tema
   let temaTitulo = '';
-  // Formato standard: # TEMA X — Titulo
   const standardTitleMatch = content.match(/^#\s*TEMA\s*\d+\s*[—–-]\s*(.+)$/m);
   if (standardTitleMatch) {
     temaTitulo = standardTitleMatch[1].trim();
@@ -96,6 +97,8 @@ function parseMarkdownTest(
     if (currentSolNum !== null && currentLetra !== null) {
       let texto = currentJustificacion.join(' ').trim();
       texto = texto.replace(/^\*?Justificación\*?:\s*/i, '').trim();
+      texto = texto.replace(/^\*\*\s*[—–-]?\s*/, '').trim();
+      texto = texto.replace(/^[—–-]\s*/, '').trim();
       mapaSoluciones.set(currentSolNum, {
         letra: currentLetra,
         justificacion: texto,
@@ -110,15 +113,17 @@ function parseMarkdownTest(
     const line = rawLine.trim();
     if (!line) continue;
 
-    const matchSol = line.match(/^(\d+)\.\s*(?:\*\*)?([a-dA-D])[\)\.]?\s*(.*)$/i);
+    const matchSol = line.match(/^(\d+)\.\s*(?:\*\*)?([a-dA-D])[\)\.]?(?:\*\*)?\s*(.*)$/i);
     if (matchSol) {
       flushSolucion();
       currentSolNum = parseInt(matchSol[1], 10);
       currentLetra = matchSol[2].toLowerCase() as 'a' | 'b' | 'c' | 'd';
 
       let resto = (matchSol[3] || '').trim();
+      resto = resto.replace(/^\*\*\s*/, '').trim();
       resto = resto.replace(/\*\*$/, '').trim();
       resto = resto.replace(/^[—–-]\s*/, '').trim();
+      resto = resto.replace(/^\*\*\s*/, '').trim();
 
       if (resto) {
         currentJustificacion.push(resto);
@@ -150,7 +155,7 @@ function parseMarkdownTest(
         numero: parseInt(matchHeaderPregunta[1], 10),
         lineas: [],
       };
-    } else if (matchNumeroPregunta && !trimmed.startsWith('#') && !trimmed.startsWith('---')) {
+    } else if (matchNumeroPregunta && !trimmed.startsWith('**') && !/^[a-dA-D][\)\.]/.test(trimmed)) {
       if (bloqueActual) {
         bloquesPreguntas.push(bloqueActual);
       }
@@ -166,46 +171,39 @@ function parseMarkdownTest(
     bloquesPreguntas.push(bloqueActual);
   }
 
+  // 6. Extraer enunciado y opciones de cada bloque
   const preguntas: Pregunta[] = [];
 
-  for (const bloque of bloquesPreguntas) {
-    const numero = bloque.numero;
-    const lineas = bloque.lineas;
+  for (const bp of bloquesPreguntas) {
+    const numero = bp.numero;
+    const sol = mapaSoluciones.get(numero);
 
-    let enunciadoPartes: string[] = [];
-    let opciones: Partial<OpcionesPregunta> = {};
-    let opcionActual: 'a' | 'b' | 'c' | 'd' | null = null;
-    let opcionTextoPartes: string[] = [];
+    let enunciado = '';
+    const opciones: Record<'a' | 'b' | 'c' | 'd', string> = { a: '', b: '', c: '', d: '' };
+    let currentOpt: 'a' | 'b' | 'c' | 'd' | null = null;
+    const lineasEnunciado: string[] = [];
 
-    const flushOpcion = () => {
-      if (opcionActual) {
-        opciones[opcionActual] = opcionTextoPartes.join(' ').trim();
-      }
-      opcionActual = null;
-      opcionTextoPartes = [];
-    };
-
-    for (const rawLine of lineas) {
+    for (const rawLine of bp.lineas) {
       const line = rawLine.trim();
-      if (!line) continue;
+      const matchOpt = line.match(/^([a-dA-D])[\)\.\-]\s*(.*)$/);
 
-      const matchOpcion = line.match(/^([a-dA-D])[\)\.]\s*(.*)$/);
-      if (matchOpcion) {
-        flushOpcion();
-        opcionActual = matchOpcion[1].toLowerCase() as 'a' | 'b' | 'c' | 'd';
-        if (matchOpcion[2]) {
-          opcionTextoPartes.push(matchOpcion[2].trim());
-        }
-      } else if (opcionActual) {
-        opcionTextoPartes.push(line);
+      if (matchOpt) {
+        currentOpt = matchOpt[1].toLowerCase() as 'a' | 'b' | 'c' | 'd';
+        opciones[currentOpt] = matchOpt[2].trim();
+      } else if (currentOpt) {
+        opciones[currentOpt] += ' ' + line;
       } else {
-        enunciadoPartes.push(line);
+        lineasEnunciado.push(line);
       }
     }
-    flushOpcion();
 
-    const enunciado = enunciadoPartes.join(' ').trim();
-    const sol = mapaSoluciones.get(numero);
+    enunciado = lineasEnunciado.join(' ').trim();
+    enunciado = enunciado.replace(/^\*{1,2}/, '').replace(/\*{1,2}$/, '').trim();
+
+    if (!enunciado) {
+      console.warn(`[PARSER WARNING] Pregunta ${numero} de Tema ${temaNumero} (${oposicionId}) no tiene enunciado.`);
+      continue;
+    }
 
     if (!sol) {
       console.warn(`[PARSER WARNING] No se encontró solución para pregunta ${numero} de Tema ${temaNumero} (${oposicionId})`);
@@ -215,11 +213,17 @@ function parseMarkdownTest(
       console.warn(`[PARSER WARNING] Opciones incompletas en pregunta ${numero} de Tema ${temaNumero} (${oposicionId})`);
     }
 
-    const idPrefix = oposicionId === 'andalucia' ? `and_t${temaNumero}` : `t${temaNumero}`;
+    const idNum = idOffset + temaNumero;
+    let idPrefix: string;
+    if (oposicionId === 'andalucia') {
+      idPrefix = bloqueForzado === 'comun' ? `and_c${temaNumero}` : `and_e${temaNumero}`;
+    } else {
+      idPrefix = `t${temaNumero}`;
+    }
 
     preguntas.push({
       id: `${idPrefix}_q${numero}`,
-      temaId: temaNumero,
+      temaId: idNum,
       temaTitulo: temaTitulo,
       numero: numero,
       enunciado: enunciado,
@@ -236,12 +240,12 @@ function parseMarkdownTest(
     });
   }
 
-  const bloqueTipo = oposicionId === 'utrera' 
-    ? (temaNumero <= 12 ? 'comun' : 'especifico')
-    : 'especifico';
+  const bloqueTipo = bloqueForzado 
+    ? bloqueForzado 
+    : (oposicionId === 'utrera' ? (temaNumero <= 12 ? 'comun' : 'especifico') : 'especifico');
 
   const temaInfo: TemaInfo = {
-    id: temaNumero,
+    id: idOffset + temaNumero,
     numero: temaNumero,
     titulo: temaTitulo,
     totalPreguntas: preguntas.length,
@@ -255,7 +259,9 @@ function parseMarkdownTest(
 function processDirectory(
   testsDir: string,
   temasDir: string,
-  oposicionId: OposicionId
+  oposicionId: OposicionId,
+  bloqueForzado?: 'comun' | 'especifico',
+  idOffset: number = 0
 ): { temas: TemaInfo[]; preguntas: Pregunta[] } {
   if (!fs.existsSync(testsDir)) {
     return { temas: [], preguntas: [] };
@@ -275,12 +281,13 @@ function processDirectory(
 
   for (const file of testFiles) {
     const fullPath = path.join(testsDir, file);
-    const resultado = parseMarkdownTest(fullPath, temasDir, oposicionId);
+    const resultado = parseMarkdownTest(fullPath, temasDir, oposicionId, bloqueForzado, idOffset);
     if (resultado) {
       temas.push(resultado.tema);
       preguntas.push(...resultado.preguntas);
+      const tag = bloqueForzado ? `${oposicionId.toUpperCase()} ${bloqueForzado.toUpperCase()}` : oposicionId.toUpperCase();
       console.log(
-        `✓ [${oposicionId.toUpperCase()}] Tema ${resultado.tema.numero.toString().padStart(2, '0')}: ${resultado.preguntas.length} preguntas`
+        `✓ [${tag}] Tema ${resultado.tema.numero.toString().padStart(2, '0')}: ${resultado.preguntas.length} preguntas`
       );
     }
   }
@@ -324,10 +331,19 @@ function main() {
     }
   }
 
-  // 2. Procesar Andalucía
-  const andaluciaTestsDir = path.resolve(baseDir, 'tests_andalucia');
-  const andaluciaTemasDir = path.resolve(baseDir, 'andalucia');
-  const andaluciaData = processDirectory(andaluciaTestsDir, andaluciaTemasDir, 'andalucia');
+  // 2. Procesar Andalucía (Común + Específico)
+  const andaluciaComunTestsDir = path.resolve(baseDir, 'tests_andalucia_comun');
+  const andaluciaComunTemasDir = path.resolve(baseDir, 'andalucia_comun');
+  const andaluciaComunData = processDirectory(andaluciaComunTestsDir, andaluciaComunTemasDir, 'andalucia', 'comun', 0);
+
+  const andaluciaEspTestsDir = path.resolve(baseDir, 'tests_andalucia');
+  const andaluciaEspTemasDir = path.resolve(baseDir, 'andalucia');
+  const andaluciaEspData = processDirectory(andaluciaEspTestsDir, andaluciaEspTemasDir, 'andalucia', 'especifico', 30);
+
+  const andaluciaData = {
+    temas: [...andaluciaComunData.temas, ...andaluciaEspData.temas],
+    preguntas: [...andaluciaComunData.preguntas, ...andaluciaEspData.preguntas],
+  };
 
   // 3. Escribir archivos específicos por oposición
   fs.writeFileSync(path.join(targetDataDir, 'questions_utrera.json'), JSON.stringify(utreraData.preguntas, null, 2), 'utf-8');
@@ -346,7 +362,7 @@ function main() {
   console.log(`\n==============================================`);
   console.log(`[PARSER ÉXITO] Resumen del procesamiento:`);
   console.log(`- UTRERA: ${utreraData.temas.length} temas | ${utreraData.preguntas.length} preguntas`);
-  console.log(`- ANDALUCÍA: ${andaluciaData.temas.length} temas | ${andaluciaData.preguntas.length} preguntas`);
+  console.log(`- ANDALUCÍA: ${andaluciaData.temas.length} temas (${andaluciaComunData.temas.length} comunes + ${andaluciaEspData.temas.length} específicos) | ${andaluciaData.preguntas.length} preguntas`);
   console.log(`- TOTAL COMBINADO: ${todosLosTemas.length} temas | ${todasLasPreguntas.length} preguntas`);
   console.log(`==============================================\n`);
 }

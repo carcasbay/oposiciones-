@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TEMA 12: El procedimiento administrativo común (II): Fases del procedimiento: iniciación, ordenación, instrucción y finalización. El deber de resolver y el silencio administrativo. Caducidad, desistimiento y renuncia</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (Grupo A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #065f46;
+      font-weight: 500;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #059669;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #065f46;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #059669;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #059669;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #059669;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout p {
+    margin: 0;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #065f46;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #d1fae5;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f0fdf4;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO COMÚN — JUNTA DE ANDALUCÍA (GRUPO A2)</div>
+  <h1>TEMA 12</h1>
+  <h2>El procedimiento administrativo común (II): Fases del procedimiento: iniciación, ordenación, instrucción y finalización. El deber de resolver y el silencio administrativo. Caducidad, desistimiento y renuncia</h2>
+  <div class="meta-box">
+    <p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+    <p><strong>Especialidad:</strong> Materias Comunes (Grupo A2)</p>
+    <p><strong>Bloque:</strong> Materias Comunes</p>
+    <p><strong>Tema Oficial:</strong> 12</p>
+    <p><strong>Normativa Clave:</strong> Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (arts. 21 a 28, 54 a 95); Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público; Ley 9/2007, de 22 de octubre, de la Administración de la Junta de Andalucía (LAJA); Decreto 622/2019, de 27 de diciembre, de administración electrónica y simplificación de procedimientos y servicios de la Junta de Andalucía.</p>
+
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General de TEMA 12</div>
+  <div class="toc-item level-1">1. <strong>Estructura y dinámica del procedimiento administrativo común</strong></div>
+  <div class="toc-item level-2">1.1. Visión sinóptica de las cuatro fases procedimentales</div>
+  <div class="toc-item level-2">1.2. El expediente administrativo electrónico (art. 70 Ley 39/2015)</div>
+  <div class="toc-item level-1">2. <strong>Iniciación del procedimiento administrativo</strong></div>
+  <div class="toc-item level-2">2.1. Clases de iniciación: De oficio y a solicitud del interesado</div>
+  <div class="toc-item level-2">2.2. Iniciación de oficio: Modalidades (propia iniciativa, orden superior, petición razonada y denuncia)</div>
+  <div class="toc-item level-2">2.3. Actuaciones previas e información reservada (art. 55 Ley 39/2015)</div>
+  <div class="toc-item level-2">2.4. Iniciación a solicitud de interesado: Requisitos de la solicitud (art. 66 Ley 39/2015)</div>
+  <div class="toc-item level-2">2.5. Subsanación y mejora de la solicitud (art. 68 Ley 39/2015)</div>
+  <div class="toc-item level-2">2.6. Declaración responsable y comunicación previa (art. 69 Ley 39/2015)</div>
+  <div class="toc-item level-2">2.7. Medidas provisionales: Previas e incidentales (art. 56 Ley 39/2015)</div>
+  <div class="toc-item level-1">3. <strong>Ordenación del procedimiento administrativo</strong></div>
+  <div class="toc-item level-2">3.1. Principio de impulsión de oficio y orden riguroso de despacho (art. 71 Ley 39/2015)</div>
+  <div class="toc-item level-2">3.2. Concentración de trámites (art. 72 Ley 39/2015)</div>
+  <div class="toc-item level-2">3.3. Cuestiones incidentales (art. 74 Ley 39/2015)</div>
+  <div class="toc-item level-2">3.4. Acumulación de procedimientos (art. 57 Ley 39/2015)</div>
+  <div class="toc-item level-1">4. <strong>Instrucción del procedimiento administrativo</strong></div>
+  <div class="toc-item level-2">4.1. Concepto y actos de instrucción (art. 75 Ley 39/2015)</div>
+  <div class="toc-item level-2">4.2. Alegaciones y aportación de documentos (art. 76 Ley 39/2015)</div>
+  <div class="toc-item level-2">4.3. La prueba: Criterios, medios, periodo probatorio y valoración (arts. 77 y 78 Ley 39/2015)</div>
+  <div class="toc-item level-2">4.4. Los informes: Clasificación, plazos y efectos de su omisión (arts. 79 a 81 Ley 39/2015)</div>
+  <div class="toc-item level-2">4.5. La participación ciudadana: Trámite de audiencia (art. 82) e información pública (art. 83)</div>
+  <div class="toc-item level-1">5. <strong>Finalización del procedimiento administrativo</strong></div>
+  <div class="toc-item level-2">5.1. Cuadro general de formas de terminación (art. 84 Ley 39/2015)</div>
+  <div class="toc-item level-2">5.2. La resolución expresa: Contenido, congruencia y motivación (art. 88 Ley 39/2015)</div>
+  <div class="toc-item level-2">5.3. La terminación convencional o pactada (art. 86 Ley 39/2015)</div>
+  <div class="toc-item level-2">5.4. Imposibilidad material sobrevenida (art. 84.2 Ley 39/2015)</div>
+  <div class="toc-item level-1">6. <strong>El deber legal de resolver y notificar</strong></div>
+  <div class="toc-item level-2">6.1. Alcance y excepciones del deber de resolver (art. 21 Ley 39/2015)</div>
+  <div class="toc-item level-2">6.2. Plazos máximos de resolución y notificación: Plazo legal y regla supletoria</div>
+  <div class="toc-item level-2">6.3. Suspensión del plazo máximo: Causas potestativas y preceptivas (art. 22 Ley 39/2015)</div>
+  <div class="toc-item level-2">6.4. Ampliación extraordinaria del plazo de resolución (art. 23 Ley 39/2015)</div>
+  <div class="toc-item level-1">7. <strong>El silencio administrativo</strong></div>
+  <div class="toc-item level-2">7.1. Naturaleza jurídica y evolución dogmática: Ficción legal vs acto presunto</div>
+  <div class="toc-item level-2">7.2. Silencio en procedimientos iniciados a solicitud de interesado (art. 24 Ley 39/2015): Regla general positiva y supuestos tasados de silencio negativo</div>
+  <div class="toc-item level-2">7.3. Efectos y eficacia del silencio positivo y desestimatorio</div>
+  <div class="toc-item level-2">7.4. El certificado acreditativo del silencio administrativo</div>
+  <div class="toc-item level-2">7.5. Silencio en procedimientos iniciados de oficio (art. 25 Ley 39/2015): Caducidad vs efectos desestimatorios</div>
+  <div class="toc-item level-1">8. <strong>Desistimiento, renuncia y caducidad</strong></div>
+  <div class="toc-item level-2">8.1. El desistimiento de la solicitud o de la acción: Requisitos y efectos (art. 94 Ley 39/2015)</div>
+  <div class="toc-item level-2">8.2. La renuncia de derechos sustantivos (art. 94 Ley 39/2015)</div>
+  <div class="toc-item level-2">8.3. La caducidad por inactividad del interesado en procedimientos iniciados a solicitud (art. 95 Ley 39/2015)</div>
+  <div class="toc-item level-2">8.4. Diferencias estructurales entre la caducidad a instancia de parte y la caducidad de oficio</div>
+  <div class="toc-item level-1">9. <strong>Conclusiones y buenas prácticas en la tramitación administrativa en la Junta de Andalucía</strong></div>
+  <div class="toc-item level-1">10. <strong>Anexo: Tabla sinóptica y mapas conceptuales del Tema 12</strong></div>
+
+</div>
+
+<h2 class="section-title">1. Estructura y dinámica del procedimiento administrativo común</h2>
+
+<h3 class="sub-title">1.1. Visión sinóptica de las cuatro fases procedimentales</h3>
+<p>El procedimiento administrativo común regulado en el Título IV de la Ley 39/2015, de 1 de octubre (LPACAP), discurre a lo largo de un itinerario formal estructurado en cuatro fases sucesivas e interrelacionadas:</p>
+<div class="diagram-box"><pre>                            FASES DEL PROCEDIMIENTO ADMINISTRATIVO
+   ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+   │   INICIACIÓN    │ ──► │   ORDENACIÓN    │ ──► │   INSTRUCCIÓN   │ ──► │  FINALIZACIÓN   │
+   │ (Arts. 54 a 69) │     │ (Arts. 71 a 74) │     │ (Arts. 75 a 83) │     │ (Arts. 84 a 95) │
+   └─────────────────┘     └─────────────────┘     └─────────────────┘     └─────────────────┘
+     • De oficio             • Celeridad             • Alegaciones           • Resolución
+     • A solicitud           • Impulso oficial       • Prueba                • Silencio adm.
+     • Subsanación           • No suspensión         • Informes              • Desistimiento
+     • Medidas provis.       • Acumulación           • Audiencia             • Renuncia/Caducidad
+</pre></div>
+<h3 class="sub-title">1.2. El expediente administrativo electrónico (art. 70 Ley 39/2015)</h3>
+<p>En el marco de la Administración digital, el procedimiento se tramita íntegramente mediante el <strong>expediente administrativo electrónico</strong>:
+* <strong>Definición:</strong> Conjunto ordenado de documentos, pruebas, dictámenes, informes, acuerdos, notificaciones y demás diligencias pertenecientes a un mismo procedimiento administrativo, foliados digitalmente mediante un índice electrónico autenticado con firma electrónica o sello cualificado.
+* <strong>Prohibición expresa (art. 70.4):</strong> No formará parte del expediente administrativo la información que tenga carácter auxiliar o de apoyo, como la contenida en aplicaciones informáticas, notas, borradores, opiniones, resúmenes o notas internas de trabajo que carezcan de valor vinculante.
+* <strong>Remisión de expedientes:</strong> Cuando deba remitirse a órganos jurisdiccionales o a otras Administraciones, se enviará el expediente electrónico completo junto con el índice que garantice la integridad y autenticidad del mismo desde el momento de su foliación.</p>
+<hr />
+<h2 class="section-title">2. Iniciación del procedimiento administrativo</h2>
+
+<h3 class="sub-title">2.1. Clases de iniciación: De oficio y a solicitud del interesado</h3>
+<p>El <strong>artículo 54 de la Ley 39/2015</strong> establece que los procedimientos podrán iniciarse de oficio o a solicitud del interesado.</p>
+<h3 class="sub-title">2.2. Iniciación de oficio: Modalidades (art. 58 Ley 39/2015)</h3>
+<p>Los procedimientos se iniciarán de oficio por acuerdo del órgano competente, bien:
+1. <strong>Por propia iniciativa (art. 59):</strong> Conocimiento directo o indirecto de las circunstancias, conductas o hechos objeto del procedimiento por el órgano que tiene atribuida la competencia de iniciación.
+2. <strong>Como consecuencia de orden superior (art. 60):</strong> Orden emitida por un órgano administrativo superior jerárquico del competente para iniciar el procedimiento.
+3. <strong>Por petición razonada de otros órganos (art. 61):</strong> Propuesta de iniciación formulada por cualquier órgano administrativo que no tiene competencia para iniciar el procedimiento y que ha tenido conocimiento de las circunstancias. No vincula al órgano competente, si bien la denegación de iniciación debe motivarse.
+4. <strong>Por denuncia (art. 62):</strong> Acto por el que cualquier persona, en cumplimiento o no de una obligación legal, pone en conocimiento de un órgano administrativo la existencia de un determinado hecho que pudiera justificar la iniciación de oficio de un procedimiento administrativo.
+   * <em>La denuncia no confiere por sí sola la condición de interesado al denunciante</em>, salvo que ostente un derecho subjetivo o interés legítimo lesionado.</p>
+<h3 class="sub-title">2.3. Actuaciones previas e información reservada (art. 55 Ley 39/2015)</h3>
+<p>Con anterioridad al acuerdo de iniciación, el órgano competente podrá abrir un período de <strong>información o actuaciones previas</strong> con el fin de conocer las circunstancias del caso concreto y la conveniencia o no de iniciar el procedimiento. En las actuaciones sancionadoras, estas actuaciones se orientan a identificar a los responsables y esclarecer los hechos fácticos.</p>
+<h3 class="sub-title">2.4. Iniciación a solicitud de interesado: Requisitos de la solicitud (art. 66 Ley 39/2015)</h3>
+<p>Las solicitudes que se formulen deberán contener obligatoriamente:
+* <strong>a)</strong> Nombre y apellidos del interesado y, en su caso, de la persona que lo represente.
+* <strong>b)</strong> Identificación del medio electrónico, o en su defecto, lugar físico en que desea que se practiquen las notificaciones. Adicionalmente, los interesados podrán aportar una dirección de correo electrónico y/o dispositivo electrónico con el fin de que las Administraciones Públicas les avisen del envío o puesta a disposición de la notificación.
+* <strong>c)</strong> Hechos, razones y petición en que se concrete, con toda claridad, la solicitud.
+* <strong>d)</strong> Lugar y fecha.
+* <strong>e)</strong> Firma del solicitante o acreditación de la autenticidad de su voluntad expresada por cualquier medio admisible.
+* <strong>f)</strong> Órgano, centro o unidad administrativa a la que se dirige y su correspondiente código de identificación (Directorio Común DIR3).</p>
+<h3 class="sub-title">2.5. Subsanación y mejora de la solicitud (art. 68 Ley 39/2015)</h3>
+<p>Si la solicitud de iniciación no reúne los requisitos del artículo 66 o los exigidos por la normativa específica:
+* Se requerirá al interesado para que, en un <strong>plazo de diez días</strong>, subsane la falta o acompañe los documentos preceptivos.
+* Se le advertirá de que, si no lo hiciera, <strong>se le tendrá por desistido de su petición</strong>, previa resolución que deberá ser dictada en los términos previstos en el artículo 21.
+* <strong>Ampliación prudencial (art. 68.2):</strong> Siempre que no se trate de procedimientos selectivos o de concurrencia competitiva, este plazo podrá ser ampliado prudencialmente <strong>hasta cinco días</strong>, a petición del interesado o a iniciativa del órgano, cuando la aportación de los documentos entrañe dificultades especiales.
+* <strong>Subsanación por presentación en soporte papel de sujetos obligados (art. 68.4):</strong> Si alguno de los sujetos obligados a relacionarse electrónicamente presenta su solicitud presencialmente, la Administración le requerirá para que la subsane a través de su presentación electrónica. A estos efectos, <strong>se considerará como fecha de presentación de la solicitud aquella en que haya sido realizada la subsanación electrónica</strong>.</p>
+<h3 class="sub-title">2.6. Declaración responsable y comunicación previa (art. 69 Ley 39/2015)</h3>
+<p>Constituyen instrumentos de agilización y desregulación procedimental:
+* <strong>Declaración responsable:</strong> Documento suscrito por un interesado en el que manifiesta, bajo su responsabilidad, que cumple con los requisitos establecidos en la normativa vigente para obtener el reconocimiento de un derecho o facultad o para su ejercicio, que dispone de la documentación que así lo acredita, que la pondrá a disposición de la Administración cuando le sea requerida, y que se compromete a mantener el cumplimiento de las anteriores obligaciones durante el período de tiempo inherente a dicho reconocimiento o ejercicio.
+* <strong>Comunicación previa:</strong> Documento mediante el que los interesados ponen en conocimiento de la Administración competente sus datos identificativos o cualquier otro dato relevante para el inicio de una actividad o el ejercicio de un derecho.
+* <strong>Efectos:</strong> Ambas permiten el reconocimiento o inicio de una actividad desde el día de su presentación, sin perjuicio de las facultades de comprobación, control e inspección que tengan atribuidas las Administraciones Públicas.
+* <strong>Sanción por inexactitud o falsedad (art. 69.4):</strong> La inexactitud, falsedad u omisión, de carácter esencial, determinará la imposibilidad de continuar con el ejercicio del derecho o actividad afectada desde el momento en que se tenga constancia de tales hechos, sin perjuicio de las responsabilidades penales, civiles o administrativas a que hubiera lugar.</p>
+<h3 class="sub-title">2.7. Medidas provisionales: Previas e incidentales (art. 56 Ley 39/2015)</h3>
+<p>Iniciado el procedimiento, el órgano administrativo competente para resolver podrá adoptar, de oficio o a instancia de parte y de forma motivada, las medidas provisionales que estime oportunas para asegurar la eficacia de la resolución que pudiera recaer.</p>
+<div class="diagram-box"><pre>                         RÉGIMEN DE LAS MEDIDAS PROVISIONALES
+┌──────────────────────────────────────┬──────────────────────────────────────┐
+│ MEDIDAS PROVISIONALÍSIMAS O PREVIAS  │ MEDIDAS PROVISIONALES INCIDENTALES   │
+│ (Art. 56.2 LPACAP)                   │ (Art. 56.1 LPACAP)                   │
+├──────────────────────────────────────┼──────────────────────────────────────┤
+│ • Adoptadas ANTES de iniciar el      │ • Adoptadas UNA VEZ INICIADO el      │
+│   procedimiento en casos de urgencia │   procedimiento.                     │
+│   inaplazable y protección provisional. │ • Deben ser motivadas y proporcionadas.│
+│ • Deben ser CONFIRMADAS, MODIFICADAS │ • Pueden alzarse o modificarse       │
+│   o LEVANTADAS en el acuerdo de      │   durante la tramitación si varían   │
+│   iniciación en el plazo de 15 DÍAS. │   las circunstancias.                │
+│ • Si no se inicia en 15 días, o el   │ • Se extinguen con la resolución     │
+│   acuerdo no se pronuncia, QUEDAN SIN│   definitiva que ponga fin al        │
+│   EFECTO automáticamente.            │   procedimiento.                     │
+└──────────────────────────────────────┴──────────────────────────────────────┘
+</pre></div>
+<hr />
+<h2 class="section-title">3. Ordenación del procedimiento administrativo</h2>
+
+<p>La fase de ordenación comprende el conjunto de normas y principios que guían la tramitación procedimental desde su apertura hasta la finalización:</p>
+<ul>
+<li><strong>Principio de celeridad e impulsión de oficio (art. 71):</strong> El procedimiento se impulsará de oficio en todos sus trámites y bajo la responsabilidad del personal encargado de su gestión, que acordará en un solo acto todos los trámites que admitan una impulsión simultánea y no sea obligado su cumplimiento sucesivo.</li>
+<li><strong>Orden riguroso de incoación (art. 71.2):</strong> En el despacho de los expedientes se guardará el orden riguroso de incoación en asuntos de homogénea naturaleza, salvo que por el titular de la unidad administrativa se dé orden motivada en contrario, de la que quede constancia. Su incumplimiento dará lugar a exigencia de responsabilidad disciplinaria del infractor y, en su caso, causa de remoción del puesto.</li>
+<li><strong>No suspensión por cuestiones incidentales (art. 74):</strong> Las cuestiones incidentales que se susciten en el procedimiento, incluso las que se refieran a la nulidad de actuaciones, no suspenderán la tramitación del mismo, salvo la recusación.</li>
+<li><strong>Acumulación de procedimientos (art. 57):</strong> El órgano administrativo que inicie o tramite un procedimiento podrá disponer, de oficio o a instancia de parte, su acumulación a otros con los que guarde íntima conexión, siempre que sea el mismo órgano quien deba tramitar y resolver el procedimiento. Contra el acuerdo de acumulación <strong>no procederá recurso alguno</strong>.</li>
+</ul>
+<hr />
+<h2 class="section-title">4. Instrucción del procedimiento administrativo</h2>
+
+<h3 class="sub-title">4.1. Concepto y actos de instrucción (art. 75 Ley 39/2015)</h3>
+<p>Los actos de instrucción son aquellos necesarios para la determinación, conocimiento y comprobación de los hechos en virtud de los cuales deba pronunciarse la resolución, y se realizarán de oficio por el órgano que tramite el procedimiento, sin perjuicio del derecho de los interesados a proponer aquellas actuaciones que requieran su intervención o constituyan trámites legal o reglamentariamente establecidos.</p>
+<h3 class="sub-title">4.2. Alegaciones y aportación de documentos (art. 76 Ley 39/2015)</h3>
+<p>Los interesados pueden, en cualquier momento del procedimiento anterior al trámite de audiencia, aducir alegaciones y aportar documentos u otros elementos de juicio. Unos y otros serán tenidos en cuenta por el órgano competente al redactar la correspondiente propuesta de resolución.</p>
+<p>Asimismo, en todo momento podrán los interesados alegar los defectos de tramitación y, en especial, los que supongan paralización, infracción de los plazos preceptivamente señalados o la omisión de trámites que puedan subsanarse antes de la resolución definitiva.</p>
+<h3 class="sub-title">4.3. La prueba: Criterios, medios, periodo probatorio y valoración (arts. 77 y 78 Ley 39/2015)</h3>
+<ul>
+<li><strong>Apertura del periodo de prueba (art. 77.2):</strong> Cuando la Administración no tenga por ciertos los hechos alegados por los interesados o la naturaleza del procedimiento lo exija, el instructor acordará la apertura de un período de prueba por un plazo <strong>no superior a treinta días ni inferior a diez</strong>, a fin de que puedan practicarse cuantas juzgue pertinentes.</li>
+<li><strong>Rechazo motivado de pruebas (art. 77.3):</strong> El instructor solo podrá rechazar las pruebas propuestas por los interesados cuando sean manifiestamente improcedentes o innecesarias, mediante resolución debidamente motivada.</li>
+<li><strong>Práctica de pruebas (art. 78):</strong> La Administración comunicará a los interesados, con antelación suficiente, el inicio de las actuaciones necesarias para la realización de las pruebas que hayan sido admitidas. En la notificación se consignará el lugar, fecha y hora en que se practicará la prueba, con la advertencia, en su caso, de que el interesado puede nombrar técnicos para que le asistan.</li>
+</ul>
+<h3 class="sub-title">4.4. Los informes: Clasificación, plazos y efectos de su omisión (arts. 79 a 81 Ley 39/2015)</h3>
+<p>A efectos de la resolución del procedimiento, se solicitarán aquellos informes que sean preceptivos por las disposiciones legales, y los que se juzguen necesarios para resolver:</p>
+<div class="diagram-box"><pre>                            CLASIFICACIÓN DE LOS INFORMES
+        ┌────────────────────────────────────────────────────────┐
+        │                                                        │
+        ▼                                                        ▼
+POR SU EXIGIBILIDAD                                    POR SU EFICACIA VINCULANTE
+• Preceptivos: Exigidos por una norma legal.           • Vinculantes: Obligan al órgano decisor
+• Facultativos: Solicitados discrecionalmente            a resolver en el sentido del dictamen.
+  para mejor proveer.                                  • No vinculantes: Criterio orientativo
+                                                         técnico no imperativo.
+</pre></div>
+<ul>
+<li><strong>Regla general de calificación (art. 80.1):</strong> Salvo disposición expresa en contrario, los informes serán <strong>facultativos y no vinculantes</strong>.</li>
+<li><strong>Plazo de emisión (art. 80.2):</strong> Los informes serán emitidos a través de medios electrónicos en el plazo de <strong>diez días</strong>, salvo que una disposición o el cumplimiento del resto de los plazos del procedimiento permita o exija otro plazo mayor o menor.</li>
+<li><strong>Efectos de la falta de emisión en plazo (art. 80.3 y 80.4):</strong></li>
+<li>De no emitirse el informe en el plazo señalado, se podrán <strong>proseguir las actuaciones</strong>, salvo que se trate de un informe preceptivo determinante para la resolución del procedimiento, en cuyo caso se podrá suspender el transcurso del plazo máximo para resolver.</li>
+<li>Si el informe debiera ser emitido por una Administración Pública distinta de la que tramita el procedimiento en orden a tutelar los intereses públicos de su competencia y transcurre el plazo sin emitirlo, se proseguirán las actuaciones.</li>
+</ul>
+<h3 class="sub-title">4.5. La participación ciudadana: Trámite de audiencia (art. 82) e información pública (art. 83)</h3>
+<ul>
+<li><strong>Trámite de audiencia (art. 82):</strong></li>
+<li>Instruidos los procedimientos, e inmediatamente antes de redactar la propuesta de resolución, se pondrán de manifiesto a los interesados.</li>
+<li>Plazo: Se otorgará un plazo <strong>no inferior a diez días ni superior a quince</strong> para que puedan alegar y presentar los documentos y justificaciones que estimen pertinentes.</li>
+<li><strong>Prescindibilidad (art. 82.4):</strong> Se podrá prescindir del trámite de audiencia cuando no figuren en el procedimiento ni sean tenidos en cuenta en la resolución otros hechos ni otras alegaciones y pruebas que las aducidas por el interesado.</li>
+<li><strong>Información pública (art. 83):</strong></li>
+<li>El órgano al que corresponda la resolución del procedimiento, cuando la naturaleza de éste lo requiera, podrá acordar un período de información pública.</li>
+<li>Se publicará un anuncio en el Diario Oficial correspondiente a fin de que cualquier persona física o jurídica pueda examinar el expediente.</li>
+<li>Plazo: En ningún caso podrá ser <strong>inferior a veinte días</strong>.</li>
+<li>La comparecencia en el trámite de información pública <strong>no otorga, por sí misma, la condición de interesado</strong>, si bien quienes presenten alegaciones tienen derecho a obtener de la Administración una respuesta razonada.</li>
+</ul>
+<hr />
+<h2 class="section-title">5. Finalización del procedimiento administrativo</h2>
+
+<h3 class="sub-title">5.1. Cuadro general de formas de terminación (art. 84 Ley 39/2015)</h3>
+<p>Pondrán fin al procedimiento:
+1. La resolución.
+2. El desistimiento.
+3. La renuncia al derecho en que se funde la solicitud, cuando tal renuncia no esté prohibida por el ordenamiento jurídico.
+4. La declaración de caducidad.
+5. La imposibilidad material de continuarlo por causas sobrevenidas (resolución motivada que declare la circunstancia).
+6. La terminación convencional mediante acuerdos, pactos, convenios o contratos (art. 86).</p>
+<h3 class="sub-title">5.2. La resolución expresa: Contenido, congruencia y motivación (art. 88 Ley 39/2015)</h3>
+<ul>
+<li><strong>Contenido (art. 88.1):</strong> La resolución que ponga fin al procedimiento decidirá todas las cuestiones planteadas por los interesados y aquellas otras derivadas del mismo.</li>
+<li><strong>Principio de congruencia (art. 88.2):</strong> En los procedimientos tramitados a solicitud del interesado, la resolución será congruente con las peticiones formuladas por éste, sin que en ningún caso pueda agravar su situación inicial (<em>prohibición de reformatio in peius</em>), sin perjuicio de la potestad de la Administración de incoar de oficio un nuevo procedimiento.</li>
+<li><strong>Motivación (art. 35):</strong> Deberán ser motivados con sucinta referencia de hechos y fundamentos de derecho los actos que limiten derechos subjetivos, resuelvan recursos, se separen del criterio seguido en actuaciones precedentes o del dictamen de órganos consultivos, y los acuerdos de tramitación de urgencia o suspensión.</li>
+</ul>
+<hr />
+<h2 class="section-title">6. El deber legal de resolver y notificar</h2>
+
+<h3 class="sub-title">6.1. Alcance y excepciones del deber de resolver (art. 21 Ley 39/2015)</h3>
+<p>La Administración está obligada a dictar resolución expresa y a notificarla en todos los procedimientos, cualquiera que sea su forma de iniciación.</p>
+<p><strong>Excepciones taxativas al deber de resolver (art. 21.1):</strong>
+1. Supuestos de terminación del procedimiento por <strong>pacto o convenio</strong>.
+2. Procedimientos relativos al ejercicio de derechos sometidos únicamente al deber de <strong>declaración responsable o comunicación</strong> a la Administración.</p>
+<p>En los casos de prescripción, renuncia del derecho, caducidad del procedimiento o desistimiento de la solicitud, así como de desaparición sobrevenida del objeto del procedimiento, la resolución consistirá en la declaración de la circunstancia que concurra en cada caso, con indicación de los hechos producidos y las normas aplicables.</p>
+<h3 class="sub-title">6.2. Plazos máximos de resolución y notificación</h3>
+<ul>
+<li><strong>Plazo preferente:</strong> El plazo máximo en el que debe notificarse la resolución expresa será el fijado por la norma reguladora del correspondiente procedimiento.</li>
+<li><strong>Límite legal ordinario (art. 21.2):</strong> Este plazo <strong>no podrá exceder de seis meses</strong> salvo que una norma con rango de Ley establezca uno mayor o así venga previsto en el Derecho de la Unión Europea.</li>
+<li><strong>Plazo supletorio general (art. 21.3):</strong> Cuando las normas reguladoras de los procedimientos no fijen el plazo máximo, éste será de <strong>tres meses</strong>.</li>
+<li><strong>Inicio del cómputo (<em>dies a quo</em>, art. 21.3):</strong></li>
+<li>Procedimientos iniciados de oficio: Desde la <strong>fecha del acuerdo de iniciación</strong>.</li>
+<li>Procedimientos a solicitud de interesado: Desde la <strong>fecha en que la solicitud haya tenido entrada en el registro electrónico de la Administración u Organismo competente</strong> para su tramitación.</li>
+</ul>
+<h3 class="sub-title">6.3. Suspensión del plazo máximo: Causas potestativas y preceptivas (art. 22 Ley 39/2015)</h3>
+<p>El transcurso del plazo máximo legal para resolver un procedimiento y notificar la resolución se podrá suspender (suspensión potestativa, art. 22.1) o se suspenderá obligatoriamente (suspensión preceptiva, art. 22.2):</p>
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Supuestos de Suspensión Potestativa (art. 22.1)</th>
+<th style="text-align: left;">Supuestos de Suspensión Preceptiva (art. 22.2)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">• Requerimiento al interesado para subsanación de deficiencias o aportación de documentos (por el tiempo entre la notificación y el cumplimiento o 10 días).<br>• Obtención de pronunciamiento previo y preceptivo de un órgano de la UE.<br>• Solicitud de informes preceptivos a órganos de la misma o distinta Administración (por el tiempo entre la petición y la recepción, máx. 3 meses).<br>• Realización de pruebas técnicas o análisis contradictorios.<br>• Negociaciones para terminación convencional.</td>
+<td style="text-align: left;">• Cuando una Administración Pública requiera a otra para que anule o revise un acto administrativo previo (hasta la resolución del requerimiento o litigio).<br>• Cuando un órgano judicial resuelva suspender el procedimiento.<br>• Cuando sea indispensable el pronunciamiento previo de un órgano judicial (cuestión prejudicial penal o civil).<br>• Solicitud del dictamen preceptivo del Consejo Consultivo de Andalucía o Consejo de Estado (hasta su emisión).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 class="section-title">7. El silencio administrativo</h2>
+
+<h3 class="sub-title">7.1. Naturaleza jurídica y evolución dogmática</h3>
+<p>El silencio administrativo no es un acto administrativo real, sino una técnica jurídica de garantía diseñada para evitar que la inactividad y el incumplimiento del deber de resolver de la Administración dejen al ciudadano indefenso ante el bloqueo de sus pretensiones.</p>
+<h3 class="sub-title">7.2. Silencio en procedimientos a solicitud del interesado (art. 24 Ley 39/2015)</h3>
+<ul>
+<li><strong>Regla general:</strong> En los procedimientos iniciados a solicitud del interesado, el vencimiento del plazo máximo sin haberse notificado resolución expresa legitima al interesado para entenderla estimada por <strong>silencio administrativo positivo</strong>.</li>
+<li><strong>Excepciones legales tasadas (Silencio Negativo o Desestimatorio, art. 24.1):</strong></li>
+<li>Cuando una norma con rango de <strong>Ley</strong> o una norma de <strong>Derecho de la Unión Europea</strong> o de <strong>Derecho Internacional</strong> disponga lo contrario.</li>
+<li>Procedimientos de ejercicio del <strong>derecho de petición</strong> (art. 29 CE).</li>
+<li>Aquellos cuya estimación tuviera como consecuencia que se transfirieran al solicitante o a terceros <strong>facultades relativas al dominio público o al servicio público</strong>.</li>
+<li>Procedimientos que impliquen el ejercicio de <strong>actividades que puedan dañar el medio ambiente</strong>.</li>
+<li>Procedimientos de <strong>responsabilidad patrimonial</strong> de las Administraciones Públicas.</li>
+<li>Procedimientos de <strong>impugnación de actos y disposiciones</strong> (recursos administrativos) y de <strong>revisión de oficio</strong> iniciados a solicitud de los interesados.</li>
+</ul>
+<div class="callout"><p><strong>Excepción de la excepción (Doble Silencio Positivo en recurso de alzada, art. 24.1 párr. 4º):</strong>
+Cuando un recurso de alzada se haya interpuesto contra la desestimación por silencio administrativo de una solicitud por el transcurso del plazo, se entenderá <strong>estimado el recurso si, llegado el plazo de resolución (tres meses), el órgano administrativo competente no dictase y notificase resolución expresa</strong>, siempre que no se refiera a las materias exceptuadas (dominio público, medio ambiente, responsabilidad patrimonial o derecho de petición).</p></div>
+<div class="diagram-box"><pre>                      RÉGIMEN COMPARATIVO DEL SILENCIO
+┌───────────────────────────────┬──────────────────────────────────────────────┐
+│ SILENCIO POSITIVO (ESTIMATORIO)│ SILENCIO NEGATIVO (DESESTIMATORIO)           │
+├───────────────────────────────┼──────────────────────────────────────────────┤
+│ • Es un VERDADERO ACTO        │ • Es una MERA FICCIÓN JURÍDICA procesal      │
+│   ADMINISTRATIVO declarativo  │   que abre la vía impugnatoria (recurso      │
+│   de derechos.                │   administrativo o contencioso).             │
+│ • La resolución expresa       │ • La resolución expresa posterior NO VINCULA │
+│   posterior solo puede ser    │   el sentido del silencio: puede ser tanto   │
+│   CONFIRMATORIA (art. 24.3.a).│   estimatoria como desestimatoria libremente │
+│ • Produce efectos erga omnes. │   (art. 24.3.b).                             │
+└───────────────────────────────┴──────────────────────────────────────────────┘
+</pre></div>
+<h3 class="sub-title">7.3. El certificado acreditativo del silencio administrativo (art. 24.4)</h3>
+<p>Los actos administrativos producidos por silencio administrativo se podrán hacer valer tanto ante la Administración como ante cualquier persona física o jurídica, pública o privada:
+* Los efectos del silencio se producen por el solo hecho del vencimiento del plazo sin resolución expresa.
+* Su existencia puede ser acreditada por cualquier medio de prueba admitido en Derecho, incluido el <strong>certificado acreditativo del silencio</strong> que el interesado puede solicitar al órgano competente.
+* Emitido el certificado o solicitado formalmente, la Administración debe expedirlo en el <strong>plazo improrrogable de quince días</strong>.</p>
+<h3 class="sub-title">7.4. Silencio en procedimientos iniciados de oficio (art. 25 Ley 39/2015)</h3>
+<p>En los procedimientos iniciados de oficio, el vencimiento del plazo máximo establecido sin que se haya dictado y notificado resolución expresa produce los siguientes efectos:
+* <strong>1. Procedimientos de los que pudiera derivarse el reconocimiento o constitución de derechos:</strong> Los interesados que hubieren comparecido podrán entender <strong>desestimadas sus pretensiones por silencio administrativo</strong>.
+* <strong>2. Procedimientos sancionadores o de intervención susceptibles de producir efectos desfavorables:</strong> Se producirá la <strong>caducidad del procedimiento</strong>. En estos casos, la resolución que declare la caducidad ordenará el archivo de las actuaciones, con los efectos previstos en el artículo 95.</p>
+<hr />
+<h2 class="section-title">8. Desistimiento, renuncia y caducidad</h2>
+
+<h3 class="sub-title">8.1. Desistimiento y renuncia: Requisitos y distinciones (art. 94 Ley 39/2015)</h3>
+<ul>
+<li><strong>Desistimiento:</strong> El interesado manifiesta su voluntad de apartarse del <strong>procedimiento concreto en curso</strong>, pero conserva intacto el derecho subjetivo de fondo, pudiendo reiterar la misma solicitud en el futuro si no ha prescrito el derecho.</li>
+<li><strong>Renuncia:</strong> El interesado hace dejación definitiva del <strong>derecho material sustantivo</strong> sobre el que se sustentaba la solicitud, impidiéndole volver a ejercerlo en el futuro. Solo es válida cuando no esté prohibida por el ordenamiento ni sea contraria al interés público ni perjudique a terceros.</li>
+<li><strong>Forma:</strong> Tanto el desistimiento como la renuncia podrán hacerse por cualquier medio que permita su constancia.</li>
+<li><strong>Aceptación por la Administración (art. 94.4):</strong> La Administración aceptará de plano el desistimiento o la renuncia, y declarará concluso el procedimiento, salvo que, habiéndose personado en el mismo terceros interesados, instasen éstos su continuación en el plazo de diez días desde que fueron notificados, o cuando la cuestión suscitada entrañe un interés general relevante.</li>
+</ul>
+<h3 class="sub-title">8.2. La caducidad por inactividad del interesado en procedimientos a solicitud (art. 95 Ley 39/2015)</h3>
+<p>En los procedimientos iniciados a solicitud del interesado, cuando se produzca su paralización por causa imputable al mismo:
+1. La Administración le advertirá que, transcurridos <strong>tres meses</strong>, se producirá la caducidad del procedimiento.
+2. Consumido este plazo de tres meses sin que el interesado realice las actividades necesarias para reanudar la tramitación, la Administración acordará el archivo de las actuaciones, notificándoselo al interesado.
+3. Contra la resolución que declare la caducidad procederán los recursos pertinentes.
+4. <strong>No operará la caducidad</strong> si la inactividad no es indispensable para resolver, o cuando la cuestión afecte al interés general o convenga su definición para el esclarecimiento de los hechos.</p>
+<div class="diagram-box"><pre>                         COMPARATIVA DE FORMAS ANÓMALAS
+┌───────────────┬────────────────────────────┬─────────────────────────────┬───────────────────────────┐
+│ INSTITUCIÓN   │ INICIATIVA / CAUSA         │ ALCANCE MATERIAL             │ POSIBILIDAD DE REITERAR   │
+├───────────────┼────────────────────────────┼─────────────────────────────┼───────────────────────────┤
+│ Desistimiento │ Voluntad del interesado    │ Finaliza el expediente      │ SÍ (el derecho sustantivo │
+│ (art. 94)     │ en cualquier momento       │ procedimental actual        │ permanece vivo)           │
+├───────────────┼────────────────────────────┼─────────────────────────────┼───────────────────────────┤
+│ Renuncia      │ Voluntad del interesado    │ Extingue el derecho de fondo │ NO (el derecho material   │
+│ (art. 94)     │ sobre derecho disponible   │ sustantivo                  │ ha sido extinguido)       │
+├───────────────┼────────────────────────────┼─────────────────────────────┼───────────────────────────┤
+│ Caducidad     │ Inactividad del interesado │ Archivo del expediente por   │ SÍ (no extingue acciones, │
+│ instancia (95)│ paralizado durante 3 meses │ falta de subsanación técnica│ salvo prescripción legal) │
+├───────────────┼────────────────────────────┼─────────────────────────────┼───────────────────────────┤
+│ Caducidad de  │ Expiración del plazo legal │ Extinción del procedimiento  │ SÍ (cabe nueva incoación  │
+│ oficio (25.1.b│ sin resolver por la Admón. │ sancionador/desfavorable    │ si la infracción no venció│
+└───────────────┴────────────────────────────┴─────────────────────────────┴───────────────────────────┘
+</pre></div>
+<hr />
+<h2 class="section-title">9. Conclusiones y buenas prácticas en la tramitación administrativa en la Junta de Andalucía</h2>
+
+<p>La correcta aplicación de las cuatro fases procedimentales y el riguroso respeto a los plazos legales constituyen la piedra angular del buen gobierno corporativo en la Junta de Andalucía:
+1. El personal técnico del Grupo A2 debe velar por la <strong>calidad de los actos de instrucción</strong> (audiencia previa, motivación rigurosa y justificación técnica de informes).
+2. Es prioritario evitar la consumación de silencios positivos en materias no habilitadas y la caducidad de procedimientos sancionadores, mediante la utilización proactiva de los sistemas de alertas del gestor de expedientes corporativo de la Junta de Andalucía (Trew@ / @ries).
+3. La adecuada distinción entre figuras como el desistimiento y la renuncia garantiza la salvaguarda de la seguridad jurídica y los derechos patrimoniales tanto de la ciudadanía como de la Hacienda Pública de la Comunidad Autónoma.</p>
+<hr />
+<h2 class="section-title">10. Anexo: Tabla sinóptica y mapas conceptuales del Tema 12</h2>
+
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Fase / Instituto</th>
+<th style="text-align: left;">Precepto Legal</th>
+<th style="text-align: left;">Elementos Nucleares</th>
+<th style="text-align: left;">Plazos Clave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Iniciación de Oficio</strong></td>
+<td style="text-align: left;">Arts. 58-62</td>
+<td style="text-align: left;">Propia iniciativa, orden superior, petición razonada o denuncia.</td>
+<td style="text-align: left;">Apertura previa facultativa de información reservada.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Subsanación de Solicitud</strong></td>
+<td style="text-align: left;">Art. 68</td>
+<td style="text-align: left;">Requerimiento formal bajo apercibimiento de desistimiento.</td>
+<td style="text-align: left;">10 días (ampliable 5 días en casos no concurrentes).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Medidas Cautelares Previas</strong></td>
+<td style="text-align: left;">Art. 56.2</td>
+<td style="text-align: left;">Adoptadas antes de incoar por urgencia inaplazable.</td>
+<td style="text-align: left;">Caducan si no se confirman en 15 días en la incoación.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Periodo de Prueba</strong></td>
+<td style="text-align: left;">Art. 77</td>
+<td style="text-align: left;">Pruebas pertinentes sobre hechos controvertidos.</td>
+<td style="text-align: left;">Entre 10 y 30 días hábiles. Rechazo solo motivado.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Emisión de Informes</strong></td>
+<td style="text-align: left;">Arts. 79-80</td>
+<td style="text-align: left;">Regla: facultativos y no vinculantes. Por medios telemáticos.</td>
+<td style="text-align: left;">10 días por regla general.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Trámite de Audiencia</strong></td>
+<td style="text-align: left;">Art. 82</td>
+<td style="text-align: left;">Puesta de manifiesto previa a propuesta de resolución.</td>
+<td style="text-align: left;">Entre 10 y 15 días hábiles. Prescindible si no hay hechos nuevos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Información Pública</strong></td>
+<td style="text-align: left;">Art. 83</td>
+<td style="text-align: left;">Publicación oficial potestativa para alegaciones vecinales.</td>
+<td style="text-align: left;">Plazo no inferior a 20 días hábiles. No da condición de interesado.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Plazo Máximo Resolutorio</strong></td>
+<td style="text-align: left;">Art. 21</td>
+<td style="text-align: left;">Fijado por norma especial. Límite general: 6 meses.</td>
+<td style="text-align: left;">Supletorio general: 3 meses.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Silencio en Alzada</strong></td>
+<td style="text-align: left;">Art. 24.1</td>
+<td style="text-align: left;">Desestimación de recurso contra silencio negativo previo.</td>
+<td style="text-align: left;">Doble silencio estimatorio transcurridos 3 meses de alzada.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Caducidad a Instancia</strong></td>
+<td style="text-align: left;">Art. 95</td>
+<td style="text-align: left;">Paralización por causa imputable al solicitante.</td>
+<td style="text-align: left;">Advertencia + 3 meses de inactividad = archivo definitivo.</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

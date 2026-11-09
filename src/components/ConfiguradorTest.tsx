@@ -101,14 +101,19 @@ export const ConfiguradorTest: React.FC<ConfiguradorTestProps> = ({
     setTemasSeleccionados(temas.filter((t) => t.bloque === 'especifico').map((t) => t.id));
 
   // Andalucía shortcuts
-  const seleccionarBloque1Andalucia = () =>
-    setTemasSeleccionados(temas.filter((t) => t.numero >= 1 && t.numero <= 7).map((t) => t.id));
-  const seleccionarBloque2Andalucia = () =>
-    setTemasSeleccionados(temas.filter((t) => t.numero >= 8 && t.numero <= 18).map((t) => t.id));
-  const seleccionarBloque3Andalucia = () =>
-    setTemasSeleccionados(temas.filter((t) => t.numero >= 19 && t.numero <= 28).map((t) => t.id));
-  const seleccionarBloque4Andalucia = () =>
-    setTemasSeleccionados(temas.filter((t) => t.numero >= 29 && t.numero <= 40).map((t) => t.id));
+  const seleccionarComunesAndalucia = () =>
+    setTemasSeleccionados(temas.filter((t) => t.bloque === 'comun').map((t) => t.id));
+  const seleccionarEspecificosAndalucia = () =>
+    setTemasSeleccionados(temas.filter((t) => t.bloque === 'especifico').map((t) => t.id));
+
+  const seleccionarComunesB1 = () =>
+    setTemasSeleccionados(temas.filter((t) => t.bloque === 'comun' && t.numero >= 1 && t.numero <= 9).map((t) => t.id));
+  const seleccionarComunesB2 = () =>
+    setTemasSeleccionados(temas.filter((t) => t.bloque === 'comun' && t.numero >= 10 && t.numero <= 17).map((t) => t.id));
+  const seleccionarComunesB3 = () =>
+    setTemasSeleccionados(temas.filter((t) => t.bloque === 'comun' && t.numero >= 18 && t.numero <= 23).map((t) => t.id));
+  const seleccionarComunesB4 = () =>
+    setTemasSeleccionados(temas.filter((t) => t.bloque === 'comun' && t.numero >= 24 && t.numero <= 30).map((t) => t.id));
 
   const toggleTema = (id: number) => {
     setTemasSeleccionados((prev) =>
@@ -197,7 +202,7 @@ export const ConfiguradorTest: React.FC<ConfiguradorTestProps> = ({
           </h1>
           <p className="mt-1 text-sm sm:text-base text-slate-600">
             {esAndalucia
-              ? 'Cuerpo Técnico Facultativo A2.2018 (Educación Social) · 40 Temas Específicos'
+              ? 'Cuerpo Técnico Facultativo A2.2018 (Educación Social) · 70 Temas (30 Comunes + 40 Específicos)'
               : 'Técnico/a Medio en Educación Social A2 · 60 Temas (12 Comunes + 48 Específicos)'}
           </p>
         </div>
@@ -225,7 +230,7 @@ export const ConfiguradorTest: React.FC<ConfiguradorTestProps> = ({
           </h2>
           <p className="text-xs sm:text-sm text-slate-100 max-w-xl">
             {esAndalucia
-              ? 'Formato oficial del examen de la Junta: 100 preguntas tipo test sobre los 40 temas específicos, penalización (-0,33 por fallo) y cronómetro real de 90 minutos.'
+              ? 'Formato oficial del examen de la Junta: 100 preguntas tipo test sobre materias comunes y específicas, penalización oficial y cronómetro real de 90 minutos.'
               : 'Formato oficial de Utrera: 100 preguntas aleatorias tipo test (comunes y específicos), penalización oficial (-0,33 por fallo) y 90 minutos.'}
           </p>
         </div>
@@ -484,35 +489,49 @@ export const ConfiguradorTest: React.FC<ConfiguradorTestProps> = ({
                 <>
                   <button
                     type="button"
-                    onClick={seleccionarBloque1Andalucia}
-                    className="px-2 py-1 text-[11px] font-medium bg-emerald-50 hover:bg-emerald-100 text-emerald-800 rounded-md border border-emerald-200"
-                    title="Temas 1 a 7: Constitución, LEA, Centros y LORPM"
+                    onClick={seleccionarComunesAndalucia}
+                    className="px-2.5 py-1 text-xs font-semibold bg-emerald-100 hover:bg-emerald-200 text-emerald-900 rounded-md border border-emerald-300 transition-colors"
                   >
-                    B1 (1-7)
+                    Comunes (1-30)
                   </button>
                   <button
                     type="button"
-                    onClick={seleccionarBloque2Andalucia}
-                    className="px-2 py-1 text-[11px] font-medium bg-emerald-50 hover:bg-emerald-100 text-emerald-800 rounded-md border border-emerald-200"
-                    title="Temas 8 a 18: Desarrollo, Convivencia e Inclusión"
+                    onClick={seleccionarEspecificosAndalucia}
+                    className="px-2.5 py-1 text-xs font-semibold bg-emerald-100 hover:bg-emerald-200 text-emerald-900 rounded-md border border-emerald-300 transition-colors"
                   >
-                    B2 (8-18)
+                    Específicos (1-40)
                   </button>
                   <button
                     type="button"
-                    onClick={seleccionarBloque3Andalucia}
+                    onClick={seleccionarComunesB1}
                     className="px-2 py-1 text-[11px] font-medium bg-emerald-50 hover:bg-emerald-100 text-emerald-800 rounded-md border border-emerald-200"
-                    title="Temas 19 a 28: Orientación, Absentismo y SIMIA"
+                    title="Temas Comunes 1 a 9: Constitución, Estatuto y Órganos"
                   >
-                    B3 (19-28)
+                    Común B1 (1-9)
                   </button>
                   <button
                     type="button"
-                    onClick={seleccionarBloque4Andalucia}
+                    onClick={seleccionarComunesB2}
                     className="px-2 py-1 text-[11px] font-medium bg-emerald-50 hover:bg-emerald-100 text-emerald-800 rounded-md border border-emerald-200"
-                    title="Temas 29 a 40: Servicios Sociales, ERACIS y Redes"
+                    title="Temas Comunes 10 a 17: Procedimiento y Contratos"
                   >
-                    B4 (29-40)
+                    Común B2 (10-17)
+                  </button>
+                  <button
+                    type="button"
+                    onClick={seleccionarComunesB3}
+                    className="px-2 py-1 text-[11px] font-medium bg-emerald-50 hover:bg-emerald-100 text-emerald-800 rounded-md border border-emerald-200"
+                    title="Temas Comunes 18 a 23: Función Pública y Hacienda"
+                  >
+                    Común B3 (18-23)
+                  </button>
+                  <button
+                    type="button"
+                    onClick={seleccionarComunesB4}
+                    className="px-2 py-1 text-[11px] font-medium bg-emerald-50 hover:bg-emerald-100 text-emerald-800 rounded-md border border-emerald-200"
+                    title="Temas Comunes 24 a 30: Digital, PRL e Igualdad"
+                  >
+                    Común B4 (24-30)
                   </button>
                 </>
               ) : (
@@ -572,10 +591,10 @@ export const ConfiguradorTest: React.FC<ConfiguradorTestProps> = ({
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-1.5">
                         <span className={`font-bold text-xs ${esAndalucia ? 'text-emerald-900' : 'text-blue-900'}`}>
-                          T{tema.numero.toString().padStart(2, '0')}
+                          {tema.bloque === 'comun' ? 'C' : 'E'}{tema.numero.toString().padStart(2, '0')}
                         </span>
                         <span className="text-[10px] font-medium px-1.5 py-0.2 rounded bg-white border border-slate-200 text-slate-500">
-                          {esAndalucia ? 'Específico' : tema.bloque === 'comun' ? 'Común' : 'Específico'}
+                          {tema.bloque === 'comun' ? 'Común' : 'Específico'}
                         </span>
                         <span className="text-[10px] text-slate-400 ml-auto">
                           {tema.totalPreguntas} preg.

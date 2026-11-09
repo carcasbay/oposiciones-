@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TEMA 6: Organización Institucional de la Junta de Andalucía (I): El Parlamento de Andalucía: Composición, Atribuciones y Funcionamiento. El Tribunal Superior de Justicia de Andalucía. El Defensor del Pueblo Andaluz. La Cámara de Cuentas de Andalucía</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (Grupo A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #065f46;
+      font-weight: 500;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #059669;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #065f46;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #059669;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #059669;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #059669;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout p {
+    margin: 0;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #065f46;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #d1fae5;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f0fdf4;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO COMÚN — JUNTA DE ANDALUCÍA (GRUPO A2)</div>
+  <h1>TEMA 6</h1>
+  <h2>Organización Institucional de la Junta de Andalucía (I): El Parlamento de Andalucía: Composición, Atribuciones y Funcionamiento. El Tribunal Superior de Justicia de Andalucía. El Defensor del Pueblo Andaluz. La Cámara de Cuentas de Andalucía</h2>
+  <div class="meta-box">
+    <p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo / Cuerpo General (A2)</p>
+    <p><strong>Entidad Convocante:</strong> Junta de Andalucía (Consejería de Justicia, Administración Local y Función Pública / IAAP)</p>
+    <p><strong>Bloque:</strong> Programa de Materias Comunes</p>
+    <p><strong>Tema Oficial:</strong> Tema 6</p>
+    <p><strong>Normativa Clave de Referencia:</strong></p>
+    <p>Ley Orgánica 2/2007, de 19 de marzo, de reforma del Estatuto de Autonomía para Andalucía (Título IV: Organización Institucional de la C.A., arts. 99 a 139; Título V: Del Poder Judicial en Andalucía, arts. 140 a 144).</p>
+    <p>Reglamento del Parlamento de Andalucía (aprobado el 18 de abril de 1995 y sucesivas reformas).</p>
+    <p>Ley 1/1986, de 2 de enero, Electoral de Andalucía.</p>
+    <p>Ley Orgánica 6/1985, de 1 de julio, del Poder Judicial (LOPJ).</p>
+    <p>Ley 9/1983, de 1 de diciembre, del Defensor del Pueblo Andaluz.</p>
+    <p>Ley 1/1988, de 17 de marzo, de la Cámara de Cuentas de Andalucía.</p>
+
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General de TEMA 6</div>
+  <div class="toc-item level-1">1. <strong>La Junta de Andalucía como institución de autogobierno</strong></div>
+  <div class="toc-item level-2">1.1. Configuración institucional del artículo 99 del Estatuto de Autonomía</div>
+  <div class="toc-item level-2">1.2. Principio de separación de poderes en el autogobierno andaluz</div>
+  <div class="toc-item level-1">2. <strong>El Parlamento de Andalucía: Naturaleza y composición</strong></div>
+  <div class="toc-item level-2">2.1. Carácter representativo e inviolabilidad parlamentaria (art. 100 EA)</div>
+  <div class="toc-item level-2">2.2. Composición y sistema electoral (art. 101 EA y Ley 1/1986)</div>
+  <div class="toc-item level-3">2.2.1. Número de diputados y circunscripción provincial</div>
+  <div class="toc-item level-3">2.2.2. Barrera electoral y fórmula de atribución de escaños (D'Hondt)</div>
+  <div class="toc-item level-3">2.2.3. Causas de inelegibilidad e incompatibilidad</div>
+  <div class="toc-item level-2">2.3. El estatuto de los Diputados andaluces: Inviolabilidad, inmunidad y aforamiento (art. 101.3 EA)</div>
+  <div class="toc-item level-1">3. <strong>Organización interna y funcionamiento del Parlamento de Andalucía</strong></div>
+  <div class="toc-item level-2">3.1. Órganos de gobierno parlamentario: La Presidencia, la Mesa y la Junta de Portavoces</div>
+  <div class="toc-item level-2">3.2. Órganos de trabajo: El Pleno y las Comisiones (Legislativas, no legislativas y de investigación)</div>
+  <div class="toc-item level-2">3.3. La Diputación Permanente: Composición y funciones en periodos de intersesiones o disolución (art. 104 EA)</div>
+  <div class="toc-item level-2">3.4. Régimen de funcionamiento: Periodos ordinarios de sesiones, quórum y mayorías</div>
+  <div class="toc-item level-1">4. <strong>Atribuciones y funciones del Parlamento de Andalucía (artículo 106 EA)</strong></div>
+  <div class="toc-item level-2">4.1. La potestad legislativa: El procedimiento legislativo autonómico</div>
+  <div class="toc-item level-2">4.2. La función presupuestaria y tributaria</div>
+  <div class="toc-item level-2">4.3. La función de orientación y control político del Consejo de Gobierno</div>
+  <div class="toc-item level-2">4.4. Elección y cese de altos cargos institucionales y designación de Senadores autonómicos</div>
+  <div class="toc-item level-1">5. <strong>El Tribunal Superior de Justicia de Andalucía (TSJA)</strong></div>
+  <div class="toc-item level-2">5.1. Naturaleza y posición institucional: Cúspide judicial en Andalucía (art. 140 EA)</div>
+  <div class="toc-item level-2">5.2. Estructura orgánica y sedes: Sede principal de Granada y salas desplazadas de Sevilla y Málaga</div>
+  <div class="toc-item level-2">5.3. Composición y salas de justicia (Civil-Penal, Contencioso-Administrativo y Social)</div>
+  <div class="toc-item level-2">5.4. Competencias del TSJA: Enjuiciamiento de aforados y última instancia en Derecho andaluz</div>
+  <div class="toc-item level-2">5.5. El Fiscal Superior de Andalucía y el Consejo de Justicia de Andalucía (arts. 143 y 144 EA)</div>
+  <div class="toc-item level-1">6. <strong>El Defensor del Pueblo Andaluz</strong></div>
+  <div class="toc-item level-2">6.1. Naturaleza jurídica y marco regulador (art. 41 EA y Ley 9/1983)</div>
+  <div class="toc-item level-2">6.2. Elección, nombramiento y cese: Mandato de 5 años y mayoría cualificada de 3/5</div>
+  <div class="toc-item level-2">6.3. Estatuto jurídico: Prerrogativas de independencia y no sujeción a mandato imperativo</div>
+  <div class="toc-item level-2">6.4. Ámbito de actuación y facultades de investigación ante las Administraciones andaluzas</div>
+  <div class="toc-item level-2">6.5. Resoluciones, informes anuales y legitimación procesal ante el Tribunal Constitucional</div>
+  <div class="toc-item level-1">7. <strong>La Cámara de Cuentas de Andalucía</strong></div>
+  <div class="toc-item level-2">6.1. Naturaleza y posición institucional: Órgano técnico de fiscalización externa (art. 130 EA y Ley 1/1988)</div>
+  <div class="toc-item level-2">6.2. Composición y designación: El Pleno de Consejeros y el Consejero Mayor</div>
+  <div class="toc-item level-2">6.3. Funciones de fiscalización económica y financiera del sector público andaluz</div>
+  <div class="toc-item level-2">6.4. Relaciones con el Parlamento de Andalucía y delimitación con el Tribunal de Cuentas estatal</div>
+  <div class="toc-item level-1">8. <strong>Conclusión y visión integradora para el Cuerpo Técnico Facultativo (A2)</strong></div>
+  <div class="toc-item level-1">9. <strong>Anexo: Cuadros sinópticos y esquemas de los órganos institucionales</strong></div>
+
+</div>
+
+<h2 class="section-title">1. La Junta de Andalucía como institución de autogobierno</h2>
+
+<p>El <strong>artículo 99 del Estatuto de Autonomía para Andalucía (EA)</strong> define el entramado institucional del autogobierno:</p>
+<div class="callout"><p><em>"1. La Junta de Andalucía es la institución en que se organiza políticamente el autogobierno de la Comunidad Autónoma.</em>
+<em>2. La Junta de Andalucía está integrada por el Parlamento de Andalucía, la Presidencia de la Junta y el Consejo de Gobierno.</em>
+<em>3. Forman parte también de la organización institucional de la Comunidad Autónoma las instituciones de autogobierno que se establecen en el presente Estatuto."</em></p></div>
+<p>El modelo andaluz reproduce el parlamentarismo racionalizado: el Parlamento emana directamente de la soberanía popular expresada en las urnas, elige de entre sus miembros al Presidente de la Junta, y este último nombra a los miembros del Consejo de Gobierno, respondiendo políticamente ante la asamblea parlamentaria.</p>
+<hr />
+<h2 class="section-title">2. El Parlamento de Andalucía: Naturaleza y composición</h2>
+
+<h3 class="sub-title">2.1. Carácter representativo e inviolabilidad (artículo 100 EA)</h3>
+<p>El Parlamento de Andalucía representa al pueblo andaluz, ejerce la potestad legislativa de la Comunidad Autónoma, aprueba y controla los Presupuestos de la misma, controla la acción política y de gobierno del Consejo de Gobierno y ejerce las demás facultades que le atribuyen la Constitución y el Estatuto. <strong>El Parlamento es inviolable</strong> (art. 100.2 EA).</p>
+<h3 class="sub-title">2.2. Composición y sistema electoral (artículo 101 EA y Ley 1/1986)</h3>
+<ul>
+<li><strong>Número de miembros:</strong> El artículo 101.1 del EA dispone que el Parlamento estará compuesto por un <strong>mínimo de 109 y un máximo de 120 Diputados</strong>. El artículo 17 de la <strong>Ley 1/1986, de 2 de enero, Electoral de Andalucía</strong>, fija el número definitivo en <strong>109 Diputados</strong>.</li>
+<li><strong>Circunscripción electoral:</strong> La circunscripción es la <strong>provincia</strong> (8 circunscripciones). A cada una de ellas se le asigna un mínimo inicial de <strong>ocho diputados</strong> (64 escaños en total) y los 45 restantes se distribuyen en proporción a la población de derecho de cada provincia. Ninguna provincia puede tener un número de Diputados que duplique al de otra.</li>
+<li><strong>Sistema electoral:</strong> Elección por sufragio universal, libre, igual, directo y secreto, mediante sistema de <strong>representación proporcional</strong> con aplicación de la fórmula D'Hondt. Se aplica una <strong>barrera electoral del 3%</strong> de los votos válidos emitidos en cada circunscripción provincial para tener acceso al reparto de escaños.</li>
+<li><strong>Mandato:</strong> Los Diputados son elegidos por un mandato de <strong>cuatro años</strong>.</li>
+</ul>
+<div class="diagram-box"><pre>                        COMPOSICIÓN DEL PARLAMENTO DE ANDALUCÍA
+                                    (109 Diputados)
+            ┌──────────────────────────────┴──────────────────────────────┐
+     64 Escaños Fijos Mínimos                                   45 Escaños Variables
+ (8 Diputados por cada una de las                         (Distribuidos proporcionalmente
+     8 provincias andaluzas)                               según población de derecho)
+</pre></div>
+<h3 class="sub-title">2.3. Estatuto de los Diputados andaluces (artículo 101.3 EA)</h3>
+<p>Los miembros del Parlamento de Andalucía disfrutan de las siguientes prerrogativas:
+1. <strong>Inviolabilidad:</strong> Por las opiniones manifestadas y por los votos emitidos en el ejercicio de sus funciones, de modo permanente e irrevocable.
+2. <strong>Inmunidad:</strong> Durante su mandato no podrán ser detenidos ni retenidos sino en caso de flagrante delito, decidiendo en todo caso sobre su inculpación, prisión, procesamiento y juicio el Tribunal Superior de Justicia de Andalucía.
+3. <strong>Aforamiento procesal:</strong> En las causas contra Diputados será competente la <strong>Sala de lo Civil y Penal del Tribunal Superior de Justicia de Andalucía</strong>. Fuera del territorio andaluz, la responsabilidad penal será exigible en los mismos términos ante la <strong>Sala de lo Penal del Tribunal Supremo</strong>.
+4. <strong>Prohibición de mandato imperativo:</strong> No están ligados por mandato imperativo alguno (art. 101.2 EA).</p>
+<hr />
+<h2 class="section-title">3. Organización interna y funcionamiento del Parlamento</h2>
+
+<h3 class="sub-title">3.1. Órganos de gobierno</h3>
+<ul>
+<li><strong>La Presidencia del Parlamento:</strong> Máxima autoridad de la Cámara; ostenta su representación, dirige los debates del Pleno, interpreta el Reglamento en casos de duda y vela por el orden y la disciplina interna.</li>
+<li><strong>La Mesa del Parlamento:</strong> Órgano colegiado rector del Parlamento y ostenta la representación colegiada en los actos a que asista. Compuesta por el Presidente del Parlamento, tres Vicepresidentes y tres Secretarios, elegidos en la sesión constitutiva.</li>
+<li><strong>La Junta de Portavoces:</strong> Órgano eminentemente político integrado por los Portavoces de los diferentes Grupos Parlamentarios, presidido por el Presidente de la Cámara y con presencia de un representante del Consejo de Gobierno. Fija el orden del día del Pleno y organiza los trabajos parlamentarios.</li>
+</ul>
+<h3 class="sub-title">3.2. Órganos de trabajo</h3>
+<ol>
+<li><strong>El Pleno:</strong> Reunión solemne de los 109 diputados en el hemiciclo del antiguo Hospital de las Cinco Llagas (Sevilla). Adopta las decisiones legislativas y políticas de mayor relieve.</li>
+<li><strong>Las Comisiones:</strong> Órganos especializados de trabajo parlamentario. Se clasifican en:</li>
+<li><em>Permanentes legislativas:</em> Dictaminan los proyectos y proposiciones de ley por áreas sectoriales materiales (Hacienda, Justicia, Salud, Educación, etc.).</li>
+<li><em>Permanentes no legislativas:</em> Asuntos de régimen interior, Reglamento, Estatuto de los Diputados, etc.</li>
+<li><em>De investigación:</em> Creadas por acuerdo del Pleno para investigar asuntos de interés público.</li>
+<li><strong>La Diputación Permanente (artículo 104 EA):</strong></li>
+<li>Presidida por el Presidente del Parlamento e integrada por miembros de la Mesa y diputados designados por los grupos en proporción a su importancia numérica.</li>
+<li>Vela por los poderes del Parlamento cuando éste no se encuentre reunido (entre períodos de sesiones) o en casos de disolución o expiración del mandato.</li>
+<li>Tiene competencia para acordar la convocatoria extraordinaria del Pleno y asumir las funciones de control parlamentario sobre decretos-leyes convalidados o medidas extraordinarias del Gobierno cuando la Cámara esté disuelta.</li>
+</ol>
+<h3 class="sub-title">3.3. Régimen de sesiones y adopción de acuerdos</h3>
+<ul>
+<li><strong>Periodos ordinarios de sesiones (art. 104.1 EA):</strong> Se celebran dos períodos al año:</li>
+<li>El primer período: de <strong>septiembre a diciembre</strong>.</li>
+<li>El segundo período: de <strong>febrero a junio</strong>.</li>
+<li><strong>Sesiones extraordinarias:</strong> Convocadas por el Presidente a petición del Consejo de Gobierno, de la Diputación Permanente o de la cuarta parte de los Diputados o de la mayoría de los Grupos Parlamentarios.</li>
+<li><strong>Quórum y mayorías:</strong> El Parlamento solo adopta acuerdos válidos estando reunido con la asistencia de la <strong>mayoría de sus miembros</strong> (quórum de 55 diputados). Los acuerdos se aprueban por <strong>mayoría simple</strong> de los miembros presentes, salvo que el Estatuto, las leyes o el Reglamento exijan mayorías cualificadas (ej. mayoría absoluta para leyes de desarrollo básico o 2/3 para reforma estatutaria).</li>
+</ul>
+<hr />
+<h2 class="section-title">4. Atribuciones y funciones del Parlamento de Andalucía (artículo 106 EA)</h2>
+
+<p>El artículo 106 detalla las principales competencias de la Cámara:
+* <strong>Función legislativa:</strong> Ejercicio originario de la potestad legislativa en Andalucía mediante la aprobación de Leyes del Parlamento de Andalucía.
+* <strong>Función presupuestaria y financiera:</strong> Examen, enmienda y aprobación de los Presupuestos Generales de la Comunidad Autónoma y control de su ejecución.
+* <strong>Función de control e impulso político:</strong>
+  * Elección del Presidente de la Junta de Andalucía (art. 118 EA).
+  * Exigencia de responsabilidad política al Consejo de Gobierno mediante la moción de censura y la cuestión de confianza.
+  * Formulación de preguntas, interpelaciones, mociones y comparecencias de Consejeros.
+* <strong>Designación de senadores autonómicos (art. 106.16 EA):</strong> Designa a los Senadores en representación de la Comunidad Autónoma asegurando la adecuada representación proporcional.
+* <strong>Recursos de inconstitucionalidad:</strong> Interposición de recursos de inconstitucionalidad ante el Tribunal Constitucional y personación en los procesos constitucionales (art. 106.18 EA).
+* <strong>Nombramiento de órganos estatutarios:</strong> Elección del Defensor del Pueblo Andaluz, de los Consejeros de la Cámara de Cuentas, de los miembros del Consejo Consultivo y del Consejo Audiovisual de Andalucía.</p>
+<hr />
+<h2 class="section-title">5. El Tribunal Superior de Justicia de Andalucía (TSJA)</h2>
+
+<h3 class="sub-title">5.1. Naturaleza y posición institucional (artículos 140 a 144 EA)</h3>
+<p>El <strong>Tribunal Superior de Justicia de Andalucía (TSJA)</strong> es el órgano jurisdiccional en que culmina la organización judicial en el ámbito territorial de la Comunidad Autónoma, sin perjuicio de la jurisdicción que corresponde al Tribunal Supremo (art. 152.1 CE y art. 140 EA). El Poder Judicial es único en toda España y forma parte del Estado central (art. 149.1.5ª CE), pero la planta judicial autonómica culmina organizativamente en el TSJA.</p>
+<h3 class="sub-title">5.2. Sedes y estructura territorial</h3>
+<ul>
+<li><strong>Sede Central:</strong> La sede principal del TSJA radica en la ciudad de <strong>Granada</strong> (Real Chancillería), en reconocimiento a su arraigo judicial histórico.</li>
+<li><strong>Salas Desplazadas:</strong> Para garantizar la accesibilidad de una comunidad tan extensa, existen salas desplazadas en:</li>
+<li><strong>Sevilla:</strong> Salas de lo Contencioso-Administrativo y de lo Social.</li>
+<li><strong>Málaga:</strong> Salas de lo Contencioso-Administrativo y de lo Social.</li>
+<li><strong>Ámbito de Ceuta y Melilla:</strong> El TSJA extiende su jurisdicción también a las Ciudades Autónomas de Ceuta y Melilla.</li>
+</ul>
+<h3 class="sub-title">5.3. Composición y Salas</h3>
+<p>El TSJA se compone de un Presidente, los Presidentes de Sala y los Magistrados correspondientes. Se organiza en tres Salas de Justicia:
+1. <strong>Sala de lo Civil y Penal:</strong> Conoce de los recursos de casación y revisión fundados en infracción del Derecho civil propio de Andalucía, y del enjuiciamiento penal de las causas contra personas aforadas (Diputados del Parlamento andaluz y miembros del Consejo de Gobierno).
+2. <strong>Sala de lo Contencioso-Administrativo:</strong> Controla la legalidad de los actos y disposiciones normativas generales (reglamentos) emanados del Consejo de Gobierno, Consejeros y demás órganos superiores de la Junta de Andalucía.
+3. <strong>Sala de lo Social:</strong> Conoce de los procesos en materia laboral y sindical que extiendan sus efectos a un ámbito territorial superior al de un Juzgado de lo Social.</p>
+<h3 class="sub-title">5.4. El Fiscal Superior y el Consejo de Justicia de Andalucía</h3>
+<ul>
+<li><strong>El Fiscal Superior de Andalucía (art. 143 EA):</strong> Es el Jefe del Ministerio Fiscal en el territorio andaluz; representa a la Fiscalía General del Estado en Andalucía y coordina a las fiscalías provinciales.</li>
+<li><strong>El Consejo de Justicia de Andalucía (art. 144 EA):</strong> Configurado estatutariamente como órgano desconcentrado del Consejo General del Poder Judicial en la Comunidad Autónoma.</li>
+</ul>
+<hr />
+<h2 class="section-title">6. El Defensor del Pueblo Andaluz</h2>
+
+<h3 class="sub-title">6.1. Naturaleza jurídica y marco regulador (artículo 41 EA y Ley 9/1983)</h3>
+<p>El <strong>Defensor del Pueblo Andaluz</strong> es el alto comisionado del Parlamento de Andalucía, designado por éste para la defensa de los derechos y libertades comprendidos en el Título I de la Constitución Española y en el Título I del Estatuto de Autonomía. Su sede se encuentra en la ciudad de Sevilla.</p>
+<div class="diagram-box"><pre>                           EL DEFENSOR DEL PUEBLO ANDALUZ
+┌─────────────────────────┬────────────────────────────────────────────────────┐
+│ Elección y Mandato      │ Elegido por el Parlamento de Andalucía por mayoría │
+│                         │ de 3/5 de los miembros. Mandato de 5 AÑOS.         │
+├─────────────────────────┼────────────────────────────────────────────────────┤
+│ Posición Jurídica       │ No sujeto a mandato imperativo; total independencia│
+│                         │ funcional; inviolabilidad por opiniones y votos.   │
+├─────────────────────────┼────────────────────────────────────────────────────┤
+│ Ámbito de Supervisión   │ Administración de la Junta, entes locales andaluces│
+│                         │ y sector público instrumental andaluz.             │
+├─────────────────────────┼────────────────────────────────────────────────────┤
+│ Potestades Jurídicas    │ Investigación, inspección de dependencias, reque-  │
+│                         │ rimientos de información, advertencias y sugerenc. │
+├─────────────────────────┼────────────────────────────────────────────────────┤
+│ Legitimación Procesal   │ Legitimado para interponer Recurso de Inconstitu-  │
+│                         │ cionalidad y Recurso de Amparo ante el TC.         │
+└─────────────────────────┴────────────────────────────────────────────────────┘
+</pre></div>
+<h3 class="sub-title">6.2. Procedimiento de actuación</h3>
+<ul>
+<li>La actuación del Defensor puede iniciarse <strong>de oficio</strong> o <strong>a instancia de parte legítima</strong> (cualquier persona física o jurídica que invoque un interés legítimo, sin tasa alguna y sin necesidad de abogado ni procurador).</li>
+<li>No pueden presentar quejas las autoridades administrativas en asuntos de su competencia.</li>
+<li><strong>Facultades inspectoras:</strong> Ningún funcionario o autoridad puede negarse a colaborar o a exhibir expedientes, bajo apercibimiento de incurrir en delito de desobediencia (art. 502 del Código Penal).</li>
+<li><strong>Ausencia de potestad sancionatoria:</strong> El Defensor no dicta sentencias ni anula resoluciones; formula <strong>recomendaciones, advertencias y sugerencias</strong> a las autoridades. Presenta anualmente un <strong>Informe Anual</strong> ante el Parlamento de Andalucía donde detalla las quejas tramitadas y señala a las Administraciones o funcionarios que hayan mostrado una actitud entorpecedora o no colaboradora.</li>
+</ul>
+<hr />
+<h2 class="section-title">7. La Cámara de Cuentas de Andalucía</h2>
+
+<h3 class="sub-title">7.1. Naturaleza y posición institucional (artículo 130 EA y Ley 1/1988)</h3>
+<p>El artículo 130 del Estatuto define a la <strong>Cámara de Cuentas de Andalucía</strong> como el órgano técnico al que corresponde la <strong>fiscalización externa de la gestión económica, financiera y presupuestaria</strong> del sector público de la Comunidad Autónoma de Andalucía y de las entidades locales de su territorio. Depende orgánicamente del Parlamento de Andalucía y ejerce sus funciones con plena autonomía funcional y presupuestaria.</p>
+<h3 class="sub-title">7.2. Composición y estatuto de los Consejeros</h3>
+<ul>
+<li><strong>El Pleno de la Cámara:</strong> Órgano colegiado supremo, integrado por <strong>7 Consejeros de Cuentas</strong>.</li>
+<li><strong>Elección:</strong> Son elegidos por el Pleno del Parlamento de Andalucía por mayoría cualificada de <strong>tres quintos (3/5)</strong> entre personas de reconocida competencia profesional en materia económica, financiera o jurídica, por un mandato de <strong>seis años</strong> (art. 22 Ley 1/1988).</li>
+<li><strong>El Consejero Mayor:</strong> Nombrado de entre los Consejeros por el Presidente de la Junta de Andalucía, a propuesta del Pleno de la Cámara de Cuentas, por un período de <strong>tres años</strong>, pudiendo ser reelegido una sola vez. Ostenta la representación del órgano y convoca y preside el Pleno.</li>
+<li><strong>Estatuto:</strong> Los Consejeros gozan de la misma inamovilidad e incompatibilidades que los Magistrados.</li>
+</ul>
+<h3 class="sub-title">7.3. Funciones y delimitación de competencias</h3>
+<ol>
+<li><strong>Función fiscalizadora:</strong> Comprobación de la legalidad, regularidad contable, eficacia, eficiencia y economía de la gestión de fondos públicos.</li>
+<li>Emite el <strong>Informe sobre la Cuenta General de la Comunidad Autónoma</strong>, que remite preceptivamente al Parlamento antes del 30 de noviembre del ejercicio siguiente.</li>
+<li>Realiza auditorías operativas y financieras sobre Consejerías, agencias administrativas, agencias públicas empresariales, fundaciones públicas, consorcios y Ayuntamientos andaluces.</li>
+<li><strong>Delimitación con el Tribunal de Cuentas del Estado:</strong> La Cámara de Cuentas ejerce una fiscalización técnica y de regularidad contable. Carece de función jurisdiccional: si durante una auditoría detecta indicios de dolo, culpa grave o alcance contable (malversación), tiene el deber legal de poner los hechos en conocimiento inmediato del <strong>Tribunal de Cuentas del Estado</strong>, que es el único órgano constitucional que ostenta la <strong>jurisdicción contable</strong> privativa (art. 136 CE).</li>
+</ol>
+<hr />
+<h2 class="section-title">8. Conclusión y visión integradora para el Cuerpo Técnico Facultativo (A2)</h2>
+
+<p>El conocimiento de los órganos institucionales de la Junta de Andalucía es indispensable para el desempeño técnico administrativo. Los funcionarios del Grupo A2 actúan sometidos al control político y legislativo del Parlamento andaluz, deben responder diligentemente a los requerimientos del Defensor del Pueblo Andaluz en defensa de los derechos de la ciudadanía, y gestionan expedientes de gasto y contratación sometidos a la rigurosa fiscalización externa de la Cámara de Cuentas de Andalucía y al control judicial del TSJA.</p>
+<hr />
+<h2 class="section-title">9. Anexo: Cuadros sinópticos y esquemas de los órganos institucionales</h2>
+
+<div class="diagram-box"><pre>                         ÓRGANOS DE CONTROL Y GARANTÍA ANDALUCES
+┌─────────────────────────┬──────────────────────────┬──────────────────────────┐
+│ PARÁMETRO               │ DEFENSOR DEL PUEBLO      │ CÁMARA DE CUENTAS        │
+│                         │ ANDALUZ                  │ DE ANDALUCÍA             │
+├─────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Marco Jurídico          │ Art. 41 EA y Ley 9/1983  │ Art. 130 EA y Ley 1/1988 │
+├─────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Titularidad             │ Órgano unipersonal       │ Órgano colegiado (7 Cons)│
+├─────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Elección parlamentaria  │ Mayoría 3/5 Parlamento   │ Mayoría 3/5 Parlamento   │
+├─────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Duración del Mandato    │ 5 años                   │ 6 años                   │
+├─────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Objeto de Control       │ Derechos y libertades del│ Regularidad económica,   │
+│                         │ Título I CE y Estatuto   │ contable y financiera    │
+├─────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Ámbito Subjetivo        │ Junta de Andalucía y     │ Junta de Andalucía y     │
+│                         │ entidades locales        │ entidades locales        │
+├─────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Naturaleza del Control  │ Quejas, advertencias,    │ Auditorías, informes y   │
+│                         │ sugerencias y recursos TC│ fiscalización de cuentas │
+└─────────────────────────┴──────────────────────────┴──────────────────────────┘
+</pre></div>
+
+</body>
+</html>

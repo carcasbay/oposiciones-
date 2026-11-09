@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TEMA 1: La Constitución Española de 1978: Principios y Valores Superiores. Derechos y Deberes Fundamentales. Garantías de las Libertades y Derechos Fundamentales y su Suspensión. El Procedimiento de Reforma Constitucional</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (Grupo A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #065f46;
+      font-weight: 500;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #059669;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #065f46;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #059669;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #059669;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #059669;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout p {
+    margin: 0;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #065f46;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #d1fae5;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f0fdf4;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO COMÚN — JUNTA DE ANDALUCÍA (GRUPO A2)</div>
+  <h1>TEMA 1</h1>
+  <h2>La Constitución Española de 1978: Principios y Valores Superiores. Derechos y Deberes Fundamentales. Garantías de las Libertades y Derechos Fundamentales y su Suspensión. El Procedimiento de Reforma Constitucional</h2>
+  <div class="meta-box">
+    <p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo / Cuerpo General (A2)</p>
+    <p><strong>Entidad Convocante:</strong> Junta de Andalucía (Consejería de Justicia, Administración Local y Función Pública / IAAP)</p>
+    <p><strong>Bloque:</strong> Programa de Materias Comunes</p>
+    <p><strong>Tema Oficial:</strong> Tema 1</p>
+    <p><strong>Normativa Clave de Referencia:</strong></p>
+    <p>Constitución Española de 1978 (BOE núm. 311, de 29 de diciembre de 1978).</p>
+    <p>Ley Orgánica 2/1979, de 3 de octubre, del Tribunal Constitucional (LOTC).</p>
+    <p>Ley Orgánica 4/1981, de 1 de junio, de los estados de alarma, excepción y sitio.</p>
+    <p>Ley Orgánica 3/1981, de 6 de abril, del Defensor del Pueblo.</p>
+
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General de TEMA 1</div>
+  <div class="toc-item level-1">1. <strong>Introducción y génesis de la Constitución Española de 1978</strong></div>
+  <div class="toc-item level-2">1.1. Contexto histórico y características del texto constitucional</div>
+  <div class="toc-item level-2">1.2. Estructura interna de la Constitución de 1978</div>
+  <div class="toc-item level-1">2. <strong>Principios y valores superiores del ordenamiento jurídico (Título Preliminar)</strong></div>
+  <div class="toc-item level-2">2.1. La definición del Estado: Social, democrático y de Derecho (art. 1.1 CE)</div>
+  <div class="toc-item level-2">2.2. Los valores superiores: Libertad, justicia, igualdad y pluralismo político</div>
+  <div class="toc-item level-2">2.3. La soberanía nacional y la monarquía parlamentaria (arts. 1.2 y 1.3 CE)</div>
+  <div class="toc-item level-2">2.4. La unidad indisoluble y el derecho a la autonomía (art. 2 CE)</div>
+  <div class="toc-item level-2">2.5. Lenguas oficiales, bandera, capitalidad y fuerzas armadas (arts. 3, 4, 5 y 8 CE)</div>
+  <div class="toc-item level-2">2.6. Partidos políticos, sindicatos y organizaciones empresariales (arts. 6 y 7 CE)</div>
+  <div class="toc-item level-2">2.7. Principio de legalidad, igualdad material e interdicción de la arbitrariedad (art. 9 CE)</div>
+  <div class="toc-item level-1">3. <strong>Derechos y deberes fundamentales (Título I CE)</strong></div>
+  <div class="toc-item level-2">3.1. Estructura y sistemática del Título I</div>
+  <div class="toc-item level-2">3.2. Cláusula general de dignidad e interpretación conforme a tratados (art. 10 CE)</div>
+  <div class="toc-item level-2">3.3. Nacionalidad, mayoría de edad y extranjeros (Capítulo I: arts. 11 a 13 CE)</div>
+  <div class="toc-item level-2">3.4. La igualdad ante la ley (artículo 14 CE)</div>
+  <div class="toc-item level-2">3.5. Derechos fundamentales y libertades públicas (Sección 1.ª del Capítulo II: arts. 15 a 29 CE)</div>
+  <div class="toc-item level-2">3.6. Derechos y deberes de los ciudadanos (Sección 2.ª del Capítulo II: arts. 30 a 38 CE)</div>
+  <div class="toc-item level-2">3.7. Principios rectores de la política social y económica (Capítulo III: arts. 39 a 52 CE)</div>
+  <div class="toc-item level-1">4. <strong>Garantías de las libertades y derechos fundamentales (Capítulo IV del Título I)</strong></div>
+  <div class="toc-item level-2">4.1. El sistema escalonado de garantías del artículo 53 CE</div>
+  <div class="toc-item level-2">4.2. Garantías normativas e institucionales (reserva de ley, contenido esencial, Defensor del Pueblo)</div>
+  <div class="toc-item level-2">4.3. Garantías jurisdiccionales: Procedimiento preferente y sumario ordinario (art. 53.2 CE)</div>
+  <div class="toc-item level-2">4.4. El recurso de amparo ante el Tribunal Constitucional</div>
+  <div class="toc-item level-1">5. <strong>La suspensión de los derechos y libertades (artículo 55 CE)</strong></div>
+  <div class="toc-item level-2">5.1. Suspensión colectiva o general: Estados de alarma, excepción y sitio (art. 55.1 CE y LO 4/1981)</div>
+  <div class="toc-item level-2">5.2. Suspensión individual de garantías: Investigación del terrorismo y bandas armadas (art. 55.2 CE)</div>
+  <div class="toc-item level-1">6. <strong>El procedimiento de reforma constitucional (Título X CE)</strong></div>
+  <div class="toc-item level-2">6.1. La iniciativa de reforma constitucional (art. 166 CE)</div>
+  <div class="toc-item level-2">6.2. El procedimiento ordinario de reforma (artículo 167 CE)</div>
+  <div class="toc-item level-2">6.3. El procedimiento agravado o cualificado de reforma (artículo 168 CE)</div>
+  <div class="toc-item level-2">6.4. Los límites temporales a la reforma constitucional (artículo 169 CE)</div>
+  <div class="toc-item level-2">6.5. Las reformas constitucionales acometidas (1992, 2011 y 2024)</div>
+  <div class="toc-item level-1">7. <strong>Conclusión y relevancia para el Cuerpo Técnico Facultativo de la Junta de Andalucía</strong></div>
+  <div class="toc-item level-1">8. <strong>Anexo: Cuadros sinópticos y mapas conceptuales</strong></div>
+
+</div>
+
+<h2 class="section-title">1. Introducción y génesis de la Constitución Española de 1978</h2>
+
+<h3 class="sub-title">1.1. Contexto histórico y características del texto constitucional</h3>
+<p>La Constitución Española de 1978 (en adelante, CE) es la norma jurídica suprema del ordenamiento jurídico español, fruto del consenso político y social alcanzado durante el proceso de transición democrática iniciado tras el fallecimiento del anterior Jefe del Estado en noviembre de 1975. Tras la aprobación de la Ley para la Reforma Política (Ley 1/1977, de 4 de enero) y la celebración de las elecciones generales del 15 de junio de 1977, se constituyó una Ponencia Constitucional en el Congreso de los Diputados integrada por siete ponentes ("los padres de la Constitución"): Gabriel Cisneros, Manuel Fraga, Miguel Herrero y Rodríguez de Miñón, Gregorio Peces-Barba, José Pedro Pérez-Llorca, Miquel Roca y Jordi Solé Tura.</p>
+<p>El texto fue aprobado por las Cortes Generales en sendas sesiones plenarias del Congreso de los Diputados y del Senado el <strong>31 de octubre de 1978</strong>, ratificado masivamente por el pueblo español en referéndum el <strong>6 de diciembre de 1978</strong>, sancionado y promulgado por el Rey Juan Carlos I el <strong>27 de diciembre de 1978</strong>, y publicado en el Boletín Oficial del Estado (BOE núm. 311) el <strong>29 de diciembre de 1978</strong>, fecha en la que entró formalmente en vigor conforme a su Disposición Final.</p>
+<p>Entre sus notas definitorias destacan:
+* <strong>Constitución escrita y codificada:</strong> Consta en un único cuerpo legal articulado formalmente.
+* <strong>Constitución de consenso:</strong> Nace de la renuncia mutua y la integración ideológica de fuerzas conservadoras, centristas, socialistas y nacionalistas moderadas.
+* <strong>Constitución rígida:</strong> Posee mecanismos de reforma especialmente dificultosos previstos en su Título X, que impiden la alteración de su contenido mediante el procedimiento legislativo ordinario.
+* <strong>Constitución de origen popular:</strong> Emanada de Cortes democráticamente elegidas y refrendada por el cuerpo electoral.
+* <strong>Constitución extensa:</strong> Sus 169 artículos la convierten en la segunda más extensa del constitucionalismo histórico español, tras la Constitución de Cádiz de 1812.
+* <strong>Constitución de aplicación directa:</strong> No constituye una mera declaración programática, sino que vincula directamente a todos los ciudadanos y poderes públicos (art. 9.1 CE).</p>
+<h3 class="sub-title">1.2. Estructura interna de la Constitución de 1978</h3>
+<p>Formalmente, la Constitución se divide en una <strong>Parte Dogmática</strong> (principios ideológicos, valores superiores y catálogo de derechos) y una <strong>Parte Orgánica</strong> (regulación de los órganos constitucionales, división de poderes y organización territorial):</p>
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Segmento Constitucional</th>
+<th style="text-align: left;">Denominación y Contenido</th>
+<th style="text-align: left;">Artículos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Preámbulo</strong></td>
+<td style="text-align: left;">Declaración solemne de motivos sin valor normativo directo</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título Preliminar</strong></td>
+<td style="text-align: left;">Principios y valores vertebradores del orden político</td>
+<td style="text-align: left;">Arts. 1 al 9</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título I</strong></td>
+<td style="text-align: left;">De los derechos y deberes fundamentales</td>
+<td style="text-align: left;">Arts. 10 al 55</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título II</strong></td>
+<td style="text-align: left;">De la Corona</td>
+<td style="text-align: left;">Arts. 56 al 65</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título III</strong></td>
+<td style="text-align: left;">De las Cortes Generales</td>
+<td style="text-align: left;">Arts. 66 al 96</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título IV</strong></td>
+<td style="text-align: left;">Del Gobierno y de la Administración</td>
+<td style="text-align: left;">Arts. 97 al 107</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título V</strong></td>
+<td style="text-align: left;">De las relaciones entre el Gobierno y las Cortes Generales</td>
+<td style="text-align: left;">Arts. 108 al 116</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título VI</strong></td>
+<td style="text-align: left;">Del Poder Judicial</td>
+<td style="text-align: left;">Arts. 117 al 127</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título VII</strong></td>
+<td style="text-align: left;">Economía y Hacienda</td>
+<td style="text-align: left;">Arts. 128 al 136</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título VIII</strong></td>
+<td style="text-align: left;">De la Organización Territorial del Estado</td>
+<td style="text-align: left;">Arts. 137 al 158</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título IX</strong></td>
+<td style="text-align: left;">Del Tribunal Constitucional</td>
+<td style="text-align: left;">Arts. 159 al 165</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título X</strong></td>
+<td style="text-align: left;">De la Reforma Constitucional</td>
+<td style="text-align: left;">Arts. 166 al 169</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Disposiciones</strong></td>
+<td style="text-align: left;">4 Adicionales, 9 Transitorias, 1 Derogatoria y 1 Final</td>
+<td style="text-align: left;">Cierre normativo</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 class="section-title">2. Principios y valores superiores del ordenamiento jurídico (Título Preliminar)</h2>
+
+<h3 class="sub-title">2.1. La definición del Estado: Social, democrático y de Derecho (art. 1.1 CE)</h3>
+<p>El <strong>artículo 1.1 de la CE</strong> proclama solemnemente:</p>
+<div class="callout"><p><em>"España se constituye en un Estado social y democrático de Derecho, que propugna como valores superiores de su ordenamiento jurídico la libertad, la justicia, la igualdad y el pluralismo político."</em></p></div>
+<p>Esta fórmula sintética conjuga tres dimensiones complementarias:
+1. <strong>Estado de Derecho:</strong> Sometimiento de todos los poderes públicos y de la ciudadanía al imperio de la ley (principio de legalidad), consagración de la separación de poderes y reconocimiento efectivo de los derechos fundamentales con garantías judiciales plenas.
+2. <strong>Estado democrático:</strong> La soberanía reside en el pueblo, del que emanan todos los poderes estatales (art. 1.2 CE), garantizando el pluralismo político, elecciones periódicas por sufragio universal libre, igual, directo y secreto, y mecanismos de participación política directa y representativa (art. 23 CE).
+3. <strong>Estado social:</strong> Superación del abstencionismo liberal mediante el compromiso activo de los poderes públicos en la procura existencial, la justicia redistributiva, el mantenimiento de servicios públicos universales y la tutela de los sectores socioeconómicamente más vulnerables.</p>
+<h3 class="sub-title">2.2. Los valores superiores del ordenamiento jurídico</h3>
+<p>Los cuatro valores consagrados en el artículo 1.1 CE orientan la interpretación de todo el ordenamiento y actúan como parámetro de constitucionalidad:
+* <strong>La libertad:</strong> Dimensión individual y política que reconoce la autonomía moral de la persona, proyectándose en los derechos civiles y políticos y en el libre desarrollo de la personalidad (art. 10.1 CE).
+* <strong>La justicia:</strong> Aspiración axiológica que vincula el ordenamiento con la equidad sustantiva y la proscripción de la arbitrariedad en la aplicación e interpretación de las leyes.
+* <strong>La igualdad:</strong> Doble vertiente constitucional: formal ante la ley (art. 14 CE) y material o sustantiva a través de la remoción de obstáculos fácticos por los poderes públicos (art. 9.2 CE).
+* <strong>El pluralismo político:</strong> Reconocimiento de la diversidad ideológica, social y territorial de la sociedad como cauce democrático esencial, formalizado en los partidos políticos (art. 6 CE), sindicatos y patronales (art. 7 CE) y las Comunidades Autónomas (art. 2 CE).</p>
+<h3 class="sub-title">2.3. Soberanía nacional, monarquía parlamentaria y unidad territorial (arts. 1.2, 1.3 y 2 CE)</h3>
+<ul>
+<li><strong>Soberanía nacional (art. 1.2 CE):</strong> <em>"La soberanía nacional reside en el pueblo español, del que emanan los poderes del Estado."</em> Se rechaza la soberanía regia o fraccionada territorialmente.</li>
+<li><strong>Forma política del Estado (art. 1.3 CE):</strong> <em>"La forma política del Estado español es la Monarquía parlamentaria."</em> El Rey es el Jefe del Estado pero carece de potestad legislativa o gubernativa propia; sus actos son debidamente refrendados (art. 64 CE).</li>
+<li><strong>Unidad indisoluble y derecho a la autonomía (art. 2 CE):</strong><div class="callout"><p><em>"La Constitución se fundamenta en la indisoluble unidad de la Nación española, patria común e indivisible de todos los españoles, y reconoce y garantiza el derecho a la autonomía de las nacionalidades y regiones que la integran y la solidaridad entre todas ellas."</em></p></div>
+</li>
+</ul>
+<p>El Tribunal Constitucional (STC 4/1981, STC 31/2010) ha reiterado que el principio de autonomía no es soberanía: las Comunidades Autónomas gozan de autonomía política y legislativa para la gestión de sus intereses privativos, supeditada siempre al marco supremo de la Constitución y al principio de solidaridad interterritorial (art. 138 CE).</p>
+<h3 class="sub-title">2.4. Lenguas, símbolos, capitalidad y fuerzas armadas (arts. 3, 4, 5 y 8 CE)</h3>
+<ul>
+<li><strong>Lengua oficial (art. 3 CE):</strong> El castellano es la lengua española oficial del Estado; todos los españoles tienen el <strong>deber de conocerla</strong> y el <strong>derecho a usarla</strong>. Las demás lenguas españolas serán también oficiales en las respectivas Comunidades Autónomas de acuerdo con sus Estatutos.</li>
+<li><strong>Bandera (art. 4 CE):</strong> Formada por tres franjas horizontales, roja, amarilla y roja, siendo la amarilla de doble anchura que cada una de las rojas. Los Estatutos podrán reconocer banderas y enseñas propias de las CCAA, que se utilizarán junto a la bandera de España en los edificios públicos y actos oficiales.</li>
+<li><strong>Capitalidad (art. 5 CE):</strong> La capital del Estado es la villa de Madrid.</li>
+<li><strong>Fuerzas Armadas (art. 8 CE):</strong> Constituidas por el Ejército de Tierra, la Armada y el Ejército del Aire y del Espacio, tienen como misión garantizar la soberanía e independencia de España, defender su integridad territorial y el ordenamiento constitucional.</li>
+</ul>
+<h3 class="sub-title">2.5. Partidos políticos, sindicatos y asociaciones empresariales (arts. 6 y 7 CE)</h3>
+<ul>
+<li><strong>Partidos políticos (art. 6 CE):</strong> Expresan el pluralismo político, concurren a la formación y manifestación de la voluntad popular y son instrumento fundamental para la participación política. Su creación y ejercicio son libres dentro del respeto a la Constitución y a la ley (LO 6/2002 de Partidos Políticos). Su estructura interna y funcionamiento deben ser democráticos.</li>
+<li><strong>Sindicatos y patronales (art. 7 CE):</strong> Los sindicatos de trabajadores y las asociaciones empresariales contribuyen a la defensa y promoción de los intereses económicos y sociales que les son propios. Su creación y ejercicio son libres; su estructura interna y funcionamiento deben ser democráticos.</li>
+</ul>
+<h3 class="sub-title">2.6. Principio de legalidad, igualdad real y seguridad jurídica (artículo 9 CE)</h3>
+<p>El artículo 9 de la CE articula el cierre axiológico del Título Preliminar en tres apartados fundamentales:
+1. <strong>Vinculación general (art. 9.1 CE):</strong> <em>"Los ciudadanos y los poderes públicos están sujetos a la Constitución y al resto del ordenamiento jurídico."</em>
+2. <strong>Igualdad material y remoción de obstáculos (art. 9.2 CE):</strong></p>
+<div class="callout"><p><em>"Corresponde a los poderes públicos promover las condiciones para que la libertad y la igualdad del individuo y de los grupos en que se integra sean reales y efectivas; remover los obstáculos que impidan o dificulten su plenitud y facilitar la participación de todos los ciudadanos en la vida política, económica, cultural y social."</em>
+Este precepto es el soporte constitucional de las políticas activas de fomento, igualdad de oportunidades, acción positiva y servicios asistenciales prestados por la Administración de la Junta de Andalucía.
+3. <strong>Principios del ordenamiento jurídico (art. 9.3 CE):</strong>
+<em>"La Constitución garantiza el principio de legalidad, la jerarquía normativa, la publicidad de las normas, la irretroactividad de las disposiciones sancionadoras no favorables o restrictivas de derechos individuales, la seguridad jurídica, la responsabilidad y la interdicción de la arbitrariedad de los poderes públicos."</em></p></div>
+<div class="diagram-box"><pre>                              ARTÍCULO 9.3 CE
+      ┌──────────────────────────────┴──────────────────────────────┐
+  GARANTÍAS FORMALES                                         GARANTÍAS MATERIALES
+  ├─ Principio de legalidad                                  ├─ Seguridad jurídica
+  ├─ Jerarquía normativa                                     ├─ Responsabilidad pública
+  ├─ Publicidad de las normas                                └─ Interdicción arbitrariedad
+  └─ Irretroactividad (in peius)
+</pre></div>
+<hr />
+<h2 class="section-title">3. Derechos y deberes fundamentales (Título I CE)</h2>
+
+<h3 class="sub-title">3.1. Estructura y sistemática del Título I (arts. 10 a 55)</h3>
+<p>El Título I se estructura en cinco capítulos precedidos del pórtico axiológico del artículo 10:
+* <strong>Artículo 10:</strong> Dignidad humana e interpretación de los derechos.
+* <strong>Capítulo I (arts. 11 a 13):</strong> De los españoles y los extranjeros.
+* <strong>Capítulo II (arts. 14 a 38):</strong> Derechos y libertades.
+  * <em>Artículo 14:</em> Principio de igualdad formal ante la ley.
+  * <em>Sección 1.ª (arts. 15 a 29):</em> De los derechos fundamentales y de las libertades públicas.
+  * <em>Sección 2.ª (arts. 30 a 38):</em> De los derechos y deberes de los ciudadanos.
+* <strong>Capítulo III (arts. 39 a 52):</strong> De los principios rectores de la política social y económica.
+* <strong>Capítulo IV (arts. 53 y 54):</strong> De las garantías de las libertades y derechos fundamentales.
+* <strong>Capítulo V (art. 55):</strong> De la suspensión de los derechos y libertades.</p>
+<h3 class="sub-title">3.2. Cláusula general de dignidad e interpretación conforme a tratados (art. 10 CE)</h3>
+<ul>
+<li><strong>Dignidad de la persona (art. 10.1 CE):</strong> <em>"La dignidad de la persona, los derechos inviolables que le son inherentes, el libre desarrollo de la personalidad y el respeto a la ley y a los derechos de los demás son fundamento del orden político y de la paz social."</em></li>
+<li><strong>Canon hermenéutico internacional (art. 10.2 CE):</strong> Las normas relativas a los derechos fundamentales y a las libertades que la Constitución reconoce se interpretarán de conformidad con la <strong>Declaración Universal de Derechos Humanos</strong> y los tratados y acuerdos internacionales sobre las mismas materias ratificados por España (Convenio Europeo de Derechos Humanos de 1950, Pactos Internacionales de Nueva York de 1966 y Carta de Derechos Fundamentales de la UE).</li>
+</ul>
+<h3 class="sub-title">3.3. Nacionalidad, mayoría de edad y extranjería (arts. 11 a 13 CE)</h3>
+<ul>
+<li><strong>Nacionalidad (art. 11 CE):</strong> Ningún español de origen puede ser privado de su nacionalidad. Se prevé la concertación de tratados de doble nacionalidad con países iberoamericanos o con aquellos que hayan tenido o tengan una particular vinculación con España.</li>
+<li><strong>Mayoría de edad (art. 12 CE):</strong> Se alcanza a los dieciocho años de edad de forma automática y homogénea.</li>
+<li><strong>Extranjería y derecho de asilo (art. 13 CE):</strong></li>
+<li>Los extranjeros gozan en España de las libertades públicas que garantiza el Título I en los términos que establezcan los tratados y la ley (LO 4/2000).</li>
+<li>Sufragio en elecciones locales (art. 13.2 CE): Exclusividad del sufragio activo y pasivo para españoles, salvo lo dispuesto en tratados o leyes para el sufragio activo y pasivo en elecciones municipales bajo criterio de reciprocidad (objeto de la 1.ª reforma constitucional de 1992 para adecuarlo al Tratado de Maastricht).</li>
+<li>Extradición (art. 13.3 CE): Prohibida para delitos políticos (no considerándose tales los actos de terrorismo).</li>
+</ul>
+<h3 class="sub-title">3.4. El principio de igualdad formal (artículo 14 CE)</h3>
+<div class="callout"><p><em>"Los españoles son iguales ante la ley, sin que pueda prevalecer discriminación alguna por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social."</em></p></div>
+<p>La jurisprudencia del TC distingue claramente entre:
+* <strong>Desigualdad de trato arbitraria:</strong> Vulneradora del art. 14 CE cuando carece de justificación objetiva y razonable.
+* <strong>Diferenciación justificada:</strong> Válida cuando responde a circunstancias fácticas distintas, persigue una finalidad legítima y supera el juicio de proporcionalidad.</p>
+<h3 class="sub-title">3.5. Derechos fundamentales y libertades públicas (Sección 1.ª del Capítulo II: arts. 15 a 29 CE)</h3>
+<p>Constituyen el núcleo duro del sistema constitucional de derechos:</p>
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Precepto</th>
+<th style="text-align: left;">Contenido Esencial y Aspectos Técnicos Destacados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Art. 15 CE</strong></td>
+<td style="text-align: left;"><strong>Derecho a la vida y a la integridad física y moral.</strong> Proscripción absoluta de la tortura y tratos inhumanos o degradantes. Queda abolida la pena de muerte, salvo lo que puedan disponer las leyes penales militares para tiempos de guerra (abolida totalmente por LO 11/1995).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Art. 16 CE</strong></td>
+<td style="text-align: left;"><strong>Libertad ideológica, religiosa y de culto.</strong> Nadie puede ser obligado a declarar sobre su ideología, religión o creencias. Principio de aconfesionalidad estatal y cooperación con la Iglesia Católica y demás confesiones.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Art. 17 CE</strong></td>
+<td style="text-align: left;"><strong>Derecho a la libertad y a la seguridad personal.</strong> Detención preventiva máxima de 72 horas. Derechos del detenido (información inmediata, asistencia letrada preceptiva). Procedimiento de <em>Habeas Corpus</em> (LO 6/1984) y plazo máximo legal de prisión provisional.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Art. 18 CE</strong></td>
+<td style="text-align: left;"><strong>Derecho al honor, a la intimidad personal y familiar y a la propia imagen.</strong> Inviolabilidad del domicilio (entrada sólo con consentimiento del titular, resolución judicial o flagrante delito). Secreto de las comunicaciones (postal, telegráfica y telefónica) salvo resolución judicial. Limitación del uso de la informática para garantizar el honor y la intimidad (protección de datos).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Art. 19 CE</strong></td>
+<td style="text-align: left;"><strong>Libertad de residencia y circulación.</strong> Libre entrada y salida de España en los términos que la ley establezca, sin que pueda limitarse por motivos políticos o ideológicos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Art. 20 CE</strong></td>
+<td style="text-align: left;"><strong>Libertad de expresión y creación.</strong> Producción literaria, artística, científica y técnica. Libertad de cátedra. Derecho a comunicar o recibir libremente información veraz. Prohibición de censura previa y secuestro judicial exclusivo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Art. 21 CE</strong></td>
+<td style="text-align: left;"><strong>Derecho de reunión y manifestación.</strong> Reunión pacífica y sin armas sin necesidad de autorización previa. Manifestaciones en lugares de tránsito público requieren comunicación previa a la autoridad, que sólo podrá prohibirlas por razones fundadas de alteración del orden público con peligro para personas o bienes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Art. 22 CE</strong></td>
+<td style="text-align: left;"><strong>Derecho de asociación.</strong> Inscripción en registro a efectos de publicidad. Prohibición de asociaciones secretas y paramilitares. Disolución o suspensión sólo mediante resolución judicial motivada.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Art. 23 CE</strong></td>
+<td style="text-align: left;"><strong>Derecho de participación política y acceso a funciones públicas.</strong> Sufragio activo y pasivo. Acceso en condiciones de igualdad a las funciones y cargos públicos, con los requisitos que señalen las leyes (mérito y capacidad).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Art. 24 CE</strong></td>
+<td style="text-align: left;"><strong>Tutela judicial efectiva y prohibición de indefensión.</strong> Juez ordinario predeterminado por la ley, defensa y asistencia de letrado, a ser informado de la acusación, a un proceso público sin dilaciones indebidas y con todas las garantías, a utilizar medios de prueba pertinentes, a no declarar contra sí mismo, a no confesarse culpable y a la presunción de inocencia.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Art. 25 CE</strong></td>
+<td style="text-align: left;"><strong>Principio de legalidad penal e irretroactividad (tipicidad).</strong> Reeducación y reinserción social de las penas privativas de libertad. Prohibición expresa de que la Administración civil imponga sanciones que, directa o subsidiariamente, impliquen privación de libertad.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Art. 26 CE</strong></td>
+<td style="text-align: left;"><strong>Prohibición de los Tribunales de Honor</strong> en el ámbito de la Administración civil y de las organizaciones profesionales.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Art. 27 CE</strong></td>
+<td style="text-align: left;"><strong>Derecho a la educación y libertad de enseñanza.</strong> Enseñanza básica obligatoria y gratuita. Autonomía universitaria. Programación general y participación social.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Art. 28 CE</strong></td>
+<td style="text-align: left;"><strong>Libertad sindical (28.1) y derecho de huelga (28.2).</strong> Afiliación libre. Huelga de trabajadores para la defensa de sus intereses, con garantía de mantenimiento de servicios esenciales de la comunidad.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Art. 29 CE</strong></td>
+<td style="text-align: left;"><strong>Derecho de petición.</strong> Individual y colectiva, por escrito, en la forma y con los efectos que determine la ley (LO 4/2001). Miembros de fuerzas armadas sólo individualmente.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="sub-title">3.6. Derechos y deberes de los ciudadanos (Sección 2.ª del Capítulo II: arts. 30 a 38 CE)</h3>
+<ul>
+<li><strong>Art. 30:</strong> Deber de defender a España y servicio militar/objeción de conciencia; deberes en casos de grave riesgo, catástrofe o calamidad pública.</li>
+<li><strong>Art. 31:</strong> Sostenimiento de los gastos públicos conforme a un sistema tributario justo inspirado en los principios de igualdad y progresividad que en ningún caso tendrá alcance confiscatorio; programación y ejecución del gasto público con criterios de equidad y economía.</li>
+<li><strong>Art. 32:</strong> Derecho a contraer matrimonio con plena igualdad jurídica.</li>
+<li><strong>Art. 33:</strong> Derecho a la propiedad privada y a la herencia, delimitados por su función social. Nadie podrá ser privado de sus bienes y derechos sino por causa justificada de utilidad pública o interés social, mediante la correspondiente indemnización y de conformidad con lo dispuesto por las leyes (expropiación forzosa).</li>
+<li><strong>Art. 34:</strong> Derecho de fundación para fines de interés general.</li>
+<li><strong>Art. 35:</strong> Deber de trabajar y derecho al trabajo, a la libre elección de profesión u oficio, a la promoción a través del trabajo y a una remuneración suficiente, sin discriminación por sexo.</li>
+<li><strong>Art. 36:</strong> Colegios profesionales y ejercicio de las profesiones tituladas.</li>
+<li><strong>Art. 37:</strong> Derecho a la negociación colectiva laboral y derecho a adoptar medidas de conflicto colectivo.</li>
+<li><strong>Art. 38:</strong> Libertad de empresa en el marco de la economía de mercado y garantía del ejercicio y defensa de la productividad por los poderes públicos.</li>
+</ul>
+<h3 class="sub-title">3.7. Principios rectores de la política social y económica (Capítulo III: arts. 39 a 52 CE)</h3>
+<p>No constituyen derechos subjetivos de aplicación inmediata, sino mandatos informadores a los poderes públicos:
+* <strong>Protección de la familia e infancia (art. 39):</strong> Tutela social, económica y jurídica; protección integral de los hijos.
+* <strong>Progreso social y laboral (art. 40):</strong> Distribución equitativa de rentas, política de pleno empleo, formación profesional, seguridad e higiene en el trabajo y descanso laboral (limitación de jornada y vacaciones retribuidas).
+* <strong>Seguridad Social (art. 41):</strong> Régimen público para todos los ciudadanos con asistencia y prestaciones sociales suficientes ante estados de necesidad (especialmente desempleo).
+* <strong>Protección de los trabajadores en el extranjero (art. 42).</strong>
+* <strong>Salud pública y deporte (art. 43):</strong> Derecho a la protección de la salud, fomento de la educación sanitaria, física y del deporte.
+* <strong>Cultura y ciencia (art. 44):</strong> Acceso a la cultura y fomento de la investigación científica y técnica.
+* <strong>Medio ambiente y calidad de vida (art. 45):</strong> Derecho a un medio ambiente adecuado y deber de conservarlo; utilización racional de los recursos naturales y sanciones penales/administrativas junto a obligación de reparar.
+* <strong>Patrimonio histórico, cultural y artístico (art. 46).</strong>
+* <strong>Derecho a una vivienda digna y adecuada (art. 47):</strong> Regulación del suelo para impedir la especulación y participación de la comunidad en las plusvalías urbanísticas.
+* <strong>Participación de la juventud (art. 48).</strong>
+* <strong>Atención a las personas con discapacidad (art. 49):</strong> Modificado por reforma constitucional de 15 de febrero de 2024 para sustituir términos obsoletos por "personas con discapacidad", reconociendo expresamente sus derechos y autonomía personal.
+* <strong>Tercera edad (art. 50):</strong> Pensiones adecuadas y periódicamente actualizadas y sistema de servicios sociales.
+* <strong>Defensa de los consumidores y usuarios (art. 51):</strong> Seguridad, salud e intereses económicos legítimos.
+* <strong>Organizaciones profesionales (art. 52).</strong></p>
+<hr />
+<h2 class="section-title">4. Garantías de las libertades y derechos fundamentales (Capítulo IV del Título I)</h2>
+
+<h3 class="sub-title">4.1. El sistema escalonado de garantías del artículo 53 CE</h3>
+<p>El artículo 53 de la CE establece un riguroso sistema de tutela en función de la ubicación sistemática de los derechos dentro del Título I:</p>
+<div class="diagram-box"><pre>                           SISTEMA DE GARANTÍAS (ART. 53 CE)
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ NIVEL MÁXIMO (Arts. 14 a 29 + 30.2 CE)                                      │
+│ ├─ Reserva de Ley Orgánica (art. 81.1 CE) solo para Arts. 15 a 29           │
+│ ├─ Vinculación a todos los poderes públicos (art. 53.1)                     │
+│ ├─ Respeto a su contenido esencial (art. 53.1)                              │
+│ ├─ Recurso / Cuestión de Inconstitucionalidad ante el TC (art. 53.1)        │
+│ ├─ Procedimiento preferente y sumario ante tribunales ordinarios (art. 53.2)│
+│ └─ Recurso de Amparo ante el Tribunal Constitucional (art. 53.2)            │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ NIVEL ORDINARIO (Sección 2.ª Cap. II: Arts. 30 a 38 CE)                     │
+│ ├─ Vinculación a todos los poderes públicos (art. 53.1)                     │
+│ ├─ Reserva de Ley Ordinaria (art. 53.1)                                     │
+│ ├─ Respeto a su contenido esencial (art. 53.1)                              │
+│ └─ Recurso / Cuestión de Inconstitucionalidad ante el TC (art. 53.1)        │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ NIVEL INFORMATIVO (Capítulo III: Arts. 39 a 52 CE)                          │
+│ ├─ Informan la legislación positiva, la práctica judicial y la actuación   │
+│ └─ Solo alegables ante la jurisdicción ordinaria de acuerdo con las leyes  │
+└─────────────────────────────────────────────────────────────────────────────┘
+</pre></div>
+<div class="callout"><p><strong>¡OJO OPOSICIONES!</strong>
+El artículo 14 (igualdad) y el artículo 30.2 (objeción de conciencia) gozan del procedimiento preferente y sumario ordinario y de recurso de amparo constitucional (art. 53.2 CE), pero <strong>NO se regulan por Ley Orgánica</strong> (la reserva de LO del art. 81.1 se ciñe a la Sección 1.ª: arts. 15 a 29).</p></div>
+<h3 class="sub-title">4.2. Garantías normativas e institucionales</h3>
+<ol>
+<li><strong>Vinculación directa (art. 53.1 CE):</strong> Los derechos y libertades del Capítulo II vinculan a todos los poderes públicos sin necesidad de desarrollo reglamentario ni intermediación legal previa.</li>
+<li><strong>Reserva de ley y respeto del contenido esencial (art. 53.1 CE):</strong> Solo por ley (ordinaria u orgánica, según el caso) puede regularse el ejercicio de tales derechos, debiendo respetar siempre su contenido esencial (aquel núcleo irreductible que los hace reconocibles, según doctrina consolidada del TC, STC 11/1981).</li>
+<li><strong>El Defensor del Pueblo (art. 54 CE):</strong></li>
+<li>Alto comisionado de las Cortes Generales designado por éstas para la defensa de los derechos del Título I.</li>
+<li>Mandato de <strong>5 años</strong>; elegido por mayoría de <strong>tres quintos</strong> de los miembros del Congreso y ratificado por igual mayoría del Senado (LO 3/1981).</li>
+<li>Supervisa la actividad de la Administración del Estado, autonómica y local, dando cuenta anual a las Cortes Generales.</li>
+<li>Goza de legitimación activa para interponer <strong>recurso de inconstitucionalidad</strong> y <strong>recurso de amparo</strong> ante el TC (arts. 162.1.a y 162.1.b CE).</li>
+</ol>
+<h3 class="sub-title">4.3. Garantías jurisdiccionales: Procedimiento preferente y sumario</h3>
+<p>El artículo 53.2 de la CE consagra la vía judicial reforzada: cualquier ciudadano puede recabar la tutela de los derechos reconocidos en el artículo 14 y en la Sección 1.ª del Capítulo II (arts. 15 a 29) ante los Tribunales ordinarios por un procedimiento basado en los principios de <strong>preferencia</strong> (tramitación con prioridad absoluta sobre el resto de asuntos) y <strong>sumariedad</strong> (urgencia procesal y limitación del objeto al derecho invocado). Este cauce se canaliza procesalmente a través de los artículos 114 a 122 de la Ley 29/1998, reguladora de la Jurisdicción Contencioso-Administrativa (LJCA).</p>
+<h3 class="sub-title">4.4. El recurso de amparo constitucional</h3>
+<p>Regulado en el artículo 53.2 y 161.1.b de la CE y en los artículos 41 a 58 de la Ley Orgánica 2/1979 del Tribunal Constitucional (LOTC):
+* <strong>Objeto:</strong> Proteger frente a violaciones de los derechos del art. 14, arts. 15 a 29 y objeción de conciencia (art. 30.2) originadas por disposiciones sin rango de ley, actos jurídicos, omisiones o simple vía de hecho de los poderes públicos del Estado, CCAA y entes locales.
+* <strong>Requisito sustantivo (reforma por LO 6/2007):</strong> El recurrente debe justificar formalmente en la demanda la existencia de una <strong>especial trascendencia constitucional</strong> del recurso (art. 50.1.b LOTC; STC 155/2009).
+* <strong>Legitimación activa:</strong> Toda persona natural o jurídica que invoque un interés legítimo, el Defensor del Pueblo y el Ministerio Fiscal.</p>
+<hr />
+<h2 class="section-title">5. La suspensión de los derechos y libertades (artículo 55 CE)</h2>
+
+<h3 class="sub-title">5.1. Suspensión colectiva o general (artículo 55.1 CE)</h3>
+<p>Se produce ante situaciones de grave anomalía o crisis que impiden el normal funcionamiento de las instituciones, conforme a la regulación del <strong>artículo 116 de la CE</strong> y la <strong>Ley Orgánica 4/1981, de 1 de junio</strong>:</p>
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Estado Excepcional</th>
+<th style="text-align: left;">Presupuesto Fáctico y Declaración</th>
+<th style="text-align: left;">Duración Máxima</th>
+<th style="text-align: left;">Derechos Susceptibles de Suspensión</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Alarma</strong> <em>(art. 116.2)</em></td>
+<td style="text-align: left;">Catástrofes, calamidades, crisis sanitarias graves o desabastecimientos de productos de primera necesidad. Declarado por el <strong>Gobierno</strong> mediante Decreto acordado en Consejo de Ministros por plazo máx. de <strong>15 días</strong>, dando cuenta al Congreso, cuya autorización es preceptiva para prorrogas.</td>
+<td style="text-align: left;">15 días (+ prórrogas autorizadas)</td>
+<td style="text-align: left;"><strong>NO suspende ningún derecho fundamental</strong>; solo permite acordar limitaciones de circulación, permanencia, requisas temporales e intervención de fábricas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Excepción</strong> <em>(art. 116.3)</em></td>
+<td style="text-align: left;">Grave alteración del libre ejercicio de derechos o funcionamiento de instituciones democráticas. Declarado por el <strong>Gobierno</strong> mediante Decreto en Consejo de Ministros, <strong>previa autorización expresa del Congreso de los Diputados</strong>.</td>
+<td style="text-align: left;">Máximo <strong>30 días</strong>, prorrogable por igual plazo.</td>
+<td style="text-align: left;">Arts. 17 (plazo detención máx. 10 días), 18.2 (inviolabilidad domicilio), 18.3 (secreto comunicaciones), 19 (residencia y circulación), 20.1.a y d y 20.5 (libertad expresión e información y secuestro publicaciones), 21.2 (manifestaciones) y 37.2 (conflicto colectivo).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sitio</strong> <em>(art. 116.4)</em></td>
+<td style="text-align: left;">Insurrección o acto de fuerza contra la soberanía, independencia o integridad territorial o el orden constitucional que no pueda resolverse por otros medios. Declarado por <strong>mayoría absoluta del Congreso de los Diputados</strong>, a propuesta exclusiva del <strong>Gobierno</strong>.</td>
+<td style="text-align: left;">El Congreso determina plazo y condiciones.</td>
+<td style="text-align: left;">Todos los del estado de excepción más las garantías del detenido del <strong>artículo 17.3 CE</strong> (derecho a ser informado de los derechos y motivos de la detención, y asistencia letrada).</td>
+</tr>
+</tbody>
+</table>
+<div class="callout"><p><strong>IMPORTANTE:</strong> En ningún estado excepcional se interrumpe el funcionamiento de los poderes constitucionales ni decae el principio de responsabilidad del Gobierno y sus agentes. Durante su vigencia no puede disolverse el Congreso de los Diputados (art. 116.5 CE).</p></div>
+<h3 class="sub-title">5.2. Suspensión individual de garantías (artículo 55.2 CE)</h3>
+<p>Una ley orgánica (art. 384 bis y 520 bis de la Ley de Enjuiciamiento Criminal) puede determinar la forma y los casos en los que, de forma individual y con la necesaria <strong>intervención judicial</strong> y el adecuado <strong>control parlamentario</strong>, los derechos reconocidos en los <strong>artículos 17.2</strong> (plazo máximo de detención preventiva, prorrogable judicialmente 48 horas más en terrorismo), <strong>18.2</strong> (inviolabilidad de domicilio) y <strong>18.3</strong> (secreto de comunicaciones) pueden ser suspendidos para personas determinadas, en relación con las investigaciones de bandas armadas o elementos terroristas.</p>
+<hr />
+<h2 class="section-title">6. El procedimiento de reforma constitucional (Título X CE)</h2>
+
+<p>La Constitución de 1978 se clasifica como rígida al prever trámites cualificados de reforma en sus artículos 166 a 169:</p>
+<h3 class="sub-title">6.1. La iniciativa de reforma constitucional (artículo 166 CE)</h3>
+<p>El artículo 166 remite a los apartados 1 y 2 del artículo 87 de la CE. Por tanto, la iniciativa corresponde exclusivamente a:
+1. El <strong>Gobierno</strong> (aprobando un proyecto de reforma en Consejo de Ministros).
+2. El <strong>Congreso de los Diputados</strong> (proposición firmada por dos grupos parlamentarios o por una quinta parte de los diputados: art. 146 RCD).
+3. El <strong>Senado</strong> (proposición firmada por cincuenta senadores que no pertenezcan al mismo grupo parlamentario: art. 152 RS).
+4. Las <strong>Asambleas Legislativas de las Comunidades Autónomas</strong> (solicitando al Gobierno la adopción de un proyecto o remitiendo a la Mesa del Congreso una proposición de ley).
+* <strong>Exclusión terminante:</strong> Queda excluida expresamente la iniciativa legislativa popular para la reforma constitucional (art. 87.3 CE).</p>
+<h3 class="sub-title">6.2. El procedimiento ordinario de reforma (artículo 167 CE)</h3>
+<p>Aplicable a cualquier reforma que no afecte a las materias reservadas al procedimiento agravado:
+1. <strong>Regla general:</strong> Los proyectos o proposiciones deben ser aprobados por una <strong>mayoría de tres quintos (3/5)</strong> de cada una de las Cámaras (Congreso y Senado).
+2. <strong>Comisión Mixta paritaria:</strong> De no haber acuerdo entre ambas, se intentará obtenerlo mediante una Comisión Mixta paritaria de Diputados y Senadores, que presentará un texto que será votado por ambas Cámaras.
+3. <strong>Mecanismo de desbloqueo:</strong> Si no se logra la aprobación mediante la Comisión Mixta, y siempre que el texto hubiera obtenido el voto favorable de la mayoría absoluta del Senado, el Congreso, por <strong>mayoría de dos tercios (2/3)</strong>, podrá aprobar la reforma.
+4. <strong>Referéndum facultativo o potestativo:</strong> Aprobada la reforma por las Cortes Generales, será sometida a referéndum para su ratificación cuando así lo soliciten, dentro de los <strong>quince días siguientes a su aprobación</strong>, una <strong>décima parte (1/10)</strong> de los miembros de cualquiera de las Cámaras (35 Diputados o 27 Senadores aprox.).</p>
+<h3 class="sub-title">6.3. El procedimiento agravado de reforma (artículo 168 CE)</h3>
+<p>Procede de modo preceptivo cuando se proponga la <strong>revisión total</strong> de la Constitución o una parcial que afecte a:
+* El <strong>Título Preliminar</strong> (arts. 1 a 9).
+* La <strong>Sección 1.ª del Capítulo II del Título I</strong> (arts. 15 a 29: derechos fundamentales y libertades públicas).
+* El <strong>Título II</strong> (arts. 56 a 65: La Corona).</p>
+<p>El iter procedimental reviste una extrema complejidad:
+1. <strong>Principio de revisión:</strong> Aprobación del principio por mayoría de <strong>dos tercios (2/3)</strong> de cada Cámara (Congreso y Senado).
+2. <strong>Disolución inmediata:</strong> Aprobado el principio, se procede a la disolución inmediata de las Cortes Generales y convocatoria de elecciones generales.
+3. <strong>Ratificación por las nuevas Cortes:</strong> Las Cámaras recién elegidas deben ratificar la decisión de reforma (basta mayoría simple en el Congreso conforme a su Reglamento y mayoría absoluta en el Senado) y proceder al estudio del nuevo texto constitucional.
+4. <strong>Aprobación del texto:</strong> El nuevo texto debe ser aprobado por mayoría de <strong>dos tercios (2/3)</strong> de ambas Cámaras.
+5. <strong>Referéndum preceptivo y vinculante:</strong> Aprobada la reforma por las Cortes Generales, es obligatoriamente sometida a referéndum de todo el cuerpo electoral para su definitiva ratificación.</p>
+<h3 class="sub-title">6.4. Límites temporales a la reforma constitucional (artículo 169 CE)</h3>
+<div class="callout"><p><em>"No podrá iniciarse la reforma constitucional en tiempo de guerra o de vigencia de alguno de los estados previstos en el artículo 116."</em> (alarma, excepción o sitio).</p></div>
+<p>Nótese que la Constitución prohíbe <em>iniciar</em> la reforma, no continuar la tramitación de una previamente admitida, si bien el sentido institucional aconseja su suspensión cautelar. La CE no contiene cláusulas de intangibilidad material (no hay preceptos inmutables).</p>
+<h3 class="sub-title">6.5. Las tres reformas constitucionales acontecidas en España</h3>
+<p>Hasta la fecha, la Constitución Española de 1978 ha sido modificada en tres ocasiones, todas ellas a través del procedimiento ordinario del artículo 167:
+1. <strong>Reforma de 27 de agosto de 1992:</strong> Modificación del artículo 13.2 para añadir las palabras <em>"y pasivo"</em>, permitiendo a los ciudadanos de la Unión Europea ser elegibles en las elecciones municipales conforme al Tratado de Maastricht.
+2. <strong>Reforma de 27 de septiembre de 2011:</strong> Modificación sustantiva del artículo 135 para consagrar el principio de estabilidad presupuestaria y disciplina fiscal vinculante para todas las Administraciones Públicas, limitando el déficit estructural y dando prioridad absoluta al pago de la deuda pública.
+3. <strong>Reforma de 15 de febrero de 2024:</strong> Modificación íntegra del artículo 49 para desterrar el vocablo degradante <em>"disminuidos"</em> por <em>"personas con discapacidad"</em>, adaptando la Constitución a la Convención Internacional sobre los Derechos de las Personas con Discapacidad de la ONU de 2006 y blindando su accesibilidad universal e inclusión plena.</p>
+<hr />
+<h2 class="section-title">7. Conclusión y relevancia para el Cuerpo Técnico Facultativo de la Junta de Andalucía</h2>
+
+<p>El dominio exhaustivo del Título Preliminar, el Título I y el Título X de la Constitución resulta indispensable para los funcionarios del Grupo A2 de la Junta de Andalucía. Todo acto administrativo dictado en el ejercicio de funciones técnicas facultativas encuentra su legitimidad originaria en la sumisión al principio de legalidad (art. 9.1 y 103.1 CE) y debe respetar escrupulosamente los derechos fundamentales sustantivos y las garantías procedimentales de los administrados (art. 24 y 105 CE), asegurando al mismo tiempo la efectividad de la cláusula de igualdad material del artículo 9.2 CE en el territorio andaluz.</p>
+<hr />
+<h2 class="section-title">8. Anexo: Cuadros sinópticos y mapas conceptuales</h2>
+
+<div class="diagram-box"><pre>                   COMPARATIVA PROCEDIMIENTOS DE REFORMA CE
+┌─────────────────────────────┬──────────────────────────┬──────────────────────────┐
+│ PARÁMETRO                   │ PROCEDIMIENTO ORDINARIO  │ PROCEDIMIENTO AGRAVADO   │
+│                             │ (Art. 167 CE)            │ (Art. 168 CE)            │
+├─────────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Ámbito Material             │ Todo lo no reservado     │ Revisión total; Título   │
+│                             │ al art. 168              │ Preliminar; Sec. 1ª Cap. │
+│                             │                          │ II Título I; Título II   │
+├─────────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Mayoría en 1ª votación      │ 3/5 Congreso y Senado    │ 2/3 Congreso y Senado    │
+├─────────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Comisión Mixta paritaria    │ Sí (en caso de desacuer) │ No contemplada           │
+├─────────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Vía de desbloqueo           │ Senado: Mayoría absoluta │ No existe                │
+│                             │ Congreso: 2/3            │                          │
+├─────────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Disolución de las Cortes    │ No                       │ Sí, preceptiva inmediata │
+├─────────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Nuevas Cortes Generales     │ No intervienen           │ Ratifican y aprueban por │
+│                             │                          │ 2/3 de ambas Cámaras     │
+├─────────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Referéndum popular          │ Potestativo (si lo pide  │ Preceptivo y vinculante  │
+│                             │ 1/10 de cualquier Cámara)│ en todo caso             │
+└─────────────────────────────┴──────────────────────────┴──────────────────────────┘
+</pre></div>
+
+</body>
+</html>

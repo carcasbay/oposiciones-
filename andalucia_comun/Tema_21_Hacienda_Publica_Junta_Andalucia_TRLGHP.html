@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 21: La Hacienda Pública de la Junta de Andalucía: El Texto Refundido de la Ley General de la Hacienda Pública de la Junta de Andalucía (Decreto Legislativo 1/2010). Principios Generales y Presupuestarios. Los Derechos y Obligaciones de la Hacienda Autonómica: Régimen Jurídico y Prerrogativas</title>
+<style>
+
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #4b5563;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #6b7280;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #047857;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #047857;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #14532d;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #047857;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #1f2937;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #374151;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #047857;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #047857;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #064e3b;
+    margin-bottom: 5px;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #e6f4ea;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f8fafc;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">JUNTA DE ANDALUCÍA — MATERIAS COMUNES (A2)</div>
+  <h1>TEMA 21</h1>
+  <h2>La Hacienda Pública de la Junta de Andalucía: El Texto Refundido de la Ley General de la Hacienda Pública de la Junta de Andalucía (Decreto Legislativo 1/2010). Principios Generales y Presupuestarios. Los Derechos y Obligaciones de la Hacienda Autonómica: Régimen Jurídico y Prerrogativas</h2>
+  <div class="meta-box">
+<p>**Cuerpo:** Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p>**Grupo:** A2</p>
+<p>**Bloque:** Materias Comunes</p>
+<p>**Tema Oficial:** Tema 21</p>
+<p>**Normativa Clave:**</p>
+<p>Constitución Española de 1978 (arts. 31, 128, 133, 134, 135 y 156 a 158).</p>
+<p>Estatuto de Autonomía para Andalucía (Ley Orgánica 2/2007, arts. 175 a 194).</p>
+<p>Texto Refundido de la Ley General de la Hacienda Pública de la Junta de Andalucía (Decreto Legislativo 1/2010, de 2 de marzo - TRLGHPJA).</p>
+<p>Ley Orgánica 8/1980, de 22 de septiembre, de Financiación de las Comunidades Autónomas (LOFCA).</p>
+<p>Ley Orgánica 2/2012, de 27 de abril, de Estabilidad Presupuestaria y Sostenibilidad Financiera (LOEPSF).</p>
+<p>Ley 58/2003, de 17 de diciembre, General Tributaria (LGT).</p>
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 21</div>
+<div class="toc-item level-1">1. Introducción y marco estatutario de la Hacienda Pública de la Junta de Andalucía</div>
+<div class="toc-item level-1">2. El Texto Refundido de la Ley General de la Hacienda Pública de la Junta de Andalucía (Decreto Legislativo 1/2010)</div>
+<div class="toc-item level-2">2.1. Objeto, ámbito de aplicación subjetivo y sector público autonómico</div>
+<div class="toc-item level-2">2.2. Competencias de los órganos superiores en materia de Hacienda</div>
+<div class="toc-item level-1">3. Principios generales de la Hacienda Pública autonómica</div>
+<div class="toc-item level-2">3.1. Legalidad, estabilidad presupuestaria y sostenibilidad financiera</div>
+<div class="toc-item level-2">3.2. Eficacia, eficiencia, economía y transparencia</div>
+<div class="toc-item level-2">3.3. Unidad de caja y coordinación financiera</div>
+<div class="toc-item level-1">4. Principios presupuestarios clásicos y contemporáneos</div>
+<div class="toc-item level-2">4.1. Principio de legalidad presupuestaria y reserva de ley</div>
+<div class="toc-item level-2">4.2. Principio de anualidad y ejercicio presupuestario</div>
+<div class="toc-item level-2">4.3. Principios de unidad y universalidad (presupuesto bruto)</div>
+<div class="toc-item level-2">4.4. Principio de no afectación de ingresos</div>
+<div class="toc-item level-2">4.5. Principio de especialidad presupuestaria: cualitativa, cuantitativa y temporal</div>
+<div class="toc-item level-2">4.6. Principio de equilibrio presupuestario y regla de gasto</div>
+<div class="toc-item level-1">5. Los derechos de la Hacienda de la Junta de Andalucía</div>
+<div class="toc-item level-2">5.1. Concepto y clasificación: derechos de naturaleza pública y privada</div>
+<div class="toc-item level-2">5.2. Régimen jurídico de los derechos de naturaleza pública: liquidación y recaudación</div>
+<div class="toc-item level-2">5.3. Prerrogativas de la Hacienda Pública autonómica</div>
+<div class="toc-item level-3">5.3.1. Derecho de prelación general y especial de créditos (art. 21 TRLGHPJA)</div>
+<div class="toc-item level-3">5.3.2. Afección de bienes y derecho de retención</div>
+<div class="toc-item level-3">5.3.3. Procedimiento de apremio y ejecutoriedad de los actos</div>
+<div class="toc-item level-3">5.3.4. Devengo de intereses de demora (interés legal del dinero)</div>
+<div class="toc-item level-3">5.3.5. Aplazamiento y fraccionamiento de pagos</div>
+<div class="toc-item level-2">5.4. Régimen de prescripción de los derechos de la Hacienda autonómica (art. 22 TRLGHPJA)</div>
+<div class="toc-item level-1">6. Las obligaciones de la Hacienda de la Junta de Andalucía</div>
+<div class="toc-item level-2">6.1. Concepto y fuentes de las obligaciones patrimoniales</div>
+<div class="toc-item level-2">6.2. Régimen de exigibilidad: vinculación al crédito presupuestario (art. 24 TRLGHPJA)</div>
+<div class="toc-item level-2">6.3. Intereses de demora frente a la Administración autonómica (art. 25 TRLGHPJA)</div>
+<div class="toc-item level-2">6.4. Prescripción de las obligaciones y deudas de la Hacienda autonómica (art. 26 TRLGHPJA)</div>
+<div class="toc-item level-2">6.5. La inembargabilidad de los fondos y bienes públicos: doctrina constitucional y alcance actual (art. 23 TRLGHPJA)</div>
+<div class="toc-item level-1">7. Conclusiones y síntesis doctrinal</div>
+<div class="toc-item level-1">8. Anexo: Tabla sinóptica y cuadro de prerrogativas, plazos y prescripciones</div>
+</div>
+
+<hr />
+<h2 class="section-title">1. Introducción y marco estatutario de la Hacienda Pública de la Junta de Andalucía</h2>
+<p>La <strong>Hacienda Pública de la Comunidad Autónoma de Andalucía</strong> se fundamenta en el principio de autonomía financiera reconocido en el <strong>artículo 156.1 de la Constitución Española</strong>, conforme al cual las Comunidades Autónomas gozan de autonomía financiera para el desarrollo y ejecución de sus competencias con arreglo a los principios de coordinación con la Hacienda estatal y de solidaridad entre todos los españoles.</p>
+<p>En el plano estatutario, el <strong>Título VII del Estatuto de Autonomía para Andalucía (Ley Orgánica 2/2007, de 19 de marzo)</strong>, bajo la rúbrica <em>"Hacienda y Financiación"</em>, consagra en su artículo 175 los principios informadores del sistema hacendístico andaluz: suficiencia, equidad, solidaridad, corresponsabilidad fiscal, lealtad institucional y eficiencia en la gestión de los recursos públicos. Asimismo, el artículo 177 confiere a la Comunidad Autónoma la competencia exclusiva en materia de organización y gestión de su propia Hacienda, respetando el marco básico estatal configurado por la <strong>Ley Orgánica 8/1980 de Financiación de las Comunidades Autónomas (LOFCA)</strong> y la <strong>Ley Orgánica 2/2012 de Estabilidad Presupuestaria y Sostenibilidad Financiera (LOEPSF)</strong>.</p>
+<p>El instrumento nuclear que estructura, regula y sistematiza la actividad económico-financiera de la Comunidad Autónoma es el <strong>Texto Refundido de la Ley General de la Hacienda Pública de la Junta de Andalucía (TRLGHPJA)</strong>, aprobado mediante el <strong>Decreto Legislativo 1/2010, de 2 de marzo</strong>.</p>
+<hr />
+<h2 class="section-title">2. El Texto Refundido de la Ley General de la Hacienda Pública de la Junta de Andalucía (Decreto Legislativo 1/2010)</h2>
+<h3 class="sub-title">2.1. Objeto, ámbito de aplicación subjetivo y sector público autonómico</h3>
+<p>A tenor del <strong>artículo 1 del TRLGHPJA</strong>, la ley tiene por objeto la regulación del régimen presupuestario, económico-financiero, de contabilidad y de control de la Administración de la Junta de Andalucía y de sus entidades instrumentales.</p>
+<p>El <strong>artículo 2 del TRLGHPJA</strong> define la composición del sector público de la Comunidad Autónoma de Andalucía, clasificando a las entidades que lo integran:
+1. <strong>La Administración de la Junta de Andalucía</strong> (Consejerías, Viceconsejerías, Direcciones Generales y órganos territoriales).
+2. <strong>Las agencias administrativas</strong>, que gozan de personalidad jurídica pública diferenciada y régimen de derecho público.
+3. <strong>Las agencias de régimen especial</strong>, con autonomía de gestión reforzada y régimen jurídico mixto.
+4. <strong>Las agencias públicas empresariales</strong>, que realizan actividades prestacionales o productivas en régimen de derecho privado, sin perjuicio de las potestades administrativas asignadas.
+5. <strong>Las sociedades mercantiles del sector público andaluz</strong>, en las que la participación directa o indirecta de la Junta sea superior al 50%.
+6. <strong>Las fundaciones del sector público andaluz</strong>, dotadas mayoritariamente por la Junta o cuyo patrimonio fundacional esté constituido en más del 50% por bienes autonómicos.
+7. <strong>Los consorcios</strong> adscritos a la Administración de la Junta de Andalucía conforme a la legislación básica sobre régimen jurídico del sector público.</p>
+<div class="callout"><div class="callout-title">Definición Legal (Art. 4 TRLGHPJA)</div><p><em>"La Hacienda de la Junta de Andalucía está constituida por el conjunto de derechos y de obligaciones de contenido económico cuya titularidad corresponde a la Administración de la Junta de Andalucía o a sus agencias administrativas y de régimen especial."</em></p></div>
+<h3 class="sub-title">2.2. Competencias de los órganos superiores en materia de Hacienda</h3>
+<ul>
+<li><strong>Consejo de Gobierno (art. 8 TRLGHPJA):</strong> Determina las directrices de la política económica y financiera, aprueba los proyectos de Ley de Presupuestos, aprueba reglamentos en materia financiera y autoriza gastos en los supuestos legalmente previstos.</li>
+<li><strong>Consejería competente en materia de Hacienda (art. 9 TRLGHPJA):</strong> Le corresponde la administración general de la Hacienda Pública, la elaboración y liquidación del Presupuesto, la gestión de la Tesorería General, la ordenación general de pagos, la tutela financiera y la dirección de la contabilidad pública y del control interno a través de la Intervención General.</li>
+</ul>
+<hr />
+<h2 class="section-title">3. Principios generales de la Hacienda Pública autonómica</h2>
+<p>El TRLGHPJA proclama un conjunto de principios informadores de la gestión económico-financiera:</p>
+<h3 class="sub-title">3.1. Legalidad, estabilidad presupuestaria y sostenibilidad financiera</h3>
+<ul>
+<li><strong>Principio de legalidad (art. 5 TRLGHPJA):</strong> La administración de la Hacienda Pública está sujeta al principio de legalidad; la exacción de tributos, la emisión de deuda pública y la autorización de gastos públicos requieren cobertura en norma con rango de ley.</li>
+<li><strong>Estabilidad presupuestaria y sostenibilidad financiera (art. 135 CE y LOEPSF):</strong> El sector público andaluz debe observar una posición de equilibrio o superávit estructural, garantizando la capacidad para atender los compromisos de gasto presentes y futuros dentro de los límites de deuda pública y regla de gasto fijados por el Consejo de Política Fiscal y Financiera (CPFF).</li>
+</ul>
+<h3 class="sub-title">3.2. Eficacia, eficiencia, economía y transparencia</h3>
+<ul>
+<li><strong>Eficacia y eficiencia:</strong> Los recursos públicos deben asignarse de forma equitativa y eficiente para el cumplimiento de los objetivos fijados en los programas presupuestarios.</li>
+<li><strong>Economía:</strong> Exige la minimización de los costes de los factores utilizados para la consecución de unos niveles de servicio determinados.</li>
+<li><strong>Transparencia:</strong> La gestión financiera debe rendir cuentas a la ciudadanía de forma accesible, clara y puntual mediante el Portal de la Junta de Andalucía y los sistemas contables públicos.</li>
+</ul>
+<h3 class="sub-title">3.3. Unidad de caja y coordinación financiera</h3>
+<ul>
+<li><strong>Unidad de caja (art. 76 TRLGHPJA):</strong> Todos los caudales y recursos de la Junta y de sus agencias administrativas deben centralizarse en la Tesorería General de la Junta de Andalucía, garantizándose la liquidez del sistema y optimizando la rentabilidad financiera.</li>
+<li><strong>Coordinación financiera:</strong> Articulación con la Hacienda General del Estado, las Entidades Locales andaluzas y los fondos de la Unión Europea.</li>
+</ul>
+<hr />
+<h2 class="section-title">4. Principios presupuestarios clásicos y contemporáneos</h2>
+<p>Los principios presupuestarios rigen la elaboración, aprobación, ejecución y control de los Presupuestos Generales de la Comunidad Autónoma:</p>
+<h3 class="sub-title">4.1. Principio de legalidad presupuestaria y reserva de ley</h3>
+<p>Consagrado en los artículos 134.1 CE y 190 del Estatuto de Autonomía. Corresponde al Parlamento de Andalucía la aprobación de los Presupuestos mediante ley anual, sin que la Administración pueda adquirir compromisos de gasto ni efectuar pagos sino con cargo a los créditos legalmente autorizados.</p>
+<h3 class="sub-title">4.2. Principio de anualidad y ejercicio presupuestario</h3>
+<p>El ejercicio presupuestario coincide con el año natural (del 1 de enero al 31 de diciembre). Todos los derechos liquidados y obligaciones reconocidas en dicho lapso se imputan al presupuesto de ese ejercicio (art. 34 TRLGHPJA).</p>
+<h3 class="sub-title">4.3. Principios de unidad y universalidad (presupuesto bruto)</h3>
+<ul>
+<li><strong>Unidad (art. 32 TRLGHPJA):</strong> Los Presupuestos Generales de la Comunidad Autónoma integran en un único documento legislativo la totalidad de los ingresos y gastos de todos los órganos y entidades del sector público autonómico.</li>
+<li><strong>Universalidad o presupuesto bruto (art. 33 TRLGHPJA):</strong> Todos los ingresos y todos los gastos deben figurar en el Presupuesto por su importe íntegro, sin compensaciones ni deducciones previas entre unos y otros.</li>
+</ul>
+<h3 class="sub-title">4.4. Principio de no afectación de ingresos</h3>
+<p>Salvo excepciones legales expresas (tasas afectas a servicios específicos, transferencias finalistas de la UE o del Estado, tributos propios finalistas), la totalidad de los ingresos públicos se destinan a financiar indistintamente la totalidad de los gastos públicos (art. 33.2 TRLGHPJA).</p>
+<h3 class="sub-title">4.5. Principio de especialidad presupuestaria</h3>
+<p>Garantiza que la autorización conferida por el Parlamento no sea un cheque en blanco. Se descompone en tres vertientes:
+1. <strong>Especialidad cualitativa:</strong> Los créditos deben destinarse exclusivamente a la finalidad específica para la que hayan sido autorizados por la Ley de Presupuestos (art. 37 TRLGHPJA).
+2. <strong>Especialidad cuantitativa:</strong> No pueden adquirirse compromisos de gasto ni contraerse obligaciones por cuantía superior al importe de los créditos autorizados en el presupuesto, siendo nulos de pleno derecho los actos que infrinjan esta norma (art. 36 TRLGHPJA).
+3. <strong>Especialidad temporal:</strong> Los créditos presupuestarios autorizados se extinguen al finalizar el ejercicio, quedando anulados los saldos no comprometidos, sin perjuicio de las excepciones legales de incorporación de remanentes (art. 35 TRLGHPJA).</p>
+<h3 class="sub-title">4.6. Principio de equilibrio presupuestario y regla de gasto</h3>
+<p>De conformidad con el artículo 135 CE y la LOEPSF, los Presupuestos deben formularse y ejecutarse en condiciones de equilibrio presupuestario estructural, respetando el límite máximo de gasto no financiero aprobado por el Parlamento de Andalucía.</p>
+<hr />
+<h2 class="section-title">5. Los derechos de la Hacienda de la Junta de Andalucía</h2>
+<h3 class="sub-title">5.1. Concepto y clasificación: derechos de naturaleza pública y privada</h3>
+<ul>
+<li><strong>Derechos de naturaleza pública:</strong> Tributos propios, tributos cedidos (tasas, impuestos y contribuciones especiales), recargos, sanciones administrativas, precios públicos, reintegros de subvenciones y demás recursos derivados del ejercicio de potestades administrativas.</li>
+<li><strong>Derechos de naturaleza privada:</strong> Rendimientos o productos de bienes patrimoniales, dividendos de sociedades mercantiles, rentas de inmuebles, donaciones, legados y herencias aceptadas a beneficio de inventario.</li>
+</ul>
+<h3 class="sub-title">5.2. Régimen jurídico de los derechos de naturaleza pública</h3>
+<p>Están sujetos a las normas de Derecho Administrativo y al TRLGHPJA, supletoriamente a la Ley General Tributaria (LGT) y a la Ley General Presupuestaria (LGP). Gozan de autotutela declarativa y ejecutiva: se liquidan por la propia Administración o mediante autoliquidación del contribuyente, y su cobro se realiza en periodo voluntario y, en su defecto, en vía ejecutiva de apremio.</p>
+<h3 class="sub-title">5.3. Prerrogativas de la Hacienda Pública autonómica</h3>
+<p>La Hacienda de la Junta de Andalucía ostenta las mismas prerrogativas que el ordenamiento jurídico atribuye a la Hacienda del Estado:</p>
+<h4 class="sub-sub-title">5.3.1. Derecho de prelación general y especial de créditos (art. 21 TRLGHPJA)</h4>
+<p>Los créditos de la Hacienda de la Junta de Andalucía que deban satisfacerse por personas físicas o jurídicas gozan de la prelación establecida en el Código Civil y en la legislación tributaria general frente a los demás acreedores privados. Gozan de preferencia especial sobre los bienes afectos al pago del tributo y preferencia general sobre la masa patrimonial del deudor.</p>
+<h4 class="sub-sub-title">5.3.2. Afección de bienes y derecho de retención</h4>
+<p>Los bienes y derechos transmitidos quedan afectos al pago de los tributos que gravan su adquisición o tenencia mientras no prescriba la deuda. La Administración ostenta derecho de retención de pagos a favor de deudores de la Hacienda autonómica.</p>
+<h4 class="sub-sub-title">5.3.3. Procedimiento de apremio y ejecutoriedad de los actos</h4>
+<p>El cobro de los créditos de naturaleza pública se efectúa a través del <strong>procedimiento administrativo de apremio</strong>, regulado en el Reglamento General de Recaudación y la LGT, mediante providencia de apremio dictada por el órgano recaudador competente, que tiene la misma fuerza ejecutiva que una sentencia judicial y permite el embargo inmediato de cuentas, sueldos y bienes.</p>
+<h4 class="sub-sub-title">5.3.4. Devengo de intereses de demora (interés legal del dinero)</h4>
+<p>A tenor del <strong>artículo 20 del TRLGHPJA</strong>, las cantidades adeudadas a la Hacienda de la Junta de Andalucía devengan interés de demora desde el día siguiente al del vencimiento de la deuda en periodo voluntario hasta la fecha de su efectivo pago. El tipo de interés de demora aplicable es el <strong>interés legal del dinero vigente</strong> fijado en la Ley de Presupuestos Generales del Estado, incrementado en un 25%, salvo que la Ley de Presupuestos establezca otro tipo.</p>
+<h4 class="sub-sub-title">5.3.5. Aplazamiento y fraccionamiento de pagos</h4>
+<p>La persona titular de la Consejería de Hacienda o los órganos en quienes delegue podrán aplazar o fraccionar el pago de deudas de la Hacienda autonómica, previa solicitud y prestación de garantía suficiente (aval bancario, fianza solidaria o hipoteca), siempre que la situación económico-financiera del deudor le impida transitoriamente hacer frente al pago (art. 19 TRLGHPJA).</p>
+<h3 class="sub-title">5.4. Régimen de prescripción de los derechos de la Hacienda autonómica (art. 22 TRLGHPJA)</h3>
+<p>Salvo lo establecido en leyes especiales, <strong>prescribirá a los cuatro años</strong>:
+1. El derecho de la Administración a reconocer o liquidar créditos a su favor, computado desde el día en que el derecho pudo ejercitarse.
+2. El derecho de la Administración a exigir el pago de los créditos liquidados, computado desde la fecha de notificación de la liquidación o desde que finalizó el plazo voluntario de pago.</p>
+<div class="callout"><div class="callout-title">Interrupción de la prescripción</div><p>La prescripción de los derechos de la Hacienda autonómica se interrumpe por cualquier acción administrativa dirigida a la liquidación o cobro con conocimiento formal del deudor, por la interposición de reclamaciones o recursos, o por cualquier actuación fehaciente del deudor conducente al reconocimiento o pago de la deuda.</p></div>
+<hr />
+<h2 class="section-title">6. Las obligaciones de la Hacienda de la Junta de Andalucía</h2>
+<h3 class="sub-title">6.1. Concepto y fuentes de las obligaciones patrimoniales</h3>
+<p>De acuerdo con el <strong>artículo 23 del TRLGHPJA</strong>, las obligaciones económicas de la Junta de Andalucía y de sus agencias nacen de:
+* La ley.
+* Los negocios jurídicos (contratos, convenios).
+* Los actos administrativos que legalmente las generen.
+* Los hechos y omisiones ilícitos en que intervenga culpa o negligencia (responsabilidad patrimonial).</p>
+<h3 class="sub-title">6.2. Régimen de exigibilidad: vinculación al crédito presupuestario (art. 24 TRLGHPJA)</h3>
+<p>Las obligaciones de la Hacienda de la Junta de Andalucía <strong>sólo son exigibles cuando resulten de la ejecución de los Presupuestos</strong> conforme a sus créditos aprobados, de sentencia judicial firme o de operaciones de tesorería legalmente autorizadas.</p>
+<p>Si la obligación dimana de una sentencia judicial firme y no existe crédito presupuestario disponible, la Administración incoará de inmediato el expediente de modificación presupuestaria pertinente para habilitar el crédito dentro del plazo legal.</p>
+<h3 class="sub-title">6.3. Intereses de demora frente a la Administración autonómica (art. 25 TRLGHPJA)</h3>
+<p>Si la Administración de la Junta no efectúa el pago dentro de los <strong>tres meses siguientes</strong> al día de la notificación de la resolución judicial o del reconocimiento de la obligación, devengará el interés legal del dinero sobre la cantidad debida desde que el acreedor reclame por escrito el cumplimiento de la obligación. En materia de contratos del sector público rige el plazo específico de 30 días fijado en la Ley 9/2017 (LCSP).</p>
+<h3 class="sub-title">6.4. Prescripción de las obligaciones y deudas de la Hacienda autonómica (art. 26 TRLGHPJA)</h3>
+<p>Salvo lo establecido en normas especiales, <strong>prescribirá a los cuatro años</strong>:
+1. El derecho al reconocimiento o liquidación por la Hacienda autonómica de toda obligación que no se hubiese reclamado con la presentación de los documentos justificativos. El plazo se cuenta desde el día en que concluyó el servicio o la prestación determinante de la obligación.
+2. El derecho a exigir el pago de las obligaciones ya reconocidas o liquidadas, si no fuese reclamado por los acreedores legítimos o sus derechohabientes. El plazo se cuenta desde la fecha de notificación del reconocimiento de la obligación o desde que debió efectuarse el pago.</p>
+<p>La prescripción se interrumpe por la reclamación por escrito del acreedor dirigida a la Administración o por cualquier acto de la Administración en que se reconozca formalmente la deuda.</p>
+<h3 class="sub-title">6.5. La inembargabilidad de los fondos y bienes públicos: doctrina constitucional y alcance actual (art. 23 TRLGHPJA)</h3>
+<p>Tradicionalmente, el principio de inembargabilidad de los caudales públicos se formulaba con carácter absoluto. Sin embargo, la <strong>Sentencia del Tribunal Constitucional 166/1998</strong> declaró inconstitucional el privilegio de inembargabilidad absoluta cuando recae sobre bienes puramente patrimoniales no afectos a servicios públicos ni a finalidades públicas.</p>
+<p>En consecuencia, el <strong>artículo 23 del TRLGHPJA</strong> y la legislación patrimonial andaluza establecen:
+* Son <strong>inembargables</strong> los bienes de dominio público (demaniales), los bienes comunales, los créditos y derechos legalmente afectados a un servicio público o función pública, y los saldos bancarios y fondos de la Tesorería General destinados al cumplimiento de obligaciones presupuestarias corrientes.
+* Son susceptibles de embargo únicamente los <strong>bienes patrimoniales</strong> de la Comunidad Autónoma que no se encuentren afectos al uso público ni a un servicio público, y que no generen rendimientos o ingresos destinados a la cobertura de los servicios públicos esenciales.</p>
+<hr />
+<h2 class="section-title">7. Conclusiones y síntesis doctrinal</h2>
+<p>La Hacienda Pública de la Junta de Andalucía constituye el soporte material y financiero indispensable para la realización efectiva de las políticas públicas y la garantía de los derechos sociales estatutarios. El Texto Refundido de 2010 dota a la Administración autonómica de un marco riguroso que armoniza las prerrogativas clásicas de autotutela y ejecutividad tributaria con las exigencias modernas de estabilidad presupuestaria, sostenibilidad financiera, contabilidad transparente y control democrático. El conocimiento exhaustivo del régimen de sus derechos, obligaciones y plazos prescriptivos cuatrienales resulta cardinal para el ejercicio de las funciones del Cuerpo Técnico Facultativo.</p>
+<hr />
+<h2 class="section-title">8. Anexo: Tabla sinóptica y cuadro de prerrogativas, plazos y prescripciones</h2>
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Materia</th>
+<th style="text-align: left;">Plazo / Regla Legal</th>
+<th style="text-align: left;">Base Normativa (TRLGHPJA)</th>
+<th style="text-align: left;">Efecto Jurídico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Prescripción de derechos públicos</strong></td>
+<td style="text-align: left;"><strong>4 años</strong></td>
+<td style="text-align: left;">Art. 22 TRLGHPJA</td>
+<td style="text-align: left;">Extingue derecho a liquidar y a exigir el pago de deudas tributarias y públicas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Prescripción de obligaciones públicas</strong></td>
+<td style="text-align: left;"><strong>4 años</strong></td>
+<td style="text-align: left;">Art. 26 TRLGHPJA</td>
+<td style="text-align: left;">Extingue derecho de particulares a reclamar el reconocimiento de créditos o cobro.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Intereses de demora a favor de la Junta</strong></td>
+<td style="text-align: left;">Tipo legal + 25% (salvo LPGE)</td>
+<td style="text-align: left;">Art. 20 TRLGHPJA</td>
+<td style="text-align: left;">Se devenga de oficio desde el vencimiento del plazo en periodo voluntario.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Intereses de demora a cargo de la Junta</strong></td>
+<td style="text-align: left;">Interés legal del dinero</td>
+<td style="text-align: left;">Art. 25 TRLGHPJA</td>
+<td style="text-align: left;">Trascurridos 3 meses desde la reclamación escrita o reconocimiento del crédito.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Prelación de créditos públicos</strong></td>
+<td style="text-align: left;">Preferencia general y especial</td>
+<td style="text-align: left;">Art. 21 TRLGHPJA / LGT</td>
+<td style="text-align: left;">Cobro preferente sobre acreedores ordinarios en concurrencia y tercerías.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cobro forzoso en vía de apremio</strong></td>
+<td style="text-align: left;">Providencia de apremio</td>
+<td style="text-align: left;">Art. 21 TRLGHPJA / RGR</td>
+<td style="text-align: left;">Título ejecutivo autónomo con fuerza judicial directa para trabar embargos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Inembargabilidad de bienes y fondos</strong></td>
+<td style="text-align: left;">Demaniales y fondos afectos</td>
+<td style="text-align: left;">Art. 23 TRLGHPJA / STC 166/1998</td>
+<td style="text-align: left;">Protección total salvo bienes patrimoniales disponibles no afectos a servicios.</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

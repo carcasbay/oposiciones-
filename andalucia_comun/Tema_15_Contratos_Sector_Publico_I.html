@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TEMA 15: Los contratos del sector público (I): Marco normativo estatal (Ley 9/2017). Principios de la contratación pública. Ámbito subjetivo. Tipos contractuales. Objeto, precio y valor estimado. Pliegos (PCAP y PPT)</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (Grupo A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #065f46;
+      font-weight: 500;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #059669;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #065f46;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #059669;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #059669;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #059669;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout p {
+    margin: 0;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #065f46;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #d1fae5;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f0fdf4;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO COMÚN — JUNTA DE ANDALUCÍA (GRUPO A2)</div>
+  <h1>TEMA 15</h1>
+  <h2>Los contratos del sector público (I): Marco normativo estatal (Ley 9/2017). Principios de la contratación pública. Ámbito subjetivo. Tipos contractuales. Objeto, precio y valor estimado. Pliegos (PCAP y PPT)</h2>
+  <div class="meta-box">
+    <p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+    <p><strong>Especialidad:</strong> Materias Comunes (Grupo A2)</p>
+    <p><strong>Bloque:</strong> Materias Comunes</p>
+    <p><strong>Tema Oficial:</strong> 15</p>
+    <p><strong>Normativa Clave:</strong> Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público (LCSP); Directivas 2014/23/UE y 2014/24/UE del Parlamento Europeo y del Consejo; Ley 9/2007, de 22 de octubre, de la Administración de la Junta de Andalucía (LAJA); Decreto 39/2011, de 22 de febrero, por el que se establece la organización administrativa para la gestión de la contratación de la Administración de la Junta de Andalucía y sus entidades instrumentales; Orden HFP/1350/2023 sobre umbrales de los contratos sujetos a regulación armonizada.</p>
+
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General de TEMA 15</div>
+  <div class="toc-item level-1">1. <strong>Marco normativo y fines de la contratación pública</strong></div>
+  <div class="toc-item level-2">1.1. La transposición de las Directivas europeas de cuarta generación</div>
+  <div class="toc-item level-2">1.2. El marco constitucional: Artículo 149.1.18ª CE y legislación básica</div>
+  <div class="toc-item level-2">1.3. La contratación estratégica como instrumento de políticas públicas</div>
+  <div class="toc-item level-1">2. <strong>Principios rectores de la contratación del sector público</strong></div>
+  <div class="toc-item level-2">2.1. Libertad de acceso y no discriminación (art. 1 LCSP)</div>
+  <div class="toc-item level-2">2.2. Transparencia, publicidad y libre competencia</div>
+  <div class="toc-item level-2">2.3. Eficiencia en el gasto y principio de integridad (prevención de la corrupción y conflictos de intereses, art. 64)</div>
+  <div class="toc-item level-2">2.4. La incorporación obligatoria de criterios sociales, ambientales y de innovación (art. 1.3 y 202)</div>
+  <div class="toc-item level-1">3. <strong>Ámbito subjetivo de la Ley de Contratos del Sector Público</strong></div>
+  <div class="toc-item level-2">3.1. Estructura concéntrica del sector público (art. 3 LCSP)</div>
+  <div class="toc-item level-2">3.2. Administraciones Públicas en sentido estricto (art. 3.2 LCSP)</div>
+  <div class="toc-item level-2">3.3. Poderes adjudicadores que no son Administraciones Públicas (PANAP, art. 3.3 LCSP)</div>
+  <div class="toc-item level-2">3.4. Entidades del sector público que no son poderes adjudicadores</div>
+  <div class="toc-item level-2">3.5. Régimen jurídico aplicable a cada escalón subjetivo</div>
+  <div class="toc-item level-1">4. <strong>Delimitación y tipología de contratos</strong></div>
+  <div class="toc-item level-2">4.1. Contratos administrativos típicos y especiales frente a contratos privados (arts. 25 y 26 LCSP)</div>
+  <div class="toc-item level-2">4.2. Contratos sujetos a regulación armonizada (SARA, arts. 19 a 23 LCSP y umbrales europeos)</div>
+  <div class="toc-item level-2">4.3. Tipos contractuales típicos:</div>
+  <div class="toc-item level-3">Contrato de obras (art. 13 LCSP)</div>
+  <div class="toc-item level-3">Contrato de concesión de obras y transferencia del riesgo operacional (art. 14 LCSP)</div>
+  <div class="toc-item level-3">Contrato de concesión de servicios y deslinde del contrato de servicios (art. 15 LCSP)</div>
+  <div class="toc-item level-3">Contrato de suministro (art. 16 LCSP)</div>
+  <div class="toc-item level-3">Contrato de servicios (art. 17 LCSP)</div>
+  <div class="toc-item level-3">Contratos mixtos (art. 18 LCSP)</div>
+  <div class="toc-item level-1">5. <strong>Elementos estructurales del contrato público</strong></div>
+  <div class="toc-item level-2">5.1. Las partes: Órgano de contratación, perfil de contratante y responsable del contrato</div>
+  <div class="toc-item level-2">5.2. Capacidad y solvencia del contratista: Prohibiciones de contratar (art. 71 LCSP) y clasificación</div>
+  <div class="toc-item level-2">5.3. El objeto del contrato: Regla general de división en lotes y excepciones (art. 99 LCSP)</div>
+  <div class="toc-item level-2">5.4. Presupuesto Base de Licitación (PBL, art. 100 LCSP) y desglose de costes salariales</div>
+  <div class="toc-item level-2">5.5. El precio del contrato: Cierto, abonos a cuenta y revisión de precios (arts. 102 y 103 LCSP)</div>
+  <div class="toc-item level-2">5.6. El Valor Estimado del Contrato (VEC, art. 101 LCSP): Reglas de cálculo, prórrogas y modificaciones</div>
+  <div class="toc-item level-1">6. <strong>Los pliegos de la contratación pública</strong></div>
+  <div class="toc-item level-2">6.1. Naturaleza jurídica: La ley del contrato (*lex contractus*)</div>
+  <div class="toc-item level-2">6.2. Pliego de Cláusulas Administrativas Particulares (PCAP, art. 122 LCSP): Contenido y aprobación</div>
+  <div class="toc-item level-2">6.3. Pliego de Prescripciones Técnicas (PPT, arts. 124 a 126 LCSP): Especificaciones técnicas neutras y etiquetas</div>
+  <div class="toc-item level-1">7. <strong>Conclusiones y gobernanza contractual en la Junta de Andalucía</strong></div>
+  <div class="toc-item level-1">8. <strong>Anexo: Tabla sinóptica y mapas conceptuales del Tema 15</strong></div>
+
+</div>
+
+<h2 class="section-title">1. Marco normativo y fines de la contratación pública</h2>
+
+<h3 class="sub-title">1.1. La transposición de las Directivas europeas de cuarta generación</h3>
+<p>La <strong>Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público (LCSP)</strong>, transpuso al ordenamiento jurídico español las Directivas del Parlamento Europeo y del Consejo <strong>2014/23/UE</strong> (relativa a la adjudicación de contratos de concesión) y <strong>2014/24/UE</strong> (sobre contratación pública).</p>
+<p>Esta reforma legislativa supuso un cambio de paradigma radical: la contratación pública dejó de concebirse como un mero trámite administrativo burocrático de compra al menor precio, transformándose en una <strong>herramienta estratégica de intervención económica y social</strong> orientada a conseguir objetivos medioambientales, de empleo digno, inclusión social e innovación tecnológica.</p>
+<h3 class="sub-title">1.2. El marco constitucional</h3>
+<ul>
+<li><strong>Artículo 149.1.18ª CE:</strong> Atribuye al Estado la competencia exclusiva sobre la <strong>legislación básica sobre contratos y concesiones administrativas</strong>.</li>
+<li><strong>Doctrina constitucional (STC 68/2021, sobre la LCSP):</strong> El Estado regula los principios generales, los tipos contractuales, la capacidad y solvencia de los licitadores, el régimen de recursos y los procedimientos esenciales de adjudicación para garantizar un mercado único transparente e integrador, mientras que las Comunidades Autónomas ostentan competencias para regular los órganos de contratación propios, las juntas consultivas autonómicas y las especialidades de gestión organizativa.</li>
+</ul>
+<hr />
+<h2 class="section-title">2. Principios rectores de la contratación del sector público</h2>
+
+<p>El <strong>artículo 1 de la Ley 9/2017</strong> formula los fines y principios informadores del sistema de compras públicas:</p>
+<div class="diagram-box"><pre>                  PRINCIPIOS GENERALES DE LA CONTRATACIÓN PÚBLICA
+┌───────────────────────────┬───────────────────────────┬───────────────────────────┐
+│       LIBRE ACCESO        │       TRANSPARENCIA       │       INTEGRIDAD          │
+│   Y NO DISCRIMINACIÓN     │      Y CONCURRENCIA       │ Y PREVENCIÓN DEL CONFLICTO│
+├───────────────────────────┼───────────────────────────┼───────────────────────────┤
+│ • Igualdad de trato entre │ • Publicidad formal de    │ • Lucha contra la         │
+│   licitadores (art. 1.1). │   licitaciones y pliegos. │   corrupción (art. 64).   │
+│ • Prohibición de barreras │ • Perfil de contratante en│ • Deber de abstención ante│
+│   técnicas injustificadas.│   la Plataforma Oficial.  │   conflictos de interés.  │
+└───────────────────────────┴───────────────────────────┴───────────────────────────┘
+</pre></div>
+<h3 class="sub-title">2.1. Libertad de acceso, no discriminación e igualdad de trato</h3>
+<p>Garantizan que cualquier operador económico legalmente establecido en la Unión Europea pueda participar en igualdad de condiciones en las licitaciones públicas, proscribiéndose cualquier requisito arbitrario de territorialidad, arraigo local o pliegos hechos a medida de licitadores locales.</p>
+<h3 class="sub-title">2.2. Principio de eficiencia y utilización óptima de fondos públicos</h3>
+<p>Exige que la definición de las necesidades públicas responda a criterios de idoneidad estricta y que el precio abonado se ajuste rigurosamente a las condiciones de mercado.</p>
+<h3 class="sub-title">2.3. Principio de integridad y combate del conflicto de intereses (art. 64 LCSP)</h3>
+<p>Los órganos de contratación deben adoptar medidas eficaces para prevenir, detectar y solucionar los conflictos de intereses que puedan surgir en los procedimientos de licitación para evitar cualquier distorsión de la competencia y garantizar la imparcialidad de los empleados públicos intervinientes.</p>
+<h3 class="sub-title">2.4. La contratación estratégica obligatoria (art. 1.3 LCSP)</h3>
+<p>En toda contratación pública se incorporarán de manera transversal y preceptiva <strong>criterios sociales y medioambientales</strong> siempre que guarden relación con el objeto del contrato:
+* Criterios sociales: Fomento del empleo de personas con discapacidad, parados de larga duración, igualdad efectiva entre mujeres y hombres, y exigencia estricta del cumplimiento de los convenios colectivos sectoriales aplicables.
+* Criterios medioambientales: Eficiencia energética, reducción de emisiones de gases de efecto invernadero y fomento del comercio justo.</p>
+<hr />
+<h2 class="section-title">3. Ámbito subjetivo de la Ley de Contratos del Sector Público</h2>
+
+<p>El <strong>artículo 3 de la LCSP</strong> diseña un sistema de aplicación concéntrico estructurado en tres niveles subjetivos diferenciados:</p>
+<div class="diagram-box"><pre>                  ESTRUCTURA CONCÉNTRICA DEL ÁMBITO SUBJETIVO
+      ┌──────────────────────────────────────────────────────────────┐
+      │ 1. SECTOR PÚBLICO (Art. 3.1 LCSP)                            │
+      │    (Todas las entidades con participación o control público) │
+      │   ┌────────────────────────────────────────────────────────┐ │
+      │   │ 2. PODERES ADJUDICADORES (Art. 3.3 LCSP)               │ │
+      │   │    (Entidades creadas para satisfacer necesidades      │ │
+      │   │     de interés general sin carácter mercantil)         │ │
+      │   │   ┌──────────────────────────────────────────────────┐ │ │
+      │   │   │ 3. ADMINISTRACIONES PÚBLICAS (Art. 3.2 LCSP)     │ │ │
+      │   │   │    • AGE, CCAA, Entidades Locales                │ │ │
+      │   │   │    • Organismos autónomos                        │ │ │
+      │   │   │    • Universidades públicas                      │ │ │
+      │   │   │    • Agencias administrativas de la Junta        │ │ │
+      │   │   └──────────────────────────────────────────────────┘ │ │
+      │   │    • Agencias de régimen especial y empresariales      │ │
+      │   │    • Sociedades mercantiles públicas no mercantiles    │ │
+      │   │    • Fundaciones del sector público                    │ │
+      │   └────────────────────────────────────────────────────────┘ │
+      │    • Sociedades mercantiles con actividad puramente mercantil│
+      └──────────────────────────────────────────────────────────────┘
+</pre></div>
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Escalón Subjetivo</th>
+<th style="text-align: left;">Entidades que comprende</th>
+<th style="text-align: left;">Régimen Contractual Aplicable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Administración Pública (AP)</strong></td>
+<td style="text-align: left;">• Junta de Andalucía (Consejerías).<br>• Organismos Autónomos.<br>• Agencias Administrativas y de Régimen Especial.<br>• Consorcios públicos dotados de personalidad jurídica.</td>
+<td style="text-align: left;">Dictan <strong>contratos administrativos típicos</strong>. Plena aplicación de la LCSP y sometimiento jurisdiccional contencioso-administrativo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Poder Adjudicador NO AP (PANAP)</strong></td>
+<td style="text-align: left;">• Sociedades mercantiles públicas que satisfagan necesidades de interés general sin carácter industrial o comercial.<br>• Fundaciones públicas.<br>• Agencias públicas empresariales sin potestades administrativas.</td>
+<td style="text-align: left;">Dictan <strong>contratos privados</strong>. Preparación y adjudicación sujetas a la LCSP; efectos, modificación y extinción sujetos al Derecho Civil y Mercantil.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sector Público NO Poder Adjudicador</strong></td>
+<td style="text-align: left;">• Sociedades mercantiles públicas que operan en el mercado en régimen de libre competencia obteniendo beneficios y asumiendo pérdidas directas.</td>
+<td style="text-align: left;">Contratos privados. Se aplican exclusivamente los principios generales de transparencia y concurrencia (art. 321 y 322 LCSP).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 class="section-title">4. Delimitación y tipología de contratos</h2>
+
+<h3 class="sub-title">4.1. Contratos administrativos frente a contratos privados (arts. 25 y 26 LCSP)</h3>
+<ul>
+<li><strong>Contratos administrativos (art. 25):</strong> Celebrados exclusivamente por una Administración Pública cuyo objeto sea obras, concesión de obras, concesión de servicios, suministros o servicios (típicos), o que tengan vinculación directa con el giro o tráfico del servicio público (especiales). Se rigen íntegramente por el Derecho Administrativo.</li>
+<li><strong>Contratos privados (art. 26):</strong></li>
+<li>Celebrados por Administraciones Públicas que tengan por objeto servicios financieros, creación e interpretación artística, o suscripción a revistas y bases de datos.</li>
+<li>Todos los contratos celebrados por PANAPs y demás entidades del sector público que no sean Administración Pública.</li>
+<li><em>Régimen mixto de actos separables:</em> La fase de preparación y adjudicación se rige por la LCSP (controlada por la Jurisdicción Contencioso-Administrativa), mientras que los efectos, cumplimiento y extinción se rigen por el Derecho Privado (competencia del orden jurisdiccional civil).</li>
+</ul>
+<h3 class="sub-title">4.2. Contratos sujetos a regulación armonizada (SARA, arts. 19 a 23 LCSP)</h3>
+<p>Son contratos de especial relevancia económica transfronteriza comunitaria celebrados por poderes adjudicadores, sujetos a las exigencias reforzadas de publicidad europea en el DOUE y al recurso especial en materia de contratación.</p>
+<p><strong>Umbrales económicos SARA (vigentes para el bienio 2024-2025 conforme a Reglamentos Delegados UE):</strong>
+* <strong>Contratos de Obras y Concesiones (obras y servicios):</strong> Valor estimado igual o superior a <strong>5.538.000 euros</strong>.
+* <strong>Contratos de Suministro y Servicios celebrados por la AGE:</strong> Valor estimado igual o superior a <strong>143.000 euros</strong>.
+* <strong>Contratos de Suministro y Servicios celebrados por Comunidades Autónomas (Junta de Andalucía) y Entidades Locales:</strong> Valor estimado igual o superior a <strong>221.000 euros</strong>.
+* <strong>Contratos de Servicios sociales y otros servicios específicos del Anexo IV:</strong> Valor estimado igual o superior a <strong>750.000 euros</strong>.</p>
+<h3 class="sub-title">4.3. Tipos contractuales típicos (arts. 13 a 18 LCSP)</h3>
+
+<div class="diagram-box"><pre>                            TIPOS CONTRACTUALES TÍPICOS
+┌────────────────────────┬────────────────────────────────────────────────────────┐
+│ TIPO CONTRACTUAL       │ OBJETO Y ELEMENTO DEFINITORIO                          │
+├────────────────────────┼────────────────────────────────────────────────────────┤
+│ Obras (Art. 13)        │ Construcción de bienes inmuebles, edificación o        │
+│                        │ ingeniería civil que altere la forma del terreno.      │
+├────────────────────────┼────────────────────────────────────────────────────────┤
+│ Concesión de Obras     │ Ejecución y explotación de obras. Contraprestación en   │
+│ (Art. 14)              │ el derecho a explotar la obra o acompañada de precio.  │
+│                        │ TRANSFERENCIA OBLIGATORIA DEL RIESGO OPERACIONAL.      │
+├────────────────────────┼────────────────────────────────────────────────────────┤
+│ Concesión de Servicios │ Gestión de servicios de titularidad pública.          │
+│ (Art. 15)              │ TRANSFERENCIA OBLIGATORIA DEL RIESGO OPERACIONAL.      │
+├────────────────────────┼────────────────────────────────────────────────────────┤
+│ Suministros (Art. 16)  │ Adquisición, arrendamiento o adquisición y manteni-    │
+│                        │ miento de productos, bienes muebles o energía.         │
+├────────────────────────┼────────────────────────────────────────────────────────┤
+│ Servicios (Art. 17)    │ Prestación de hacer consistente en el desarrollo de    │
+│                        │ una actividad dirigida a un resultado técnico/social.  │
+└────────────────────────┴────────────────────────────────────────────────────────┘
+</pre></div>
+<div class="callout"><p><strong>El concepto capital de Riesgo Operacional (arts. 14.4 y 15):</strong>
+La frontera jurídica entre un contrato ordinario de servicios y una concesión de servicios radica exclusivamente en el <strong>riesgo operacional</strong>:
+* En la <strong>concesión</strong>, el concesionario asume la exposición real a las incertidumbres del mercado: no tiene garantizado recuperar las inversiones ni cubrir los costes en condiciones normales de explotación, asumiendo el riesgo de demanda o el de oferta.
+* Si la Administración garantiza al contratista la amortización íntegra de la inversión y los costes operativos eliminando el riesgo de pérdida económica, el contrato se califica forzosamente como <strong>contrato de servicios ordinario</strong>.</p></div>
+<hr />
+<h2 class="section-title">5. Elementos estructurales del contrato público</h2>
+
+<h3 class="sub-title">5.1. Las partes: Órgano de contratación y contratista</h3>
+<ul>
+<li><strong>Órgano de contratación:</strong> Ostenta la competencia para iniciar, licitar, adjudicar y formalizar el contrato (en la Junta de Andalucía: Consejeros/as, Directores de Agencias, o las Juntas de Contratación creadas al amparo del Decreto 39/2011).</li>
+<li><strong>Capacidad del contratista (art. 65):</strong> Personas físicas o jurídicas, españolas o extranjeras, que tengan plena capacidad de obrar, no estén incursas en prohibición de contratar y acrediten su solvencia.</li>
+<li><strong>Prohibiciones de contratar (art. 71):</strong> Causas taxativas que inhabilitan legalmente para contratar con el sector público (condena penal por delitos de corrupción o fraude, insolvencia judicial o concurso, sanciones firmes en materia tributaria o laboral grave, o incompatibilidades de cargos públicos).</li>
+<li><strong>Solvencia económica y financiera, y técnica o profesional (arts. 86 a 91):</strong> Acreditación mediante volumen anual de negocios, títulos académicos, experiencia en contratos similares y medios materiales. En contratos de obras de cuantía igual o superior a 500.000 €, la solvencia se acredita preceptivamente mediante la <strong>clasificación de contratistas</strong>.</li>
+</ul>
+<h3 class="sub-title">5.2. El objeto del contrato y el principio de división en lotes (art. 99 LCSP)</h3>
+<ul>
+<li>El objeto del contrato debe ser <strong>determinado, necesario e idóneo</strong> para satisfacer las necesidades administrativas justificadas en la memoria del expediente.</li>
+<li><strong>Regla general de división en lotes (art. 99.3):</strong> Siempre que la naturaleza o el objeto del contrato lo permitan, <strong>deberá preverse la realización independiente de cada una de sus partes mediante su división en lotes</strong>, con la finalidad de fomentar la participación de las pequeñas y medianas empresas (PYMES).</li>
+<li><strong>Excepciones a la división en lotes:</strong> El órgano de contratación podrá no dividir en lotes cuando existan motivos válidos, que deberán justificarse debidamente en el expediente (ej. riesgo grave para la ejecución técnica, encarecimiento desproporcionado o necesidad de coordinación técnica ineludible).</li>
+</ul>
+<h3 class="sub-title">5.3. Presupuesto Base de Licitación, Precio y Valor Estimado</h3>
+
+<div class="diagram-box"><pre>                      MAGNITUDES ECONÓMICAS DEL CONTRATO
+┌─────────────────────────────────┬───────────────────────────────────────────┐
+│ CONCEPTO                        │ ALCANCE ECONÓMICO Y REGLA DE CÁLCULO      │
+├─────────────────────────────────┼───────────────────────────────────────────┤
+│ **Presupuesto Base de**         │ • Límite máximo de gasto que en virtud del│
+│ **Licitación (PBL)** (Art. 100) │   contrato puede comprometer el órgano.   │
+│                                 │ • Incluye tributos (IVA). Desglosa costes │
+│                                 │   salariales de convenio, generales y B.I.│
+├─────────────────────────────────┼───────────────────────────────────────────┤
+│ **Precio del Contrato**         │ • Retribución cierta pactada con el       │
+│ (Art. 102)                      │   adjudicatario por la prestación.        │
+│                                 │ • Puede formularse a tanto alzado o por   │
+│                                 │   precios unitarios.                      │
+├─────────────────────────────────┼───────────────────────────────────────────┤
+│ **Valor Estimado del**          │ • Importe total estimado a pagar SIN IVA. │
+│ **Contrato (VEC)** (Art. 101)   │ • Incluye: Precio de ejecución + Cualquier│
+│                                 │   PRÓRROGA prevista + MODIFICACIONES      │
+│                                 │   contractuales máximas previstas + Primas│
+└─────────────────────────────────┴───────────────────────────────────────────┘
+</pre></div>
+<div class="callout"><p><strong>¡Fórmula de examen para el VEC!</strong>
+$\text{VEC} = (\text{Presupuesto sin IVA}) + (\text{Importe de Prórrogas sin IVA}) + (\text{Modificaciones previstas sin IVA}) + (\text{Primas o recompensas})$
+<em>El VEC nunca incluye el IVA y es la cifra que determina si el contrato es SARA o no, así como la competencia y el procedimiento aplicable.</em></p></div>
+<hr />
+<h2 class="section-title">6. Los pliegos de la contratación pública</h2>
+
+<p>Los pliegos constituyen la norma suprema que rige la relación entre la Administración y los licitadores (<em>lex contractus inter partes</em>). Su aceptación es incondicional por el mero hecho de presentar la oferta:</p>
+<div class="diagram-box"><pre>                            LOS PLIEGOS CONTRACTUALES
+        ┌────────────────────────────────────────────────────────┐
+        │                                                        │
+        ▼                                                        ▼
+PLIEGO DE CLÁUSULAS ADMINISTRATIVAS                    PLIEGO DE PRESCRIPCIONES TÉCNICAS
+PARTICULARES (PCAP - Art. 122)                        (PPT - Arts. 124 a 126)
+• Aspectos jurídicos, económicos y orgánicos.         • Aspectos técnicos, funcionales y de
+• Criterios de adjudicación y ponderación.              calidad de la prestación.
+• Régimen de pagos, penalidades y garantías.           • Especificaciones técnicas neutras.
+• Condiciones especiales de ejecución social          • Prohibición de marcas o patentes que
+  o ambiental (art. 202 LCSP).                          favorezcan a empresas concretas.
+</pre></div>
+<h3 class="sub-title">6.1. El Pliego de Cláusulas Administrativas Particulares (PCAP)</h3>
+<p>Debe ser informado preceptivamente por la <strong>Asesoría Jurídica</strong> de la Consejería o ente antes de su aprobación por el órgano de contratación. Contiene:
+* El objeto, el Presupuesto Base de Licitación y el Valor Estimado.
+* Los criterios de solvencia económica y técnica.
+* Los <strong>criterios de adjudicación objetivos y subjetivos</strong>, con sus fórmulas matemáticas de ponderación.
+* Las condiciones especiales de ejecución de carácter social o medioambiental (obligatorias al menos en una cláusula, art. 202).</p>
+<h3 class="sub-title">6.2. El Pliego de Prescripciones Técnicas (PPT)</h3>
+<p>Define las instrucciones y características técnicas del suministro, obra o servicio. Las prescripciones técnicas deben garantizar el acceso en condiciones de igualdad:
+* <strong>Prohibición de marcas:</strong> No podrán hacer referencia a una fabricación o procedencia determinada, a una marca, patente o tipo específico que tenga el efecto de favorecer o descartar a ciertas empresas, salvo que vaya acompañado de la mención <em>"o equivalente"</em>.</p>
+<hr />
+<h2 class="section-title">7. Conclusiones y gobernanza contractual en la Junta de Andalucía</h2>
+
+<p>La contratación pública representa cerca del 15% del PIB andaluz y constituye el instrumento gestor por excelencia del personal técnico del Grupo A2:
+1. Impone el diseño de expedientes orientados a la <strong>calidad social y ambiental</strong>, huyendo de la subasta al menor precio mediante criterios cualitativos de ciclo de vida.
+2. Exige una determinación rigurosa del <strong>Presupuesto Base de Licitación</strong> que garantice el abono de los salarios estipulados en convenio colectivo, evitando bajas temerarias abusivas.
+3. Se vehicula a través del <strong>Portal de Contratación de la Junta de Andalucía</strong> integrado en la Plataforma de Contratación del Sector Público, asegurando la transparencia y la fiscalización por los órganos de control interno y externo.</p>
+<hr />
+<h2 class="section-title">8. Anexo: Tabla sinóptica y mapas conceptuales del Tema 15</h2>
+
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Concepto / Institución</th>
+<th style="text-align: left;">Precepto LCSP</th>
+<th style="text-align: left;">Reglas Fundamentales</th>
+<th style="text-align: left;">Implicación Administrativa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Ámbito Subjetivo</strong></td>
+<td style="text-align: left;">Art. 3</td>
+<td style="text-align: left;">AP (art. 3.2), PANAP (art. 3.3) y Sector Público ordinario.</td>
+<td style="text-align: left;">Delimita si el contrato es administrativo o privado.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contrato de Obras</strong></td>
+<td style="text-align: left;">Art. 13</td>
+<td style="text-align: left;">Construcción, reforma o reparación sobre bienes inmuebles.</td>
+<td style="text-align: left;">Exige proyecto técnico aprobado y replanteo previo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Riesgo Operacional</strong></td>
+<td style="text-align: left;">Arts. 14 y 15</td>
+<td style="text-align: left;">Exposición real a incertidumbres de mercado (oferta/demanda).</td>
+<td style="text-align: left;">Diferencia la concesión del contrato de servicios.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Umbral SARA Obras</strong></td>
+<td style="text-align: left;">Art. 20</td>
+<td style="text-align: left;">$\ge$ 5.538.000 € (VEC sin IVA).</td>
+<td style="text-align: left;">Publicidad DOUE y recurso especial preceptivo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Umbral SARA Servicios CCAA</strong></td>
+<td style="text-align: left;">Art. 22</td>
+<td style="text-align: left;">$\ge$ 221.000 € (VEC sin IVA).</td>
+<td style="text-align: left;">Publicidad DOUE y recurso especial preceptivo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>División en Lotes</strong></td>
+<td style="text-align: left;">Art. 99</td>
+<td style="text-align: left;">Obligatoria como regla general en defensa de las PYMES.</td>
+<td style="text-align: left;">La no división exige motivación formal rigurosa.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Presupuesto Licitación</strong></td>
+<td style="text-align: left;">Art. 100</td>
+<td style="text-align: left;">Límite máximo de gasto del órgano (IVA incluido).</td>
+<td style="text-align: left;">Desglose obligado de costes salariales de convenio.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Valor Estimado (VEC)</strong></td>
+<td style="text-align: left;">Art. 101</td>
+<td style="text-align: left;">Precio base + Prórrogas + Modificaciones máximas (SIN IVA).</td>
+<td style="text-align: left;">Define umbrales SARA y procedimiento de adjudicación.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>PCAP</strong></td>
+<td style="text-align: left;">Art. 122</td>
+<td style="text-align: left;">Cláusulas jurídicas, económicas, criterios y penalidades.</td>
+<td style="text-align: left;"><em>Lex contractus</em>: vincula a la Administración y partes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>PPT</strong></td>
+<td style="text-align: left;">Arts. 124-126</td>
+<td style="text-align: left;">Especificaciones técnicas neutras y de calidad funcional.</td>
+<td style="text-align: left;">Prohibición absoluta de mención a marcas exclusivas.</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

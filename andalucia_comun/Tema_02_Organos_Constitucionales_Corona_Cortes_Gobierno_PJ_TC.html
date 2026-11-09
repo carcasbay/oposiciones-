@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TEMA 2: Los Órganos Constitucionales: La Corona. Las Cortes Generales: Composición, Atribuciones y Funcionamiento. El Gobierno y la Administración. El Poder Judicial. El Tribunal Constitucional. El Defensor del Pueblo. El Tribunal de Cuentas</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (Grupo A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #065f46;
+      font-weight: 500;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #059669;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #065f46;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #059669;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #059669;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #059669;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout p {
+    margin: 0;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #065f46;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #d1fae5;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f0fdf4;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO COMÚN — JUNTA DE ANDALUCÍA (GRUPO A2)</div>
+  <h1>TEMA 2</h1>
+  <h2>Los Órganos Constitucionales: La Corona. Las Cortes Generales: Composición, Atribuciones y Funcionamiento. El Gobierno y la Administración. El Poder Judicial. El Tribunal Constitucional. El Defensor del Pueblo. El Tribunal de Cuentas</h2>
+  <div class="meta-box">
+    <p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo / Cuerpo General (A2)</p>
+    <p><strong>Entidad Convocante:</strong> Junta de Andalucía (Consejería de Justicia, Administración Local y Función Pública / IAAP)</p>
+    <p><strong>Bloque:</strong> Programa de Materias Comunes</p>
+    <p><strong>Tema Oficial:</strong> Tema 2</p>
+    <p><strong>Normativa Clave de Referencia:</strong></p>
+    <p>Constitución Española de 1978: Título II (Corona), Título III (Cortes Generales), Título IV (Gobierno y Administración), Título VI (Poder Judicial) y Título IX (Tribunal Constitucional).</p>
+    <p>Ley Orgánica 6/1985, de 1 de julio, del Poder Judicial (LOPJ).</p>
+    <p>Ley Orgánica 2/1979, de 3 de octubre, del Tribunal Constitucional (LOTC).</p>
+    <p>Ley 50/1997, de 27 de noviembre, del Gobierno.</p>
+    <p>Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público.</p>
+    <p>Ley Orgánica 3/1981, de 6 de abril, del Defensor del Pueblo.</p>
+    <p>Ley Orgánica 2/1982, de 12 de mayo, del Tribunal de Cuentas.</p>
+
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General de TEMA 2</div>
+  <div class="toc-item level-1">1. <strong>Introducción: La división de poderes y el sistema institucional constitucional</strong></div>
+  <div class="toc-item level-1">2. <strong>La Corona (Título II CE)</strong></div>
+  <div class="toc-item level-2">2.1. El Rey como Jefe del Estado: Carácter, funciones y posición constitucional (art. 56 CE)</div>
+  <div class="toc-item level-2">2.2. La sucesión a la Corona y la Regencia (arts. 57 y 59 CE)</div>
+  <div class="toc-item level-2">2.3. La tutela del Rey menor (art. 60 CE)</div>
+  <div class="toc-item level-2">2.4. El refrendo de los actos del Rey: Naturaleza, sujetos y efectos (art. 64 CE)</div>
+  <div class="toc-item level-2">2.5. Competencias y atribuciones regias (arts. 62 y 63 CE)</div>
+  <div class="toc-item level-1">3. <strong>Las Cortes Generales (Título III CE)</strong></div>
+  <div class="toc-item level-2">3.1. Naturaleza bicameral y características de las Cortes Generales (art. 66 CE)</div>
+  <div class="toc-item level-2">3.2. El Congreso de los Diputados: Composición y régimen electoral (art. 68 CE)</div>
+  <div class="toc-item level-2">3.3. El Senado: Naturaleza de cámara de representación territorial y composición (art. 69 CE)</div>
+  <div class="toc-item level-2">3.4. Estatuto de los parlamentarios: Inviolabilidad, inmunidad y aforamiento (art. 71 CE)</div>
+  <div class="toc-item level-2">3.5. Organización y funcionamiento interno: Pleno, Comisiones y Diputación Permanente (arts. 72 a 78 CE)</div>
+  <div class="toc-item level-2">3.6. Funciones de las Cortes Generales: Legislativa, presupuestaria y de control político (arts. 66 y 108 a 115 CE)</div>
+  <div class="toc-item level-1">4. <strong>El Gobierno y la Administración (Título IV CE)</strong></div>
+  <div class="toc-item level-2">4.1. Composición y funciones del Gobierno: Dirección política y función ejecutiva (art. 97 y 98 CE; Ley 50/1997)</div>
+  <div class="toc-item level-2">4.2. El nombramiento y cese del Presidente del Gobierno: El procedimiento de investidura (art. 99 CE)</div>
+  <div class="toc-item level-2">4.3. Responsabilidad política: La moción de censura constructiva y la cuestión de confianza (arts. 112 a 114 CE)</div>
+  <div class="toc-item level-2">4.4. Principios constitucionales de la Administración Pública (art. 103 CE y Ley 40/2015)</div>
+  <div class="toc-item level-2">4.5. El Consejo de Estado como supremo órgano consultivo (art. 107 CE)</div>
+  <div class="toc-item level-1">5. <strong>El Poder Judicial (Título VI CE)</strong></div>
+  <div class="toc-item level-2">5.1. Principios constitucionales de la jurisdicción: Unidad, exclusividad e independencia (art. 117 CE)</div>
+  <div class="toc-item level-2">5.2. El estatuto jurídico de Jueces y Magistrados: Inamovilidad, responsabilidad e incompatibilidades</div>
+  <div class="toc-item level-2">5.3. El Consejo General del Poder Judicial (CGPJ): Naturaleza, composición y competencias (art. 122 CE; LOPJ)</div>
+  <div class="toc-item level-2">5.4. El Tribunal Supremo y la planta judicial (art. 123 CE)</div>
+  <div class="toc-item level-2">5.5. El Ministerio Fiscal: Principios informadores y funciones (art. 124 CE)</div>
+  <div class="toc-item level-1">6. <strong>El Tribunal Constitucional (Título IX CE)</strong></div>
+  <div class="toc-item level-2">6.1. Naturaleza y posición constitucional: Intérprete supremo de la Constitución</div>
+  <div class="toc-item level-2">6.2. Composición, designación y estatuto de los Magistrados constitucionales (art. 159 CE)</div>
+  <div class="toc-item level-2">6.3. Competencias: Recurso y cuestión de inconstitucionalidad, recurso de amparo y conflictos de competencia (art. 161 CE)</div>
+  <div class="toc-item level-1">7. <strong>Órganos constitucionales de control y garantía</strong></div>
+  <div class="toc-item level-2">7.1. El Defensor del Pueblo: Alto comisionado parlamentario y funciones supervisoras (art. 54 CE)</div>
+  <div class="toc-item level-2">7.2. El Tribunal de Cuentas: Supremo órgano fiscalizador y jurisdicción contable (art. 136 CE)</div>
+  <div class="toc-item level-1">8. <strong>Conclusión y visión integradora para la función pública autonómica</strong></div>
+  <div class="toc-item level-1">9. <strong>Anexo: Tablas sinópticas y esquemas de los órganos constitucionales</strong></div>
+
+</div>
+
+<h2 class="section-title">1. Introducción: La división de poderes y el sistema institucional constitucional</h2>
+
+<p>La Constitución Española de 1978 estructura los poderes del Estado conforme al principio clásico de <strong>separación y equilibrio de poderes</strong>, modulado por el parlamentarismo racionalizado propio del constitucionalismo europeo de posguerra. No se trata de una separación rígida o estanca, sino de una red de interrelaciones, controles y contrapesos (<em>checks and balances</em>) orientada a impedir la concentración autoritaria del poder y a asegurar la vigencia efectiva de los derechos fundamentales.</p>
+<p>Los órganos constitucionales son aquellos creados y configurados directamente por la norma fundamental, que gozan de autonomía orgánica y funcional, participan en la dirección política del Estado y no se encuentran subordinados jerárquicamente a ninguna otra institución.</p>
+<hr />
+<h2 class="section-title">2. La Corona (Título II CE)</h2>
+
+<h3 class="sub-title">2.1. El Rey como Jefe del Estado: Carácter, funciones y posición constitucional (art. 56 CE)</h3>
+<p>El <strong>artículo 56.1 de la CE</strong> define el estatus del monarca:</p>
+<div class="callout"><p><em>"El Rey es el Jefe del Estado, símbolo de su unidad y permanencia, arbitra y modera el funcionamiento regular de las instituciones, asume la más alta representación del Estado español en las relaciones internacionales, especialmente con las naciones de su comunidad histórica, y ejerce las funciones que le atribuyen expresamente la Constitución y las leyes."</em></p></div>
+<p>Notas esenciales de su posición:
+* <strong>Magistratura de integración simbólica:</strong> El Rey carece de facultades ejecutivas o de decisión política propia (<em>"el Rey reina, pero no gobierna"</em>).
+* <strong>Inviolabilidad e irresponsabilidad (art. 56.3 CE):</strong> <em>"La persona del Rey es inviolable y no está sujeta a responsabilidad. Sus actos estarán siempre refrendados en la forma establecida en el artículo 64, careciendo de validez sin dicho refrendo, salvo lo dispuesto en el artículo 65.2."</em> (nombramiento de los miembros civiles y militares de su Casa).</p>
+<h3 class="sub-title">2.2. La sucesión a la Corona y la Regencia (arts. 57 y 59 CE)</h3>
+<ul>
+<li><strong>Reglas sucesorias (art. 57.1 CE):</strong> La Corona es hereditaria en los sucesores de S. M. Don Juan Carlos I de Borbón. La sucesión sigue el orden regular de primogenitura y representación, prefiriéndose:</li>
+<li>La línea anterior a las posteriores.</li>
+<li>En la misma línea, el grado más próximo al más remoto.</li>
+<li>En el mismo grado, el varón a la mujer.</li>
+<li>En el mismo sexo, la persona de más edad a la de menos.</li>
+<li><strong>Extinción de líneas (art. 57.3 CE):</strong> Extinguidas todas las líneas llamadas en Derecho, las Cortes Generales proveerán a la sucesión a la Corona en la forma que más convenga a los intereses de España.</li>
+<li><strong>Matrimonio prohibido (art. 57.4 CE):</strong> Quienes teniendo derecho a la sucesión contrajeren matrimonio contra la expresa prohibición del Rey y de las Cortes Generales, quedarán excluidos en la sucesión a la Corona por sí y sus descendientes.</li>
+<li><strong>Abdicaciones y renuncias (art. 57.5 CE):</strong> Se resolverán por <strong>ley orgánica</strong> (como la Ley Orgánica 3/2014, de 18 de junio, relativa a la abdicación de Don Juan Carlos I).</li>
+<li><strong>La Regencia (art. 59 CE):</strong> Institución subsidiaria que ejerce las funciones regias durante la minoría de edad o inhabilitación del Rey. Se distingue entre:</li>
+<li><em>Regencia legítima:</em> El padre o la madre del Rey menor y, en su defecto, el pariente mayor de edad más próximo a suceder. Si el Rey fuere inhabilitado por las Cortes Generales, la Regencia corresponde al Príncipe heredero si fuere mayor de edad.</li>
+<li><em>Regencia parlamentaria:</em> Si no hubiere persona a quien corresponda, será nombrada por las Cortes Generales, compuesta de una, tres o cinco personas.</li>
+<li><em>Requisitos:</em> Ser español y mayor de edad. Se ejerce siempre por mandato constitucional y en nombre del Rey.</li>
+</ul>
+<h3 class="sub-title">2.3. La tutela del Rey menor (artículo 60 CE)</h3>
+<p>Es incompatible con todo cargo o representación política, salvo en el padre, madre o ascendientes directos. Puede ser:
+1. <strong>Testamentaria:</strong> Nombrada en testamento por el Rey difunto (mayor de edad y español de nacimiento).
+2. <strong>Legítima:</strong> En su defecto, el padre o la madre mientras permanezcan viudos.
+3. <strong>Parlamentaria:</strong> En defecto de las anteriores, nombrada por las Cortes Generales.</p>
+<h3 class="sub-title">2.4. El refrendo de los actos del Rey (artículo 64 CE)</h3>
+<p>El refrendo es la institución jurídica por la que un órgano con responsabilidad política asume la autoría y consecuencias jurídicas de los actos regios:
+* <strong>Sujetos legitimados para refrendar (art. 64.1 CE):</strong>
+  * El <strong>Presidente del Gobierno</strong>.
+  * Los <strong>Ministros</strong> competentes en la materia.
+  * El <strong>Presidente del Congreso de los Diputados</strong>, de forma tasada y exclusiva en dos supuestos: la propuesta y nombramiento del Presidente del Gobierno (art. 99) y la disolución de las Cortes Generales prevista en el artículo 99.5.
+* <strong>Efectos:</strong> De los actos del Rey son responsables las personas que los refrenden (art. 64.2 CE).</p>
+<hr />
+<h2 class="section-title">3. Las Cortes Generales (Título III CE)</h2>
+
+<h3 class="sub-title">3.1. Naturaleza bicameral y características (artículo 66 CE)</h3>
+<ul>
+<li>Representan al pueblo español y están formadas por el <strong>Congreso de los Diputados</strong> y el <strong>Senado</strong>.</li>
+<li>Ejercen la <strong>potestad legislativa</strong> del Estado, aprueban sus <strong>Presupuestos</strong>, <strong>controlan la acción del Gobierno</strong> y tienen las demás competencias que les atribuya la Constitución.</li>
+<li>Son inviolables (art. 66.3 CE).</li>
+<li>Bicameralismo imperfecto o asimétrico: El Congreso ostenta una clara preeminencia política y legislativa (otorga y retira la investidura, convalida decretos-leyes y puede levantar los vetos del Senado).</li>
+</ul>
+<h3 class="sub-title">3.2. El Congreso de los Diputados (artículo 68 CE)</h3>
+<ul>
+<li><strong>Composición:</strong> Entre 300 y 400 Diputados (la LOREG, Ley Orgánica 5/1985, fija su número en <strong>350</strong>).</li>
+<li><strong>Circunscripción electoral:</strong> Es la <strong>provincia</strong>. Las poblaciones de Ceuta y Melilla están representadas cada una de ellas por un Diputado.</li>
+<li><strong>Distribución:</strong> La ley distribuye el número total asignando una representación mínima inicial a cada circunscripción (2 diputados por provincia) y distribuyendo los demás en proporción a la población.</li>
+<li><strong>Sistema electoral:</strong> Elección por sufragio universal, libre, igual, directo y secreto, mediante criterios de <strong>representación proporcional</strong> (fórmula D'Hondt con barrera electoral provincial del 3%). Mandato de <strong>4 años</strong>.</li>
+</ul>
+<h3 class="sub-title">3.3. El Senado (artículo 69 CE)</h3>
+<ul>
+<li>Se define constitucionalmente como la <strong>Cámara de representación territorial</strong>.</li>
+<li><strong>Composición mixta:</strong></li>
+<li><em>Senadores provinciales:</em> 4 senadores por cada provincia peninsular, elegidos por sufragio universal mayoritario. En los archipiélagos: Gran Canaria, Mallorca y Tenerife eligen 3; Ibiza-Formentera, Menorca, Fuerteventura, Gomera, Hierro, Lanzarote y La Palma eligen 1 cada una. Ceuta y Melilla eligen 2 cada una.</li>
+<li><em>Senadores autonómicos:</em> Las Comunidades Autónomas designan un Senador y otro más por cada millón de habitantes de su respectivo territorio, designados por la Asamblea Legislativa autonómica asegurando la adecuada representación proporcional.</li>
+<li>Mandato de <strong>4 años</strong>.</li>
+</ul>
+<h3 class="sub-title">3.4. Estatuto de los parlamentarios (artículo 71 CE)</h3>
+<p>Los Diputados y Senadores gozan de prerrogativas corporativas irrenunciables:
+1. <strong>Inviolabilidad (art. 71.1 CE):</strong> Por las opiniones manifestadas y los votos emitidos en el ejercicio de sus funciones parlamentarias, de forma indefinida incluso tras cesar en el mandato.
+2. <strong>Inmunidad (art. 71.2 CE):</strong> Durante el período de su mandato no pueden ser inculpados ni procesados sin la previa autorización de la Cámara respectiva (el <strong>suplicatorio</strong>), salvo en caso de flagrante delito. Tampoco pueden ser detenidos salvo flagrante delito.
+3. <strong>Aforamiento (art. 71.3 CE):</strong> En las causas contra Diputados y Senadores será competente la <strong>Sala de lo Penal del Tribunal Supremo</strong>.
+4. <strong>Prohibición de mandato imperativo (art. 67.2 CE):</strong> Los miembros de las Cortes Generales no están ligados por mandato imperativo; representan a la nación y no a sus electores o partidos en sentido jurídico estricto.</p>
+<h3 class="sub-title">3.5. Organización y funcionamiento interno</h3>
+<ul>
+<li><strong>Órganos de gobierno:</strong> El Presidente de la Cámara, la Mesa (órgano colegiado rector) y la Junta de Portavoces (órgano eminentemente político).</li>
+<li><strong>Órganos de funcionamiento:</strong></li>
+<li><strong>El Pleno:</strong> Reunión de la totalidad de los miembros de la Cámara.</li>
+<li><strong>Las Comisiones:</strong> Órganos de trabajo sectorial (permanentes legislativas, no legislativas, de investigación). Pueden aprobar proyectos y proposiciones de ley por delegación del Pleno (art. 75.2 CE), excepto reformas constitucionales, cuestiones internacionales, leyes orgánicas y de bases y Presupuestos Generales del Estado.</li>
+<li><strong>La Diputación Permanente (art. 78 CE):</strong> Órgano que vela por los poderes de la Cámara cuando ésta no esté reunida (entre períodos de sesiones) o esté disuelta o haya expirado su mandato. Presidida por el Presidente de la Cámara e integrada por un mínimo de <strong>21 miembros</strong> que representan a los grupos parlamentarios en proporción a su importancia numérica.</li>
+<li><strong>Períodos de sesiones (art. 73 CE):</strong> Dos períodos ordinarios al año: de <strong>septiembre a diciembre</strong> (primer período) y de <strong>febrero a junio</strong> (segundo período).</li>
+</ul>
+<hr />
+<h2 class="section-title">4. El Gobierno y la Administración (Título IV CE)</h2>
+
+<h3 class="sub-title">4.1. Composición y funciones del Gobierno (arts. 97 y 98 CE; Ley 50/1997)</h3>
+<ul>
+<li><strong>Funciones constitucionales (art. 97 CE):</strong><div class="callout"><p><em>"El Gobierno dirige la política interior y exterior, la Administración civil y militar y la defensa del Estado. Ejerce la función ejecutiva y la potestad reglamentaria de acuerdo con la Constitución y las leyes."</em></p></div>
+</li>
+<li><strong>Composición (art. 98.1 CE):</strong> El Gobierno se compone del <strong>Presidente</strong>, de los <strong>Vicepresidentes</strong>, en su caso, y de los <strong>Ministros</strong>, y de los demás miembros que establezca la ley.</li>
+<li><strong>Órganos colegiados:</strong> El Consejo de Ministros y las Comisiones Delegadas del Gobierno. Órganos de apoyo: Comisión General de Secretarios de Estado y Subsecretarios.</li>
+</ul>
+<h3 class="sub-title">4.2. El procedimiento ordinario de investidura (artículo 99 CE)</h3>
+<ol>
+<li><strong>Consultas regias:</strong> El Rey, previa consulta con los representantes designados por los grupos políticos con representación parlamentaria, y a través del Presidente del Congreso, propone un candidato a la Presidencia del Gobierno.</li>
+<li><strong>Debate y primera votación:</strong> El candidato expone ante el Congreso de los Diputados el programa político del Gobierno que pretenda formar y solicita la confianza de la Cámara. Si obtiene <strong>mayoría absoluta</strong> de votos afirmativos, el Rey le nombrará Presidente.</li>
+<li><strong>Segunda votación:</strong> De no alcanzarse la mayoría absoluta, se somete la misma propuesta a nueva votación <strong>cuarenta y ocho horas (48 h)</strong> después, entendiéndose otorgada la confianza si obtiene <strong>mayoría simple</strong>.</li>
+<li><strong>Propuestas sucesivas:</strong> Si no se otorga la confianza, se tramitarán sucesivas propuestas en la forma prevista.</li>
+<li><strong>Plazo límite de dos meses:</strong> Si transcurrido el plazo de <strong>dos meses</strong>, a partir de la primera votación de investidura, ningún candidato hubiere obtenido la confianza del Congreso, el Rey disolverá ambas Cámaras y convocará nuevas elecciones con el refrendo del Presidente del Congreso.</li>
+</ol>
+<h3 class="sub-title">4.3. Exigencia de responsabilidad política (arts. 112 a 114 CE)</h3>
+<ul>
+<li><strong>La Cuestión de Confianza (art. 112 CE):</strong> Planteada por el <strong>Presidente del Gobierno</strong>, previa deliberación del Consejo de Ministros, ante el Congreso de los Diputados sobre su programa o una declaración de política general. La confianza se entiende otorgada cuando vote a favor la <strong>mayoría simple</strong> de los Diputados. Si se deniega, el Gobierno presenta su dimisión al Rey, abriéndose el proceso del art. 99.</li>
+<li><strong>La Moción de Censura (art. 113 CE):</strong> Mecanismo de parlamentarismo constructivo:</li>
+<li>Debe ser propuesta por al menos la <strong>décima parte (1/10)</strong> de los Diputados (35 firmas).</li>
+<li>Debe incluir preceptivamente un <strong>candidato alternativo</strong> a la Presidencia del Gobierno.</li>
+<li>No podrá ser votada hasta que transcurran <strong>cinco días</strong> desde su presentación. En los dos primeros días pueden presentarse mociones alternativas.</li>
+<li>Para prosperar exige la <strong>mayoría absoluta</strong> del Congreso de los Diputados. Si se aprueba, el Gobierno dimite y el candidato alternativo se entiende investido automáticamente (art. 114.2 CE). Si se desestima, sus signatarios no podrán presentar otra durante el mismo período de sesiones.</li>
+</ul>
+<h3 class="sub-title">4.4. Principios constitucionales de la Administración Pública (art. 103 CE)</h3>
+<div class="callout"><p><em>"La Administración Pública sirve con objetividad los intereses generales y actúa de acuerdo con los principios de eficacia, jerarquía, descentralización, desconcentración y coordinación, con sometimiento pleno a la ley y al Derecho."</em>
+* <strong>Acceso a la función pública (art. 103.3 CE):</strong> Conforme a los principios de mérito y capacidad.
+* <strong>Control judicial pleno (art. 106.1 CE):</strong> Los Tribunales controlan la potestad reglamentaria y la legalidad de la actuación administrativa, así como el sometimiento de ésta a los fines que la justifican.
+* <strong>Responsabilidad patrimonial (art. 106.2 CE):</strong> Derecho de los particulares a ser indemnizados de toda lesión que sufran en sus bienes y derechos como consecuencia del funcionamiento de los servicios públicos.</p></div>
+<h3 class="sub-title">4.5. El Consejo de Estado (artículo 107 CE)</h3>
+<p>Es el <strong>supremo órgano consultivo del Gobierno</strong>. Una ley orgánica (LO 3/1980) regula su composición y competencias. Ejerce la función consultiva con autonomía orgánica y funcional para garantizar la legalidad de la actuación del Estado y las CCAA en los casos previstos por la ley.</p>
+<hr />
+<h2 class="section-title">5. El Poder Judicial (Título VI CE)</h2>
+
+<h3 class="sub-title">5.1. Principios constitucionales de la jurisdicción (artículo 117 CE)</h3>
+<ul>
+<li><strong>Origen popular:</strong> La justicia emana del pueblo y se administra en nombre del Rey por Jueces y Magistrados integrantes del poder judicial.</li>
+<li><strong>Notas de los Jueces y Magistrados:</strong> Son <strong>independientes</strong>, <strong>inamovibles</strong>, <strong>responsables</strong> y están <strong>sometidos únicamente al imperio de la ley</strong>.</li>
+<li><strong>Principio de Unidad Jurisdiccional (art. 117.5 CE):</strong> Es la base de la organización y funcionamiento de los Tribunales. Se prohíben de forma absoluta los Tribunales de excepción y los de honor. La ley regulará el ejercicio de la jurisdicción militar estrictamente en el ámbito castrense y en los supuestos de estado de sitio.</li>
+<li><strong>Principio de Exclusividad (art. 117.3 y 117.4 CE):</strong> El ejercicio de la potestad jurisdiccional en todo tipo de procesos, juzgando y haciendo ejecutar lo juzgado, corresponde exclusivamente a los Juzgados y Tribunales determinados por las leyes. No ejercerán más funciones que las señaladas y las que expresamente les sean atribuidas por ley en garantía de cualquier derecho.</li>
+<li><strong>Gratuidad de la justicia (art. 119 CE):</strong> Para quienes acrediten insuficiencia de recursos para litigar y en los casos que la ley prevea.</li>
+</ul>
+<h3 class="sub-title">5.2. El Consejo General del Poder Judicial (CGPJ) (artículo 122 CE)</h3>
+<p>Es el <strong>órgano de gobierno autónomo del Poder Judicial</strong>. No ejerce funciones jurisdiccionales (no dicta sentencias), sino administrativas, disciplinarias y de nombramientos respecto a la carrera judicial:
+* <strong>Composición:</strong> El Presidente del Tribunal Supremo (que lo preside) y <strong>20 vocales</strong> nombrados por el Rey por un período de <strong>5 años</strong>:
+  * <strong>12</strong> entre Jueces y Magistrados de todas las categorías judiciales.
+  * <strong>4</strong> a propuesta del Congreso de los Diputados por mayoría de 3/5, entre abogados y otros juristas de reconocida competencia con más de 15 años de ejercicio.
+  * <strong>4</strong> a propuesta del Senado por idéntica mayoría de 3/5 e idénticos requisitos.</p>
+<h3 class="sub-title">5.3. El Tribunal Supremo y el Ministerio Fiscal (arts. 123 y 124 CE)</h3>
+<ul>
+<li><strong>Tribunal Supremo (art. 123 CE):</strong> Con jurisdicción en toda España, es el órgano jurisdiccional superior en todos los órdenes (Civil, Penal, Contencioso-Administrativo, Social y Militar), salvo lo dispuesto en materia de garantías constitucionales (Tribunal Constitucional). Su Presidente es nombrado por el Rey, a propuesta del CGPJ.</li>
+<li><strong>El Ministerio Fiscal (art. 124 CE):</strong> Tiene por misión promover la acción de la justicia en defensa de la legalidad, de los derechos de los ciudadanos y del interés público tutelado por la ley, así como velar por la independencia de los Tribunales.</li>
+<li><strong>Principios de estructura:</strong> <em>Unidad de actuación</em> y <em>dependencia jerárquica</em>.</li>
+<li><strong>Principios de actuación:</strong> <em>Legalidad</em> e <em>imparcialidad</em>.</li>
+<li><strong>Fiscal General del Estado:</strong> Nombrado por el Rey, a propuesta del Gobierno, oído el Consejo General del Poder Judicial (art. 124.4 CE).</li>
+</ul>
+<hr />
+<h2 class="section-title">6. El Tribunal Constitucional (Título IX CE)</h2>
+
+<h3 class="sub-title">6.1. Naturaleza y posición constitucional</h3>
+<p>El Tribunal Constitucional (TC) no forma parte del Poder Judicial; es un <strong>órgano constitucional independiente</strong>, supremo intérprete de la Constitución, sometido exclusivamente a la Constitución y a su Ley Orgánica reguladora (LO 2/1979 - LOTC). Sus sentencias tienen valor de cosa juzgada, vinculan a todos los poderes públicos y las estimatorias de inconstitucionalidad tienen plenos efectos frente a todos (<em>erga omnes</em>).</p>
+<h3 class="sub-title">6.2. Composición y estatuto de los Magistrados (artículo 159 CE)</h3>
+<ul>
+<li>Integrado por <strong>12 miembros</strong> nombrados por el Rey:</li>
+<li><strong>4</strong> a propuesta del Congreso de los Diputados por mayoría de 3/5.</li>
+<li><strong>4</strong> a propuesta del Senado por mayoría de 3/5.</li>
+<li><strong>2</strong> a propuesta del Gobierno.</li>
+<li><strong>2</strong> a propuesta del Consejo General del Poder Judicial.</li>
+<li><strong>Requisitos:</strong> Nombrados entre Magistrados y Fiscales, Profesores de Universidad, Funcionarios públicos y Abogados, todos ellos juristas de reconocida competencia con más de <strong>quince años de ejercicio profesional</strong>.</li>
+<li><strong>Mandato:</strong> Designados por un período de <strong>9 años</strong> y se renuevan <strong>por terceras partes (4 magistrados) cada 3 años</strong>.</li>
+<li><strong>Presidencia (art. 160 CE):</strong> El Presidente del TC es nombrado entre sus miembros por el Rey, a propuesta del mismo Tribunal en pleno, por un período de <strong>3 años</strong> (reelegible una sola vez).</li>
+</ul>
+<div class="diagram-box"><pre>                      COMPOSICIÓN DEL TRIBUNAL CONSTITUCIONAL
+                               (12 Magistrados)
+          ┌───────────────────────────┴───────────────────────────┐
+     4 por el Congreso           4 por el Senado           2 por el         2 por el
+    (Mayoría de 3/5)            (Mayoría de 3/5)           Gobierno           CGPJ
+          └───────────────────────────┬───────────────────────────┘
+                       Mandato de 9 años (Renovación por 1/3)
+</pre></div>
+<h3 class="sub-title">6.3. Competencias del Tribunal Constitucional (artículo 161 CE)</h3>
+<ol>
+<li><strong>Recurso de Inconstitucionalidad:</strong> Contra leyes y disposiciones normativas con fuerza de ley. Legitimados: Presidente del Gobierno, Defensor del Pueblo, 50 Diputados, 50 Senadores, y los Gobiernos y Asambleas Legislativas de las CCAA en materias que afecten a su ámbito de autonomía. Plazo general: 3 meses desde la publicación.</li>
+<li><strong>Cuestión de Inconstitucionalidad (art. 163 CE):</strong> Promovida exclusivamente por Jueces o Tribunales, de oficio o a instancia de parte, cuando consideren que una norma con rango de ley aplicable al proceso y de cuya validez dependa el fallo pueda ser contraria a la CE.</li>
+<li><strong>Recurso de Amparo:</strong> Por violación de los derechos del art. 14, 15 a 29 y 30.2 CE.</li>
+<li><strong>Conflictos de competencia:</strong> Entre el Estado y las CCAA o de éstas entre sí (positivos o negativos).</li>
+<li><strong>Conflictos en defensa de la autonomía local:</strong> Promovidos por municipios y provincias frente a leyes lesivas.</li>
+<li><strong>Conflictos entre órganos constitucionales del Estado:</strong> Gobierno, Congreso, Senado y CGPJ.</li>
+<li><strong>Control previo de tratados internacionales (art. 95 CE).</strong></li>
+<li><strong>Impugnación de disposiciones sin fuerza de ley y resoluciones autonómicas (art. 161.2 CE):</strong> El Gobierno puede impugnar ante el TC los actos de las CCAA; la impugnación produce la suspensión automática del acto durante un plazo máximo de cinco meses, debiendo el TC ratificarla o levantarla.</li>
+</ol>
+<hr />
+<h2 class="section-title">7. Órganos constitucionales de control y garantía</h2>
+
+<h3 class="sub-title">7.1. El Defensor del Pueblo (artículo 54 CE y LO 3/1981)</h3>
+<ul>
+<li>Comisionado parlamentario independiente; no recibe instrucciones de ninguna autoridad.</li>
+<li>Facultades inspectoras universales: puede entrar en cualquier dependencia administrativa estatal, autonómica o local, examinar expedientes, formular advertencias, recomendaciones, recordatorios de deberes legales y sugerencias.</li>
+<li>Carece de potestad sancionatoria o anulatoria de actos; si aprecia indicios delictivos, lo traslada de inmediato al Fiscal General del Estado.</li>
+<li>Presenta un Informe Anual ante las Cortes Generales.</li>
+</ul>
+<h3 class="sub-title">7.2. El Tribunal de Cuentas (artículo 136 CE y LO 2/1982)</h3>
+<ul>
+<li><strong>Naturaleza:</strong> Supremo órgano fiscalizador de las cuentas y de la gestión económica del Estado y de todo el sector público. Depende directamente de las Cortes Generales y ejerce sus funciones por delegación de ellas en el examen y comprobación de la Cuenta General del Estado.</li>
+<li><strong>Doble función:</strong></li>
+<li><em>Función fiscalizadora:</em> Externa, permanente y consuntiva, sobre regularidad contable, legalidad, eficacia y economía.</li>
+<li><em>Función jurisdiccional contable:</em> Exclusiva respecto del enjuiciamiento de la responsabilidad contable de quienes manejen caudales o efectos públicos (alcances, malversaciones, pagos indebidos).</li>
+<li><strong>Composición:</strong> Doce Consejeros de Cuentas elegidos por las Cortes Generales (6 por el Congreso y 6 por el Senado por mayoría de 3/5) por un período de <strong>9 años</strong>. Gozan de la misma independencia e inamovilidad que los Jueces.</li>
+</ul>
+<hr />
+<h2 class="section-title">8. Conclusión y visión integradora para la función pública autonómica</h2>
+
+<p>El conocimiento del entramado institucional constitucional es nuclear para el personal técnico de la Junta de Andalucía. Las decisiones de la Administración autonómica se insertan en un sistema jerarquizado y coordinado, sujeto al control jurisdiccional de los Tribunales ordinarios, a la doctrina vinculante del Tribunal Constitucional y a la supervisión fiscalizadora del Tribunal de Cuentas y del Defensor del Pueblo, garantizando el equilibrio democrático y la legalidad del Estado social y democrático de Derecho.</p>
+<hr />
+<h2 class="section-title">9. Anexo: Tablas sinópticas y esquemas de los órganos constitucionales</h2>
+
+<div class="diagram-box"><pre>                         SISTEMA COMPARADO DE LOS ÓRGANOS
+┌─────────────────────────┬──────────────────┬──────────────┬───────────────────────────┐
+│ ÓRGANO                  │ COMPOSICIÓN      │ MANDATO      │ FORMA DE ELECCIÓN         │
+├─────────────────────────┼──────────────────┼──────────────┼───────────────────────────┤
+│ Congreso Diputados      │ 350 Diputados    │ 4 años       │ Sufragio universal (prov) │
+├─────────────────────────┼──────────────────┼──────────────┼───────────────────────────┤
+│ Senado                  │ Mixta (266 aprox)│ 4 años       │ Sufragio un. + Asamb. CCAA│
+├─────────────────────────┼──────────────────┼──────────────┼───────────────────────────┤
+│ CGPJ                    │ 20 Vocales + Pres│ 5 años       │ Cortes Generales (3/5)    │
+├─────────────────────────┼──────────────────┼──────────────┼───────────────────────────┤
+│ Tribunal Constitucional │ 12 Magistrados   │ 9 años (1/3) │ 4 Cong, 4 Sen, 2 Gob, 2 PJ│
+├─────────────────────────┼──────────────────┼──────────────┼───────────────────────────┤
+│ Defensor del Pueblo     │ Unipersonal      │ 5 años       │ Cortes Generales (3/5)    │
+├─────────────────────────┼──────────────────┼──────────────┼───────────────────────────┤
+│ Tribunal de Cuentas     │ 12 Consejeros    │ 9 años       │ 6 Congreso, 6 Senado (3/5)│
+└─────────────────────────┴──────────────────┴──────────────┴───────────────────────────┘
+</pre></div>
+
+</body>
+</html>

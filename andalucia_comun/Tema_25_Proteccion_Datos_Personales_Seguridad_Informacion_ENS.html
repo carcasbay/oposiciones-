@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 25: La Protección de Datos de Carácter Personal y la Seguridad de la Información: El Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD). Principios Rectores de la Protección de Datos. Derechos de las Personas (ARCO-POL). El Delegado de Protección de Datos (DPD). El Esquema Nacional de Seguridad (ENS)</title>
+<style>
+
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #4b5563;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #6b7280;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #047857;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #047857;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #14532d;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #047857;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #1f2937;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #374151;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #047857;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #047857;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #064e3b;
+    margin-bottom: 5px;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #e6f4ea;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f8fafc;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">JUNTA DE ANDALUCÍA — MATERIAS COMUNES (A2)</div>
+  <h1>TEMA 25</h1>
+  <h2>La Protección de Datos de Carácter Personal y la Seguridad de la Información: El Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD). Principios Rectores de la Protección de Datos. Derechos de las Personas (ARCO-POL). El Delegado de Protección de Datos (DPD). El Esquema Nacional de Seguridad (ENS)</h2>
+  <div class="meta-box">
+<p>**Cuerpo:** Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p>**Grupo:** A2</p>
+<p>**Bloque:** Materias Comunes</p>
+<p>**Tema Oficial:** Tema 25</p>
+<p>**Normativa Clave:**</p>
+<p>Constitución Española de 1978 (art. 18.4) y Sentencia del Tribunal Constitucional 292/2000.</p>
+<p>Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016 (Reglamento General de Protección de Datos - RGPD).</p>
+<p>Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).</p>
+<p>Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad (ENS).</p>
+<p>Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía (creación y funciones del Consejo de Transparencia y Protección de Datos de Andalucía - CTPDA).</p>
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 25</div>
+<div class="toc-item level-1">1. Fundamento constitucional e internacional del derecho a la protección de datos</div>
+<div class="toc-item level-2">1.1. El artículo 18.4 de la Constitución Española y la doctrina del Tribunal Constitucional (STC 292/2000)</div>
+<div class="toc-item level-2">1.2. Delimitación conceptual: Intimidad vs. Autodeterminación informativa</div>
+<div class="toc-item level-1">2. El marco normativo aplicable: El RGPD y la LOPDGDD</div>
+<div class="toc-item level-2">2.1. Ámbitos de aplicación material y territorial</div>
+<div class="toc-item level-2">2.2. Conceptos nucleares: Dato personal, tratamiento, responsable, encargado, cesión y destinatario</div>
+<div class="toc-item level-2">2.3. Bases de legitimación del tratamiento (art. 6 RGPD) y especialidad en el sector público</div>
+<div class="toc-item level-2">2.4. Tratamiento de categorías especiales de datos personales (art. 9 RGPD y art. 9 LOPDGDD)</div>
+<div class="toc-item level-1">3. Principios rectores de la protección de datos personales</div>
+<div class="toc-item level-2">3.1. Principios clásicos: Licitud, lealtad y transparencia</div>
+<div class="toc-item level-2">3.2. Limitación de la finalidad y minimización de datos</div>
+<div class="toc-item level-2">3.3. Exactitud y limitación del plazo de conservación</div>
+<div class="toc-item level-2">3.4. Integridad y confidencialidad (seguridad del tratamiento)</div>
+<div class="toc-item level-2">3.5. El principio de responsabilidad proactiva (*accountability*):</div>
+<div class="toc-item level-3">3.5.1. Protección de datos desde el diseño y por defecto</div>
+<div class="toc-item level-3">3.5.2. El Registro de Actividades de Tratamiento (RAT)</div>
+<div class="toc-item level-3">3.5.3. Análisis de riesgos y Evaluación de Impacto en la Protección de Datos (EIPD)</div>
+<div class="toc-item level-3">3.5.4. Notificación y gestión de violaciones de seguridad de los datos (*data breaches*)</div>
+<div class="toc-item level-1">4. Los derechos de las personas en materia de protección de datos (Derechos ARCO-POL)</div>
+<div class="toc-item level-2">4.1. Régimen general de ejercicio de derechos ante la Administración pública</div>
+<div class="toc-item level-2">4.2. Catálogo de derechos:</div>
+<div class="toc-item level-3">4.2.1. Derecho de Acceso</div>
+<div class="toc-item level-3">4.2.2. Derecho de Rectificación</div>
+<div class="toc-item level-3">4.2.3. Derecho de Supresión («derecho al olvido») y sus límites en el sector público</div>
+<div class="toc-item level-3">4.2.4. Derecho a la Limitación del tratamiento</div>
+<div class="toc-item level-3">4.2.5. Derecho a la Portabilidad de los datos</div>
+<div class="toc-item level-3">4.2.6. Derecho de Oposición</div>
+<div class="toc-item level-3">4.2.7. Derecho a no ser objeto de decisiones individuales automatizadas y perfiles</div>
+<div class="toc-item level-2">4.3. Plazos de respuesta y tutela ante las autoridades de control</div>
+<div class="toc-item level-1">5. La figura del Delegado de Protección de Datos (DPD / DPO)</div>
+<div class="toc-item level-2">5.1. Obligatoriedad de designación en el sector público (art. 37 RGPD y art. 34 LOPDGDD)</div>
+<div class="toc-item level-2">5.2. Posición jurídica, estatuto de independencia y cualificación profesional</div>
+<div class="toc-item level-2">5.3. Funciones legales: Asesoramiento, supervisión, cooperación y punto de contacto</div>
+<div class="toc-item level-2">5.4. Organización de los DPD en la Administración de la Junta de Andalucía</div>
+<div class="toc-item level-1">6. La seguridad de la información: El Esquema Nacional de Seguridad (ENS)</div>
+<div class="toc-item level-2">6.1. Marco normativo: El Real Decreto 311/2022</div>
+<div class="toc-item level-2">6.2. Principios básicos de seguridad del ENS:</div>
+<div class="toc-item level-3">6.2.1. Seguridad integral y gestión de la seguridad basada en los riesgos</div>
+<div class="toc-item level-3">6.2.2. Prevención, detección, respuesta y recuperación</div>
+<div class="toc-item level-3">6.2.3. Líneas de defensa y vigilancia continua</div>
+<div class="toc-item level-2">6.3. Dimensiones de la seguridad: Confidencialidad, Integridad, Trazabilidad, Autenticidad y Disponibilidad (CITAD)</div>
+<div class="toc-item level-2">6.4. Categorización de los sistemas de información: Categoría Básica, Media y Alta</div>
+<div class="toc-item level-2">6.5. Medidas de seguridad y marco operacional (Marco Organizativo, Operacional y Medidas de Protección)</div>
+<div class="toc-item level-2">6.6. Auditorías de seguridad y certificación de conformidad con el ENS</div>
+<div class="toc-item level-1">7. Conclusiones y síntesis doctrinal</div>
+<div class="toc-item level-1">8. Anexo: Tabla sinóptica de principios, derechos ARCO-POL y dimensiones del ENS</div>
+</div>
+
+<hr />
+<h2 class="section-title">1. Fundamento constitucional e internacional del derecho a la protección de datos</h2>
+<p>El derecho a la protección de datos personales encuentra su anclaje en el <strong>artículo 18.4 de la Constitución Española</strong>, según el cual <em>"la ley limitará el uso de la informática para garantizar el honor y la intimidad personal y familiar de los ciudadanos y el pleno ejercicio de sus derechos"</em>.</p>
+<p>La célebre <strong>Sentencia del Tribunal Constitucional 292/2000, de 30 de noviembre</strong>, consagró la autonomía dogmática de este derecho fundamental, diferenciándolo netamente del derecho a la intimidad del artículo 18.1 CE:
+* El <strong>derecho a la intimidad</strong> protege la esfera privada e íntima de la persona frente a intromisiones ajenas.
+* El <strong>derecho fundamental a la protección de datos (o libertad informática / autodeterminación informativa)</strong> confiere a la persona el poder de disposición y control sobre sus propios datos personales: qué datos se recaban, quién los posee, con qué fines se tratan, a quién se transmiten y la facultad de exigir su rectificación, cancelación o limitación.</p>
+<hr />
+<h2 class="section-title">2. El marco normativo aplicable: El RGPD y la LOPDGDD</h2>
+<p>El régimen jurídico vigente descansa en la integración directa del Derecho de la Unión Europea y el ordenamiento estatal español:
+1. <strong>Reglamento (UE) 2016/679 (RGPD):</strong> Norma de aplicación directa en todos los Estados miembros de la UE desde el 25 de mayo de 2018. Armoniza las garantías en el espacio europeo e introduce el principio de responsabilidad proactiva.
+2. <strong>Ley Orgánica 3/2018 (LOPDGDD):</strong> Adapta el ordenamiento español al RGPD y añade un título específico (Título X) dedicado a los derechos digitales de la ciudadanía y personas trabajadoras.</p>
+<h3 class="sub-title">2.1. Conceptos nucleares</h3>
+<ul>
+<li><strong>Dato personal:</strong> Toda información sobre una persona física identificada o identificable («el interesado»). Se considera identificable toda persona cuya identidad pueda determinarse mediante identificadores como nombre, DNI, datos de localización, identificador en línea o factores físicos, fisiológicos, genéticos o psíquicos.</li>
+<li><strong>Tratamiento:</strong> Cualquier operación técnica o conjunto de operaciones aplicadas a datos personales (recogida, registro, organización, conservación, modificación, consulta, comunicación o supresión).</li>
+<li><strong>Responsable del tratamiento:</strong> Persona física o jurídica, autoridad pública o servicio que determina los fines y los medios del tratamiento (en la Junta: las Consejerías, Direcciones Generales o agencias).</li>
+<li><strong>Encargado del tratamiento:</strong> Persona o entidad que trata datos personales por cuenta del responsable (ej. empresas de desarrollo informático o soporte tecnológico).</li>
+</ul>
+<h3 class="sub-title">2.2. Bases de legitimación en las Administraciones Públicas (art. 6 RGPD)</h3>
+<p>En el ámbito del sector público, el tratamiento de datos personales no se fundamenta habitualmente en el consentimiento del ciudadano, sino en bases de legitimación de derecho público:
+* <strong>Cumplimiento de una obligación legal</strong> aplicable al responsable del tratamiento (art. 6.1.c RGPD).
+* <strong>Cumplimiento de una misión realizada en interés público o en el ejercicio de poderes públicos</strong> conferidos al responsable (art. 6.1.e RGPD y art. 8 LOPDGDD).</p>
+<h3 class="sub-title">2.3. Categorías especiales de datos (art. 9 RGPD)</h3>
+<p>Se prohíbe con carácter general el tratamiento de datos que revelen el origen étnico o racial, opiniones políticas, convicciones religiosas o filosóficas, afiliación sindical, datos genéticos, datos biométricos dirigidos a identificar de manera unívoca a una persona, datos relativos a la salud o a la vida u orientación sexual.</p>
+<p>Su tratamiento por las Administraciones Públicas requiere una <strong>excepción tasada legalmente</strong> (ej. asistencia sanitaria, protección social, salud pública o fines de investigación médica amparados por una norma con rango de ley).</p>
+<hr />
+<h2 class="section-title">3. Principios rectores de la protección de datos personales</h2>
+<p>El <strong>artículo 5 del RGPD</strong> establece los principios cardinales que deben regir todo tratamiento:</p>
+<pre><code>PRINCIPIOS SUSTANTIVOS (Art. 5.1 RGPD):
+├── 1. Licitud, lealtad y transparencia (información clara y accesible)
+├── 2. Limitación de la finalidad (fines determinados, explícitos y legítimos)
+├── 3. Minimización de datos (adecuados, pertinentes y limitados a lo necesario)
+├── 4. Exactitud (datos exactos y actualizados al día)
+├── 5. Limitación del plazo de conservación (solo el tiempo necesario)
+└── 6. Integridad y confidencialidad (seguridad frente a accesos no autorizados)
+                          │
+                          ▼
+PRINCIPIO TRANSVERSAL: RESPONSABILIDAD PROACTIVA (Art. 5.2 RGPD - Accountability)
+(El responsable debe aplicar medidas técnicas y organizativas y poder DEMOSTRAR su cumplimiento)
+</code></pre>
+<h3 class="sub-title">3.1. Medidas operativas de la Responsabilidad Proactiva (<em>Accountability</em>)</h3>
+<ul>
+<li><strong>Privacidad desde el diseño y por defecto (art. 25 RGPD):</strong> Las garantías de protección de datos deben integrarse desde la fase de concepción técnica del procedimiento o software, garantizando por defecto que solo se traten los datos estrictamente imprescindibles.</li>
+<li><strong>Registro de Actividades de Tratamiento (RAT - art. 30 RGPD y art. 31 LOPDGDD):</strong> Cada órgano de la Junta debe mantener un inventario público y actualizado de todos los tratamientos que realiza, detallando responsables, fines, categorías de datos, cesiones y plazos de conservación.</li>
+<li><strong>Evaluación de Impacto en la Protección de Datos (EIPD - art. 35 RGPD):</strong> Obligatoria con carácter previo cuando un tratamiento entrañe un alto riesgo para los derechos y libertades de las personas (ej. vigilancia sistemática a gran escala, uso intensivo de datos biométricos o tratamientos masivos de salud).</li>
+<li><strong>Gestión y notificación de brechas de seguridad (arts. 33 y 34 RGPD):</strong> Si se produce una quiebra de seguridad que afecte a datos personales, el responsable debe notificarla a la autoridad de control (CTPDA / AEPD) en un plazo máximo de <strong>72 horas</strong>, y a los propios afectados cuando exista un alto riesgo.</li>
+</ul>
+<hr />
+<h2 class="section-title">4. Los derechos de las personas en materia de protección de datos (Derechos ARCO-POL)</h2>
+<p>El RGPD y la LOPDGDD amplían el catálogo clásico de derechos ARCO (Acceso, Rectificación, Cancelación y Oposición), configurando el bloque de derechos <strong>ARCO-POL</strong>:</p>
+<h3 class="sub-title">4.1. Catálogo sistemático de derechos</h3>
+<ol>
+<li><strong>Derecho de Acceso (art. 15 RGPD):</strong> Conocer si la Administración está tratando sus datos personales, las finalidades del tratamiento, categorías de datos, destinatarios y plazo previsto de conservación.</li>
+<li><strong>Derecho de Rectificación (art. 16 RGPD):</strong> Obtener la modificación o corrección inmediata de los datos inexactos o incompletos.</li>
+<li><strong>Derecho de Supresión («derecho al olvido» - art. 17 RGPD):</strong> Exigir la eliminación de los datos cuando ya no sean necesarios para los fines que motivaron su recogida o se hayan tratado ilícitamente.</li>
+<li><em>Límite esencial en el sector público:</em> El derecho de supresión <strong>no procede</strong> cuando el tratamiento sea necesario para el cumplimiento de una obligación legal o para el ejercicio de potestades públicas (art. 17.3.b RGPD).</li>
+<li><strong>Derecho a la Limitación del tratamiento (art. 18 RGPD):</strong> Suspender temporalmente el uso de los datos mientras se comprueba su exactitud o la licitud del tratamiento.</li>
+<li><strong>Derecho a la Portabilidad (art. 20 RGPD):</strong> Recibir los datos personales en un formato estructurado, de uso común y lectura mecánica para transmitirlos a otro responsable (no aplicable a tratamientos basados en el ejercicio de poderes públicos).</li>
+<li><strong>Derecho de Oposición (art. 21 RGPD):</strong> Oponerse a que los datos sean tratados por motivos relacionados con su situación particular, salvo que la Administración acredite motivos legítimos imperiosos.</li>
+<li><strong>Derecho a no ser objeto de decisiones individuales automatizadas (art. 22 RGPD):</strong> No ser sometido a decisiones basadas únicamente en tratamientos automatizados (incluida la elaboración de perfiles) que produzcan efectos jurídicos sustanciales.</li>
+</ol>
+<h3 class="sub-title">4.2. Procedimiento y plazos de respuesta (art. 12 RGPD)</h3>
+<ul>
+<li><strong>Gratuidad:</strong> El ejercicio de estos derechos es estrictamente gratuito para el interesado.</li>
+<li><strong>Plazo de resolución:</strong> La Administración debe responder a la solicitud en el plazo máximo de <strong>un mes</strong> desde su recepción. Dicho plazo podrá prorrogarse otros <strong>dos meses</strong> adicionales en casos complejos, informando al interesado de los motivos dentro del primer mes.</li>
+</ul>
+<hr />
+<h2 class="section-title">5. La figura del Delegado de Protección de Datos (DPD / DPO)</h2>
+<h3 class="sub-title">5.1. Obligatoriedad en el sector público</h3>
+<p>A tenor de los <strong>artículos 37.1.a del RGPD y 34.1.a de la LOPDGDD</strong>, la designación de un Delegado de Protección de Datos es <strong>preceptiva y obligatoria en todas las autoridades y organismos públicos</strong>, incluyendo la Administración de la Junta de Andalucía y sus entidades instrumentales.</p>
+<h3 class="sub-title">5.2. Estatuto de independencia y funciones</h3>
+<ul>
+<li><strong>Independencia funcional (art. 38 RGPD):</strong> El DPD no recibirá instrucciones de ninguna autoridad en el ejercicio de sus funciones. No podrá ser destituido ni sancionado por desempeñar sus cometidos legales y reportará directamente al más alto nivel directivo de la entidad.</li>
+<li><strong>Cualificación:</strong> Se designa atendiendo a sus cualidades profesionales y conocimientos especializados del Derecho y de la práctica en protección de datos.</li>
+<li><strong>Funciones legales (art. 39 RGPD):</strong></li>
+<li>Informar y asesorar al responsable y a los empleados sobre sus obligaciones legales.</li>
+<li>Supervisar el cumplimiento del RGPD, la LOPDGDD y las políticas internas de la entidad.</li>
+<li>Asesorar en la realización de Evaluaciones de Impacto (EIPD) y supervisar su aplicación.</li>
+<li>Actuar como punto de contacto y cooperar con la autoridad de control (el Consejo de Transparencia y Protección de Datos de Andalucía - CTPDA).</li>
+</ul>
+<hr />
+<h2 class="section-title">6. La seguridad de la información: El Esquema Nacional de Seguridad (ENS)</h2>
+<p>El <strong>Esquema Nacional de Seguridad (ENS)</strong>, regulado por el <strong>Real Decreto 311/2022, de 3 de mayo</strong>, tiene por objeto establecer los principios básicos, requisitos mínimos y medidas de protección necesarias para garantizar la seguridad de los sistemas, datos, comunicaciones y servicios electrónicos del sector público.</p>
+<h3 class="sub-title">6.1. Principios básicos de seguridad del ENS (arts. 5 a 11 RD 311/2022)</h3>
+<ol>
+<li><strong>Seguridad integral:</strong> La seguridad debe contemplar los recursos humanos, materiales, normativos y procedimentales.</li>
+<li><strong>Gestión basada en los riesgos:</strong> Análisis continuo de amenazas y vulnerabilidades para adoptar medidas proporcionadas.</li>
+<li><strong>Prevención, detección, respuesta y recuperación:</strong> Minimizar incidentes, detectar anomalías con celeridad y garantizar la restauración de servicios ante contingencias.</li>
+<li><strong>Líneas de defensa:</strong> Organización en múltiples capas de salvaguarda técnicas y organizativas.</li>
+<li><strong>Vigilancia continua y reevaluación periódica:</strong> Monitorización constante del estado de seguridad de los sistemas.</li>
+</ol>
+<h3 class="sub-title">6.2. Dimensiones de la seguridad de la información (CITAD)</h3>
+<p>El ENS evalúa la seguridad en función del impacto que causaría un incidente sobre cinco dimensiones:
+* <strong>Confidencialidad:</strong> Garantía de que la información no se pone a disposición ni se revela a individuos no autorizados.
+* <strong>Integridad:</strong> Exactitud y completitud de la información y de sus métodos de tratamiento, libre de alteraciones indebidas.
+* <strong>Trazabilidad:</strong> Posibilidad de rastrear de forma unívoca el origen, autoría, modificaciones y momentos de tratamiento.
+* <strong>Autenticidad:</strong> Certeza eインindubitabilidad de que una entidad o usuario es quien dice ser.
+* <strong>Disponibilidad:</strong> Propiedad de que la información y los servicios están accesibles y utilizables cuando lo requieran los usuarios autorizados.</p>
+<h3 class="sub-title">6.3. Categorización de los sistemas y medidas de seguridad</h3>
+<p>Los sistemas de información se clasifican formalmente en tres niveles en función del impacto potencial ante un fallo:
+* <strong>Categoría Básica:</strong> Cuando el perjuicio sea limitado o leve para las funciones de la Administración o derechos ciudadanos.
+* <strong>Categoría Media:</strong> Cuando el impacto sea grave o afecte a servicios públicos esenciales o datos sensibles.
+* <strong>Categoría Alta:</strong> Cuando las consecuencias causen un daño muy grave o irreparable a la seguridad ciudadana, orden público o derechos fundamentales.</p>
+<p>Los sistemas de categoría Media y Alta están sujetos preceptivamente a una <strong>auditoría de seguridad ordinaria cada dos años</strong> y a la obtención formal del Certificado de Conformidad con el ENS.</p>
+<hr />
+<h2 class="section-title">7. Conclusiones y síntesis doctrinal</h2>
+<p>La protección de datos y la seguridad de la información constituyen dos caras de una misma moneda indispensable en el Estado social y democrático de Derecho. Mientras el RGPD y la LOPDGDD consagran el derecho de autodeterminación informativa de la ciudadanía frente a la concentración de datos en manos públicas, el Esquema Nacional de Seguridad (ENS) proporciona la infraestructura técnica, organizativa y de ciberdefensa que blinda la integridad de los servicios digitales de la Junta de Andalucía.</p>
+<hr />
+<h2 class="section-title">8. Anexo: Tabla sinóptica de principios, derechos ARCO-POL y dimensiones del ENS</h2>
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Dimensión / Figura</th>
+<th style="text-align: left;">Marco Legal</th>
+<th style="text-align: left;">Objeto y Requisitos</th>
+<th style="text-align: left;">Plazo Legal / Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Principio de Licitud</strong></td>
+<td style="text-align: left;">Art. 6 RGPD</td>
+<td style="text-align: left;">Tratamiento amparado en ley o potestades públicas.</td>
+<td style="text-align: left;">Exención de consentimiento en trámites reglados.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Responsabilidad Proactiva</strong></td>
+<td style="text-align: left;">Art. 5.2 RGPD</td>
+<td style="text-align: left;">Demostrar documentalmente la conformidad legal.</td>
+<td style="text-align: left;">RAT, análisis de riesgos y EIPD obligatorios.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Brecha de Seguridad</strong></td>
+<td style="text-align: left;">Art. 33 RGPD</td>
+<td style="text-align: left;">Notificación preceptiva a la autoridad de control.</td>
+<td style="text-align: left;"><strong>Máximo 72 horas</strong> tras tener constancia.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Derechos ARCO-POL</strong></td>
+<td style="text-align: left;">Arts. 15-22 RGPD</td>
+<td style="text-align: left;">Acceso, Rectificación, Supresión, Limitación, etc.</td>
+<td style="text-align: left;"><strong>1 mes</strong> (prorrogable 2 meses más por complejidad).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supresión en lo público</strong></td>
+<td style="text-align: left;">Art. 17.3 RGPD</td>
+<td style="text-align: left;">Límite del borrado en expedientes administrativos.</td>
+<td style="text-align: left;">Inaplicable si el dato es necesario por ley pública.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Delegado DPD / DPO</strong></td>
+<td style="text-align: left;">Art. 37 RGPD</td>
+<td style="text-align: left;">Supervisión y asesoramiento con independencia.</td>
+<td style="text-align: left;">Obligatorio en toda la Administración de la Junta.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Dimensiones ENS (CITAD)</strong></td>
+<td style="text-align: left;">RD 311/2022</td>
+<td style="text-align: left;">Confidencialidad, Integridad, Trazabilidad, etc.</td>
+<td style="text-align: left;">Evaluación del impacto en escalas Baja, Media, Alta.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Auditoría ENS</strong></td>
+<td style="text-align: left;">Art. 34 RD 311/2022</td>
+<td style="text-align: left;">Verificación periódica en sistemas Medios y Altos.</td>
+<td style="text-align: left;">Obligatoria <strong>cada 2 años</strong>.</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

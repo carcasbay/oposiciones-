@@ -76,7 +76,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               }`}
             >
               <Landmark className={`h-3.5 w-3.5 ${esAndalucia ? 'text-emerald-600' : 'text-slate-500'}`} />
-              <span>Andalucía (40)</span>
+              <span>Andalucía (70)</span>
             </button>
             <button
               onClick={() => onCambiarOposicion('utrera')}

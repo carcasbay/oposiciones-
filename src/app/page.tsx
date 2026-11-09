@@ -261,7 +261,7 @@ export default function Home() {
             </p>
             <p>
               {oposicionActiva === 'andalucia'
-                ? 'Conforme a la Orden de 21 de noviembre de 2022 (BOJA extraordinario nº 35) · Temario Específico Oficial (40 temas)'
+                ? 'Conforme a la Resolución de 27 de mayo de 2024 (BOJA nº 107) y BOJA extr. nº 35 · Temario Oficial (30 Comunes + 40 Específicos)'
                 : 'Conforme a las bases publicadas en el BOP de Sevilla nº 102 · Convocatoria 2024 (60 temas: 12 comunes y 48 específicos)'}
             </p>
             <p className="text-[11px] text-slate-400">

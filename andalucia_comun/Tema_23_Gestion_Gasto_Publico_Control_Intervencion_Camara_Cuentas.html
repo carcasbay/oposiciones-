@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 23: La Gestión del Gasto Público y su Control: Fases de la Gestión del Gasto (Aprobación, Compromiso, Reconocimiento de la Obligación y Propuesta de Pago). El Control Interno: La Intervención General de la Junta de Andalucía (Función Interventora y Control Financiero Permanente). El Control Externo: La Cámara de Cuentas de Andalucía y el Tribunal de Cuentas</title>
+<style>
+
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #4b5563;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #6b7280;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #047857;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #047857;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #14532d;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #047857;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #1f2937;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #374151;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #047857;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #047857;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #064e3b;
+    margin-bottom: 5px;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #e6f4ea;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f8fafc;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">JUNTA DE ANDALUCÍA — MATERIAS COMUNES (A2)</div>
+  <h1>TEMA 23</h1>
+  <h2>La Gestión del Gasto Público y su Control: Fases de la Gestión del Gasto (Aprobación, Compromiso, Reconocimiento de la Obligación y Propuesta de Pago). El Control Interno: La Intervención General de la Junta de Andalucía (Función Interventora y Control Financiero Permanente). El Control Externo: La Cámara de Cuentas de Andalucía y el Tribunal de Cuentas</h2>
+  <div class="meta-box">
+<p>**Cuerpo:** Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p>**Grupo:** A2</p>
+<p>**Bloque:** Materias Comunes</p>
+<p>**Tema Oficial:** Tema 23</p>
+<p>**Normativa Clave:**</p>
+<p>Constitución Española de 1978 (art. 136).</p>
+<p>Estatuto de Autonomía para Andalucía (Ley Orgánica 2/2007, art. 130).</p>
+<p>Texto Refundido de la Ley General de la Hacienda Pública de la Junta de Andalucía (Decreto Legislativo 1/2010, arts. 52 a 55 para gestión del gasto; arts. 85 a 97 para control interno).</p>
+<p>Reglamento de Intervención de la Junta de Andalucía (Decreto 92/1996 y modificaciones).</p>
+<p>Ley 1/1988, de 17 de marzo, de la Cámara de Cuentas de Andalucía.</p>
+<p>Ley Orgánica 2/1982, de 12 de mayo, del Tribunal de Cuentas (LOTCu) y Ley 7/1988 de Funcionamiento del Tribunal de Cuentas.</p>
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 23</div>
+<div class="toc-item level-1">1. Introducción y principios generales de la gestión del gasto público</div>
+<div class="toc-item level-1">2. Las fases del procedimiento de gestión del gasto público (Procedimiento ADOP)</div>
+<div class="toc-item level-2">2.1. Fase de Autorización o Aprobación del gasto (Fase «A»)</div>
+<div class="toc-item level-2">2.2. Fase de Disposición o Compromiso del gasto (Fase «D»)</div>
+<div class="toc-item level-2">2.3. Fase de Reconocimiento de la Obligación y Liquidación (Fase «O»)</div>
+<div class="toc-item level-2">2.4. Fase de Ordenación y Propuesta del Pago (Fase «P»)</div>
+<div class="toc-item level-2">2.5. Los actos mixtos y operaciones acumuladas (AD, ADO, ADOP)</div>
+<div class="toc-item level-2">2.6. La justificación y materialización del pago: Pagos a justificar y anticipos de caja fija</div>
+<div class="toc-item level-1">3. El control del gasto público: Fundamento, finalidad y modalidades</div>
+<div class="toc-item level-1">4. El control interno en la Junta de Andalucía: La Intervención General (IGJA)</div>
+<div class="toc-item level-2">4.1. Naturaleza jurídica, adscripción y principios de actuación: plena autonomía funcional</div>
+<div class="toc-item level-2">4.2. Estructura organizativa: Servicios Centrales, Intervenciones Delegadas y Provinciales</div>
+<div class="toc-item level-2">4.3. La Función Interventora:</div>
+<div class="toc-item level-3">4.3.1. Concepto, carácter previo y ámbito de aplicación</div>
+<div class="toc-item level-3">4.3.2. Modalidades: Fiscalización previa plena vs. Régimen de fiscalización e intervención previa limitada (requisitos básicos esenciales)</div>
+<div class="toc-item level-3">4.3.3. Los reparos de la Intervención: Reparos suspensivos y no suspensivos</div>
+<div class="toc-item level-3">4.3.4. Procedimiento de resolución de discrepancias ante el Consejo de Gobierno</div>
+<div class="toc-item level-3">4.3.5. La intervención material del gasto y comprobación material de la inversión</div>
+<div class="toc-item level-2">4.4. El Control Financiero Permanente:</div>
+<div class="toc-item level-3">4.4.1. Concepto, objetivos y ámbito de aplicación</div>
+<div class="toc-item level-3">4.4.2. Procedimiento: Plan anual de control, informes provisionales, alegaciones e informe definitivo</div>
+<div class="toc-item level-3">4.4.3. El Plan de Medidas Correctoras y seguimiento de recomendaciones</div>
+<div class="toc-item level-2">4.5. La Auditoría Pública y el control de eficacia y eficiencia</div>
+<div class="toc-item level-1">5. El control externo del gasto público</div>
+<div class="toc-item level-2">5.1. La Cámara de Cuentas de Andalucía:</div>
+<div class="toc-item level-3">5.1.1. Naturaleza jurídica, dependencia institucional del Parlamento y competencias (art. 130 Estatuto)</div>
+<div class="toc-item level-3">5.1.2. Composición orgánica y estatuto de los Consejeros de Cuentas</div>
+<div class="toc-item level-3">5.1.3. Función fiscalizadora: Dictamen sobre la Cuenta General de la Comunidad Autónoma y fiscalizaciones operativas</div>
+<div class="toc-item level-3">5.1.4. Función consultiva y relaciones con el Parlamento de Andalucía</div>
+<div class="toc-item level-2">5.2. El Tribunal de Cuentas de España:</div>
+<div class="toc-item level-3">5.2.1. Configuración constitucional (art. 136 CE) y Ley Orgánica 2/1982</div>
+<div class="toc-item level-3">5.2.2. La función de enjuiciamiento contable: Alcance de la responsabilidad contable (directa y subsidiaria)</div>
+<div class="toc-item level-3">5.2.3. Relaciones de coordinación y cooperación entre la Cámara de Cuentas y el Tribunal de Cuentas</div>
+<div class="toc-item level-1">6. Conclusiones y síntesis doctrinal</div>
+<div class="toc-item level-1">7. Anexo: Esquema del ciclo ADOP, tabla comparativa de controles y cuadro de reparos</div>
+</div>
+
+<hr />
+<h2 class="section-title">1. Introducción y principios generales de la gestión del gasto público</h2>
+<p>La gestión del gasto público en la Administración de la Junta de Andalucía constituye el conjunto ordenado de actos administrativos, contables y materiales dirigidos a la aplicación y destino de los créditos autorizados por el Parlamento en la Ley del Presupuesto.</p>
+<p>El <strong>artículo 52 del Texto Refundido de la Ley General de la Hacienda Pública de la Junta de Andalucía (TRLGHPJA)</strong> consagra que la gestión del gasto público se regirá por los principios de <strong>legalidad, eficacia, eficiencia, economía, transparencia y servicio efectivo a los intereses generales</strong>, garantizando que ninguna obligación patrimonial sea exigible sin la previa existencia de crédito adecuado y suficiente.</p>
+<hr />
+<h2 class="section-title">2. Las fases del procedimiento de gestión del gasto público (Procedimiento ADOP)</h2>
+<p>El procedimiento ordinario de ejecución del gasto público se estructura en cuatro fases sucesivas e interdependientes, conocidas en la técnica presupuestaria por sus siglas <strong>ADOP</strong>:</p>
+<pre><code>[ A ] Aprobación / Autorización (Crédito consignado, cálculo estimativo)
+  │
+  ▼
+[ D ] Compromiso / Disposición (Negocio jurídico con tercero determinado, cuantía exacta)
+  │
+  ▼
+[ O ] Reconocimiento de la Obligación (Contraprestación recibida y comprobada materialmente)
+  │
+  ▼
+[ P ] Ordenación y Propuesta del Pago (Mandamiento de pago contra la Tesorería General)
+</code></pre>
+<h3 class="sub-title">2.1. Fase de Autorización o Aprobación del gasto (Fase «A»)</h3>
+<p>A tenor del <strong>artículo 52.1 del TRLGHPJA</strong>, la <strong>aprobación</strong> (o autorización) es el acto administrativo mediante el cual la autoridad competente acuerda la realización de un gasto determinado por una cuantía cierta o aproximada, reservando a tal fin la totalidad o una parte del crédito presupuestario legalmente disponible.</p>
+<ul>
+<li><strong>Naturaleza jurídica:</strong> Es un acto de trámite interno, que no genera vínculos jurídicos frente a terceros ni derechos subjetivos a favor de terceros.</li>
+<li><strong>Efecto contable:</strong> Genera la retención definitiva del crédito presupuestario, impidiendo que pueda ser utilizado para otra finalidad.</li>
+</ul>
+<h3 class="sub-title">2.2. Fase de Disposición o Compromiso del gasto (Fase «D»)</h3>
+<p>La <strong>disposición o compromiso</strong> es el acto administrativo en cuya virtud la autoridad competente formaliza o concierta con un tercero la realización de obras, prestaciones de servicios, suministros o concesión de ayudas, quedando determinada la cuantía exacta del gasto que la Administración asume.</p>
+<ul>
+<li><strong>Naturaleza jurídica:</strong> Vincula jurídicamente a la Administración con el tercero acreedor en virtud de un contrato administrativo, resolución de concesión de subvención o nombramiento de personal.</li>
+<li><strong>Efecto contable:</strong> Afecta de manera irrevocable el crédito presupuestario comprometido.</li>
+</ul>
+<h3 class="sub-title">2.3. Fase de Reconocimiento de la Obligación y Liquidación (Fase «O»)</h3>
+<p>El <strong>reconocimiento de la obligación</strong> es el acto administrativo mediante el cual la Administración declara formalmente la existencia de un crédito dinerario vencido, líquido y exigible contra la Hacienda autonómica.</p>
+<ul>
+<li><strong>Requisitos sustantivos:</strong> Exige la <strong>comprobación material fehaciente</strong> de que el acreedor ha cumplido su contraprestación contractual o la actividad subvencionada con arreglo a las condiciones pactadas (regla del <em>servicio hecho</em> o prestación realizada).</li>
+<li><strong>Efecto contable:</strong> Da de alta la deuda en la contabilidad presupuestaria y financiera de la Junta.</li>
+</ul>
+<h3 class="sub-title">2.4. Fase de Ordenación y Propuesta del Pago (Fase «P»)</h3>
+<p>La <strong>propuesta de pago</strong> es el acto por el que el órgano gestor solicita a la persona titular de la Consejería de Hacienda (o al ordenador de pagos delegado) la expedición del mandamiento de pago contra la Tesorería General.</p>
+<ul>
+<li><strong>Fase material del pago:</strong> La Tesorería General efectúa la transferencia bancaria material o abono en cuenta a favor del acreedor, extinguiéndose la obligación dineraria.</li>
+</ul>
+<h3 class="sub-title">2.5. Los actos mixtos y operaciones acumuladas (AD, ADO, ADOP)</h3>
+<p>Cuando la naturaleza de la operación lo exija o aconseje por razones de economía procedimental, pueden acumularse dos o más fases en un único acto administrativo:
+* <strong>Fase «AD»:</strong> Acumula autorización y compromiso (ej. adjudicación de contratos menores, convocatorias públicas con beneficiarios individualizados).
+* <strong>Fase «ADO»:</strong> Acumula autorización, compromiso y reconocimiento de la obligación (ej. certificaciones de obra o suministros de tracto sucesivo ya ejecutados).
+* <strong>Fase «ADOP»:</strong> Acumula todo el ciclo en un solo acto (ej. nóminas mensuales del personal al servicio de la Junta, sentencias judiciales firmes de condena al pago).</p>
+<h3 class="sub-title">2.6. Pagos a justificar y anticipos de caja fija</h3>
+<ul>
+<li><strong>Pagos a justificar (art. 58 TRLGHPJA):</strong> Excepcionalmente, cuando no pueda aportarse la documentación justificativa previa, pueden librarse fondos con carácter provisional. Los perceptores deben rendir cuenta justificada en el plazo improrrogable de <strong>tres meses</strong>.</li>
+<li><strong>Anticipos de caja fija (art. 59 TRLGHPJA):</strong> Provisiones de fondos extrapresupuestarias de carácter permanente asignadas a las habilitaciones y pagadurías para atender gastos periódicos o de escasa cuantía (dietas, material menor). Se reponen periódicamente contra justificación contable de los gastos realizados.</li>
+</ul>
+<hr />
+<h2 class="section-title">3. El control del gasto público: Fundamento, finalidad y modalidades</h2>
+<p>El control del gasto público tiene por finalidad asegurar el cumplimiento del principio de legalidad, la salvaguarda del patrimonio público andaluz, la regularidad financiera de las operaciones y la verificación de la eficacia, eficiencia y economía en la gestión de los caudales públicos.</p>
+<p>Se articula en dos grandes vertientes complementarias:
+1. <strong>Control interno:</strong> Ejercido por la propia Administración a través de un órgano especializado dotado de autonomía funcional: la <strong>Intervención General de la Junta de Andalucía (IGJA)</strong>.
+2. <strong>Control externo:</strong> Ejercido por órganos independientes de control dependientes del Poder Legislativo: la <strong>Cámara de Cuentas de Andalucía</strong> y el <strong>Tribunal de Cuentas</strong>.</p>
+<hr />
+<h2 class="section-title">4. El control interno en la Junta de Andalucía: La Intervención General (IGJA)</h2>
+<h3 class="sub-title">4.1. Naturaleza jurídica y principios de actuación</h3>
+<p>A tenor del <strong>artículo 85 del TRLGHPJA</strong>, la <strong>Intervención General de la Junta de Andalucía (IGJA)</strong> es el órgano superior de control interno y de dirección de la contabilidad pública de la Comunidad Autónoma.</p>
+<ul>
+<li><strong>Adscripción:</strong> Se adscribe orgánicamente a la Consejería competente en materia de Hacienda.</li>
+<li><strong>Autonomía funcional (art. 87 TRLGHPJA):</strong> Ejerce sus funciones con <strong>plena independencia de criterio respecto a los órganos directivos y autoridades cuya gestión fiscaliza</strong>, sin sujeción a instrucciones jerárquicas en la emisión de sus informes y reparos.</li>
+</ul>
+<h3 class="sub-title">4.2. Estructura organizativa</h3>
+<ul>
+<li><strong>Servicios Centrales:</strong> Dirigidos por el Interventor o Interventora General de la Junta.</li>
+<li><strong>Intervenciones Delegadas:</strong> Adscritas a cada Consejería, agencias administrativas y órganos institucionales.</li>
+<li><strong>Intervenciones Provinciales:</strong> Ubicadas en cada una de las ocho Delegaciones del Gobierno de la Junta de Andalucía.</li>
+</ul>
+<h3 class="sub-title">4.3. La Función Interventora</h3>
+<p>La función interventora tiene por objeto fiscalizar todos los actos de la Administración de la Junta y de sus agencias administrativas que den lugar al reconocimiento de derechos o a la realización de gastos, así como los ingresos y pagos que de ellos se deriven.</p>
+<h4 class="sub-sub-title">4.3.1. Carácter previo y alcance</h4>
+<p>Tiene carácter <strong>previo, suspensivo y preceptivo</strong>: se ejerce antes de que los actos administrativos sean dictados por la autoridad gestora, garantizando que no nazca ninguna obligación viciada de ilegalidad.</p>
+<h4 class="sub-sub-title">4.3.2. Modalidades: Plena vs. Fiscalización e intervención previa limitada</h4>
+<ul>
+<li><strong>Fiscalización previa plena:</strong> Examen exhaustivo de la totalidad del expediente administrativo y de todos los antecedentes fácticos y jurídicos.</li>
+<li><strong>Régimen de fiscalización previa limitada (art. 90 TRLGHPJA):</strong> El Consejo de Gobierno, a propuesta de la Intervención General, puede acordar que la fiscalización previa se limite a comprobar determinados <strong>requisitos básicos esenciales</strong>:</li>
+<li>La existencia de crédito presupuestario adecuado y suficiente.</li>
+<li>Que el gasto se propone por el órgano competente.</li>
+<li>Que se acompaña la documentación básica imprescindible fijada por el acuerdo del Consejo de Gobierno.
+  Los demás extremos no fiscalizados previamente quedan sujetos a controles posteriores mediante muestreo y control financiero permanente.</li>
+</ul>
+<h4 class="sub-sub-title">4.3.3. Los reparos de la Intervención</h4>
+<p>Si la Intervención considera que el expediente incumple la legalidad vigente, formulará sus objeciones por escrito mediante <strong>reparo</strong>:
+* <strong>Reparos suspensivos (art. 91 TRLGHPJA):</strong> Suspenden de forma obligatoria la tramitación del expediente. Se producen necesariamente cuando:
+  * Falte crédito presupuestario o el propuesto sea inadecuado.
+  * Se omitan requisitos o trámites esenciales en el procedimiento.
+  * Se aprecien graves irregularidades en la documentación justificativa.
+  * Se hayan producido infracciones manifiestas de preceptos legales.
+* <strong>Reparos no suspensivos:</strong> Observaciones sobre defectos subsanables que no impiden continuar la tramitación, debiendo corregirse antes de dictar la resolución definitiva.</p>
+<h4 class="sub-sub-title">4.3.4. Procedimiento de resolución de discrepancias ante el Consejo de Gobierno</h4>
+<p>Si el órgano gestor no acepta el reparo suspensivo de la Intervención:
+1. El órgano gestor formulará <strong>discrepancia motivada</strong>.
+2. Si se trata de una Intervención Delegada o Provincial y mantiene el reparo, elevará el expediente a la <strong>Intervención General de la Junta</strong>.
+3. Si la Intervención General ratifica el reparo, corresponderá al <strong>Consejo de Gobierno de la Junta de Andalucía resolver con carácter definitivo la discrepancia</strong>, siendo su resolución vinculante (art. 92 TRLGHPJA).</p>
+<h4 class="sub-sub-title">4.3.5. La comprobación material de la inversión</h4>
+<p>Antes de proceder al reconocimiento de la obligación (fase O) en contratos de obras, suministros o servicios cuyo importe supere las cuantías fijadas reglamentariamente, la Intervención General designará a un representante para que asista a la <strong>recepción material de la inversión</strong>, verificando sobre el terreno que la obra o suministro se ajusta rigurosamente al proyecto y pliego técnico aprobado.</p>
+<h3 class="sub-title">4.4. El Control Financiero Permanente</h3>
+<p>A tenor del <strong>artículo 94 del TRLGHPJA</strong>, el control financiero permanente se ejerce de forma continua sobre la gestión económico-financiera del sector público autonómico (especialmente sobre agencias públicas empresariales, fundaciones, consorcios y entidades instrumentales exentas de función interventora previa).</p>
+<ul>
+<li><strong>Objetivo:</strong> Verificar el cumplimiento de la normativa financiera, la exactitud de los registros contables y el logro de los objetivos asignados en los programas presupuestarios.</li>
+<li><strong>Procedimiento:</strong> Se ejecuta con arreglo a un <strong>Plan Anual de Control Financiero Permanente</strong> aprobado por la Intervención General. Concluidas las actuaciones, se emite un <strong>informe provisional</strong> sobre el que el centro gestor formula alegaciones, redactándose seguidamente el <strong>informe definitivo</strong>.</li>
+<li><strong>Plan de Medidas Correctoras:</strong> Los órganos fiscalizados deben elaborar un plan de actuación para corregir las deficiencias detectadas, cuyo seguimiento corresponde a la Intervención.</li>
+</ul>
+<hr />
+<h2 class="section-title">5. El control externo del gasto público</h2>
+<p>El control externo se caracteriza por su carácter <strong>posterior a la ejecución del presupuesto</strong>, su total independencia del Poder Ejecutivo y su subordinación al Poder Legislativo.</p>
+<h3 class="sub-title">5.1. La Cámara de Cuentas de Andalucía</h3>
+<p>El <strong>artículo 130 del Estatuto de Autonomía para Andalucía</strong> consagra a la <strong>Cámara de Cuentas de Andalucía</strong> como el órgano técnico de control externo de la actividad económica, financiera y presupuestaria del sector público andaluz. Su régimen legal se articula en la <strong>Ley 1/1988, de 17 de marzo</strong>.</p>
+<ul>
+<li><strong>Dependencia institucional:</strong> Depende orgánicamente del <strong>Parlamento de Andalucía</strong>, al que rinde cuentas directamente a través de la Comisión de Hacienda.</li>
+<li><strong>Composición:</strong> Integrada por <strong>siete Consejeros y Consejeras de Cuentas</strong>, elegidos por el Parlamento de Andalucía por mayoría de tres quintos de sus miembros por un mandato de seis años renovable, de entre profesionales de reconocido prestigio. El Pleno elige de entre ellos al <strong>Presidente o Presidenta de la Cámara de Cuentas</strong>, nombrado por Decreto del Consejo de Gobierno.</li>
+<li><strong>Funciones principales:</strong></li>
+<li><strong>Fiscalización de la Cuenta General de la Comunidad Autónoma:</strong> Emite un dictamen anual preceptivo sobre la liquidación del Presupuesto y patrimonio autonómico.</li>
+<li><strong>Fiscalizaciones específicas de oficio o a instancia del Parlamento:</strong> Informes sobre programas de gasto, subvenciones, contratos y entidades instrumentales.</li>
+<li><strong>Función asesora y consultiva:</strong> Asesora al Parlamento en materias presupuestarias y económico-financieras.</li>
+</ul>
+<h3 class="sub-title">5.2. El Tribunal de Cuentas de España</h3>
+<p>El <strong>artículo 136 de la Constitución Española</strong> define al Tribunal de Cuentas como el supremo órgano fiscalizador de las cuentas y de la gestión económica del Estado y de todo el sector público español.</p>
+<ul>
+<li><strong>Doble función institucional (LO 2/1982):</strong></li>
+<li><strong>Función fiscalizadora:</strong> Examen y censura de las cuentas generales del sector público en todo el territorio nacional.</li>
+<li><strong>Función jurisdiccional (Enjuiciamiento contable):</strong> Enjuicia y condena a indemnizar los daños causados en los fondos públicos por quienes tengan a su cargo el manejo de caudales, declarando la <strong>responsabilidad contable directa o subsidiaria</strong> por alcance, malversación o negligencia grave.</li>
+<li><strong>Coordinación con la Cámara de Cuentas:</strong> La Cámara de Cuentas de Andalucía coordina sus planes de fiscalización con el Tribunal de Cuentas para evitar duplicidades. Asimismo, cuando la Cámara de Cuentas advierta indicios racionales de responsabilidad contable o alcance dinerario en el curso de sus auditorías, <strong>debe dar traslado inmediato de las actuaciones al Tribunal de Cuentas</strong>, que ostenta el monopolio exclusivo de la jurisdicción contable en todo el Estado español.</li>
+</ul>
+<hr />
+<h2 class="section-title">6. Conclusiones y síntesis doctrinal</h2>
+<p>El sistema de gestión y control del gasto público en la Junta de Andalucía configura un entramado jurídico de máxima solidez institucional. El ciclo administrativo ADOP asegura la racionalidad temporal y formal del gasto; el control interno de la Intervención General, mediante la función interventora previa y el control financiero permanente, garantiza la prevención inmediata de desviaciones; y el control externo posterior, articulado por la Cámara de Cuentas y el Tribunal de Cuentas, cierra el círculo de la transparencia democrática y la rendición de cuentas ante la ciudadanía andaluza.</p>
+<hr />
+<h2 class="section-title">7. Anexo: Esquema del ciclo ADOP, tabla comparativa de controles y cuadro de reparos</h2>
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Fase Presupuestaria</th>
+<th style="text-align: left;">Denominación Oficial</th>
+<th style="text-align: left;">Efecto Jurídico</th>
+<th style="text-align: left;">Efecto Contable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>A</strong></td>
+<td style="text-align: left;"><strong>Autorización / Aprobación</strong></td>
+<td style="text-align: left;">Acuerdo de destinar fondos a un fin determinado. Acto interno sin tercero.</td>
+<td style="text-align: left;">Retención cautelar / definitiva del crédito.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>Disposición / Compromiso</strong></td>
+<td style="text-align: left;">Formalización del contrato, concesión o nombramiento con tercero.</td>
+<td style="text-align: left;">Afectación irrevocable del crédito al acreedor.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>O</strong></td>
+<td style="text-align: left;"><strong>Reconocimiento de la Obligación</strong></td>
+<td style="text-align: left;">Constatación de la prestación realizada (servicio hecho y comprobado).</td>
+<td style="text-align: left;">Nacimiento contable de la deuda líquida y exigible.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>P</strong></td>
+<td style="text-align: left;"><strong>Propuesta / Ordenación del Pago</strong></td>
+<td style="text-align: left;">Mandamiento expedido por el gestor contra la Tesorería General.</td>
+<td style="text-align: left;">Salida material de fondos de la Tesorería (extinción).</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Parámetro</th>
+<th style="text-align: left;">Control Interno (IGJA)</th>
+<th style="text-align: left;">Control Externo (Cámara de Cuentas)</th>
+<th style="text-align: left;">Control Jurisdiccional (Tribunal de Cuentas)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Naturaleza</strong></td>
+<td style="text-align: left;">Administrativo (integrado en el Ejecutivo)</td>
+<td style="text-align: left;">Técnico e independiente (subordinado al Parlamento)</td>
+<td style="text-align: left;">Jurisdiccional y de fiscalización suprema</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Momento temporal</strong></td>
+<td style="text-align: left;"><strong>Previo</strong> (función interventora) y <strong>continuo</strong> (CFP)</td>
+<td style="text-align: left;"><strong>Posterior</strong> a la ejecución presupuestaria</td>
+<td style="text-align: left;"><strong>Posterior</strong> (declaración de alcance contable)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Efecto de las resoluciones</strong></td>
+<td style="text-align: left;">Reparos suspensivos vinculantes (salvo Consejo Gobierno)</td>
+<td style="text-align: left;">Dictámenes, informes y recomendaciones no suspensivos</td>
+<td style="text-align: left;"><strong>Sentencias firmes ejecutorias</strong> con fuerza de cosa juzgada</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Competencia exclusiva</strong></td>
+<td style="text-align: left;">Fiscalización previa de actos y contabilidad pública</td>
+<td style="text-align: left;">Censura de la Cuenta General de Andalucía</td>
+<td style="text-align: left;"><strong>Enjuiciamiento de la responsabilidad contable</strong></td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

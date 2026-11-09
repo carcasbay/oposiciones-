@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TEMA 18: El personal al servicio de la Administración de la Junta de Andalucía (I): La Ley 5/2023 de la Función Pública de Andalucía. Clases de personal. Acceso al empleo público y OEP. Planificación, provisión y carrera profesional</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (Grupo A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #065f46;
+      font-weight: 500;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #059669;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #065f46;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #059669;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #059669;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #059669;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout p {
+    margin: 0;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #065f46;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #d1fae5;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f0fdf4;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO COMÚN — JUNTA DE ANDALUCÍA (GRUPO A2)</div>
+  <h1>TEMA 18</h1>
+  <h2>El personal al servicio de la Administración de la Junta de Andalucía (I): La Ley 5/2023 de la Función Pública de Andalucía. Clases de personal. Acceso al empleo público y OEP. Planificación, provisión y carrera profesional</h2>
+  <div class="meta-box">
+    <p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+    <p><strong>Especialidad:</strong> Materias Comunes (Grupo A2)</p>
+    <p><strong>Bloque:</strong> Materias Comunes</p>
+    <p><strong>Tema Oficial:</strong> 18</p>
+    <p><strong>Normativa Clave:</strong> Ley 5/2023, de 7 de junio, de la Función Pública de Andalucía (LFPA); Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el Texto Refundido de la Ley del Estatuto Básico del Empleado Público (TREBEP); Ley 20/2021, de 28 de diciembre, de medidas urgentes para la reducción de la temporalidad en el empleo público; Estatuto de Autonomía para Andalucía (art. 76); VI Convenio Colectivo del Personal Laboral de la Administración de la Junta de Andalucía.</p>
+
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General de TEMA 18</div>
+  <div class="toc-item level-1">1. <strong>El marco estatutario y legislativo de la Función Pública andaluza</strong></div>
+  <div class="toc-item level-2">1.1. Competencia estatutaria: El artículo 76 del Estatuto de Autonomía para Andalucía</div>
+  <div class="toc-item level-2">1.2. La Ley 5/2023, de 7 de junio, de la Función Pública de Andalucía: Objeto, principios y estructura</div>
+  <div class="toc-item level-2">1.3. Ámbito subjetivo de aplicación: Administración General, agencias y sector público instrumental</div>
+  <div class="toc-item level-1">2. <strong>Clases de personal al servicio de la Administración de la Junta de Andalucía</strong></div>
+  <div class="toc-item level-2">2.1. Personal funcionario de carrera (art. 14 LFPA) y la reserva constitucional de potestades públicas</div>
+  <div class="toc-item level-2">2.2. Personal funcionario interino (art. 15 LFPA y art. 10 TREBEP): Supuestos tasados, límites temporales y régimen de cese</div>
+  <div class="toc-item level-2">2.3. Personal laboral (art. 16 LFPA): Puestos susceptibles de laboralización y Convenio Colectivo</div>
+  <div class="toc-item level-2">2.4. Personal eventual (art. 17 LFPA): Funciones de confianza, nombramiento y cese</div>
+  <div class="toc-item level-2">2.5. El personal directivo público profesional (Título V LFPA)</div>
+  <div class="toc-item level-1">3. <strong>Acceso al empleo público: Principios rectores y requisitos</strong></div>
+  <div class="toc-item level-2">3.1. Principios constitucionales: Igualdad, mérito, capacidad y publicidad (art. 70 LFPA)</div>
+  <div class="toc-item level-2">3.2. Requisitos generales de participación</div>
+  <div class="toc-item level-2">3.3. Personas con discapacidad: Reserva legal del 10% y adaptaciones</div>
+  <div class="toc-item level-2">3.4. Órganos de selección: Principios de profesionalidad, paridad e imparcialidad</div>
+  <div class="toc-item level-2">3.5. Sistemas selectivos: Oposición, concurso-oposición y concurso extraordinario</div>
+  <div class="toc-item level-1">4. <strong>Instrumentos de planificación y ordenación de recursos humanos</strong></div>
+  <div class="toc-item level-2">4.1. Planes de ordenación de recursos humanos (art. 38 LFPA)</div>
+  <div class="toc-item level-2">4.2. La Oferta de Empleo Público (OEP, art. 72 LFPA y art. 70 TREBEP): Plazo trienal de ejecución</div>
+  <div class="toc-item level-2">4.3. Las Relaciones de Puestos de Trabajo (RPT, arts. 40 a 43 LFPA): Concepto, naturaleza y contenido</div>
+  <div class="toc-item level-1">5. <strong>Provisión de puestos de trabajo del personal funcionario</strong></div>
+  <div class="toc-item level-2">5.1. El concurso de méritos: Modalidades y el concurso abierto y permanente</div>
+  <div class="toc-item level-2">5.2. La libre designación con convocatoria pública: Puestos directivos y de especial responsabilidad</div>
+  <div class="toc-item level-2">5.3. Provisión temporal: Comisión de servicios y adscripción provisional</div>
+  <div class="toc-item level-2">5.4. Movilidad por motivos de salud y por razón de violencia de género o terrorista</div>
+  <div class="toc-item level-1">6. <strong>La carrera profesional en la Ley 5/2023 de Andalucía</strong></div>
+  <div class="toc-item level-2">6.1. Concepto y modalidades de carrera (art. 98 LFPA)</div>
+  <div class="toc-item level-2">6.2. La carrera horizontal: El sistema de tramos de desarrollo profesional y evaluación del desempeño</div>
+  <div class="toc-item level-2">6.3. La carrera vertical: Ascenso por provisión de puestos de trabajo</div>
+  <div class="toc-item level-2">6.4. La promoción interna vertical y horizontal-cruzada</div>
+  <div class="toc-item level-1">7. <strong>Conclusiones y modernización del empleo público en Andalucía</strong></div>
+  <div class="toc-item level-1">8. <strong>Anexo: Tabla sinóptica y mapas conceptuales del Tema 18</strong></div>
+
+</div>
+
+<h2 class="section-title">1. El marco estatutario y legislativo de la Función Pública andaluza</h2>
+
+<h3 class="sub-title">1.1. Competencia estatutaria: El artículo 76 del Estatuto de Autonomía</h3>
+<p>El <strong>artículo 76 del Estatuto de Autonomía para Andalucía (Ley Orgánica 2/2007)</strong> atribuye a la Comunidad Autónoma la <strong>competencia compartida</strong> sobre el régimen estatutario del personal al servicio de las Administraciones Públicas andaluzas, en el marco de las bases estatales fijadas por el Estado al amparo del <strong>artículo 149.1.18ª CE</strong> (materializadas en el Texto Refundido de la Ley del Estatuto Básico del Empleado Público - TREBEP, aprobado por Real Decreto Legislativo 5/2015).</p>
+<p>Asimismo, el artículo 76.2 atribuye a la Junta de Andalucía <strong>competencia exclusiva</strong> en materia de organización y estructura de su propia función pública, planificación de recursos humanos y ordenación de los puestos de trabajo.</p>
+<h3 class="sub-title">1.2. La Ley 5/2023, de 7 de junio, de la Función Pública de Andalucía (LFPA)</h3>
+<p>Aprobada por el Parlamento de Andalucía y publicada en el BOJA nº 111 de 13 de junio de 2023 (con entrada en vigor general a los seis meses de su publicación, en diciembre de 2023), la <strong>Ley 5/2023</strong> deroga la histórica Ley 6/1985 y adapta la función pública andaluza a los retos de la transformación digital, la profesionalización directiva, la reducción estructural de la temporalidad (en sintonía con la Ley 20/2021) y la implantación de la <strong>carrera profesional horizontal ligada a la evaluación del desempeño</strong>.</p>
+<h3 class="sub-title">1.3. Ámbito subjetivo de aplicación (art. 3 LFPA)</h3>
+<p>La Ley 5/2023 se aplica al personal funcionario y laboral al servicio de:
+1. La Administración de la Junta de Andalucía (Consejerías y Delegaciones Territoriales).
+2. Las agencias administrativas y las agencias de régimen especial de la Junta.
+3. El personal laboral de las agencias públicas empresariales y demás entidades instrumentales en los preceptos que expresamente así lo declaren.</p>
+<hr />
+<h2 class="section-title">2. Clases de personal al servicio de la Administración de la Junta de Andalucía</h2>
+
+<p>El <strong>artículo 13 de la Ley 5/2023</strong> clasifica al personal al servicio de la Administración pública andaluza en cuatro categorías:</p>
+<div class="diagram-box"><pre>                            CLASES DE PERSONAL (ART. 13 LFPA)
+┌──────────────────────────────────────┬──────────────────────────────────────┐
+│ PERSONAL FUNCIONARIO                 │ PERSONAL LABORAL Y OTROS             │
+├──────────────────────────────────────┼──────────────────────────────────────┤
+│ 1. Funcionario de carrera (Art. 14): │ 3. Personal laboral (Art. 16):       │
+│    Vinculación estatutaria fija por  │    Contrato de trabajo escrito       │
+│    Derecho Administrativo.           │    (fijo, indefinido o temporal).    │
+│                                      │                                      │
+│ 2. Funcionario interino (Art. 15):   │ 4. Personal eventual (Art. 17):      │
+│    Nombramiento temporal por razones │    Funciones de confianza o asesora- │
+│    tasadas de necesidad y urgencia.  │    miento especial no reservadas.    │
+└──────────────────────────────────────┴──────────────────────────────────────┘
+</pre></div>
+<h3 class="sub-title">2.1. Personal funcionario de carrera (art. 14 LFPA)</h3>
+<p>Son funcionarios de carrera quienes, en virtud de nombramiento legal y tras superar un proceso selectivo competitivo, están vinculados a la Administración de la Junta de Andalucía por una <strong>relación estatutaria regulada por el Derecho Administrativo</strong> para el desempeño de servicios profesionales retribuidos de carácter permanente.</p>
+<div class="callout"><p><strong>Reserva constitucional de funciones públicas (art. 9.2 TREBEP y art. 14.2 LFPA):</strong>
+El ejercicio de las funciones que impliquen la <strong>participación directa o indirecta en el ejercicio de las potestades públicas o en la salvaguardia de los intereses generales</strong> del Estado y de las Administraciones Públicas corresponde <strong>exclusivamente a los funcionarios públicos</strong>. Queda terminantemente vedado el desempeño de estas tareas a personal laboral o contratistas privados.</p></div>
+<h3 class="sub-title">2.2. Personal funcionario interino (art. 15 LFPA y art. 10 TREBEP)</h3>
+<p>Son funcionarios interinos quienes, por razones expresamente justificadas de necesidad y urgencia, son nombrados como tales para el desempeño de funciones propias de funcionarios de carrera, cuando se dé alguna de las siguientes <strong>cuatro circunstancias tasadas</strong>:</p>
+<div class="diagram-box"><pre>                       CAUSAS TASADAS DE INTERINIDAD
+┌───────────────────────────────────┬─────────────────────────────────────────┐
+│ CAUSA LEGAL                       │ PLAZO MÁXIMO IMPRORROGABLE              │
+├───────────────────────────────────┼─────────────────────────────────────────┤
+│ **a) Existencia de plazas**       │ Máximo **3 años**. La plaza debe        │
+│    **vacantes** sin titular       │ incluirse obligatoriamente en la OEP del│
+│    (Art. 15.1.a LFPA)             │ año en curso o del siguiente.           │
+├───────────────────────────────────┼─────────────────────────────────────────┤
+│ **b) Sustitución transitoria**    │ Por el tiempo estrictamente necesario   │
+│    **de los titulares** (15.1.b)  │ hasta la reincorporación del titular.   │
+├───────────────────────────────────┼─────────────────────────────────────────┤
+│ **c) Ejecución de programas de**  │ Duración del programa, máximo **3 años**│
+│    **carácter temporal** (15.1.c) │ (prorrogable máx. 12 meses por ley and.)│
+├───────────────────────────────────┼─────────────────────────────────────────┤
+│ **d) Exceso o acumulación de**    │ Plazo máximo de **9 meses** dentro de   │
+│    **tareas** (Art. 15.1.d LFPA)  │ un período de 18 meses consecutivos.    │
+└───────────────────────────────────┴─────────────────────────────────────────┘
+</pre></div>
+<ul>
+<li><strong>Régimen de cese y compensación (art. 15.4 y Ley 20/2021):</strong> El cese del personal interino se produce por la cobertura reglada del puesto por funcionario de carrera, por reincorporación del titular, por amortización de la plaza, o por transcurso del plazo máximo legal. El incumplimiento del plazo máximo de tres años en vacante genera derecho a una <strong>compensación económica de 20 días por año de servicio</strong> (máximo 12 mensualidades) en caso de que la plaza no sea cubierta en plazo.</li>
+</ul>
+<h3 class="sub-title">2.3. Personal laboral (art. 16 LFPA)</h3>
+<p>Es el que presta servicios retribuidos en virtud de un contrato de trabajo formalizado por escrito, en cualquiera de las modalidades previstas en la legislación laboral, rigiéndose por el <strong>Estatuto de los Trabajadores</strong> y el <strong>VI Convenio Colectivo del Personal Laboral de la Junta de Andalucía</strong>.</p>
+<p><strong>Puestos que pueden ser desempeñados por personal laboral (art. 16.2 LFPA):</strong>
+* Puestos de naturaleza no administrativa pertenecientes a oficios (mantenimiento, conductores, cocina).
+* Puestos de vigilancia, custodia y transporte de caudales.
+* Actividades técnicas especializadas y de socorrismo, investigación o servicios sociales de apoyo no directivo.
+* Puestos docentes singulares y actividades artísticas o culturales.</p>
+<h3 class="sub-title">2.4. Personal eventual (art. 17 LFPA)</h3>
+<p>Es aquel que, en virtud de nombramiento legal y con carácter no permanente, sólo realiza funciones expresamente calificadas como de <strong>confianza o asesoramiento especial</strong>:
+* Su nombramiento y cese son <strong>libres</strong>, correspondiendo exclusivamente al Presidente de la Junta y a los Consejeros/as.
+* Cesarám automáticamente cuando cese la autoridad a la que presten su función de confianza.
+* <strong>Prohibición de mérito:</strong> La condición de personal eventual <strong>no podrá ser constituida en mérito</strong> para el acceso a la función pública ni para la promoción interna.</p>
+<h3 class="sub-title">2.5. Personal directivo público profesional (Título V LFPA)</h3>
+<p>La Ley 5/2023 institucionaliza por primera vez en Andalucía la figura del <strong>personal directivo público profesional</strong>:
+* Desempeña funciones de dirección gerencial de alto nivel en agencias y entidades instrumentales.
+* Su designación atiende a principios de mérito, capacidad y criterios de idoneidad, garantizando la publicidad y concurrencia.
+* Queda sujeto a <strong>evaluación periódica del desempeño</strong> y al cumplimiento de los objetivos fijados en su contrato de gestión.</p>
+<hr />
+<h2 class="section-title">3. Acceso al empleo público: Principios rectores y requisitos</h2>
+
+<h3 class="sub-title">3.1. Principios constitucionales (art. 23.2 y 103.3 CE, art. 70 LFPA)</h3>
+<p>El acceso al empleo público en Andalucía se fundamenta en los principios de:
+* <strong>Igualdad, mérito y capacidad.</strong>
+* <strong>Publicidad</strong> de las convocatorias y de sus bases en el BOJA.
+* <strong>Transparencia, objetividad e imparcialidad</strong> de los órganos de selección.
+* <strong>Agilidad y eficacia</strong> en los procesos selectivos sin menoscabo del rigor.</p>
+<h3 class="sub-title">3.2. Requisitos generales de participación (art. 71 LFPA)</h3>
+<p>Para ser admitido a los procesos selectivos, los aspirantes deben reunir:
+1. <strong>Nacionalidad:</strong> Española o de un Estado miembro de la Unión Europea (o cónyuge/descendientes, en términos legales).
+2. <strong>Edad:</strong> Tener cumplidos dieciséis años de edad y no exceder de la edad máxima de jubilación forzosa.
+3. <strong>Titulación:</strong> Poseer la titulación académica exigida para el ingreso en el correspondiente cuerpo o especialidad (para el Grupo A2: Título universitario de Grado o equivalente).
+4. <strong>Capacidad funcional:</strong> Poseer la capacidad funcional para el desempeño de las tareas del cuerpo.
+5. <strong>Habilitación legal:</strong> No haber sido separado mediante expediente disciplinario del servicio de cualquiera de las Administraciones Públicas ni hallarse inhabilitado para empleo o cargo público.</p>
+<h3 class="sub-title">3.3. Reserva para personas con discapacidad (art. 74 LFPA)</h3>
+<p>En las ofertas de empleo público se reservará un cupo <strong>no inferior al diez por ciento (10%) de las vacantes</strong> para ser cubiertas entre personas con discapacidad con grado igual o superior al 33%:
+* Se reservará al menos un <strong>dos por ciento (2%)</strong> de las plazas para personas con <strong>discapacidad intelectual</strong>.
+* El resto de las plazas reservadas (8%) se destinará a personas con discapacidad física, sensorial o psíquica.
+* Los aspirantes con discapacidad tienen derecho a las adaptaciones de tiempo y medios en las pruebas selectivas.</p>
+<h3 class="sub-title">3.4. Órganos de selección (art. 77 LFPA)</h3>
+<ul>
+<li>Serán colegiados y su composición responderá al principio de <strong>profesionalidad, especialidad y paridad</strong> entre mujeres y hombres.</li>
+<li>El personal de los tribunales debe pertenecer a un cuerpo o categoría de titulación igual o superior a aquel para el que se selecciona.</li>
+<li><strong>Prohibición de representación (art. 60.2 TREBEP):</strong> En ningún caso podrán formar parte de los órganos de selección los miembros de las organizaciones sindicales, ni los cargos electos o de designación política.</li>
+</ul>
+<h3 class="sub-title">3.5. Sistemas selectivos (art. 75 LFPA)</h3>
+<ul>
+<li><strong>Oposición:</strong> Sistema preferente para el acceso a la condición de personal funcionario de carrera. Consiste en una o varias pruebas objetivas de conocimientos teóricos y prácticos.</li>
+<li><strong>Concurso-oposición:</strong> Sistema excepcional que consiste en la superación de pruebas de examen junto a la posterior valoración baremada de méritos (formación y experiencia previa). La fase de concurso no podrá tener una valoración desproporcionada que desvirtúe el principio de igualdad (máx. 40% de la puntuación total).</li>
+<li><strong>Concurso:</strong> Sistema estrictamente extraordinario aplicable únicamente cuando una ley lo prevea de forma expresa para procesos singulares o de estabilización de empleo temporal.</li>
+</ul>
+<hr />
+<h2 class="section-title">4. Instrumentos de planificación y ordenación de recursos humanos</h2>
+
+<div class="diagram-box"><pre>               PLANIFICACIÓN Y ORDENACIÓN DE RRHH
+┌──────────────────────────────────────┬──────────────────────────────────────┐
+│ OFERTA DE EMPLEO PÚBLICO (OEP)       │ RELACIÓN DE PUESTOS DE TRABAJO (RPT) │
+│ (Art. 72 LFPA y art. 70 TREBEP)      │ (Arts. 40 a 43 LFPA)                 │
+├──────────────────────────────────────┼──────────────────────────────────────┤
+│ • Plan anual de necesidades de       │ • Instrumento técnico que ordena y   │
+│   incorporación de nuevo personal.   │   estructura todos los puestos de la │
+│ • Aprobada por el Consejo de         │   Administración pública andaluza.   │
+│   Gobierno y publicada en el BOJA.   │ • Carácter de acto administrativo    │
+│ • **Plazo improrrogable de ejecución: │   plúrimo de eficacia general.       │
+│   TRES AÑOS** para convocar pruebas. │ • Requisitos de titulación, nivel,   │
+│                                      │   complementos y forma de provisión. │
+└──────────────────────────────────────┴──────────────────────────────────────┘
+</pre></div>
+<h3 class="sub-title">4.1. Contenido preceptivo de las RPTs (art. 41 LFPA)</h3>
+<p>Las Relaciones de Puestos de Trabajo deben detallar de forma pública y transparente:
+* Código numérico del puesto de trabajo y denominación funcional.
+* Unidad orgánica de adscripción dentro de la Consejería o Agencia.
+* Clasificación profesional: Grupo, subgrupo (A1, A2, C1, C2) y cuerpo o especialidad asignada.
+* Nivel de complemento de destino y cuantía del complemento específico.
+* Sistema de provisión (concurso de méritos o libre designación).
+* Requisitos específicos exigidos para su desempeño (titulaciones, formación o permisos singulares).</p>
+<hr />
+<h2 class="section-title">5. Provisión de puestos de trabajo del personal funcionario</h2>
+
+<p>La provisión de puestos es el procedimiento reglado mediante el cual los funcionarios de carrera acceden a los puestos de trabajo catalogados en las RPTs:</p>
+<div class="diagram-box"><pre>                      PROCEDIMIENTOS DE PROVISIÓN
+┌──────────────────────────────────────┬──────────────────────────────────────┐
+│ CONCURSO DE MÉRITOS (Art. 104 LFPA)  │ LIBRE DESIGNACIÓN (Art. 105 LFPA)    │
+├──────────────────────────────────────┼──────────────────────────────────────┤
+│ • Procedimiento ordinario y general. │ • Excepcional para puestos directivos │
+│ • Valora méritos baremados:          │   o de confianza y especial jefatura.│
+│   antigüedad, grado, formación y     │ • Convocatoria pública en BOJA.      │
+│   desempeño profesional.             │ • Libre apreciación discrecional del │
+│ • Sistema de **concurso abierto y    │   órgano pero motivando la idoneidad.│
+│   permanente** para agilizar plazas. │ • Cese discrecional en el puesto.    │
+└──────────────────────────────────────┴──────────────────────────────────────┘
+</pre></div>
+<h3 class="sub-title">5.1. Mecanismos de provisión provisional y movilidad</h3>
+<ul>
+<li><strong>Comisión de servicios (art. 111 LFPA):</strong> Asignación temporal de un funcionario de carrera a un puesto vacante por urgencia inaplazable. Duración máxima: <strong>un año prorrogable por otro más</strong> si la vacante no se cubre con carácter definitivo.</li>
+<li><strong>Adscripción provisional:</strong> Destino temporal asignado a un funcionario que cesa en un puesto obtenido por libre designación o por supresión de su puesto en la RPT, en tanto obtiene un puesto definitivo por concurso.</li>
+<li><strong>Movilidad por violencia de género o terrorista (art. 115 LFPA):</strong> Las funcionarias víctimas de violencia de género tienen derecho al traslado a un puesto de análoga categoría en otra localidad sin necesidad de vacante en concurso, con reserva de su puesto anterior.</li>
+</ul>
+<hr />
+<h2 class="section-title">6. La carrera profesional en la Ley 5/2023 de Andalucía</h2>
+
+<p>El Título VII de la Ley 5/2023 estructura la carrera profesional del funcionario en dos ejes vertebradores:</p>
+<div class="diagram-box"><pre>                    MODALIDADES DE CARRERA PROFESIONAL
+        ┌────────────────────────────────────────────────────────┐
+        │                                                        │
+        ▼                                                        ▼
+CARRERA HORIZONTAL (Art. 99 LFPA)                      CARRERA VERTICAL (Art. 100 LFPA)
+• Progresión en TRAMOS o GRADOS sin necesidad         • Ascenso en la estructura orgánica de
+  de cambiar de puesto de trabajo ni de funciones.      puestos de trabajo a través del concurso.
+• Retribuida mediante el Complemento de Carrera.       • Supone mayor nivel de complemento de
+• Se fundamenta en:                                      destino y mayor responsabilidad técnica.
+  - Evaluación del desempeño periódica.               • Acceso a jefaturas de servicio, sección
+  - Formación continuada y cualificación.               o subdirecciones generales.
+  - Compromiso institucional y transferencia.
+• Cuatro tramos consecutivos y progresivos.
+</pre></div>
+<h3 class="sub-title">6.1. La carrera horizontal y la evaluación del desempeño</h3>
+<p>La Ley 5/2023 instaura un modelo pionero en Andalucía:
+* Se estructura en <strong>cuatro tramos o grados de desarrollo profesional</strong>, a los que se accede de forma sucesiva tras permanecer un periodo mínimo en cada tramo y superar la correspondiente <strong>evaluación del desempeño</strong>.
+* La evaluación del desempeño es el procedimiento obligatorio y continuo que mide y valora la conducta profesional y el rendimiento o logro de resultados colectivos e individuales.
+* El reconocimiento de cada tramo consolida una retribución económica fija y periódica a través del nuevo <strong>complemento de carrera profesional</strong>.</p>
+<h3 class="sub-title">6.2. La promoción interna</h3>
+<ul>
+<li><strong>Promoción interna vertical (art. 101 LFPA):</strong> Ascenso desde un cuerpo de un subgrupo inferior al inmediatamente superior (ej. de C1 a A2, o de A2 a A1), requiriendo poseer la titulación exigida, tener al menos <strong>dos años de antigüedad en el cuerpo inferior</strong> y superar las pruebas selectivas.</li>
+<li><strong>Promoción interna horizontal-cruzada:</strong> Permite al personal laboral fijo de la Junta acceder a cuerpos de funcionarios equivalentes por su grupo de titulación y funciones desempeñadas.</li>
+</ul>
+<hr />
+<h2 class="section-title">7. Conclusiones y modernización del empleo público en Andalucía</h2>
+
+<p>La Ley 5/2023 de la Función Pública de Andalucía redefine las reglas de juego de los recursos humanos autonómicos:
+1. Asegura la profesionalidad y la imparcialidad del personal funcionario a través de la estricta <strong>reserva legal de potestades públicas</strong> (art. 14.2).
+2. Pone coto a la temporalidad abusiva mediante límites tajantes de tres años para la interinidad en vacantes y compensaciones económicas disuasorias.
+3. Implanta la <strong>carrera horizontal ligada al rendimiento y a la formación</strong>, motivando al personal del Grupo A2 a una constante actualización técnica en servicio de la ciudadanía andaluza.</p>
+<hr />
+<h2 class="section-title">8. Anexo: Tabla sinóptica y mapas conceptuales del Tema 18</h2>
+
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Concepto / Institución</th>
+<th style="text-align: left;">Precepto Legal</th>
+<th style="text-align: left;">Régimen Jurídico Aplicable</th>
+<th style="text-align: left;">Clave Práctica Opositores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Funcionario de Carrera</strong></td>
+<td style="text-align: left;">Art. 14 LFPA</td>
+<td style="text-align: left;">Relación estatutaria permanente sujeta a D. Administrativo.</td>
+<td style="text-align: left;">Ejercicio exclusivo de potestades públicas y autoridad.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Funcionario Interino</strong></td>
+<td style="text-align: left;">Art. 15 LFPA</td>
+<td style="text-align: left;">Nombramiento temporal por 4 causas tasadas legales.</td>
+<td style="text-align: left;">Vacante máx. 3 años. Sustitución, programas o exceso (9 m).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Personal Laboral</strong></td>
+<td style="text-align: left;">Art. 16 LFPA</td>
+<td style="text-align: left;">Contrato de trabajo y Estatuto de los Trabajadores.</td>
+<td style="text-align: left;">Oficios, puestos de apoyo y mantenimiento (Convenio Colectivo).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Personal Eventual</strong></td>
+<td style="text-align: left;">Art. 17 LFPA</td>
+<td style="text-align: left;">Confianza o asesoramiento especial. Cese libre.</td>
+<td style="text-align: left;">Cese con la autoridad. NO computable como mérito selectivo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Reserva Discapacidad</strong></td>
+<td style="text-align: left;">Art. 74 LFPA</td>
+<td style="text-align: left;">Mínimo 10% de plazas en OEP (2% discapacidad intelectual).</td>
+<td style="text-align: left;">Adaptación de tiempos y pruebas en exámenes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Oferta de Empleo (OEP)</strong></td>
+<td style="text-align: left;">Art. 72 LFPA</td>
+<td style="text-align: left;">Aprobada por Consejo de Gobierno y publicada en BOJA.</td>
+<td style="text-align: left;">Plazo improrrogable de ejecución de TRES AÑOS.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>RPT</strong></td>
+<td style="text-align: left;">Arts. 40-43 LFPA</td>
+<td style="text-align: left;">Acto administrativo plúrimo que ordena todos los puestos.</td>
+<td style="text-align: left;">Detalla nivel, complementos, grupo y forma de provisión.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Concurso de Méritos</strong></td>
+<td style="text-align: left;">Art. 104 LFPA</td>
+<td style="text-align: left;">Procedimiento ordinario y general de provisión de puestos.</td>
+<td style="text-align: left;">Concurso abierto y permanente para cobertura ágil.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Libre Designación</strong></td>
+<td style="text-align: left;">Art. 105 LFPA</td>
+<td style="text-align: left;">Puestos directivos o de especial responsabilidad.</td>
+<td style="text-align: left;">Discrecionalidad motivada y cese libre del puesto.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Carrera Horizontal</strong></td>
+<td style="text-align: left;">Art. 99 LFPA</td>
+<td style="text-align: left;">Progresión en 4 tramos sin cambiar de puesto de trabajo.</td>
+<td style="text-align: left;">Ligada a evaluación del desempeño y formación continua.</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

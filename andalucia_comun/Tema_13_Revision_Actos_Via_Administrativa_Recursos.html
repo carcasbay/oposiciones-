@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TEMA 13: Revisión de los actos en vía administrativa: Nulidad de pleno derecho y anulabilidad. Conservación del acto. Revisión de oficio y lesividad. Recursos administrativos. Jurisdicción contencioso-administrativa</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (Grupo A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #065f46;
+      font-weight: 500;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #059669;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #065f46;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #059669;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #059669;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #059669;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout p {
+    margin: 0;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #065f46;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #d1fae5;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f0fdf4;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO COMÚN — JUNTA DE ANDALUCÍA (GRUPO A2)</div>
+  <h1>TEMA 13</h1>
+  <h2>Revisión de los actos en vía administrativa: Nulidad de pleno derecho y anulabilidad. Conservación del acto. Revisión de oficio y lesividad. Recursos administrativos. Jurisdicción contencioso-administrativa</h2>
+  <div class="meta-box">
+    <p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+    <p><strong>Especialidad:</strong> Materias Comunes (Grupo A2)</p>
+    <p><strong>Bloque:</strong> Materias Comunes</p>
+    <p><strong>Tema Oficial:</strong> 13</p>
+    <p><strong>Normativa Clave:</strong> Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (arts. 47 a 52 y arts. 106 a 126); Ley 29/1998, de 13 de julio, reguladora de la Jurisdicción Contencioso-administrativa (LJCA); Ley 9/2007, de 22 de octubre, de la Administración de la Junta de Andalucía (LAJA); Ley 4/2005, de 8 de abril, del Consejo Consultivo de Andalucía.</p>
+
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General de TEMA 13</div>
+  <div class="toc-item level-1">1. <strong>La invalidez de los actos administrativos en el ordenamiento español</strong></div>
+  <div class="toc-item level-2">1.1. Principio de presunción de validez y ejecutividad (art. 38 y 39 Ley 39/2015)</div>
+  <div class="toc-item level-2">1.2. Graduación de la invalidez: Nulidad de pleno derecho frente a Anulabilidad</div>
+  <div class="toc-item level-1">2. <strong>Nulidad de pleno derecho</strong></div>
+  <div class="toc-item level-2">2.1. Causas tasadas de nulidad de los actos administrativos (art. 47.1 Ley 39/2015)</div>
+  <div class="toc-item level-2">2.2. Nulidad radical de las disposiciones administrativas generales (art. 47.2 Ley 39/2015)</div>
+  <div class="toc-item level-2">2.3. Efectos jurídicos de la nulidad: *Ex tunc*, imprescriptibilidad e insanabilidad</div>
+  <div class="toc-item level-1">3. <strong>Anulabilidad e irregularidades no invalidantes</strong></div>
+  <div class="toc-item level-2">3.1. Cláusula general de anulabilidad (art. 48.1 Ley 39/2015)</div>
+  <div class="toc-item level-2">3.2. Defectos de forma: Relevancia invalidante y principio de indefensión (art. 48.2 Ley 39/2015)</div>
+  <div class="toc-item level-2">3.3. Actuaciones administrativas fuera de plazo (art. 48.3 Ley 39/2015)</div>
+  <div class="toc-item level-2">3.4. Efectos de la anulabilidad: Eficacia *ex nunc* y sanación por el transcurso del tiempo</div>
+  <div class="toc-item level-1">4. <strong>Principio de conservación del acto administrativo</strong></div>
+  <div class="toc-item level-2">4.1. Transmisibilidad e incomunicación de la invalidez (art. 49 Ley 39/2015)</div>
+  <div class="toc-item level-2">4.2. Conversión de actos viciados (art. 50 Ley 39/2015)</div>
+  <div class="toc-item level-2">4.3. Conservación de trámites y actos independientes (art. 51 Ley 39/2015)</div>
+  <div class="toc-item level-2">4.4. Convalidación de actos anulables (art. 52 Ley 39/2015)</div>
+  <div class="toc-item level-1">5. <strong>Revisión de oficio por la propia Administración</strong></div>
+  <div class="toc-item level-2">5.1. Revisión de oficio de actos y disposiciones nulos (art. 106 Ley 39/2015)</div>
+  <div class="toc-item level-2">5.2. El dictamen preceptivo y vinculante del Consejo Consultivo de Andalucía</div>
+  <div class="toc-item level-2">5.3. Declaración de lesividad de actos anulables favorables (art. 107 Ley 39/2015)</div>
+  <div class="toc-item level-2">5.4. Suspensión cautelar de la ejecución (art. 108 Ley 39/2015)</div>
+  <div class="toc-item level-2">5.5. Revocación de actos de gravamen y desfavorables (art. 109.1 Ley 39/2015)</div>
+  <div class="toc-item level-2">5.6. Rectificación de errores materiales, de hecho o aritméticos (art. 109.2 Ley 39/2015)</div>
+  <div class="toc-item level-2">5.7. Límites a las facultades de revisión (art. 110 Ley 39/2015)</div>
+  <div class="toc-item level-1">6. <strong>Los recursos administrativos: Teoría general</strong></div>
+  <div class="toc-item level-2">6.1. Concepto, fundamento y distinción de figuras afines</div>
+  <div class="toc-item level-2">6.2. Actos recurribles: Actos definitivos y actos de trámite cualificados (art. 112 Ley 39/2015)</div>
+  <div class="toc-item level-2">6.3. Fin de la vía administrativa: Criterios generales y régimen en la Junta de Andalucía (art. 114 Ley 39/2015 y art. 112 LAJA)</div>
+  <div class="toc-item level-2">6.4. Reglas generales de interposición, tramitación y resolución (arts. 115 a 119 Ley 39/2015)</div>
+  <div class="toc-item level-2">6.5. La suspensión cautelar del acto impugnado (art. 117 Ley 39/2015)</div>
+  <div class="toc-item level-2">6.6. Prohibición de *reformatio in peius* (art. 119.3 Ley 39/2015)</div>
+  <div class="toc-item level-1">7. <strong>Tipología de recursos administrativos</strong></div>
+  <div class="toc-item level-2">7.1. Recurso de alzada: Supuestos, plazos y efectos del silencio (arts. 121 y 122 Ley 39/2015)</div>
+  <div class="toc-item level-2">7.2. Recurso potestativo de reposición: Supuestos, plazos y efectos (arts. 123 y 124 Ley 39/2015)</div>
+  <div class="toc-item level-2">7.3. Recurso extraordinario de revisión: Motivos tasados, plazos y resolución (arts. 125 y 126 Ley 39/2015)</div>
+  <div class="toc-item level-2">7.4. Mecanismos alternativos de resolución de controversias (art. 112.2 Ley 39/2015)</div>
+  <div class="toc-item level-1">8. <strong>La jurisdicción contencioso-administrativa</strong></div>
+  <div class="toc-item level-2">8.1. Marco normativo y naturaleza del control judicial de la Administración (Ley 29/1998 LJCA)</div>
+  <div class="toc-item level-2">8.2. Órganos de la jurisdicción y distribución de competencias</div>
+  <div class="toc-item level-2">8.3. Plazos de interposición del recurso contencioso-administrativo: Actos expresos y actos presuntos (doctrina constitucional)</div>
+  <div class="toc-item level-1">9. <strong>Conclusiones y trascendencia en la práctica administrativa de la Junta de Andalucía</strong></div>
+  <div class="toc-item level-1">10. <strong>Anexo: Tabla sinóptica y mapas conceptuales del Tema 13</strong></div>
+
+</div>
+
+<h2 class="section-title">1. La invalidez de los actos administrativos en el ordenamiento español</h2>
+
+<h3 class="sub-title">1.1. Principio de presunción de validez y ejecutividad</h3>
+<p>En virtud del <strong>artículo 39.1 de la Ley 39/2015</strong>, los actos de las Administraciones Públicas sujetos al Derecho Administrativo se presumirán válidos y producirán efectos desde la fecha en que se dicten, salvo que en ellos se disponga otra cosa (<em>presunción de legalidad o favor acti</em>). Asimismo, son inmediatamente ejecutivos (art. 38 y 98).</p>
+<p>Esta presunción desplaza al administrado la carga de impugnar el acto si estima que vulnera el ordenamiento. Sin embargo, cuando la infracción jurídica reviste especial gravedad o lesiona mandatos fundamentales, el ordenamiento quiebra esta regla general articulando la teoría de la <strong>invalidez administrativa</strong>.</p>
+<h3 class="sub-title">1.2. Graduación de la invalidez: Nulidad de pleno derecho frente a Anulabilidad</h3>
+<p>El Derecho Administrativo español consagra una distinción dual y asimétrica de la invalidez:</p>
+<div class="diagram-box"><pre>                            TEORÍA DE LA INVALIDEZ
+        ┌────────────────────────────────────────────────────────┐
+        │                                                        │
+        ▼                                                        ▼
+NULIDAD DE PLENO DERECHO (Art. 47)                     ANULABILIDAD (Art. 48)
+• Carácter excepcional y tasado.                      • Regla general de infracción.
+• Infracciones graves del orden público.               • Defectos formales o sustantivos.
+• Imprescriptible e insubsanable.                      • Prescribe por transcurso del tiempo.
+• Eficacia ex tunc (desde el origen).                 • Eficacia ex nunc (desde la anulación).
+• Puede ser declarada de oficio en todo momento.       • Convalidable (art. 52).
+</pre></div>
+<hr />
+<h2 class="section-title">2. Nulidad de pleno derecho</h2>
+
+<h3 class="sub-title">2.1. Causas tasadas de nulidad de los actos administrativos (art. 47.1 Ley 39/2015)</h3>
+<p>Los actos de las Administraciones Públicas son <strong>nulos de pleno derecho</strong> exclusivamente en los casos tasados en el artículo 47.1:</p>
+<ul>
+<li><strong>a) Los que lesionen los derechos y libertades susceptibles de amparo constitucional</strong> (arts. 14 a 29 y 30.2 CE).</li>
+<li><strong>b) Los dictados por órgano manifiestamente incompetente por razón de la materia o del territorio.</strong></li>
+<li><em>Precisión técnica:</em> La incompetencia jerárquica no determina nulidad radical, sino mera anulabilidad susceptible de convalidación por el superior (art. 52.3).</li>
+<li><strong>c) Los que tengan un contenido imposible.</strong> Imposibilidad física (ej. derribar un inmueble ya inexistente) o lógica/jurídica originaria.</li>
+<li><strong>d) Los que sean constitutivos de infracción penal o se dicten como consecuencia de ésta.</strong> Delitos como prevaricación, cohecho o falsedad documental.</li>
+<li><strong>e) Los dictados prescindiendo total y absolutamente del procedimiento legalmente establecido</strong> o de las normas que contienen las reglas esenciales para la formación de la voluntad de los órganos colegiados.</li>
+<li><strong>f) Los actos expresos o contrarios al ordenamiento jurídico por los que se adquieren facultades o derechos cuando se carezca de los requisitos esenciales</strong> para su adquisición.</li>
+<li><strong>g) Cualquier otro que se establezca expresamente en una disposición con rango de Ley.</strong></li>
+</ul>
+<h3 class="sub-title">2.2. Nulidad radical de las disposiciones administrativas generales (art. 47.2 Ley 39/2015)</h3>
+<p>Serán nulas de pleno derecho las disposiciones administrativas que:
+1. Vulneren la <strong>Constitución, las leyes u otras disposiciones administrativas de rango superior</strong> (principio de jerarquía normativa).
+2. Regulen <strong>materias reservadas a la Ley</strong> (reserva de ley formal y material).
+3. Establezcan la <strong>retroactividad de disposiciones sancionadoras no favorables</strong> o restrictivas de derechos individuales (art. 9.3 CE).</p>
+<div class="callout"><p><strong>Especialidad de los Reglamentos:</strong> En el régimen de las disposiciones reglamentarias <strong>no existe la anulabilidad</strong>: cualquier vicio de legalidad o procedimental que afecte a un reglamento determina su <strong>nulidad de pleno derecho</strong>.</p></div>
+<h3 class="sub-title">2.3. Efectos jurídicos de la nulidad</h3>
+<ul>
+<li><strong>Ineficacia radical e inmediata:</strong> El acto nulo no produce efectos jurídicos firmes; carece ab initio de validez (<em>quod nullum est, nullum producit effectum</em>).</li>
+<li><strong>Eficacia <em>ex tunc</em>:</strong> Su declaración retrotrae sus efectos al momento originario en que fue dictado.</li>
+<li><strong>Insanabilidad e imprescriptibilidad:</strong> La nulidad absoluta no puede convalidarse por el paso del tiempo ni por consentimiento del interesado.</li>
+</ul>
+<hr />
+<h2 class="section-title">3. Anulabilidad e irregularidades no invalidantes</h2>
+
+<h3 class="sub-title">3.1. Cláusula general de anulabilidad (art. 48.1 Ley 39/2015)</h3>
+<p>Son <strong>anulables</strong> los actos de la Administración que incurran en <strong>cualquier infracción del ordenamiento jurídico</strong>, incluso la desviación de poder. La desviación de poder se define en el artículo 70.2 LJCA como el ejercicio de potestades administrativas para fines distintos de los fijados por el ordenamiento jurídico.</p>
+<h3 class="sub-title">3.2. Defectos de forma: Relevancia invalidante y principio de indefensión (art. 48.2 Ley 39/2015)</h3>
+<p>El defecto de forma no determina automáticamente la invalidez del acto. El artículo 48.2 LPACAP establece que el defecto de forma sólo determinará la anulabilidad cuando:
+1. El acto <strong>carezca de los requisitos formales indispensables para alcanzar su fin</strong>.
+2. Dé lugar a la <strong>indefensión material</strong> de los interesados.</p>
+<p>Si el vicio formal es puramente adjetivo y no impidió al administrado conocer la decisión ni ejercer eficazmente su defensa, se califica como <strong>mera irregularidad no invalidante</strong>, no afectando a la eficacia ni validez del acto.</p>
+<h3 class="sub-title">3.3. Actuaciones administrativas fuera de plazo (art. 48.3 Ley 39/2015)</h3>
+<p>La realización de actuaciones administrativas fuera del tiempo establecido para ellas sólo determinará la anulabilidad del acto cuando <strong>así lo imponga la naturaleza del término o plazo</strong> (términos esenciales o fatales, ej. plazos en procedimientos de licitación o pruebas de oposiciones). Fuera de estos casos, el retraso constituye una simple irregularidad que genera, en su caso, responsabilidad disciplinaria de la autoridad o empleado público responsable (art. 29 LPACAP).</p>
+<hr />
+<h2 class="section-title">4. Principio de conservación del acto administrativo</h2>
+
+<p>El ordenamiento arbitra técnicas moduladoras inspiradas en el principio de economía procedimental para evitar la destrucción indiscriminada de trámites:</p>
+<div class="diagram-box"><pre>                      TÉCNICAS DE CONSERVACIÓN DEL ACTO
+┌──────────────────────┬────────────────────────────────────────────────────────┐
+│ INSTITUTO            │ REGULACIÓN Y EFECTOS JURÍDICOS                          │
+├──────────────────────┼────────────────────────────────────────────────────────┤
+│ Incomunicación /     │ La invalidez de un acto no implicará la de los sucesivos│
+│ Transmisibilidad     │ en el procedimiento que sean independientes del primero│
+│ (Art. 49)            │ ni la nulidad parcial de las cláusulas válidas.        │
+├──────────────────────┼────────────────────────────────────────────────────────┤
+│ Conversión           │ Los actos nulos o anulables que contengan elementos    │
+│ (Art. 50)            │ constitutivos de otro distinto producirán los efectos  │
+│                      │ de éste si reúne los requisitos formales esenciales.   │
+├──────────────────────┼────────────────────────────────────────────────────────┤
+│ Conservación de      │ El órgano que declare la nulidad o anule actuaciones   │
+│ trámites (Art. 51)   │ dispondrá siempre la conservación de aquellos actos y  │
+│                      │ trámites cuyo contenido se hubiera mantenido igual.    │
+├──────────────────────┼────────────────────────────────────────────────────────┤
+│ Convalidación        │ La Administración podrá convalidar los actos anulables │
+│ (Art. 52)            │ subsanando los vicios de que adolezcan.                │
+└──────────────────────┴────────────────────────────────────────────────────────┘
+</pre></div>
+<div class="callout"><p><strong>Reglas especiales de la convalidación (art. 52.2 y 52.3):</strong>
+* El acto convalidado produce efectos desde su fecha (eficacia <em>ex nunc</em>), salvo que concurran los requisitos del art. 39.3 para la eficacia retroactiva.
+* Si el vicio consistiera en <strong>incompetencia jerárquica no determinante de nulidad</strong>, la convalidación podrá realizarse por el órgano competente cuando sea superior jerárquico del que dictó el acto viciado.
+* Si consistiera en la <strong>falta de alguna autorización</strong>, el acto podrá ser convalidado mediante el otorgamiento de la misma por el órgano competente.
+* <strong>¡Atención oposiciones!</strong> Los actos nulos de pleno derecho <strong>nunca pueden ser convalidados</strong>.</p></div>
+<hr />
+<h2 class="section-title">5. Revisión de oficio por la propia Administración</h2>
+
+<p>La potestad de revisión de oficio (Título V, Capítulo I de la Ley 39/2015) faculta a la Administración para expulsar del ordenamiento sus propios actos sin necesidad de acudir a los tribunales, sujetándose a rigurosas garantías.</p>
+<h3 class="sub-title">5.1. Revisión de oficio de actos y disposiciones nulos (art. 106 Ley 39/2015)</h3>
+<ul>
+<li><strong>Objeto:</strong> Actos administrativos firmes que hayan puesto fin a la vía administrativa o que no hayan sido recurridos en plazo, así como disposiciones reglamentarias, que incurran en alguna de las causas de <strong>nulidad de pleno derecho</strong> del artículo 47.</li>
+<li><strong>Iniciativa:</strong> Puede iniciarse <strong>en cualquier momento (imprescriptible)</strong>, de oficio o a solicitud de interesado.</li>
+<li><strong>Requisito sustantivo inexcusable:</strong> Previo <strong>dictamen favorable del Consejo Consultivo de Andalucía</strong> (o Consejo de Estado en el ámbito estatal).</li>
+<li>El dictamen es <strong>preceptivo y vinculante</strong>: si el Consejo Consultivo dictamina en contra, la Administración está obligada a archivar el expediente y no puede declarar la nulidad.</li>
+<li><strong>Plazo de resolución y caducidad:</strong></li>
+<li>Procedimiento de oficio: Si transcurren <strong>seis meses</strong> desde su inicio sin dictarse resolución, se produce la <strong>caducidad</strong>.</li>
+<li>Procedimiento a solicitud de interesado: Si transcurren <strong>seis meses</strong>, se entiende <strong>desestimado por silencio administrativo</strong>, quedando expedita la vía jurisdiccional.</li>
+<li><strong>Facultad indemnizatoria (art. 106.4):</strong> El órgano administrativo, al declarar la nulidad, podrá reconocer las indemnizaciones que procedan a favor de los interesados conforme a los principios de la responsabilidad patrimonial.</li>
+</ul>
+<h3 class="sub-title">5.2. Declaración de lesividad de actos anulables favorables (art. 107 Ley 39/2015)</h3>
+<p>La Administración no puede anular por sí misma sus propios actos declarativos de derechos que adolezcan de vicios de simple anulabilidad. Debe acudir al proceso judicial de lesividad:
+* <strong>Objeto:</strong> Actos favorables para los interesados que sean <strong>anulables</strong> (art. 48).
+* <strong>Trámite administrativo previo:</strong> Declaración formal de que el acto es <strong>lesivo para el interés público</strong>.
+* <strong>Límite temporal estricto:</strong> La declaración de lesividad no podrá adoptarse una vez transcurridos <strong>cuatro años</strong> desde que se dictó el acto administrativo.
+* <strong>Garantías procedimentales:</strong> Exige la previa audiencia de cuantos aparezcan como interesados en el procedimiento.
+* <strong>Caducidad del procedimiento (art. 107.3):</strong> Transcurrido el plazo de <strong>seis meses</strong> desde la iniciación sin que se declare la lesividad, se producirá la caducidad del procedimiento.
+* <strong>Acción judicial posterior:</strong> Una vez declarado lesivo el acto por la Administración, ésta deberá interponer la correspondiente demanda ante la <strong>Jurisdicción Contencioso-Administrativa</strong> en el plazo improrrogable de <strong>dos meses</strong> a contar desde el día siguiente a la declaración (art. 45.4 LJCA).</p>
+<h3 class="sub-title">5.3. Revocación de actos y rectificación de errores (art. 109 Ley 39/2015)</h3>
+<ul>
+<li><strong>Revocación de actos de gravamen (art. 109.1):</strong> Las Administraciones Públicas podrán revocar, mientras no haya transcurrido el plazo de prescripción, sus <strong>actos de gravamen o desfavorables</strong>, siempre que tal revocación no constituya dispensa o exención no permitida por las leyes, ni sea contraria al principio de igualdad, al interés público o al ordenamiento jurídico.</li>
+<li><strong>Rectificación de errores (art. 109.2):</strong> Las Administraciones Públicas podrán rectificar en cualquier momento, de oficio o a instancia de los interesados, los <strong>errores materiales, de hecho o aritméticos</strong> existentes en sus actos. La rectificación no altera la sustancia jurídica del acto, limitándose a subsanar desacoples numéricos, mecanográficos o evidentes desajustes fácticos.</li>
+</ul>
+<h3 class="sub-title">5.4. Límites a las facultades de revisión (art. 110 Ley 39/2015)</h3>
+<p>Las facultades de revisión no podrán ser ejercitadas cuando por prescripción de acciones, por el tiempo transcurrido o por otras circunstancias, su ejercicio resulte <strong>contrario a la equidad, a la buena fe, al derecho de los particulares o a las leyes</strong>.</p>
+<hr />
+<h2 class="section-title">6. Los recursos administrativos: Teoría general</h2>
+
+<h3 class="sub-title">6.1. Concepto y actos recurribles (art. 112 Ley 39/2015)</h3>
+<p>El recurso administrativo es la impugnación formal de un acto administrativo promovida por un interesado ante la propia Administración al objeto de que sea revocado o modificado por razones de legalidad.</p>
+<p><strong>Actos recurribles:</strong>
+1. <strong>Actos definitivos:</strong> Aquellos que ponen fin a un procedimiento resolviendo sobre el fondo del asunto.
+2. <strong>Actos de trámite cualificados:</strong> Actos que, sin poner fin al procedimiento:
+   * Deciden directa o indirectamente el fondo del asunto.
+   * Determinan la imposibilidad de continuar el procedimiento.
+   * Producen indefensión material.
+   * Causan un perjuicio irreparable a derechos e intereses legítimos.
+   * <em>La oposición a los restantes actos de trámite no cualificados deberá alegarse por los interesados para su consideración en la resolución que ponga fin al procedimiento y podrá reiterarse en el recurso contra ésta.</em></p>
+<h3 class="sub-title">6.2. Fin de la vía administrativa</h3>
+<p>Ponen fin a la vía administrativa aquellos actos que agotan la posibilidad de recurso ordinario jerárquico dentro de la estructura de la propia Administración:</p>
+<div class="diagram-box"><pre>               ACTOS QUE PONEN FIN A LA VÍA ADMINISTRATIVA
+┌──────────────────────────────────────┬──────────────────────────────────────┐
+│ RÉGIMEN GENERAL (Art. 114 LPACAP)    │ EN LA JUNTA DE ANDALUCÍA (Art. 112   │
+│                                      │ Ley 9/2007 - LAJA)                   │
+├──────────────────────────────────────┼──────────────────────────────────────┤
+│ • Resoluciones de recursos de alzada.│ • Resoluciones del Presidente y del  │
+│ • Resoluciones de órganos sin        │   Consejo de Gobierno.               │
+│   superior jerárquico (salvo ley).   │ • Resoluciones de Consejeros/as.     │
+│ • Acuerdos, pactos o convenios de    │ • Resoluciones de Viceconsejeros/as  │
+│   terminación convencional.          │   y Secretarios/as Generales en      │
+│ • Resoluciones en procedimientos de  │   materia de personal.               │
+│   responsabilidad patrimonial.       │ • Resoluciones de Directores/as      │
+│ • Resoluciones sancionadoras cuando  │   Generales cuando una ley lo prevea │
+│   lo prevea una norma con rango Ley. │   o agoten jerarquía.                │
+└──────────────────────────────────────┴──────────────────────────────────────┘
+</pre></div>
+<div class="callout"><p><strong>Regla de oro de los recursos ordinarios:</strong>
+* Si el acto <strong>NO pone fin a la vía administrativa</strong> $\longrightarrow$ Procede obligatoriamente <strong>Recurso de Alzada</strong> (preceptivo para acudir a la vía judicial).
+* Si el acto <strong>SÍ pone fin a la vía administrativa</strong> $\longrightarrow$ Procede potestativamente <strong>Recurso de Reposición</strong> (o acudir directamente a los Tribunales de lo Contencioso-Administrativo).</p></div>
+<h3 class="sub-title">6.3. Suspensión de la ejecución del acto impugnado (art. 117 Ley 39/2015)</h3>
+<ul>
+<li><strong>Regla general (art. 117.1):</strong> La interposición de cualquier recurso, excepto en los casos en que una disposición establezca lo contrario, <strong>no suspenderá la ejecución del acto impugnado</strong>.</li>
+<li><strong>Suspensión potestativa (art. 117.2):</strong> El órgano competente para resolver el recurso, previa ponderación motivada entre el perjuicio que causaría al interés público o a terceros y el ocasionado al recurrente, podrá suspender de oficio o a solicitud del recurrente la ejecución cuando:</li>
+<li>a) La ejecución pudiera causar <strong>perjuicios de imposible o difícil reparación</strong>.</li>
+<li>b) La impugnación se fundamente en alguna de las causas de <strong>nulidad de pleno derecho</strong> del artículo 47.1.</li>
+<li><strong>Silencio positivo en la suspensión (art. 117.3):</strong> La ejecución del acto impugnado se entenderá <strong>suspendida si, transcurrido un mes</strong> desde que la solicitud de suspensión haya tenido entrada en el registro electrónico de la Administración competente para decidir sobre ella, el órgano a quien competa resolver el recurso <strong>no ha dictado y notificado resolución expresa</strong> al respecto.</li>
+</ul>
+<h3 class="sub-title">6.4. Prohibición de *reformatio in peius* (art. 119.3 Ley 39/2015)</h3>
+<p>El recurso contra un acto administrativo no puede empeorar la situación jurídica inicial del recurrente: <em>"El ejercicio del recurso no podrá derivar en ningún caso en la agravación de la situación inicial del recurrente"</em>.</p>
+<hr />
+<h2 class="section-title">7. Tipología de recursos administrativos</h2>
+
+<div class="diagram-box"><pre>                             CUADRO COMPARATIVO DE RECURSOS
+┌───────────────┬────────────────────────────┬─────────────────────────────┬──────────────────────────┐
+│ RECURSO       │ OBJETO / ACTOS RECURRIBLES │ PLAZO DE INTERPOSICIÓN      │ PLAZO MÁXIMO RESOLUCIÓN  │
+├───────────────┼────────────────────────────┼─────────────────────────────┼──────────────────────────┤
+│ **Alzada**    │ Actos que NO ponen fin a   │ • Acto expreso: 1 mes.      │ 3 meses.                 │
+│ (Arts. 121-122│ la vía administrativa ante │ • Acto presunto: En         │ Silencio desestimatorio  │
+│ LPACAP)       │ el superior jerárquico.    │   cualquier momento.        │ (salvo doble silencio).  │
+├───────────────┼────────────────────────────┼─────────────────────────────┼──────────────────────────┤
+│ **Reposición**│ Actos que SÍ ponen fin a   │ • Acto expreso: 1 mes.      │ 1 mes.                   │
+│ (Arts. 123-124│ la vía administrativa ante │ • Acto presunto: En         │ Silencio desestimatorio  │
+│ LPACAP)       │ el mismo órgano emisor.    │   cualquier momento.        │ siempre.                 │
+├───────────────┼────────────────────────────┼─────────────────────────────┼──────────────────────────┤
+│ **Revisión**  │ Actos FIRMES en vía admón. │ • Causa 1 (error): 4 años.  │ 3 meses.                 │
+│ (Arts. 125-126│ basados en 4 motivos       │ • Causas 2, 3 y 4: 3 meses  │ Silencio desestimatorio  │
+│ LPACAP)       │ tasados excepcionales.     │   desde conocimiento/firmeza│ siempre.                 │
+└───────────────┴────────────────────────────┴─────────────────────────────┴──────────────────────────┘
+</pre></div>
+<h3 class="sub-title">7.1. Recurso extraordinario de revisión: Motivos tasados (art. 125.1)</h3>
+<p>Contra los actos firmes en vía administrativa, sólo procede el recurso extraordinario de revisión ante el órgano que los dictó, fundado en:
+1. Que al dictarlos se hubiera incurrido en <strong>error de hecho, que resulte de los propios documentos</strong> incorporados al expediente (plazo de interposición: cuatro años siguientes a la notificación).
+2. Que aparezcan <strong>documentos de valor esencial para la resolución del asunto</strong> que, aunque sean posteriores, evidencien el error de la resolución recurrida (plazo: tres meses desde el conocimiento o recobro).
+3. Que en la resolución hayan influido esencialmente <strong>documentos o testimonios declarados falsos por sentencia judicial firme</strong>, anterior o posterior a aquella resolución (plazo: tres meses desde la firmeza de la sentencia).
+4. Que la resolución se hubiese dictado como consecuencia de <strong>prevaricación, cohecho, violencia, maquinación fraudulenta u otra conducta punible</strong> y se haya declarado así en virtud de sentencia judicial firme (plazo: tres meses desde la firmeza).</p>
+<hr />
+<h2 class="section-title">8. La jurisdicción contencioso-administrativa</h2>
+
+<h3 class="sub-title">8.1. Marco normativo y naturaleza del control judicial</h3>
+<p>La <strong>Ley 29/1998, de 13 de julio (LJCA)</strong>, en desarrollo del artículo 106.1 de la Constitución (<em>"Los Tribunales controlan la potestad reglamentaria y la legalidad de la actuación administrativa, así como el sometimiento de ésta a los fines que la justifican"</em>), encomienda a la Jurisdicción Contencioso-Administrativa el enjuiciamiento de los actos y disposiciones generales dictados por las Administraciones Públicas, así como su inactividad material y vías de hecho.</p>
+<h3 class="sub-title">8.2. Planta judicial en Andalucía</h3>
+<p>El control contencioso-administrativo en la Comunidad Autónoma de Andalucía se ejerce a través de:
+1. <strong>Juzgados de lo Contencioso-Administrativo:</strong> Órganos unipersonales provinciales competentes para conocer de recursos contra actos de entidades locales y actos periféricos de la Administración autonómica en materias tasadas (personal, tráfico, extranjería, sanciones leves).
+2. <strong>Sala de lo Contencioso-Administrativo del Tribunal Superior de Justicia de Andalucía (TSJA):</strong> Con sedes en Granada, Sevilla y Málaga, conoce en única instancia de los recursos contra actos dictados por los Consejeros/as y Consejo de Gobierno de la Junta de Andalucía, así como de las apelaciones procedentes de los Juzgados provinciales.
+3. <strong>Audiencia Nacional y Tribunal Supremo (Sala Tercera):</strong> Casación estatal y enjuiciamiento de la AGE y órganos constitucionales.</p>
+<h3 class="sub-title">8.3. Plazos de interposición del recurso contencioso-administrativo (art. 46 LJCA)</h3>
+<ul>
+<li><strong>Actos expresos y disposiciones generales:</strong> El plazo para interponer el recurso contencioso-administrativo será de <strong>dos meses</strong>, contados desde el día siguiente al de la publicación de la disposición impugnada o al de la notificación o publicación del acto que ponga fin a la vía administrativa.</li>
+<li><strong>Actos presuntos por silencio administrativo:</strong></li>
+<li>La redacción literal del artículo 46.1 fijaba un plazo de seis meses desde el día siguiente a aquel en que se produjera el silencio.</li>
+<li><strong>Doctrina constitucional vinculante (SSTC 52/2014, 3/2020 y jurisprudencia del Tribunal Supremo):</strong> La Administración no puede beneficiarse de su propio incumplimiento del deber de dictar resolución expresa. Por tanto, <strong>la impugnación jurisdiccional frente a la desestimación por silencio administrativo no está sujeta a plazo de caducidad preclusivo</strong>, pudiendo interponerse en tanto la Administración no cumpla formalmente su obligación de resolver.</li>
+</ul>
+<hr />
+<h2 class="section-title">9. Conclusiones y trascendencia en la práctica administrativa de la Junta de Andalucía</h2>
+
+<p>La correcta comprensión de la teoría de la nulidad, la revisión de oficio y los recursos administrativos reviste una importancia primordial para los técnicos de la Junta de Andalucía:
+1. Evita que vicios formales intrascendentes deriven en litigios innecesarios, aplicando con rigor los principios de conservación, subsanación y convalidación (<em>favor acti</em>).
+2. Canaliza con pulcritud los requerimientos preceptivos ante el <strong>Consejo Consultivo de Andalucía</strong>, pieza indispensable para garantizar la seguridad jurídica en la revisión de oficio.
+3. Permite a las unidades tramitadoras controlar escrupulosamente los plazos de suspensión de los actos recurridos y aplicar el régimen de firmeza en vía administrativa, garantizando una defensa óptima de los intereses generales de la Comunidad Autónoma.</p>
+<hr />
+<h2 class="section-title">10. Anexo: Tabla sinóptica y mapas conceptuales del Tema 13</h2>
+
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Vía de Impugnación / Revisión</th>
+<th style="text-align: left;">Órgano Competente</th>
+<th style="text-align: left;">Actos Recurribles</th>
+<th style="text-align: left;">Plazo de Interposición</th>
+<th style="text-align: left;">Plazo de Resolución</th>
+<th style="text-align: left;">Efecto del Silencio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Revisión de Oficio (Art. 106)</strong></td>
+<td style="text-align: left;">Titular de la Consejería / Órgano competente</td>
+<td style="text-align: left;">Actos y reglamentos con vicio de nulidad radical (art. 47).</td>
+<td style="text-align: left;">Imprescriptible (en cualquier momento).</td>
+<td style="text-align: left;">6 meses.</td>
+<td style="text-align: left;">• De oficio: Caducidad.<br>• A instancia: Desestimatorio.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Declaración de Lesividad (Art. 107)</strong></td>
+<td style="text-align: left;">Órgano competente</td>
+<td style="text-align: left;">Actos favorables anulables perjudiciales para el interés público.</td>
+<td style="text-align: left;">Máximo 4 años desde que se dictó el acto.</td>
+<td style="text-align: left;">6 meses para declarar lesivo.</td>
+<td style="text-align: left;">Caducidad del procedimiento administrativo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Recurso de Alzada (Arts. 121-122)</strong></td>
+<td style="text-align: left;">Superior jerárquico</td>
+<td style="text-align: left;">Actos y trámites cualificados que NO agotan vía administrativa.</td>
+<td style="text-align: left;">1 mes (expreso) / Indefinido (presunto).</td>
+<td style="text-align: left;">3 meses.</td>
+<td style="text-align: left;">Desestimatorio (salvo doble silencio estimatorio).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Recurso de Reposición (Arts. 123-124)</strong></td>
+<td style="text-align: left;">El mismo órgano que dictó el acto</td>
+<td style="text-align: left;">Actos y trámites cualificados que SÍ agotan vía administrativa.</td>
+<td style="text-align: left;">1 mes (expreso) / Indefinido (presunto).</td>
+<td style="text-align: left;">1 mes.</td>
+<td style="text-align: left;">Desestimatorio siempre.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Extraordinario de Revisión (Arts. 125-126)</strong></td>
+<td style="text-align: left;">El mismo órgano que dictó el acto</td>
+<td style="text-align: left;">Actos firmes en vía administrativa por 4 motivos tasados.</td>
+<td style="text-align: left;">• Error hecho: 4 años.<br>• Resto causas: 3 meses.</td>
+<td style="text-align: left;">3 meses.</td>
+<td style="text-align: left;">Desestimatorio siempre.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Recurso Contencioso-Administrativo</strong></td>
+<td style="text-align: left;">Juzgados o Sala C-A del TSJA</td>
+<td style="text-align: left;">Actos que agotan vía administrativa y disposiciones generales.</td>
+<td style="text-align: left;">• Expreso: 2 meses.<br>• Presunto: Sin plazo preclusivo.</td>
+<td style="text-align: left;">Según proceso judicial.</td>
+<td style="text-align: left;">Sentencia judicial vinculante.</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

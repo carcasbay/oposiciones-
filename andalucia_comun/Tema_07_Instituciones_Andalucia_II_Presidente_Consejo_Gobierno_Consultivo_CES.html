@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TEMA 7: Organización Institucional de la Junta de Andalucía (II): La Presidencia de la Junta de Andalucía. El Consejo de Gobierno: Composición y Funciones. El Consejo Consultivo de Andalucía. El Consejo Económico y Social de Andalucía</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (Grupo A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #065f46;
+      font-weight: 500;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #059669;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #065f46;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #059669;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #059669;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #059669;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout p {
+    margin: 0;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #065f46;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #d1fae5;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f0fdf4;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO COMÚN — JUNTA DE ANDALUCÍA (GRUPO A2)</div>
+  <h1>TEMA 7</h1>
+  <h2>Organización Institucional de la Junta de Andalucía (II): La Presidencia de la Junta de Andalucía. El Consejo de Gobierno: Composición y Funciones. El Consejo Consultivo de Andalucía. El Consejo Económico y Social de Andalucía</h2>
+  <div class="meta-box">
+    <p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo / Cuerpo General (A2)</p>
+    <p><strong>Entidad Convocante:</strong> Junta de Andalucía (Consejería de Justicia, Administración Local y Función Pública / IAAP)</p>
+    <p><strong>Bloque:</strong> Programa de Materias Comunes</p>
+    <p><strong>Tema Oficial:</strong> Tema 7</p>
+    <p><strong>Normativa Clave de Referencia:</strong></p>
+    <p>Ley Orgánica 2/2007, de 19 de marzo, de reforma del Estatuto de Autonomía para Andalucía (Título IV: Capítulo II, arts. 114 a 118; Capítulo III, arts. 119 a 125; Capítulo IV, arts. 126 a 129; arts. 131 y 132).</p>
+    <p>Ley 6/2006, de 24 de octubre, del Gobierno de la Comunidad Autónoma de Andalucía.</p>
+    <p>Ley 4/2005, de 8 de abril, del Consejo Consultivo de Andalucía.</p>
+    <p>Ley 5/1993, de 1 de julio, del Consejo Económico y Social de Andalucía.</p>
+
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General de TEMA 7</div>
+  <div class="toc-item level-1">1. <strong>La Presidencia de la Junta de Andalucía: Posición institucional y naturaleza</strong></div>
+  <div class="toc-item level-2">1.1. La doble condición institucional: Máxima representación de la Comunidad y ordinaria del Estado (art. 114 EA)</div>
+  <div class="toc-item level-2">1.2. El procedimiento de investidura y nombramiento del Presidente (art. 118 EA y art. 6 Ley 6/2006)</div>
+  <div class="toc-item level-2">1.3. Estatuto personal, prerrogativas e incompatibilidades del Presidente (arts. 7 a 9 Ley 6/2006)</div>
+  <div class="toc-item level-2">1.4. Atribuciones del Presidente de la Junta de Andalucía (art. 117 EA y art. 10 Ley 6/2006)</div>
+  <div class="toc-item level-2">1.5. Cese, suplencia y responsabilidad política del Presidente (arts. 11 a 14 Ley 6/2006)</div>
+  <div class="toc-item level-1">2. <strong>El Consejo de Gobierno de la Junta de Andalucía</strong></div>
+  <div class="toc-item level-2">2.1. Naturaleza jurídica y posición en el autogobierno (art. 119 EA y art. 15 Ley 6/2006)</div>
+  <div class="toc-item level-2">2.2. Composición: El Presidente, Vicepresidentes y Consejeros (art. 16 Ley 6/2006)</div>
+  <div class="toc-item level-2">2.3. Atribuciones y competencias del Consejo de Gobierno (art. 119 EA y art. 21 Ley 6/2006)</div>
+  <div class="toc-item level-2">2.4. Funcionamiento interno: Reuniones, deliberaciones y acuerdos (arts. 22 a 27 Ley 6/2006)</div>
+  <div class="toc-item level-2">2.5. Órganos preparatorios y de apoyo: La Comisión General de Viceconsejeros y las Comisiones Delegadas</div>
+  <div class="toc-item level-1">3. <strong>Las relaciones entre el Parlamento y el Consejo de Gobierno</strong></div>
+  <div class="toc-item level-2">3.1. Responsabilidad política colegiada y solidaria (art. 125 EA)</div>
+  <div class="toc-item level-2">3.2. La Moción de Censura constructiva (art. 126 EA)</div>
+  <div class="toc-item level-2">3.3. La Cuestión de Confianza (art. 127 EA)</div>
+  <div class="toc-item level-2">3.4. La facultad de disolución anticipada del Parlamento (art. 128 EA)</div>
+  <div class="toc-item level-1">4. <strong>El Consejo Consultivo de Andalucía</strong></div>
+  <div class="toc-item level-2">4.1. Naturaleza y posición constitucional: Superior órgano colegiado consultivo (art. 131 EA y Ley 4/2005)</div>
+  <div class="toc-item level-2">4.2. Composición y estatuto de los Consejeros: Natos, electivos y permanentes</div>
+  <div class="toc-item level-2">4.3. Competencias: Dictámenes preceptivos y facultativos</div>
+  <div class="toc-item level-2">4.4. Eficacia jurídica y tramitación de los dictámenes</div>
+  <div class="toc-item level-1">5. <strong>El Consejo Económico y Social de Andalucía (CES)</strong></div>
+  <div class="toc-item level-2">5.1. Naturaleza jurídica y marco regulador: Órgano de diálogo social y participación (art. 132 EA y Ley 5/1993)</div>
+  <div class="toc-item level-2">5.2. Composición tripartita: Sindicatos, organizaciones empresariales y sectores sociales</div>
+  <div class="toc-item level-2">5.3. Funciones y competencias: Dictámenes preceptivos sobre proyectos socioeconómicos e informes anuales</div>
+  <div class="toc-item level-1">6. <strong>Conclusión y trascendencia en la actividad del personal técnico de la Junta de Andalucía</strong></div>
+  <div class="toc-item level-1">7. <strong>Anexo: Cuadros comparativos y esquemas institucionales</strong></div>
+
+</div>
+
+<h2 class="section-title">1. La Presidencia de la Junta de Andalucía: Posición institucional y naturaleza</h2>
+
+<h3 class="sub-title">1.1. La doble condición institucional (artículo 114 EA)</h3>
+<p>El <strong>Presidente o Presidenta de la Junta de Andalucía</strong> ostenta una posición de máxima preeminencia política e institucional en el sistema autonómico andaluz:</p>
+<div class="callout"><p><em>"El Presidente o Presidenta de la Junta dirige y coordina la actividad del Consejo de Gobierno, coordina la administración de la Comunidad Autónoma, designa y separa a los Consejeros y ostenta la suprema representación de la Comunidad Autónoma y la ordinaria del Estado en Andalucía."</em></p></div>
+<p>Esta doble dimensión entraña:
+1. <strong>Suprema representación de la Comunidad Autónoma de Andalucía:</strong> Ejerce la representación exterior e interior de la Junta, encabeza los actos institucionales y firma los convenios y acuerdos de cooperación.
+2. <strong>Representación ordinaria del Estado en Andalucía:</strong> Promulga, en nombre del Rey, las Leyes de Andalucía y ordena su publicación en el Boletín Oficial de la Junta de Andalucía (BOJA) y en el Boletín Oficial del Estado (BOE), y ordena el nombramiento de los miembros del Consejo de Gobierno y del Presidente del TSJA.</p>
+<h3 class="sub-title">1.2. El procedimiento de investidura y nombramiento (artículo 118 EA)</h3>
+<p>El Presidente de la Junta es elegido de entre los miembros del Parlamento de Andalucía:
+1. <strong>Ronda de consultas y propuesta:</strong> Celebradas elecciones o producida la vacante, el Presidente del Parlamento consulta a los portavoces de los grupos políticos con representación y propone un candidato/a a la Presidencia de la Junta.
+2. <strong>Debate de investidura:</strong> El candidato propuesto expone ante el Pleno del Parlamento su programa político de gobierno y solicita la confianza de la Cámara.
+3. <strong>Primera votación:</strong> Si obtiene el voto afirmativo de la <strong>mayoría absoluta</strong> de los miembros del Parlamento (55 de 109 diputados), se entiende otorgada la confianza.
+4. <strong>Segunda votación:</strong> Si no se alcanza dicha mayoría, se somete la misma propuesta a nueva votación <strong>cuarenta y ocho horas (48 h)</strong> después, bastando la <strong>mayoría simple</strong> (más votos a favor que en contra).
+5. <strong>Propuestas sucesivas:</strong> Si tampoco se obtiene la mayoría simple, decae la propuesta y se tramitan sucesivas propuestas con el mismo o distinto candidato en la forma prevista.
+6. <strong>Disolución automática por transcurso de dos meses:</strong> Si transcurrido el plazo de <strong>dos meses a partir de la primera votación de investidura</strong> ningún candidato hubiere obtenido la confianza del Parlamento, el Parlamento quedará disuelto de pleno derecho y el Presidente de la Junta en funciones convocará nuevas elecciones autonómicas.
+7. <strong>Nombramiento:</strong> Otorgada la confianza, el Presidente de la Junta es nombrado por el <strong>Rey</strong>, mediante Real Decreto refrendado por el Presidente del Gobierno de la Nación (art. 118.5 EA).</p>
+<div class="diagram-box"><pre>                      PROCEDIMIENTO DE INVESTIDURA (ART. 118 EA)
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ Propuesta del Presidente del Parlamento tras consultar con Portavoces       │
+ └──────────────────────────────────────┬──────────────────────────────────────┘
+                                        ▼
+ ┌─────────────────────────────────────────────────────────────────────────────┐
+ │ Primera Votación en el Pleno: Exige MAYORÍA ABSOLUTA (≥ 55 votos)           │
+ └──────────────────┬───────────────────────────────────────┬──────────────────┘
+                    │ SÍ                                    │ NO
+                    ▼                                       ▼
+       ┌─────────────────────────┐             ┌─────────────────────────┐
+       │ Proclamado Presidente   │             │ 2ª Votación tras 48 h   │
+       │ de la Junta             │             │ (Basta MAYORÍA SIMPLE)  │
+       └─────────────────────────┘             └────────────┬────────────┘
+                                                            │ NO
+                                                            ▼
+                                        ┌──────────────────────────────────────┐
+                                        │ Plazo límite de DOS MESES            │
+                                        │ (Si nadie es investido: DISOLUCIÓN)  │
+                                        └──────────────────────────────────────┘
+</pre></div>
+<h3 class="sub-title">1.3. Estatuto personal, cese y suplencia</h3>
+<ul>
+<li><strong>Tratamiento e incompatibilidades:</strong> El Presidente recibe el tratamiento de <em>Excelencia</em>. Su cargo es incompatible con cualquier otra función pública o actividad profesional o mercantil retribuida, salvo la condición de Diputado en el Parlamento de Andalucía.</li>
+<li><strong>Aforamiento (art. 118.6 EA):</strong> Por los actos delictivos cometidos en el territorio andaluz responde ante la <strong>Sala de lo Civil y Penal del TSJA</strong>; fuera de Andalucía, ante la <strong>Sala de lo Penal del Tribunal Supremo</strong>.</li>
+<li><strong>Cese (art. 11 Ley 6/2006):</strong> Cesa por celebración de elecciones al Parlamento de Andalucía, pérdida de la cuestión de confianza, aprobación de una moción de censura, dimisión, incapacidad permanente o fallecimiento.</li>
+<li><strong>Suplencia:</strong> En casos de ausencia, enfermedad o impedimento temporal, es suplido por los Vicepresidentes según su orden y, en su defecto, por los Consejeros según el orden de prelación establecido por decreto.</li>
+</ul>
+<hr />
+<h2 class="section-title">2. El Consejo de Gobierno de la Junta de Andalucía</h2>
+
+<h3 class="sub-title">2.1. Naturaleza jurídica y composición (arts. 119 y 120 EA)</h3>
+<p>El <strong>Consejo de Gobierno</strong> es el órgano colegiado superior que ostenta la dirección política de la Comunidad Autónoma y de la Administración de la Junta de Andalucía, ejerce la función ejecutiva y la potestad reglamentaria general (art. 119.1 EA).</p>
+<ul>
+<li><strong>Composición:</strong> Se compone del <strong>Presidente de la Junta</strong>, de los <strong>Vicepresidentes</strong> (cuya existencia es potestativa) y de los <strong>Consejeros</strong> (art. 120.1 EA).</li>
+<li><strong>Nombramiento y separación:</strong> Los Vicepresidentes y Consejeros son nombrados y separados libremente por el Presidente de la Junta mediante Decreto del Presidente, dando cuenta inmediata al Parlamento (art. 120.2 EA).</li>
+</ul>
+<h3 class="sub-title">2.2. Atribuciones del Consejo de Gobierno (artículo 21 Ley 6/2006)</h3>
+<p>Entre sus funciones indelegables destacan:
+1. Aprobar los proyectos de ley para su remisión al Parlamento andaluz.
+2. Dictar decretos-leyes en supuestos de extraordinaria y urgente necesidad (art. 110 EA).
+3. Dictar decretos legislativos previa delegación parlamentaria.
+4. Elaborar y aprobar el proyecto de Ley del Presupuesto de la Comunidad Autónoma.
+5. Ejercer la potestad reglamentaria general aprobando los <strong>Decretos del Consejo de Gobierno</strong>.
+6. Crear, modificar o suprimir los órganos directivos de las Consejerías mediante decretos de estructura orgánica.
+7. Nombrar y separar a los titulares de los órganos directivos centrales y periféricos (Viceconsejeros, Directores Generales, Delegados del Gobierno y Delegados Territoriales).
+8. Autorizar la celebración de contratos administrativos y subvenciones de cuantía superior a la fijada en las leyes anuales de presupuesto (habitualmente superior a 8 o 12 millones de euros).
+9. Interponer recursos de inconstitucionalidad y plantear conflictos de competencia ante el Tribunal Constitucional.</p>
+<h3 class="sub-title">2.3. Funcionamiento interno y órganos preparatorios</h3>
+<ul>
+<li><strong>Régimen de sesiones:</strong> El Consejo de Gobierno se reúne con periodicidad semanal (habitualmente los martes), convocado y presidido por el Presidente de la Junta.</li>
+<li><strong>Secreto de las deliberaciones (art. 22 Ley 6/2006):</strong> Las deliberaciones del Consejo de Gobierno son <strong>secretas</strong>. Sus miembros están obligados a guardar estricta reserva de las opiniones emitidas y de los documentos examinados.</li>
+<li><strong>Actas:</strong> De cada sesión se levanta acta por el Consejero que actúe como Secretario del Consejo (habitualmente el Consejero de la Presidencia), en la que constan exclusivamente los acuerdos adoptados y no las deliberaciones.</li>
+<li><strong>La Comisión General de Viceconsejeros (art. 25 Ley 6/2006):</strong> Integrada por los Viceconsejeros de todas las Consejerías y presidida por el Viceconsejero de la Presidencia. Es el órgano preparatorio que examina con carácter previo todos los asuntos que vayan a ser sometidos a la deliberación del Consejo de Gobierno.</li>
+<li><strong>Comisiones Delegadas del Consejo de Gobierno (art. 26 Ley 6/2006):</strong> Creadas por Decreto del Consejo de Gobierno para coordinar la acción de varias Consejerías en materias de interés común (ej. Comisión Delegada para Asuntos Económicos).</li>
+</ul>
+<hr />
+<h2 class="section-title">3. Las relaciones entre el Parlamento y el Consejo de Gobierno</h2>
+
+<h3 class="sub-title">3.1. Responsabilidad política colegiada (artículo 125 EA)</h3>
+<p>El Consejo de Gobierno responde solidariamente de su gestión política ante el Parlamento de Andalucía, sin perjuicio de la responsabilidad directa de cada uno de sus miembros por su gestión individual.</p>
+<h3 class="sub-title">3.2. La Moción de Censura (artículo 126 EA)</h3>
+<ul>
+<li>El Parlamento puede exigir la responsabilidad política del Consejo de Gobierno mediante la adopción de una <strong>moción de censura constructiva</strong>.</li>
+<li>Debe ser propuesta por al menos la <strong>cuarta parte (1/4)</strong> de los Diputados (28 diputados de 109).</li>
+<li>Debe incluir preceptivamente un <strong>candidato a la Presidencia de la Junta</strong>.</li>
+<li>No puede ser votada hasta que transcurran <strong>cinco días</strong> desde su presentación.</li>
+<li>Para prosperar exige el voto favorable de la <strong>mayoría absoluta</strong> del Parlamento. Si se aprueba, el Presidente cesa y el candidato alternativo se entiende investido automáticamente. Si se rechaza, sus signatarios no podrán presentar otra durante el mismo período de sesiones.</li>
+</ul>
+<h3 class="sub-title">3.3. La Cuestión de Confianza (artículo 127 EA)</h3>
+<ul>
+<li>Planteada por el Presidente de la Junta, previa deliberación del Consejo de Gobierno, sobre su programa o una declaración de política general.</li>
+<li>Se entiende otorgada cuando vote a favor la <strong>mayoría simple</strong> de los Diputados presentes.</li>
+<li>Si el Parlamento deniega la confianza, el Presidente de la Junta presenta su dimisión y se abre el proceso de investidura del art. 118 EA.</li>
+</ul>
+<h3 class="sub-title">3.4. La disolución anticipada del Parlamento (artículo 128 EA)</h3>
+<p>El Presidente de la Junta, previa deliberación del Consejo de Gobierno y bajo su exclusiva responsabilidad, puede decretar la <strong>disolución anticipada del Parlamento de Andalucía</strong>.
+* <strong>Límites temporales:</strong> No puede acordarse cuando esté en trámite una moción de censura ni antes de que transcurra un año desde la anterior disolución.</p>
+<hr />
+<h2 class="section-title">4. El Consejo Consultivo de Andalucía</h2>
+
+<h3 class="sub-title">4.1. Naturaleza y posición institucional (artículo 131 EA y Ley 4/2005)</h3>
+<p>El <strong>Consejo Consultivo de Andalucía</strong> es el superior órgano colegiado consultivo del Consejo de Gobierno y de la Administración de la Junta de Andalucía, así como de las corporaciones locales andaluzas y del sector público universitario. Goza de plena autonomía orgánica y funcional para garantizar su objetividad e independencia. Su sede institucional radica en el Palacio de Bibataubín, en la ciudad de <strong>Granada</strong> (art. 4 Ley 4/2005).</p>
+<h3 class="sub-title">4.2. Composición y categorías de Consejeros</h3>
+<p>Integrado por:
+1. <strong>Presidente del Consejo Consultivo:</strong> Nombrado por Decreto del Consejo de Gobierno entre juristas de reconocido prestigio.
+2. <strong>Consejeros Permanentes:</strong> Los expresidentes de la Junta de Andalucía que hayan ejercido el cargo un mínimo de una legislatura completa y lo soliciten formalmente.
+3. <strong>Consejeros Natos:</strong> Cargos que son miembros por razón de sus funciones (el Fiscal Superior de Andalucía, el Director del Gabinete Jurídico de la Junta, un representante de los Colegios de Abogados y de las Reales Academias de Legislación y Jurisprudencia).
+4. <strong>Consejeros Electivos:</strong> Juristas de reconocida competencia nombrados por Decreto del Consejo de Gobierno por un período de <strong>cinco años</strong>, a propuesta del Parlamento (tres Consejeros elegidos por mayoría de 3/5) y del Consejo de Gobierno (tres Consejeros).</p>
+<h3 class="sub-title">4.3. Competencias: Dictámenes preceptivos y facultativos</h3>
+<p>La función consultiva se plasma en la emisión de <strong>dictámenes jurídicos</strong>:
+* <strong>Carácter no vinculante:</strong> Como regla general, los dictámenes del Consejo Consultivo <strong>no son vinculantes</strong>, salvo en los supuestos en que una ley expresamente determine lo contrario.
+* <strong>Fórmula de resolución:</strong> Las disposiciones o resoluciones administrativas sobre asuntos dictaminados expresarán si se adoptan <em>"conforme con el dictamen del Consejo Consultivo"</em> o <em>"oído el Consejo Consultivo"</em>.</p>
+<div class="diagram-box"><pre>                DICTÁMENES PRECEPTIVOS CLAVE DEL CONSEJO CONSULTIVO
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 1. Anteproyectos de reforma del Estatuto de Autonomía de Andalucía.         │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 2. Anteproyectos de leyes autonómicas y proyectos de decretos legislativos. │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 3. Proyectos de reglamentos ejecutivos que desarrollen leyes autonómicas    │
+│    o estatales.                                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 4. Expedientes de revisión de oficio de actos administrativos nulos de      │
+│    pleno derecho (art. 106 LPACAP).                                         │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 5. Recursos extraordinarios de revisión en vía administrativa.              │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 6. Expedientes de responsabilidad patrimonial de la Junta de Andalucía o   │
+│    de entidades locales cuando la cuantía reclamada sea SUPERIOR A 60.000 €.│
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 7. Modificación o resolución de contratos administrativos cuando se formule │
+│    oposición por el contratista o superen determinados límites legales.     │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 8. Expedientes de alteración de términos municipales y deslindes.           │
+└─────────────────────────────────────────────────────────────────────────────┘
+</pre></div>
+<hr />
+<h2 class="section-title">5. El Consejo Económico y Social de Andalucía (CES)</h2>
+
+<h3 class="sub-title">5.1. Naturaleza jurídica y marco regulador (artículo 132 EA y Ley 5/1993)</h3>
+<p>El <strong>Consejo Económico y Social de Andalucía</strong> es el órgano colegiado de carácter consultivo y de participación social del Gobierno de la Comunidad Autónoma en materia económica y social. Su sede radica en la ciudad de <strong>Sevilla</strong>.</p>
+<h3 class="sub-title">5.2. Composición tripartita (artículo 4 Ley 5/1993)</h3>
+<p>El Consejo se compone de un Presidente y <strong>36 miembros</strong>, distribuidos en tres grupos paritarios:
+* <strong>Grupo I (12 miembros):</strong> Representantes de las <strong>organizaciones sindicales</strong> más representativas en Andalucía (UGT y CCOO).
+* <strong>Grupo II (12 miembros):</strong> Representantes de las <strong>organizaciones empresariales</strong> más representativas en Andalucía (Confederación de Empresarios de Andalucía - CEA).
+* <strong>Grupo III (12 miembros):</strong> Representantes de otros sectores socioeconómicos y de la sociedad civil:
+  * 3 del sector de la economía social (cooperativas y sociedades laborales).
+  * 3 de los consumidores y usuarios.
+  * 3 del sector agrario y pesquero.
+  * 3 expertos en materias socioeconómicas designados por el Consejo de Gobierno.
+* <strong>El Presidente:</strong> Nombrado por Decreto del Consejo de Gobierno a propuesta conjunta de los Consejeros.</p>
+<h3 class="sub-title">5.3. Funciones y dictámenes</h3>
+<ol>
+<li><strong>Dictámenes preceptivos:</strong> Emite informe preceptivo sobre los <strong>anteproyectos de ley</strong> que regulen materias socioeconómicas, planes generales de desarrollo económico y anteproyectos de Ley del Presupuesto de la Comunidad Autónoma.</li>
+<li><strong>Memoria Anual sobre la situación socioeconómica de Andalucía:</strong> Documento de referencia que analiza la evolución económica, el mercado de trabajo, la cohesión social y el bienestar en la región.</li>
+<li><strong>Informes e iniciativas facultativas:</strong> Elabora dictámenes y estudios por propia iniciativa sobre cuestiones de interés económico, laboral y social para Andalucía.</li>
+</ol>
+<hr />
+<h2 class="section-title">6. Conclusión y trascendencia en la actividad del personal técnico de la Junta de Andalucía</h2>
+
+<p>Para el Cuerpo Técnico Facultativo (A2), la Presidencia y el Consejo de Gobierno representan la cúspide directiva de la que emanan los decretos de estructura, los reglamentos y los planes estratégicos que ordenan su trabajo diario. Asimismo, la tramitación de expedientes de contratación de envergadura, la revisión de oficio de actos nulos o las reclamaciones de responsabilidad patrimonial exigen solicitar preceptivamente el dictamen del Consejo Consultivo de Andalucía, cuya doctrina constituye una guía de interpretación jurídica insoslayable.</p>
+<hr />
+<h2 class="section-title">7. Anexo: Cuadros comparativos y esquemas institucionales</h2>
+
+<div class="diagram-box"><pre>                         ÓRGANOS CONSULTIVOS DE LA JUNTA
+┌───────────────────────────┬──────────────────────────┬──────────────────────────┐
+│ PARÁMETRO                 │ CONSEJO CONSULTIVO       │ CONSEJO ECONÓMICO Y      │
+│                           │ DE ANDALUCÍA             │ SOCIAL (CES)             │
+├───────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Marco Jurídico            │ Art. 131 EA y Ley 4/2005 │ Art. 132 EA y Ley 5/1993 │
+├───────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Sede Oficial              │ Granada (Bibataubín)     │ Sevilla                  │
+├───────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Naturaleza del Órgano     │ Jurídico-consultivo      │ Socioeconómico y diálogo │
+├───────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Carácter de los Dictámenes│ Preceptivos y facultativ.│ Preceptivos y facultativ.│
+│                           │ (Generalmente no vincul.)│ (No vinculantes)         │
+├───────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Materias Nucleares        │ Revisión de oficio,      │ Planes económicos, leyes │
+│                           │ reglamentos ejecutivos y │ laborales y presupuestos │
+│                           │ responsab. patrimonial   │ generales autonómicos    │
+└───────────────────────────┴──────────────────────────┴──────────────────────────┘
+</pre></div>
+
+</body>
+</html>

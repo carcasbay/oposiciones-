@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TEMA 4: La Administración Local en Andalucía: Tipología de Entidades Locales. El Municipio: Organización, Competencias y Régimen de Funcionamiento. La Provincia: Organización y Competencias. Las Relaciones de las Entidades Locales con la Comunidad Autónoma de Andalucía</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (Grupo A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #065f46;
+      font-weight: 500;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #059669;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #065f46;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #059669;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #059669;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #059669;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout p {
+    margin: 0;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #065f46;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #d1fae5;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f0fdf4;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO COMÚN — JUNTA DE ANDALUCÍA (GRUPO A2)</div>
+  <h1>TEMA 4</h1>
+  <h2>La Administración Local en Andalucía: Tipología de Entidades Locales. El Municipio: Organización, Competencias y Régimen de Funcionamiento. La Provincia: Organización y Competencias. Las Relaciones de las Entidades Locales con la Comunidad Autónoma de Andalucía</h2>
+  <div class="meta-box">
+    <p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo / Cuerpo General (A2)</p>
+    <p><strong>Entidad Convocante:</strong> Junta de Andalucía (Consejería de Justicia, Administración Local y Función Pública / IAAP)</p>
+    <p><strong>Bloque:</strong> Programa de Materias Comunes</p>
+    <p><strong>Tema Oficial:</strong> Tema 4</p>
+    <p><strong>Normativa Clave de Referencia:</strong></p>
+    <p>Constitución Española de 1978: Artículos 137, 140, 141 y 142.</p>
+    <p>Ley Orgánica 2/2007, de 19 de marzo, de reforma del Estatuto de Autonomía para Andalucía (Título III: Organización Territorial de la Comunidad Autónoma, arts. 89 a 98).</p>
+    <p>Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local (LBRL).</p>
+    <p>Ley 5/2010, de 11 de junio, de Autonomía Local de Andalucía (LAULA).</p>
+    <p>Ley 27/2013, de 27 de diciembre, de racionalización y sostenibilidad de la Administración Local (LRSAL).</p>
+    <p>Real Decreto 2568/1986, de 28 de noviembre, por el que se aprueba el Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales (ROF).</p>
+
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General de TEMA 4</div>
+  <div class="toc-item level-1">1. <strong>La Administración Local en el marco constitucional y estatutario</strong></div>
+  <div class="toc-item level-2">1.1. La garantía institucional de la autonomía local (arts. 137 y 140 a 142 CE)</div>
+  <div class="toc-item level-2">1.2. El principio de suficiencia financiera de las entidades locales</div>
+  <div class="toc-item level-2">1.3. El régimen local andaluz: El Título III del Estatuto de Autonomía de 2007 y la LAULA</div>
+  <div class="toc-item level-1">2. <strong>Tipología de entidades locales en Andalucía</strong></div>
+  <div class="toc-item level-2">2.1. Entidades locales territoriales básicas: El municipio y la provincia</div>
+  <div class="toc-item level-2">2.2. Entidades de ámbito inframunicipal: Las Entidades Locales Autónomas (ELAs)</div>
+  <div class="toc-item level-2">2.3. Entidades de base asociativa y supramunicipal: Mancomunidades de municipios y consorcios</div>
+  <div class="toc-item level-2">2.4. Las áreas metropolitanas y las comarcas en el marco andaluz</div>
+  <div class="toc-item level-1">3. <strong>El Municipio: Concepto, elementos constitutivos y alteración de términos</strong></div>
+  <div class="toc-item level-2">3.1. Concepto y naturaleza jurídica del municipio (art. 1 LBRL y art. 3 LAULA)</div>
+  <div class="toc-item level-2">3.2. El término municipal: Deslinde, alteración, segregación y fusión</div>
+  <div class="toc-item level-2">3.3. La población municipal: El padrón de habitantes y el estatuto del vecino</div>
+  <div class="toc-item level-1">4. <strong>Organización municipal</strong></div>
+  <div class="toc-item level-2">4.1. El régimen común: Órganos necesarios y complementarios</div>
+  <div class="toc-item level-3">4.1.1. El Alcalde: Elección, competencias, moción de censura y cuestión de confianza</div>
+  <div class="toc-item level-3">4.1.2. Los Tenientes de Alcalde</div>
+  <div class="toc-item level-3">4.1.3. El Pleno del Ayuntamiento: Composición y atribuciones indelegables</div>
+  <div class="toc-item level-3">4.1.4. La Junta de Gobierno Local: Composición y régimen de constitución</div>
+  <div class="toc-item level-3">4.1.5. Órganos preceptivos de estudio y fiscalización: Comisión Especial de Cuentas y Comisiones Informativas</div>
+  <div class="toc-item level-2">4.2. El régimen especial de Municipios de Gran Población (Título X LBRL)</div>
+  <div class="toc-item level-2">4.3. El régimen de Concejo Abierto (art. 29 LBRL)</div>
+  <div class="toc-item level-1">5. <strong>Competencias municipales</strong></div>
+  <div class="toc-item level-2">5.1. Criterios de determinación tras la LRSAL y la LAULA</div>
+  <div class="toc-item level-2">5.2. Competencias propias de los municipios (art. 25 LBRL y art. 9 LAULA)</div>
+  <div class="toc-item level-2">5.3. Servicios públicos mínimos obligatorios según tramos de población (art. 26 LBRL)</div>
+  <div class="toc-item level-2">5.4. Competencias delegadas del Estado y de la Comunidad Autónoma (art. 27 LBRL y art. 10 LAULA)</div>
+  <div class="toc-item level-1">6. <strong>Régimen de funcionamiento de los órganos colegiados municipales</strong></div>
+  <div class="toc-item level-2">6.1. Clases de sesiones del Pleno: Ordinarias, extraordinarias y urgentes</div>
+  <div class="toc-item level-2">6.2. Régimen de convocatoria, publicidad y orden del día</div>
+  <div class="toc-item level-2">6.3. Quórum de asistencia y adopción de acuerdos: Mayoría simple y mayoría absoluta (art. 47 LBRL)</div>
+  <div class="toc-item level-1">7. <strong>La Provincia: Organización y competencias</strong></div>
+  <div class="toc-item level-2">7.1. Concepto, fines y posición constitucional de la provincia (art. 141 CE)</div>
+  <div class="toc-item level-2">7.2. Organización provincial: Presidente, Vicepresidentes, Junta de Gobierno y Pleno de la Diputación</div>
+  <div class="toc-item level-2">7.3. Competencias propias de las Diputaciones Provinciales (art. 36 LBRL y art. 11 LAULA)</div>
+  <div class="toc-item level-2">7.4. El papel de la Diputación en la asistencia a municipios de menor población</div>
+  <div class="toc-item level-1">8. <strong>Relaciones de las Entidades Locales con la Comunidad Autónoma de Andalucía</strong></div>
+  <div class="toc-item level-2">8.1. Principios rectores: Respeto a la autonomía, coordinación y cooperación</div>
+  <div class="toc-item level-2">8.2. Órganos de concertación y consulta:</div>
+  <div class="toc-item level-3">8.2.1. El Consejo Andaluz de Gobiernos Locales (CAGL, art. 95 EA y Ley 5/2010)</div>
+  <div class="toc-item level-3">8.2.2. El Consejo Andaluz de Concertación Local (Ley 20/2007)</div>
+  <div class="toc-item level-2">8.3. El control de legalidad sobre los actos locales: Impugnación judicial y proscripción de la tutela administrativa</div>
+  <div class="toc-item level-2">8.4. La disolución de corporaciones locales por gestión gravemente dañosa para los intereses generales (art. 61 LBRL)</div>
+  <div class="toc-item level-1">9. <strong>Conclusión y visión práctica para el Cuerpo Técnico Facultativo (A2)</strong></div>
+  <div class="toc-item level-1">10. <strong>Anexo: Tabla comparativa de servicios obligatorios por población</strong></div>
+
+</div>
+
+<h2 class="section-title">1. La Administración Local en el marco constitucional y estatutario</h2>
+
+<h3 class="sub-title">1.1. La garantía institucional de la autonomía local</h3>
+<p>La Constitución Española de 1978 rompió con el modelo decimonónico centralista en el que las corporaciones locales eran meras delegaciones dependientes del poder central. El <strong>artículo 140 CE</strong> consagra la autonomía de los municipios:</p>
+<div class="callout"><p><em>"La Constitución garantiza la autonomía de los municipios. Estos gozarán de personalidad jurídica plena. Su gobierno y administración corresponde a sus respectivos Ayuntamientos, integrados por los Alcaldes y los Concejales. Los Concejales serán elegidos por los vecinos del municipio mediante sufragio universal, igual, libre, directo y secreto, en la forma establecida por la ley. Los Alcaldes serán elegidos por los Concejales o por los vecinos. La ley regulará las condiciones en las que proceda el régimen del concejo abierto."</em></p></div>
+<p>Asimismo, el <strong>artículo 141.1 CE</strong> reconoce a la provincia como entidad local determinada por la agrupación de municipios y división territorial para el cumplimiento de las actividades del Estado, garantizando su gobierno a través de las Diputaciones u otras Corporaciones de carácter representativo.</p>
+<div class="callout"><p><strong>GARANTÍA INSTITUCIONAL:</strong> La doctrina del Tribunal Constitucional (STC 32/1981, STC 214/1989) ha perfilado la autonomía local como una garantía institucional que protege a municipios y provincias frente al legislador estatal y autonómico, impidiendo que sus competencias sean vaciadas de contenido o reducidas a un nivel puramente testimonial.</p></div>
+<h3 class="sub-title">1.2. El principio de suficiencia financiera (artículo 142 CE)</h3>
+<div class="callout"><p><em>"Las Haciendas locales deberán disponer de los medios suficientes para el desempeño de las funciones que la ley atribuye a las Corporaciones respectivas y se nutrirán fundamentalmente de tributos propios y de participación en los del Estado y de las Comunidades Autónomas."</em></p></div>
+<p>En Andalucía, este principio se refuerza en el Estatuto de Autonomía (art. 192) y en la Ley 6/2010, de 11 de junio, reguladora de la participación de las entidades locales en los tributos de la Comunidad Autónoma de Andalucía (PATRICA).</p>
+<h3 class="sub-title">1.3. El régimen local andaluz: Título III del Estatuto y la LAULA</h3>
+<p>El Estatuto de Autonomía de Andalucía de 2007 dedica su <strong>Título III (arts. 89 a 98)</strong> a la organización territorial, articulando un modelo municipalista avanzado fundamentado en los principios de subsidiariedad, proximidad y descentralización. En desarrollo de este marco se aprobó la <strong>Ley 5/2010, de 11 de junio, de Autonomía Local de Andalucía (LAULA)</strong>, que define las competencias locales propias y blinda un elenco sustantivo de atribuciones frente a injerencias externas.</p>
+<hr />
+<h2 class="section-title">2. Tipología de entidades locales en Andalucía</h2>
+
+<p>Conforme a la legislación básica estatal (art. 3 LBRL) y a la legislación autonómica andaluza (LAULA), el mapa local andaluz se compone de:</p>
+<div class="diagram-box"><pre>                     TIPOLOGÍA DE ENTIDADES LOCALES EN ANDALUCÍA
+┌──────────────────────────────────────┬──────────────────────────────────────┐
+│ ENTIDADES OBLIGATORIAS / BÁSICAS     │ ENTIDADES POTESTATIVAS / DERIVADAS   │
+├──────────────────────────────────────┼──────────────────────────────────────┤
+│ 1. El Municipio                      │ 1. Entidades Locales Autónomas (ELAs)│
+│    Célula territorial primaria con   │    Descentralización inframunicipal  │
+│    autonomía de gobierno y gestión.  │    con personalidad jurídica (LAULA).│
+├──────────────────────────────────────┼──────────────────────────────────────┤
+│ 2. La Provincia                      │ 2. Mancomunidades de Municipios      │
+│    Entidad local supramunicipal con  │    Asociación voluntaria para obras  │
+│    personalidad jurídica propia y    │    y servicios específicos comunes.  │
+│    fines de asistencia técnica.      ├──────────────────────────────────────┤
+│                                      │ 3. Consorcios Locales                │
+│                                      │    Entidades de Derecho Público con  │
+│                                      │    otras administraciones o privados.│
+│                                      ├──────────────────────────────────────┤
+│                                      │ 4. Áreas Metropolitanas              │
+│                                      │    Grandes aglomeraciones urbanas    │
+│                                      │    creadas por ley del Parlamento.   │
+└──────────────────────────────────────┴──────────────────────────────────────┘
+</pre></div>
+<ul>
+<li><strong>Entidades Locales Autónomas (ELAs, arts. 114 a 129 LAULA):</strong> Entidades de ámbito territorial inferior al municipio creadas para la gestión descentralizada de núcleos de población separados del núcleo principal. Cuentan con un órgano de gobierno propio integrado por la <strong>Presidencia de la ELA</strong> (elegida directamente por los vecinos) y la <strong>Junta Vecinal</strong> (órgano colegiado).</li>
+</ul>
+<hr />
+<h2 class="section-title">3. El Municipio: Concepto, elementos constitutivos y alteración de términos</h2>
+
+<h3 class="sub-title">3.1. Concepto y elementos constitutivos</h3>
+<p>El municipio es la entidad local básica de la organización territorial del Estado y cauce inmediato de participación ciudadana en los asuntos públicos (art. 1 LBRL). Se compone de tres elementos inseparables:</p>
+<ol>
+<li><strong>El Territorio (término municipal):</strong> Espacio geográfico delimitado sobre el que el Ayuntamiento ejerce su jurisdicción. La alteración de términos municipales (creación de nuevos municipios por segregación, fusión o incorporación) se regula en la LAULA (arts. 74 a 104) y exige:</li>
+<li>Pronunciamiento favorable de los municipios interesados y audiencia pública.</li>
+<li>Dictamen preceptivo del <strong>Consejo Consultivo de Andalucía</strong>.</li>
+<li>Aprobación definitiva mediante <strong>Decreto del Consejo de Gobierno de la Junta de Andalucía</strong>.</li>
+<li>Conforme al art. 13.2 de la LBRL (tras LRSAL), la creación de nuevos municipios solo puede realizarse sobre la base de núcleos de población territorialmente diferenciados, con viabilidad financiera demostrada y que cuenten como mínimo con <strong>5.000 habitantes</strong>.</li>
+<li><strong>La Población (el vecindario):</strong> Conjunto de personas inscritas en el Padrón municipal. Toda persona que viva en España está obligada a inscribirse en el Padrón del municipio en el que resida habitualmente; quien viva en varios municipios debe inscribirse únicamente en el que habite durante más tiempo al año.</li>
+<li>La condición de <strong>vecino</strong> se adquiere en el mismo momento de la inscripción en el padrón.</li>
+<li>Confiere derechos clave: ser elector y elegible en elecciones locales (conforme a ley), participar en la gestión municipal, utilizar los servicios públicos municipales, ser informado y pedir consulta popular (art. 18 LBRL).</li>
+<li><strong>La Organización:</strong> Entramado institucional de gobierno y administración (el Ayuntamiento).</li>
+</ol>
+<hr />
+<h2 class="section-title">4. Organización municipal</h2>
+
+<h3 class="sub-title">4.1. El régimen común de organización municipal</h3>
+<p>La LBRL (art. 20) distingue entre órganos de existencia obligatoria y potestativa:</p>
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Órgano</th>
+<th style="text-align: left;">Naturaleza y Carácter</th>
+<th style="text-align: left;">Composición y Funciones Esenciales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>El Alcalde</strong></td>
+<td style="text-align: left;">Unipersonal / Necesario</td>
+<td style="text-align: left;">Presidente de la Corporación y Jefe del ejecutivo local. Dirige el gobierno y la administración, representa al Ayuntamiento, convoca y preside el Pleno y la Junta de Gobierno, dicta bandos y ostenta la jefatura superior de personal y de la policía local.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Los Tenientes de Alcalde</strong></td>
+<td style="text-align: left;">Unipersonal / Necesario</td>
+<td style="text-align: left;">Nombrados y revocados libremente por el Alcalde entre los miembros de la Junta de Gobierno Local o, donde ésta no exista, de entre los Concejales. Sustituyen al Alcalde por orden de nombramiento en casos de vacante, ausencia o enfermedad.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>El Pleno</strong></td>
+<td style="text-align: left;">Colegiado / Necesario</td>
+<td style="text-align: left;">Integrado por todos los Concejales y presidido por el Alcalde. Ejerce la potestad normativa local (reglamentos y ordenanzas), aprueba los presupuestos, controla y fiscaliza a los órganos de gobierno, aprueba la plantilla de personal y adopta decisiones de alteración del término y planeamiento general.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>La Junta de Gobierno Local</strong></td>
+<td style="text-align: left;">Colegiado / Necesario en municipios con pob. &gt; 5.000 hab. (o menores si el Pleno lo acuerda)</td>
+<td style="text-align: left;">Integrada por el Alcalde y un número de Concejales no superior al <strong>tercio del número legal</strong> de los mismos, nombrados y separados libremente por el Alcalde. Presta asistencia permanente al Alcalde y ejerce las atribuciones delegadas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Comisión Especial de Cuentas</strong></td>
+<td style="text-align: left;">Colegiado / Necesario en todos los Ayuntamientos</td>
+<td style="text-align: left;">Integrada por miembros de todos los grupos políticos de la Corporación en proporción a su peso. Examina las cuentas anuales de la Corporación antes de someterse al Pleno.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Comisiones Informativas</strong></td>
+<td style="text-align: left;">Colegiado / Necesario en municipios &gt; 5.000 hab. (potestativo en los demás)</td>
+<td style="text-align: left;">Órganos de estudio, informe o consulta previa de los asuntos que han de ser sometidos a la decisión del Pleno. Representación proporcional de los grupos.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="sub-title">4.2. Elección del Alcalde y mecanismos de responsabilidad política</h3>
+<ul>
+<li><strong>Elección (art. 196 LOREG):</strong> En la sesión constitutiva de la Corporación, pueden ser candidatos los Concejales que encabecen sus correspondientes listas. Si alguno de ellos obtiene la <strong>mayoría absoluta</strong> de los votos de los Concejales, es proclamado electo. Si ninguno la obtiene, es proclamado Alcalde el Concejal que encabece la lista que haya obtenido <strong>mayor número de votos populares</strong> en el municipio (en caso de empate, se resuelve por sorteo).</li>
+<li><strong>Moción de censura al Alcalde (art. 197 LOREG):</strong></li>
+<li>Debe ser suscrita por al menos la <strong>mayoría absoluta</strong> del número legal de miembros de la Corporación.</li>
+<li>Debe incluir un <strong>candidato alternativo</strong> a la Alcaldía.</li>
+<li>Ningún Concejal puede firmar durante su mandato más de una moción de censura.</li>
+<li>Se vota en sesión plenaria convocada automáticamente a las doce horas del décimo día hábil siguiente al registro de la moción.</li>
+<li><strong>Cuestión de confianza (art. 197 bis LOREG):</strong> El Alcalde puede plantearla vinculada a la aprobación o modificación de los Presupuestos anuales, el reglamento orgánico o el plan general de ordenación urbana. Si se deniega y no se presenta una moción de censura con candidato alternativo en el plazo de un mes, el proyecto se entiende aprobado automáticamente.</li>
+</ul>
+<h3 class="sub-title">4.3. El régimen de Municipios de Gran Población (Título X LBRL)</h3>
+<p>Se aplica a:
+1. Municipios cuya población supere los <strong>250.000 habitantes</strong>.
+2. Municipios capitales de provincia cuya población sea superior a los <strong>175.000 habitantes</strong>.
+3. Municipios capitales de provincia, de CCAA o sedes institucionales cuando así lo decida la Asamblea Legislativa autonómica a iniciativa de su Ayuntamiento (&gt; 75.000 hab.).</p>
+<p><em>Características del modelo:</em> Separación neta entre el Pleno (función normativa y de control puro) y el Alcalde y la Junta de Gobierno Local (funciones ejecutivas plenas). Se crean órganos específicos: Consejo Social de la Ciudad, Comisión Especial de Sugerencias y Reclamaciones, Asesoría Jurídica y Órgano de Gestión Tributaria.</p>
+<hr />
+<h2 class="section-title">5. Competencias municipales</h2>
+
+<p>Tras la reforma de la LRSAL (Ley 27/2013) y la preservación de la autonomía local por la LAULA (declarada constitucional en lo esencial por STC 41/2016), las competencias se clasifican en:</p>
+<h3 class="sub-title">5.1. Competencias propias (artículo 25 LBRL y artículo 9 LAULA)</h3>
+<p>Se ejercen en régimen de autonomía y bajo la propia responsabilidad, atendiendo siempre a la sostenibilidad financiera. Destacan materias como urbanismo, medio ambiente urbano, abastecimiento domiciliario de agua, gestión de residuos sólidos, transporte colectivo urbano, policía local, protección civil y servicios sociales de atención primaria.</p>
+<h3 class="sub-title">5.2. Servicios públicos obligatorios mínimos según población (artículo 26 LBRL)</h3>
+<p>Los municipios deben prestar, por sí o asociados, los siguientes servicios mínimos:</p>
+<div class="diagram-box"><pre>┌───────────────────────────┬────────────────────────────────────────────────────────┐
+│ TRAMO DE POBLACIÓN        │ CATÁLOGO DE SERVICIOS PÚBLICOS MÍNIMOS OBLIGATORIOS    │
+├───────────────────────────┼────────────────────────────────────────────────────────┤
+│ En TODOS los municipios   │ Alumbrado público, cementerio, recogida de residuos,   │
+│                           │ limpieza viaria, abastecimiento domiciliario de agua   │
+│                           │ potable, alcantarillado, acceso a núcleos de población │
+│                           │ y pavimentación de las vías públicas.                  │
+├───────────────────────────┼────────────────────────────────────────────────────────┤
+│ Municipios con población  │ Todos los anteriores más: Parque público, biblioteca   │
+│ SUPERIOR A 5.000 hab.     │ pública y tratamiento de residuos.                     │
+├───────────────────────────┼────────────────────────────────────────────────────────┤
+│ Municipios con población  │ Todos los anteriores más: Protección civil, evaluación │
+│ SUPERIOR A 20.000 hab.    │ e información de situaciones de necesidad social y la  │
+│                           │ atención inmediata a personas en riesgo de exclusión   │
+│                           │ social, prevención y extinción de incendios e          │
+│                           │ instalaciones deportivas de uso público.               │
+├───────────────────────────┼────────────────────────────────────────────────────────┤
+│ Municipios con población  │ Todos los anteriores más: Transporte colectivo urbano  │
+│ SUPERIOR A 50.000 hab.    │ de viajeros y medio ambiente urbano.                   │
+└───────────────────────────┴────────────────────────────────────────────────────────┘
+</pre></div>
+<div class="callout"><p><strong>ASISTENCIA DE LA DIPUTACIÓN (art. 26.2 LBRL):</strong> En los municipios con población inferior a 20.000 habitantes, la Diputación Provincial coordinará la prestación de los servicios de recogida y tratamiento de residuos, abastecimiento de agua, limpieza viaria y extinción de incendios cuando no se presten con estándares de coste y calidad adecuados.</p></div>
+<hr />
+<h2 class="section-title">6. Régimen de funcionamiento de los órganos colegiados municipales</h2>
+
+<h3 class="sub-title">6.1. Clases de sesiones del Pleno (artículo 46 LBRL)</h3>
+<ol>
+<li><strong>Ordinarias:</strong> Con periodicidad preestablecida por el Pleno:</li>
+<li>Municipios de más de 20.000 hab.: al menos <strong>una vez al mes</strong>.</li>
+<li>Municipios entre 5.001 y 20.000 hab.: al menos <strong>cada dos meses</strong>.</li>
+<li>Municipios de hasta 5.000 hab.: al menos <strong>cada tres meses</strong>.</li>
+<li><strong>Extraordinarias:</strong> Convocadas por el Alcalde por iniciativa propia o cuando lo solicite al menos la <strong>cuarta parte (1/4)</strong> del número legal de miembros de la Corporación. En este último caso, la sesión debe celebrarse dentro de los <strong>quince días hábiles</strong> siguientes a la solicitud.</li>
+<li><strong>Extraordinarias de carácter urgente:</strong> Convocadas por el Alcalde sin la antelación reglamentaria, debiendo ratificarse la urgencia como primer punto del orden del día por mayoría absoluta del Pleno.</li>
+</ol>
+<h3 class="sub-title">6.2. Quórum y mayorías (artículo 46 y 47 LBRL)</h3>
+<ul>
+<li><strong>Quórum de constitución:</strong> El Pleno se constituye válidamente con la asistencia de un <strong>tercio del número legal</strong> de miembros de la Corporación (que nunca podrá ser inferior a tres). Se exige la presencia preceptiva del Presidente y del Secretario o de quienes legalmente les sustituyan.</li>
+<li><strong>Regla general de votación:</strong> Los acuerdos se adoptan por <strong>mayoría simple</strong> de los miembros presentes (más votos a favor que en contra).</li>
+<li><strong>Mayoría absoluta del número legal (art. 47.2 LBRL):</strong> Exigida preceptivamente para materias de especial trascendencia:</li>
+<li>Creación y supresión de municipios y alteración de términos.</li>
+<li>Aprobación y modificación del Reglamento Orgánico propio.</li>
+<li>Delimitación del término municipal y alteración de la capitalidad.</li>
+<li>Cesión gratuita de bienes comunales o patrimoniales.</li>
+<li>Municipalización o provincialización de servicios en régimen de monopolio.</li>
+</ul>
+<hr />
+<h2 class="section-title">7. La Provincia: Organización y competencias</h2>
+
+<h3 class="sub-title">7.1. Concepto y posición constitucional</h3>
+<p>La provincia es una entidad local con personalidad jurídica propia, determinada por la agrupación de municipios y división territorial para el cumplimiento de las actividades del Estado (art. 141.1 CE). En Andalucía existen <strong>ocho provincias</strong> (Almería, Cádiz, Córdoba, Granada, Huelva, Jaén, Málaga y Sevilla), cuyos límites solo pueden modificarse por las Cortes Generales mediante Ley Orgánica (art. 141.1 CE).</p>
+<h3 class="sub-title">7.2. Organización provincial (artículo 32 LBRL)</h3>
+<p>El gobierno y la administración de la provincia corresponden a la <strong>Diputación Provincial</strong>:
+* <strong>El Presidente de la Diputación:</strong> Elegido por los Diputados Provinciales entre sus miembros en la sesión constitutiva por mayoría absoluta en primera votación o simple en segunda. Representa a la Diputación y dirige el gobierno provincial.
+* <strong>Los Vicepresidentes:</strong> Nombrados libremente por el Presidente entre los miembros de la Junta de Gobierno.
+* <strong>La Junta de Gobierno:</strong> Integrada por el Presidente y un número de Diputados no superior al <strong>tercio del número legal</strong> de los mismos.
+* <strong>El Pleno:</strong> Integrado por todos los Diputados y presidido por el Presidente. Los Diputados provinciales son elegidos de forma indirecta entre los concejales electos de cada partido en los correspondientes partidos judiciales.</p>
+<h3 class="sub-title">7.3. Competencias provinciales (artículo 36 LBRL y artículo 11 LAULA)</h3>
+<ul>
+<li>Coordinación de los servicios municipales entre sí para garantizar la prestación integral.</li>
+<li><strong>Asistencia y cooperación jurídica, económica y técnica a los municipios</strong>, especialmente a los de menor capacidad económica y de gestión (núcleo esencial de la Diputación).</li>
+<li>Prestación de servicios públicos supramunicipales o comarcales.</li>
+<li>Fomento del desarrollo económico y social provincial.</li>
+<li>Aprobación anual del <strong>Plan Provincial de Cooperación a las Obras y Servicios</strong> de competencia municipal.</li>
+</ul>
+<hr />
+<h2 class="section-title">8. Relaciones de las Entidades Locales con la Comunidad Autónoma de Andalucía</h2>
+
+<h3 class="sub-title">8.1. Principios rectores y proscripción de la tutela administrativa</h3>
+<p>Las relaciones entre la Junta de Andalucía y los entes locales se rigen por el principio de <strong>autonomía local, lealtad institucional, colaboración y coordinación</strong>. La Comunidad Autónoma no ostenta una potestad de tutela jerárquica sobre los municipios (proscrita por el art. 140 CE); no puede suspender ni revocar actos locales por razones de simple oportunidad.</p>
+<h3 class="sub-title">8.2. Órganos de concertación en Andalucía</h3>
+<ol>
+<li><strong>El Consejo Andaluz de Gobiernos Locales (CAGL):</strong> Creado por el artículo 95 del Estatuto de Autonomía y regulado por la Ley 5/2010 (LAULA). Es el órgano de representación de los municipios y provincias ante las instituciones de la Junta. Ejerce funciones consultivas, emitiendo informe preceptivo en los anteproyectos de ley, planes y disposiciones reglamentarias autonómicas que afecten a las competencias locales propias.</li>
+<li><strong>El Consejo Andaluz de Concertación Local (Ley 20/2007):</strong> Órgano colegiado bilateral y paritario integrado por representantes de la Junta de Andalucía y de las entidades locales andaluzas (representadas por la FAMP - Federación Andaluza de Municipios y Provincias) para la deliberación y concertación de políticas públicas.</li>
+</ol>
+<h3 class="sub-title">8.3. El control de legalidad sobre los actos locales</h3>
+<ul>
+<li><strong>Deber de comunicación (art. 56 LBRL):</strong> Las entidades locales deben remitir a la Administración autonómica copia o extracto comprensivo de los actos y acuerdos que adopten en el plazo de <strong>seis días hábiles</strong> siguientes a su adopción.</li>
+<li><strong>Requerimiento e impugnación (arts. 65 y 66 LBRL):</strong> Si la Comunidad Autónoma considera que un acto o acuerdo local infringe el ordenamiento jurídico, podrá:</li>
+<li><em>Formular requerimiento previo:</em> En el plazo de <strong>quince días hábiles</strong> desde la recepción, para que la entidad local anule el acto.</li>
+<li><em>Impugnación directa:</em> Acudir directamente ante la <strong>Jurisdicción Contencioso-Administrativa</strong> en el plazo de dos meses (o veinte días tras el requerimiento).</li>
+<li><strong>Suspensión gubernativa excepcional (art. 67 LBRL):</strong> Si un acto local atenta gravemente al interés general de España, el Delegado del Gobierno estatal puede requerir al Alcalde y, de no ser atendido, suspenderlo directamente, debiendo impugnarlo judicialmente en diez días.</li>
+</ul>
+<h3 class="sub-title">8.4. La disolución de corporaciones locales (artículo 61 LBRL)</h3>
+<p>El Consejo de Ministros, por <strong>Real Decreto</strong>, a iniciativa propia con conocimiento del Consejo de Gobierno de la Comunidad Autónoma o a solicitud de éste, y previo acuerdo favorable del <strong>Senado</strong>, podrá disolver los órganos de las corporaciones locales en el supuesto de gestión gravemente dañosa para los intereses generales que suponga incumplimiento de sus obligaciones constitucionales (ej. caso del Ayuntamiento de Marbella en 2006).</p>
+<hr />
+<h2 class="section-title">9. Conclusión y visión práctica para el Cuerpo Técnico Facultativo (A2)</h2>
+
+<p>El personal técnico de la Junta de Andalucía interactúa a diario con las corporaciones locales: tramitación de subvenciones, informes de impacto urbanístico o ambiental, coordinación en obras públicas y prestación de servicios sociales compartidos. El respeto riguroso al principio de autonomía local (consagrado en la LAULA y en el Estatuto de Autonomía) y el conocimiento de los procedimientos de colaboración y requerimiento de legalidad son garantías indispensables para el éxito de las políticas públicas autonómicas en el territorio andaluz.</p>
+<hr />
+<h2 class="section-title">10. Anexo: Tabla comparativa de servicios obligatorios por población</h2>
+
+<div class="diagram-box"><pre>                   SÍNTESIS DE OBLIGATORIEDAD DE SERVICIOS LOCALES
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ NIVEL POBLACIONAL   │ SERVICIOS OBLIGATORIOS CLAVE QUE SE AÑADEN             │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Menos de 5.000 hab. │ Servicios básicos vitales (agua, basura, alumbrado,    │
+│                     │ alcantarillado, cementerio, pavimentación y limpieza). │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Más de 5.000 hab.   │ + Parque público, biblioteca pública y tratamiento de  │
+│                     │ residuos.                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Más de 20.000 hab.  │ + Protección civil, evaluación y servicios sociales,   │
+│                     │ prevención/extinción de incendios e instalac. deport.  │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Más de 50.000 hab.  │ + Transporte colectivo urbano de viajeros y medio      │
+│                     │ ambiente urbano.                                       │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+</pre></div>
+
+</body>
+</html>

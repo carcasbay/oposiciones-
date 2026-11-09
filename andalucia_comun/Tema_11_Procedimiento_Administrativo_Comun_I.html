@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TEMA 11: El procedimiento administrativo común (I): Principios informadores. Capacidad y representación. Interesados. Derechos de las personas. Lengua. Términos y plazos</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (Grupo A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #065f46;
+      font-weight: 500;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #059669;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #065f46;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #059669;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #059669;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #059669;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout p {
+    margin: 0;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #065f46;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #d1fae5;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f0fdf4;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO COMÚN — JUNTA DE ANDALUCÍA (GRUPO A2)</div>
+  <h1>TEMA 11</h1>
+  <h2>El procedimiento administrativo común (I): Principios informadores. Capacidad y representación. Interesados. Derechos de las personas. Lengua. Términos y plazos</h2>
+  <div class="meta-box">
+    <p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+    <p><strong>Especialidad:</strong> Materias Comunes (Grupo A2)</p>
+    <p><strong>Bloque:</strong> Materias Comunes</p>
+    <p><strong>Tema Oficial:</strong> 11</p>
+    <p><strong>Normativa Clave:</strong> Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (arts. 1 a 33); Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (arts. 3 y 4); Ley 9/2007, de 22 de octubre, de la Administración de la Junta de Andalucía (LAJA); Ley Orgánica 2/2007, de 19 de marzo, de reforma del Estatuto de Autonomía para Andalucía (art. 133); Real Decreto 203/2021, de 30 de marzo (Reglamento de actuación y funcionamiento del sector público por medios electrónicos).</p>
+
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General de TEMA 11</div>
+  <div class="toc-item level-1">1. <strong>El procedimiento administrativo común: Concepto, fundamento constitucional y principios informadores</strong></div>
+  <div class="toc-item level-2">1.1. Concepto y doble dimensión: Garantía ciudadana y cauce de eficacia</div>
+  <div class="toc-item level-2">1.2. El marco constitucional: Artículos 103.1 y 149.1.18ª CE</div>
+  <div class="toc-item level-2">1.3. Principios informadores del procedimiento administrativo</div>
+  <div class="toc-item level-1">2. <strong>Capacidad de obrar ante las Administraciones Públicas</strong></div>
+  <div class="toc-item level-2">2.1. Reglas generales de capacidad (art. 3 Ley 39/2015)</div>
+  <div class="toc-item level-2">2.2. La capacidad de los menores de edad</div>
+  <div class="toc-item level-2">2.3. Grupos de afectados, uniones sin personalidad y patrimonios independientes</div>
+  <div class="toc-item level-1">3. <strong>El concepto de interesado en el procedimiento administrativo</strong></div>
+  <div class="toc-item level-2">3.1. Definición legal y categorías de interesados (art. 4 Ley 39/2015)</div>
+  <div class="toc-item level-2">3.2. Pluralidad de interesados y designación de representante (art. 7 Ley 39/2015)</div>
+  <div class="toc-item level-2">3.3. Nuevos interesados sobrevenidos: Emplazamiento e intervención (art. 8 Ley 39/2015)</div>
+  <div class="toc-item level-1">4. <strong>La representación en el procedimiento administrativo</strong></div>
+  <div class="toc-item level-2">4.1. Concepto y ámbito de la representación voluntaria (art. 5 Ley 39/2015)</div>
+  <div class="toc-item level-2">4.2. Formas de acreditación: El apoderamiento *apud acta* y medios electrónicos</div>
+  <div class="toc-item level-2">4.3. El Registro Electrónico de Apoderamientos (REA) (art. 6 Ley 39/2015)</div>
+  <div class="toc-item level-1">5. <strong>Derechos de las personas y de los interesados en el procedimiento administrativo</strong></div>
+  <div class="toc-item level-2">5.1. El estatuto general de las personas en sus relaciones con la Administración (art. 13 Ley 39/2015)</div>
+  <div class="toc-item level-2">5.2. Los derechos específicos del interesado en el procedimiento (art. 53 Ley 39/2015)</div>
+  <div class="toc-item level-2">5.3. El derecho y la obligación de relacionarse electrónicamente (art. 14 Ley 39/2015)</div>
+  <div class="toc-item level-1">6. <strong>La lengua de los procedimientos administrativos</strong></div>
+  <div class="toc-item level-2">6.1. Régimen lingüístico en la Administración General del Estado y entes locales (art. 15 Ley 39/2015)</div>
+  <div class="toc-item level-2">6.2. Régimen en Comunidades Autónomas con lengua cooficial y traslados</div>
+  <div class="toc-item level-2">6.3. La lengua en la Administración de la Junta de Andalucía</div>
+  <div class="toc-item level-1">7. <strong>Términos y plazos en el procedimiento administrativo: Reglas de cómputo</strong></div>
+  <div class="toc-item level-2">7.1. Cómputo por horas: Reglas, días hábiles y régimen legal (art. 30 Ley 39/2015)</div>
+  <div class="toc-item level-2">7.2. Cómputo por días: La exclusión de los sábados, domingos y festivos</div>
+  <div class="toc-item level-2">7.3. Cómputo por meses y años: Regla *de fecha a fecha* y supuestos especiales</div>
+  <div class="toc-item level-2">7.4. Calendario oficial de días inhábiles: Efectos en registros y sedes electrónicas (art. 31 Ley 39/2015)</div>
+  <div class="toc-item level-1">8. <strong>Ampliación y tramitación de urgencia de los plazos</strong></div>
+  <div class="toc-item level-2">8.1. Ampliación general de plazos: Supuestos, límites y régimen de impugnación (art. 32 Ley 39/2015)</div>
+  <div class="toc-item level-2">8.2. Tramitación de urgencia: Reducción de plazos a la mitad (art. 33 Ley 39/2015)</div>
+  <div class="toc-item level-1">9. <strong>Conclusiones y aplicación práctica en la Administración de la Junta de Andalucía</strong></div>
+  <div class="toc-item level-1">10. <strong>Anexo: Tabla sinóptica y mapa conceptual del Tema 11</strong></div>
+
+</div>
+
+<h2 class="section-title">1. El procedimiento administrativo común: Concepto, fundamento constitucional y principios informadores</h2>
+
+<h3 class="sub-title">1.1. Concepto y doble dimensión: Garantía ciudadana y cauce de eficacia</h3>
+<p>El procedimiento administrativo se define clásicamente como la sucesión ordenada y concatenada de trámites y actuaciones jurídicas, formalizadas según la ley, a través de las cuales la Administración Pública elabora, exterioriza y ejecuta su voluntad, produciendo actos administrativos o disposiciones de carácter general.</p>
+<p>Esta institución ostenta una <strong>doble dimensión teleológica</strong>:
+1. <strong>Dimensión garantista o defensiva:</strong> Actúa como escudo de la ciudadanía frente a la arbitrariedad de los poderes públicos, asegurando que cualquier decisión que afecte a sus derechos e intereses legítimos se adopte con audiencia previa, transparencia, contradicción y respeto riguroso a la legalidad.
+2. <strong>Dimensión funcional o de eficacia:</strong> Constituye el cauce racional e instrumental que permite a la Administración satisfacer los intereses generales encomendados, ponderar los distintos factores técnicos, económicos y sociales en juego y garantizar el acierto material de la resolución final.</p>
+<div class="diagram-box"><pre>                    DOBLE NATURALEZA DEL PROCEDIMIENTO
+        ┌────────────────────────────────────────────────────────┐
+        │                                                        │
+        ▼                                                        ▼
+VERTIENTE GARANTISTA                                    VERTIENTE FUNCIONAL
+• Prohibición de indefensión (24 CE)                   • Servicio con objetividad (103.1 CE)
+• Trámite de audiencia y alegaciones                    • Racionalidad y rigor técnico
+• Intervención del interesado                           • Eficacia en la gestión pública
+• Control de legalidad del acto                         • Coordinación administrativa
+</pre></div>
+<h3 class="sub-title">1.2. El marco constitucional: Artículos 103.1 y 149.1.18ª CE</h3>
+<p>La Constitución Española de 1978 reserva un papel estelar a la regulación del procedimiento:
+* El <strong>artículo 103.1 CE</strong> somete la actuación administrativa a la ley y al Derecho, obligándola a servir con objetividad los intereses generales con arreglo a los principios de eficacia, jerarquía, descentralización, desconcentración y coordinación.
+* El <strong>artículo 105 c) CE</strong> impone que la ley regulará el procedimiento a través del cual deben producirse los actos administrativos, garantizando, cuando proceda, la audiencia del interesado.
+* El <strong>artículo 149.1.18ª CE</strong> atribuye al Estado la <strong>competencia exclusiva</strong> sobre las bases del régimen jurídico de las Administraciones Públicas y sobre el <strong>procedimiento administrativo común</strong>, sin perjuicio de las especialidades derivadas de la organización propia de las Comunidades Autónomas.</p>
+<p>La doctrina consolidada del Tribunal Constitucional (destacadamente desde la <strong>STC 227/1988</strong> y reiterada en las <strong>SSTC 50/1999 y 130/2013</strong>) aclara que "común" no equivale a "único": el Estado fija el cauce formal nuclear, uniforme e inderogable que garantiza un tratamiento paritario de todos los ciudadanos ante cualquier Administración española, mientras que las Comunidades Autónomas pueden regular las especialidades adjetivas requeridas por sus competencias sustantivas (ej. procedimiento sancionador tributario autonómico, ayudas agrarias, subvenciones).</p>
+<h3 class="sub-title">1.3. Principios informadores del procedimiento administrativo</h3>
+<p>Junto a las directrices generales de la <strong>Ley 40/2015 (art. 3)</strong> y la <strong>Ley 9/2007 de la Junta de Andalucía (art. 3)</strong>, el procedimiento administrativo común se estructura sobre los siguientes principios fundamentales:</p>
+<ul>
+<li><strong>Principio de legalidad y sometimiento al ordenamiento jurídico:</strong> Vinculación positiva a la norma (art. 9.1 y 103.1 CE).</li>
+<li><strong>Principio de oficialidad (art. 71.1 LPACAP):</strong> El procedimiento se impulsará de oficio en todos sus trámites e incidentes, recayendo sobre el órgano instructor la carga de dirigir y hacer avanzar el expediente con celeridad, sin perjuicio del impulso de parte.</li>
+<li><strong>Principio de celeridad, simplificación y economía procedimental (arts. 71 y 72 LPACAP):</strong> Obligación de acordar en un solo acto todos los trámites que admitan una impulsión simultánea y concentración de trámites.</li>
+<li><strong>Principio de contradicción y tutela efectiva (art. 24 CE y art. 75 LPACAP):</strong> Igualdad de armas procedimentales; el interesado tiene derecho a aducir alegaciones y aportar documentos en cualquier fase previa al trámite de audiencia, así como a proponer pruebas pertinentes.</li>
+<li><strong>Principio de antiformalismo o pro actione:</strong> La forma se concibe como una garantía y no como un obstáculo insalvable. Ello impone a la Administración el deber de subsanación de defectos formales (art. 68) y la no exigencia de formalismos innecesarios.</li>
+<li><strong>Principio de gratuidad:</strong> Salvo la exacción de tasas expresamente previstas por ley para la realización de actividades singulares o expedición de certificados, la tramitación procedimental ordinaria es gratuita.</li>
+<li><strong>Principio de interoperabilidad y funcionamiento electrónico:</strong> El procedimiento administrativo común tiene carácter íntegramente electrónico (art. 70 LPACAP), prohibiéndose la exigencia de documentos ya obrantes en poder de la Administración o elaborados por ella (art. 28 LPACAP).</li>
+</ul>
+<hr />
+<h2 class="section-title">2. Capacidad de obrar ante las Administraciones Públicas</h2>
+
+<h3 class="sub-title">2.1. Reglas generales de capacidad (art. 3 Ley 39/2015)</h3>
+<p>La capacidad de obrar administrativa habilita para ser titular de derechos y obligaciones en un expediente concreto y para realizar actos procedimentales válidos. El <strong>artículo 3.1 de la Ley 39/2015</strong> reconoce capacidad de obrar ante las Administraciones Públicas a:</p>
+<ol>
+<li>Las personas físicas o jurídicas que ostenten capacidad de obrar con arreglo a las normas civiles generales.</li>
+<li>Los menores de edad para el ejercicio y defensa de aquellos de sus derechos e intereses cuya actuación esté permitida por el ordenamiento jurídico sin asistencia de la persona que ejerza la patria potestad, tutela o curatela. Se exceptúa expresamente el caso de los menores incapacitados cuando la extensión de la incapacidad afecte al ejercicio y defensa de los derechos o intereses de que se trate.</li>
+<li>Cuando la ley así lo declare expresamente, los grupos de afectados, las uniones sin personalidad jurídica y los patrimonios independientes o autónomos.</li>
+</ol>
+<h3 class="sub-title">2.2. La capacidad de los menores de edad</h3>
+<p>El Derecho Administrativo consagra una capacidad de obrar más amplia y flexible que el Derecho Civil. Mientras que en el ámbito privado el menor emancipado o no emancipado precisa por regla general la intervención de sus progenitores, en el procedimiento administrativo el menor puede actuar válidamente en materias donde la legislación sectorial le confiera autonomía:
+* Ámbito educativo: solicitudes de becas, exámenes y reclamaciones escolares (a partir de los 14 o 16 años según la etapa).
+* Ámbito sanitario: consentimiento informado a partir de los 16 años (Ley 41/2002 de autonomía del paciente).
+* Ámbito laboral y de empleo público: solicitud y realización de pruebas selectivas o inscripción laboral si se tienen 16 años cumplidos y concurre consentimiento tácito o emancipación.</p>
+<div class="callout"><p><strong>Regla de oro de la capacidad del menor:</strong> Si el ordenamiento jurídico sustantivo habilita al menor a ser titular de un derecho sin asistencia de sus tutores, el artículo 3.1 b) LPACAP le reconoce capacidad procesal plena para iniciar el procedimiento, realizar alegaciones y recurrir las resoluciones que le afecten.</p></div>
+<h3 class="sub-title">2.3. Grupos de afectados, uniones sin personalidad y patrimonios independientes</h3>
+<p>De conformidad con el artículo 3.2 LPACAP, las entidades carentes de personalidad jurídica (como comunidades de bienes, herencias yacentes, comunidades de propietarios o plataformas vecinales) ostentan capacidad de obrar administrativa <strong>siempre que una ley lo reconozca de forma expresa</strong>. Esta habilitación legal existe, por ejemplo, en materia tributaria (art. 35.4 Ley General Tributaria), en subvenciones públicas (art. 11.3 Ley 38/2003 General de Subvenciones) y en contratación pública (uniones temporales de empresas, art. 69 LCSP).</p>
+<hr />
+<h2 class="section-title">3. El concepto de interesado en el procedimiento administrativo</h2>
+
+<h3 class="sub-title">3.1. Definición legal y categorías de interesados (art. 4 Ley 39/2015)</h3>
+<p>El interesado es el sujeto que ostenta una cualificación jurídica especial respecto al objeto del expediente, que le faculta para intervenir activamente en él y exigir el respeto de sus garantías.</p>
+<p>El <strong>artículo 4.1 de la Ley 39/2015</strong> distingue tres categorías de interesados:</p>
+<div class="diagram-box"><pre>                            CATEGORÍAS DE INTERESADOS (ART. 4 LPACAP)
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│ a) Quienes lo promuevan como titulares de derechos o intereses legítimos individuales │
+│    o colectivos (Iniciadores del procedimiento).                                      │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ b) Los que, sin haber iniciado el procedimiento, tengan derechos que puedan resultar   │
+│    afectados por la decisión que en el mismo se adopte (Titulares de derechos).         │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ c) Aquéllos cuyos intereses legítimos, individuales o colectivos, puedan resultar       │
+│    afectados por la resolución y se personen en el procedimiento en tanto no haya       │
+│    recaído resolución definitiva (Titulares de intereses legítimos sobrevenidos).      │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+</pre></div>
+<div class="callout"><p><strong>Diferencia crítica de examen (Llamamiento de oficio):</strong>
+* A los <strong>titulares de derechos subjetivos</strong> (letra b), la Administración tiene la <strong>obligación inexcusable de emplazarlos y llamarlos de oficio</strong> al expediente si su existencia se deduce de los datos que obran en el mismo. Si no se les emplaza, se genera indefensión material (nulidad de pleno derecho, art. 47.1.a LPACAP).
+* En cambio, a los <strong>titulares de meros intereses legítimos</strong> (letra c), la Administración no está obligada a buscarlos de oficio; para adquirir la condición de interesado deben <strong>personarse voluntariamente</strong> antes de que recaiga resolución definitiva.</p></div>
+<p>El <strong>artículo 4.2 LPACAP</strong> aclara que las asociaciones y organizaciones representativas de intereses económicos y sociales serán titulares de intereses legítimos colectivos en los términos que la ley reconozca.</p>
+<p>Asimismo, el <strong>artículo 4.3 LPACAP</strong> regula la sucesión del interesado: <em>"Cuando la condición de interesado derivase de alguna relación jurídica transmisible, el derechohabiente sucederá en tal condición cualquiera que sea el estado del procedimiento"</em>.</p>
+<h3 class="sub-title">3.2. Pluralidad de interesados y designación de representante (art. 7 Ley 39/2015)</h3>
+<p>Cuando en una solicitud, escrito o comunicación figuren varios interesados (solicitudes colectivas):
+* Las actuaciones a que den lugar se efectuarán con el <strong>representante o el interesado que expresamente hayan señalado</strong>.
+* En defecto de señalamiento expreso, las actuaciones se practicarán con <strong>el que figure en primer término</strong>.</p>
+<h3 class="sub-title">3.3. Nuevos interesados sobrevenidos: Emplazamiento e intervención (art. 8 Ley 39/2015)</h3>
+<p>El artículo 8 LPACAP preceptúa que si durante la tramitación de un procedimiento se advierte la existencia de personas que sean titulares de derechos o intereses legítimos y directos cuya identificación resulte del expediente y que puedan resultar afectados por la resolución, se les comunicará la tramitación de dicho procedimiento para que puedan comparecer en él.</p>
+<hr />
+<h2 class="section-title">4. La representación en el procedimiento administrativo</h2>
+
+<h3 class="sub-title">4.1. Concepto y ámbito de la representación voluntaria (art. 5 Ley 39/2015)</h3>
+<p>Los interesados con capacidad de obrar pueden actuar por medio de representante, entendiéndose con éste las actuaciones administrativas, salvo manifestación expresa en contrario del interesado (art. 5.1 LPACAP). Las personas físicas con capacidad de obrar y las personas jurídicas (siempre que esté previsto en sus estatutos) podrán actuar en representación de otras ante las Administraciones Públicas.</p>
+<p>El <strong>artículo 5.3 LPACAP</strong> establece una distinción nuclear sobre la necesidad de acreditación del poder:</p>
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Trámites donde es OBLIGATORIA la acreditación fehaciente (art. 5.3)</th>
+<th style="text-align: left;">Trámites donde se PRESUME la representación (art. 5.4)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">• Formular solicitudes<br>• Presentar declaraciones responsables o comunicaciones<br>• Interponer recursos administrativos<br>• Desistir de acciones<br>• Renunciar a derechos</td>
+<td style="text-align: left;">• Actos y gestiones de mero trámite procedimental.<br>(Ej. entrega o recogida de documentos simples, subsanaciones menores).</td>
+</tr>
+</tbody>
+</table>
+<p>El <strong>defecto o falta de acreditación de la representación</strong> no impide que se tenga por realizado el acto si se aporta aquélla o se subsana el defecto dentro del <strong>plazo de 10 días</strong> que deberá conceder al efecto el órgano administrativo, o de un plazo superior cuando las circunstancias del caso así lo requieran (art. 5.6 LPACAP).</p>
+<h3 class="sub-title">4.2. Formas de acreditación: El apoderamiento *apud acta* y medios electrónicos</h3>
+<p>De acuerdo con el artículo 5.4 LPACAP, la representación podrá acreditarse mediante:
+1. Cualquier medio válido en Derecho que deje constancia fidedigna (poder notarial, documento público).
+2. <strong>Apoderamiento <em>apud acta</em></strong>:
+   * Por <strong>comparecencia personal</strong> ante la oficina de asistencia en materia de registros de la Administración competente.
+   * Por <strong>comparecencia electrónica</strong> en la correspondiente sede electrónica, haciendo uso de los sistemas de firma electrónica avanzada (certificado digital o Cl@ve).
+3. Mediante acreditación de la inscripción en el <strong>Registro Electrónico de Apoderamientos</strong> de la Administración Pública competente.</p>
+<h3 class="sub-title">4.3. El Registro Electrónico de Apoderamientos (REA) (art. 6 Ley 39/2015)</h3>
+<p>La Administración General del Estado, las Comunidades Autónomas y las Entidades Locales dispondrán de un Registro Electrónico de Apoderamientos general:
+* Los registros electrónicos de apoderamientos territoriales son <strong>interoperables</strong> entre sí y con el Registro de la AGE (Registro Electrónico General de Apoderamientos - REA / @podera).
+* Permiten comprobar válidamente la representación de quienes actúen ante las Administraciones Públicas por medios electrónicos.
+* <strong>Tipología de apoderamientos inscribibles (art. 6.4):</strong>
+  * <strong>Tipo A (Poder general):</strong> Para cualquier actuación administrativa y ante cualquier Administración.
+  * <strong>Tipo B (Poder para un organismo):</strong> Para cualquier actuación administrativa ante una Administración u organismo concreto (ej. ante la Junta de Andalucía).
+  * <strong>Tipo C (Poder para trámites específicos):</strong> Únicamente para la realización de determinados trámites especificados en el poder.
+* <strong>Vigencia temporal:</strong> Los poderes inscritos tendrán una <strong>validez máxima de 5 años</strong> a contar desde la fecha de inscripción. En cualquier momento anterior a la expiración de dicho plazo, el poderdante podrá revocar o prorrogar el poder. Las prórrogas tendrán una validez máxima de 5 años cada una (art. 6.6 LPACAP).</p>
+<hr />
+<h2 class="section-title">5. Derechos de las personas y de los interesados en el procedimiento administrativo</h2>
+
+<p>La Ley 39/2015 distingue nítidamente entre el estatuto general de la <strong>persona</strong> ciudadana que entra en contacto con la Administración (art. 13) y los derechos cualificados del <strong>interesado</strong> en un procedimiento en curso (art. 53).</p>
+<h3 class="sub-title">5.1. El estatuto general de las personas en sus relaciones con la Administración (art. 13 Ley 39/2015)</h3>
+<p>Quienes tienen capacidad de obrar ante las Administraciones Públicas son titulares, en sus relaciones con ellas, de los siguientes derechos:
+* <strong>a) A comunicarse a través del Punto de Acceso General electrónico</strong> de la Administración.
+* <strong>b) A ser asistidos en el uso de medios electrónicos</strong> en sus relaciones con las Administraciones Públicas (especialmente en las oficinas de asistencia en materia de registros).
+* <strong>c) A utilizar las lenguas oficiales</strong> en el territorio de su Comunidad Autónoma, con arreglo a lo previsto en la Ley y en el ordenamiento.
+* <strong>d) Al acceso a la información pública, archivos y registros</strong>, con arreglo a la Ley 19/2013 de Transparencia y la Ley 1/2014 de Andalucía.
+* <strong>e) A ser tratados con respeto y deferencia</strong> por las autoridades y empleados públicos, que habrán de facilitarles el ejercicio de sus derechos y el cumplimiento de sus obligaciones.
+* <strong>f) A exigir las responsabilidades</strong> de las Administraciones Públicas y del personal a su servicio, cuando así corresponda legalmente.
+* <strong>g) A la obtención y utilización de los medios de identificación y firma electrónica</strong> contemplados en la Ley.
+* <strong>h) A la protección de datos de carácter personal</strong>, y en particular a la seguridad y confidencialidad de los datos que figuren en los ficheros, sistemas y aplicaciones de las Administraciones.
+* <strong>i) A cualesquiera otros</strong> que les reconozcan la Constitución y las leyes.</p>
+<h3 class="sub-title">5.2. Los derechos específicos del interesado en el procedimiento (art. 53 Ley 39/2015)</h3>
+<p>Además de los derechos del artículo 13, quienes ostenten la condición de interesados en un procedimiento administrativo tienen derecho a:
+* <strong>Conocer el estado de la tramitación:</strong> Acceder a la información sobre el estado del procedimiento y obtener copias de los documentos contenidos en el expediente electrónico.
+* <strong>Identificar al personal responsable:</strong> Conocer el nombre, apellidos y cargo de las autoridades y empleados públicos bajo cuya responsabilidad se tramite el expediente.
+* <strong>No aportar documentos originales:</strong> Salvo que, con carácter excepcional, la normativa reguladora aplicable establezca lo contrario.
+* <strong>No aportar datos y documentos no exigidos</strong> por las normas o que <strong>ya obren en poder de las Administraciones Públicas</strong> o hayan sido elaborados por ellas (principio <em>once-only</em>).
+* <strong>Formular alegaciones y aportar documentos</strong> en cualquier fase del procedimiento anterior al trámite de audiencia, que deberán ser tenidos en cuenta por el órgano instructor al redactar la propuesta de resolución.
+* <strong>Obtener información y orientación</strong> acerca de los requisitos jurídicos o técnicos que las disposiciones vigentes impongan a los proyectos, actuaciones o solicitudes que se propongan realizar.
+* <strong>Actuar asistidos de asesor</strong> cuando lo consideren conveniente en defensa de sus intereses.
+* <strong>Cumplir las obligaciones de pago</strong> a través de los medios electrónicos previstos legalmente.</p>
+<h3 class="sub-title">5.3. El derecho y la obligación de relacionarse electrónicamente (art. 14 Ley 39/2015)</h3>
+<p>El artículo 14 de la Ley 39/2015 formula la divisoria básica en el acceso digital:</p>
+<div class="diagram-box"><pre>                            RÉGIMEN DEL ARTÍCULO 14 LPACAP
+        ┌────────────────────────────────────────────────────────┐
+        │                                                        │
+        ▼                                                        ▼
+PERSONAS FÍSICAS (Art. 14.1)                           SUJETOS OBLIGADOS (Art. 14.2)
+• Tienen DERECHO a elegir el medio                   • Tienen OBLIGACIÓN legal estricta de
+  (electrónico o papel).                              relacionarse siempre por medios
+• Pueden modificar su elección en cualquier            electrónicos para cualquier trámite.
+  momento del procedimiento.
+</pre></div>
+<p><strong>Sujetos obligados a relacionarse a través de medios electrónicos (art. 14.2):</strong>
+1. Las personas jurídicas.
+2. Las entidades sin personalidad jurídica (comunidades de bienes, UTEs).
+3. Quienes ejerzan una actividad profesional para la que se requiera colegiación obligatoria, para los trámites y actuaciones que realicen con las Administraciones Públicas en ejercicio de dicha actividad profesional (notarios, registradores, abogados, procuradores, arquitectos, etc.).
+4. Quienes representen a un interesado que esté obligado a relacionarse electrónicamente.
+5. Los empleados de las Administraciones Públicas para los trámites y actuaciones que realicen con ellas por razón de su condición de empleado público, en la forma en que se determine reglamentariamente por cada Administración.</p>
+<p>Asimismo, el <strong>artículo 14.3</strong> faculta a las Administraciones para establecer reglamentariamente la obligación de relacionarse electrónicamente para ciertos procedimientos y colectivos de personas físicas que, por razón de su capacidad económica, técnica, dedicación profesional u otros motivos quede acreditado que tienen acceso y disponibilidad de los medios electrónicos necesarios.</p>
+<hr />
+<h2 class="section-title">6. La lengua de los procedimientos administrativos</h2>
+
+<h3 class="sub-title">6.1. Régimen lingüístico en la Administración General del Estado (art. 15 Ley 39/2015)</h3>
+<ul>
+<li>La lengua de los procedimientos tramitados por la <strong>Administración General del Estado</strong> es el <strong>castellano</strong>, lengua oficial del Estado (art. 3 CE).</li>
+<li>No obstante, los interesados que se dirijan a los órganos de la AGE con sede en el territorio de una Comunidad Autónoma con lengua cooficial podrán utilizar también la lengua que sea cooficial en ella. En este caso, el procedimiento se tramitará en la lengua elegida por el interesado.</li>
+<li>Si concurren varios interesados en el procedimiento y existe discrepancia en cuanto a la lengua, el procedimiento se tramitará en castellano, si bien los documentos o testimonios que requieran los interesados se expedirán en la lengua elegida por los mismos.</li>
+</ul>
+<h3 class="sub-title">6.2. Régimen en Comunidades Autónomas con lengua cooficial y traslados</h3>
+<p>En los procedimientos tramitados por las Administraciones de las CCAA y de las Entidades Locales, el uso de la lengua se ajustará a lo previsto en la legislación autonómica correspondiente.</p>
+<p><strong>Efectos fuera del territorio autonómico (art. 15.3 LPACAP):</strong>
+* La Administración pública instructora deberá traducir al castellano los documentos, expedientes o partes de los mismos que deban surtir efectos fuera del territorio de la Comunidad Autónoma.
+* Asimismo, traducirá los documentos dirigidos a los interesados que así lo soliciten expresamente.
+* Si debieran surtir efectos en el territorio de una Comunidad Autónoma donde sea cooficial esa misma lengua distinta del castellano, <strong>no será precisa su traducción</strong>.</p>
+<h3 class="sub-title">6.3. La lengua en la Administración de la Junta de Andalucía</h3>
+<p>En el ámbito de la Junta de Andalucía, al no existir lengua cooficial conforme al Estatuto de Autonomía (art. 10 y 213 EAAnd), la única lengua oficial en que se tramitan los procedimientos y se redactan los actos administrativos es el <strong>castellano</strong>. La Ley 9/2007 (LAJA) garantiza el derecho de la ciudadanía a recibir atención y resoluciones redactadas con claridad, sencillez y lenguaje accesible.</p>
+<hr />
+<h2 class="section-title">7. Términos y plazos en el procedimiento administrativo: Reglas de cómputo</h2>
+
+<p>El régimen de términos y plazos fijado por los <strong>artículos 29, 30 y 31 de la Ley 39/2015</strong> es de obligado y estricto cumplimiento tanto para la Administración como para los interesados (art. 29).</p>
+<h3 class="sub-title">7.1. Cómputo por horas: Reglas, días hábiles y régimen legal (art. 30 Ley 39/2015)</h3>
+<p>La Ley 39/2015 introdujo por primera vez una regulación completa del cómputo por horas:
+* <strong>Habilitación legal:</strong> Solo procede cuando los plazos se señalen expresamente por horas en la ley o disposición reglamentaria.
+* <strong>Horas hábiles:</strong> Salvo que por Ley o en el Derecho de la Unión Europea se disponga otro cómputo, se entiende que son hábiles <strong>todas las horas del día que formen parte de un día hábil</strong>.
+* <strong>Duración máxima:</strong> Los plazos expresados por horas <strong>no podrán tener una duración superior a 24 horas</strong>, en cuyo caso deberán expresarse en días (art. 30.1).
+* <strong>Regla de cómputo:</strong> Se cuentan <strong>de hora en hora y de minuto en minuto</strong>, desde la hora y minuto en que tenga lugar la notificación o publicación del acto de que se trate.</p>
+<h3 class="sub-title">7.2. Cómputo por días: La exclusión de los sábados, domingos y festivos</h3>
+<p>El <strong>artículo 30.2 LPACAP</strong> operó un cambio sustancial respecto a la normativa previa (Ley 30/1992):
+* Siempre que por Ley o en el Derecho de la Unión Europea no se exprese otro cómputo, cuando los plazos se señalen por días, <strong>se entiende que éstos son hábiles</strong>.
+* <strong>Días inhábiles:</strong> Se excluyen del cómputo los <strong>sábados, los domingos y los declarados festivos</strong>.
+* <strong>Plazos en días naturales:</strong> Solo cuando una Ley o el Derecho de la Unión Europea lo disponga expresamente, los plazos se computarán por días naturales. En tal circunstancia, se hará constar esta particularidad en las correspondientes notificaciones.
+* <strong>Día inicial del cómputo (<em>dies a quo</em>):</strong> Los plazos fijados por días se computarán a partir del <strong>día siguiente a aquel en que tenga lugar la notificación o publicación</strong> del acto de que se trate, o desde el siguiente a aquel en que se produzca la estimación o la desestimación por silencio administrativo (art. 30.3).</p>
+<h3 class="sub-title">7.3. Cómputo por meses y años: Regla *de fecha a fecha* y supuestos especiales</h3>
+<ul>
+<li><strong>Cómputo <em>de fecha a fecha</em> (art. 30.4):</strong> Si el plazo se fija en meses o años, se computará a partir del <strong>día siguiente a aquel en que tenga lugar la notificación o publicación</strong> del acto, o desde el siguiente a aquel en que se produzca el silencio administrativo.</li>
+<li><strong>Día final del cómputo (<em>dies ad quem</em>):</strong> El plazo concluirá el <strong>mismo día ordinal</strong> en que se produjo la notificación o publicación en el mes o año de vencimiento.</li>
+<li><em>Ejemplo:</em> Si una resolución se notifica el 15 de marzo y el plazo de recurso es de un mes, el cómputo se inicia el 16 de marzo y el plazo expira el 15 de abril a las 23:59:59 horas.</li>
+<li><strong>Inexistencia de día equivalente en el mes de vencimiento:</strong> Si en el mes de vencimiento no hubiera día equivalente a aquel en que comienza el cómputo, se entenderá que el plazo expira el <strong>último día del mes</strong>.</li>
+<li><em>Ejemplo:</em> Notificación practicada el 31 de enero con plazo de un mes. Como febrero no tiene día 31 (ni 29 o 30 en año no bisiesto), el plazo expira el 28 de febrero (o 29 en bisiesto).</li>
+<li><strong>Vencimiento en día inhábil (art. 30.5):</strong> Cuando el último día del plazo sea inhábil, se entenderá <strong>prorrogado al primer día hábil siguiente</strong>.</li>
+</ul>
+<div class="diagram-box"><pre>                         RESUMEN DEL CÓMPUTO DE PLAZOS
+┌─────────────┬─────────────────────────────────┬──────────────────────────────────────────┐
+│ UNIDAD      │ DÍAS / HORAS INCLUIDAS          │ REGLA DEL DÍA INICIAL (DIES A QUO)        │
+├─────────────┼─────────────────────────────────┼──────────────────────────────────────────┤
+│ Horas       │ Todas las horas de días hábiles │ Hora y minuto exactos de notificación    │
+│             │ (máx. 24 h)                     │                                          │
+├─────────────┼─────────────────────────────────┼──────────────────────────────────────────┤
+│ Días        │ Días hábiles (excluye sábados,  │ Día siguiente a notificación/publicación │
+│             │ domingos y festivos)            │ o producción de silencio                 │
+├─────────────┼─────────────────────────────────┼──────────────────────────────────────────┤
+│ Meses /     │ De fecha a fecha                │ Día siguiente a notificación/publicación │
+│ Años        │ (último día del mes si falta)   │ o producción de silencio                 │
+└─────────────┴─────────────────────────────────┴──────────────────────────────────────────┘
+</pre></div>
+<h3 class="sub-title">7.4. Calendario oficial de días inhábiles: Efectos en registros y sedes electrónicas (art. 31 Ley 39/2015)</h3>
+<ul>
+<li><strong>Principio de territorialidad cruzada (art. 30.6):</strong> Cuando un día sea hábil en el municipio o Comunidad Autónoma en que residiese el interesado, e inhábil en la sede del órgano administrativo, o a la inversa, <strong>se considerará inhábil en todo caso</strong>.</li>
+<li><strong>Calendario de días inhábiles (art. 30.7):</strong> La Administración General del Estado y las Administraciones de las Comunidades Autónomas, con sujeción al calendario laboral oficial, fijarán en su respectivo ámbito el calendario de días inhábiles para el cómputo de plazos. El calendario aprobado por las CCAA comprenderá los días inhábiles de las Entidades Locales correspondientes a su ámbito territorial y se publicará antes del comienzo de cada año en el diario oficial.</li>
+<li><strong>Cómputo en registros electrónicos (art. 31.2 LPACAP):</strong></li>
+<li>Los registros electrónicos permitirán la presentación de documentos <strong>todos los días del año durante las 24 horas</strong>.</li>
+<li>La presentación en un día inhábil se entenderá realizada en la <strong>primera hora del primer día hábil siguiente</strong>, salvo que una norma permita expresamente la recepción en día inhábil.</li>
+<li>El cómputo de los plazos que deban cumplir las Administraciones Públicas vendrá determinado por la fecha y hora de presentación en el registro electrónico de cada Administración.</li>
+<li>La sede electrónica informará de la fecha y hora oficial, así como de los días declarados inhábiles.</li>
+</ul>
+<hr />
+<h2 class="section-title">8. Ampliación y tramitación de urgencia de los plazos</h2>
+
+<h3 class="sub-title">8.1. Ampliación general de plazos: Supuestos, límites y régimen de impugnación (art. 32 Ley 39/2015)</h3>
+<p>La Administración, salvo precepto en contrario, podrá conceder de oficio o a petición de los interesados una ampliación de los plazos establecidos:
+* <strong>Límite máximo:</strong> No podrá exceder de la <strong>mitad de los mismos</strong> (ej. si el plazo original es de 10 días, la ampliación máxima será de 5 días).
+* <strong>Condición sustancial:</strong> Que las circunstancias lo aconsejen y con ello no se perjudiquen derechos de tercero.
+* <strong>Condición procedimental temporal:</strong> El acuerdo de ampliación deberá producirse, en todo caso, <strong>antes del vencimiento del plazo</strong> de que se trate. En ningún caso podrá ser objeto de ampliación un plazo ya vencido.
+* <strong>Régimen de impugnación:</strong> Los acuerdos sobre ampliación de plazos o sobre su denegación <strong>no serán susceptibles de recurso</strong>, sin perjuicio del procedente contra la resolución que ponga fin al procedimiento.</p>
+<div class="callout"><p><strong>Incidencias técnicas en sedes electrónicas (art. 32.4 LPACAP):</strong>
+Cuando una incidencia técnica en los sistemas y aplicaciones de las Administraciones Públicas haya imposibilitado el funcionamiento ordinario del registro o la sede, la Administración podrá determinar una ampliación de los plazos no vencidos, debiendo publicar en la sede electrónica tanto la incidencia acontecida como la ampliación concreta del plazo no vencido.</p></div>
+<h3 class="sub-title">8.2. Tramitación de urgencia: Reducción de plazos a la mitad (art. 33 Ley 39/2015)</h3>
+<p>Cuando razones de interés público lo aconsejen, se podrá acordar, de oficio o a petición del interesado, la aplicación al procedimiento de la tramitación de urgencia:
+* <strong>Efectos:</strong> En virtud de la cual se <strong>reducirán a la mitad los plazos</strong> establecidos para el procedimiento ordinario.
+* <strong>Excepciones expresas:</strong> Se exceptúan de la reducción los plazos relativos a la <strong>presentación de solicitudes y recursos</strong>.
+* <strong>Régimen de impugnación:</strong> Contra el acuerdo que declare la aplicación de la tramitación de urgencia <strong>no cabrá recurso alguno</strong>, sin perjuicio del procedente contra la resolución que ponga fin al procedimiento.</p>
+<hr />
+<h2 class="section-title">9. Conclusiones y aplicación práctica en la Administración de la Junta de Andalucía</h2>
+
+<p>El régimen formal del procedimiento administrativo común establecido en los artículos 1 al 33 de la Ley 39/2015 representa la infraestructura jurídica básica de la actuación del personal funcionario del Cuerpo Técnico de la Junta de Andalucía:
+1. Asegura el estricto cumplimiento del <strong>principio de legalidad y la proscripción de la indefensión</strong> ciudadana (art. 105 c y 24 CE).
+2. Transforma la relación administrativa tradicional en un modelo <strong>íntegramente digital por defecto</strong>, articulado en torno a la sede electrónica general de la Junta de Andalucía, el Registro Electrónico Único y el Registro Electrónico de Apoderamientos.
+3. Exige a las unidades administrativas una constante vigilancia sobre las <strong>reglas de cómputo de plazos</strong>, asumiendo la consideración de los sábados como inhábiles, el régimen <em>de fecha a fecha</em> y la obligación de emplazar de oficio a los titulares de derechos subjetivos, garantizando la eficacia gestora y la plena validez de los actos administrativos autonómicos.</p>
+<hr />
+<h2 class="section-title">10. Anexo: Tabla sinóptica y mapa conceptual del Tema 11</h2>
+
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Materia</th>
+<th style="text-align: left;">Precepto LPACAP</th>
+<th style="text-align: left;">Regla General</th>
+<th style="text-align: left;">Excepciones / Particularidades</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Capacidad de Obrar</strong></td>
+<td style="text-align: left;">Art. 3</td>
+<td style="text-align: left;">Personas físicas/jurídicas con capacidad civil.</td>
+<td style="text-align: left;">Menores de edad para derechos permitidos sin tutela. Uniones sin personalidad si la ley lo declara.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Concepto de Interesado</strong></td>
+<td style="text-align: left;">Art. 4</td>
+<td style="text-align: left;">Iniciadores, titulares de derechos e intereses legítimos.</td>
+<td style="text-align: left;">Titulares de derechos: llamamiento forzoso de oficio. Titulares de intereses: personación voluntaria.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Acreditación de Representación</strong></td>
+<td style="text-align: left;">Art. 5</td>
+<td style="text-align: left;">Presunción en actos de mero trámite.</td>
+<td style="text-align: left;">Obligatoria para solicitudes, recursos, desistir y renunciar. Subsanación en 10 días.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Registro de Apoderamientos</strong></td>
+<td style="text-align: left;">Art. 6</td>
+<td style="text-align: left;">Tipos A (general), B (organismo) y C (trámites).</td>
+<td style="text-align: left;">Validez máxima de 5 años renovable por periodos de hasta 5 años. Interoperable.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Relación Electrónica</strong></td>
+<td style="text-align: left;">Art. 14</td>
+<td style="text-align: left;">Personas físicas: derecho a elegir medio.</td>
+<td style="text-align: left;">Sujetos obligados por ley (personas jurídicas, profesionales colegiados, funcionarios).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lengua</strong></td>
+<td style="text-align: left;">Art. 15</td>
+<td style="text-align: left;">Castellano en AGE y Andalucía. Cooficial en CCAA.</td>
+<td style="text-align: left;">Traducción preceptiva si surte efectos fuera y no hay misma lengua cooficial.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cómputo por Días</strong></td>
+<td style="text-align: left;">Art. 30.2</td>
+<td style="text-align: left;">Días hábiles (excluye sábados, domingos y festivos).</td>
+<td style="text-align: left;">Días naturales solo si lo prevé una Ley o norma UE expresa. <em>Dies a quo</em>: día siguiente.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cómputo por Meses / Años</strong></td>
+<td style="text-align: left;">Art. 30.4</td>
+<td style="text-align: left;">De fecha a fecha desde el día siguiente.</td>
+<td style="text-align: left;">Si falta día equivalente, último día del mes. Si finaliza en inhábil, pasa al primer hábil.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ampliación de Plazos</strong></td>
+<td style="text-align: left;">Art. 32</td>
+<td style="text-align: left;">Máximo la mitad del plazo. Siempre antes de expirar.</td>
+<td style="text-align: left;">Plazo ya vencido no prorrogable. Incurrible en vía de recurso.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tramitación de Urgencia</strong></td>
+<td style="text-align: left;">Art. 33</td>
+<td style="text-align: left;">Reducción a la mitad de los plazos.</td>
+<td style="text-align: left;">No se reducen plazos de solicitudes ni recursos. Incurrible en vía de recurso.</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

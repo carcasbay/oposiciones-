@@ -482,13 +482,253 @@
   {
     "id": 1,
     "numero": 1,
+    "titulo": "La Constitución Española de 1978: Principios y valores superiores. Derechos y deberes fundamentales. Garantías y suspensión. Reforma constitucional",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 2,
+    "numero": 2,
+    "titulo": "Los órganos constitucionales: La Corona. Cortes Generales. Gobierno y Administración. Poder Judicial. Tribunal Constitucional. Defensor del Pueblo. Tribunal de Cuentas",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 3,
+    "numero": 3,
+    "titulo": "La organización territorial del Estado: Principios constitucionales. Comunidades Autónomas: estatutos de autonomía y distribución competencial. Relaciones interadministrativas",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 4,
+    "numero": 4,
+    "titulo": "La Administración Local en Andalucía: Tipología de entidades locales. Municipio: organización, competencias y funcionamiento. Provincia. Relaciones con la Junta de Andalucía",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 5,
+    "numero": 5,
+    "titulo": "El Estatuto de Autonomía para Andalucía: Proceso autonómico. Estructura y títulos. Principios rectores. Derechos sociales y garantías. Sistema competencial. Reforma estatutaria",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 6,
+    "numero": 6,
+    "titulo": "Organización institucional de la Junta de Andalucía (I): Parlamento de Andalucía. Tribunal Superior de Justicia de Andalucía. Defensor del Pueblo Andaluz. Cámara de Cuentas",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 7,
+    "numero": 7,
+    "titulo": "Organización institucional de la Junta de Andalucía (II): Presidencia de la Junta. Consejo de Gobierno. Consejo Consultivo. Consejo Económico y Social",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 8,
+    "numero": 8,
+    "titulo": "La Administración de la Junta de Andalucía: Principios. Órganos centrales (Consejerías, Viceconsejerías, DG, SG). Organización territorial (Delegaciones del Gobierno y Territoriales). Sector público instrumental (agencias)",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 9,
+    "numero": 9,
+    "titulo": "Fuentes del Derecho en Andalucía: Leyes del Parlamento. Decretos-leyes y Decretos legislativos. Reglamentos de la Junta: potestad, jerarquía y procedimiento de elaboración",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 10,
+    "numero": 10,
+    "titulo": "El acto administrativo: Concepto, elementos y clases. Validez: forma y motivación. Eficacia: notificación y publicación. Ejecutividad y ejecución forzosa",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 11,
+    "numero": 11,
+    "titulo": "El procedimiento administrativo común (I): Principios informadores. Capacidad y representación. Interesados. Derechos de las personas. Lengua. Términos y plazos",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 12,
+    "numero": 12,
+    "titulo": "El procedimiento administrativo común (II): Fases del procedimiento: iniciación, ordenación, instrucción y finalización. El deber de resolver y el silencio administrativo. Caducidad, desistimiento y renuncia",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 13,
+    "numero": 13,
+    "titulo": "Revisión de los actos en vía administrativa: Nulidad de pleno derecho y anulabilidad. Conservación del acto. Revisión de oficio y lesividad. Recursos administrativos. Jurisdicción contencioso-administrativa",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 14,
+    "numero": 14,
+    "titulo": "La responsabilidad patrimonial de las Administraciones Públicas: Fundamento constitucional y marco normativo. Requisitos de la lesión indemnizable. Procedimiento ordinario y abreviado. Responsabilidad de autoridades y personal",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 15,
+    "numero": 15,
+    "titulo": "Los contratos del sector público (I): Marco normativo estatal (Ley 9/2017). Principios de la contratación pública. Ámbito subjetivo. Tipos contractuales. Objeto, precio y valor estimado. Pliegos (PCAP y PPT)",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 16,
+    "numero": 16,
+    "titulo": "Los contratos del sector público (II): Procedimientos de adjudicación. Formalización. Ejecución, modificación y extinción: resolución y cesión de contratos",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 17,
+    "numero": 17,
+    "titulo": "El patrimonio de la Comunidad Autónoma de Andalucía: Marco legal (Ley 4/1986). Bienes demaniales y patrimoniales. Adquisición, afectación, adscripción, uso, cesión y enajenación de bienes de la Junta",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 18,
+    "numero": 18,
+    "titulo": "El personal al servicio de la Administración de la Junta de Andalucía (I): La Ley 5/2023 de la Función Pública de Andalucía. Clases de personal. Acceso al empleo público y OEP. Planificación, provisión y carrera profesional",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 19,
+    "numero": 19,
+    "titulo": "El personal al servicio de la Administración de la Junta de Andalucía (II): Situaciones administrativas. Derechos, deberes y código de conducta. Régimen disciplinario. Régimen de incompatibilidades",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 20,
+    "numero": 20,
+    "titulo": "El sistema de Seguridad Social del personal al servicio de las Administraciones Públicas: Régimen General y Regímenes Especiales. Afiliación, altas, bajas y cotización. La acción protectora: contingencias comunes y profesionales, prestaciones económicas e incapacidades",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 21,
+    "numero": 21,
+    "titulo": "La Hacienda Pública de la Junta de Andalucía: Texto Refundido de la Ley General de la Hacienda Pública de la Junta",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 22,
+    "numero": 22,
+    "titulo": "Los Presupuestos Generales de la Comunidad Autónoma de Andalucía: Concepto, estructura y contenido",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 23,
+    "numero": 23,
+    "titulo": "La gestión del gasto público y su control: Fases, control interno y control externo",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 24,
+    "numero": 24,
+    "titulo": "La Administración electrónica en la Junta de Andalucía: Marco legal, sedes, identificación y registro",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 25,
+    "numero": 25,
+    "titulo": "Protección de datos personales y seguridad de la información: RGPD, LOPDGDD y ENS",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 26,
+    "numero": 26,
+    "titulo": "Transparencia pública, acceso a la información y buen gobierno: Ley 19/2013 y Ley 1/2014",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 27,
+    "numero": 27,
+    "titulo": "Calidad en los servicios públicos, simplificación y evaluación de políticas públicas",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 28,
+    "numero": 28,
+    "titulo": "La prevención de riesgos laborales en la Junta de Andalucía: Ley 31/1995 y Decreto 304/2011",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 29,
+    "numero": 29,
+    "titulo": "La igualdad de género en la sociedad contemporánea: Conceptos, discriminaciones y transversalidad",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 30,
+    "numero": 30,
+    "titulo": "Igualdad de género y lucha contra la violencia machista en Andalucía: Marco normativo, IAM y presupuesto G+",
+    "totalPreguntas": 15,
+    "bloque": "comun",
+    "oposicionId": "andalucia"
+  },
+  {
+    "id": 31,
+    "numero": 1,
     "titulo": "La Constitución Española y la legislación educativa. Derechos y deberes del menor en el ámbito estatal",
     "totalPreguntas": 15,
     "bloque": "especifico",
     "oposicionId": "andalucia"
   },
   {
-    "id": 2,
+    "id": 32,
     "numero": 2,
     "titulo": "El Estatuto de Autonomía para Andalucía y la legislación educativa andaluza. Derechos y deberes del menor en el ámbito autonómico",
     "totalPreguntas": 15,
@@ -496,7 +736,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 3,
+    "id": 33,
     "numero": 3,
     "titulo": "La responsabilidad penal de los menores. Marco normativo y medidas judiciales",
     "totalPreguntas": 15,
@@ -504,7 +744,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 4,
+    "id": 34,
     "numero": 4,
     "titulo": "Evolución de la educación. Espacios educativos fuera de la escuela. La ciudad educadora y la compensación educativa",
     "totalPreguntas": 15,
@@ -512,7 +752,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 5,
+    "id": 35,
     "numero": 5,
     "titulo": "La Pedagogía Social y la Educación Social. Paradigmas teóricos y modelos de intervención",
     "totalPreguntas": 15,
@@ -520,7 +760,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 6,
+    "id": 36,
     "numero": 6,
     "titulo": "La planificación y el desarrollo curricular. Los niveles de concreción curricular. El Proyecto Educativo de Centro",
     "totalPreguntas": 15,
@@ -528,7 +768,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 7,
+    "id": 37,
     "numero": 7,
     "titulo": "La organización y funcionamiento de los centros educativos. Órganos de gobierno y coordinación docente. El educador/a social en el centro",
     "totalPreguntas": 15,
@@ -536,7 +776,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 8,
+    "id": 38,
     "numero": 8,
     "titulo": "El desarrollo en la primera infancia (0 a 6 años). Acompañamiento socioeducativo y detección temprana",
     "totalPreguntas": 15,
@@ -544,7 +784,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 9,
+    "id": 39,
     "numero": 9,
     "titulo": "El desarrollo en la niñez intermedia (6 a 12 años). Lenguaje, desarrollo social, motor, afectivo y pensamiento concreto",
     "totalPreguntas": 15,
@@ -552,7 +792,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 10,
+    "id": 40,
     "numero": 10,
     "titulo": "El desarrollo en la adolescencia y primera juventud. Desarrollo cognitivo, afectivo, sexual, moral y social. Acompañamiento socioeducativo",
     "totalPreguntas": 15,
@@ -560,7 +800,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 11,
+    "id": 41,
     "numero": 11,
     "titulo": "Socialización y aprendizaje. La escuela como institución socializadora. Movimientos de renovación pedagógica y enfoque sistémico",
     "totalPreguntas": 15,
@@ -568,7 +808,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 12,
+    "id": 42,
     "numero": 12,
     "titulo": "La dimensión moral de la educación. El desarrollo del juicio moral. Educación en valores, ciudadanía y pensamiento crítico",
     "totalPreguntas": 15,
@@ -576,7 +816,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 13,
+    "id": 43,
     "numero": 13,
     "titulo": "Educación para la convivencia y para la paz. El Proyecto Educativo y el ROF. Planes y programas para la mejora de la convivencia",
     "totalPreguntas": 15,
@@ -584,7 +824,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 14,
+    "id": 44,
     "numero": 14,
     "titulo": "Educación para la igualdad y en la diversidad. Eliminación de prejuicios sexistas y xenófobos. Coeducación y prevención de la radicalización",
     "totalPreguntas": 15,
@@ -592,7 +832,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 15,
+    "id": 45,
     "numero": 15,
     "titulo": "Educación para la salud. La escuela promotora de salud y bienestar emocional. Educación afectivo-sexual y prevención de adicciones",
     "totalPreguntas": 15,
@@ -600,7 +840,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 16,
+    "id": 46,
     "numero": 16,
     "titulo": "Educación para el ocio y el tiempo libre. Modelos, recursos y agentes de intervención socioeducativa",
     "totalPreguntas": 15,
@@ -608,7 +848,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 17,
+    "id": 47,
     "numero": 17,
     "titulo": "Las habilidades y competencias sociales. Asertividad y estilos de comunicación. Técnicas asertivas, regulación de conflictos y mediación",
     "totalPreguntas": 15,
@@ -616,7 +856,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 18,
+    "id": 48,
     "numero": 18,
     "titulo": "Aspectos e implicaciones socioeducativas de la diversidad. La escuela inclusiva y programas de atención a contextos desfavorecidos",
     "totalPreguntas": 15,
@@ -624,7 +864,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 19,
+    "id": 49,
     "numero": 19,
     "titulo": "El trabajo socioeducativo con alumnado en situación de riesgo y/o desamparo social. Concepto y evaluación del riesgo social. Acompañamiento, mentoría y conflicto social",
     "totalPreguntas": 15,
@@ -632,7 +872,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 20,
+    "id": 50,
     "numero": 20,
     "titulo": "Absentismo escolar y su incidencia en el ámbito educativo, social y personal. Normativa, instituciones y colaboración social",
     "totalPreguntas": 15,
@@ -640,7 +880,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 21,
+    "id": 51,
     "numero": 21,
     "titulo": "Causas del absentismo escolar. Estructura, agentes y modelos de coordinación socioeducativa en Andalucía",
     "totalPreguntas": 15,
@@ -648,7 +888,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 22,
+    "id": 52,
     "numero": 22,
     "titulo": "El maltrato infantil y juvenil. Tipologías de desprotección. El Sistema SIMIA en Andalucía y el protocolo en el ámbito educativo",
     "totalPreguntas": 15,
@@ -656,7 +896,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 23,
+    "id": 53,
     "numero": 23,
     "titulo": "Organización y estructura de los servicios de orientación y apoyo técnico en el sistema educativo andaluz",
     "totalPreguntas": 15,
@@ -664,7 +904,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 24,
+    "id": 54,
     "numero": 24,
     "titulo": "El educador o educadora social como apoyo técnico. El modelo de asesoramiento colaborativo y el trabajo multidisciplinar",
     "totalPreguntas": 15,
@@ -672,7 +912,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 25,
+    "id": 55,
     "numero": 25,
     "titulo": "Competencias profesionales, modelos y principios éticos y deontológicos de la Educación Social",
     "totalPreguntas": 15,
@@ -680,7 +920,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 26,
+    "id": 56,
     "numero": 26,
     "titulo": "El educador o educadora social en el ámbito educativo formal. Funciones, modelos de inserción y buenas prácticas en Andalucía",
     "totalPreguntas": 15,
@@ -688,7 +928,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 27,
+    "id": 57,
     "numero": 27,
     "titulo": "Métodos y técnicas de intervención socioeducativa. El Estudio de Casos y el Proyecto Educativo Individualizado (PEI)",
     "totalPreguntas": 15,
@@ -696,7 +936,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 28,
+    "id": 58,
     "numero": 28,
     "titulo": "La investigación en Educación Social. Métodos y técnicas. La Investigación-Acción Participativa (IAP)",
     "totalPreguntas": 15,
@@ -704,7 +944,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 29,
+    "id": 59,
     "numero": 29,
     "titulo": "El Sistema Público de Servicios Sociales de Andalucía. Estructura, prestaciones, el PRISO y la Historia Social Única Electrónica (CoheSSión)",
     "totalPreguntas": 15,
@@ -712,7 +952,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 30,
+    "id": 60,
     "numero": 30,
     "titulo": "La educación inclusiva y las Comunidades de Aprendizaje. Aprendizaje dialógico y Actuaciones Educativas de Éxito",
     "totalPreguntas": 15,
@@ -720,7 +960,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 31,
+    "id": 61,
     "numero": 31,
     "titulo": "La evaluación en el ámbito socioeducativo. Modelos, técnicas e indicadores de evaluación de programas y proyectos",
     "totalPreguntas": 15,
@@ -728,7 +968,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 32,
+    "id": 62,
     "numero": 32,
     "titulo": "La intervención socioeducativa con familias. Modelos, parentalidad positiva y compromisos educativos en Andalucía",
     "totalPreguntas": 15,
@@ -736,7 +976,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 33,
+    "id": 63,
     "numero": 33,
     "titulo": "La dinamización sociofamiliar en los centros educativos. AMPAS, escuelas de familias y participación comunitaria",
     "totalPreguntas": 15,
@@ -744,7 +984,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 34,
+    "id": 64,
     "numero": 34,
     "titulo": "El educador o educadora social en contextos multiculturales. Diversidad cultural e intervención con la comunidad gitana en Andalucía",
     "totalPreguntas": 15,
@@ -752,7 +992,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 35,
+    "id": 65,
     "numero": 35,
     "titulo": "La pedagogía de grupos. Estructura, dinámicas y técnicas de intervención grupal. Modelos de Tuckman y Moreno",
     "totalPreguntas": 15,
@@ -760,7 +1000,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 36,
+    "id": 66,
     "numero": 36,
     "titulo": "Las redes sociales y la intervención comunitaria en contextos urbanos y rurales en Andalucía",
     "totalPreguntas": 15,
@@ -768,7 +1008,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 37,
+    "id": 67,
     "numero": 37,
     "titulo": "Agentes de colaboración social, voluntariado y organizaciones no gubernamentales (ONGs). Marco normativo andaluz",
     "totalPreguntas": 15,
@@ -776,7 +1016,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 38,
+    "id": 68,
     "numero": 38,
     "titulo": "El papel del educador o educadora social en la participación del alumnado. Asociacionismo escolar y modelos de participación infantil y juvenil",
     "totalPreguntas": 15,
@@ -784,7 +1024,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 39,
+    "id": 69,
     "numero": 39,
     "titulo": "Educación de personas adultas y educación permanente. Marco normativo andaluz, modelos de intervención y desarrollo comunitario",
     "totalPreguntas": 15,
@@ -792,7 +1032,7 @@
     "oposicionId": "andalucia"
   },
   {
-    "id": 40,
+    "id": 70,
     "numero": 40,
     "titulo": "Las zonas en riesgo de exclusión social. Iniciativas institucionales y la Estrategia Regional Andaluza para la Cohesión e Inclusión Social (ERACIS)",
     "totalPreguntas": 15,

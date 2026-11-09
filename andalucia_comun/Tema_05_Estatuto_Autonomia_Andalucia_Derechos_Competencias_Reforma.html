@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TEMA 5: El Estatuto de Autonomía para Andalucía: Proceso Autonómico. Estructura y Títulos. Principios Rectores de las Políticas Públicas. Derechos Sociales, Deberes y Garantías. El Sistema de Competencias de la Comunidad Autónoma. Procedimiento de Reforma del Estatuto</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (Grupo A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #065f46;
+      font-weight: 500;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #059669;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #065f46;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #059669;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #059669;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #059669;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout p {
+    margin: 0;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #065f46;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #d1fae5;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f0fdf4;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO COMÚN — JUNTA DE ANDALUCÍA (GRUPO A2)</div>
+  <h1>TEMA 5</h1>
+  <h2>El Estatuto de Autonomía para Andalucía: Proceso Autonómico. Estructura y Títulos. Principios Rectores de las Políticas Públicas. Derechos Sociales, Deberes y Garantías. El Sistema de Competencias de la Comunidad Autónoma. Procedimiento de Reforma del Estatuto</h2>
+  <div class="meta-box">
+    <p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo / Cuerpo General (A2)</p>
+    <p><strong>Entidad Convocante:</strong> Junta de Andalucía (Consejería de Justicia, Administración Local y Función Pública / IAAP)</p>
+    <p><strong>Bloque:</strong> Programa de Materias Comunes</p>
+    <p><strong>Tema Oficial:</strong> Tema 5</p>
+    <p><strong>Normativa Clave de Referencia:</strong></p>
+    <p>Ley Orgánica 2/2007, de 19 de marzo, de reforma del Estatuto de Autonomía para Andalucía (BOJA núm. 56, de 20 de marzo de 2007; BOE núm. 68, de 20 de marzo de 2007).</p>
+    <p>Constitución Española de 1978: Artículos 2, 147, 151 y 152.</p>
+    <p>Ley Orgánica 6/1981, de 30 de diciembre, del Estatuto de Autonomía para Andalucía (Estatuto de Carmona, derogado).</p>
+    <p>Ley Orgánica 2/1979, de 3 de octubre, del Tribunal Constitucional (LOTC).</p>
+
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General de TEMA 5</div>
+  <div class="toc-item level-1">1. <strong>El proceso autonómico andaluz: Génesis histórica y conquista del autogobierno</strong></div>
+  <div class="toc-item level-2">1.1. Los antecedentes del andalucismo histórico y Blas Infante</div>
+  <div class="toc-item level-2">1.2. La movilización popular del 4 de diciembre de 1977 y el Pacto de Antequera de 1978</div>
+  <div class="toc-item level-2">1.3. La conquista de la vía del artículo 151 CE: El referéndum del 28 de febrero de 1980</div>
+  <div class="toc-item level-2">1.4. El Estatuto de Carmona de 1981 y el proceso de reforma integral de 2007</div>
+  <div class="toc-item level-1">2. <strong>Estructura general, títulos y valores del Estatuto de Autonomía de 2007</strong></div>
+  <div class="toc-item level-2">2.1. El Preámbulo: Identidad andaluza y memoria histórica</div>
+  <div class="toc-item level-2">2.2. El Título Preliminar: Definición de Andalucía, valores, símbolos y capitalidad (arts. 1 a 11)</div>
+  <div class="toc-item level-2">2.3. Estructura sistemática del articulado: Los diez Títulos estatutarios</div>
+  <div class="toc-item level-1">3. <strong>Principios rectores de las políticas públicas</strong></div>
+  <div class="toc-item level-2">3.1. Naturaleza y eficacia jurídica de los principios rectores</div>
+  <div class="toc-item level-2">3.2. Análisis del catálogo del artículo 37 del Estatuto de Autonomía</div>
+  <div class="toc-item level-1">4. <strong>Derechos sociales, deberes y garantías de la ciudadanía andaluza (Título I EA)</strong></div>
+  <div class="toc-item level-2">4.1. El Título I como carta avanzada de derechos de la ciudadanía</div>
+  <div class="toc-item level-2">4.2. Catálogo de derechos fundamentales y sociales:</div>
+  <div class="toc-item level-3">4.2.1. Igualdad de género y no discriminación (arts. 15 y 16)</div>
+  <div class="toc-item level-3">4.2.2. Protección de la familia, menores y mayores (arts. 17 a 19)</div>
+  <div class="toc-item level-3">4.2.3. Educación, formación y cultura (arts. 21 y 33)</div>
+  <div class="toc-item level-3">4.2.4. Salud y servicios sanitarios (art. 22)</div>
+  <div class="toc-item level-3">4.2.5. Servicios sociales y renta básica garantizada (art. 23)</div>
+  <div class="toc-item level-3">4.2.6. Personas con discapacidad y dependencia (art. 24)</div>
+  <div class="toc-item level-3">4.2.7. Vivienda, medio ambiente y consumidores (arts. 25, 27 y 28)</div>
+  <div class="toc-item level-3">4.2.8. Buena administración y acceso a la documentación pública (art. 31)</div>
+  <div class="toc-item level-2">4.3. Deberes de los ciudadanos andaluces (arts. 34 a 36)</div>
+  <div class="toc-item level-2">4.4. El sistema estatutario de garantías (artículo 41): Eficacia, reserva de ley y tutela</div>
+  <div class="toc-item level-1">5. <strong>El sistema de competencias de la Comunidad Autónoma de Andalucía (Título II EA)</strong></div>
+  <div class="toc-item level-2">5.1. Tipología de competencias: Exclusivas, compartidas, ejecutivas y relaciones con la UE (art. 42)</div>
+  <div class="toc-item level-2">5.2. El principio de alcance competencial y la doctrina del Tribunal Constitucional (STC 31/2010)</div>
+  <div class="toc-item level-2">5.3. Principales sectores competenciales asumidos en el Estatuto:</div>
+  <div class="toc-item level-3">5.3.1. Educación, universidades e investigación (arts. 52 y 53)</div>
+  <div class="toc-item level-3">5.3.2. Salud, sanidad y farmacia (art. 55)</div>
+  <div class="toc-item level-3">5.3.3. Servicios sociales, igualdad y políticas de género (arts. 61 y 73)</div>
+  <div class="toc-item level-3">5.3.4. Agricultura, ganadería y desarrollo rural (art. 48)</div>
+  <div class="toc-item level-3">5.3.5. Aguas y dominio hidráulico: El artículo 50 y la STC 30/2011 sobre el Guadalquivir</div>
+  <div class="toc-item level-3">5.3.6. Régimen local y ordenación del territorio (arts. 56 y 60)</div>
+  <div class="toc-item level-3">5.3.7. Función pública y autoorganización (art. 76)</div>
+  <div class="toc-item level-1">6. <strong>El procedimiento de reforma del Estatuto de Autonomía (Título X EA)</strong></div>
+  <div class="toc-item level-2">6.1. La iniciativa de reforma estatutaria (artículo 248.1 EA)</div>
+  <div class="toc-item level-2">6.2. El procedimiento ordinario de reforma (artículo 248 EA)</div>
+  <div class="toc-item level-2">6.3. El procedimiento simplificado de reforma (artículo 249 EA)</div>
+  <div class="toc-item level-2">6.4. Los límites y cláusulas de salvaguarda de la reforma (artículo 250 EA)</div>
+  <div class="toc-item level-1">7. <strong>Conclusión y trascendencia en la actividad del personal técnico de la Junta de Andalucía</strong></div>
+  <div class="toc-item level-1">8. <strong>Anexo: Mapa conceptual de la estructura del Estatuto y cuadro de competencias</strong></div>
+
+</div>
+
+<h2 class="section-title">1. El proceso autonómico andaluz: Génesis histórica y conquista del autogobierno</h2>
+
+<h3 class="sub-title">1.1. Los antecedentes del andalucismo histórico y Blas Infante</h3>
+<p>El reconocimiento de Andalucía como nacionalidad histórica hunde sus raíces en el andalucismo cultural y político articulado en el primer tercio del siglo XX. El <strong>Manifiesto de la Junta Liberalista de Córdoba de 1919</strong> proclamó a Andalucía como una realidad nacional integrada en una España federal, y la <strong>Asamblea de Ronda de 1918</strong> fijó los símbolos identitarios (la bandera blanca y verde, inspirada en las enseñas andalusí y cantonal, y el escudo con Hércules y los leones).</p>
+<p>Figura central y unánimemente reconocida de este movimiento fue <strong>Blas Infante Pérez</strong> (1885-1936), notario y pensador andaluz, fusilado en agosto de 1936. El Parlamento de Andalucía, en el Preámbulo del Estatuto de 1981 y formalmente en la Declaración Institucional de 14 de abril de 1983, reconoció a Blas Infante como <strong>"Padre de la Patria Andaluza"</strong>, mención consagrada solemnemente en el <strong>artículo 1 del vigente Estatuto de 2007</strong> y ratificada por el Congreso de los Diputados.</p>
+<h3 class="sub-title">1.2. La movilización popular del 4 de diciembre de 1977 y el Pacto de Antequera de 1978</h3>
+<ul>
+<li><strong>El 4 de diciembre de 1977:</strong> Casi dos millones de andaluces salieron masivamente a las calles de las ocho capitales de provincia exigiendo una autonomía de primera clase en igualdad de condiciones con los territorios históricamente reconocidos (Cataluña, País Vasco y Galicia). Trágicamente, en Málaga fue asesinado el joven manifestante Manuel José García Caparrós. Esta fecha quedó consagrada como el hito fundacional del andalucismo democrático popular.</li>
+<li><strong>El Pacto de Antequera (4 de diciembre de 1978):</strong> Once fuerzas políticas con implantación en Andalucía se comprometieron solemnemente a impulsar de manera unida el acceso de Andalucía a la autonomía plena.</li>
+</ul>
+<h3 class="sub-title">1.3. La conquista de la vía del artículo 151 CE: El 28 de febrero de 1980</h3>
+<p>La Constitución de 1978 reservaba la "vía rápida" del artículo 151 para las nacionalidades que en el pasado hubiesen plebiscitado estatutos de autonomía (Disposición Transitoria Segunda). Andalucía no disponía de esa ventaja formal (su proyecto de Estatuto de Córdoba de 1936 quedó truncado por la Guerra Civil) y tuvo que conquistar dicha vía mediante el exigente procedimiento del <strong>artículo 151.1 CE</strong>:
+1. Todas las Diputaciones y más del 95% de los municipios andaluces acordaron la iniciativa.
+2. En el histórico <strong>referéndum del 28 de febrero de 1980</strong>, el pueblo andaluz votó masivamente a favor de la autonomía.
+3. Se superó la mayoría absoluta de electores en siete provincias, pero en <strong>Almería</strong> no se alcanzó formalmente el umbral exigido (obtuvo el 42,3% del censo, aunque el voto afirmativo representó el 82,3% de los votos emitidos).
+4. El consenso político forzó la modificación de la Ley Orgánica de Modalidades de Referéndum mediante la <strong>Ley Orgánica 13/1980</strong> y la aprobación de la <strong>Ley Orgánica 12/1980</strong>, que permitieron sustituir la ratificación almeriense por el acuerdo unánime de sus diputados y senadores, integrando plenamente a Andalucía en la vía reforzada del artículo 151.</p>
+<h3 class="sub-title">1.4. El Estatuto de Carmona (1981) y el Estatuto de 2007</h3>
+<ul>
+<li><strong>Estatuto de Carmona:</strong> Redactado en Carmona y aprobado mediante la <strong>Ley Orgánica 6/1981, de 30 de diciembre</strong>, tras ser ratificado en referéndum el 20 de octubre de 1981.</li>
+<li><strong>Reforma integral de 2007:</strong> Tras más de dos décadas de autogobierno, el Parlamento de Andalucía inició un proceso de renovación estatutaria para ampliar derechos y blindar competencias. El nuevo texto fue aprobado por el Parlamento andaluz el 2 de mayo de 2006, por las Cortes Generales el 20 de diciembre de 2006, ratificado masivamente en referéndum por el pueblo andaluz el <strong>18 de febrero de 2007</strong>, y promulgado como <strong>Ley Orgánica 2/2007, de 19 de marzo</strong>.</li>
+</ul>
+<hr />
+<h2 class="section-title">2. Estructura general, títulos y valores del Estatuto de Autonomía de 2007</h2>
+
+<h3 class="sub-title">2.1. El Título Preliminar (artículos 1 a 11)</h3>
+<p>Establece las bases identitarias e institucionales de la Comunidad Autónoma:
+* <strong>Definición de Andalucía (art. 1):</strong></p>
+<div class="callout"><p><em>"Andalucía, como nacionalidad histórica y en el ejercicio del derecho al autogobierno que reconoce la Constitución, se constituye en Comunidad Autónoma en el marco de la unidad de la nación española y conforme al artículo 2 de la Constitución."</em>
+* <strong>La Junta de Andalucía (art. 2):</strong> Es la institución en que se organiza políticamente el autogobierno de la Comunidad Autónoma.
+* <strong>Sede y Capitalidad (art. 4):</strong> La capital de Andalucía es la ciudad de <strong>Sevilla</strong>, sede del Parlamento, de la Presidencia de la Junta y del Consejo de Gobierno. La sede del Tribunal Superior de Justicia de Andalucía se ubica en la ciudad de <strong>Granada</strong> (art. 4.2).
+* <strong>Símbolos de Andalucía (art. 3):</strong>
+  * <em>Bandera:</em> Tres franjas horizontales (verde, blanca y verde) de igual anchura.
+  * <em>Escudo:</em> Hércules flanqueado por dos leones entre las columnas de Hércules, con la leyenda <em>"Andalucía por sí, para España y la Humanidad"</em>.
+  * <em>Himno:</em> Letra de Blas Infante e himno musical adoptado por el Parlamento.
+  * <em>Día de Andalucía:</em> El <strong>28 de febrero</strong>.
+* <strong>Condición política de andaluz (art. 5):</strong> Gozan de la condición política de andaluces o andaluzas los ciudadanos españoles que, de acuerdo con las leyes generales del Estado, tengan <strong>vecindad administrativa</strong> en cualquiera de los municipios de Andalucía.</p></div>
+<h3 class="sub-title">2.2. Estructura sistemática del Estatuto de 2007</h3>
+<p>El Estatuto consta de un Preámbulo, un Título Preliminar, <strong>diez Títulos</strong>, 250 artículos, 5 disposiciones adicionales, 2 transitorias, 1 derogatoria y 3 finales:</p>
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Título</th>
+<th style="text-align: left;">Rúbrica Oficial</th>
+<th style="text-align: left;">Artículos</th>
+<th style="text-align: left;">Contenido Básico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Título Preliminar</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">Arts. 1 al 11</td>
+<td style="text-align: left;">Definición, símbolos, capitalidad, Junta de Andalucía y principios generales.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título I</strong></td>
+<td style="text-align: left;">Derechos sociales, deberes y políticas públicas</td>
+<td style="text-align: left;">Arts. 12 al 41</td>
+<td style="text-align: left;">Carta de derechos de la ciudadanía, deberes, principios rectores y garantías.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título II</strong></td>
+<td style="text-align: left;">Competencias de la Comunidad Autónoma</td>
+<td style="text-align: left;">Arts. 42 al 88</td>
+<td style="text-align: left;">Tipología competencial y catálogo detallado de materias asumidas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título III</strong></td>
+<td style="text-align: left;">Organización territorial de la Comunidad Autónoma</td>
+<td style="text-align: left;">Arts. 89 al 98</td>
+<td style="text-align: left;">Municipios, provincias, comarcas, áreas metropolitanas y CAGL.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título IV</strong></td>
+<td style="text-align: left;">Del Poder Judicial en Andalucía</td>
+<td style="text-align: left;">Arts. 140 al 144</td>
+<td style="text-align: left;">El TSJA, el Fiscal Superior y el Consejo de Justicia de Andalucía.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título V</strong></td>
+<td style="text-align: left;">Del Poder Judicial en Andalucía <em>(Nota: Sistematización Tít. IV Org. Inst. y Tít. V Poder Judicial)</em></td>
+<td style="text-align: left;">Arts. 99 al 139</td>
+<td style="text-align: left;">Parlamento, Presidencia, Consejo de Gobierno, Defensor, Cámara Cuentas y Consultivo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título VI</strong></td>
+<td style="text-align: left;">Economía, empleo y hacienda</td>
+<td style="text-align: left;">Arts. 156 al 194</td>
+<td style="text-align: left;">Régimen socioeconómico, sector público empresarial y Hacienda autonómica.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título VII</strong></td>
+<td style="text-align: left;">Medio ambiente</td>
+<td style="text-align: left;">Arts. 195 al 206</td>
+<td style="text-align: left;">Sostenibilidad ambiental, recursos naturales, aguas y espacios protegidos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título VIII</strong></td>
+<td style="text-align: left;">Medios de comunicación social</td>
+<td style="text-align: left;">Arts. 207 al 217</td>
+<td style="text-align: left;">Radio y televisión pública andaluza (RTVA) y Consejo Audiovisual de Andalucía.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título IX</strong></td>
+<td style="text-align: left;">Relaciones institucionales de la Comunidad Autónoma</td>
+<td style="text-align: left;">Arts. 218 al 247</td>
+<td style="text-align: left;">Relaciones con el Estado, CCAA, Unión Europea y cooperación internacional.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Título X</strong></td>
+<td style="text-align: left;">Reforma del Estatuto</td>
+<td style="text-align: left;">Arts. 248 al 250</td>
+<td style="text-align: left;">Procedimiento ordinario, procedimiento simplificado y cláusulas de límites.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 class="section-title">3. Principios rectores de las políticas públicas (artículo 37 EA)</h2>
+
+<p>El artículo 37 recoge un ambicioso elenco de <strong>25 principios rectores</strong> que orientan la actuación de todos los poderes públicos de la Junta de Andalucía:
+1. La prestación de unos servicios públicos de calidad.
+2. La lucha contra el sexismo, la violencia de género y la discriminación contra las mujeres.
+3. El empleo de calidad y la estabilidad laboral.
+4. La integración laboral, económica y social de los jóvenes.
+5. La igualdad de oportunidades y la accesibilidad de las personas con discapacidad.
+6. La atención prioritaria a las personas en situación de dependencia.
+7. La integración de los inmigrantes en la sociedad andaluza.
+8. El uso sostenible del agua y de los recursos naturales.
+9. La cohesión territorial, la solidaridad interterritorial y el desarrollo rural integral.
+10. La investigación científica y técnica y la innovación (I+D+i).</p>
+<hr />
+<h2 class="section-title">4. Derechos sociales, deberes y garantías de la ciudadanía andaluza (Título I EA)</h2>
+
+<h3 class="sub-title">4.1. El catálogo de derechos sociales</h3>
+<p>El Estatuto de 2007 situó a Andalucía a la vanguardia autonómica al formalizar un catálogo de derechos directamente exigibles por la ciudadanía:
+* <strong>Igualdad de género (art. 15):</strong> Garantía de igualdad de oportunidades entre mujeres y hombres en todos los ámbitos, prohibición de brecha salarial y discriminación por razón de orientación sexual (art. 35).
+* <strong>Protección de la infancia y mayores (arts. 18 y 19):</strong> Derecho de los menores a recibir la protección integral y medidas contra el absentismo y el maltrato. Los mayores tienen derecho a una vida digna y autónoma y a plazas públicas en residencias.
+* <strong>Educación pública de calidad (art. 21):</strong> Derecho a una educación gratuita y de calidad en las enseñanzas obligatorias y en el segundo ciclo de educación infantil. Gratuidad de los libros de texto en las enseñanzas obligatorias.
+* <strong>Salud y sanidad pública (art. 22):</strong> Derecho a la protección de la salud, acceso universal a la atención sanitaria pública, segunda opinión médica, voluntades anticipadas (testamento vital) y cuidados paliativos.
+* <strong>Prestaciones sociales y renta básica (art. 23):</strong> Todas las personas tienen derecho a los servicios sociales públicos. El <strong>artículo 23.2</strong> consagra el derecho de las personas en situación de pobreza, exclusión o vulnerabilidad social a percibir una <strong>renta básica garantizada</strong> (materializada en la Renta Mínima de Inserción Social en Andalucía - RMISA).
+* <strong>Vivienda digna (art. 25):</strong> Derecho a acceder a una vivienda protegida de promoción pública para personas con recursos limitados.
+* <strong>Derecho a una buena administración (art. 31):</strong> Derecho a que los asuntos sean tratados de forma imparcial, objetiva y en un plazo razonable, y derecho a acceder a los archivos y registros administrativos.</p>
+<h3 class="sub-title">4.2. Deberes de la ciudadanía andaluza (artículos 34 a 36)</h3>
+<ul>
+<li>Deber de contribuir al sostenimiento del gasto público mediante el pago de tributos (art. 34).</li>
+<li>Deber de conservar el medio ambiente y hacer un uso responsable de los recursos naturales (art. 35).</li>
+<li>Deber de respetar las normas cívicas, tolerar las diferencias y cuidar el patrimonio cultural (art. 36).</li>
+</ul>
+<h3 class="sub-title">4.3. El sistema estatutario de garantías (artículo 41 EA)</h3>
+<p>El artículo 41 establece un triple nivel de garantías:
+1. <strong>Vinculación general:</strong> Los derechos reconocidos en el Capítulo II vinculan a todos los poderes públicos de Andalucía.
+2. <strong>Reserva de ley estatutaria:</strong> Solo por ley del Parlamento de Andalucía, que en todo caso deberá respetar su contenido esencial, podrá regularse el ejercicio de los derechos estatutarios.
+3. <strong>Tutela jurisdiccional:</strong> Los actos y disposiciones autonómicas que vulneren estos derechos serán recurribles ante los Tribunales del orden contencioso-administrativo ordinario.
+4. <strong>El Defensor del Pueblo Andaluz:</strong> Vela por la defensa de los derechos del Título I, con facultades de inspección y recomendación (art. 41.2 EA).</p>
+<hr />
+<h2 class="section-title">5. El sistema de competencias de la Comunidad Autónoma (Título II EA)</h2>
+
+<h3 class="sub-title">5.1. Tipología competencial (artículo 42 EA)</h3>
+<p>El artículo 42 sistematiza el alcance material y funcional de las competencias asumidas por la Junta de Andalucía:</p>
+<div class="diagram-box"><pre>                       TIPOLOGÍA DE COMPETENCIAS (ART. 42 EA)
+┌───────────────────────┬────────────────────────────────────────────────────────┐
+│ MODALIDAD             │ CONTENIDO FUNCIONAL Y ALCANCE                          │
+├───────────────────────┼────────────────────────────────────────────────────────┤
+│ 1. Competencias       │ Corresponde a la Comunidad Autónoma íntegramente la    │
+│    Exclusivas         │ potestad legislativa, la reglamentaria y la función    │
+│    (Art. 42.2.1º)     │ ejecutiva, sin más límites que los de la Constitución. │
+├───────────────────────┼────────────────────────────────────────────────────────┤
+│ 2. Competencias       │ Corresponde a la Comunidad Autónoma la potestad        │
+│    Compartidas        │ legislativa de desarrollo, la potestad reglamentaria y │
+│    (Art. 42.2.2º)     │ la función ejecutiva, en el marco de las bases que     │
+│                       │ fije el Estado al amparo del art. 149.1 CE.            │
+├───────────────────────┼────────────────────────────────────────────────────────┤
+│ 3. Competencias       │ Corresponde a la Comunidad Autónoma la potestad regla- │
+│    Ejecutivas         │ mentaria que comprenda funciones de organización de    │
+│    (Art. 42.2.3º)     │ sus servicios y la función de gestión y ejecución.     │
+├───────────────────────┼────────────────────────────────────────────────────────┤
+│ 4. Competencias en    │ Participación en la formación de la posición del Estado│
+│    relación con la UE │ y ejecución directa del Derecho de la Unión Europea    │
+│    (Arts. 230 a 240)  │ en las materias de competencia autonómica.             │
+└───────────────────────┴────────────────────────────────────────────────────────┘
+</pre></div>
+<div class="callout"><p><strong>DOCTRINA STC 31/2010 Y STC 30/2011 (Límites al Estatuto):</strong>
+El Tribunal Constitucional clarificó que las definiciones estatutarias de las competencias no pueden condicionar, limitar ni redefinir las competencias exclusivas y básicas del Estado fijadas en el artículo 149.1 CE. En la <strong>STC 30/2011</strong>, declaró inconstitucional el artículo 51 del Estatuto andaluz en cuanto atribuía a la Comunidad Autónoma la competencia exclusiva sobre las aguas de la cuenca del Guadalquivir que transcurren por su territorio, al vulnerar la competencia estatal exclusiva sobre cuencas intercomunitarias (art. 149.1.22ª CE).</p></div>
+<h3 class="sub-title">5.2. Catálogo de competencias destacadas</h3>
+<ul>
+<li><strong>Educación y Universidades (arts. 52 y 53):</strong> Competencia compartida sobre enseñanza no universitaria (currículo, personal docente, ordenación escolar) y exclusiva sobre universidades públicas andaluzas.</li>
+<li><strong>Salud y Sanidad (art. 55):</strong> Competencia compartida sobre sanidad interior y ordenación de la salud pública; competencia exclusiva sobre organización y funcionamiento del Servicio Andaluz de Salud (SAS).</li>
+<li><strong>Servicios Sociales y Políticas de Género (arts. 61 y 73):</strong> Competencia exclusiva sobre servicios sociales, promoción de la igualdad de género y lucha contra la violencia machista.</li>
+<li><strong>Agricultura, ganadería y desarrollo rural (art. 48):</strong> Competencia exclusiva sobre agricultura, ganadería, denominaciones de origen y desarrollo rural.</li>
+<li><strong>Función Pública (art. 76):</strong> Competencia compartida sobre el régimen estatutario de los empleados públicos andaluces (plasmada en la Ley 5/2023, de 7 de junio, de la Función Pública de Andalucía).</li>
+</ul>
+<hr />
+<h2 class="section-title">6. El procedimiento de reforma del Estatuto de Autonomía (Título X EA)</h2>
+
+<p>El Título X prevé dos procedimientos de reforma sumamente rigurosos:</p>
+<h3 class="sub-title">6.1. La iniciativa de reforma (artículo 248.1 EA)</h3>
+<p>La iniciativa corresponde a:
+1. El <strong>Gobierno de la Junta de Andalucía</strong> (Consejo de Gobierno).
+2. El <strong>Parlamento de Andalucía</strong>, a propuesta de <strong>una tercera parte (1/3)</strong> de sus miembros.
+3. Las <strong>Cortes Generales</strong> (Congreso o Senado).
+4. Los <strong>municipios andaluces</strong>: al menos dos tercios (2/3) de los municipios cuya población represente la mayoría absoluta del censo electoral de Andalucía.</p>
+<h3 class="sub-title">6.2. El procedimiento ordinario de reforma (artículo 248 EA)</h3>
+<p>Se aplica con carácter general a cualquier reforma estatutaria:
+1. <strong>Aprobación en el Parlamento de Andalucía:</strong> Se exige el voto favorable de una <strong>mayoría cualificada de dos tercios (2/3)</strong> de sus miembros (73 diputados de 109).
+2. <strong>Tramitación en Cortes Generales:</strong> El proyecto aprobado se remite a las Cortes Generales para su tramitación mediante el procedimiento previsto para las leyes orgánicas.
+3. <strong>Comisión Mixta paritaria:</strong> Se constituye una Comisión Mixta paritaria integrada por representantes de la Comisión Constitucional del Congreso y una delegación del Parlamento de Andalucía para formular un texto de consenso.
+4. <strong>Aprobación de la Ley Orgánica:</strong> Votación del texto en el Pleno del Congreso y del Senado.
+5. <strong>Referéndum del pueblo andaluz:</strong> Aprobada la Ley Orgánica por las Cortes, el texto debe ser sometido preceptivamente a <strong>referéndum vinculante del cuerpo electoral andaluz</strong>, entendiéndose aprobada si obtiene la mayoría de votos válidamente emitidos.</p>
+<h3 class="sub-title">6.3. El procedimiento simplificado de reforma (artículo 249 EA)</h3>
+<p>Procede únicamente para aquellas reformas que <strong>no afecten a las relaciones de la Comunidad Autónoma con el Estado</strong> (por ejemplo, modificaciones internas de organización del Parlamento o del Consejo de Gobierno):
+1. <strong>Aprobación parlamentaria:</strong> Mayoría de <strong>dos tercios (2/3)</strong> del Parlamento de Andalucía.
+2. <strong>Consulta a las Cortes Generales:</strong> Remisión a las Cortes para que en el plazo de <strong>treinta días</strong> manifiesten si consideran o no afectada la relación con el Estado. Si las Cortes consideran que sí se afecta, debe seguirse el procedimiento ordinario del art. 248.
+3. <strong>Aprobación como Ley Orgánica:</strong> Votación favorable de las Cortes Generales.
+4. <strong>Referéndum facultativo:</strong> En el procedimiento simplificado <strong>NO es obligatorio el referéndum</strong>, salvo que así lo soliciten, dentro de los treinta días siguientes a la aprobación por las Cortes, una <strong>décima parte (1/10)</strong> de los electores andaluces inscritos en el censo.</p>
+<h3 class="sub-title">6.4. Cláusula de salvaguarda y límites (artículo 250 EA)</h3>
+<p>Si el proyecto de reforma no es aprobado por el Parlamento de Andalucía o por las Cortes Generales, o no es ratificado en referéndum, <strong>no podrá someterse nuevamente a debate y deliberación hasta que haya transcurrido un año</strong>.</p>
+<hr />
+<h2 class="section-title">7. Conclusión y trascendencia en la actividad del personal técnico de la Junta de Andalucía</h2>
+
+<p>El Estatuto de Autonomía para Andalucía constituye el marco supremo de legitimidad y referencia para todo el personal al servicio del Cuerpo Técnico Facultativo (A2). Sus disposiciones determinan el alcance de las competencias autonómicas que los funcionarios técnicos gestionan cotidianamente en ámbitos como la educación, la sanidad, el medio ambiente, los servicios sociales o la ordenación urbanística. Conocer los derechos de la ciudadanía andaluza (art. 12 a 33 EA) y los principios rectores del artículo 37 dota a la función técnica de un sentido de servicio público indiscutible.</p>
+<hr />
+<h2 class="section-title">8. Anexo: Mapa conceptual de la estructura del Estatuto y cuadro de competencias</h2>
+
+<div class="diagram-box"><pre>                     COMPARATIVA DE PROCEDIMIENTOS DE REFORMA EA
+┌───────────────────────────┬──────────────────────────┬──────────────────────────┐
+│ FASE DEL PROCEDIMIENTO    │ PROCEDIMIENTO ORDINARIO  │ PROCEDIMIENTO            │
+│                           │ (Art. 248 EA)            │ SIMPLIFICADO (Art. 249)  │
+├───────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Ámbito de aplicación      │ Regla general (relaciones│ Reformas internas que    │
+│                           │ con el Estado y títulos) │ NO afecten al Estado     │
+├───────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Mayoría Parlamento Andaluz│ 2/3 de los Diputados     │ 2/3 de los Diputados     │
+├───────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Consulta a Cortes         │ Trámite de Comisión      │ Plazo de 30 días para    │
+│                           │ Mixta paritaria          │ calificar afección       │
+├───────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Aprobación Cortes Generales│ Ley Orgánica             │ Ley Orgánica             │
+├───────────────────────────┼──────────────────────────┼──────────────────────────┤
+│ Ratificación Popular      │ Referéndum PRECEPTIVO    │ Referéndum FACULTATIVO   │
+│                           │ vinculante del pueblo    │ (solo si lo pide 10% del │
+│                           │ andaluz en todo caso     │ censo electoral andaluz) │
+└───────────────────────────┴──────────────────────────┴──────────────────────────┘
+</pre></div>
+
+</body>
+</html>

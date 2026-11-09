@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TEMA 16: Los contratos del sector público (II): Procedimientos de adjudicación. Formalización. Ejecución, modificación y extinción: resolución y cesión de contratos</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (Grupo A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #065f46;
+      font-weight: 500;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #059669;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #065f46;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #059669;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #059669;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #059669;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout p {
+    margin: 0;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #065f46;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #d1fae5;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f0fdf4;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO COMÚN — JUNTA DE ANDALUCÍA (GRUPO A2)</div>
+  <h1>TEMA 16</h1>
+  <h2>Los contratos del sector público (II): Procedimientos de adjudicación. Formalización. Ejecución, modificación y extinción: resolución y cesión de contratos</h2>
+  <div class="meta-box">
+    <p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+    <p><strong>Especialidad:</strong> Materias Comunes (Grupo A2)</p>
+    <p><strong>Bloque:</strong> Materias Comunes</p>
+    <p><strong>Tema Oficial:</strong> 16</p>
+    <p><strong>Normativa Clave:</strong> Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público (LCSP, Título I del Libro II, arts. 131 a 217); Real Decreto-ley 3/2020, de 4 de febrero, de medidas urgentes en materia de contratación pública; Ley 9/2007, de 22 de octubre, de la Administración de la Junta de Andalucía (LAJA); Decreto 39/2011, de 22 de febrero (contratación de la Junta de Andalucía).</p>
+
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General de TEMA 16</div>
+  <div class="toc-item level-1">1. <strong>Procedimientos de adjudicación de los contratos públicos: Principios y clasificación</strong></div>
+  <div class="toc-item level-2">1.1. Los procedimientos ordinarios frente a los procedimientos con negociación</div>
+  <div class="toc-item level-2">1.2. Principio de concurrencia y licitación electrónica obligatoria</div>
+  <div class="toc-item level-1">2. <strong>El procedimiento abierto ordinario</strong></div>
+  <div class="toc-item level-2">2.1. Concepto y características generales (arts. 156 a 158 LCSP)</div>
+  <div class="toc-item level-2">2.2. Plazos de presentación de proposiciones y reducción por medios electrónicos</div>
+  <div class="toc-item level-2">2.3. Criterios de adjudicación: Fórmulas matemáticas frente a juicios de valor</div>
+  <div class="toc-item level-2">2.4. Ofertas con valores anormales o desproporcionados (art. 149 LCSP)</div>
+  <div class="toc-item level-1">3. <strong>El procedimiento abierto simplificado y el procedimiento sumario</strong></div>
+  <div class="toc-item level-2">2.1. Procedimiento abierto simplificado ordinario (art. 159.1 a 159.5 LCSP): Ámbito y tramitación</div>
+  <div class="toc-item level-2">2.2. Procedimiento abierto simplificado abreviado o "supersimplificado" (art. 159.6 LCSP)</div>
+  <div class="toc-item level-1">4. <strong>Otros procedimientos de adjudicación</strong></div>
+  <div class="toc-item level-2">4.1. Procedimiento restringido (arts. 160 a 165 LCSP)</div>
+  <div class="toc-item level-2">4.2. Licitación con negociación: Supuestos con y sin publicidad previa (arts. 166 a 171 LCSP)</div>
+  <div class="toc-item level-2">4.3. Diálogo competitivo (arts. 172 a 176 LCSP)</div>
+  <div class="toc-item level-2">4.4. Asociación para la innovación (arts. 177 a 182 LCSP)</div>
+  <div class="toc-item level-2">4.5. El régimen especial del contrato menor (art. 118 LCSP)</div>
+  <div class="toc-item level-1">5. <strong>Adjudicación y formalización contractual</strong></div>
+  <div class="toc-item level-2">5.1. Clasificación de ofertas, requerimiento de documentación y adjudicación (art. 150 LCSP)</div>
+  <div class="toc-item level-2">5.2. Plazos y requisitos de la formalización (art. 153 LCSP): Suspensión por recurso especial</div>
+  <div class="toc-item level-1">6. <strong>Ejecución y prerrogativas de la Administración</strong></div>
+  <div class="toc-item level-2">6.1. Prerrogativas de la Administración Pública en los contratos administrativos (art. 190 LCSP)</div>
+  <div class="toc-item level-2">6.2. Principio de riesgo y ventura (art. 197 LCSP) y excepciones</div>
+  <div class="toc-item level-2">6.3. Demora en la ejecución y régimen de penalidades (arts. 192 a 195 LCSP)</div>
+  <div class="toc-item level-1">7. <strong>Modificación del contrato público</strong></div>
+  <div class="toc-item level-2">7.1. Modificaciones previstas en el pliego de cláusulas administrativas (art. 204 LCSP)</div>
+  <div class="toc-item level-2">7.2. Modificaciones no previstas en el pliego: Supuestos tasados y límites (art. 205 LCSP)</div>
+  <div class="toc-item level-2">7.3. Procedimiento de modificación y fiscalización (arts. 206 y 207 LCSP)</div>
+  <div class="toc-item level-1">8. <strong>Cesión del contrato y subcontratación</strong></div>
+  <div class="toc-item level-2">8.1. Requisitos y límites de la cesión contractual (art. 214 LCSP)</div>
+  <div class="toc-item level-2">8.2. Régimen jurídico de la subcontratación: Tareas críticas y pagos a subcontratistas (arts. 215 a 217 LCSP)</div>
+  <div class="toc-item level-1">9. <strong>Extinción de los contratos del sector público</strong></div>
+  <div class="toc-item level-2">9.1. Cumplimiento del contrato: Recepción formal y plazo de garantía (art. 210 LCSP)</div>
+  <div class="toc-item level-2">9.2. Resolución del contrato: Causas taxativas (art. 211 LCSP) y procedimiento (art. 212 LCSP)</div>
+  <div class="toc-item level-2">9.3. Efectos económicos y liquidación de la resolución (art. 213 LCSP)</div>
+  <div class="toc-item level-1">10. <strong>Conclusiones y buenas prácticas en la contratación de la Junta de Andalucía</strong></div>
+  <div class="toc-item level-1">11. <strong>Anexo: Tabla sinóptica y mapas conceptuales del Tema 16</strong></div>
+
+</div>
+
+<h2 class="section-title">1. Procedimientos de adjudicación de los contratos públicos: Principios y clasificación</h2>
+
+<h3 class="sub-title">1.1. Los procedimientos ordinarios frente a los procedimientos con negociación</h3>
+<p>De conformidad con el <strong>artículo 131 de la Ley 9/2017 (LCSP)</strong>, la adjudicación de los contratos que celebren las Administraciones Públicas se realizará, con carácter general, utilizando el <strong>procedimiento abierto o el procedimiento restringido</strong>.</p>
+<p>Los restantes procedimientos (licitación con negociación, diálogo competitivo y asociación para la innovación) tienen carácter excepcional y tasado, procediendo únicamente en los supuestos expresamente previstos en la Ley. Queda radicalmente prohibida la negociación de los términos del contrato fuera de los cauces legalmente habilitados.</p>
+<div class="diagram-box"><pre>                          PROCEDIMIENTOS DE ADJUDICACIÓN
+┌───────────────────────────────┬──────────────────────────────────────────────┐
+│ PROCEDIMIENTOS ORDINARIOS     │ PROCEDIMIENTOS EXTRAORDINARIOS / TASADOS     │
+├───────────────────────────────┼──────────────────────────────────────────────┤
+│ • Abierto ordinario (156-158) │ • Licitación con negociación (166-171)       │
+│ • Abierto simplificado (159)  │ • Diálogo competitivo (172-176)              │
+│ • Restringido (160-165)       │ • Asociación para la innovación (177-182)    │
+│                               │ • Contrato menor (art. 118, adjudicación d.) │
+└───────────────────────────────┴──────────────────────────────────────────────┘
+</pre></div>
+<hr />
+<h2 class="section-title">2. El procedimiento abierto ordinario</h2>
+
+<h3 class="sub-title">2.1. Concepto y características generales (art. 156 LCSP)</h3>
+<p>En el procedimiento abierto, <strong>todo empresario interesado podrá presentar una proposición</strong>, quedando excluida toda negociación de los términos del contrato con los licitadores.</p>
+<ul>
+<li><strong>Proposición única (art. 139.3):</strong> Cada licitador no podrá presentar más de una proposición, sin perjuicio de la admisibilidad de variantes si el pliego lo autoriza expresamente.</li>
+<li><strong>Secreto de las proposiciones (art. 139.2):</strong> Las proposiciones son secretas hasta el momento de la apertura pública y electrónica de los sobres o archivos cifrados.</li>
+<li><strong>Plazos mínimos de presentación de ofertas (art. 156):</strong></li>
+<li>Contratos de obras, suministros y servicios sujetos a regulación armonizada (SARA): Plazo general mínimo de <strong>35 días</strong>. Si se admite la presentación por medios electrónicos, el plazo se reducirá en 5 días (quedando en <strong>30 días</strong>).</li>
+<li>Contratos no sujetos a regulación armonizada (NO SARA): En obras el plazo mínimo será de <strong>26 días</strong>; en suministros y servicios, el plazo mínimo será de <strong>15 días</strong>.</li>
+</ul>
+<h3 class="sub-title">2.2. Criterios de adjudicación y ofertas anormalmente bajas (art. 145 y 149 LCSP)</h3>
+<p>La adjudicación se realizará utilizando una pluralidad de criterios de adjudicación basados en el principio de <strong>mejor relación calidad-precio</strong>:
+* Criterios económicos y de coste: Evaluables mediante la aplicación de fórmulas matemáticas objetivas (precio, coste de ciclo de vida).
+* Criterios cualitativos: Evaluables mediante un juicio de valor técnico (calidad estética, valor funcional, accesibilidad).
+  * <em>Separación de sobres (art. 145.5):</em> Cuando se utilicen criterios sometidos a juicio de valor junto con criterios de fórmulas, la evaluación de las ofertas cualitativas se realizará en un sobre independiente que se abrirá y valorará <strong>con carácter previo</strong> al sobre que contenga los criterios evaluables mediante fórmulas.</p>
+<div class="callout"><p><strong>Ofertas anormales o desproporcionadas (Bajas temerarias, art. 149 LCSP):</strong>
+Si una oferta incurre en presunción de anormalidad conforme a los parámetros fijados en el pliego:
+1. El órgano de contratación no puede excluirla de plano; debe dar <strong>audiencia al licitador por un plazo razonable</strong> para que justifique el bajo nivel de precios y el cumplimiento de las obligaciones salariales y medioambientales.
+2. Se solicitará el asesoramiento técnico del servicio correspondiente.
+3. Si las justificaciones no son admitidas o demuestran que se incumplen los convenios colectivos, la mesa declarará la oferta incursa en baja temeraria y la excluirá motivadamente.</p></div>
+<hr />
+<h2 class="section-title">3. El procedimiento abierto simplificado y el procedimiento sumario</h2>
+
+<p>El artículo 159 de la LCSP introduce dos modalidades extraordinariamente ágiles para contratos de menor complejidad técnica y económica:</p>
+<div class="diagram-box"><pre>                COMPARATIVA DEL PROCEDIMIENTO SIMPLIFICADO
+┌──────────────────────────────┬──────────────────────────────────────────────┐
+│ SIMPLIFICADO ORDINARIO       │ SIMPLIFICADO ABREVIADO / &quot;SUMARIO&quot;           │
+│ (Art. 159.1 a 159.5 LCSP)    │ (Art. 159.6 LCSP)                            │
+├──────────────────────────────┼──────────────────────────────────────────────┤
+│ **Ámbito de aplicación:**    │ **Ámbito de aplicación:**                    │
+│ • Obras: VEC $\le$ 2.000.000 €│ • Obras: VEC $&lt;$ 80.000 €                    │
+│ • Suministros y Servicios:   │ • Suministros y Servicios: VEC $&lt;$ 60.000 €  │
+│   VEC $&lt;$ umbrales SARA      │                                              │
+├──────────────────────────────┼──────────────────────────────────────────────┤
+│ **Requisitos y Trámites:**   │ **Requisitos y Trámites:**                   │
+│ • Registro obligatorio ROLECE│ • Criterios puramente cuantitativos          │
+│ • Sin fianza provisional.    │   (fórmulas matemáticas; NO juicios valor).  │
+│ • Ponderación juicio valor   │ • Plazo de presentación: mínimo 10 días      │
+│   no superior al 25% (45% en │   (5 días hábiles en compras corrientes).    │
+│   servicios intelectuales).  │ • Sin acreditación previa de solvencia.      │
+│ • Plazo presentación:        │ • NO se constituye mesa de contratación.     │
+│   20 días (obras) o 15 días  │ • Oferta en sobre único.                     │
+│   (suministros/servicios).   │ • Sin fianza definitiva (salvo justif. pliego│
+└──────────────────────────────┴──────────────────────────────────────────────┘
+</pre></div>
+<hr />
+<h2 class="section-title">4. Otros procedimientos de adjudicación</h2>
+
+<h3 class="sub-title">4.1. Procedimiento restringido (arts. 160 a 165 LCSP)</h3>
+<p>Se articula en dos fases sucesivas:
+1. <strong>Fase de selección de candidatos:</strong> Cualquier operador económico puede presentar una solicitud de participación en respuesta a una convocatoria de licitación. El órgano de contratación selecciona a los candidatos que cumplan los criterios objetivos de solvencia predeterminados (número mínimo legal: <strong>5 candidatos</strong>).
+2. <strong>Fase de presentación de ofertas:</strong> Se invita simultáneamente y por escrito a los candidatos seleccionados a presentar sus ofertas económicas y técnicas.
+* <em>Aplicación idónea:</em> Servicios de carácter intelectual de especial complejidad (diseño de software avanzado, consultorías estratégicas) o contratos de obras complejas donde conviene filtrar previamente la capacidad técnica.</p>
+<h3 class="sub-title">4.2. Licitación con negociación (arts. 166 a 171 LCSP)</h3>
+<p>Procede en supuestos tasados donde es necesario dialogar y adaptar las ofertas para satisfacer las necesidades del órgano:
+* <strong>Con publicidad previa (art. 167):</strong> Cuando las necesidades no puedan satisfacerse sin adaptar soluciones fácilmente disponibles, impliquen diseño innovador, o en licitaciones abiertas previas donde solo se hubieran presentado ofertas irregulares o inaceptables. Se negocia con un mínimo de <strong>3 licitadores</strong>.
+* <strong>Sin publicidad previa (art. 168):</strong> Supuestos excepcionalísimos de imperiosa urgencia por acontecimientos imprevisibles para el órgano, cuando solo un empresario determinado pueda ejecutar la prestación por razones técnicas o de protección de derechos exclusivos de propiedad intelectual/industrial, o en compras de oportunidad.</p>
+<h3 class="sub-title">4.3. El contrato menor (art. 118 LCSP)</h3>
+<p>Constituye un cauce ágil para atender necesidades inmediatas y puntuales de escasa cuantía económica:
+* <strong>Umbrales cuantitativos:</strong>
+  * Contratos de <strong>obras:</strong> Valor estimado inferior a <strong>40.000 euros</strong>.
+  * Contratos de <strong>suministro y servicios:</strong> Valor estimado inferior a <strong>15.000 euros</strong>.
+* <strong>Tramitación del expediente (art. 118.2):</strong>
+  1. Informe del órgano de contratación motivando la necesidad del contrato.
+  2. Justificación de que <strong>no se está alterando el objeto del contrato para defraudar las normas de contratación pública (prohibición de fraccionamiento del contrato)</strong>.
+  3. Aprobación del gasto y la incorporación de la factura electrónica.
+  4. En el contrato de obras, además, deberá incorporarse el presupuesto de las obras y, en su caso, el proyecto y el informe de la oficina de supervisión cuando proceda.
+* <strong>Duración máxima (art. 29.8):</strong> Los contratos menores <strong>no podrán tener una duración superior a un año ni ser objeto de prórroga</strong>.</p>
+<hr />
+<h2 class="section-title">5. Adjudicación y formalización contractual</h2>
+
+<h3 class="sub-title">5.1. Procedimiento de adjudicación (art. 150 LCSP)</h3>
+<ol>
+<li><strong>Propuesta de la Mesa de Contratación:</strong> La mesa evalúa las proposiciones, califica la documentación y eleva la propuesta de adjudicación al órgano de contratación.</li>
+<li><strong>Requerimiento al licitador con mejor oferta:</strong> El órgano de contratación requerirá al licitador que haya presentado la mejor oferta para que, dentro del plazo de <strong>diez días hábiles</strong>, presente la documentación justificativa de hallarse al corriente en sus obligaciones tributarias y de Seguridad Social, y constituya la <strong>garantía definitiva (5% del importe de adjudicación, excluido el IVA)</strong>.</li>
+<li><strong>Resolución de adjudicación:</strong> El órgano adjudicará el contrato dentro de los <strong>cinco días hábiles siguientes</strong> a la recepción fehaciente de la documentación.</li>
+</ol>
+<h3 class="sub-title">5.2. Formalización del contrato (art. 153 LCSP)</h3>
+<ul>
+<li><strong>Naturaleza jurídica:</strong> El contrato se perfecciona con su <strong>formalización</strong> en documento administrativo que se ajusta con exactitud a los pliegos (art. 36 y 153).</li>
+<li><strong>Plazo de formalización en contratos susceptibles de Recurso Especial (art. 153.3):</strong></li>
+<li>Cuando el contrato sea susceptible de recurso especial en materia de contratación (obras $\ge 3.000.000$ €, suministros/servicios $\ge 100.000$ €), la formalización <strong>no podrá efectuarse antes de que transcurran quince días hábiles</strong> desde que se remita la notificación de la adjudicación a los licitadores (plazo de <em>standstill</em> o suspensión legal obligatoria).</li>
+<li>Transcurrido el plazo sin recurso, se requerirá al adjudicatario para formalizar en un plazo máximo de <strong>cinco días hábiles</strong>.</li>
+<li><strong>Plazo en contratos no susceptibles de recurso especial:</strong> La formalización se efectuará no más tarde de los <strong>quince días hábiles siguientes</strong> a aquel en que se reciba la notificación de la adjudicación.</li>
+</ul>
+<hr />
+<h2 class="section-title">6. Ejecución y prerrogativas de la Administración</h2>
+
+<h3 class="sub-title">6.1. Prerrogativas de la Administración Pública (art. 190 LCSP)</h3>
+<p>En los contratos administrativos, el órgano de contratación ostenta las siguientes prerrogativas exorbitantes del Derecho común:
+1. <strong>Interpretación:</strong> Interpretar los contratos administrativos y resolver las dudas que ofrezca su cumplimiento.
+2. <strong>Modificación:</strong> Modificar los contratos por razones de interés público debidamente justificadas.
+3. <strong>Resolución y efectos:</strong> Acordar la resolución del contrato y determinar los efectos de ésta.
+4. <strong>Suspensión:</strong> Acordar la suspensión temporal de la ejecución de la prestación.
+* <em>Garantías procedimentales (art. 191):</em> El ejercicio de estas prerrogativas exige dar audiencia previa al contratista e informe previo de la Asesoría Jurídica. Asimismo, será preceptivo el dictamen del <strong>Consejo Consultivo de Andalucía</strong> en caso de oposición formulada por el contratista en modificaciones superiores al 20% o resoluciones litigiosas.</p>
+<h3 class="sub-title">6.2. Principio de riesgo y ventura (art. 197 LCSP)</h3>
+<p>La ejecución del contrato se realizará <strong>a riesgo y ventura del contratista</strong>, asumiendo las pérdidas o mayores costes imprevistos derivados de su actividad empresarial, salvo en los supuestos expresamente previstos de <strong>fuerza mayor</strong> en los contratos de obras (incendios por causa natural, terremotos, maremotos o inundaciones catastróficas, art. 239).</p>
+<h3 class="sub-title">6.3. Demora en la ejecución y penalidades (arts. 192 a 195 LCSP)</h3>
+<ul>
+<li>El contratista está obligado a cumplir el contrato dentro del plazo total y de los plazos parciales fijados.</li>
+<li>Si el contratista, por causas imputables al mismo, hubiera incurrido en demora, la Administración podrá optar indistintamente por la <strong>resolución del contrato</strong> con pérdida de la garantía o por la <strong>imposición de penalidades diarias</strong>:</li>
+<li><em>Penalidad estándar (art. 193.3):</em> Proporción de <strong>0,60 euros por cada 1.000 euros del precio del contrato al día</strong>.</li>
+<li>El pliego podrá prever penalidades especiales para demoras en plazos parciales o incumplimiento de condiciones laborales/ambientales.</li>
+</ul>
+<hr />
+<h2 class="section-title">7. Modificación del contrato público</h2>
+
+<p>La LCSP establece un régimen restrictivo para evitar alteraciones fraudulentas que vulneren el principio de libre concurrencia:</p>
+<div class="diagram-box"><pre>                      RÉGIMEN DE MODIFICACIÓN CONTRACTUAL
+┌──────────────────────────────────────┬──────────────────────────────────────┐
+│ MODIFICACIONES PREVISTAS EN EL PCAP  │ MODIFICACIONES NO PREVISTAS          │
+│ (Art. 204 LCSP)                      │ (Art. 205 LCSP)                      │
+├──────────────────────────────────────┼──────────────────────────────────────┤
+│ • Previstas expresamente en pliegos  │ • Carácter rigurosamente excepcional.│
+│   de forma clara e inequívoca.       │ • Causas tasadas:                    │
+│ • No pueden alterar la naturaleza    │   1. Prestaciones adicionales por    │
+│   global del contrato.               │      imposibilidad técnica de cambio.│
+│ • Límite máximo: No puede superar el │   2. Circunstancias imprevisibles    │
+│   **20% del precio inicial** (sin IVA)│      para una administración diligen.│
+│                                      │   3. Modificaciones no sustanciales. │
+│                                      │ • Límite económico: No superar el    │
+│                                      │   **50% del precio inicial**.         │
+└──────────────────────────────────────┴──────────────────────────────────────┘
+</pre></div>
+<p>Las modificaciones contractuales acordadas deberán publicarse en todo caso en el Perfil de Contratante en el plazo de cinco días desde su aprobación.</p>
+<hr />
+<h2 class="section-title">8. Cesión del contrato y subcontratación</h2>
+
+<h3 class="sub-title">8.1. Cesión contractual (art. 214 LCSP)</h3>
+<p>Los derechos y obligaciones dimanantes del contrato podrán ser cedidos por el contratista a un tercero siempre que:
+1. Las cualidades técnicas o personales del cedente no hayan sido la razón determinante de la adjudicación.
+2. La cesión haya sido <strong>autorizada de forma previa y expresa</strong> por el órgano de contratación.
+3. El contratista cedente haya ejecutado al menos un <strong>veinte por ciento (20%) del importe del contrato</strong> (o explotado la concesión durante una quinta parte del plazo).
+4. El cesionario tenga capacidad para contratar, solvencia acreditada y no esté incurso en prohibición de contratar.</p>
+<h3 class="sub-title">8.2. Subcontratación (art. 215 LCSP)</h3>
+<p>El contratista podrá concertar con terceros la realización parcial de la prestación:
+* El contratista debe comunicar anticipadamente y por escrito a la Administración la intención de celebrar los subcontratos.
+* <strong>Prohibición de subcontratación de tareas críticas (art. 215.2.e):</strong> Los pliegos podrán disponer que determinadas tareas críticas de los contratos de obras o servicios sean ejecutadas directamente por el propio licitador principal sin que quepa subcontratación.
+* <strong>Pagos a subcontratistas (art. 216):</strong> El contratista principal está obligado a abonar a los subcontratistas el precio pactado en el plazo máximo de <strong>treinta días</strong> desde la fecha de recepción de la factura, protegiendo a las pequeñas empresas auxiliares frente a la morosidad.</p>
+<hr />
+<h2 class="section-title">9. Extinción de los contratos del sector público</h2>
+
+<p>El contrato se extingue por <strong>cumplimiento</strong> o por <strong>resolución</strong> (art. 209 LCSP).</p>
+<h3 class="sub-title">9.1. Cumplimiento, recepción y plazo de garantía (art. 210 LCSP)</h3>
+<ul>
+<li>El contrato se entenderá cumplido por el contratista cuando éste haya realizado la totalidad de la prestación con arreglo a los pliegos.</li>
+<li><strong>Acto formal y positivo de recepción:</strong> Requiere un acto expreso de recepción o conformidad dentro del <strong>mes siguiente a la entrega o realización del objeto del contrato</strong>, documentado en un acta formal suscrita por el representante del órgano de contratación y el contratista.</li>
+<li><strong>Plazo de garantía:</strong> Fijado en el pliego, transcurrido el cual sin objeciones por parte de la Administración quedará extinguida la responsabilidad del contratista y se procederá a la devolución o cancelación de la garantía definitiva.</li>
+</ul>
+<h3 class="sub-title">9.2. Causas de resolución contractual (art. 211 LCSP)</h3>
+<p>Son causas taxativas de resolución:
+* <strong>a)</strong> La muerte o incapacidad sobrevenida del contratista individual, o la extinción de la personalidad jurídica de la sociedad mercantil.
+* <strong>b)</strong> La declaración de concurso o la declaración de insolvencia en cualquier otro procedimiento.
+* <strong>c)</strong> El mutuo acuerdo entre la Administración y el contratista.
+* <strong>d)</strong> La demora en el cumplimiento de los plazos por parte del contratista.
+* <strong>e)</strong> La demora en el pago por parte de la Administración por plazo superior a <strong>seis meses</strong> (art. 198.6).
+* <strong>f)</strong> El incumplimiento de las obligaciones contractuales esenciales calificadas como tales en los pliegos.
+* <strong>g)</strong> La imposibilidad de ejecutar la prestación en los términos pactados o cuando no sea posible modificar el contrato conforme a los artículos 204 y 205.</p>
+<h3 class="sub-title">9.3. Efectos de la resolución (art. 213 LCSP)</h3>
+<ul>
+<li>Por mutuo acuerdo: Se estará a lo válidamente estipulado entre las partes.</li>
+<li>Por causa imputable al contratista: Se incautará la garantía definitiva y el contratista deberá indemnizar a la Administración los daños y perjuicios ocasionados en lo que excedan del importe de la garantía incautada.</li>
+<li>Por causa imputable a la Administración: El contratista tendrá derecho al abono del precio de las prestaciones efectivamente realizadas y a una indemnización del <strong>3% del importe de las prestaciones dejadas de realizar</strong> (en contratos de obras, art. 246, o según las reglas de cada tipo contractual).</li>
+</ul>
+<hr />
+<h2 class="section-title">10. Conclusiones y buenas prácticas en la contratación de la Junta de Andalucía</h2>
+
+<p>La gestión avanzada de los procedimientos de licitación y ejecución contractual en la Junta de Andalucía exige al Cuerpo Técnico del Grupo A2:
+1. Impulsar el empleo sistemático del <strong>procedimiento abierto simplificado</strong>, reduciendo plazos y cargas burocráticas mediante la comprobación electrónica de solvencia en ROLECE.
+2. Evitar el uso desviado del contrato menor velando por la adecuada planificación anual de compras y la proscripción absoluta del fraccionamiento fraudulento.
+3. Ejercer un control riguroso de la ejecución material mediante la figura del <strong>responsable del contrato</strong> (art. 62 LCSP), velando por las condiciones de trabajo de los subcontratistas y aplicando el régimen de penalidades ante retrasos injustificados.</p>
+<hr />
+<h2 class="section-title">11. Anexo: Tabla sinóptica y mapas conceptuales del Tema 16</h2>
+
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Procedimiento / Trámite</th>
+<th style="text-align: left;">Precepto Legal</th>
+<th style="text-align: left;">Ámbito de Aplicación / Requisitos</th>
+<th style="text-align: left;">Plazos y Reglas Clave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Abierto Ordinario</strong></td>
+<td style="text-align: left;">Arts. 156-158</td>
+<td style="text-align: left;">Todo operador económico puede licitar. Prohibida negociación.</td>
+<td style="text-align: left;">Mínimo 35 días en SARA (30 con medios telemáticos).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Simplificado Ordinario</strong></td>
+<td style="text-align: left;">Art. 159.1-5</td>
+<td style="text-align: left;">Obras $\le$ 2 M€; Suministros/servicios $&lt;$ SARA. ROLECE obligado.</td>
+<td style="text-align: left;">Plazo: 20 días en obras; 15 en servicios. Juicio valor $\le 25\%$.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Simplificado Abreviado</strong></td>
+<td style="text-align: left;">Art. 159.6</td>
+<td style="text-align: left;">Obras $&lt;$ 80.000 €; Suministros/servicios $&lt;$ 60.000 €.</td>
+<td style="text-align: left;">Plazo mínimo 10 días (5 en compras corrientes). Sobre único.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contrato Menor</strong></td>
+<td style="text-align: left;">Art. 118</td>
+<td style="text-align: left;">Obras $&lt;$ 40.000 €; Suministros/servicios $&lt;$ 15.000 €.</td>
+<td style="text-align: left;">Duración máx. 1 año. No prórroga. Informe motivación y factura.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Garantía Definitiva</strong></td>
+<td style="text-align: left;">Art. 107</td>
+<td style="text-align: left;">Requisito de adjudicación para el mejor licitador.</td>
+<td style="text-align: left;">5% del importe de adjudicación (sin IVA). Plazo: 10 días.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Plazo de Standstill</strong></td>
+<td style="text-align: left;">Art. 153.3</td>
+<td style="text-align: left;">Contratos susceptibles de Recurso Especial en materia contractual.</td>
+<td style="text-align: left;">15 días hábiles de suspensión legal previa a formalizar.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Riesgo y Ventura</strong></td>
+<td style="text-align: left;">Art. 197</td>
+<td style="text-align: left;">Principio general de ejecución económica del contratista.</td>
+<td style="text-align: left;">Solo se exceptúa en obras por casos de fuerza mayor tasados.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Penalidades por Demora</strong></td>
+<td style="text-align: left;">Art. 193.3</td>
+<td style="text-align: left;">Retraso culpable del contratista en plazos totales o parciales.</td>
+<td style="text-align: left;">Proporción de 0,60 € por cada 1.000 € del contrato al día.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Modificación Prevista</strong></td>
+<td style="text-align: left;">Art. 204</td>
+<td style="text-align: left;">Expresamente contemplada en pliego original con límites claros.</td>
+<td style="text-align: left;">Límite máximo general: 20% del precio inicial sin IVA.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cesión Contractual</strong></td>
+<td style="text-align: left;">Art. 214</td>
+<td style="text-align: left;">Subrogación de un tercero en la posición del contratista.</td>
+<td style="text-align: left;">Ejecución previa de al menos el 20% del importe. Autorización.</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

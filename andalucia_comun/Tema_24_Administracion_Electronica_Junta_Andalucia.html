@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 24: La Administración Electrónica en la Junta de Andalucía: Marco Legal y Desarrollo Autonómico. Sedes Electrónicas, Puntos de Acceso General Electrónico y Carpeta Ciudadana. Identificación y Firma Electrónica de la Ciudadanía y de las Personas Empleadas Públicas. El Registro Electrónico Único de la Administración de la Junta de Andalucía</title>
+<style>
+
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #4b5563;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #6b7280;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #047857;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #047857;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #14532d;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #047857;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #1f2937;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #374151;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #047857;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #047857;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #064e3b;
+    margin-bottom: 5px;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #e6f4ea;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f8fafc;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">JUNTA DE ANDALUCÍA — MATERIAS COMUNES (A2)</div>
+  <h1>TEMA 24</h1>
+  <h2>La Administración Electrónica en la Junta de Andalucía: Marco Legal y Desarrollo Autonómico. Sedes Electrónicas, Puntos de Acceso General Electrónico y Carpeta Ciudadana. Identificación y Firma Electrónica de la Ciudadanía y de las Personas Empleadas Públicas. El Registro Electrónico Único de la Administración de la Junta de Andalucía</h2>
+  <div class="meta-box">
+<p>**Cuerpo:** Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p>**Grupo:** A2</p>
+<p>**Bloque:** Materias Comunes</p>
+<p>**Tema Oficial:** Tema 24</p>
+<p>**Normativa Clave:**</p>
+<p>Reglamento (UE) 910/2014 del Parlamento Europeo y del Consejo (Reglamento eIDAS).</p>
+<p>Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (LPACAP, arts. 9 a 16, 41 a 44).</p>
+<p>Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (LRJSP, arts. 38 a 46).</p>
+<p>Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza.</p>
+<p>Decreto 622/2019, de 27 de diciembre, de administración electrónica, simplificación de procedimientos y racionalización organizativa de la Junta de Andalucía.</p>
+<p>Decreto-ley 3/2024, de 6 de febrero, de medidas de simplificación y racionalización administrativa de Andalucía.</p>
+<p>Decreto 128/2021, de 30 de marzo, por el que se aprueban los Estatutos de la Agencia Digital de Andalucía (ADA).</p>
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 24</div>
+<div class="toc-item level-1">1. Introducción y marco conceptual de la Administración electrónica</div>
+<div class="toc-item level-1">2. Marco normativo estatal y autonómico de la Administración electrónica</div>
+<div class="toc-item level-2">2.1. El marco básico estatal: Leyes 39/2015 y 40/2015</div>
+<div class="toc-item level-2">2.2. El desarrollo autonómico andaluz: El Decreto 622/2019</div>
+<div class="toc-item level-2">2.3. La Agencia Digital de Andalucía (ADA): Naturaleza, fines y competencias</div>
+<div class="toc-item level-2">2.4. Principios rectores: Proactividad, neutralidad tecnológica, accesibilidad e interoperabilidad</div>
+<div class="toc-item level-1">3. Canales de acceso y sedes electrónicas en la Junta de Andalucía</div>
+<div class="toc-item level-2">2.1. Concepto y régimen jurídico de la Sede Electrónica (art. 38 LRJSP y Decreto 622/2019)</div>
+<div class="toc-item level-2">2.2. La Sede Electrónica General de la Administración de la Junta de Andalucía</div>
+<div class="toc-item level-2">2.3. Requisitos de seguridad, titularidad, responsabilidad y catálogo de servicios</div>
+<div class="toc-item level-2">2.4. El Punto de Acceso General electrónico de la Junta de Andalucía y su conexión con el PAGe estatal</div>
+<div class="toc-item level-1">4. La Carpeta Ciudadana de la Junta de Andalucía</div>
+<div class="toc-item level-2">4.1. Concepto, funcionalidad y acceso personalizado</div>
+<div class="toc-item level-2">4.2. Servicios integrados: Consulta de expedientes, notificaciones telemáticas, datos de residencia y titulaciones</div>
+<div class="toc-item level-2">4.3. Apoderamientos electrónicos y representación (Registro Electrónico de Apoderamientos - @podera)</div>
+<div class="toc-item level-1">5. Sistemas de identificación y firma electrónica</div>
+<div class="toc-item level-2">5.1. Distinción entre identificación y firma electrónica (Reglamento eIDAS y LPACAP)</div>
+<div class="toc-item level-2">5.2. Identificación y firma de la ciudadanía:</div>
+<div class="toc-item level-3">5.2.1. Certificados electrónicos reconocidos o cualificados (DNI-e, FNMT)</div>
+<div class="toc-item level-3">5.2.2. La plataforma Cl@ve: Cl@ve PIN, Cl@ve Permanente y Cl@ve Firma</div>
+<div class="toc-item level-3">5.2.3. Sistemas no criptográficos de claves concertadas</div>
+<div class="toc-item level-2">5.3. Identificación y firma electrónica de las personas empleadas públicas:</div>
+<div class="toc-item level-3">5.3.1. Certificados de empleado público en soporte seguro</div>
+<div class="toc-item level-3">5.3.2. Actuaciones administrativas automatizadas: Sello electrónico y Código Seguro de Verificación (CSV)</div>
+<div class="toc-item level-1">6. El Registro Electrónico Único de la Administración de la Junta de Andalucía</div>
+<div class="toc-item level-2">6.1. Marco legal y naturaleza jurídica (art. 16 LPACAP y Decreto 622/2019)</div>
+<div class="toc-item level-2">6.2. Presentación telemática de solicitudes, escritos y comunicaciones</div>
+<div class="toc-item level-2">6.3. Cómputo de plazos en el Registro Electrónico: Días hábiles, inhábiles, fecha y hora oficial de la sede</div>
+<div class="toc-item level-2">6.4. El recibo acreditativo de presentación: Contenido mínimo y valor probatorio</div>
+<div class="toc-item level-2">6.5. Digitalización de documentos en papel, copias auténticas y compulsa electrónica</div>
+<div class="toc-item level-2">6.6. Interconexión registral: El Sistema de Interconexión de Registros (SIR)</div>
+<div class="toc-item level-1">7. Conclusiones y síntesis doctrinal</div>
+<div class="toc-item level-1">8. Anexo: Tabla sinóptica de sedes, firmas, registros y plazos telemáticos</div>
+</div>
+
+<hr />
+<h2 class="section-title">1. Introducción y marco conceptual de la Administración electrónica</h2>
+<p>La Administración electrónica representa la transformación cualitativa del modelo tradicional burocrático en un ecosistema digital, proactivo, abierto y plenamente orientado a la ciudadanía. Deja de ser un canal accesorio o potestativo para configurarse, tras la aprobación de las Leyes 39/2015 y 40/2015, como el <strong>modo habitual y preferente de funcionamiento y tramitación de los poderes públicos</strong>.</p>
+<p>En la Junta de Andalucía, la Administración electrónica persigue la eliminación definitiva de las barreras espacio-temporales, la simplificación radical de cargas burocráticas, la garantía de la máxima celeridad procedimental y la efectividad del principio de no aportación reiterada de documentos (<em>principio de sólo una vez</em> o <em>once-only</em>).</p>
+<hr />
+<h2 class="section-title">2. Marco normativo estatal y autonómico de la Administración electrónica</h2>
+<h3 class="sub-title">2.1. El marco básico estatal: Leyes 39/2015 y 40/2015</h3>
+<ul>
+<li><strong>Ley 39/2015 (LPACAP):</strong> Regula las relaciones externas de la Administración con la ciudadanía y las empresas. Consagra el derecho y el deber de relacionarse electrónicamente con las Administraciones Públicas (art. 14), los sistemas de firma e identificación (arts. 9-11), el Registro Electrónico Único (art. 16) y el régimen de notificaciones por medios electrónicos (arts. 41-44).</li>
+<li><strong>Ley 40/2015 (LRJSP):</strong> Disciplina el funcionamiento interno del sector público y las relaciones interadministrativas. Regula las sedes electrónicas (art. 38), el Punto de Acceso General (art. 39), los sistemas de identificación de las administraciones (art. 40), las actuaciones administrativas automatizadas (art. 41) y los principios del Esquema Nacional de Interoperabilidad (ENI) y Esquema Nacional de Seguridad (ENS).</li>
+</ul>
+<h3 class="sub-title">2.2. El desarrollo autonómico andaluz: El Decreto 622/2019</h3>
+<p>El <strong>Decreto 622/2019, de 27 de diciembre</strong>, constituye la norma cabecera de la Administración electrónica en Andalucía. Establece el modelo organizativo, procedimental y tecnológico de la Junta de Andalucía, articulando la simplificación integral de trámites y el uso generalizado de los servicios telemáticos corporativos.</p>
+<h3 class="sub-title">2.3. La Agencia Digital de Andalucía (ADA)</h3>
+<p>Creada mediante la Ley 3/2020 y con estatutos aprobados por <strong>Decreto 128/2021, de 30 de marzo</strong>, la <strong>Agencia Digital de Andalucía (ADA)</strong> es una agencia de régimen especial adscrita a la Consejería de la Presidencia. Asume con carácter centralizado la planificación, dirección, despliegue y gestión de las tecnologías de la información, las telecomunicaciones, la ciberseguridad y el gobierno digital de la Junta de Andalucía.</p>
+<h3 class="sub-title">2.4. Principios rectores</h3>
+<ul>
+<li><strong>Proactividad:</strong> La Administración debe anticiparse a las demandas de los ciudadanos, reconociendo derechos sin necesidad de solicitud previa.</li>
+<li><strong>Neutralidad tecnológica y formatos abiertos:</strong> Garantía de uso de estándares abiertos sin dependencia de marcas comerciales.</li>
+<li><strong>Accesibilidad y usabilidad:</strong> Diseño universal para garantizar el acceso a personas con discapacidad o brecha digital.</li>
+<li><strong>Interoperabilidad:</strong> Cooperación técnica e intercambio seguro de datos entre sistemas públicos (Plataforma SCSP).</li>
+</ul>
+<hr />
+<h2 class="section-title">3. Canales de acceso y sedes electrónicas en la Junta de Andalucía</h2>
+<h3 class="sub-title">3.1. Concepto y régimen jurídico de la Sede Electrónica (art. 38 LRJSP)</h3>
+<p>La <strong>sede electrónica</strong> es aquella dirección electrónica, disponible para la ciudadanía a través de redes de telecomunicaciones, cuya titularidad corresponde a una Administración Pública en el ejercicio de sus competencias.</p>
+<ul>
+<li><strong>Garantías formales:</strong> Asegura la identificación del órgano titular, la autenticidad, la integridad de los contenidos, la confidencialidad en las comunicaciones y la permanente actualización informativa.</li>
+<li><strong>Fecha y hora oficial:</strong> La sede electrónica sincroniza su reloj con el Real Instituto y Observatorio de la Armada de San Fernando (Cádiz), garantizando la fehaciencia horaria oficial para el cómputo de plazos administrativos.</li>
+</ul>
+<h3 class="sub-title">3.2. La Sede Electrónica General de la Junta de Andalucía</h3>
+<p>El Decreto 622/2019 implanta la <strong>Sede Electrónica General de la Administración de la Junta de Andalucía</strong>, que unifica los puntos de contacto digital de todas las Consejerías y agencias en un portal único corporativo (<code>juntadeandalucia.es/sede</code>), eliminando la dispersión de sedes departamentales aisladas.</p>
+<h3 class="sub-title">3.3. El Punto de Acceso General electrónico (PAGe)</h3>
+<p>A tenor del <strong>artículo 39 de la LRJSP</strong>, el Punto de Acceso General es el portal web institucional que facilita el acceso centralizado a los servicios, trámites, información pública y sedes electrónicas de la Administración. El PAG de la Junta se encuentra federado e integrado con el Punto de Acceso General electrónico de la Administración General del Estado (PAGe).</p>
+<hr />
+<h2 class="section-title">4. La Carpeta Ciudadana de la Junta de Andalucía</h2>
+<p>La <strong>Carpeta Ciudadana</strong> es el espacio digital privado y personalizado al que accede cada ciudadano o empresa previa autenticación fehaciente (Cl@ve o certificado digital).</p>
+<h3 class="sub-title">4.1. Servicios integrados en la Carpeta Ciudadana</h3>
+<ol>
+<li><strong>Consulta del estado de tramitación de expedientes:</strong> Información en tiempo real sobre fases, requerimientos pendientes y resoluciones de procedimientos incoados en cualquier Consejería.</li>
+<li><strong>Acceso a notificaciones telemáticas:</strong> Puesta a disposición de notificaciones mediante comparecencia en sede electrónica corporativa.</li>
+<li><strong>Consulta de datos y certificados administrativos:</strong> Títulos académicos oficiales, familia numerosa, grado de discapacidad, inscripción en el censo andaluz y situaciones tributarias.</li>
+<li><strong>Histórico de escritos y solicitudes presentadas:</strong> Descarga de justificantes registrales y copias auténticas con Código Seguro de Verificación (CSV).</li>
+</ol>
+<h3 class="sub-title">4.2. El Registro Electrónico de Apoderamientos (@podera)</h3>
+<p>Permite inscribir los poderes notariales o apoderamientos <em>apud acta</em> otorgados por medios electrónicos para actuar ante la Junta de Andalucía, distinguiendo entre poderes generales (para cualquier actuación administrativa), poderes para una categoría de trámites o poderes específicos para un procedimiento singular (art. 6 LPACAP).</p>
+<hr />
+<h2 class="section-title">5. Sistemas de identificación y firma electrónica</h2>
+<h3 class="sub-title">5.1. Distinción entre identificación y firma electrónica</h3>
+<ul>
+<li><strong>Identificación (art. 9 LPACAP):</strong> Operación técnica que acredita de forma fehaciente la personalidad jurídica del interesado en el entorno digital.</li>
+<li><strong>Firma electrónica (art. 10 LPACAP):</strong> Declaración de voluntad vinculante mediante la cual una persona física asume la autoría y el contenido de un documento o solicitud telemática.</li>
+<li><strong>Regla general de necesidad:</strong> La mera identificación es suficiente para consultar expedientes o realizar trámites de información. La <strong>firma electrónica es preceptiva</strong> para formular solicitudes, presentar declaraciones responsables, interponer recursos o desistir de derechos.</li>
+</ul>
+<h3 class="sub-title">5.2. Identificación y firma de la ciudadanía</h3>
+<ol>
+<li><strong>Certificados electrónicos cualificados:</strong> Expedidos por prestadores cualificados de servicios de confianza (DNI electrónico, Fábrica Nacional de Moneda y Timbre - FNMT).</li>
+<li><strong>Plataforma Cl@ve:</strong> Sistema estatal común de identificación y firma concertada admitido por la Junta:</li>
+<li><strong>Cl@ve PIN:</strong> Contraseña de validez temporal y uso puntual recibida por SMS o app móvil.</li>
+<li><strong>Cl@ve Permanente:</strong> Usuario y contraseña reforzados mediante OTP por SMS para trámites frecuentes.</li>
+<li><strong>Cl@ve Firma:</strong> Certificados centralizados en la nube que permiten firmar documentos sin instalar software en el equipo local.</li>
+</ol>
+<h3 class="sub-title">5.3. Identificación y firma electrónica de las personas empleadas públicas</h3>
+<ul>
+<li><strong>Certificado de empleado público (art. 43 LRJSP):</strong> Certificado electrónico en soporte seguro que acredita la identidad de la persona funcionaria o laboral y el cargo o puesto que desempeña en la Junta de Andalucía.</li>
+<li><strong>Actuación Administrativa Automatizada (AAA - art. 41 LRJSP):</strong> Todo acto o actuación realizada íntegramente a través de medios electrónicos por una Administración en el que no haya intervenido de forma directa un empleado público (ej. expedición automática de certificados de estar al corriente con la Hacienda autonómica).</li>
+<li>Se autentican mediante <strong>Sello electrónico de Administración Pública</strong> o mediante <strong>Código Seguro de Verificación (CSV)</strong> vinculado a la sede.</li>
+</ul>
+<hr />
+<h2 class="section-title">6. El Registro Electrónico Único de la Administración de la Junta de Andalucía</h2>
+<p>El <strong>artículo 16 de la Ley 39/2015</strong> y el <strong>Decreto 622/2019</strong> establecen que cada Administración dispondrá de un <strong>Registro Electrónico Único</strong>, plenamente interoperable y coordinado con los restantes registros públicos.</p>
+<h3 class="sub-title">6.1. Presentación telemática y recibo acreditativo</h3>
+<p>Cualquier persona puede presentar solicitudes, escritos y comunicaciones todos los días del año durante las <strong>24 horas del día</strong>. El registro emitirá automáticamente un <strong>recibo justificativo acreditativo</strong> de la presentación que contendrá:
+* Número de registro de entrada individualizado.
+* Fecha y hora oficial exacta de presentación.
+* Identidad del remitente y órgano u oficina de destino.
+* Enumeración y huella digital (hash) de los documentos anexos adjuntos.
+* Código Seguro de Verificación (CSV) para contrastar su autenticidad.</p>
+<h3 class="sub-title">6.2. Cómputo de plazos en el Registro Electrónico (art. 31 LPACAP)</h3>
+<ul>
+<li>El registro se rige por la <strong>fecha y hora oficial de la sede electrónica</strong>.</li>
+<li>La presentación en un <strong>día inhábil</strong> en la sede electrónica se entenderá realizada en la <strong>primera hora del primer día hábil siguiente</strong>, salvo que una norma permita expresamente la recepción en día inhábil.</li>
+<li>Son días inhábiles para el cómputo de plazos en la Junta los sábados, domingos y festivos autonómicos o locales oficiales.</li>
+</ul>
+<h3 class="sub-title">6.3. Digitalización y copias auténticas</h3>
+<p>Los documentos presentados de manera presencial en papel por personas no obligadas a relacionarse electrónicamente serán <strong>digitalizados de inmediato</strong> por las oficinas de asistencia en materia de registros, devolviéndose el original en papel al ciudadano previa expedición de una copia electrónica auténtica incorporada al expediente digital (art. 16.5 LPACAP).</p>
+<h3 class="sub-title">6.4. El Sistema de Interconexión de Registros (SIR)</h3>
+<p>Permite el envío y recepción telemática de asientos registrales entre cualquier órgano de la Junta de Andalucía, la Administración General del Estado, las Entidades Locales andaluzas y las demás Comunidades Autónomas, bajo el estándar técnico SICRES garantizado por el Esquema Nacional de Interoperabilidad (ENI).</p>
+<hr />
+<h2 class="section-title">7. Conclusiones y síntesis doctrinal</h2>
+<p>La implantación de la Administración electrónica en la Junta de Andalucía, consolidada por el Decreto 622/2019 y gestionada operativamente por la Agencia Digital de Andalucía (ADA), constituye un pilar esencial del servicio público contemporáneo. El Registro Electrónico Único, la Carpeta Ciudadana corporativa y los sistemas avanzados de autenticación y firma garantizan la máxima seguridad jurídica, reducen los tiempos de resolución y acercan de forma ágil y transparente las instituciones autonómicas a la ciudadanía.</p>
+<hr />
+<h2 class="section-title">8. Anexo: Tabla sinóptica de sedes, firmas, registros y plazos telemáticos</h2>
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Concepto / Sistema</th>
+<th style="text-align: left;">Base Normativa</th>
+<th style="text-align: left;">Funcionalidad / Garantía</th>
+<th style="text-align: left;">Requisito Operativo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Sede Electrónica General</strong></td>
+<td style="text-align: left;">Art. 38 LRJSP / D. 622/2019</td>
+<td style="text-align: left;">Punto de contacto único oficial con fehaciencia de fecha y hora.</td>
+<td style="text-align: left;">Certificado de sede y sincronización horaria ROA.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Punto de Acceso General (PAG)</strong></td>
+<td style="text-align: left;">Art. 39 LRJSP / D. 622/2019</td>
+<td style="text-align: left;">Puerta de entrada informativa y de trámites federada con el Estado.</td>
+<td style="text-align: left;">Integración técnica en el portal <code>juntadeandalucia.es</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Carpeta Ciudadana</strong></td>
+<td style="text-align: left;">D. 622/2019 / D-L 3/2024</td>
+<td style="text-align: left;">Área privada para seguimiento de expedientes y notificaciones.</td>
+<td style="text-align: left;">Acceso autenticado mediante Cl@ve o certificado digital.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cl@ve Permanente / PIN</strong></td>
+<td style="text-align: left;">Reglamento eIDAS / Orden PRE</td>
+<td style="text-align: left;">Plataforma estatal de identificación no criptográfica común.</td>
+<td style="text-align: left;">Registro previo del ciudadano en el sistema Cl@ve.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Registro Electrónico Único</strong></td>
+<td style="text-align: left;">Art. 16 LPACAP / D. 622/2019</td>
+<td style="text-align: left;">Recepción 24x7 de escritos con recibo oficial automático y CSV.</td>
+<td style="text-align: left;">Cómputo de plazos: en día inhábil pasa al primer día hábil.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Actuación Automatizada (AAA)</strong></td>
+<td style="text-align: left;">Art. 41 LRJSP / D. 622/2019</td>
+<td style="text-align: left;">Actos dictados por sistemas informáticos sin intervención humana.</td>
+<td style="text-align: left;">Autenticación con Sello Electrónico de órgano o CSV.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Interconexión Registral (SIR)</strong></td>
+<td style="text-align: left;">Art. 16.4 LPACAP / ENI</td>
+<td style="text-align: left;">Transmisión instantánea de asientos entre distintas administraciones.</td>
+<td style="text-align: left;">Protocolo normalizado SICRES 3.0 homologado.</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

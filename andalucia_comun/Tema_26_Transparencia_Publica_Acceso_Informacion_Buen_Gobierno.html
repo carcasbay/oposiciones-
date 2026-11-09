@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tema 26: Transparencia Pública, Acceso a la Información y Buen Gobierno: Ley 19/2013 Estatal y Ley 1/2014 de Transparencia Pública de Andalucía. Publicidad Activa: El Portal de la Junta de Andalucía. El Derecho de Acceso a la Información Pública: Procedimiento y Límites. El Consejo de Transparencia y Protección de Datos de Andalucía</title>
+<style>
+
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #4b5563;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #6b7280;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #047857;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #047857;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #14532d;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #047857;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #1f2937;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #374151;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #047857;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #047857;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: bold;
+    color: #064e3b;
+    margin-bottom: 5px;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #e6f4ea;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f8fafc;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">JUNTA DE ANDALUCÍA — MATERIAS COMUNES (A2)</div>
+  <h1>TEMA 26</h1>
+  <h2>Transparencia Pública, Acceso a la Información y Buen Gobierno: Ley 19/2013 Estatal y Ley 1/2014 de Transparencia Pública de Andalucía. Publicidad Activa: El Portal de la Junta de Andalucía. El Derecho de Acceso a la Información Pública: Procedimiento y Límites. El Consejo de Transparencia y Protección de Datos de Andalucía</h2>
+  <div class="meta-box">
+<p>**Cuerpo:** Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+<p>**Grupo:** A2</p>
+<p>**Bloque:** Materias Comunes</p>
+<p>**Tema Oficial:** Tema 26</p>
+<p>**Normativa Clave:**</p>
+<p>Constitución Española de 1978 (arts. 9.3, 20.1.d y 105.b).</p>
+<p>Estatuto de Autonomía para Andalucía (Ley Orgánica 2/2007, arts. 10.1, 31 y 38).</p>
+<p>Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno (LTAIBG).</p>
+<p>Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía (LTPA).</p>
+<p>Decreto 434/2015, de 29 de septiembre, por el que se aprueban los Estatutos del Consejo de Transparencia y Protección de Datos de Andalucía (CTPDA).</p>
+<p>Decreto-ley 3/2024, de 6 de febrero, de simplificación y racionalización administrativa de la Junta de Andalucía.</p>
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General del Tema 26</div>
+<div class="toc-item level-1">1. Fundamentos doctrinales y constitucionales de la transparencia y el buen gobierno</div>
+<div class="toc-item level-2">1.1. Principio democrático, rendición de cuentas (*accountability*) y derecho a una buena administración</div>
+<div class="toc-item level-2">1.2. El artículo 105.b de la Constitución Española y el artículo 31 del Estatuto de Autonomía</div>
+<div class="toc-item level-1">2. Marco normativo: Relación entre la Ley 19/2013 estatal y la Ley 1/2014 de Andalucía</div>
+<div class="toc-item level-2">2.1. Ámbito de competencias y carácter de mínimos de la legislación básica estatal</div>
+<div class="toc-item level-2">2.2. Ámbito subjetivo de aplicación en Andalucía: Administración de la Junta, sector público instrumental, corporaciones de derecho público y perceptores de fondos públicos</div>
+<div class="toc-item level-1">3. La Publicidad Activa en la Junta de Andalucía</div>
+<div class="toc-item level-2">3.1. Concepto y principios técnicos: Transparencia, veracidad, gratuidad, accesibilidad, interoperabilidad y reutilización</div>
+<div class="toc-item level-2">3.2. Contenido de las obligaciones de publicidad activa (Ley 1/2014):</div>
+<div class="toc-item level-3">3.2.1. Información institucional, organizativa y de planificación</div>
+<div class="toc-item level-3">3.2.2. Información de relevancia jurídica y normativa</div>
+<div class="toc-item level-3">3.2.3. Información económica, presupuestaria, estadística y patrimonial</div>
+<div class="toc-item level-3">3.2.4. Contratación pública, convenios y subvenciones</div>
+<div class="toc-item level-3">3.2.5. Altos cargos: Retribuciones, indemnizaciones, agendas oficiales y declaraciones de bienes</div>
+<div class="toc-item level-2">3.3. El Portal de la Junta de Andalucía y los Catálogos de Datos Abiertos (*Open Data*)</div>
+<div class="toc-item level-1">4. El Derecho de Acceso a la Información Pública</div>
+<div class="toc-item level-2">4.1. Concepto, titularidad universal y régimen jurídico</div>
+<div class="toc-item level-2">4.2. Límites al derecho de acceso (art. 14 Ley 19/2013 y Ley 1/2014):</div>
+<div class="toc-item level-3">4.2.1. Catálogo taxativo de límites: Seguridad pública, relaciones exteriores, propiedad intelectual, confidencialidad, etc.</div>
+<div class="toc-item level-3">4.2.2. El principio de interpretación restrictiva y el doble test: Test del daño y test del interés público</div>
+<div class="toc-item level-2">4.3. La protección de datos personales como límite específico (art. 15 Ley 19/2013)</div>
+<div class="toc-item level-2">4.4. Causas de inadmisión de solicitudes (información en elaboración, notas de carácter interno, reelaboración)</div>
+<div class="toc-item level-2">4.5. Procedimiento administrativo para el ejercicio del derecho de acceso:</div>
+<div class="toc-item level-3">4.5.1. Solicitud y subsanación</div>
+<div class="toc-item level-3">4.5.2. Tramitación y trámite de alegaciones a terceros afectados</div>
+<div class="toc-item level-3">4.5.3. Plazo de resolución y notificación (un mes ampliable)</div>
+<div class="toc-item level-3">4.5.4. El sentido del silencio administrativo: Silencio positivo o desestimatorio</div>
+<div class="toc-item level-2">4.6. Régimen de impugnaciones: La reclamación potestativa previa ante el CTPDA y el recurso contencioso-administrativo</div>
+<div class="toc-item level-1">5. El Consejo de Transparencia y Protección de Datos de Andalucía (CTPDA)</div>
+<div class="toc-item level-2">5.1. Naturaleza jurídica: Autoridad administrativa independiente adscrita formalmente</div>
+<div class="toc-item level-2">5.2. Estructura y órganos de gobierno: Dirección del Consejo y Comisión Consultiva</div>
+<div class="toc-item level-2">5.3. Competencias y funciones resolutivas, consultivas y sancionadoras</div>
+<div class="toc-item level-2">5.4. Carácter vinculante y ejecutivo de sus resoluciones</div>
+<div class="toc-item level-1">6. Principios de Buen Gobierno y Código de Conducta</div>
+<div class="toc-item level-2">6.1. Principios generales y principios de actuación de los miembros del Gobierno y altos cargos</div>
+<div class="toc-item level-2">6.2. Régimen de incompatibilidades y deberes de abstención</div>
+<div class="toc-item level-2">6.3. El Registro de Actividades, Bienes e Intereses de los Altos Cargos de la Junta</div>
+<div class="toc-item level-2">6.4. Régimen sancionador en materia de buen gobierno (infracciones y sanciones)</div>
+<div class="toc-item level-1">7. Conclusiones y síntesis doctrinal</div>
+<div class="toc-item level-1">8. Anexo: Tabla sinóptica de publicidad activa, límites, plazos de acceso y régimen del CTPDA</div>
+</div>
+
+<hr />
+<h2 class="section-title">1. Fundamentos doctrinales y constitucionales de la transparencia y el buen gobierno</h2>
+<p>La transparencia pública no constituye un mero principio programático, sino un <strong>derecho nuclear de la ciudadanía democrática</strong> que transforma la relación entre la sociedad y los poderes públicos. Supera el viejo paradigma decimonónico del secreto administrativo para consagrar el principio de <strong>gobierno abierto (<em>open government</em>)</strong>, fundamentado en tres pilares sinérgicos: <strong>transparencia, participación ciudadana y rendición de cuentas (<em>accountability</em>)</strong>.</p>
+<p>En el ordenamiento constitucional, el <strong>artículo 105.b de la Constitución Española de 1978</strong> dispone que la ley regulará el acceso de los ciudadanos a los archivos y registros administrativos, salvo en lo que afecte a la seguridad y defensa del Estado, la averiguación de los delitos y la intimidad de las personas.</p>
+<p>En el marco autonómico, el <strong>artículo 31 del Estatuto de Autonomía para Andalucía</strong> consagra el derecho a una buena administración, que incluye el derecho de todos a que las administraciones públicas traten sus asuntos de forma imparcial, objetiva y en plazo razonable, así como el derecho de acceso a la información pública. Por su parte, el <strong>artículo 38 del Estatuto</strong> reconoce expresamente el derecho de acceso a los documentos de las instituciones andaluzas.</p>
+<hr />
+<h2 class="section-title">2. Marco normativo: Relación entre la Ley 19/2013 estatal y la Ley 1/2014 de Andalucía</h2>
+<p>El régimen de la transparencia en la Comunidad Autónoma de Andalucía se vertebra a través de la articulación de dos normas fundamentales:
+1. <strong>Ley 19/2013, de 9 de diciembre (LTAIBG):</strong> Dictada al amparo del artículo 149.1.1.ª y 18.ª de la CE, fija las bases estatales y el régimen mínimo inderogable de la publicidad activa, el derecho de acceso y el buen gobierno.
+2. <strong>Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía (LTPA):</strong> Desarrolla y amplía notablemente las exigencias de transparencia en Andalucía, configurando un <strong>nivel de exigencia superior al estatal</strong> (mayor número de obligaciones de publicidad activa, plazos más rigurosos y una autoridad de control con potestades reforzadas).</p>
+<h3 class="sub-title">2.1. Ámbito subjetivo de aplicación en Andalucía (art. 3 Ley 1/2014)</h3>
+<p>La Ley 1/2014 vincula a un amplio catálogo de sujetos:
+* <strong>Sector público autonómico íntegro:</strong> Administración de la Junta de Andalucía, agencias administrativas, agencias de régimen especial, agencias públicas empresariales, sociedades mercantiles, fundaciones públicas y consorcios adscritos.
+* <strong>Instituciones estatutarias:</strong> Parlamento de Andalucía, Defensor del Pueblo Andaluz, Cámara de Cuentas, Consejo Consultivo y Consejo Económico y Social (en sus actividades sujetas a Derecho Administrativo).
+* <strong>Entidades Locales andaluzas</strong> y su sector público vinculado.
+* <strong>Corporaciones de Derecho Público</strong> (Colegios Profesionales, Cámaras de Comercio) respecto a sus actividades sujetas a derecho administrativo.
+* <strong>Entidades privadas perceptoras de fondos públicos:</strong> Personas físicas o jurídicas privadas que perciban durante un año ayudas o subvenciones públicas de la Junta por importe superior a <strong>100.000 euros</strong>, o cuando al menos el <strong>40% de sus ingresos anuales</strong> procedan de ayudas públicas, siempre que alcancen como mínimo <strong>5.000 euros</strong>.
+* <strong>Contratistas del sector público:</strong> Adjudicatarios de contratos del sector público andaluz, obligados a suministrar a la Administración la información necesaria para el cumplimiento de las obligaciones de transparencia.</p>
+<hr />
+<h2 class="section-title">3. La Publicidad Activa en la Junta de Andalucía</h2>
+<p>La <strong>publicidad activa</strong> es la obligación legal que incumbe a las Administraciones Públicas de publicar y difundir de forma periódica, proactiva y actualizada la información pública relevante, sin necesidad de que medie solicitud previa por parte de los ciudadanos.</p>
+<h3 class="sub-title">3.1. Principios técnicos de la información</h3>
+<p>De conformidad con el artículo 7 de la Ley 1/2014, la información debe ser veraz, accesible, gratuita, interoperable, reutilizable (datos abiertos en formatos legibles por máquina, como CSV, JSON o XML) y estructurada con diseño universal para personas con discapacidad.</p>
+<h3 class="sub-title">3.2. Contenido ampliado de la Publicidad Activa en Andalucía</h3>
+<p>La Ley 1/2014 supera a la estatal imponiendo la publicación obligatoria de:
+1. <strong>Información institucional y organizativa (art. 10):</strong> Estructura orgánica completa, sedes, competencias, planes anuales de actuación, cartas de servicios y grado de cumplimiento de compromisos.
+2. <strong>Información de relevancia jurídica (art. 13):</strong> Proyectos de leyes y decretos en tramitación, memorias justificativas, informes de impacto de género, directrices, circulares con trascendencia externa y dictámenes del Consejo Consultivo.
+3. <strong>Información económica, presupuestaria y patrimonial (art. 15):</strong> Presupuestos anuales aprobados, liquidaciones trimestrales, cumplimiento de los objetivos de estabilidad y deuda pública, cuentas anuales, informes de auditoría y de la Cámara de Cuentas, y relación detallada del patrimonio inmobiliario.
+4. <strong>Contratos, convenios y subvenciones (arts. 11, 12 y 14):</strong>
+   * <em>Contratación:</em> Todos los contratos adjudicados, licitadores, importe de licitación y adjudicación, modificaciones contractuales y penalidades impuestas.
+   * <em>Convenios:</em> Convenios suscritos, partes firmantes, objeto, plazo de vigencia y compromisos económicos asumidos.
+   * <em>Subvenciones:</em> Convocatorias, resoluciones de concesión, importe, beneficiarios, finalidad y justificación de fondos.
+5. <strong>Altos cargos y personal directivo (art. 16):</strong>
+   * Retribuciones íntegras percibidas anualmente desglosadas por conceptos.
+   * Indemnizaciones por cese en el cargo.
+   * Agendas institucionales de trabajo de miembros del Consejo de Gobierno y directores generales.
+   * Declaraciones anuales de bienes, rentas y actividades inscritas en el Registro de Actividades, Bienes e Intereses.</p>
+<h3 class="sub-title">3.3. El Portal de la Junta de Andalucía</h3>
+<p>Toda esta información se centraliza y pone a disposición de la sociedad a través del <strong>Portal de la Junta de Andalucía</strong>, que cuenta con una sección específica de Transparencia y el catálogo de datos abiertos (<em>Open Data Andalucía</em>).</p>
+<hr />
+<h2 class="section-title">4. El Derecho de Acceso a la Información Pública</h2>
+<p>El derecho de acceso a la información pública faculta a cualquier persona a solicitar y recibir de la Administración los contenidos o documentos, en cualquier soporte o formato, que obren en su poder y que hayan sido elaborados o adquiridos en el ejercicio de sus funciones.</p>
+<h3 class="sub-title">4.1. Características esenciales</h3>
+<ul>
+<li><strong>Universalidad:</strong> Corresponde a <strong>todas las personas</strong> (físicas o jurídicas), sin necesidad de justificar un interés legítimo ni motivar las razones de la petición (art. 17 Ley 19/2013 y art. 24 Ley 1/2014).</li>
+<li><strong>Gratuidad:</strong> El examen directo y la entrega por vía telemática son estrictamente gratuitos. Únicamente podrá exigirse tasa por la expedición de copias físicas en papel o transposición a formatos especiales.</li>
+</ul>
+<h3 class="sub-title">4.2. Límites al derecho de acceso (art. 14 Ley 19/2013)</h3>
+<p>El derecho de acceso no es absoluto. Puede ser limitado cuando acceder a la información suponga un perjuicio efectivo para:
+1. La seguridad nacional, la defensa o las relaciones exteriores.
+2. La seguridad pública o la prevención, investigación y sanción de ilícitos penales, administrativos o disciplinarios.
+3. La igualdad de las partes en los procesos judiciales y la tutela judicial efectiva.
+4. Las funciones administrativas de vigilancia, inspección y control.
+5. Los intereses económicos y comerciales o la política económica y monetaria.
+6. El secreto profesional y los derechos de propiedad intelectual e industrial.
+7. La garantía de la confidencialidad o el secreto requerido en procesos de toma de decisión.
+8. La protección del medio ambiente.</p>
+<div class="callout"><div class="callout-title">Regla de interpretación y Test de Ponderación</div><p>La aplicación de los límites debe ser <strong>restrictiva y justificada</strong>. No basta con invocar formalmente un límite; el órgano gestor debe aplicar el <strong>test del daño</strong> (acreditar que el acceso causaría un daño real, grave y sustancial al interés protegido) y ponderarlo mediante el <strong>test del interés público</strong> (verificar si el interés social en conocer la información supera al bien protegido).</p></div>
+<h3 class="sub-title">4.3. Protección de datos personales como límite (art. 15 Ley 19/2013)</h3>
+<ul>
+<li>Si la información solicitada contiene datos de categorías especiales (salud, ideología, vida sexual, datos penales), el acceso solo se concederá si consta el consentimiento expreso del afectado o si los datos han sido anonimizados de forma irreversible.</li>
+<li>Si contiene datos identificativos meramente asociativos (nombre, cargo de empleados públicos en el ejercicio de sus funciones), el acceso se concederá con carácter general por prevalecer el interés público de transparencia.</li>
+</ul>
+<h3 class="sub-title">4.4. Causas de inadmisión de solicitudes (art. 18 Ley 19/2013)</h3>
+<p>Serán inadmitidas motivadamente las solicitudes que:
+* Se refieran a información que esté en curso de elaboración o de publicación general.
+* Tengan por objeto información auxiliar o de apoyo (notas, borradores, correos de trabajo interno).
+* Requieran una acción previa de reelaboración compleja que exceda los recursos del órgano.
+* Se dirijan a un órgano en cuyo poder no obre la información (debiendo remitirse al competente).
+* Sean manifiestamente repetitivas o abusivas.</p>
+<h3 class="sub-title">4.5. Procedimiento de acceso (arts. 26 a 33 Ley 1/2014)</h3>
+<ol>
+<li><strong>Iniciación:</strong> Solicitud presentada por cualquier medio (preferentemente telemático en sede electrónica), identificando al solicitante y la información deseada.</li>
+<li><strong>Subsanación:</strong> Si la solicitud es imprecisa, se otorgará un plazo de <strong>10 días hábiles</strong> para concretarla, suspendiéndose el plazo de resolución.</li>
+<li><strong>Alegaciones de terceros (art. 30):</strong> Si la información pudiera afectar a derechos e intereses de terceros identificados, se les concederá un plazo de <strong>15 días hábiles</strong> para alegar. El plazo de resolución quedará suspendido.</li>
+<li><strong>Plazo de resolución y notificación (art. 31):</strong> La resolución debe dictarse y notificarse en el plazo máximo de <strong>un mes</strong> desde la recepción de la solicitud. Podrá prorrogarse por <strong>un mes adicional</strong> en caso de solicitudes complejas o voluminosas, notificándolo previamente.</li>
+<li><strong>Silencio administrativo:</strong> La ley estatal 19/2013 fijó el silencio desestimatorio. Sin embargo, la jurisprudencia consolidada y los criterios del CTPDA interpretan el acceso como un derecho ciudadano que exige resolución expresa; en caso de falta de respuesta en plazo, el solicitante puede interponer reclamación inmediata ante el CTPDA.</li>
+</ol>
+<h3 class="sub-title">4.6. Régimen de impugnaciones: La Reclamación ante el CTPDA</h3>
+<p>Frente a cualquier resolución expresa o presunta en materia de acceso, el interesado puede interponer directamente recurso contencioso-administrativo o, con carácter previo y potestativo, la <strong>Reclamación ante el Consejo de Transparencia y Protección de Datos de Andalucía (art. 33 Ley 1/2014)</strong>.
+* <strong>Plazo de interposición:</strong> <strong>Un mes</strong> desde el día siguiente a la notificación del acto o desde el cumplimiento del plazo de silencio.
+* <strong>Naturaleza sustitutiva:</strong> Sustituye a los recursos administrativos ordinarios de alzada y reposición (art. 112.2 LPACAP). Su tramitación es estrictamente gratuita y ágil.</p>
+<hr />
+<h2 class="section-title">5. El Consejo de Transparencia y Protección de Datos de Andalucía (CTPDA)</h2>
+<p>El <strong>Consejo de Transparencia y Protección de Datos de Andalucía (CTPDA)</strong>, creado por el artículo 43 de la Ley 1/2014 y con Estatutos aprobados por <strong>Decreto 434/2015, de 29 de septiembre</strong>, es la autoridad pública independiente de control en la Comunidad Autónoma.</p>
+<h3 class="sub-title">5.1. Naturaleza y posición institucional</h3>
+<ul>
+<li><strong>Naturaleza jurídica:</strong> Autoridad administrativa independiente con personalidad jurídica propia, plena capacidad de obrar y total autonomía funcional y orgánica respecto al Consejo de Gobierno. Se adscribe formalmente a la Consejería competente en materia de transparencia sin subordinación jerárquica.</li>
+<li><strong>Estructura orgánica:</strong></li>
+<li><strong>Dirección del Consejo:</strong> Órgano unipersonal superior, nombrado por Decreto del Consejo de Gobierno a propuesta del Parlamento de Andalucía por mayoría de tres quintos, por un mandato de cinco años no renovable.</li>
+<li><strong>Comisión Consultiva:</strong> Órgano colegiado de asesoramiento integrado por representantes del Parlamento, Administraciones Locales, Universidades y agentes sociales.</li>
+</ul>
+<h3 class="sub-title">5.2. Competencias fundamentales del CTPDA</h3>
+<ol>
+<li><strong>Resolución de reclamaciones:</strong> Resuelve las reclamaciones potestativas frente a denegaciones del derecho de acceso formuladas por la Junta, Ayuntamientos, Diputaciones andaluzas y universidades públicas de la región. Sus resoluciones son <strong>vinculantes y ejecutivas</strong>, poniendo fin a la vía administrativa.</li>
+<li><strong>Control y tutela de la protección de datos:</strong> Ejerce las funciones de autoridad de control en protección de datos respecto a los ficheros y tratamientos del sector público autonómico y local andaluz.</li>
+<li><strong>Supervisión de la publicidad activa:</strong> Revisa de oficio o a instancia de parte el cumplimiento de las obligaciones de publicación en portales públicos, dictando resoluciones correctoras obligatorias.</li>
+<li><strong>Potestad sancionadora:</strong> Incoación y propuesta de sanciones ante infracciones tipificadas en la ley.</li>
+</ol>
+<hr />
+<h2 class="section-title">6. Principios de Buen Gobierno y Código de Conducta</h2>
+<p>El Título V de la Ley 1/2014 y el Título II de la Ley 19/2013 regulan los estándares éticos exigibles a los miembros del Consejo de Gobierno, Viceconsejeros, Directores Generales y asimilados:</p>
+<h3 class="sub-title">6.1. Principios éticos y de conducta</h3>
+<ul>
+<li><strong>Principios éticos:</strong> Eficacia, economía, neutralidad, dedicación exclusiva, ejemplaridad, austeridad y honradez.</li>
+<li><strong>Principios de actuación:</strong> Desempeñar las funciones con transparencia, abstenerse de intervenir en asuntos que generen conflicto de intereses personal o familiar, no aceptar regalos o favores que superen los usos sociales de cortesía y no utilizar recursos públicos con fines particulares o partidistas.</li>
+</ul>
+<h3 class="sub-title">6.2. Régimen sancionador de Buen Gobierno</h3>
+<p>Se tipifican infracciones muy graves (incompatibilidades, falseamiento de declaraciones de bienes, desvío de caudales públicos), graves y leves.
+* <strong>Sanciones:</strong> Destitución inmediata del cargo público, pérdida del derecho a percibir indemnizaciones por cese, obligación de restituir fondos percibidos indebidamente e <strong>inhabilitación para ocupar cargos públicos de cinco a diez años</strong> (art. 29 Ley 19/2013).</p>
+<hr />
+<h2 class="section-title">7. Conclusiones y síntesis doctrinal</h2>
+<p>La legislación andaluza de transparencia y buen gobierno sitúa a la Comunidad Autónoma a la vanguardia democrática del Estado español. La combinación de un régimen exigente de publicidad activa universal en el Portal de la Junta, un procedimiento reglado de acceso a la información blindado por test de ponderación restrictivos y la tutela independiente y ejecutiva del Consejo de Transparencia y Protección de Datos de Andalucía (CTPDA) consolida el control social directo sobre el poder público y dignifica el ejercicio de la función pública.</p>
+<hr />
+<h2 class="section-title">8. Anexo: Tabla sinóptica de publicidad activa, límites, plazos de acceso y régimen del CTPDA</h2>
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Parámetro</th>
+<th style="text-align: left;">Régimen Legal (Ley 1/2014 Andalucía)</th>
+<th style="text-align: left;">Comparativa con Ley 19/2013 Estatal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publicidad Activa</strong></td>
+<td style="text-align: left;">Obligación legal periódica y universal en Portal web.</td>
+<td style="text-align: left;">Más amplia en Andalucía (incluye agendas, memorias de género y anteproyectos).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Titularidad de Acceso</strong></td>
+<td style="text-align: left;"><strong>Universal:</strong> Cualquier persona física o jurídica.</td>
+<td style="text-align: left;">Idéntica: No exige motivar la solicitud ni interés legítimo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Límites de Acceso</strong></td>
+<td style="text-align: left;">Seguridad, intimidad, propiedad intelectual, etc.</td>
+<td style="text-align: left;">Aplicación restrictiva: exige aplicar <strong>Test del daño</strong> y <strong>Test del interés público</strong>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Plazo de Resolución</strong></td>
+<td style="text-align: left;"><strong>1 mes</strong> (ampliable a otro mes por complejidad).</td>
+<td style="text-align: left;">1 mes (igual regla de prórroga).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Alegaciones de terceros</strong></td>
+<td style="text-align: left;">Plazo de <strong>15 días hábiles</strong> para alegar.</td>
+<td style="text-align: left;">15 días hábiles (suspende el plazo de resolver).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Vía de Impugnación</strong></td>
+<td style="text-align: left;"><strong>Reclamación potestativa ante el CTPDA</strong>.</td>
+<td style="text-align: left;">Reclamación ante el Consejo de Transparencia Estatal (CTBG).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Naturaleza de la Reclamación</strong></td>
+<td style="text-align: left;">Sustitutiva de recursos de alzada y reposición (gratuita).</td>
+<td style="text-align: left;">Pone fin a la vía administrativa; recurrible ante Juzgados Contenciosos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Composición del CTPDA</strong></td>
+<td style="text-align: left;">Director nombrado por el Parlamento (3/5) por 5 años.</td>
+<td style="text-align: left;">Plena independencia orgánica y funcional respecto al Ejecutivo.</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

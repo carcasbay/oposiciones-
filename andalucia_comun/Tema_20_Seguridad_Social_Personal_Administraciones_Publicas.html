@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TEMA 20: El sistema de Seguridad Social del personal al servicio de las Administraciones Públicas: Régimen General y Especiales. Afiliación, altas, bajas y cotización. Acción protectora e incapacidades</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-size: 9pt;
+      color: #6b7280;
+    }
+    @bottom-left {
+      content: "Cuerpo Técnico Facultativo (Grupo A2) - Materias Comunes (Junta de Andalucía)";
+      font-size: 8pt;
+      color: #065f46;
+      font-weight: 500;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.54;
+    color: #1f2937;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    text-align: center;
+    border: 3px double #059669;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .cover .badge {
+    background-color: #065f46;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 9.5pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 22pt;
+    color: #064e3b;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+  }
+  .cover h2 {
+    font-size: 12.5pt;
+    color: #047857;
+    font-weight: 600;
+    max-width: 92%;
+    line-height: 1.45;
+    margin: 0 0 26px 0;
+  }
+  .cover .meta-box {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 88%;
+    font-size: 9pt;
+    color: #1e293b;
+  }
+  .cover .meta-box p {
+    margin: 5px 0;
+    text-align: left;
+  }
+  .cover .meta-sublist {
+    margin: 4px 0 6px 0;
+    padding-left: 18px;
+  }
+  .cover .meta-sublist li {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .toc-container {
+    page-break-after: always;
+    padding: 15px 0;
+  }
+  .toc-title {
+    font-size: 15pt;
+    color: #064e3b;
+    border-bottom: 2px solid #059669;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .toc-item {
+    margin-bottom: 7px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .toc-item.level-1 {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 9px;
+  }
+  .toc-item.level-2 {
+    margin-left: 16px;
+    color: #374151;
+  }
+  .toc-item.level-3 {
+    margin-left: 32px;
+    color: #4b5563;
+    font-style: italic;
+  }
+  h2.section-title {
+    color: #064e3b;
+    border-bottom: 1.5px solid #059669;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    page-break-after: avoid;
+  }
+  h3.sub-title {
+    color: #047857;
+    font-size: 10.5pt;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  h4.sub-sub-title {
+    color: #065f46;
+    font-size: 9.8pt;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  ul, ol {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .callout {
+    background-color: #f0fdf4;
+    border-left: 4px solid #059669;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.2pt;
+    page-break-inside: avoid;
+  }
+  .callout p {
+    margin: 0;
+  }
+  .diagram-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #065f46;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    overflow-x: hidden;
+  }
+  .diagram-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.4pt;
+    line-height: 1.32;
+    color: #1e293b;
+    white-space: pre;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 8.6pt;
+    page-break-inside: auto;
+  }
+  table.data-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data-table th {
+    background-color: #d1fae5;
+    color: #064e3b;
+    font-weight: bold;
+  }
+  table.data-table tr:nth-child(even) td {
+    background-color: #f0fdf4;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="badge">TEMARIO COMÚN — JUNTA DE ANDALUCÍA (GRUPO A2)</div>
+  <h1>TEMA 20</h1>
+  <h2>El sistema de Seguridad Social del personal al servicio de las Administraciones Públicas: Régimen General y Especiales. Afiliación, altas, bajas y cotización. Acción protectora e incapacidades</h2>
+  <div class="meta-box">
+    <p><strong>Cuerpo:</strong> Cuerpo Técnico Facultativo de la Junta de Andalucía</p>
+    <p><strong>Especialidad:</strong> Materias Comunes (Grupo A2)</p>
+    <p><strong>Bloque:</strong> Materias Comunes</p>
+    <p><strong>Tema Oficial:</strong> 20</p>
+    <p><strong>Normativa Clave:</strong> Real Decreto Legislativo 8/2015, de 30 de octubre, por el que se aprueba el Texto Refundido de la Ley General de la Seguridad Social (TRLGSS); Real Decreto-ley 13/2010, de 3 de diciembre (integración en el Régimen General de los funcionarios públicos de nuevo ingreso); Real Decreto 84/1996, de 26 de enero (Reglamento de Inscripción, Afiliación y Altas); Real Decreto 2064/1995, de 22 de diciembre (Reglamento General de Cotización); Estatuto de Autonomía para Andalucía (art. 63).</p>
+
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="toc-title">Índice General de TEMA 20</div>
+  <div class="toc-item level-1">1. <strong>El sistema español de Seguridad Social: Fundamento constitucional y principios rectores</strong></div>
+  <div class="toc-item level-2">1.1. El mandato constitucional: El artículo 41 de la Constitución Española</div>
+  <div class="toc-item level-2">1.2. Principios estructurales del sistema: Universalidad, solidaridad, unidad de caja e igualdad</div>
+  <div class="toc-item level-2">1.3. Competencias del Estado y de la Comunidad Autónoma de Andalucía (art. 149.1.17ª CE y art. 63 EAAnd)</div>
+  <div class="toc-item level-1">2. <strong>Estructura del sistema de la Seguridad Social y encuadramiento del personal público</strong></div>
+  <div class="toc-item level-2">2.1. Composición general: Régimen General y Regímenes Especiales (art. 9 y 10 TRLGSS)</div>
+  <div class="toc-item level-2">2.2. Los regímenes especiales de funcionarios y Clases Pasivas del Estado: Evolución histórica</div>
+  <div class="toc-item level-2">2.3. La integración de los funcionarios de nuevo ingreso en el Régimen General (Real Decreto-ley 13/2010)</div>
+  <div class="toc-item level-2">2.4. Encuadramiento del personal al servicio de la Junta de Andalucía: Funcionarios y laborales</div>
+  <div class="toc-item level-1">3. <strong>Actos de encuadramiento: Inscripción, afiliación, altas y bajas</strong></div>
+  <div class="toc-item level-2">3.1. Inscripción de la Administración empleadora y Código de Cuenta de Cotización (CCC)</div>
+  <div class="toc-item level-2">3.2. La afiliación al sistema: Carácter único, vitalicio y obligatorio (arts. 15 y 16 TRLGSS)</div>
+  <div class="toc-item level-2">3.3. Las altas de los trabajadores: Alta real, asimilada al alta y presunta (art. 166 TRLGSS)</div>
+  <div class="toc-item level-2">3.4. Plazos y efectos de la comunicación de altas y bajas: Responsabilidad por incumplimiento</div>
+  <div class="toc-item level-1">4. <strong>La cotización a la Seguridad Social en las Administraciones Públicas</strong></div>
+  <div class="toc-item level-2">4.1. Sujetos obligados y responsables del ingreso de las cuotas (arts. 141 y 142 TRLGSS)</div>
+  <div class="toc-item level-2">4.2. Base de cotización: Base de contingencias comunes (BCC) y profesionales (BCP)</div>
+  <div class="toc-item level-2">4.3. Topes máximos y mínimos de cotización fijados por ley</div>
+  <div class="toc-item level-2">4.4. Tipos de cotización, cuota patronal y cuota obrera: El Mecanismo de Equidad Intergeneracional (MEI)</div>
+  <div class="toc-item level-2">4.5. Procedimiento de recaudación y liquidación directa (Sistema Cret@)</div>
+  <div class="toc-item level-1">5. <strong>La acción protectora del sistema de Seguridad Social</strong></div>
+  <div class="toc-item level-2">5.1. Concepto y delimitación de contingencias: Contingencias comunes frente a profesionales</div>
+  <div class="toc-item level-2">5.2. El principio de automaticidad de las prestaciones en contingencias profesionales</div>
+  <div class="toc-item level-1">6. <strong>Prestaciones económicas del Régimen General</strong></div>
+  <div class="toc-item level-2">6.1. Incapacidad Temporal (IT, arts. 169 a 176 TRLGSS): Concepto, requisitos, duración y cuantía</div>
+  <div class="toc-item level-2">6.2. El complemento de incapacidad temporal en la Junta de Andalucía (cobertura del 100%)</div>
+  <div class="toc-item level-2">6.3. Nacimiento y cuidado de menor (arts. 177 a 182 TRLGSS): 16 semanas intransferibles</div>
+  <div class="toc-item level-2">6.4. Incapacidad Permanente (arts. 193 a 200 TRLGSS): Grados y régimen económico</div>
+  <div class="toc-item level-2">6.5. Jubilación contributiva ordinaria (arts. 204 a 210 TRLGSS): Edad, cálculo de la base y porcentaje</div>
+  <div class="toc-item level-2">6.6. Modalidades de jubilación anticipada y parcial</div>
+  <div class="toc-item level-2">6.7. Muerte y supervivencia (arts. 216 a 234 TRLGSS): Viudedad, orfandad y auxilio por defunción</div>
+  <div class="toc-item level-1">7. <strong>Conclusiones y gestión de la previsión social en la Administración de la Junta de Andalucía</strong></div>
+  <div class="toc-item level-1">8. <strong>Anexo: Tabla sinóptica y mapas conceptuales del Tema 20</strong></div>
+
+</div>
+
+<h2 class="section-title">1. El sistema español de Seguridad Social: Fundamento constitucional y principios rectores</h2>
+
+<h3 class="sub-title">1.1. El mandato constitucional: El artículo 41 de la Constitución Española</h3>
+<p>El <strong>artículo 41 de la Constitución Española de 1978</strong> constituye la piedra angular de la previsión pública:</p>
+<div class="callout"><p><em>"Los poderes públicos mantendrán un régimen público de Seguridad Social para todos los ciudadanos, que garantice la asistencia y prestaciones sociales suficientes ante situaciones de necesidad, especialmente en caso de desempleo. La asistencia y prestaciones complementarias serán libres."</em></p></div>
+<p>El Tribunal Constitucional ha reiterado (destacadamente en la <strong>STC 65/1987</strong>) que la Seguridad Social es una función pública obligatoria e inexcusable que configura un derecho subjetivo de la ciudadanía a recibir protección social suficiente y digna.</p>
+<h3 class="sub-title">1.2. Principios estructurales del sistema</h3>
+<ul>
+<li><strong>Principio de universalidad:</strong> Extensión progresiva de la cobertura a toda la población residente.</li>
+<li><strong>Principio de solidaridad intergeneracional:</strong> Las cotizaciones de los trabajadores en activo sufragan las pensiones y prestaciones de los actuales pensionistas (sistema de reparto financiero).</li>
+<li><strong>Principio de unidad de caja:</strong> Todos los recursos económicos y cotizaciones ingresan en la <strong>Caja Única de la Tesorería General de la Seguridad Social (TGSS)</strong>, garantizando la igualdad territorial.</li>
+<li><strong>Principio de suficiencia protectora:</strong> Las cuantías de las pensiones y subsidios deben garantizar un nivel de vida adecuado.</li>
+</ul>
+<h3 class="sub-title">1.3. Marco competencial</h3>
+<ul>
+<li><strong>Artículo 149.1.17ª CE:</strong> Atribuye al Estado la <strong>competencia exclusiva</strong> sobre la <strong>legislación básica y régimen económico de la Seguridad Social</strong>, sin perjuicio de la ejecución de sus servicios por las CCAA.</li>
+<li><strong>Artículo 63 del Estatuto de Autonomía para Andalucía:</strong> Atribuye a la Comunidad Autónoma de Andalucía competencias en materia de gestión del régimen económico de la Seguridad Social y de los servicios del sistema en los términos que establezcan las leyes estatales.</li>
+</ul>
+<hr />
+<h2 class="section-title">2. Estructura del sistema de la Seguridad Social y encuadramiento del personal público</h2>
+
+<h3 class="sub-title">2.1. Composición general: Régimen General y Regímenes Especiales (arts. 9 y 10 TRLGSS)</h3>
+<p>El sistema español de la Seguridad Social se divide en:
+1. <strong>Régimen General:</strong> Integra a los trabajadores por cuenta ajena de la industria y los servicios, así como a colectivos asimilados y a los empleados públicos.
+2. <strong>Regímenes Especiales:</strong> Para aquellas actividades productivas cuyas condiciones singulares de tiempo y lugar de trabajo aconsejan una regulación específica:
+   * Régimen Especial de Trabajadores Autónomos (RETA).
+   * Régimen Especial de los Trabajadores del Mar.
+   * Régimen Especial de la Minería del Carbón.</p>
+<div class="diagram-box"><pre>                  ESTRUCTURA DE LA PREVISIÓN DEL PERSONAL PÚBLICO
+      ┌──────────────────────────────────────────────────────────────┐
+      │ SISTEMA PÚBLICO DE SEGURIDAD SOCIAL                          │
+      │                                                              │
+      │  ┌────────────────────────────────────────────────────────┐  │
+      │  │ RÉGIMEN GENERAL DE LA SEGURIDAD SOCIAL (RGSS)          │  │
+      │  │ • Todo el personal laboral de las Administraciones.     │  │
+      │  │ • Funcionarios de la Junta de Andalucía.               │  │
+      │  │ • TODOS los funcionarios de nuevo ingreso del Estado   │  │
+      │  │   y CCAA ingresados desde el 1 de enero de 2011.       │  │
+      │  └────────────────────────────────────────────────────────┘  │
+      │                                                              │
+      │  ┌────────────────────────────────────────────────────────┐  │
+      │  │ REGÍMENES ESPECIALES EN EXTINCIÓN (RDL 13/2010)        │  │
+      │  │ • Clases Pasivas del Estado (funcionarios AGE previos) │  │
+      │  │ • Mutualismo Administrativo (MUFACE, ISFAS, MUGEJU)    │  │
+      │  └────────────────────────────────────────────────────────┘  │
+      └──────────────────────────────────────────────────────────────┘
+</pre></div>
+<h3 class="sub-title">2.2. La integración de los funcionarios de nuevo ingreso en el Régimen General</h3>
+<p>Históricamente, los funcionarios civiles del Estado estaban encuadrados en el Régimen de Clases Pasivas (pensiones de jubilación) y en MUFACE (asistencia sanitaria).
+* <strong>El Real Decreto-ley 13/2010, de 3 de diciembre:</strong> Dispuso que con efectos de <strong>1 de enero de 2011</strong>, todo el personal funcionario de nuevo ingreso en la Administración General del Estado, en las Comunidades Autónomas y en las Entidades Locales queda encuadrado <strong>obligatoria y exclusivamente en el Régimen General de la Seguridad Social</strong>.
+* <strong>Personal al servicio de la Junta de Andalucía:</strong>
+  * El personal funcionario de la Junta de Andalucía (incluido el Grupo A2) y el personal laboral se encuentran encuadrados de forma ordinaria en el <strong>Régimen General de la Seguridad Social</strong>, gestionándose su acción protectora a través del Instituto Nacional de la Seguridad Social (INSS) y la TGSS.</p>
+<hr />
+<h2 class="section-title">3. Actos de encuadramiento: Inscripción, afiliación, altas y bajas</h2>
+
+<p>Regulados en el <strong>Real Decreto 84/1996, de 26 de enero</strong>:</p>
+<div class="diagram-box"><pre>                       ACTOS DE ENCUADRAMIENTO
+┌───────────────────┬──────────────────────────────────────────────────────────┐
+│ ACTO              │ CONCEPTO Y CARACTERES JURÍDICOS                          │
+├───────────────────┼──────────────────────────────────────────────────────────┤
+│ **Inscripción**   │ Acto administrativo por el que la TGSS inscribe a la     │
+│ **de Empresa**    │ Administración y le asigna un Código de Cuenta de        │
+│                   │ Cotización (CCC) principal y secundarios por Consejería. │
+├───────────────────┼──────────────────────────────────────────────────────────┤
+│ **Afiliación**    │ Acto administrativo que incorpora al trabajador al       │
+│ (Art. 15 TRLGSS)  │ sistema por primera vez. **ÚNICA y VITALICIA** para toda │
+│                   │ la vida laboral del empleado público.                    │
+├───────────────────┼──────────────────────────────────────────────────────────┤
+│ **Alta**          │ Acto formal que vincula al trabajador a un régimen       │
+│ (Art. 16 TRLGSS)  │ específico con motivo del inicio de la prestación.       │
+│                   │ Debe comunicarse con carácter **PREVIO al inicio**.      │
+├───────────────────┼──────────────────────────────────────────────────────────┤
+│ **Baja**          │ Comunicación formal de cese en el puesto de trabajo.     │
+│ (Art. 16 TRLGSS)  │ Plazo: dentro de los **TRES DÍAS NATURALES siguientes**. │
+└───────────────────┴──────────────────────────────────────────────────────────┘
+</pre></div>
+<h3 class="sub-title">3.1. Clases de altas (art. 166 TRLGSS)</h3>
+<ul>
+<li><strong>Alta real:</strong> Aquella en la que el trabajador presta servicios efectivos y la Administración ha comunicado el alta en plazo reglamentario.</li>
+<li><strong>Situación asimilada al alta:</strong> Supuestos en que, producida la interrupción o cese del trabajo efectivo, la ley mantiene la protección de determinadas contingencias (ej. excedencia por cuidado de hijos, desempleo involuntario, huelga legal, traslado al extranjero por la administración).</li>
+<li><strong>Alta de pleno derecho o presunta:</strong> En contingencias de accidentes de trabajo y enfermedades profesionales, el trabajador se considera de alta de pleno derecho a todos los efectos protectores, <strong>aun cuando el empresario hubiera incumplido la obligación de darle de alta</strong> (art. 166.4 TRLGSS, <em>principio de automaticidad de las prestaciones</em>).</li>
+</ul>
+<hr />
+<h2 class="section-title">4. La cotización a la Seguridad Social en las Administraciones Públicas</h2>
+
+<h3 class="sub-title">4.1. Sujetos obligados y responsables (arts. 141 y 142 TRLGSS)</h3>
+<p>Están obligados a cotizar tanto la Administración pública empleadora (<strong>cuota patronal</strong>) como el personal al servicio de la misma (<strong>cuota obrera</strong>).
+* La Administración es el <strong>sujeto responsable</strong> del ingreso total de la cotización: retiene mensualmente en nómina la cuota correspondiente al empleado público y la ingresa, junto con la cuota patronal, en la TGSS durante el mes siguiente al de su devengo.</p>
+<h3 class="sub-title">4.2. Bases de cotización</h3>
+<p>La cotización se determina aplicando los tipos porcentuales legales sobre las bases de cotización:</p>
+<div class="diagram-box"><pre>                            BASES DE COTIZACIÓN
+        ┌────────────────────────────────────────────────────────┐
+        │                                                        │
+        ▼                                                        ▼
+BASE DE CONTINGENCIAS COMUNES (BCC)                    BASE DE CONTINGENCIAS PROFESIONALES (BCP)
+• Retribución mensual bruta devengada computable.      • BCC + Importe íntegro devengado por horas
+• Más la parte proporcional de las pagas extras          extraordinarias realizadas.
+  (prorrateo de las dos pagas extraordinarias).        • Aplica para cotizar por Accidentes de Trabajo
+• Topada por bases máximas y mínimas de ley.             (AT), Enfermedad Profesional (EP), FOGASA y F.P.
+</pre></div>
+<h3 class="sub-title">4.3. Tipos de cotización y Mecanismo de Equidad Intergeneracional (MEI)</h3>
+<ul>
+<li><strong>Contingencias comunes:</strong> Tipo general del <strong>28,30%</strong> (23,60% a cargo de la Administración y 4,70% a cargo del trabajador).</li>
+<li><strong>Mecanismo de Equidad Intergeneracional (MEI):</strong> Cotización finalista destinada a alimentar el Fondo de Reserva de la Seguridad Social para afrontar el reto demográfico de jubilación de la generación del <em>baby boom</em>.</li>
+<li><strong>Contingencias profesionales:</strong> Tarifa de primas fijada en función de la actividad económica y nivel de riesgo de los puestos de trabajo.</li>
+</ul>
+<hr />
+<h2 class="section-title">5. La acción protectora del sistema de Seguridad Social</h2>
+
+<h3 class="sub-title">5.1. Delimitación de contingencias</h3>
+<ul>
+<li><strong>Contingencias comunes:</strong></li>
+<li><strong>Enfermedad común:</strong> Alteración de la salud que no tenga la condición de accidente de trabajo ni de enfermedad profesional.</li>
+<li><strong>Accidente no laboral:</strong> El acaecido por causas ajenas al desempeño de las funciones del puesto de trabajo.</li>
+<li><strong>Contingencias profesionales:</strong></li>
+<li><strong>Accidente de trabajo (art. 156 TRLGSS):</strong> Toda lesión corporal que el trabajador sufra con ocasión o por consecuencia del trabajo ejecutado por cuenta ajena. Incluye el accidente <em>in itinere</em> (acaecido al ir o volver del lugar de trabajo sin interrupciones por motivos personales).</li>
+<li><strong>Enfermedad profesional (art. 157 TRLGSS):</strong> La contraída a consecuencia del trabajo ejecutado por cuenta ajena en las actividades especificadas en el cuadro oficial aprobado por Real Decreto 1299/2006.</li>
+</ul>
+<hr />
+<h2 class="section-title">6. Prestaciones económicas del Régimen General</h2>
+
+<div class="diagram-box"><pre>                     CUADRO DE PRESTACIONES ECONÓMICAS
+┌───────────────────────┬───────────────────────────┬─────────────────────────┐
+│ PRESTACIÓN            │ REQUISITO DE CARENCIA     │ CUANTÍA Y DURACIÓN      │
+├───────────────────────┼───────────────────────────┼─────────────────────────┤
+│ **Incapacidad**       │ • Enfermedad común:       │ • Duración: 365 días +  │
+│ **Temporal (IT)**     │   180 días en 5 años.     │   180 días de prórroga. │
+│ (Arts. 169-176)       │ • Accidente o EP:         │ • Subsidio general: 60% │
+│                       │   SIN carencia previa.    │   (días 4-20) y 75%.    │
+├───────────────────────┼───────────────────────────┼─────────────────────────┤
+│ **Nacimiento y**      │ • Menores 21 años: 0 días.│ • 16 semanas para cada  │
+│ **Cuidado de Menor**  │ • 21-26 años: 90 días en 7│   progenitor al 100% de │
+│ (Arts. 177-182)       │   años (o 180 total).     │   la base reguladora.   │
+├───────────────────────┼───────────────────────────┼─────────────────────────┤
+│ **Jubilación**        │ • Carencia genérica:      │ • Según años cotizados: │
+│ **Contributiva**      │   15 años cotizados.      │   50% a los 15 años y   │
+│ (Arts. 204-210)       │ • Carencia específica: 2  │   100% al cumplir el    │
+│                       │   años en últimos 15 años.│   periodo máximo legal. │
+└───────────────────────┴───────────────────────────┴─────────────────────────┘
+</pre></div>
+<h3 class="sub-title">6.1. Incapacidad Temporal y el complemento retributivo en la Junta de Andalucía</h3>
+<ul>
+<li><strong>Régimen de la Seguridad Social:</strong></li>
+<li>Por enfermedad común o accidente no laboral: Del día 1 al 3 no hay subsidio de la Seguridad Social; del día 4 al 20, se abona el 60% de la base reguladora; a partir del día 21, se abona el 75%.</li>
+<li>Por contingencia profesional: 75% desde el día siguiente a la baja.</li>
+<li><strong>Mejora voluntaria en la Junta de Andalucía:</strong> La Administración de la Junta de Andalucía complementa las prestaciones de la Seguridad Social garantizando a su personal el percibo del <strong>cien por cien (100%) de las retribuciones ordinarias</strong> fijas mensuales desde el primer día de la baja médica por cualquier contingencia (común o profesional).</li>
+</ul>
+<h3 class="sub-title">6.2. Grados de Incapacidad Permanente (arts. 193 a 200 TRLGSS)</h3>
+<p>Procede cuando, tras estar sometido al tratamiento médico prescrito, el trabajador presenta reducciones anatómicas o funcionales graves y definitivas que disminuyen o anulan su capacidad laboral:
+1. <strong>Incapacidad Permanente Parcial:</strong> Ocasiona al trabajador una disminución no inferior al 33% en su rendimiento normal para su profesión habitual, sin impedirle la realización de las tareas fundamentales. <em>Indemnización a tanto alzado de 24 mensualidades de la base reguladora</em>.
+2. <strong>Incapacidad Permanente Total:</strong> Inhabilita al trabajador para la realización de todas o de las fundamentales tareas de su <strong>profesión habitual</strong>, siempre que pueda dedicarse a otra distinta. <em>Pensión vitalicia del 55% de la base reguladora (incrementada al 75% para mayores de 55 años sin empleo - cualificada)</em>.
+3. <strong>Incapacidad Permanente Absoluta:</strong> Inhabilita por completo al trabajador para <strong>toda profesión u oficio</strong>. <em>Pensión vitalicia del 100% de la base reguladora</em>.
+4. <strong>Gran Invalidez:</strong> Situación del trabajador afectado de incapacidad permanente que necesita la asistencia de otra persona para realizar los actos más esenciales de la vida diaria (vestirse, comer, desplazarse). <em>Pensión del 100% más un complemento económico destinado a remunerar a la persona cuidadora</em>.</p>
+<h3 class="sub-title">6.3. Jubilación ordinaria contributiva (arts. 204 a 210 TRLGSS)</h3>
+<ul>
+<li><strong>Requisitos:</strong> Tener cumplida la edad legal de jubilación (que culmina en 2027 en los 67 años, o 65 años si se acreditan 38 años y 6 meses cotizados) y acreditar un periodo mínimo de cotización de 15 años (carencia genérica), con al menos dos años cotizados dentro de los quince inmediatamente anteriores (carencia específica).</li>
+<li><strong>Cálculo de la pensión:</strong> Se toma la base reguladora (cociente de dividir las bases de cotización de los últimos 25 años entre 350) y se le aplica un porcentaje en función de los años cotizados: 50% con 15 años cotizados, incrementándose gradualmente hasta el 100% al alcanzar el periodo legal exigido.</li>
+</ul>
+<h3 class="sub-title">6.4. Prestaciones por muerte y supervivencia</h3>
+<ul>
+<li><strong>Pensión de viudedad:</strong> Concedida al cónyuge o pareja de hecho superviviente (con carácter general el 52%, incrementable al 60% o 70% según edad, cargas familiares y rentas).</li>
+<li><strong>Pensión de orfandad:</strong> Concedida a los hijos del causante que sean menores de 21 años (o menores de 25 años si no trabajan o sus ingresos no superan el salario mínimo interprofesional). Porcentaje: 20% de la base reguladora por cada huérfano.</li>
+<li><strong>Auxilio por defunción:</strong> Cantidad fija para subvenir a los gastos de sepelio.</li>
+</ul>
+<hr />
+<h2 class="section-title">7. Conclusiones y gestión de la previsión social en la Administración de la Junta de Andalucía</h2>
+
+<p>La adecuada comprensión del sistema de Seguridad Social resulta imprescindible para el desempeño de las funciones del Cuerpo Técnico Facultativo del Grupo A2:
+1. Asegura la tramitación rigurosa de los actos de encuadramiento (altas previas obligatorias y control de partes médicos de baja y confirmación).
+2. Garantiza la liquidación puntual de las cotizaciones sociales a través de los sistemas informáticos integrados (Sistema Red y Sirhus).
+3. Salvaguarda la dignidad de los empleados públicos mediante la gestión coordinada de los complementos de incapacidad y el reconocimiento puntual de los permisos de conciliación y pensiones de jubilación.</p>
+<hr />
+<h2 class="section-title">8. Anexo: Tabla sinóptica y mapas conceptuales del Tema 20</h2>
+
+<table class="data-table">
+<thead>
+<tr>
+<th style="text-align: left;">Institución / Régimen</th>
+<th style="text-align: left;">Precepto TRLGSS</th>
+<th style="text-align: left;">Requisitos Legales</th>
+<th style="text-align: left;">Consecuencia Económica / Prestacional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Encuadramiento Funcionarios</strong></td>
+<td style="text-align: left;">RDL 13/2010</td>
+<td style="text-align: left;">Funcionarios de nuevo ingreso desde 1/1/2011.</td>
+<td style="text-align: left;">Régimen General de la Seguridad Social obligatorio.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Afiliación</strong></td>
+<td style="text-align: left;">Art. 15 TRLGSS</td>
+<td style="text-align: left;">Acto inicial único para toda la vida profesional.</td>
+<td style="text-align: left;">Otorga el número de la Seguridad Social vitalicio.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Alta Previa</strong></td>
+<td style="text-align: left;">Art. 16 TRLGSS</td>
+<td style="text-align: left;">Obligación de la Junta antes de iniciar servicios.</td>
+<td style="text-align: left;">Su omisión genera responsabilidad sancionadora y deudas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Baja Médica</strong></td>
+<td style="text-align: left;">Art. 16 TRLGSS</td>
+<td style="text-align: left;">Comunicación formal dentro de los 3 días siguientes.</td>
+<td style="text-align: left;">Extingue la obligación formal de cotización activa.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>BCC y BCP</strong></td>
+<td style="text-align: left;">Arts. 147-149</td>
+<td style="text-align: left;">Devengos computables + prorrata de pagas extras.</td>
+<td style="text-align: left;">Topes mínimos y máximos fijados anualmente por ley.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Incapacidad Temporal (IT)</strong></td>
+<td style="text-align: left;">Arts. 169-176</td>
+<td style="text-align: left;">Baja médica temporal. Carencia de 180 d (enfermedad).</td>
+<td style="text-align: left;">Duración: 365 días + 180 d prórroga. Junta abona 100%.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Nacimiento de Menor</strong></td>
+<td style="text-align: left;">Arts. 177-182</td>
+<td style="text-align: left;">Progenitores por igual, biológicos o adoptivos.</td>
+<td style="text-align: left;">16 semanas intransferibles al 100% de la base.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>IP Total</strong></td>
+<td style="text-align: left;">Art. 194 TRLGSS</td>
+<td style="text-align: left;">Impide las tareas de la profesión habitual.</td>
+<td style="text-align: left;">55% de la base reguladora (75% para mayores de 55 años).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>IP Absoluta</strong></td>
+<td style="text-align: left;">Art. 194 TRLGSS</td>
+<td style="text-align: left;">Inhabilita para toda profesión u oficio.</td>
+<td style="text-align: left;">100% de la base reguladora exenta de IRPF.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Jubilación Ordinaria</strong></td>
+<td style="text-align: left;">Arts. 204-210</td>
+<td style="text-align: left;">Edad legal + 15 años cotizados (2 en últimos 15).</td>
+<td style="text-align: left;">50% con 15 años hasta el 100% según baremo legal.</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
